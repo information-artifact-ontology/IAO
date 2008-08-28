@@ -1,0 +1,1434 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://purl.obofoundry.org/obo/"
+    xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+  xml:base="http://purl.obofoundry.org/obo/obi.owl">
+
+   <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/obi.owl">
+    <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >en</protege:defaultLanguage>
+<owl:imports> <owl:Ontology  rdf:about="http://purl.org/obo/owl/OBO_REL"/></owl:imports>
+<owl:imports> <owl:Ontology  rdf:about="http://www.ifomis.org/bfo/1.1"/></owl:imports>
+  </owl:Ontology>
+  <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000099">
+    <rdfs:label xml:lang="en">report of results</rdfs:label>
+    <OBI_0000291 xml:lang="en">A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so.</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000013"/>
+    </rdfs:subClassOf>
+    <OBI_0000287 xml:lang="en">Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article.</OBI_0000287>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000275 xml:lang="en">disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</OBI_0000275>
+    <OBI_0000288 xml:lang="en">report of results</OBI_0000288>
+    <OBI_0000281>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000319">
+        <OBI_0000291 xml:lang="en">Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</OBI_0000291>
+        <rdfs:label xml:lang="en">metadata complete</rdfs:label>
+      </OBI_0000266>
+    </OBI_0000281>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000186">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000096"/>
+    </rdfs:subClassOf>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000291 xml:lang="en">Protocol_optimization is a protocol_testing_objective role describing a study designed to identify the best protocol.  This may be carried out by comparing different protocols or by modifying the parameters used within a single protocol.</OBI_0000291>
+    <OBI_0000281>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000320">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
+        <OBI_0000291 xml:lang="en">Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</OBI_0000291>
+      </OBI_0000266>
+    </OBI_0000281>
+    <OBI_0000288 xml:lang="en">protocol optimization</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <rdfs:label xml:lang="en">protocol optimization</rdfs:label>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000176">
+    <OBI_0000274 xml:lang="en">person:Cristian Cocos</OBI_0000274>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000275 xml:lang="en">agree</OBI_0000275>
+    <OBI_0000287 xml:lang="en">Examples of measurement unit are liters, inches, weight per volume.</OBI_0000287>
+    <OBI_0000288 xml:lang="en">measurement unit</OBI_0000288>
+    <rdfs:label xml:lang="en">measurement unit</rdfs:label>
+    <OBI_0000291 xml:lang="en">A measurement unit is an information content entity associated with a physical magnitude that has been conventionally assigned a number.</OBI_0000291>
+    <OBI_0000281>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000323">
+        <OBI_0000291 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.</OBI_0000291>
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+      </OBI_0000266>
+    </OBI_0000281>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000219">
+    <OBI_0000291 xml:lang="en">Cellular_feature_identification_objective is a biological_feature_identification_objective role describing a study designed to examine or characterize a biological feature monitored at the cellular level, e.g. stage of cell cycle, stage of differentiation.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">cellular feature identification objective</OBI_0000288>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000015"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">cellular feature identification objective</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000015">
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000291 xml:lang="en">Biological_feature_identification_objective is an objective role carried out by the proposition defining the aim of a study designed to examine or characterize a particular biological feature.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000288 xml:lang="en">biological feature identification objective</OBI_0000288>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <rdfs:label xml:lang="en">biological feature identification objective</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000217"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000036">
+    <OBI_0000275 xml:lang="en">CDISC definition: global assessment variable. A single variable, usually a scale of ordered categorical ratings, which integrates objective variables and the investigator's overall impression about the state or change in state of a subject.</OBI_0000275>
+    <OBI_0000291 xml:lang="en">Global assessment variable is a finding describing in a categorical variable the investigator's overall impression about the state or change in state of a subject.</OBI_0000291>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <rdfs:label xml:lang="en">Global assessment variable</rdfs:label>
+    <OBI_0000288 xml:lang="en">Global assessment variable</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000120"/>
+    </rdfs:subClassOf>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000265">
+    <rdfs:label xml:lang="en">report table</rdfs:label>
+    <OBI_0000291 xml:lang="en">A report table is a report display element consisting of a matrix of cells layed out in a grid, some set of which are filled with some information content</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">report table</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000001"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">person:Allyson Lister</OBI_0000274>
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000134">
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000291 xml:lang="en">Hardware_testing_objective is a methodology_testing_objective role describing a study designed to examine the effects of using different hardware, e.g. scanner.</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000208"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000288 xml:lang="en">hardware testing objective</OBI_0000288>
+    <rdfs:label xml:lang="en">hardware testing objective</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000335">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000344"/>
+    </rdfs:subClassOf>
+    <OBI_0000288 xml:lang="en">investigation design</OBI_0000288>
+    <OBI_0000291 xml:lang="en">Investigation_design is a plan for an investigation. definition_source: OBI.</OBI_0000291>
+    <rdfs:label xml:lang="en">investigation design</rdfs:label>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500010">
+    <OBI_0000279 xml:lang="en">MO_699</OBI_0000279>
+    <OBI_0000275 xml:lang="en">MO</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">reference design</rdfs:label>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra on behalf of MO</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A reference experiment design type is where all samples are compared to a common reference.</OBI_0000291>
+    <OBI_0000287 xml:lang="en">PMID: 12933549</OBI_0000287>
+    <OBI_0000288 xml:lang="en">reference design</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500002">
+    <OBI_0000279 xml:lang="en">http://www.holah.karoo.net/experimentaldesigns.htm</OBI_0000279>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000291 xml:lang="en">A repeated measure design is a study design which use the same individuals and exposure them to a set of conditions. The effect of order and practice can be confounding factor in such designs</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000115"/>
+    </rdfs:subClassOf>
+    <OBI_0000288 xml:lang="en">repeated measure design</OBI_0000288>
+    <OBI_0000281>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000328">
+        <OBI_0000291 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</OBI_0000291>
+        <rdfs:label xml:lang="en">uncurated</rdfs:label>
+      </OBI_0000266>
+    </OBI_0000281>
+    <OBI_0000287 xml:lang="en">PMID: 10959922.J Biopharm Stat. 2000 Aug;10(3):433-45.Equivalence in test assay method comparisons for the repeated-measure, matched-pair design in medical device studies: statistical considerations.</OBI_0000287>
+    <rdfs:label xml:lang="en">repeated measure design</rdfs:label>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500025">
+    <OBI_0000291 xml:lang="en">an ethical standard compliance rule is_a *compliance rule* which enable a  *ethical compliance process* to occur</OBI_0000291>
+    <rdfs:label xml:lang="en">ethical standard compliance rule</rdfs:label>
+    <OBI_0000288 xml:lang="en">ethical standard compliance rule</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500024"/>
+    </rdfs:subClassOf>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+    <OBI_0000279 xml:lang="en">PRS</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000222">
+    <rdfs:label xml:lang="en">binary executable</rdfs:label>
+    <OBI_0000288 xml:lang="en">binary executable</OBI_0000288>
+    <OBI_0000291 xml:lang="en">Binary executable is a digital entity consisting of the binary representation of machine instructions of a specific processor or they may be binary pseudocode for a virtual machine. A non-source executable file is also called an object program. It is assumed that the binary executable file contains properly-formatted computer instructions.  (derived from Wikipedia, Nov 1, 2007)</OBI_0000291>
+    <OBI_0000274 xml:lang="en">person:Jennifer Fostel</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000261"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000240">
+    <OBI_0000288 xml:lang="en">report graph</OBI_0000288>
+    <rdfs:label xml:lang="en">report graph</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000027"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000291 xml:lang="en">A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way.</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000274 xml:lang="en">person:Allyson Lister</OBI_0000274>
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000344">
+    <OBI_0000288 xml:lang="en">plan specification</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000337"/>
+    </rdfs:subClassOf>
+    <OBI_0000275 xml:lang="en">Part of range for an object property is_potentially_realizable_as in obi before split (LF 040907)</OBI_0000275>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <OBI_0000275 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</OBI_0000275>
+    <rdfs:label xml:lang="en">plan specification</rdfs:label>
+    <OBI_0000291 xml:lang="en">a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan</OBI_0000291>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <OBI_0000287 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000217">
+    <OBI_0000288 xml:lang="en">objective specification</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000291 xml:lang="en">objective is an non realizable information entity which can serve as that  proper part of a plan  towards which the realization of the plan is directed. (note: achievement</OBI_0000291>
+    <OBI_0000277 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IAO</OBI_0000277>
+    <rdfs:label xml:lang="en">objective specification</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000337"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel /Barry Smith</OBI_0000274>
+    <OBI_0000275 xml:lang="en">Answers the question, why did you do this experiment?</OBI_0000275>
+    <OBI_0000287 xml:lang="en">purpose of a study; support of hypothesis, discovery of new information</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000096">
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000208"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">protocol testing objective</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000288 xml:lang="en">protocol testing objective</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000291 xml:lang="en">Protocol_testing_objective is a methodology_testing_objective role describing a study designed to examine the effects of using different protocols.</OBI_0000291>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000195">
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000288 xml:lang="en">digital document</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000261"/>
+    </rdfs:subClassOf>
+    <OBI_0000291 xml:lang="en">A digital document is a digital entity consisting of an electronic file which can be rendered into human-readable form by one or more computational applications.  The digital document does not refer to the information content of the document but to an instance of the file.</OBI_0000291>
+    <rdfs:label xml:lang="en">digital document</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Jennifer Fostel</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000055">
+    <rdfs:label xml:lang="en">software optimization</rdfs:label>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000288 xml:lang="en">software optimization</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000242"/>
+    </rdfs:subClassOf>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000291 xml:lang="en">Software_optimization is a software_testing_objective role describing a study designed to identify the best software or parameters of the software.</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0200168">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000274 xml:lang="en">James Malone</OBI_0000274>
+    <OBI_0000288 xml:lang="en">averaging objective</OBI_0000288>
+    <OBI_0000287 xml:lang="en">A mean calulcation which has averaging objective is a descriptive statistics calculation in which the mean is calculated by taking the sum of all of the observations in a data set divided by the total number of observations. It gives a measure of the “center of gravity” for the data set. It is also known as the first moment.</OBI_0000287>
+    <rdfs:label xml:lang="en">averaging objective</rdfs:label>
+    <OBI_0000274 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Elisabetta Manduchi</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Elisabetta Manduchi</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0200166"/>
+    </rdfs:subClassOf>
+    <OBI_0000291 xml:lang="en">An averaging objective is a data transformation objective where the aim is to perform mean calculations on the input of the data transformation.</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000075">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000150"/>
+    </rdfs:subClassOf>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000275 xml:lang="en">The act or process of identifying or determining the nature and cause of a disease or injury through evaluation</OBI_0000275>
+    <rdfs:label xml:lang="en">Diagnosis</rdfs:label>
+    <OBI_0000291 xml:lang="en">Diagnosis is an assessment of a disease or injury, its likely prognosis and treatment.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000288 xml:lang="en">Diagnosis</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000113">
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000291 xml:lang="en">Sequence_feature_identification_objective is a biological_feature_identification_objective role describing a study designed to examine or characterize molecular features exhibited at the level of a macromolecular sequence, e.g. nucleic acid, protein, polysaccharide.</OBI_0000291>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000015"/>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <rdfs:label xml:lang="en">sequence feature identification objective</rdfs:label>
+    <OBI_0000288 xml:lang="en">sequence feature identification objective</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500027">
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000288 xml:lang="en">inclusion rule</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500026"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">inclusion rule</rdfs:label>
+    <OBI_0000287 xml:lang="en">PMID: 17599746-RESULTS: Fifteen trials met our inclusion criteria. The summary effect size was 0.35 (95% confidence interval 0.14, 0.56). I(2) was 0.80.</OBI_0000287>
+    <OBI_0000279 xml:lang="en">Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group</OBI_0000279>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000291 xml:lang="en">an inclusion rule (criterion) is_ rule*  in a protocol that prospective subjects must meet to be eligible for participation in a study</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500005">
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000287 xml:lang="en">PMID: 17288613-BSTRACT: BACKGROUND: Physicians in Canadian emergency departments (EDs) annually treat 185,000 alert and stable trauma victims who are at risk for cervical spine (C-spine) injury. However, only 0.9% of these patients have suffered a cervical spine fracture. Current use of radiography is not efficient. The Canadian C-Spine Rule is designed to allow physicians to be more selective and accurate in ordering C-spine radiography, and to rapidly clear the C-spine without the need for radiography in many patients. The goal of this phase III study is to evaluate the effectiveness of an active strategy to implement the Canadian C-Spine Rule into physician practice. Specific objectives are to: 1) determine clinical impact, 2) determine sustainability, 3) evaluate performance, and 4) conduct an economic evaluation. METHODS: We propose a matched-pair cluster design study that compares outcomes during three consecutive 12-months before, after, and decay periods at six pairs of intervention and control sites. These 12 hospital ED sites will be stratified as teaching or community hospitals, matched according to baseline C-spine radiography ordering rates, and then allocated within each pair to either intervention or control groups. During the after period at the intervention sites, simple and inexpensive strategies will be employed to actively implement the Canadian C-Spine Rule. The following outcomes will be assessed: 1) measures of clinical impact, 2) performance of the Canadian C-Spine Rule, and 3) economic measures. During the 12-month decay period, implementation strategies will continue, allowing us to evaluate the sustainability of the effect. We estimate a sample size of 4,800 patients in each period in order to have adequate power to evaluate the main outcomes. DISCUSSION: Phase I successfully derived the Canadian C-Spine Rule and phase II confirmed the accuracy and safety of the rule, hence, the potential for physicians to improve care. What remains unknown is the actual change in clinical behaviors that can be affected by implementation of the Canadian C-Spine Rule, and whether implementation can be achieved with simple and inexpensive measures. We believe that the Canadian C-Spine Rule has the potential to significantly reduce health care costs and improve the efficiency of patient flow in busy Canadian EDs.</OBI_0000287>
+    <OBI_0000279 xml:lang="en">http://www.holah.karoo.net/experimentaldesigns.htm</OBI_0000279>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <rdfs:label xml:lang="en">matched pairs design</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000291 xml:lang="en">A matched pair design is a study design which use groups of individuals associated (hence matched) to each other based on a set of criteria, one member going to one treatment, the other member receiving the other treatment.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">matched pairs design</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000125">
+    <OBI_0000291 xml:lang="en">A number of lost events electronic is a datum measuring the the number of analysis events lost due to errors in data acquisition electronic coincidence in a flow cytometer insturment. The datum has a qualitative role.</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</OBI_0000279>
+    <OBI_0000274 xml:lang="en">person:Kevin Clancy</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000275 xml:lang="en">quantity</OBI_0000275>
+    <OBI_0000287 xml:lang="en">74, 0, 14 events lost due to data acquisition electronic coincidence.</OBI_0000287>
+    <rdfs:label xml:lang="en">number of lost events electronic</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000305"/>
+    </rdfs:subClassOf>
+    <OBI_0000288 xml:lang="en">number of lost events electronic</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000305">
+    <rdfs:label xml:lang="en">datum</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    </rdfs:subClassOf>
+    <OBI_0000288 xml:lang="en">datum</OBI_0000288>
+    <OBI_0000287 xml:lang="en">Examples of data are the recoding of the weight of a mouse, the recording of an observation of the behavior of the mouse, the recording of the expression level of a gene as measured through the process of microarray experiment. Instance level information is information describing a specific instance of an entity</OBI_0000287>
+    <OBI_0000291 xml:lang="en">A datum is an information content entity that is a recording of the output of a measurement such as produced by an instrument.</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000275 xml:lang="en">was measurement. (alan) Is this the old quantitative value? If so need to change cardinal part of stuff. I think the value and units should be on special relations and that the value should not be a BFO entity.</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000244">
+    <OBI_0000287 xml:lang="en">MS Word document, ZIP file, DICOM file, JPEG file</OBI_0000287>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000261"/>
+    </rdfs:subClassOf>
+    <OBI_0000275 xml:lang="en">digital_entity</OBI_0000275>
+    <rdfs:label xml:lang="en">binary digital entity</rdfs:label>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000288 xml:lang="en">binary digital entity</OBI_0000288>
+    <OBI_0000291 xml:lang="en">A binary digital entity is a digital entity that is encoded in a way that is not easily human readable and that contains other than text characters.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000213">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000288 xml:lang="en">fluorescence compensation matrix</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    </rdfs:subClassOf>
+    <OBI_0000287 xml:lang="en">((1.053096, -0.22476), (-0.24877, 1.053096))</OBI_0000287>
+    <OBI_0000291 xml:lang="en">A fluorescence compensation matrix is a square matrix which is used as the left multiplier of the vector of fluorescence values while performing digital fluorescence compensation. Also, fluorescence compensation matrix is the inverse of the fluorescence spillover matrix.</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:Flow Cytometry community</OBI_0000279>
+    <rdfs:label xml:lang="en">fluorescence compensation matrix</rdfs:label>
+    <OBI_0000275 xml:lang="en">generically_dependent_continuants</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0300310">
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000291 xml:lang="en">Any design in which the decision as to whether to enroll the next patient, pair of patients, or block of patients is determined by whether the cumulative treatment difference for all previous patients is within specified limits.  Enrollment is continued if the difference does not exceed the limits.  It is terminated if it does</OBI_0000291>
+    <OBI_0000275 xml:lang="en">Provenance: OCI</OBI_0000275>
+    <rdfs:label xml:lang="en">sequential design</rdfs:label>
+    <OBI_0000287 xml:lang="en">PMID: 17710740.Pharm Stat. 2007 Aug 20.Sequential design approaches for bioequivalence studies with crossover designs.</OBI_0000287>
+    <OBI_0000279 xml:lang="en">MUSC</OBI_0000279>
+    <OBI_0000288 xml:lang="en">sequential design</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000115"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000131">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000288 xml:lang="en">molecular feature identification objective</OBI_0000288>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000015"/>
+    <rdfs:label xml:lang="en">molecular feature identification objective</rdfs:label>
+    <OBI_0000291 xml:lang="en">Molecular_feature_identification_objective is a biological_feature_identification_objective role describing a study designed to examine or characterize molecular features of a biological system, e.g. expression profiling, copy number of molecular components, epigenetic modifications.</OBI_0000291>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500021">
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000279 xml:lang="en">PRS</OBI_0000279>
+    <OBI_0000291 xml:lang="en">a rule is an executable which guides, defines, restricts actions</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000349"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000328"/>
+    <OBI_0000288 xml:lang="en">rule</OBI_0000288>
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <rdfs:label xml:lang="en">rule</rdfs:label>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500006">
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000291 xml:lang="en">A parallel group design or independent measure design is a study design which uses unique experimental unit each experimental group, in other word no two individuals are shared between experimental groups, hence also known as parallel group design. Subjects of a treatment group receive a unique combination of independent variable values making up a treatment</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000115"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">parallel group design</rdfs:label>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000287 xml:lang="en">PMID: 17408389-Purpose: Proliferative vitreoretinopathy (PVR) is the most important reason for blindness following retinal detachment. Presently, vitreous tamponades such as gas or silicone oil cannot contact the lower part of the retina. A heavier-than-water tamponade displaces the inflammatory and PVR-stimulating environment from the inferior area of the retina. The Heavy Silicone Oil versus Standard Silicone Oil Study (HSO Study) is designed to answer the question of whether a heavier-than-water tamponade improves the prognosis of eyes with PVR of the lower retina. Methods: The HSO Study is a multicentre, randomized, prospective controlled clinical trial comparing two endotamponades within a two-arm parallel group design. Patients with inferiorly and posteriorly located PVR are randomized to either heavy silicone oil or standard silicone oil as a tamponading agent. Three hundred and fifty consecutive patients are recruited per group. After intraoperative re-attachment, patients are randomized to either standard silicone oil (1000 cSt or 5000 cSt) or Densiron((R)) as a tamponading agent. The main endpoint criteria are complete retinal attachment at 12 months and change of visual acuity (VA) 12 months postoperatively compared with the preoperative VA. Secondary endpoints include complete retinal attachment before endotamponade removal, quality of life analysis and the number of retina affecting re-operation within 1 year of follow-up. Results: The design and early recruitment phase of the study are described. Conclusions: The results of this study will uncover whether or not heavy silicone oil improves the prognosis of eyes with PVR.</OBI_0000287>
+    <OBI_0000288 xml:lang="en">parallel group design</OBI_0000288>
+    <OBI_0000286 xml:lang="en">independent measure design</OBI_0000286>
+    <OBI_0000279 xml:lang="en">http://www.holah.karoo.net/experimentaldesigns.htm</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500023">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500021"/>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+    <OBI_0000291 xml:lang="en">a compliance rule is a rule which ensures a compliance process occurs</OBI_0000291>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <rdfs:label xml:lang="en">compliance rule</rdfs:label>
+    <OBI_0000279 xml:lang="en">PRS</OBI_0000279>
+    <OBI_0000288 xml:lang="en">compliance rule</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000349">
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000337"/>
+    </rdfs:subClassOf>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:label xml:lang="en">instruction trigger</rdfs:label>
+    <OBI_0000288 xml:lang="en">instruction trigger</OBI_0000288>
+    <OBI_0000291 xml:lang="en">is a plan to carry out a process or an event if the trigger condition is fulfilled</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000158">
+    <OBI_0000274 xml:lang="en">person:Jennifer Fostel</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >article-without-pmid-or-doi:CDISCglossary</OBI_0000279>
+    <OBI_0000291 xml:lang="en">an eSource document is a digital document consisting of a logical collection of Source data and other eSource documents that can be presented in an ordered way and capture the time of completion, change, and any signatures</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:label xml:lang="en">eSource document</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000195"/>
+    <OBI_0000288 xml:lang="en">eSource document</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000071">
+    <OBI_0000288 xml:lang="en">quantitative confidence value</OBI_0000288>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    </rdfs:subClassOf>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A quantitative confidence value is a information content entity which is used to indicate the degree of uncertainty about a measurement.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:label xml:lang="en">quantitative confidence value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000027">
+    <OBI_0000275 xml:lang="en">I prepended the 'report ' to make it clear that we mean parts of reports here. We may want a more generic version of 'figure', in which case this would become a defined class - figure and part_of some report</OBI_0000275>
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements</OBI_0000291>
+    <rdfs:label xml:lang="en">report figure</rdfs:label>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000001"/>
+    </rdfs:subClassOf>
+    <OBI_0000288 xml:lang="en">report figure</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000274 xml:lang="en">person:Allyson Lister</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500017">
+    <OBI_0000287 xml:lang="en">PMID: 17411393-Dye-specific bias effects, commonly observed in the two-color microarray platform, are normally corrected using the dye swap design. This design, however, is relatively expensive and labor-intensive. We propose a self-self hybridization design as an alternative to the dye swap design. In this design, the treated and control samples are labeled with Cy5 and Cy3 (or Cy3 and Cy5), respectively, without dye swap, along with a set of self-self hybridizations on the control sample. We compare this design with the dye swap design through investigation of mouse primary hepatocytes treated with three peroxisome proliferator-activated receptor-alpha (PPARalpha) agonists at three dose levels. Using Agilent's Whole Mouse Genome microarray, differentially expressed genes (DEG) were determined for both the self-self hybridization and dye swap designs. The DEG concordance between the two designs was over 80% across each dose treatment and chemical. Furthermore, 90% of DEG-associated biological pathways were in common between the designs, indicating that biological interpretations would be consistent. The reduced labor and expense for the self-self hybridization design make it an efficient substitute for the dye swap design. For example, in larger toxicogenomic studies, only about half the chips are required for the self-self hybridization design compared to that needed in the dye swap design.</OBI_0000287>
+    <OBI_0000288 xml:lang="en">dye swap design</OBI_0000288>
+    <OBI_0000275 xml:lang="en">MO</OBI_0000275>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra on behalf of MO</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000291 xml:lang="en">An experiment design type where the label orientations are reversed. exact synonym: flip dye, dye flip</OBI_0000291>
+    <OBI_0000279 xml:lang="en">MO_858</OBI_0000279>
+    <rdfs:label xml:lang="en">dye swap design</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000142">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000287 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</OBI_0000287>
+    <OBI_0000288 xml:lang="en">information content entity</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000046"/>
+    </rdfs:subClassOf>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000291 xml:lang="en">An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity.</OBI_0000291>
+    <OBI_0000275 xml:lang="en">information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).</OBI_0000275>
+    <rdfs:label xml:lang="en">information content entity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500018">
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra on behalf of MO</OBI_0000274>
+    <OBI_0000279 xml:lang="en">MO_885</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A replicate experimental design type is where a series of replicates are performed to evaluate reproducibility or as a pilot study to determine the appropriate number of replicates for a subsequent experiments.</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    </rdfs:subClassOf>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+    <rdfs:label xml:lang="en">replicate design</rdfs:label>
+    <OBI_0000288 xml:lang="en">replicate design</OBI_0000288>
+    <OBI_0000275 xml:lang="en">MO</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000235">
+    <OBI_0000275 xml:lang="en">see P-Value</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000071"/>
+    <OBI_0000291 xml:lang="en">Standard error is a quantitative confidence value which is the standard deviations of the sample in a frequency distribution, obtained by dividing the standard deviation by the total number of cases in the frequency distribution.</OBI_0000291>
+    <rdfs:label xml:lang="en">standard error</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000288 xml:lang="en">standard error</OBI_0000288>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500004">
+    <rdfs:label xml:lang="en">n-to-1 design</rdfs:label>
+    <OBI_0000288 xml:lang="en">n-to-1 design</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+    <OBI_0000291 xml:lang="en">N-of-1 design is a cross-over design in which the same patient is repeatedly randomised to receive either the experimental treatment or its control (Senn, 1993).</OBI_0000291>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 xml:lang="en">Adapted from  http://www.childrens-mercy.org/stats/definitions/crossover.htm and source:http://symptomresearch.nih.gov/chapter_6/sec1/csss1pg1.htm)</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500003"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000242">
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <rdfs:label xml:lang="en">software testing objective</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000208"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000288 xml:lang="en">software testing objective</OBI_0000288>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000291 xml:lang="en">Software_testing_objective is a hardware_optimization role describing a study designed to examine the effects of using different software or software parameters, e.g. data processing software.</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000118">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000288 xml:lang="en">gene list</OBI_0000288>
+    <OBI_0000275 xml:lang="en">kind of report. (alan) need to be careful to distinguish from output of a data transformation or calculation. A gene list is a report when it is published as such? Relates to question of whether report is a whole, or whether it can be a part of some other narrative object.</OBI_0000275>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A gene list is a report of the names or identifiers of genes that are the outcome of an analysis or have been put together for the purpose of an analysis.</OBI_0000291>
+    <OBI_0000287 xml:lang="en">Gene lists may arise from analysis to determine differentially expressed genes, may be collected from the literature for involvement in a particular process or pathway (e.g., inflammation), or may be the input for gene set enrichment analysis.</OBI_0000287>
+    <rdfs:label xml:lang="en">gene list</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000042"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000337">
+    <OBI_0000288 xml:lang="en">realizable information entity</OBI_0000288>
+    <OBI_0000291 xml:lang="en">is the specification of a process that can be concretized and realized by an actor</OBI_0000291>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <OBI_0000286 xml:lang="en">instruction</OBI_0000286>
+    <rdfs:label xml:lang="en">realizable information entity</rdfs:label>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000083">
+    <OBI_0000288 xml:lang="en">electronic case report tabulation</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000195"/>
+    <OBI_0000274 xml:lang="en">person:Jennifer Fostel</OBI_0000274>
+    <rdfs:label xml:lang="en">electronic case report tabulation</rdfs:label>
+    <OBI_0000291 xml:lang="en">An electronic case report tabulation is a digital document containing tabular data about multiple trial participants which is part of a clinical regulatory submission.  An eCRT has the property that it can be audited and compliant with requirements of 21 CFR Part 11  and has format suited to review by regulators.</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CDISC glossary</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000251">
+    <OBI_0000274 xml:lang="en">person:Allyson</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000042"/>
+    </rdfs:subClassOf>
+    <OBI_0000288 xml:lang="en">cluster</OBI_0000288>
+    <OBI_0000287 xml:lang="en">Cluster of the lymphocytes population.</OBI_0000287>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <rdfs:label xml:lang="en">cluster</rdfs:label>
+    <OBI_0000291 xml:lang="en">A data cluster is a data set which is a subset of data that are a similar to each other in some way.</OBI_0000291>
+    <OBI_0000275 xml:lang="en">generically_dependent_continuants</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000028">
+    <OBI_0000288 xml:lang="en">patent content</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000013"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">patent content</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A patent content is a report for the purpose of obtaining a license from a government conferring for a set period the sole right to make, use, or sell some process or invention</OBI_0000291>
+    <OBI_0000275 xml:lang="en">need to distinguish the patent submission (which I think the term refers to) and the patent itself, which is what confers the rights. (Alan) Renamed from patent to patent submission. [Isn't the submission like a recipe, i.e. a realizable information entity, in that it tells you how to do something? no] Cristian: what is the difference b/w some document that has been patented, and the same document that has not been patented? The (informational) content is the same. It is just that the former has been encapsulated within some social mechanism, hence it has acquired some role. Hence 'patent' is a role.</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000271">
+    <OBI_0000288 xml:lang="en">Causality assessment</OBI_0000288>
+    <rdfs:label xml:lang="en">Causality assessment</rdfs:label>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000150"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000291 xml:lang="en">Causality assessment is an assessment role in which the contribution of a study factor towards causing the observed outcome or data is estimated and reported</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500014">
+    <OBI_0000291 xml:lang="en">factorial design is_a study design which is used to evaluate two or more factors simultaneously. The treatments are combinations of levels of the factors. The advantages of factorial designs over one-factor-at-a-time experiments is that they are more efficient and they allow interactions to be detected. In statistics, a factorial design experiment is an experiment whose design consists of two or more factors, each with discrete possible values or levels, and whose experimental units take on all possible combinations of these levels across all such factors. Such an experiment allows studying the effect of each factor on the response variable, as well as the effects of interactions between factors on the response variable.</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000115"/>
+    </rdfs:subClassOf>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000287 xml:lang="en">PMID: 17582121-Our objective was to examine the effects of dietary cation-anion difference (DCAD) with different concentrations of dietary crude protein (CP) on performance and acid-base status in early lactation cows. Six lactating Holstein cows averaging 44 d in milk were used in a 6 x 6 Latin square design with a 2 x 3 factorial arrangement of treatments: DCAD of -3, 22, or 47 milliequivalents (Na + K - Cl - S)/100 g of dry matter (DM), and 16 or 19% CP on a DM basis. Linear increases with DCAD occurred in DM intake, milk fat percentage, 4% fat-corrected milk production, milk true protein, milk lactose, and milk solids-not-fat. Milk production itself was unaffected by DCAD. Jugular venous blood pH, base excess and HCO3(-) concentration, and urine pH increased, but jugular venous blood Cl- concentration, urine titratable acidity, and net acid excretion decreased linearly with increasing DCAD. An elevated ratio of coccygeal venous plasma essential AA to nonessential AA with increasing DCAD indicated that N metabolism in the rumen was affected, probably resulting in more microbial protein flowing to the small intestine. Cows fed 16% CP had lower urea N in milk than cows fed 19% CP; the same was true for urea N in coccygeal venous plasma and urine. Dry matter intake, milk production, milk composition, and acid-base status did not differ between the 16 and 19% CP treatments. It was concluded that DCAD affected DM intake and performance of dairy cows in early lactation. Feeding 16% dietary CP to cows in early lactation, compared with 19% CP, maintained lactation performance while reducing urea N excretion in milk and urine.</OBI_0000287>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <rdfs:label xml:lang="en">factorial design</rdfs:label>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000279 xml:lang="en">http://www.stats.gla.ac.uk/steps/glossary/anova.html#facdes And from wikipedia (01/03/2007): http://en.wikipedia.org/wiki/Factorial_experiment)</OBI_0000279>
+    <OBI_0000288 xml:lang="en">factorial design</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000101">
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OBI Data Transformation branch</OBI_0000279>
+    <OBI_0000288 xml:lang="en">measured expression level</OBI_0000288>
+    <OBI_0000287 xml:lang="en">Examples are quantified data from an expression microarray experiment, PCR measurements, etc.</OBI_0000287>
+    <OBI_0000291 xml:lang="en">A measured expression level is a datum that is the outcome of the quantification of an assay for the activity of a gene, or the number of RNA trancsripts.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000305"/>
+    <rdfs:label xml:lang="en">measured expression level</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000210">
+    <OBI_0000287 xml:lang="en">FCS file, ACS file, foo.fcs, foo.asc</OBI_0000287>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:Flow Cytometry community</OBI_0000279>
+    <OBI_0000288 xml:lang="en">analytical cytology data file</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000261"/>
+    </rdfs:subClassOf>
+    <OBI_0000291 xml:lang="en">A digital entity intended to capture data in analytical cytology domain.</OBI_0000291>
+    <rdfs:label xml:lang="en">analytical cytology data file</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000275 xml:lang="en">binary_digital_entity</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000120">
+    <OBI_0000275 xml:lang="en">CDISC definition: a meaningful interpretation of data or observations resulting from planned evaluations.</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000288 xml:lang="en">Finding</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000291 xml:lang="en">Finding is an assessment of data, observations or evaluations from a clinical study which can be used to form a diagnosis</OBI_0000291>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000150"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Finding</rdfs:label>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000310">
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000349"/>
+    <rdfs:label xml:lang="en">adverse event trigger</rdfs:label>
+    <OBI_0000291 xml:lang="en">revisit?</OBI_0000291>
+    <OBI_0000274 xml:lang="en">PERSON:Alan Ruttenberg</OBI_0000274>
+    <OBI_0000288 xml:lang="en">adverse event trigger</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000246">
+    <OBI_0000288 xml:lang="en">contour plot</OBI_0000288>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:label xml:lang="en">contour plot</rdfs:label>
+    <OBI_0000275 xml:lang="en">generically_dependent_continuants</OBI_0000275>
+    <OBI_0000291 xml:lang="en">A contour plot is a report graph which is a graphical representation of a 3-dimensional surface by plotting constant z slices, called contours, on a 2-dimensional format. That is, given a value for z, lines are drawn for connecting the (x,y) coordinates where that z value occurs.</OBI_0000291>
+    <OBI_0000287 xml:lang="en">Contour plot of SSC-H, FSC-H, and FL1-H.</OBI_0000287>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000240"/>
+    <OBI_0000274 xml:lang="en">person:Allyson</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:Flow Cytometry community</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000115">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:label xml:lang="en">intervention design</rdfs:label>
+    <OBI_0000291 xml:lang="en">an intervention design is a study design in which treatments (perturbations or intervention) defined as a combination of values taken by independant variable manipulated by the experimentalists are applied to the recruited subjects assigned (possibly by applying specific methods) to treatment groups. The specificity of intervention design is the fact that independent variables are being manipulated and a response of the biological system is evaluated via response variables as monitored by possibly a series of assays.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">intervention design</OBI_0000288>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">Philppe Rocca-Serra</OBI_0000274>
+    <OBI_0000287 xml:lang="en">PMID: 18208636.Br J Nutr. 2008 Jan 22;:1-11.Effect of vitamin D supplementation on bone and vitamin D status among Pakistani immigrants in Denmark: a randomised double-blinded placebo-controlled intervention study.</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000175">
+    <OBI_0000288 xml:lang="en">p-value</OBI_0000288>
+    <OBI_0000291 xml:lang="en">A p-value is a quantitative confidence value which represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone.</OBI_0000291>
+    <OBI_0000275 xml:lang="en">ask data transformation. Are they thinking about this too? What is this, in reality. Quality of the measurement? Quality of a population of measurements? Issue: How to avoid having numbers being an easy way to miss connections with reality</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000071"/>
+    <rdfs:label xml:lang="en">p-value</rdfs:label>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500012">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000291 xml:lang="en">Greco-Latin square design is a study design which relates to Latin square design</OBI_0000291>
+    <OBI_0000288 xml:lang="en">graeco latin square design</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500007"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000275 xml:lang="en">only 2 articles in pubmed -&gt;probably irrelevant</OBI_0000275>
+    <rdfs:label xml:lang="en">graeco latin square design</rdfs:label>
+    <OBI_0000287 xml:lang="en">PMID: 6846242-Beaton et al (Am J Clin Nutr 1979;32:2546-59) reported on the partitioning of variance in 1-day dietary data for the intake of energy, protein, total carbohydrate, total fat, classes of fatty acids, cholesterol, and alcohol. Using the same food intake data and the expanded National Heart, Lung and Blood Institute food composition data base, these analyses of sources of variance have been expanded to include classes of carbohydrate, vitamin A, vitamin C, thiamin, riboflavin, niacin, calcium, iron, total ash, caffeine, and crude fiber. The analyses relate to observed intakes (replicated six times) of 30 adult males and 30 adult females obtained under a paired Graeco-Latin square design with sequence of interview, interviewer, and day of the week as determinants. Neither sequence nor interviewer made consistent contribution to variance. In females, day of the week had a significant effect for several nutrients. The major partitioning of variance was between interindividual variation (between subjects) and intraindividual variation (within subjects) which included both true day-to-day variation in intake and methodological variation. For all except caffeine, the intraindividual variability of 1-day data was larger than the interindividual variability. For vitamin A, almost all of the variance was associated with day-to-day variability. One day data provide a very inadequate estimate of usual intake of individuals. In the design of nutrition studies it is critical that the intended use of dietary data be a major consideration in deciding on methodology. There is no ideal dietary method. There may be preferred methods for particular purposes.</OBI_0000287>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000279 xml:lang="en">Adapted from: http://www.itl.nist.gov/div898/handbook/pri/section3/pri3321.htm and</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000270">
+    <OBI_0000288 xml:lang="en">algorithm</OBI_0000288>
+    <OBI_0000287 xml:lang="en">PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies.</OBI_0000287>
+    <OBI_0000279 xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</OBI_0000279>
+    <OBI_0000291 xml:lang="en">an algorithm is a plan which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</OBI_0000291>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <rdfs:label xml:lang="en">algorithm</rdfs:label>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000337"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000123">
+    <rdfs:label xml:lang="en">dot plot</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Allyson</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000275 xml:lang="en">generically_dependent_continuants</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000287 xml:lang="en">Dot plot of SSC-H and FSC-H.</OBI_0000287>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000288 xml:lang="en">dot plot</OBI_0000288>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000240"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0200167">
+    <OBI_0000291 xml:lang="en">A normalization objective is a data transformation objective where the aim is to remove
+systematic sources of variation to put the data on equal footing in order
+to create a common base for comparisons.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">normalization objective</OBI_0000288>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000287 xml:lang="en">Quantile transformation which has normalization objective can be used for expression microarray assay normalization and it is referred to as "quantile normalization", according to the procedure described e.g. in PMID 12538238.</OBI_0000287>
+    <OBI_0000274 xml:lang="en">James Malone</OBI_0000274>
+    <OBI_0000274 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Helen Parkinson</OBI_0000274>
+    <OBI_0000274 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Elisabetta Manduchi</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Elisabetta Manduchi</OBI_0000279>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Helen Parkinson</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0200166"/>
+    </rdfs:subClassOf>
+    <OBI_0000279 xml:lang="en">PERSON: James Malone</OBI_0000279>
+    <rdfs:label xml:lang="en">normalization objective</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500026">
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500021"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000288 xml:lang="en">eligibility rule</OBI_0000288>
+    <OBI_0000291 xml:lang="en">an eligibility rule (criterion) is_a *rule* which defines the positive and negative criteria decide an entity to enter a study and that will define the population of the study</OBI_0000291>
+    <OBI_0000287 xml:lang="en">PMID: 17579629 -Eligibility criteria included: untreated ED-SCLC; age &gt;/=70 and performance status 0-2, or age &lt;70 and PS 3.</OBI_0000287>
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <OBI_0000279 xml:lang="en">Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group</OBI_0000279>
+    <rdfs:label xml:lang="en">eligibility rule</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000010">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">fluorescent reporter intensity</OBI_0000288>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000291 xml:lang="en">The fluorescent reproter intensity is a datum that represents the output of a scanner measuring the intensity value for each fluorescent reporter.</OBI_0000291>
+    <rdfs:label xml:lang="en">fluorescent reporter intensity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000305"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000275 xml:lang="en">From the DT branch: This term and definition were originally submitted by the community to our branch, but we thought they best fit DENRIE. However we see several issues with this. First of all the name 'probe' might not be used in OBI. Instead we have a 'reporter' role. Also, albeit the term 'probe intensity' is often used in communities such as the microarray one, the name 'probe' is ambiguous (some use it to refer to what's on the array, some use it to refer to what's hybed to the array). Furthermore, this concept could possibly be encompassed by combining different OBI terms, such as the roles of analyte, detector and reporter (you need something hybed to a probe on the array to get an intensity) and maybe a more general term for 'measuring intensities'. We need to find the right balance between what is consistent with OBI and combinations of its terms and what is user-friendly. Finally, note that 'intensity' is already in the OBI .owl file and is also in PATO. Why didn't OBI import it from PATO? This might be a problem.</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000005">
+    <rdfs:label xml:lang="en">Conclusion</rdfs:label>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000013"/>
+    </rdfs:subClassOf>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A conclusion is a narrative object which can be published in a paper summerizing and interpreting a protocol application.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000288 xml:lang="en">Conclusion</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500009">
+    <OBI_0000275 xml:lang="en">MO</OBI_0000275>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra on behalf of MO</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A loop experiment design is where labeled extracts are compared in consecutive pairs. synonym: circular design</OBI_0000291>
+    <OBI_0000279 xml:lang="en">MO_912</OBI_0000279>
+    <OBI_0000287 xml:lang="en">PMID: 12933549</OBI_0000287>
+    <rdfs:label xml:lang="en">loop design</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">loop design</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000159">
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000288 xml:lang="en">journal article content</OBI_0000288>
+    <rdfs:label xml:lang="en">journal article content</rdfs:label>
+    <OBI_0000291 xml:lang="en">Journal article content is a narrative object that is the information content encoded in a article published in a serious, scholarly publication, most often peer-reviewed.</OBI_0000291>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000099"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000287 xml:lang="en">Examples of encodings of journal article content are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number.</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000039">
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    <OBI_0000287 xml:lang="en">The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script.</OBI_0000287>
+    <OBI_0000291 xml:lang="en">A source code module is an information content entity that specifies, using a programming language, some algorithm.</OBI_0000291>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+    <rdfs:label xml:lang="en">source code module</rdfs:label>
+    <OBI_0000288 xml:lang="en">source code module</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0300311">
+    <rdfs:label xml:lang="en">observation design</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000287 xml:lang="en">PMID: 12387964.Lancet. 2002 Oct 12;360(9340):1144-9.Deficiency of antibacterial peptides in patients with morbus Kostmann: an observation study.</OBI_0000287>
+    <OBI_0000288 xml:lang="en">observation design</OBI_0000288>
+    <OBI_0000291 xml:lang="en">observation design is a study design in which subjects are monitored in the absence of any active intervention by experimentalists.</OBI_0000291>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000172">
+    <OBI_0000291 xml:lang="en">A parameter threshold is a datum measuring the minimal signal that must be detected to generate an electrical event, as comparewd to the maximal detected signal in a flow cytometer insturment. The datum has a qualitative role</OBI_0000291>
+    <OBI_0000288 xml:lang="en">parameter threshold</OBI_0000288>
+    <rdfs:label xml:lang="en">parameter threshold</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Kevin Clancy</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</OBI_0000279>
+    <OBI_0000287 xml:lang="en">0.01, 0.03</OBI_0000287>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000305"/>
+    <OBI_0000275 xml:lang="en">quantity</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000269">
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</OBI_0000279>
+    <OBI_0000288 xml:lang="en">number of lost events computer</OBI_0000288>
+    <OBI_0000274 xml:lang="en">person:Kevin Clancy</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A number of lost events is a datum recording the the number of measurement events lost due to overloading of the analysis chip in a flow cytometer insturment. The datum has a qualitative role</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000275 xml:lang="en">quantity</OBI_0000275>
+    <rdfs:label xml:lang="en">number of lost events computer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000305"/>
+    <OBI_0000287 xml:lang="en">0, 125, 787 events lost due to computer busy.</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0001040">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000288 xml:lang="en">partitioning objective</OBI_0000288>
+    <rdfs:label xml:lang="en">partitioning objective</rdfs:label>
+    <OBI_0000291 xml:lang="en">A partitioning objective is a data transformation objective where the aim is to  generate a collection of disjoint non-empty subsets whose union equals a non-empty input set.</OBI_0000291>
+    <OBI_0000274 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Elisabetta Manduchi</OBI_0000274>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0200166"/>
+    </rdfs:subClassOf>
+    <OBI_0000274 xml:lang="en">James Malone</OBI_0000274>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Elisabetta Manduchi</OBI_0000279>
+    <OBI_0000287 xml:lang="en">A k-means clustering which has partitioning objective is a data transformation in which the input data is partitioned into k output sets.</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500007">
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000115"/>
+    <OBI_0000291 xml:lang="en">A randomized complete block design is_a study design which assigns randomly treatments to block. The number of units per block equals the number of treatment so each block receives each treatment exactly once (hence the qualifier 'complete'). The design was originally devised from field trials used in agronomy and agriculture. The analysis assumes that there is no interaction between block and treatment. The method was then used in other settings So The randomised complete block design is a design in which the subjects are matched according to a variable which the experimenter wishes to control. The subjects are put into groups (blocks) of the same size as the number of treatments. The members of each block are then randomly assigned to different treatment groups.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <rdfs:label xml:lang="en">randomized complete block design</rdfs:label>
+    <OBI_0000279 xml:lang="en">http://www.tufts.edu/~gdallal/ranblock.htm</OBI_0000279>
+    <OBI_0000287 xml:lang="en">http://www.stats.gla.ac.uk/steps/glossary/anova.html,(A researcher is carrying out a study of the effectiveness of four different skin creams for the treatment of a certain skin disease. He has eighty subjects and plans to divide them into 4 treatment groups of twenty subjects each. Using a randomised blocks&amp; design, the subjects are assessed and put in blocks of four according to how severe their skin condition is; the four most severe cases are the first block, the next four most severe cases are the second block, and so on to the twentieth block. The four &amp;members of each block are then randomly assigned, one to each of the four treatment groups. http://www.stats.gla.ac.uk/steps/glossary/anova.html#rbd))</OBI_0000287>
+    <OBI_0000288 xml:lang="en">randomized complete block design</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500013">
+    <OBI_0000275 xml:lang="en">no example found in pubmed-&gt;not in use in the community</OBI_0000275>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 xml:lang="en">Adapted from: http://www.itl.nist.gov/div898/handbook/pri/section3/pri3321.htm and</OBI_0000279>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <rdfs:label xml:lang="en">hyper graeco latin square design</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500007"/>
+    <OBI_0000288 xml:lang="en">hyper graeco latin square design</OBI_0000288>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+    <OBI_0000291 xml:lang="en">PRS to do</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500000">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000286 xml:lang="en">experimental design</OBI_0000286>
+    <OBI_0000287 xml:lang="en">TODO:</OBI_0000287>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000344"/>
+    <OBI_0000275 xml:lang="en">From Kevin Clancy not yet discussed</OBI_0000275>
+    <OBI_0000279 xml:lang="en">KPC</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A formal description of the constraints on the possible configurations of an experiment which is subject to given conditions. A design is sometimes called an experimental design. source:http://mathworld.wolfram.com/Design.html\nEditor Note: Philippe Rocca-Serra added this; Description of how an experiment is performed. Experiments are designed by applying applications to biomaterials in an ordered fashion. Applications define protocols which are used to moving biomaterial through a series of manipulations to generate one or more desired products. methods describe the particulars of the manipulation, reagents and associated materials used in the manipulation of the biomaterial.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">study design</OBI_0000288>
+    <rdfs:label xml:lang="en">study design</rdfs:label>
+    <OBI_0000274 xml:lang="en">KPC</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0200166">
+    <OBI_0000274 xml:lang="en">James Malone</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000288 xml:lang="en">data transformation objective</OBI_0000288>
+    <OBI_0000279 xml:lang="en">PERSON: James Malone</OBI_0000279>
+    <OBI_0000287 xml:lang="en">normalize objective</OBI_0000287>
+    <OBI_0000291 xml:lang="en">A data transformation objective is an objective specification that a data transformation may have towards which the realization of that transformation is directed.</OBI_0000291>
+    <rdfs:label xml:lang="en">data transformation objective</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000217"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500028">
+    <rdfs:label xml:lang="en">exclusion rule</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500026"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000287 xml:lang="en">PMID: 17600285-Exclusion criteria included the use of any topical ophthalmic or topical oral medication and/or history of ocular or oral surgery within the past six months.</OBI_0000287>
+    <OBI_0000288 xml:lang="en">exclusion rule</OBI_0000288>
+    <OBI_0000291 xml:lang="en">an exclusion rule (criterion) is_a *eligibility rule*  prospective subjects should not meet to be eligible for participation in a study</OBI_0000291>
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000279 xml:lang="en">Adapted from Clinical Research Glossary Version 4.0 CDICS glossary group</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000179">
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:Flow Cytometry community</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</OBI_0000291>
+    <rdfs:label xml:lang="en">density plot</rdfs:label>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000275 xml:lang="en">generically_dependent_continuants</OBI_0000275>
+    <OBI_0000287 xml:lang="en">Density plot of SSC-H and FSC-H.</OBI_0000287>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000240"/>
+    <OBI_0000274 xml:lang="en">person:Allyson</OBI_0000274>
+    <OBI_0000288 xml:lang="en">density plot</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500020">
+    <OBI_0000291 xml:lang="en">Groups of assays that are related as part of a time series.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    <OBI_0000288 xml:lang="en">time series design</OBI_0000288>
+    <OBI_0000279 xml:lang="en">MO_887</OBI_0000279>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra on behalf of MO</OBI_0000274>
+    <OBI_0000287 xml:lang="en">PMID: 14744830-Microarrays are powerful tools for surveying the expression levels of many thousands of genes simultaneously. They belong to the new genomics technologies which have important applications in the biological, agricultural and pharmaceutical sciences. There are myriad sources of uncertainty in microarray experiments, and rigorous experimental design is essential for fully realizing the potential of these valuable resources. Two questions frequently asked by biologists on the brink of conducting cDNA or two-colour, spotted microarray experiments are 'Which mRNA samples should be competitively hybridized together on the same slide?' and 'How many times should each slide be replicated?' Early experience has shown that whilst the field of classical experimental design has much to offer this emerging multi-disciplinary area, new approaches which accommodate features specific to the microarray context are needed. In this paper, we propose optimal designs for factorial and time course experiments, which are special designs arising quite frequently in microarray experimentation. Our criterion for optimality is statistical efficiency based on a new notion of admissible designs; our approach enables efficient designs to be selected subject to the information available on the effects of most interest to biologists, the number of arrays available for the experiment, and other resource or practical constraints, including limitations on the amount of mRNA probe. We show that our designs are superior to both the popular reference designs, which are highly inefficient, and to designs incorporating all possible direct pairwise comparisons. Moreover, our proposed designs represent a substantial practical improvement over classical experimental designs which work in terms of standard interactions and main effects. The latter do not provide a basis for meaningful inference on the effects of most interest to biologists, nor make the most efficient use of valuable and limited resources.</OBI_0000287>
+    <OBI_0000275 xml:lang="en">MO</OBI_0000275>
+    <rdfs:label xml:lang="en">time series design</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000021">
+    <rdfs:label xml:lang="en">list-mode data file</rdfs:label>
+    <OBI_0000287 xml:lang="en">An example of a list-mode data file is a file following list-mode Flow Cytometry Standard (FCS) format. Since FCS files can be in histogram mode or  list-mode we have to specify which data format specifically. List-mode format in the overwhelming (even universal) option used.</OBI_0000287>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000275 xml:lang="en">One example of usage is in the context of flow cytometry, however is not restricted to this community and is more widely used, e.g. by imaging people.</OBI_0000275>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:Flow Cytometry community</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A list-mode data file is a digital entity where events are stored sequentially, parameter by parameter.</OBI_0000291>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000288 xml:lang="en">list-mode data file</OBI_0000288>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000261"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000331">
+    <rdfs:label xml:lang="en">time trigger</rdfs:label>
+    <OBI_0000288 xml:lang="en">time trigger</OBI_0000288>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000349"/>
+    <OBI_0000291 xml:lang="en">revisit?</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500024">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">standard compliance rule</OBI_0000288>
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <rdfs:label xml:lang="en">standard compliance rule</rdfs:label>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500023"/>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000291 xml:lang="en">a  standard compliance rule is a compliance rule which defines conformity to a representation standard</OBI_0000291>
+    <OBI_0000279 xml:lang="en">PRS</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000030">
+    <rdfs:label xml:lang="en">image</rdfs:label>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    <OBI_0000291 xml:lang="en">An image is an information content entity which provides a visual representation of for the result of a measurement.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">image</OBI_0000288>
+    <OBI_0000274 xml:lang="en">person:Allyson</OBI_0000274>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000046">
+    <OBI_0000287 xml:lang="en">An essay on the history of the euro. Contrast: A recipe to bake a bread</OBI_0000287>
+    <OBI_0000291 xml:lang="en">A non-realizable information entity is a generically dependent continuant which conveys meaning that can be communicated but whose meaning does necessarily imply that some process might follow from that meaning.</OBI_0000291>
+    <rdfs:label xml:lang="en">non-realizable information entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+    <OBI_0000275 xml:lang="en">top level</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000277 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IAO</OBI_0000277>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000150">
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <rdfs:label xml:lang="en">Assessment</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000291 xml:lang="en">Assessment is a conclusion derived from the processes used to learn about a patient's condition.  In part from NCI</OBI_0000291>
+    <OBI_0000288 xml:lang="en">Assessment</OBI_0000288>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000005"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000132">
+    <OBI_0000288 xml:lang="en">text based digital entity</OBI_0000288>
+    <OBI_0000275 xml:lang="en">digital_entity</OBI_0000275>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000287 xml:lang="en">XML file, C++ source code file</OBI_0000287>
+    <rdfs:label xml:lang="en">text based digital entity</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A text based digital entity is a digital entity that is encoded so that it only contains text characters.</OBI_0000291>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000195"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500016">
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000279 xml:lang="en">http://www.itl.nist.gov/div898/handbook/pri/section3/pri334.htm From ASQC (1983) Glossary &amp; Tables for Statistical Quality Control</OBI_0000279>
+    <OBI_0000287 xml:lang="en">example to be added</OBI_0000287>
+    <rdfs:label xml:lang="en">fractional factorial design</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500014"/>
+    <OBI_0000288 xml:lang="en">fractional factorial design</OBI_0000288>
+    <OBI_0000291 xml:lang="en">A fractional factorial design is_a study design in which only an adequately chosen fraction of the treatment combinations required for the complete factorial experiment is selected to be run</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000218">
+    <OBI_0000275 xml:lang="en">There's probably a role that it plays. Would this be considered an outcome? (alan)</OBI_0000275>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <rdfs:label xml:lang="en">investigation results report</rdfs:label>
+    <OBI_0000291 xml:lang="en">An investigation report is a report on the results of an investigation.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">investigation results report</OBI_0000288>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000099"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000199">
+    <OBI_0000275 xml:lang="en">Do we care? Jennifer: Yes, there was a particular version of R that had a bug and it was fixed later. That would imply that we mean specific version of an interpreter. So an instance of this would be a particular version of the interpreter</OBI_0000275>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000270"/>
+    <OBI_0000287 xml:lang="en">R program, Perl interpreter, Java virtual machine</OBI_0000287>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A  software interpreter is a generically dependent realizable entity that takes, as input, some digital entity, and takes action driven by the information content of that digital entity</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000288 xml:lang="en">software interpreter</OBI_0000288>
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:label xml:lang="en">software interpreter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000042">
+    <OBI_0000291 xml:lang="en">A data set is an information content entity that is an aggregate of other information_content_entities that have something in common and are considered to form a unit.</OBI_0000291>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000274 xml:lang="en">person:Allyson</OBI_0000274>
+    <rdfs:label xml:lang="en">data set</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">data set</OBI_0000288>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000013">
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    <OBI_0000275 xml:lang="en">agree - DENRIE. Issue(alan) do we only mean text? What about a story told by mime. Does music count? (no) what about an oral report. Regarding definition, saying it is a set of propositions means we loose the idea that wording matters. Maybe adjust saying a narrative object has some relationshop to a set of propositions</OBI_0000275>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <rdfs:label xml:lang="en">narrative object</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">narrative object</OBI_0000288>
+    <OBI_0000291 xml:lang="en">A narrative object is an information content entity that is a set of propositions.</OBI_0000291>
+    <OBI_0000287 xml:lang="en">Examples of narrative objects are reports, journal  articles, and patents submission.</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000167">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000274 xml:lang="en">person:Jennifer Fostel</OBI_0000274>
+    <OBI_0000288 xml:lang="en">electronic case report form</OBI_0000288>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000195"/>
+    <rdfs:label xml:lang="en">electronic case report form</rdfs:label>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CDISC glossary</OBI_0000279>
+    <OBI_0000291 xml:lang="en">An electronic case report form is a digital document used to record all of the protocol required information to be reported for each trial subject. An eCRF has the property that it can be audited and compliant with requirements of 21 CFR Part 11.</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000266">
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000142"/>
+    <OBI_0000288 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >curation status</OBI_0000288>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000323"/>
+          <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000328"/>
+          <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000366">
+            <OBI_0000291 xml:lang="en">This isn't a class that OBI will keep - it's a placeholder for edits that are underway. The class name should start with an underscore </OBI_0000291>
+            <rdfs:label xml:lang="en">placeholder</rdfs:label>
+          </OBI_0000266>
+          <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000318">
+            <OBI_0000291 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next OBI release. Any class lacking "ready_for_release" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed "ready_for_release" will also derived from a chain of ancestor classes that are also "ready_for_release."</OBI_0000291>
+            <rdfs:label xml:lang="en">ready for release</rdfs:label>
+          </OBI_0000266>
+          <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000320"/>
+          <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000319"/>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <OBI_0000291 xml:lang="en">The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</OBI_0000291>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</OBI_0000279>
+    <rdfs:label xml:lang="en">curation status</rdfs:label>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000318"/>
+    <OBI_0000274 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Bill Bug</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000054">
+    <OBI_0000288 xml:lang="en">ratio of collected to emitted light</OBI_0000288>
+    <OBI_0000274 xml:lang="en">person:Kevin Clancy</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</OBI_0000279>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000305"/>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000275 xml:lang="en">quantity</OBI_0000275>
+    <OBI_0000287 xml:lang="en">10%</OBI_0000287>
+    <rdfs:label xml:lang="en">ratio of collected to emitted light</rdfs:label>
+    <OBI_0000291 xml:lang="en">A ratio of collected to emitted light is a datum measuring the amount of light collected s compared to the total amount of emitted light in the detector component of a flow cytometer instrument. The datum has a qualitative role</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000232">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <rdfs:label xml:lang="en">hardware optimization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000134"/>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000288 xml:lang="en">hardware optimization</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000291 xml:lang="en">Hardware_optimization is a hardware_testing_objective describing a study designed to identify the best hardware.</OBI_0000291>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000272">
+    <OBI_0000291 xml:lang="en">protocol is a plan which outlines a set of instructions to achieve a specific objective relevant to the biomedical domain and which can be realized as a protocol application.</OBI_0000291>
+    <OBI_0000288 xml:lang="en">protocol</OBI_0000288>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <OBI_0000279 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</OBI_0000279>
+    <OBI_0000287 xml:lang="en">PMID: 18388943.Nat Protoc. 2008;3(4):612-8.Protocol for the induction of arthritis in C57BL/6 mice.</OBI_0000287>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000344"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:label xml:lang="en">protocol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500015">
+    <OBI_0000291 xml:lang="en">2x2 factorial design is factorial design which has 2 experimental factors (aka independent variables) and 2 factor levels per experimental factors</OBI_0000291>
+    <rdfs:label xml:lang="en">2x2 factorial design</rdfs:label>
+    <OBI_0000287 xml:lang="en">PMID: 17561240-The present experiment evaluates the effects of intermittent exposure to a social stimulus on ethanol and water drinking in rats. Four groups of rats were arranged in a 2x2 factorial design with 2 levels of Social procedure (Intermittent Social vs Continuous Social) and 2 levels of sipper Liquid (Ethanol vs Water). Intermittent Social groups received 35 trials per session. Each trial consisted of the insertion of the sipper tube for 10 s followed by lifting of the guillotine door for 15 s. The guillotine door separated the experimental rat from the conspecific rat in the wire mesh cage during the 60 s inter-trial interval. The Continuous Social groups received similar procedures except that the guillotine door was raised during the entire duration of the session. For the Ethanol groups, the concentrations of ethanol in the sipper [3, 4, 6, 8, 10, 12, 14, and 16% (vol/vol)] increased across sessions, while the Water groups received 0% ethanol (water) in the sipper throughout the experiment. Both Social procedures induced more intake of ethanol than water. The Intermittent Social procedure induced more ethanol intake at the two highest ethanol concentration blocks (10-12% and 14-16%) than the Continuous Social procedure, but this effect was not observed with water. Effects of social stimulation on ethanol drinking are discussed.</OBI_0000287>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500014"/>
+    <OBI_0000288 xml:lang="en">2x2 factorial design</OBI_0000288>
+    <OBI_0000279 xml:lang="en">PMID: 17561240</OBI_0000279>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000328"/>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000119">
+    <OBI_0000275 xml:lang="en">quantity</OBI_0000275>
+    <rdfs:label xml:lang="en">number of particles in subset</rdfs:label>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</OBI_0000279>
+    <OBI_0000274 xml:lang="en">person:Kevin Clancy</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000305"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    <OBI_0000291 xml:lang="en">A number of particles in subset is a datum measuring the the number of subjects in a defined subset in a flow cytometer instrument. The datum has a qualitative role</OBI_0000291>
+    <OBI_0000288 xml:lang="en">number of particles in subset</OBI_0000288>
+    <OBI_0000287 xml:lang="en">500, 200, 0</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000078">
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >article-without-pmid-or-doi:CDISCglossary</OBI_0000279>
+    <OBI_0000291 xml:lang="en">An eMedical record is a digital document derived from a computer system used primarily for patient care in a clinical setting.  Not required to be compliant with requirements of 21 CFR Part 11.</OBI_0000291>
+    <rdfs:label xml:lang="en">eMedical record</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000195"/>
+    <OBI_0000274 xml:lang="en">person:Jennifer Fostel</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">eMedical record</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000268">
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+    <OBI_0000291 xml:lang="en">Organism_feature_identification_objective is a biological_feature_identification_objective role describing a study designed to examine or characterize a biological feature monitored at the level of the organism, e.g. height, weight, stage of development, stage of life cycle.</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000288 xml:lang="en">organism feature identification objective</OBI_0000288>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000015"/>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <rdfs:label xml:lang="en">organism feature identification objective</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000208">
+    <OBI_0000287 xml:lang="en">example_of_usage to be added</OBI_0000287>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000320"/>
+    <OBI_0000291 xml:lang="en">Methodology_testing_objective is an objective role carried out by a proposition defining the aim of the study is to examine the effect of using different methodologies.</OBI_0000291>
+    <rdfs:label xml:lang="en">methodology testing objective</rdfs:label>
+    <OBI_0000279 xml:lang="en">source pending</OBI_0000279>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000217"/>
+    <OBI_0000288 xml:lang="en">methodology testing objective</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Jennifer Fostel</OBI_0000274>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500022">
+    <OBI_0000287 xml:lang="en">PMID: 17591081-BACKGROUND/AIMS: To investigate the viral kinetics of Chinese CHC patients received pegylated interferon plus ribavirin and examine the impact of HCV genotypes and severity of liver disease. METHODOLOGY: 65 treatment-naove CHC patients who finished a 24-week therapy with peginterferon (alpha-2b (1.5 mcg/kg/week) plus ribavirin (1000-1200 mg /day) and 24 weeks of follow-up were enrolled. Hepatic fibrosis was graded by the METAVIR scoring system. Serum quantitative HCV RNA was determined by Versant HCV RNA 3.0 assay (Bayer Inc.). RESULTS: Genotype non-1 patients responded quickly and a higher percentage of them achieved undetectable HCV RNA (&lt; 615 IU/mL) at week 4 compared with genotype 1 patients (93% vs. 69%, p = 0.018). Degree of hepatic fibrosis significantly affected end-of-treatment and sustained response (SVR). For patients who did not achieve early virological response (EVR), the negative predictive value for SVR was 100%. In genotype 1 patients, undetectable HCV RNA by week 4 was a good marker to predict treatment response, with a positive predictive value of 84% and a negative predictive value of 82%. CONCLUSIONS: EVR can be applied to Chinese patients as an early stopping rule. A 24-week duration of pegylated IFN/ribavirin might be adequate for genotype 1 patients who rapidly responded to therapy.</OBI_0000287>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000291 xml:lang="en">a stopping rule (criterion) is_a *rule* which causes a *stopping process* to happen</OBI_0000291>
+    <OBI_0000274 xml:lang="en">PRS</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500021"/>
+    <OBI_0000279 xml:lang="en">PRS</OBI_0000279>
+    <rdfs:label xml:lang="en">stopping rule</rdfs:label>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000288 xml:lang="en">stopping rule</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500019">
+    <rdfs:label xml:lang="en">self vs self design</rdfs:label>
+    <OBI_0000275 xml:lang="en">MO</OBI_0000275>
+    <OBI_0000288 xml:lang="en">self vs self design</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra on behalf of MO</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500000"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000328"/>
+    <OBI_0000291 xml:lang="en">A self vs. self experiment design investigates variance and error estimates in the experimental system, and is where the same extract is compared.</OBI_0000291>
+    <OBI_0000279 xml:lang="en">MO_490</OBI_0000279>
+    <OBI_0000287 xml:lang="en">PMID: 17411393-Dye-specific bias effects, commonly observed in the two-color microarray platform, are normally corrected using the dye swap design. This design, however, is relatively expensive and labor-intensive. We propose a self-self hybridization design as an alternative to the dye swap design. In this design, the treated and control samples are labeled with Cy5 and Cy3 (or Cy3 and Cy5), respectively, without dye swap, along with a set of self-self hybridizations on the control sample. We compare this design with the dye swap design through investigation of mouse primary hepatocytes treated with three peroxisome proliferator-activated receptor-alpha (PPARalpha) agonists at three dose levels. Using Agilent's Whole Mouse Genome microarray, differentially expressed genes (DEG) were determined for both the self-self hybridization and dye swap designs. The DEG concordance between the two designs was over 80% across each dose treatment and chemical. Furthermore, 90% of DEG-associated biological pathways were in common between the designs, indicating that biological interpretations would be consistent. The reduced labor and expense for the self-self hybridization design make it an efficient substitute for the dye swap design. For example, in larger toxicogenomic studies, only about half the chips are required for the self-self hybridization design compared to that needed in the dye swap design.</OBI_0000287>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000001">
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000274 xml:lang="en">person:Allyson Lister</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements.</OBI_0000291>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000013"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000288 xml:lang="en">report display element</OBI_0000288>
+    <rdfs:label xml:lang="en">report display element</rdfs:label>
+    <OBI_0000275 xml:lang="en">There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000058">
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000288 xml:lang="en">programming language</OBI_0000288>
+    <OBI_0000287 xml:lang="en">R, Perl, Java</OBI_0000287>
+    <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
+    <OBI_0000291 xml:lang="en">A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.</OBI_0000291>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000344"/>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <rdfs:label xml:lang="en">programming language</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500001">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000115"/>
+    <OBI_0000288 xml:lang="en">clinical study design</OBI_0000288>
+    <OBI_0000291 xml:lang="en">Plan for the precise procedure to be followed in a clinical trial, including planned and actual timing of events, choice of control group, method of allocating treatments, blinding methods; assigns a subject to pass through one or more epochs in the course of a trial. Specific design elements, e.g., crossover, parallel; dose-escalation [Modified from Pocock, Clinical Trials: A Practical Approach]</OBI_0000291>
+    <OBI_0000287 xml:lang="en">PMID: 17655677.J Cardiovasc Electrophysiol. 2007 Aug;18(9):965-71.Biventricular versus right ventricular pacing in patients with AV block (BLOCK HF): clinical study design and rationale.</OBI_0000287>
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <rdfs:label xml:lang="en">clinical study design</rdfs:label>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000275 xml:lang="en">The definition needs to be extended to other things than simply patients</OBI_0000275>
+    <OBI_0000279 xml:lang="en">Clinical Research Glossary Version 4.0 CDICS glossary group</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000187">
+    <OBI_0000274 xml:lang="en">PlanAndPlannedProcess Branch</OBI_0000274>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000337"/>
+    <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
+    <rdfs:label xml:lang="en">data format specification</rdfs:label>
+    <OBI_0000291 xml:lang="en">A data format specification is a plan which organizes information. Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</OBI_0000291>
+    <OBI_0000288 xml:lang="en">data format specification</OBI_0000288>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500008">
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500014"/>
+    <rdfs:label xml:lang="en">balanced incomplete block design</rdfs:label>
+    <OBI_0000287 xml:lang="en">PMID: 7622388.Health Educ Q. 1995 May;22(2):201-10.Balanced incomplete block design: description, case study, and implications for practice.</OBI_0000287>
+    <OBI_0000288 xml:lang="en">balanced incomplete block design</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000291 xml:lang="en">balanced incomplete block design is a kind of factorial design where all treatment pairs occur together within a block an equal number ?? times. ??ii' is the number of times treatment i occurs with i'</OBI_0000291>
+    <OBI_0000279 xml:lang="en">http://en.wikipedia.org/wiki/Block_design and http://www.stat.psu.edu/~jglenn/stat503/05_factorial/02_factorial_IBD.html</OBI_0000279>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500011">
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">latin square design</OBI_0000288>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+    <OBI_0000279 xml:lang="en">Adapted from: http://www.itl.nist.gov/div898/handbook/pri/section3/pri3321.htm and</OBI_0000279>
+    <OBI_0000291 xml:lang="en">Latin square design is_a study design which allows in its simpler form controlling 2 levels of nuisance variables (also known as blocking variables).he 2 nuisance factors are divided into a tabular grid with the property that each row and each column receive each treatment exactly once.</OBI_0000291>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500007"/>
+    <rdfs:label xml:lang="en">latin square design</rdfs:label>
+    <OBI_0000287 xml:lang="en">PMID: 17582121-Our objective was to examine the effects of dietary cation-anion difference (DCAD) with different concentrations of dietary crude protein (CP) on performance and acid-base status in early lactation cows. Six lactating Holstein cows averaging 44 d in milk were used in a 6 x 6 Latin square design with a 2 x 3 factorial arrangement of treatments: DCAD of -3, 22, or 47 milliequivalents (Na + K - Cl - S)/100 g of dry matter (DM), and 16 or 19% CP on a DM basis. Linear increases with DCAD occurred in DM intake, milk fat percentage, 4% fat-corrected milk production, milk true protein, milk lactose, and milk solids-not-fat. Milk production itself was unaffected by DCAD. Jugular venous blood pH, base excess and HCO3(-) concentration, and urine pH increased, but jugular venous blood Cl- concentration, urine titratable acidity, and net acid excretion decreased linearly with increasing DCAD. An elevated ratio of coccygeal venous plasma essential AA to nonessential AA with increasing DCAD indicated that N metabolism in the rumen was affected, probably resulting in more microbial protein flowing to the small intestine. Cows fed 16% CP had lower urea N in milk than cows fed 19% CP; the same was true for urea N in coccygeal venous plasma and urine. Dry matter intake, milk production, milk composition, and acid-base status did not differ between the 16 and 19% CP treatments. It was concluded that DCAD affected DM intake and performance of dairy cows in early lactation. Feeding 16% dietary CP to cows in early lactation, compared with 19% CP, maintained lactation performance while reducing urea N excretion in milk and urine.</OBI_0000287>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0000261">
+    <OBI_0000279 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >group:OBI</OBI_0000279>
+    <OBI_0000291 xml:lang="en">A digital entity is an information entity which is a collection of bits that can be interpreted by a computer. Two digital entities are the same if they are bitwise identical.</OBI_0000291>
+    <OBI_0000274 xml:lang="en">person:Chris Stoeckert</OBI_0000274>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000323"/>
+    <OBI_0000288 xml:lang="en">digital entity</OBI_0000288>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000046"/>
+    <rdfs:label xml:lang="en">digital entity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/OBI_0500003">
+    <rdfs:label xml:lang="en">cross over design</rdfs:label>
+    <OBI_0000288 xml:lang="en">cross over design</OBI_0000288>
+    <OBI_0000275 xml:lang="en">Replace patient or subject (keep track of this in the definition): DONE</OBI_0000275>
+    <OBI_0000287 xml:lang="en">PMID: 17601993-Objective: HIV-infected patients with lipodystrophy (HIV-lipodystrophy) are insulin resistant and have elevated plasma free fatty acid (FFA) concentrations. We aimed to explore the mechanisms underlying FFA-induced insulin resistance in patients with HIV-lipodystrophy. Research Design and Methods: Using a randomized placebo-controlled cross-over design, we studied the effects of an overnight acipimox-induced suppression of FFA on glucose and FFA metabolism by using stable isotope labelled tracer techniques during basal conditions and a two-stage euglycemic, hyperinsulinemic clamp (20 mU insulin/m(2)/min; 50 mU insulin/m(2)/min) in nine patients with nondiabetic HIV-lipodystrophy. All patients received antiretroviral therapy. Biopsies from the vastus lateralis muscle were obtained during each stage of the clamp. Results: Acipimox treatment reduced basal FFA rate of appearance by 68.9% (52.6%-79.5%) and decreased plasma FFA concentration by 51.6 % (42.0%-58.9%), (both, P &lt; 0.0001). Endogenous glucose production was not influenced by acipimox. During the clamp the increase in glucose-uptake was significantly greater after acipimox treatment compared to placebo (acipimox: 26.85 (18.09-39.86) vs placebo: 20.30 (13.67-30.13) mumol/kg/min; P &lt; 0.01). Insulin increased phosphorylation of Akt (Thr(308)) and GSK-3beta (Ser(9)), decreased phosphorylation of glycogen synthase (GS) site 3a+b and increased GS-activity (I-form) in skeletal muscle (P &lt; 0.01). Acipimox decreased phosphorylation of GS (site 3a+b) (P &lt; 0.02) and increased GS-activity (P &lt; 0.01) in muscle. Conclusion: The present study provides direct evidence that suppression of lipolysis in patients with HIV-lipodystrophy improves insulin-stimulated peripheral glucose-uptake. The increased glucose-uptake may in part be explained by increased dephosphorylation of GS (site 3a+b) resulting in increased GS activity.</OBI_0000287>
+    <OBI_0000291 xml:lang="en">a cross-over design is a study design which ensures that experimental units receive, in sequence, the treatment (or the control), and then, after a specified time interval (aka *wash-out periods*), switch to the control (or treatment). In this design, subjects (patients in human context) serve as their own controls, and randomization may be used to determine the ordering which a subject receives the treatment and control</OBI_0000291>
+    <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000328"/>
+    <OBI_0000275 xml:lang="en">MSI</OBI_0000275>
+    <OBI_0000279 xml:lang="en">(source: http://www.sbu.se/Filer/Content0/publikationer/1/literaturesearching_1993/glossary.html)</OBI_0000279>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0500002"/>
+    <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+  </owl:Class>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000274">
+    <rdfs:label xml:lang="en">definition editor</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000323"/>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000328"/>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000366"/>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000318"/>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000320"/>
+      <OBI_0000266 rdf:about="http://purl.obofoundry.org/obo/OBI_0000319"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000275">
+    <rdfs:label xml:lang="en">editor note</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000291">
+    <rdfs:label xml:lang="en">definition</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000286">
+    <rdfs:label xml:lang="en">alternative term</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000287">
+    <rdfs:label xml:lang="en">example of usage</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000288">
+    <rdfs:label xml:lang="en">preferred term</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000281">
+    <rdfs:label xml:lang="en">curation status</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000279">
+    <rdfs:label xml:lang="en">definition source</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000277">
+    <rdfs:label xml:lang="en">branch</rdfs:label>
+  </owl:AnnotationProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 504)  http://protege.stanford.edu -->
