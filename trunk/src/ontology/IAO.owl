@@ -10,6 +10,10 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns="http://purl.obofoundry.org/obo/"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+    xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+    xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+    xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
   xml:base="http://purl.obofoundry.org/obo/obi.owl">
 
    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/obi.owl">
@@ -1068,6 +1072,7 @@ to create a common base for comparisons.</OBI_0000291>
     <OBI_0000287 xml:lang="en">An essay on the history of the euro. Contrast: A recipe to bake a bread</OBI_0000287>
     <OBI_0000291 xml:lang="en">A non-realizable information entity is a generically dependent continuant which conveys meaning that can be communicated but whose meaning does necessarily imply that some process might follow from that meaning.</OBI_0000291>
     <rdfs:label xml:lang="en">non-realizable information entity</rdfs:label>
+<OBI_0000288 xml:lang="en">non-realizable information entity</OBI_0000288>
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     <OBI_0000274 xml:lang="en">person:Alan Ruttenberg</OBI_0000274>
     <OBI_0000275 xml:lang="en">top level</OBI_0000275>
@@ -1346,6 +1351,7 @@ to create a common base for comparisons.</OBI_0000291>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000337"/>
     <OBI_0000279 xml:lang="en">OBI branch derived</OBI_0000279>
     <rdfs:label xml:lang="en">data format specification</rdfs:label>
+   <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000328"/>
     <OBI_0000291 xml:lang="en">A data format specification is a plan which organizes information. Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</OBI_0000291>
     <OBI_0000288 xml:lang="en">data format specification</OBI_0000288>
   </owl:Class>
@@ -1356,6 +1362,7 @@ to create a common base for comparisons.</OBI_0000291>
     <OBI_0000287 xml:lang="en">PMID: 7622388.Health Educ Q. 1995 May;22(2):201-10.Balanced incomplete block design: description, case study, and implications for practice.</OBI_0000287>
     <OBI_0000288 xml:lang="en">balanced incomplete block design</OBI_0000288>
     <OBI_0000274 xml:lang="en">Philippe Rocca-Serra</OBI_0000274>
+   <OBI_0000281 rdf:resource="http://purl.obofoundry.org/obo/OBI_0000328"/>
     <OBI_0000291 xml:lang="en">balanced incomplete block design is a kind of factorial design where all treatment pairs occur together within a block an equal number ?? times. ??ii' is the number of times treatment i occurs with i'</OBI_0000291>
     <OBI_0000279 xml:lang="en">http://en.wikipedia.org/wiki/Block_design and http://www.stat.psu.edu/~jglenn/stat503/05_factorial/02_factorial_IBD.html</OBI_0000279>
   </owl:Class>
