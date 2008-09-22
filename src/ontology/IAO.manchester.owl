@@ -1,0 +1,1252 @@
+Namespace: owl2xml <http://www.w3.org/2006/12/owl2-xml#>
+Namespace: obo <http://purl.obofoundry.org/obo/>
+Namespace: snap <http://www.ifomis.org/bfo/1.1/snap#>
+Namespace: ro <http://www.obofoundry.org/ro/ro.owl#>
+Namespace: xsd <http://www.w3.org/2001/XMLSchema#>
+Namespace: bfo <http://www.ifomis.org/bfo/1.1#>
+Namespace: protege <http://protege.stanford.edu/plugins/owl/protege#>
+Namespace: rdfs <http://www.w3.org/2000/01/rdf-schema#>
+Namespace: rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Namespace: owl <http://www.w3.org/2002/07/owl#>
+
+Ontology: <http://purl.obofoundry.org/obo/IAO.owl>
+Import: <http://purl.org/obo/owl/OBO_REL>
+Import: <http://www.ifomis.org/bfo/1.1>
+
+Annotations: 
+    owl:versionInfo "$Revision$"@en,
+    protege:defaultLanguage "en"^^xsd:string,
+    rdfs:comment "a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon."
+
+ObjectProperty: obo:IAO_0000136
+
+    Annotations: 
+        obo:IAO_0000115 "a representation is_about anything exactly when some part of the information_artifact denotes the entity",
+        obo:IAO_0000114 obo:IAO_0000125,
+        obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy",
+        obo:IAO_0000112 "This document is about information artifacts and their representations",
+        obo:IAO_0000117 "person:Alan Ruttenberg",
+        rdfs:label "is about"
+    SubPropertyChain: 
+        obo:IAO_0000135 o ro:has_part
+
+ObjectProperty: obo:IAO_0000223
+
+    Annotations: 
+        rdfs:label "represents"
+    SubPropertyOf: 
+        obo:IAO_0000136
+
+ObjectProperty: ro:has_part
+
+ObjectProperty: obo:IAO_0000135
+
+    Annotations: 
+        obo:IAO_0000117 "Alan Ruttenberg",
+        rdfs:label "specifically denotes",
+        obo:IAO_0000114 obo:IAO_0000125,
+        obo:IAO_0000112 "The process of creation is, for example,  writing down on paper the name of a friend by deliberately creating a certain pattern using ink.
+
+Here the ink + paper is the independent continuant and the carrier is the pattern in the ink.
+
+c = pattern in the ink
+b = paper + ink
+r = friend",
+        obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy",
+        obo:IAO_0000115 "c specifically denotes r =def 
+r is a portion of reality
+& c is a particular quality
+& c depends specifically on some independent continuant b 
+& b acquired c as the result of the achievement of an objective to enable pointing to r repeatedly. 
+
+Marked means there is a changed or additional quality of the bearer - the  quality is the information carrier.
+
+Case 1
+Memory trace as mark created when reading some description of some friend. The trace can denote.
+
+Case 2
+Pattern of ink arrayed on paper as mark when writing down a friend's name
+
+Case 3
+Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file."
+    SubPropertyOf: 
+        obo:IAO_0000136
+
+ObjectProperty: obo:IAO_0000221
+
+    Annotations: 
+        obo:IAO_0000116 "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it "measuring" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.
+
+Werner suggests a solution based on "Magnitudes" a proposal for which we are awaiting details.",
+        rdfs:label "is quality measurement of",
+        obo:IAO_0000115 "m is a quality measurement of q at t when
+q is a determinable quality 
+there is a measurement process p that has_output m
+m has a value part that together with the units of the value of q at t.
+
+p is a assay 
+
+assay:
+process and has_input some material entity
+and has_output some information content entity 
+and which is such that instances of this process type reliably generate outputs that describes the input.
+
+a is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality. 
+
+unit of measure is a quality, e.g. the length of a ruler.
+
+a represents b means either a denotes b or a describes
+
+describe:
+a describes b means a is about b and a allows an inference of at least one quality of b
+
+Example:
+
+q = height of barry
+p is the process using a tape measure extend across the longer part of barry and reading off the number at the far end.
+v is that number
+# dimension is height
+unit of measure is inches
+
+We have had a long discussion about denotes versus describes."
+    SubPropertyOf: 
+        obo:IAO_0000136
+ObjectProperty: ro:part_of
+
+    Annotations: 
+        obo:IAO_0000116 "There is controversy about this relation intended to represent the relation between some arbitrary physical thing that is used as a represention/proxy/pointer to something else"
+ObjectProperty: obo:IAO_0000219
+
+    Annotations: 
+        rdfs:label "generically denotes",
+        obo:IAO_0000112 "The word Boston on a traffic signn in Massachusetts generically denotes the city of Boston",
+        obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy",
+        obo:IAO_0000115 "g generically denotes r =def 
+r is a portion of reality
+there is some c that is a concretization of g 
+every c that is a concretization of g specifically denotes r",
+        obo:IAO_0000117 "person:Alan Ruttenberg"
+    SubPropertyOf: 
+        obo:IAO_0000136
+
+ObjectProperty: obo:IAO_0000220
+
+    Annotations: 
+        rdfs:label "materially denotes"
+    SubPropertyOf: 
+        obo:IAO_0000136
+
+ObjectProperty: obo:IAO_0000222
+
+    Annotations: 
+        rdfs:label "describes"
+    SubPropertyOf: 
+        obo:IAO_0000136
+
+Class: obo:IAO_0000024
+
+    Annotations: 
+        rdfs:label "unit of measure",
+        obo:IAO_0000117 "Alan Ruttenberg",
+        obo:IAO_0000112 "The length of a ruler.",
+        obo:IAO_0000115 "a unit of measure is the quality of some material entity compared to which another quality is some multiple of.",
+        obo:IAO_0000114 obo:IAO_0000125,
+        obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"
+    SubClassOf: 
+        snap:Quality
+Class: obo:IAO_0000020
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000175",
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000111 "p-value"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000115 "A p-value is a quantitative confidence value which represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone."@en,
+        rdfs:label "p-value"@en,
+        obo:IAO_0000116 "ask data transformation. Are they thinking about this too? What is this, in reality. Quality of the measurement? Quality of a population of measurements? Issue: How to avoid having numbers being an easy way to miss connections with reality"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000056
+Class: obo:IAO_0000088
+
+    Annotations: 
+        obo:IAO_0000116 "disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification"@en,
+        obo:IAO_0000112 "Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article."@en,
+        obo:IAO_0000119 "OBI_0000099",
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        rdfs:label "report of results"@en,
+        obo:IAO_0000115 "A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so."@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000111 "report of results"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000006
+
+Class: obo:IAO_0000016
+
+    Annotations: 
+        obo:IAO_0000119 "KPC"@en,
+        obo:IAO_0000118 "experimental design"@en,
+        obo:IAO_0000111 "study design"@en,
+        obo:IAO_0000116 "From Kevin Clancy not yet discussed"@en,
+        obo:IAO_0000115 "A formal description of the constraints on the possible configurations of an experiment which is subject to given conditions. A design is sometimes called an experimental design. source:http://mathworld.wolfram.com/Design.html\nEditor Note: Philippe Rocca-Serra added this; Description of how an experiment is performed. Experiments are designed by applying applications to biomaterials in an ordered fashion. Applications define protocols which are used to moving biomaterial through a series of manipulations to generate one or more desired products. methods describe the particulars of the manipulation, reagents and associated materials used in the manipulation of the biomaterial."@en,
+        obo:IAO_0000119 "OBI_0500000",
+        obo:IAO_0000117 "KPC"@en,
+        obo:IAO_0000112 "TODO:"@en,
+        rdfs:label "study design"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000104
+
+Class: obo:IAO_0000079
+
+    Annotations: 
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000179",
+        obo:IAO_0000111 "density plot"@en,
+        obo:IAO_0000117 "person:Allyson"@en,
+        obo:IAO_0000112 "Density plot of SSC-H and FSC-H."@en,
+        obo:IAO_0000119 "group:Flow Cytometry community"^^xsd:string,
+        obo:IAO_0000115 "A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel."@en,
+        rdfs:label "density plot"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000038
+
+Class: obo:IAO_0000015
+
+    Annotations: 
+        obo:IAO_0000117 "Alan Ruttenberg",
+        obo:IAO_0000114 obo:IAO_0000125,
+        obo:IAO_0000112 "The pattern in ink on a page of a paperback novel.",
+        rdfs:label "information carrier",
+        obo:IAO_0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy",
+        obo:IAO_0000115 "an information carrier is that quality of an information bearer that imparts the information content"
+    SubClassOf: 
+        snap:Quality
+
+Class: obo:IAO_0000045
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000125",
+        obo:IAO_0000115 "A number of lost events electronic is a datum measuring the the number of analysis events lost due to errors in data acquisition electronic coincidence in a flow cytometer insturment. The datum has a qualitative role."@en,
+        obo:IAO_0000111 "number of lost events electronic"@en,
+        obo:IAO_0000112 "74, 0, 14 events lost due to data acquisition electronic coincidence."@en,
+        obo:IAO_0000117 "person:Kevin Clancy"@en,
+        obo:IAO_0000116 "quantity"@en,
+        obo:IAO_0000119 "Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt"^^xsd:string,
+        rdfs:label "number of lost events electronic"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000109
+
+Class: obo:IAO_0000017
+
+    Annotations: 
+        obo:IAO_0000116 "There's probably a role that it plays. Would this be considered an outcome? (alan)"@en,
+        rdfs:label "investigation results report"@en,
+        obo:IAO_0000119 "OBI_0000218",
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000115 "An investigation report is a report on the results of an investigation."@en,
+        obo:IAO_0000111 "investigation results report"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000088
+
+Class: obo:IAO_0000129
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000124,
+        rdfs:label "version number",
+        obo:IAO_0000116 "Note: we feel that at the moment we are happy with a general version number, and that we will subclass as needed in the future. For example, see 7. genome sequence version",
+        obo:IAO_0000115 "A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name."
+    SubClassOf: 
+        obo:IAO_0000128
+Class: obo:IAO_0000026
+
+    Annotations: 
+        rdfs:label "cluster"@en,
+        obo:IAO_0000111 "cluster"@en,
+        obo:IAO_0000119 "OBI_0000251",
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000116 "generically_dependent_continuants"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000115 "A data cluster is a data set which is a subset of data that are a similar to each other in some way."@en,
+        obo:IAO_0000112 "Cluster of the lymphocytes population."@en,
+        obo:IAO_0000117 "person:Allyson"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000100
+
+Class: obo:IAO_0000001
+
+    Annotations: 
+        rdfs:label "conditional specification"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000111 "instruction trigger"@en,
+        obo:IAO_0000115 "is a plan to carry out a process or an event if the trigger condition is fulfilled"@en,
+        obo:IAO_0000119 "OBI_0000349",
+        obo:IAO_0000119 "OBI branch derived"@en,
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en
+    SubClassOf: 
+        obo:IAO_0000033
+
+Class: obo:IAO_0000096
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000039",
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        rdfs:label "source code module"@en,
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        obo:IAO_0000115 "A source code module is an information content entity that specifies, using a programming language, some algorithm."@en,
+        obo:IAO_0000111 "source code module"@en,
+        obo:IAO_0000112 "The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script."@en
+    SubClassOf: 
+        obo:IAO_0000030
+Class: obo:IAO_0000103
+
+    Annotations: 
+        obo:IAO_0000111 "number of particles in subset"@en,
+        obo:IAO_0000117 "person:Kevin Clancy"@en,
+        obo:IAO_0000112 "500, 200, 0"@en,
+        obo:IAO_0000115 "A number of particles in subset is a datum measuring the the number of subjects in a defined subset in a flow cytometer instrument. The datum has a qualitative role"@en,
+        obo:IAO_0000119 "OBI_0000119",
+        obo:IAO_0000116 "quantity"@en,
+        obo:IAO_0000119 "Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt"^^xsd:string,
+        rdfs:label "number of particles in subset"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000109
+
+Class: obo:IAO_0000055
+
+    Annotations: 
+        obo:IAO_0000112 "example to be added"@en,
+        rdfs:label "rule"@en,
+        obo:IAO_0000119 "OBI_0500021",
+        obo:IAO_0000117 "PRS"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000119 "PRS"@en,
+        obo:IAO_0000111 "rule"@en,
+        obo:IAO_0000116 "MSI"@en,
+        obo:IAO_0000115 "a rule is an executable which guides, defines, restricts actions"@en
+    SubClassOf: 
+        obo:IAO_0000001
+
+Class: obo:IAO_0000041
+
+    Annotations: 
+        obo:IAO_0000117 "person:Jennifer Fostel"@en,
+        rdfs:label "electronic case report tabulation"@en,
+        obo:IAO_0000111 "electronic case report tabulation"@en,
+        obo:IAO_0000119 "CDISC glossary"^^xsd:string,
+        obo:IAO_0000119 "OBI_0000083",
+        obo:IAO_0000114 obo:IAO_0000002,
+        obo:IAO_0000115 "An electronic case report tabulation is a digital document containing tabular data about multiple trial participants which is part of a clinical regulatory submission.  An eCRT has the property that it can be audited and compliant with requirements of 21 CFR Part 11  and has format suited to review by regulators."@en
+    SubClassOf: 
+        obo:IAO_0000105
+Class: obo:IAO_0000065
+
+    Annotations: 
+        obo:IAO_0000116 "Do we care? Jennifer: Yes, there was a particular version of R that had a bug and it was fixed later. That would imply that we mean specific version of an interpreter. So an instance of this would be a particular version of the interpreter"@en,
+        obo:IAO_0000111 "software interpreter"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000115 "A  software interpreter is a generically dependent realizable entity that takes, as input, some digital entity, and takes action driven by the information content of that digital entity"@en,
+        obo:IAO_0000119 "OBI_0000199",
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        rdfs:label "software interpreter"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        obo:IAO_0000112 "R program, Perl interpreter, Java virtual machine"@en
+    SubClassOf: 
+        obo:IAO_0000064
+
+Class: obo:IAO_0000006
+
+    Annotations: 
+        obo:IAO_0000115 "A narrative object is an information content entity that is a set of propositions."@en,
+        obo:IAO_0000111 "narrative object"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        rdfs:label "narrative object"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000116 "agree - DENRIE. Issue(alan) do we only mean text? What about a story told by mime. Does music count? (no) what about an oral report. Regarding definition, saying it is a set of propositions means we loose the idea that wording matters. Maybe adjust saying a narrative object has some relationshop to a set of propositions"@en,
+        obo:IAO_0000119 "OBI_0000013",
+        obo:IAO_0000112 "Examples of narrative objects are reports, journal  articles, and patents submission."@en
+    SubClassOf: 
+        obo:IAO_0000030
+
+Class: obo:IAO_0000133
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000124,
+        rdfs:label "catalog number",
+        obo:IAO_0000115 "A catalog number is an information content entity which is a sequence of characters identifying a product for a provider and/or manufacturer. Catalog numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots."
+    SubClassOf: 
+        obo:IAO_0000128
+
+Class: obo:IAO_0000141
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000121,
+        rdfs:label "digital quality",
+        obo:IAO_0000116 "Need to rework digital entity. Digital quality was suggested by Barry."
+    SubClassOf: 
+        snap:GenericallyDependentContinuant
+
+Class: obo:artifact
+    Annotations: 
+        obo:IAO_0000116 "There is not yet consensus this term",
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000115 "An artifact is an independent continuant that is the intended output of an objective driven process"
+    SubClassOf: 
+        snap:IndependentContinuant
+
+Class: obo:IAO_0000032
+
+    Annotations: 
+        obo:IAO_0000115 "Investigation_design is a plan for an investigation. definition_source: OBI."@en,
+        rdfs:label "investigation design"@en,
+        obo:IAO_0000119 "OBI_0000335",
+        obo:IAO_0000119 "OBI branch derived"@en,
+        obo:IAO_0000111 "investigation design"@en,
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000104
+
+Class: obo:IAO_0000013
+
+    Annotations: 
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        rdfs:label "journal article content"@en,
+        obo:IAO_0000111 "journal article content"@en,
+        obo:IAO_0000119 "OBI_0000159",
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        obo:IAO_0000112 "Examples of encodings of journal article content are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number."@en,
+        obo:IAO_0000115 "Journal article content is a narrative object that is the information content encoded in a article published in a serious, scholarly publication, most often peer-reviewed."@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000088
+
+Class: obo:IAO_0000018
+
+    Annotations: 
+        rdfs:label "material entity"
+    EquivalentTo: 
+        snap:FiatObjectPart
+        or snap:Object
+        or snap:ObjectAggregate
+    SubClassOf: 
+        snap:IndependentContinuant
+
+Class: snap:GenericallyDependentContinuant
+
+
+Class: snap:IndependentContinuant
+
+
+Class: obo:IAO_0000078
+
+    Annotations: 
+        rdfs:label "curation status specification"@en,
+        obo:IAO_0000117 "PERSON:Bill Bug"^^xsd:string,
+        obo:IAO_0000111 "curation status specification"^^xsd:string,
+        obo:IAO_0000114 obo:IAO_0000125,
+        obo:IAO_0000119 "GROUP:OBI:<http://obi.sourceforge.net>"^^xsd:string,
+        obo:IAO_0000116 "Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)",
+        obo:IAO_0000119 "OBI_0000266",
+        obo:IAO_0000115 "The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value."@en
+    EquivalentTo: 
+        {obo:IAO_0000002 , obo:IAO_0000120 , obo:IAO_0000121 , obo:IAO_0000122 , obo:IAO_0000123 , obo:IAO_0000124 , obo:IAO_0000125}
+    SubClassOf: 
+        obo:IAO_0000030
+
+Class: obo:IAO_0000100
+
+    Annotations: 
+        obo:IAO_0000115 "A data set is an information content entity that is an aggregate of other information_content_entities that have something in common and are considered to form a unit."@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000119 "OBI_0000042",
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000117 "person:Allyson"@en,
+        obo:IAO_0000111 "data set"@en,
+        rdfs:label "data set"@en
+    SubClassOf: 
+        obo:IAO_0000030
+
+Class: obo:IAO_0000097
+
+    Annotations: 
+        rdfs:label "report table"@en,
+        obo:IAO_0000119 "OBI_0000265",
+        obo:IAO_0000115 "A report table is a report display element consisting of a matrix of cells layed out in a grid, some set of which are filled with some information content"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000111 "report table"@en,
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        obo:IAO_0000117 "person:Allyson Lister"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000091
+
+Class: obo:IAO_0000131
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000124,
+        rdfs:label "serial number",
+        obo:IAO_0000116 "Note: during the call there was some confusion between serial number and model number. We agreed that it would be very helpful for all those terms to have example of usages - please add if you have any :-)",
+        obo:IAO_0000115 "A serial number is an information content entity which is a unique sequence of characters borne by part of manufactured product or its packaging that is assigned to each individual in some class of products, and so can serve as a way to identify an individual product within the class. Serial numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots."
+    SubClassOf: 
+        obo:IAO_0000128
+
+Class: obo:IAO_0000060
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000310",
+        obo:IAO_0000111 "adverse event trigger"@en,
+        obo:IAO_0000115 "revisit?"@en,
+        obo:IAO_0000117 "PERSON:Alan Ruttenberg"@en,
+        obo:IAO_0000119 "OBI branch derived"@en,
+        rdfs:label "adverse event trigger"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000001
+
+Class: snap:Quality
+
+
+Class: obo:IAO_0000005
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000119 "source pending"@en,
+        obo:IAO_0000119 "OBI_0000217",
+        rdfs:label "objective specification"@en,
+        obo:IAO_0000113 "IAO"^^xsd:string,
+        obo:IAO_0000117 "Jennifer Fostel /Barry Smith"@en,
+        obo:IAO_0000112 "purpose of a study; support of hypothesis, discovery of new information"@en,
+        obo:IAO_0000111 "objective specification"@en,
+        obo:IAO_0000116 "Answers the question, why did you do this experiment?"@en,
+        obo:IAO_0000115 "objective is an non realizable information entity which can serve as that  proper part of a plan  towards which the realization of the plan is directed. (note: achievement"@en
+    SubClassOf: 
+        obo:IAO_0000033
+
+Class: obo:IAO_0000132
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000118 "batch number",
+        obo:IAO_0000115 "A lot number is an information content entity which is an identical sequence of character borne by part of manufactured product or its packaging for each instances of a product class in a discrete batch of an item. Lot numbers are usually assigned to each separate production run of an item. Manufacturing as a lot might be due to a variety of reasons, for example,  a single process during which many individuals are made from the same portion of source material. Lot numbers can be encoded in a pattern  of other information objects, such as bar codes, numerals, or patterns of dots.",
+        rdfs:label "lot number"
+    SubClassOf: 
+        obo:IAO_0000128
+
+Class: obo:IAO_0000134
+
+    Annotations: 
+        obo:IAO_0000115 "A genome sequence version number is an information content entity which indicates the specific version of a genome sequence typically resulting from an assembly of individual sequence reads into contigs. scaffolds, and chromosomes. Examples: mm9, hg18, Build 36.",
+        obo:IAO_0000116 "Note1: this has been submitted to our tracker: cf
+http://sourceforge.net/tracker/index.php?func=detail&aid=1844273&group_id=177891&atid=886178
+Note2: this would be a child of version number above.",
+        rdfs:label "genome sequence version number",
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000128
+
+Class: obo:IAO_0000064
+
+    Annotations: 
+        obo:IAO_0000111 "algorithm"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000112 "PMID: 18378114.Genomics. 2008 Mar 28. LINKGEN: A new algorithm to process data in genetic linkage studies."@en,
+        obo:IAO_0000117 "Philippe Rocca-Serra"@en,
+        obo:IAO_0000119 "adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)"@en,
+        obo:IAO_0000119 "OBI_0000270",
+        obo:IAO_0000115 "an algorithm is a plan which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata."@en,
+        rdfs:label "algorithm"@en,
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en
+    SubClassOf: 
+        obo:IAO_0000104
+
+Class: obo:IAO_0000091
+
+    Annotations: 
+        obo:IAO_0000111 "report display element"@en,
+        obo:IAO_0000115 "A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements."@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000119 "OBI_0000001",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000117 "person:Allyson Lister"@en,
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        obo:IAO_0000116 "There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text"@en,
+        rdfs:label "report display element"@en
+    SubClassOf: 
+        obo:IAO_0000006
+
+Class: obo:IAO_0000066
+
+    Annotations: 
+        obo:IAO_0000116 "From the DT branch: This term and definition were originally submitted by the community to our branch, but we thought they best fit DENRIE. However we see several issues with this. First of all the name 'probe' might not be used in OBI. Instead we have a 'reporter' role. Also, albeit the term 'probe intensity' is often used in communities such as the microarray one, the name 'probe' is ambiguous (some use it to refer to what's on the array, some use it to refer to what's hybed to the array). Furthermore, this concept could possibly be encompassed by combining different OBI terms, such as the roles of analyte, detector and reporter (you need something hybed to a probe on the array to get an intensity) and maybe a more general term for 'measuring intensities'. We need to find the right balance between what is consistent with OBI and combinations of its terms and what is user-friendly. Finally, note that 'intensity' is already in the OBI .owl file and is also in PATO. Why didn't OBI import it from PATO? This might be a problem."@en,
+        obo:IAO_0000111 "fluorescent reporter intensity"@en,
+        rdfs:label "fluorescent reporter intensity"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000115 "The fluorescent reproter intensity is a datum that represents the output of a scanner measuring the intensity value for each fluorescent reporter."@en,
+        obo:IAO_0000119 "OBI_0000010",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000140
+
+Class: obo:IAO_0000047
+
+    Annotations: 
+        obo:IAO_0000115 "A text based digital entity is a digital entity that is encoded so that it only contains text characters."@en,
+        obo:IAO_0000112 "XML file, C++ source code file"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000132",
+        rdfs:label "text based digital entity"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000116 "digital_entity"@en,
+        obo:IAO_0000111 "text based digital entity"@en
+    SubClassOf: 
+        obo:IAO_0000105
+
+Class: obo:IAO_0000030
+
+    Annotations: 
+        obo:IAO_0000111 "information content entity"@en,
+        rdfs:label "information content entity"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000115 "an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity"@en,
+        obo:IAO_0000112 "Examples of information content entites include journal articles, data, graphical layouts, and graphs."@en,
+        obo:IAO_0000119 "OBI_0000142",
+        obo:IAO_0000116 "information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity."@en
+    SubClassOf: 
+        snap:GenericallyDependentContinuant,
+        obo:IAO_0000136 some bfo:Entity
+
+Class: obo:IAO_0000068
+
+    Annotations: 
+        obo:IAO_0000111 "measured expression level"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000101",
+        obo:IAO_0000112 "Examples are quantified data from an expression microarray experiment, PCR measurements, etc."@en,
+        rdfs:label "measured expression level"@en,
+        obo:IAO_0000115 "A measured expression level is a datum that is the outcome of the quantification of an assay for the activity of a gene, or the number of RNA trancsripts."@en,
+        obo:IAO_0000114 obo:IAO_0000002,
+        obo:IAO_0000119 "OBI Data Transformation branch"^^xsd:string
+    SubClassOf: 
+        obo:IAO_0000109
+
+Class: obo:IAO_0000107
+
+    Annotations: 
+        obo:IAO_0000117 "person:Jennifer Fostel"@en,
+        obo:IAO_0000111 "electronic case report form"@en,
+        rdfs:label "electronic case report form"@en,
+        obo:IAO_0000119 "CDISC glossary"^^xsd:string,
+        obo:IAO_0000119 "OBI_0000167",
+        obo:IAO_0000115 "An electronic case report form is a digital document used to record all of the protocol required information to be reported for each trial subject. An eCRF has the property that it can be audited and compliant with requirements of 21 CFR Part 11."@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000105
+
+Class: obo:IAO_0000178
+
+    Annotations: 
+        rdfs:label "material information bearer",
+        obo:IAO_0000115 "An information bearer is an artifact, such as a hard drive, upon which an information content entity generically depends."
+    SubClassOf: 
+        obo:IAO_0000018
+
+Class: obo:IAO_0000077
+
+    Annotations: 
+        obo:IAO_0000112 "Gene lists may arise from analysis to determine differentially expressed genes, may be collected from the literature for involvement in a particular process or pathway (e.g., inflammation), or may be the input for gene set enrichment analysis."@en,
+        rdfs:label "gene list"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000116 "kind of report. (alan) need to be careful to distinguish from output of a data transformation or calculation. A gene list is a report when it is published as such? Relates to question of whether report is a whole, or whether it can be a part of some other narrative object."@en,
+        obo:IAO_0000111 "gene list"@en,
+        obo:IAO_0000119 "OBI_0000118",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000115 "A gene list is a report of the names or identifiers of genes that are the outcome of an analysis or have been put together for the purpose of an analysis."@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000100
+
+Class: obo:IAO_0000059
+
+    Annotations: 
+        obo:IAO_0000116 "I prepended the 'report ' to make it clear that we mean parts of reports here. We may want a more generic version of 'figure', in which case this would become a defined class - figure and part_of some report"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000119 "OBI_0000027",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000111 "report figure"@en,
+        obo:IAO_0000117 "person:Allyson Lister"@en,
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        rdfs:label "report figure"@en,
+        obo:IAO_0000115 "A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements"@en
+    SubClassOf: 
+        obo:IAO_0000091
+
+Class: obo:IAO_0000098
+
+    Annotations: 
+        rdfs:label "data format specification"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000115 "A data format specification is the information content borne by the document published defining the specification.
+
+blah:
+ for organizing information artifacts. Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file"@en,
+        obo:IAO_0000119 "OBI branch derived"@en,
+        obo:IAO_0000119 "OBI_0000187",
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en,
+        obo:IAO_0000111 "data format specification"@en
+    SubClassOf: 
+        obo:IAO_0000033
+
+Class: obo:IAO_0000084
+
+    Annotations: 
+        rdfs:label "fluorescence compensation matrix"@en,
+        obo:IAO_0000115 "A fluorescence compensation matrix is a square matrix which is used as the left multiplier of the vector of fluorescence values while performing digital fluorescence compensation. Also, fluorescence compensation matrix is the inverse of the fluorescence spillover matrix."@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000112 "((1.053096, -0.22476), (-0.24877, 1.053096))"@en,
+        obo:IAO_0000116 "generically_dependent_continuants"@en,
+        obo:IAO_0000119 "OBI_0000213",
+        obo:IAO_0000119 "group:Flow Cytometry community"^^xsd:string,
+        obo:IAO_0000111 "fluorescence compensation matrix"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000140
+
+Class: snap:RealizableEntity
+
+
+Class: obo:IAO_0000034
+
+    Annotations: 
+        obo:IAO_0000115 "revisit?"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        rdfs:label "time trigger"@en,
+        obo:IAO_0000111 "time trigger"@en,
+        obo:IAO_0000119 "OBI_0000331",
+        obo:IAO_0000119 "OBI branch derived"@en,
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en
+    SubClassOf: 
+        obo:IAO_0000001
+
+Class: snap:Object
+
+
+Class: obo:IAO_0000022
+
+    Annotations: 
+        rdfs:label "analytical cytology data file"@en,
+        obo:IAO_0000119 "OBI_0000210",
+        obo:IAO_0000115 "A digital entity intended to capture data in analytical cytology domain."@en,
+        obo:IAO_0000116 "binary_digital_entity"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000112 "FCS file, ACS file, foo.fcs, foo.asc"@en,
+        obo:IAO_0000119 "group:Flow Cytometry community"^^xsd:string,
+        obo:IAO_0000114 obo:IAO_0000002,
+        obo:IAO_0000111 "analytical cytology data file"@en
+    SubClassOf: 
+        obo:IAO_0000012
+
+Class: obo:IAO_0000130
+
+    Annotations: 
+        obo:IAO_0000116 "Note: this was originally called model number (Alan's proposal) then Instrument number (Chris' proposal). After discussing during the denrie call we believe device model would be more appropriate, and would cover instruments and others (e.g. synthetic biomaterial)",
+        obo:IAO_0000115 "A device model is an information content entity which is an identical sequence of characters borne by part of  each of a class of manufactured products or its packaging that is intended to be unique to a class of products. It can serve as a way to identify a specific product class within the set that the manufacture makes. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.",
+        obo:IAO_0000114 obo:IAO_0000124,
+        rdfs:label "device model"
+    SubClassOf: 
+        obo:IAO_0000128
+
+Class: obo:IAO_0000070
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000272",
+        obo:IAO_0000119 "OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)"@en,
+        obo:IAO_0000115 "protocol is a plan which outlines a set of instructions to achieve a specific objective relevant to the biomedical domain and which can be realized as a protocol application."@en,
+        obo:IAO_0000112 "PMID: 18388943.Nat Protoc. 2008;3(4):612-8.Protocol for the induction of arthritis in C57BL/6 mice."@en,
+        rdfs:label "protocol"@en,
+        obo:IAO_0000111 "protocol"@en,
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000104
+
+Class: obo:IAO_0000019
+
+    Annotations: 
+        obo:IAO_0000112 "MS Word document, ZIP file, DICOM file, JPEG file"@en,
+        obo:IAO_0000115 "A binary digital entity is a digital entity that is encoded in a way that is not easily human readable and that contains other than text characters."@en,
+        rdfs:label "binary digital entity"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000244",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000116 "digital_entity"@en,
+        obo:IAO_0000111 "binary digital entity"@en
+    SubClassOf: 
+        obo:IAO_0000012
+
+Class: obo:IAO_0000021
+
+    Annotations: 
+        rdfs:label "patent content"@en,
+        obo:IAO_0000111 "patent content"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000028",
+        obo:IAO_0000115 "A patent content is a report for the purpose of obtaining a license from a government conferring for a set period the sole right to make, use, or sell some process or invention"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000116 "need to distinguish the patent submission (which I think the term refers to) and the patent itself, which is what confers the rights. (Alan) Renamed from patent to patent submission. [Isn't the submission like a recipe, i.e. a realizable information entity, in that it tells you how to do something? no] Cristian: what is the difference b/w some document that has been patented, and the same document that has not been patented? The (informational) content is the same. It is just that the former has been encapsulated within some social mechanism, hence it has acquired some role. Hence 'patent' is a role."@en
+    SubClassOf: 
+        obo:IAO_0000006
+
+Class: bfo:Entity
+
+
+Class: obo:IAO_0000105
+
+    Annotations: 
+        obo:IAO_0000117 "person:Jennifer Fostel"@en,
+        obo:IAO_0000119 "OBI_0000195",
+        obo:IAO_0000111 "digital document"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        rdfs:label "digital document"@en,
+        obo:IAO_0000115 "A digital document is a digital entity consisting of an electronic file which can be rendered into human-readable form by one or more computational applications.  The digital document does not refer to the information content of the document but to an instance of the file."@en
+    SubClassOf: 
+        obo:IAO_0000012
+
+Class: obo:IAO_0000003
+
+    Annotations: 
+        obo:IAO_0000116 "remove? See unit of measure.",
+        obo:IAO_0000117 "person:Cristian Cocos"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000111 "measurement unit"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000119 "OBI_0000176",
+        rdfs:label "measurement unit"@en,
+        obo:IAO_0000115 "A measurement unit is an information content entity associated with a physical magnitude that has been conventionally assigned a number."@en,
+        obo:IAO_0000112 "Examples of measurement unit are liters, inches, weight per volume."@en
+    SubClassOf: 
+        obo:IAO_0000030
+
+Class: obo:IAO_0000037
+
+    Annotations: 
+        obo:IAO_0000112 "Dot plot of SSC-H and FSC-H."@en,
+        obo:IAO_0000115 "A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions."@en,
+        obo:IAO_0000119 "OBI_0000123",
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        rdfs:label "dot plot"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000117 "person:Allyson"@en,
+        obo:IAO_0000111 "dot plot"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000038
+
+Class: obo:IAO_0000051
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000150",
+        obo:IAO_0000115 "Assessment is a conclusion derived from the processes used to learn about a patient's condition.  In part from NCI"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "Jennifer Fostel"@en,
+        obo:IAO_0000111 "assessment"@en,
+        rdfs:label "assessment"@en
+    SubClassOf: 
+        obo:IAO_0000035
+
+Class: obo:IAO_0000104
+
+    Annotations: 
+        rdfs:label "plan specification"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000116 "Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved"@en,
+        obo:IAO_0000116 "Part of range for an object property is_potentially_realizable_as in obi before split (LF 040907)"@en,
+        obo:IAO_0000115 "a plan specification is a specification of a process that an actor can engage in to achieve the objective specified as part of the plan"@en,
+        obo:IAO_0000112 "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice."@en,
+        obo:IAO_0000119 "OBI_0000344",
+        obo:IAO_0000119 "OBI branch derived"@en,
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en,
+        obo:IAO_0000111 "plan specification"@en
+    SubClassOf: 
+        obo:IAO_0000033
+
+Class: obo:IAO_0000038
+
+    Annotations: 
+        rdfs:label "report graph"@en,
+        obo:IAO_0000111 "report graph"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000119 "OBI_0000240",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        obo:IAO_0000117 "person:Allyson Lister"@en,
+        obo:IAO_0000115 "A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way."@en
+    SubClassOf: 
+        obo:IAO_0000059
+
+Class: obo:IAO_0000035
+
+    Annotations: 
+        rdfs:label "conclusion"@en,
+        obo:IAO_0000111 "conclusion"@en,
+        obo:IAO_0000115 "A conclusion is a narrative object which can be published in a paper summerizing and interpreting a protocol application."@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "Jennifer Fostel"@en,
+        obo:IAO_0000119 "OBI_0000005"
+    SubClassOf: 
+        obo:IAO_0000006
+
+Class: snap:FiatObjectPart
+
+
+Class: obo:IAO_0000025
+
+    Annotations: 
+        obo:IAO_0000112 "R, Perl, Java"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        rdfs:label "programming language"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000058",
+        obo:IAO_0000115 "A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it."@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000117 "person:Alan Ruttenberg"@en,
+        obo:IAO_0000111 "programming language"@en
+    SubClassOf: 
+        obo:IAO_0000104
+
+Class: obo:IAO_0000023
+
+    Annotations: 
+        obo:IAO_0000117 "person:Jennifer Fostel"@en,
+        obo:IAO_0000111 "eMedical record"@en,
+        obo:IAO_0000119 "OBI_0000078",
+        obo:IAO_0000119 "article-without-pmid-or-doi:CDISCglossary"^^xsd:string,
+        rdfs:label "eMedical record"@en,
+        obo:IAO_0000114 obo:IAO_0000002,
+        obo:IAO_0000115 "An eMedical record is a digital document derived from a computer system used primarily for patient care in a clinical setting.  Not required to be compliant with requirements of 21 CFR Part 11."@en
+    SubClassOf: 
+        obo:IAO_0000105
+
+Class: obo:IAO_0000140
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000116 "Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.",
+        rdfs:label "setting datum"
+    SubClassOf: 
+        obo:IAO_0000030
+
+Class: obo:IAO_0000073
+
+    Annotations: 
+        obo:IAO_0000115 "A number of lost events is a datum recording the the number of measurement events lost due to overloading of the analysis chip in a flow cytometer insturment. The datum has a qualitative role"@en,
+        obo:IAO_0000119 "OBI_0000269",
+        obo:IAO_0000111 "number of lost events computer"@en,
+        obo:IAO_0000117 "person:Kevin Clancy"@en,
+        obo:IAO_0000112 "0, 125, 787 events lost due to computer busy."@en,
+        rdfs:label "number of lost events computer"@en,
+        obo:IAO_0000116 "quantity"@en,
+        obo:IAO_0000119 "Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt"^^xsd:string,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000109
+
+Class: obo:IAO_0000109
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000305",
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        rdfs:label "measurement datum"@en,
+        obo:IAO_0000116 "was measurement. (alan) Is this the old quantitative value? If so need to change cardinal part of stuff. I think the value and units should be on special relations and that the value should not be a BFO entity."@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000112 "Examples of data are the recoding of the weight of a mouse, the recording of an observation of the behavior of the mouse, the recording of the expression level of a gene as measured through the process of microarray experiment. Instance level information is information describing a specific instance of an entity"@en,
+        obo:IAO_0000111 "measurement datum"@en,
+        obo:IAO_0000115 "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by an instrument."@en
+    SubClassOf: 
+        obo:IAO_0000030
+Class: obo:IAO_0000128
+
+    Annotations: 
+        obo:IAO_0000114 obo:IAO_0000121,
+        rdfs:label "_identifier",
+        obo:IAO_0000116 "_identifier is a container under information content entity for collecting types of terms to indicate a specific instance or clas of what was used or participated in an investigation. Identifiers are borne by a product or its packaging, and can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.
+
+Note: everybody agreed that identifier is probably a too general term. We however felt that it would be appropriate to group "identifiying" terms under some kind of umbrella. We therefore propose to use _identifier for that purpose. As per OBI conventions, the _ prefixing identifier indicates that this is a helper class and shouldn't be considered as final."
+    SubClassOf: 
+        snap:GenericallyDependentContinuant
+Class: obo:IAO_0000093
+
+    Annotations: 
+        obo:IAO_0000115 "Binary executable is a digital entity consisting of the binary representation of machine instructions of a specific processor or they may be binary pseudocode for a virtual machine. A non-source executable file is also called an object program. It is assumed that the binary executable file contains properly-formatted computer instructions.  (derived from Wikipedia, Nov 1, 2007)"@en,
+        obo:IAO_0000117 "person:Jennifer Fostel"@en,
+        rdfs:label "binary executable"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000111 "binary executable"@en,
+        obo:IAO_0000119 "OBI_0000222",
+        obo:IAO_0000119 "group:OBI"^^xsd:string
+    SubClassOf: 
+        obo:IAO_0000012
+Class: obo:IAO_0000046
+
+    Annotations: 
+        obo:IAO_0000111 "standard error"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000235",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        rdfs:label "standard error"@en,
+        obo:IAO_0000115 "Standard error is a quantitative confidence value which is the standard deviations of the sample in a frequency distribution, obtained by dividing the standard deviation by the total number of cases in the frequency distribution."@en,
+        obo:IAO_0000116 "see P-Value"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000056
+Class: obo:String
+
+Class: obo:IAO_0000011
+
+    Annotations: 
+        obo:IAO_0000116 "One example of usage is in the context of flow cytometry, however is not restricted to this community and is more widely used, e.g. by imaging people."@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000112 "An example of a list-mode data file is a file following list-mode Flow Cytometry Standard (FCS) format. Since FCS files can be in histogram mode or  list-mode we have to specify which data format specifically. List-mode format in the overwhelming (even universal) option used."@en,
+        obo:IAO_0000119 "OBI_0000021",
+        obo:IAO_0000111 "list-mode data file"@en,
+        obo:IAO_0000115 "A list-mode data file is a digital entity where events are stored sequentially, parameter by parameter."@en,
+        obo:IAO_0000119 "group:Flow Cytometry community"^^xsd:string,
+        rdfs:label "list-mode data file"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000012,
+        obo:IAO_0000030
+
+Class: obo:IAO_0000056
+
+    Annotations: 
+        obo:IAO_0000111 "quantitative confidence value"@en,
+        rdfs:label "quantitative confidence value"@en,
+        obo:IAO_0000115 "A quantitative confidence value is a information content entity which is used to indicate the degree of uncertainty about a measurement."@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000119 "OBI_0000071"
+    SubClassOf: 
+        obo:IAO_0000109
+Class: obo:IAO_0000108
+
+    Annotations: 
+        obo:IAO_0000119 "OBI_0000172",
+        obo:IAO_0000112 "0.01, 0.03"@en,
+        obo:IAO_0000111 "parameter threshold"@en,
+        obo:IAO_0000117 "person:Kevin Clancy"@en,
+        rdfs:label "parameter threshold"@en,
+        obo:IAO_0000115 "A parameter threshold is a datum measuring the minimal signal that must be detected to generate an electrical event, as comparewd to the maximal detected signal in a flow cytometer insturment. The datum has a qualitative role"@en,
+        obo:IAO_0000116 "quantity"@en,
+        obo:IAO_0000119 "Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt"^^xsd:string,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000140
+
+Class: obo:IAO_0000012
+
+    Annotations: 
+        obo:IAO_0000111 "digital entity"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000119 "OBI_0000261",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000115 "A digital entity is an information entity which is a collection of bits that can be interpreted by a computer. Two digital entities are the same if they are bitwise identical."@en,
+        rdfs:label "digital entity"@en
+    SubClassOf: 
+        obo:IAO_0000141
+
+Class: obo:IAO_0000033
+
+    Annotations: 
+        obo:IAO_0000118 "instruction"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000115 "is the specification of a plan that can be concretized and realized by an actor."@en,
+        obo:IAO_0000116 "Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan",
+        obo:IAO_0000111 "guide"@en,
+        rdfs:label "information entity about a realizable"@en,
+        obo:IAO_0000119 "OBI branch derived"@en,
+        obo:IAO_0000117 "PlanAndPlannedProcess Branch"@en,
+        obo:IAO_0000119 "OBI_0000337"
+    SubClassOf: 
+        obo:IAO_0000030,
+        obo:IAO_0000136 some snap:RealizableEntity
+Class: obo:IAO_0000036
+
+    Annotations: 
+        rdfs:label "eSource document"@en,
+        obo:IAO_0000117 "person:Jennifer Fostel"@en,
+        obo:IAO_0000119 "OBI_0000158",
+        obo:IAO_0000119 "article-without-pmid-or-doi:CDISCglossary"^^xsd:string,
+        obo:IAO_0000115 "an eSource document is a digital document consisting of a logical collection of Source data and other eSource documents that can be presented in an ordered way and capture the time of completion, change, and any signatures"@en,
+        obo:IAO_0000111 "eSource document"@en,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000105
+Class: obo:IAO_0000057
+
+    Annotations: 
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000116 "generically_dependent_continuants"@en,
+        obo:IAO_0000112 "Contour plot of SSC-H, FSC-H, and FL1-H."@en,
+        obo:IAO_0000111 "contour plot"@en,
+        obo:IAO_0000117 "person:Allyson"@en,
+        obo:IAO_0000119 "OBI_0000246",
+        rdfs:label "contour plot"@en,
+        obo:IAO_0000119 "group:Flow Cytometry community"^^xsd:string,
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000038
+
+Class: obo:IAO_0000101
+
+    Annotations: 
+        obo:IAO_0000115 "An image is an information content entity which provides a visual representation of for the result of a measurement."@en,
+        obo:IAO_0000111 "image"@en,
+        obo:IAO_0000114 obo:IAO_0000124,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        rdfs:label "image"@en,
+        obo:IAO_0000119 "OBI_0000030",
+        obo:IAO_0000119 "group:OBI"^^xsd:string,
+        obo:IAO_0000117 "person:Allyson"@en
+    SubClassOf: 
+        obo:IAO_0000030
+Class: obo:IAO_0000014
+
+    Annotations: 
+        rdfs:label "ratio of collected to emitted light"@en,
+        obo:IAO_0000115 "A ratio of collected to emitted light is a datum measuring the amount of light collected s compared to the total amount of emitted light in the detector component of a flow cytometer instrument. The datum has a qualitative role"@en,
+        obo:IAO_0000112 "10%"@en,
+        obo:IAO_0000117 "person:Chris Stoeckert"@en,
+        obo:IAO_0000111 "ratio of collected to emitted light"@en,
+        obo:IAO_0000117 "person:Kevin Clancy"@en,
+        obo:IAO_0000116 "quantity"@en,
+        obo:IAO_0000119 "Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt"^^xsd:string,
+        obo:IAO_0000119 "OBI_0000054",
+        obo:IAO_0000114 obo:IAO_0000002
+    SubClassOf: 
+        obo:IAO_0000109
+Individual: obo:IAO_0000002
+
+    Annotations: 
+        rdfs:label "example to be eventually removed"
+    Types: 
+        obo:IAO_0000078
+    DifferentFrom: 
+        obo:IAO_0000120,
+        obo:IAO_0000121,
+        obo:IAO_0000122,
+        obo:IAO_0000123,
+        obo:IAO_0000124,
+        obo:IAO_0000125
+
+Individual: obo:IAO_0000125
+
+    Annotations: 
+        rdfs:label "pending final vetting"@en,
+        obo:IAO_0000115 "All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor."@en
+    Types: 
+        obo:IAO_0000078
+    DifferentFrom: 
+        obo:IAO_0000002,
+        obo:IAO_0000120,
+        obo:IAO_0000121,
+        obo:IAO_0000122,
+        obo:IAO_0000123,
+        obo:IAO_0000124
+
+Individual: obo:IAO_0000121
+
+    Annotations: 
+        rdfs:label "placeholder"@en,
+        obo:IAO_0000115 "This isn't a class that OBI will keep - it's a placeholder for edits that are underway. The class name should start with an underscore"@en
+    Types: 
+        obo:IAO_0000078
+    DifferentFrom: 
+        obo:IAO_0000002,
+        obo:IAO_0000120,
+        obo:IAO_0000122,
+        obo:IAO_0000123,
+        obo:IAO_0000124,
+        obo:IAO_0000125
+
+Individual: obo:IAO_0000120
+
+    Annotations: 
+        rdfs:label "metadata complete"@en,
+        obo:IAO_0000115 "Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete."@en
+    Types: 
+        obo:IAO_0000078
+    DifferentFrom: 
+        obo:IAO_0000002,
+        obo:IAO_0000121,
+        obo:IAO_0000122,
+        obo:IAO_0000123,
+        obo:IAO_0000124,
+        obo:IAO_0000125
+Individual: obo:IAO_0000122
+
+    Annotations: 
+        obo:IAO_0000115 "Class has undergone final review, is ready for use, and will be included in the next OBI release. Any class lacking "ready_for_release" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed "ready_for_release" will also derived from a chain of ancestor classes that are also "ready_for_release.""@en,
+        rdfs:label "ready for release"@en
+    Types: 
+        obo:IAO_0000078
+    DifferentFrom: 
+        obo:IAO_0000002,
+        obo:IAO_0000120,
+        obo:IAO_0000121,
+        obo:IAO_0000123,
+        obo:IAO_0000124,
+        obo:IAO_0000125
+Individual: obo:IAO_0000124
+
+    Annotations: 
+        rdfs:label "uncurated"@en,
+        obo:IAO_0000115 "Nothing done yet beyond assigning a unique class ID and proposing a preferred term."@en
+    Types: 
+        obo:IAO_0000078
+    DifferentFrom: 
+        obo:IAO_0000002,
+        obo:IAO_0000120,
+        obo:IAO_0000121,
+        obo:IAO_0000122,
+        obo:IAO_0000123,
+        obo:IAO_0000125
+Individual: obo:IAO_0000123
+
+    Annotations: 
+        rdfs:label "metadata incomplete"@en,
+        obo:IAO_0000115 "Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors."@en
+    Types: 
+        obo:IAO_0000078
+    DifferentFrom: 
+        obo:IAO_0000002,
+        obo:IAO_0000120,
+        obo:IAO_0000121,
+        obo:IAO_0000122,
+        obo:IAO_0000124,
+        obo:IAO_0000125
+
