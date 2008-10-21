@@ -146,7 +146,11 @@ r = friend</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     </owl:ObjectProperty>
     
+    <!-- http://purl.obofoundry.org/obo/IAO_0000136 -->
 
+    <owl:DataProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000004">
+        <rdfs:label>has measurement value</rdfs:label>
+    </owl:DataProperty>
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000219 -->
 
@@ -292,18 +296,18 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000003">
         <rdfs:label xml:lang="en"
-            >measurement unit</rdfs:label>
+            >measurement unit label</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</obo:IAO_0000119>
         <obo:IAO_0000116
             >remove? See unit of measure.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en"
-            >A measurement unit is an information content entity associated with a physical magnitude that has been conventionally assigned a number.</obo:IAO_0000115>
+            >A measurement unit label is an information content entity associated with a physical magnitude that has been conventionally assigned a number.</obo:IAO_0000115>
         <obo:IAO_0000119>OBI_0000176</obo:IAO_0000119>
         <obo:IAO_0000112 xml:lang="en"
-            >Examples of measurement unit are liters, inches, weight per volume.</obo:IAO_0000112>
+            >Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en"
-            >measurement unit</obo:IAO_0000111>
+            >measurement unit label</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en"
             >person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en"
