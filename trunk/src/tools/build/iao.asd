@@ -35,7 +35,7 @@
     :licence "BSD"
     :components
     (
-     (:file "uri-report")
+     (:file "write-purls")
      )
     :depends-on (owl))
 
