@@ -52,7 +52,9 @@
             >a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon.</rdfs:comment>
 <owl:imports> <owl:Ontology  rdf:about="http://purl.org/obo/owl/OBO_REL"/></owl:imports>
 <owl:imports> <owl:Ontology  rdf:about="http://www.ifomis.org/bfo/1.1"/></owl:imports>
+<owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
   </owl:Ontology>
+
 
 
 
@@ -296,28 +298,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000001 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000001">
-        <rdfs:label xml:lang="en"
-            >conditional specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
-        <obo:IAO_0000119 xml:lang="en"
-            >OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000349</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en"
-            >PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en"
-            >instruction trigger</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en"
-            >is a plan to carry out a process or an event if the trigger condition is fulfilled</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
-
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000003 -->
 
@@ -412,32 +392,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     </owl:Class>
     
 
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000011 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000011">
-        <rdfs:label xml:lang="en"
-            >list-mode data file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000012"/>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >group:Flow Cytometry community</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A list-mode data file is a digital entity where events are stored sequentially, parameter by parameter.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >An example of a list-mode data file is a file following list-mode Flow Cytometry Standard (FCS) format. Since FCS files can be in histogram mode or  list-mode we have to specify which data format specifically. List-mode format in the overwhelming (even universal) option used.</obo:IAO_0000112>
-        <obo:IAO_0000119>OBI_0000021</obo:IAO_0000119>
-        <obo:IAO_0000116 xml:lang="en"
-            >One example of usage is in the context of flow cytometry, however is not restricted to this community and is more widely used, e.g. by imaging people.</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en"
-            >list-mode data file</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000012 -->
 
     <owl:Class rdf:about="&obo;IAO_0000012">
@@ -456,7 +410,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000013 -->
-
     <owl:Class rdf:about="&obo;IAO_0000013">
         <rdfs:label xml:lang="en"
             >journal article content</rdfs:label>
@@ -478,29 +431,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000014 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000014">
-        <rdfs:label xml:lang="en"
-            >ratio of collected to emitted light</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000054</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en">10%</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en"
-            >A ratio of collected to emitted light is a datum measuring the amount of light collected s compared to the total amount of emitted light in the detector component of a flow cytometer instrument. The datum has a qualitative role</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Kevin Clancy</obo:IAO_0000117>
-        <obo:IAO_0000116 xml:lang="en">quantity</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en"
-            >ratio of collected to emitted light</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000015 -->
 
@@ -519,47 +449,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     </owl:Class>
     
 
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000016 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000016">
-        <rdfs:label xml:lang="en">study design</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
-        <obo:IAO_0000119>OBI_0500000</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A formal description of the constraints on the possible configurations of an experiment which is subject to given conditions. A design is sometimes called an experimental design. source:http://mathworld.wolfram.com/Design.html\nEditor Note: Philippe Rocca-Serra added this; Description of how an experiment is performed. Experiments are designed by applying applications to biomaterials in an ordered fashion. Applications define protocols which are used to moving biomaterial through a series of manipulations to generate one or more desired products. methods describe the particulars of the manipulation, reagents and associated materials used in the manipulation of the biomaterial.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en"
-            >From Kevin Clancy not yet discussed</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">KPC</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">KPC</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en">TODO:</obo:IAO_0000112>
-        <obo:IAO_0000118 xml:lang="en"
-            >experimental design</obo:IAO_0000118>
-        <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000017 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000017">
-        <rdfs:label xml:lang="en"
-            >investigation results report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000088"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >An investigation report is a report on the results of an investigation.</obo:IAO_0000115>
-        <obo:IAO_0000119>OBI_0000218</obo:IAO_0000119>
-        <obo:IAO_0000116 xml:lang="en"
-            >There&#39;s probably a role that it plays. Would this be considered an outcome? (alan)</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en"
-            >investigation results report</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000018 -->
@@ -600,88 +489,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
     
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000020 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000020">
-        <rdfs:label xml:lang="en">p-value</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000056"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000175</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A p-value is a quantitative confidence value which represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en"
-            >ask data transformation. Are they thinking about this too? What is this, in reality. Quality of the measurement? Quality of a population of measurements? Issue: How to avoid having numbers being an easy way to miss connections with reality</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en">p-value</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000021 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000021">
-        <rdfs:label xml:lang="en">patent content</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000006"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000028</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A patent content is a report for the purpose of obtaining a license from a government conferring for a set period the sole right to make, use, or sell some process or invention</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en"
-            >need to distinguish the patent submission (which I think the term refers to) and the patent itself, which is what confers the rights. (Alan) Renamed from patent to patent submission. [Isn&#39;t the submission like a recipe, i.e. a realizable information entity, in that it tells you how to do something? no] Cristian: what is the difference b/w some document that has been patented, and the same document that has not been patented? The (informational) content is the same. It is just that the former has been encapsulated within some social mechanism, hence it has acquired some role. Hence &#39;patent&#39; is a role.</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en">patent content</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000022 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000022">
-        <rdfs:label xml:lang="en"
-            >analytical cytology data file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000012"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >group:Flow Cytometry community</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A digital entity intended to capture data in analytical cytology domain.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >FCS file, ACS file, foo.fcs, foo.asc</obo:IAO_0000112>
-        <obo:IAO_0000119>OBI_0000210</obo:IAO_0000119>
-        <obo:IAO_0000111 xml:lang="en"
-            >analytical cytology data file</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en"
-            >binary_digital_entity</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000023 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000023">
-        <rdfs:label xml:lang="en">eMedical record</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000105"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >article-without-pmid-or-doi:CDISCglossary</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000078</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >An eMedical record is a digital document derived from a computer system used primarily for patient care in a clinical setting.  Not required to be compliant with requirements of 21 CFR Part 11.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">eMedical record</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000024 -->
 
     <owl:Class rdf:about="&obo;IAO_0000024">
@@ -697,8 +504,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
     </owl:Class>
     
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000025 -->
 
     <owl:Class rdf:about="&obo;IAO_0000025">
@@ -721,26 +526,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000026 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000026">
-        <rdfs:label xml:lang="en">cluster</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000100"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000251</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A data cluster is a data set which is a subset of data that are a similar to each other in some way.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Cluster of the lymphocytes population.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">cluster</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en"
-            >generically_dependent_continuants</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000030 -->
@@ -769,28 +554,6 @@ Previous. An information content entity is a non-realizable information entity t
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
     
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000032 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000032">
-        <rdfs:label xml:lang="en"
-            >investigation design</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
-        <obo:IAO_0000119>OBI_0000335</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >Investigation_design is a plan for an investigation. definition_source: OBI.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en"
-            >OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en"
-            >PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en"
-            >investigation design</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="&obo;IAO_0000033">
@@ -851,125 +614,6 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000036 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000036">
-        <rdfs:label xml:lang="en"
-            >eSource document</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000105"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >article-without-pmid-or-doi:CDISCglossary</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000158</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >an eSource document is a digital document consisting of a logical collection of Source data and other eSource documents that can be presented in an ordered way and capture the time of completion, change, and any signatures</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >eSource document</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000037 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000037">
-        <rdfs:label xml:lang="en">dot plot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000123</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Dot plot of SSC-H and FSC-H.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">dot plot</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000038 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000038">
-        <rdfs:label xml:lang="en">report graph</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000059"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000240</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">report graph</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000041 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000041">
-        <rdfs:label xml:lang="en"
-            >electronic case report tabulation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000105"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">CDISC glossary</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000083</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >An electronic case report tabulation is a digital document containing tabular data about multiple trial participants which is part of a clinical regulatory submission.  An eCRT has the property that it can be audited and compliant with requirements of 21 CFR Part 11  and has format suited to review by regulators.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >electronic case report tabulation</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000045 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000045">
-        <rdfs:label xml:lang="en"
-            >number of lost events electronic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en"
-            >74, 0, 14 events lost due to data acquisition electronic coincidence.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en"
-            >A number of lost events electronic is a datum measuring the the number of analysis events lost due to errors in data acquisition electronic coincidence in a flow cytometer insturment. The datum has a qualitative role.</obo:IAO_0000115>
-        <obo:IAO_0000119>OBI_0000125</obo:IAO_0000119>
-        <obo:IAO_0000111 xml:lang="en"
-            >number of lost events electronic</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Kevin Clancy</obo:IAO_0000117>
-        <obo:IAO_0000116 xml:lang="en">quantity</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000046 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000046">
-        <rdfs:label xml:lang="en">standard error</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000056"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000235</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >Standard error is a quantitative confidence value which is the standard deviations of the sample in a frequency distribution, obtained by dividing the standard deviation by the total number of cases in the frequency distribution.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000116 xml:lang="en">see P-Value</obo:IAO_0000116>
-        <obo:IAO_0000111 xml:lang="en">standard error</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000047 -->
 
     <owl:Class rdf:about="&obo;IAO_0000047">
@@ -992,19 +636,6 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000051 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000051">
-        <rdfs:label xml:lang="en">assessment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000035"/>
-        <obo:IAO_0000119>OBI_0000150</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >Assessment is a conclusion derived from the processes used to learn about a patient&#39;s condition.  In part from NCI</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">assessment</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000055 -->
@@ -1026,84 +657,6 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000056 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000056">
-        <rdfs:label xml:lang="en"
-            >quantitative confidence value</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A quantitative confidence value is a information content entity which is used to indicate the degree of uncertainty about a measurement.</obo:IAO_0000115>
-        <obo:IAO_0000119>OBI_0000071</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en"
-            >quantitative confidence value</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000057 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000057">
-        <rdfs:label xml:lang="en">contour plot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >group:Flow Cytometry community</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000246</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en"
-            >Contour plot of SSC-H, FSC-H, and FL1-H.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">contour plot</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en"
-            >generically_dependent_continuants</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000059 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000059">
-        <rdfs:label xml:lang="en">report figure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000091"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en"
-            >I prepended the &#39;report &#39; to make it clear that we mean parts of reports here. We may want a more generic version of &#39;figure&#39;, in which case this would become a defined class - figure and part_of some report</obo:IAO_0000116>
-        <obo:IAO_0000119>OBI_0000027</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">report figure</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000060 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000060">
-        <rdfs:label xml:lang="en"
-            >adverse event trigger</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000001"/>
-        <obo:IAO_0000119 xml:lang="en"
-            >OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000310</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en"
-            >PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en"
-            >adverse event trigger</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">revisit?</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000064 -->
@@ -1150,114 +703,6 @@ Previous. An information content entity is a non-realizable information entity t
             >software interpreter</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000066 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000066">
-        <rdfs:label xml:lang="en"
-            >fluorescent reporter intensity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000140"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000010</obo:IAO_0000119>
-        <obo:IAO_0000116 xml:lang="en"
-            >From the DT branch: This term and definition were originally submitted by the community to our branch, but we thought they best fit DENRIE. However we see several issues with this. First of all the name &#39;probe&#39; might not be used in OBI. Instead we have a &#39;reporter&#39; role. Also, albeit the term &#39;probe intensity&#39; is often used in communities such as the microarray one, the name &#39;probe&#39; is ambiguous (some use it to refer to what&#39;s on the array, some use it to refer to what&#39;s hybed to the array). Furthermore, this concept could possibly be encompassed by combining different OBI terms, such as the roles of analyte, detector and reporter (you need something hybed to a probe on the array to get an intensity) and maybe a more general term for &#39;measuring intensities&#39;. We need to find the right balance between what is consistent with OBI and combinations of its terms and what is user-friendly. Finally, note that &#39;intensity&#39; is already in the OBI .owl file and is also in PATO. Why didn&#39;t OBI import it from PATO? This might be a problem.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en"
-            >The fluorescent reproter intensity is a datum that represents the output of a scanner measuring the intensity value for each fluorescent reporter.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >fluorescent reporter intensity</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000068 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000068">
-        <rdfs:label xml:lang="en"
-            >measured expression level</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >OBI Data Transformation branch</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000101</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A measured expression level is a datum that is the outcome of the quantification of an assay for the activity of a gene, or the number of RNA trancsripts.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Examples are quantified data from an expression microarray experiment, PCR measurements, etc.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en"
-            >measured expression level</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000070 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000070">
-        <rdfs:label xml:lang="en">protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
-        <obo:IAO_0000119>OBI_0000272</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en"
-            >OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en"
-            >PMID: 18388943.Nat Protoc. 2008;3(4):612-8.Protocol for the induction of arthritis in C57BL/6 mice.</obo:IAO_0000112>
-        <obo:IAO_0000117 xml:lang="en"
-            >PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">protocol</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en"
-            >protocol is a plan which outlines a set of instructions to achieve a specific objective relevant to the biomedical domain and which can be realized as a protocol application.</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000073 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000073">
-        <rdfs:label xml:lang="en"
-            >number of lost events computer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en"
-            >0, 125, 787 events lost due to computer busy.</obo:IAO_0000112>
-        <obo:IAO_0000119>OBI_0000269</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A number of lost events is a datum recording the the number of measurement events lost due to overloading of the analysis chip in a flow cytometer insturment. The datum has a qualitative role</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >number of lost events computer</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Kevin Clancy</obo:IAO_0000117>
-        <obo:IAO_0000116 xml:lang="en">quantity</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000077 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000077">
-        <rdfs:label xml:lang="en">gene list</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000100"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000118</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A gene list is a report of the names or identifiers of genes that are the outcome of an analysis or have been put together for the purpose of an analysis.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Gene lists may arise from analysis to determine differentially expressed genes, may be collected from the literature for involvement in a particular process or pathway (e.g., inflammation), or may be the input for gene set enrichment analysis.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">gene list</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en"
-            >kind of report. (alan) need to be careful to distinguish from output of a data transformation or calculation. A gene list is a report when it is published as such? Relates to question of whether report is a whole, or whether it can be a part of some other narrative object.</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000078 -->
@@ -1293,96 +738,6 @@ Previous. An information content entity is a non-realizable information entity t
     </owl:Class>
     
 
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000079 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000079">
-        <rdfs:label xml:lang="en">density plot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >group:Flow Cytometry community</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000179</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Density plot of SSC-H and FSC-H.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">density plot</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000084 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000084">
-        <rdfs:label xml:lang="en"
-            >fluorescence compensation matrix</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000140"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >group:Flow Cytometry community</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000213</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en"
-            >((1.053096, -0.22476), (-0.24877, 1.053096))</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en"
-            >A fluorescence compensation matrix is a square matrix which is used as the left multiplier of the vector of fluorescence values while performing digital fluorescence compensation. Also, fluorescence compensation matrix is the inverse of the fluorescence spillover matrix.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >fluorescence compensation matrix</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en"
-            >generically_dependent_continuants</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000088 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000088">
-        <rdfs:label xml:lang="en"
-            >report of results</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000006"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en"
-            >Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article.</obo:IAO_0000112>
-        <obo:IAO_0000119>OBI_0000099</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en"
-            >disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en"
-            >report of results</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000091 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000091">
-        <rdfs:label xml:lang="en"
-            >report display element</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000006"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements.</obo:IAO_0000115>
-        <obo:IAO_0000119>OBI_0000001</obo:IAO_0000119>
-        <obo:IAO_0000116 xml:lang="en"
-            >There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en"
-            >report display element</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000093 -->
@@ -1504,29 +859,7 @@ blah:
     </owl:Class>
     
 
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000103 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000103">
-        <rdfs:label xml:lang="en"
-            >number of particles in subset</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A number of particles in subset is a datum measuring the the number of subjects in a defined subset in a flow cytometer instrument. The datum has a qualitative role</obo:IAO_0000115>
-        <obo:IAO_0000119>OBI_0000119</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en">500, 200, 0</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en"
-            >number of particles in subset</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Kevin Clancy</obo:IAO_0000117>
-        <obo:IAO_0000116 xml:lang="en">quantity</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
     
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000104 -->
 
     <owl:Class rdf:about="&obo;IAO_0000104">
@@ -1569,48 +902,6 @@ blah:
             >person:Jennifer Fostel</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000107 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000107">
-        <rdfs:label xml:lang="en"
-            >electronic case report form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000105"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">CDISC glossary</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000167</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >An electronic case report form is a digital document used to record all of the protocol required information to be reported for each trial subject. An eCRF has the property that it can be audited and compliant with requirements of 21 CFR Part 11.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >electronic case report form</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000108 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000108">
-        <rdfs:label xml:lang="en"
-            >parameter threshold</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000140"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000172</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en">0.01, 0.03</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en"
-            >A parameter threshold is a datum measuring the minimal signal that must be detected to generate an electrical event, as comparewd to the maximal detected signal in a flow cytometer insturment. The datum has a qualitative role</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en"
-            >parameter threshold</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Kevin Clancy</obo:IAO_0000117>
-        <obo:IAO_0000116 xml:lang="en">quantity</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000109 -->
@@ -1664,17 +955,6 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000130 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000130">
-        <rdfs:label>device model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000128"/>
-        <obo:IAO_0000116
-            >Note: this was originally called model number (Alan&#39;s proposal) then Instrument number (Chris&#39; proposal). After discussing during the denrie call we believe device model would be more appropriate, and would cover instruments and others (e.g. synthetic biomaterial)</obo:IAO_0000116>
-        <obo:IAO_0000115
-            >A device model is an information content entity which is an identical sequence of characters borne by part of  each of a class of manufactured products or its packaging that is intended to be unique to a class of products. It can serve as a way to identify a specific product class within the set that the manufacture makes. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
     
 
 
@@ -1705,32 +985,9 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000133 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000133">
-        <rdfs:label>catalog number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000128"/>
-        <obo:IAO_0000115
-            >A catalog number is an information content entity which is a sequence of characters identifying a product for a provider and/or manufacturer. Catalog numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000134 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000134">
-        <rdfs:label
-            >genome sequence version number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000128"/>
-        <obo:IAO_0000115
-            >A genome sequence version number is an information content entity which indicates the specific version of a genome sequence typically resulting from an assembly of individual sequence reads into contigs. scaffolds, and chromosomes. Examples: mm9, hg18, Build 36.</obo:IAO_0000115>
-        <obo:IAO_0000116
-            >Note1: this has been submitted to our tracker: cf
-http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1844273&amp;group_id=177891&amp;atid=886178
-Note2: this would be a child of version number above.</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
     
 
 
@@ -1818,12 +1075,6 @@ Note2: this would be a child of version number above.</obo:IAO_0000116>
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#DataProperty -->
-
-    <owl:Class rdf:about="&owl;DataProperty"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1846,10 +1097,10 @@ Note2: this would be a child of version number above.</obo:IAO_0000116>
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000004 -->
 
-    <owl:DataProperty rdf:about="&obo;IAO_0000004">
+    <owl:DatatypeProperty rdf:about="&obo;IAO_0000004">
         <rdfs:label
             >has measurement value</rdfs:label>
-    </owl:DataProperty>
+    </owl:DatatypeProperty>
     
 
 
@@ -1963,11 +1214,62 @@ Note2: this would be a child of version number above.</obo:IAO_0000116>
             </owl:Restriction>
         </owl:someValuesFrom>
     </owl:Restriction>
-    <rdf:Description>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
-        <owl2:propertyChain rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;IAO_0000135"/>
-            <rdf:Description rdf:about="&ro;has_part"/>
-        </owl2:propertyChain>
-    </rdf:Description>
+    <!-- http://purl.obofoundry.org/obo/IAO_0000001 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000001">
+        <rdfs:label xml:lang="en"
+            >conditional specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+        <obo:IAO_0000119 xml:lang="en"
+            >OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000119>OBI_0000349</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en"
+            >PlanAndPlannedProcess Branch</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en"
+            >instruction trigger</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en"
+            >is a plan to carry out a process or an event if the trigger condition is fulfilled</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    </owl:Class>
+    
+    <!-- http://purl.obofoundry.org/obo/IAO_0000088 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000088">
+        <rdfs:label xml:lang="en"
+            >report of results</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000006"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en"
+            >Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article.</obo:IAO_0000112>
+        <obo:IAO_0000119>OBI_0000099</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"
+            >A report is a narrative object that is a formal statement of the results of an investigation, or of any matter on which definite information is required, made by some person or body instructed or required to do so.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en"
+            >disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en"
+            >person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en"
+            >report of results</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
+    </owl:Class>
+        <!-- http://purl.obofoundry.org/obo/IAO_0000091 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000091">
+        <rdfs:label xml:lang="en"
+            >report display element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000006"/>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en"
+            >A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements.</obo:IAO_0000115>
+        <obo:IAO_0000119>OBI_0000001</obo:IAO_0000119>
+        <obo:IAO_0000116 xml:lang="en"
+            >There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en"
+            >person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en"
+            >person:Allyson Lister</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en"
+            >report display element</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    </owl:Class>
 </rdf:RDF>
