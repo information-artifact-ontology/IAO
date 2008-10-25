@@ -53,6 +53,7 @@
 <owl:imports> <owl:Ontology  rdf:about="http://purl.org/obo/owl/OBO_REL"/></owl:imports>
 <owl:imports> <owl:Ontology  rdf:about="http://www.ifomis.org/bfo/1.1"/></owl:imports>
 <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+<owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao.owl"/>
 <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/dev/examples.owl"/>
 <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/dev/owl2bits.owl"/>
 
