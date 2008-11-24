@@ -34,61 +34,8 @@
    <owl:imports>
       <owl:Ontology rdf:about="http://www.ifomis.org/bfo/1.1"/>
     </owl:imports>
-
+ <owl:imports rdf:resource="./iao-ontology-metadata.owl"/>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000114">
-        <rdfs:label xml:lang="en"
-            >has curation status</rdfs:label>
-        <IAO_0000119>OBI_0000281</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000115">
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-        <IAO_0000119>OBI_0000291</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000116">
-        <rdfs:label xml:lang="en">editor note</rdfs:label>
-        <IAO_0000119>OBI_0000275</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000113">
-        <rdfs:label xml:lang="en">branch</rdfs:label>
-        <IAO_0000119>OBI_0000277</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000112">
-        <rdfs:label xml:lang="en"
-            >example of usage</rdfs:label>
-        <IAO_0000119>OBI_0000287</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000117">
-        <rdfs:label xml:lang="en"
-            >definition editor</rdfs:label>
-        <IAO_0000119>OBI_0000274</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000111">
-        <rdfs:label xml:lang="en">preferred term</rdfs:label>
-        <IAO_0000119>OBI_0000288</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000118">
-        <rdfs:label xml:lang="en"
-            >alternative term</rdfs:label>
-        <IAO_0000119>OBI_0000286</IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000119">
-        <rdfs:label xml:lang="en"
-            >definition source</rdfs:label>
-        <IAO_0000119>OBI_0000279</IAO_0000119>
-    </owl:AnnotationProperty>
     
 
 
