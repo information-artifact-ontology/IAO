@@ -34,7 +34,7 @@
    <owl:imports>
       <owl:Ontology rdf:about="http://www.ifomis.org/bfo/1.1"/>
     </owl:imports>
- <owl:imports rdf:resource="./iao-ontology-metadata.owl"/>
+ <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/ontology-metadata.owl"/>
     </owl:Ontology>
     
 
@@ -334,15 +334,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     </owl:Class>
     
 
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000007">
-        <rdfs:label xml:lang="en">String</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000008">
@@ -559,8 +550,6 @@ defer to Barry, or to Brian Cantwell Smith</IAO_0000116>
     <!-- http://purl.obofoundry.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030">
-        <rdfs:label xml:lang="en"
-            >information content entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -740,40 +729,6 @@ Previous. An information content entity is a non-realizable information entity t
         <IAO_0000111 xml:lang="en"
             >software interpreter</IAO_0000111>
         <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000078 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000078">
-        <rdfs:label xml:lang="en"
-            >curation status specification</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000002"/>
-                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000125"/>
-                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000121"/>
-                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000120"/>
-                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000124"/>
-                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000122"/>
-                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000123"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
-        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</IAO_0000119>
-        <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON:Bill Bug</IAO_0000117>
-        <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >curation status specification</IAO_0000111>
-        <IAO_0000116
-            >Better to represent curation as a process with parts and then relate labels to that process (in IAO meeting)</IAO_0000116>
-        <IAO_0000119>OBI_0000266</IAO_0000119>
-        <IAO_0000115 xml:lang="en"
-            >The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.</IAO_0000115>
-        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     </owl:Class>
     
 
@@ -1150,92 +1105,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000002 -->
-
-    <IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000002">
-        <rdfs:label
-            >example to be eventually removed</rdfs:label>
-    </IAO_0000078>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000120 -->
-
-    <IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000120">
-        <rdfs:label xml:lang="en"
-            >metadata complete</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</IAO_0000115>
-    </IAO_0000078>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000121 -->
-
-    <IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000121">
-        <rdfs:label xml:lang="en">placeholder</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >This isn&#39;t a class that OBI will keep - it&#39;s a placeholder for edits that are underway. The class name should start with an underscore</IAO_0000115>
-    </IAO_0000078>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000122 -->
-
-    <IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000122">
-        <rdfs:label xml:lang="en"
-            >ready for release</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Class has undergone final review, is ready for use, and will be included in the next OBI release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</IAO_0000115>
-    </IAO_0000078>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000123 -->
-
-    <IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000123">
-        <rdfs:label xml:lang="en"
-            >metadata incomplete</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</IAO_0000115>
-    </IAO_0000078>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000124 -->
-
-    <IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000124">
-        <rdfs:label xml:lang="en">uncurated</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</IAO_0000115>
-    </IAO_0000078>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000125 -->
-
-    <IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000125">
-        <rdfs:label xml:lang="en"
-            >pending final vetting</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.</IAO_0000115>
-    </IAO_0000078>
-    
-
+ 
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1260,29 +1130,6 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
             </owl:Restriction>
         </owl:someValuesFrom>
     </owl:Restriction>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000002"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000125"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000121"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000120"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000122"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000124"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000123"/>
-        </owl:distinctMembers>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000125"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000121"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000120"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000124"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000122"/>
-            <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000123"/>
-        </owl:distinctMembers>
-    </rdf:Description>
 </rdf:RDF>
 
 
