@@ -224,6 +224,21 @@
             >All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.</IAO_0000115>
     </obo:IAO_0000078>
     
+  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#DbXref">
+       <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Definition">
+       <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Subset">
+       <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Synonym">
+       <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymType">
+       <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+  </owl:Class>
 
 </rdf:RDF>
 
