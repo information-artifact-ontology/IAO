@@ -167,8 +167,8 @@
     <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000120">
         <rdfs:label xml:lang="en"
             >metadata complete</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en"
+            >Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.</obo:IAO_0000115>
     </obo:IAO_0000078>
     
 
@@ -177,8 +177,8 @@
 
     <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000121">
         <rdfs:label xml:lang="en">placeholder</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >This isn&#39;t a class that OBI will keep - it&#39;s a placeholder for edits that are underway. The class name should start with an underscore</IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en"
+            >This isn&#39;t a class that OBI will keep - it&#39;s a placeholder for edits that are underway. The class name should start with an underscore</obo:IAO_0000115>
     </obo:IAO_0000078>
     
 
@@ -188,8 +188,8 @@
     <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000122">
         <rdfs:label xml:lang="en"
             >ready for release</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Class has undergone final review, is ready for use, and will be included in the next OBI release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en"
+            >Class has undergone final review, is ready for use, and will be included in the next OBI release. Any class lacking &quot;ready_for_release&quot; should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed &quot;ready_for_release&quot; will also derived from a chain of ancestor classes that are also &quot;ready_for_release.&quot;</obo:IAO_0000115>
     </obo:IAO_0000078>
     
 
@@ -199,8 +199,8 @@
     <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000123">
         <rdfs:label xml:lang="en"
             >metadata incomplete</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en"
+            >Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.</obo:IAO_0000115>
     </obo:IAO_0000078>
     
 
@@ -209,8 +209,8 @@
 
     <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000124">
         <rdfs:label xml:lang="en">uncurated</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en"
+            >Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
     </obo:IAO_0000078>
     
 
@@ -220,8 +220,8 @@
     <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000125">
         <rdfs:label xml:lang="en"
             >pending final vetting</rdfs:label>
-        <IAO_0000115 xml:lang="en"
-            >All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.</IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en"
+            >All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.</obo:IAO_0000115>
     </obo:IAO_0000078>
     
   <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#DbXref">
