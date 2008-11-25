@@ -28,7 +28,7 @@
     </owl:imports>
 
    <owl:imports>
-      <owl:Ontology rdf:about="http://purl.org/obo/owl/OBO_REL"/>
+      <owl:Ontology rdf:about="http://purl.org/obo/owl/relationship"/>
     </owl:imports>
 
    <owl:imports>
