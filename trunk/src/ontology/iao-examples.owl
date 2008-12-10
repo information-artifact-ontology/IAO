@@ -256,42 +256,11 @@
     </owl:Class>
     
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000037 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000037">
-        <rdfs:label xml:lang="en">dot plot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000123</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Dot plot of SSC-H and FSC-H.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">dot plot</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000038 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000038">
-        <rdfs:label xml:lang="en">report graph</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000059"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000240</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">report graph</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
     
 
 
@@ -354,43 +323,10 @@
     </owl:Class>
     
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000037 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000037">
-        <rdfs:label xml:lang="en">dot plot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000123</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Dot plot of SSC-H and FSC-H.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">dot plot</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
+ 
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000038 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000038">
-        <rdfs:label xml:lang="en">report graph</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000059"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000240</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">report graph</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000041 -->
@@ -483,46 +419,10 @@
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
     
-    <!-- http://purl.obofoundry.org/obo/IAO_0000057 -->
 
-    <owl:Class rdf:about="&obo;IAO_0000057">
-        <rdfs:label xml:lang="en">contour plot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >group:Flow Cytometry community</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000246</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en"
-            >Contour plot of SSC-H, FSC-H, and FL1-H.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">contour plot</obo:IAO_0000111>
-        <obo:IAO_0000116 xml:lang="en"
-            >generically_dependent_continuants</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000059 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000059">
-        <rdfs:label xml:lang="en">report figure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000091"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en"
-            >I prepended the &#39;report &#39; to make it clear that we mean parts of reports here. We may want a more generic version of &#39;figure&#39;, in which case this would become a defined class - figure and part_of some report</obo:IAO_0000116>
-        <obo:IAO_0000119>OBI_0000027</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Allyson Lister</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">report figure</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000060 -->
@@ -650,25 +550,6 @@
     </owl:Class>
     
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000079 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000079">
-        <rdfs:label xml:lang="en">density plot</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string"
-            >group:Flow Cytometry community</obo:IAO_0000119>
-        <obo:IAO_0000119>OBI_0000179</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en"
-            >A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en"
-            >Density plot of SSC-H and FSC-H.</obo:IAO_0000112>
-        <obo:IAO_0000111 xml:lang="en">density plot</obo:IAO_0000111>
-        <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000002"/>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000084 -->

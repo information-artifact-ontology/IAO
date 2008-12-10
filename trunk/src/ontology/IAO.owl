@@ -245,7 +245,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     
 
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000001">
@@ -642,6 +641,45 @@ Previous. An information content entity is a non-realizable information entity t
         <IAO_0000111 xml:lang="en">conclusion</IAO_0000111>
         <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     </owl:Class>
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000037">
+        <rdfs:label xml:lang="en">dot plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+        <IAO_0000119 xml:lang="en">group:OBI</IAO_0000119>
+        <IAO_0000119>OBI_0000123</IAO_0000119>
+        <IAO_0000115 xml:lang="en"
+            >A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</IAO_0000115>
+        <IAO_0000112 xml:lang="en"
+            >Dot plot of SSC-H and FSC-H.</IAO_0000112>
+        <IAO_0000111 xml:lang="en">dot plot</IAO_0000111>
+        <IAO_0000117 xml:lang="en">person:Allyson</IAO_0000117>
+        <IAO_0000117 xml:lang="en"
+            >person:Chris Stoeckert</IAO_0000117>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000038">
+        <rdfs:label xml:lang="en">report graph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000059"/>
+        <IAO_0000119>group:OBI</IAO_0000119>
+        <IAO_0000119>OBI_0000240</IAO_0000119>
+        <IAO_0000115 xml:lang="en"
+            >A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way.</IAO_0000115>
+        <IAO_0000117 xml:lang="en"
+            >person:Alan Ruttenberg</IAO_0000117>
+        <IAO_0000117 xml:lang="en"
+            >person:Allyson Lister</IAO_0000117>
+        <IAO_0000111 xml:lang="en">report graph</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
+    </owl:Class>
+
     
 
 
@@ -651,7 +689,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:label xml:lang="en"
             >text based digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000105"/>
-        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
+        <IAO_0000119>group:OBI</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >A text based digital entity is a digital entity that is encoded so that it only contains text characters.</IAO_0000115>
         <IAO_0000119>OBI_0000132</IAO_0000119>
@@ -681,6 +719,47 @@ Previous. An information content entity is a non-realizable information entity t
         <IAO_0000112 xml:lang="en"
             >example to be added</IAO_0000112>
         <IAO_0000111 xml:lang="en">rule</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
+    </owl:Class>
+
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000057">
+        <rdfs:label xml:lang="en">contour plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+        <IAO_0000119 xml:lang="en"
+            >group:Flow Cytometry community</IAO_0000119>
+        <IAO_0000119>OBI_0000246</IAO_0000119>
+        <IAO_0000112 xml:lang="en"
+            >Contour plot of SSC-H, FSC-H, and FL1-H.</IAO_0000112>
+        <IAO_0000111 xml:lang="en">contour plot</IAO_0000111>
+        <IAO_0000116 xml:lang="en"
+            >generically_dependent_continuants</IAO_0000116>
+        <IAO_0000117 xml:lang="en">person:Allyson</IAO_0000117>
+        <IAO_0000117 xml:lang="en"
+            >person:Chris Stoeckert</IAO_0000117>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
+    </owl:Class>
+
+    
+    <!-- http://purl.obofoundry.org/obo/IAO_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000059">
+        <rdfs:label xml:lang="en">report figure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000091"/>
+        <IAO_0000119 xml:lang="en">group:OBI</IAO_0000119>
+        <IAO_0000115 xml:lang="en"
+            >A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements</IAO_0000115>
+        <IAO_0000116 xml:lang="en"
+            >I prepended the &#39;report &#39; to make it clear that we mean parts of reports here. We may want a more generic version of &#39;figure&#39;, in which case this would become a defined class - figure and part_of some report</IAO_0000116>
+        <IAO_0000119>OBI_0000027</IAO_0000119>
+        <IAO_0000117 xml:lang="en"
+            >person:Alan Ruttenberg</IAO_0000117>
+        <IAO_0000117 xml:lang="en"
+            >person:Allyson Lister</IAO_0000117>
+        <IAO_0000111 xml:lang="en">report figure</IAO_0000111>
         <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     </owl:Class>
     
@@ -732,6 +811,25 @@ Previous. An information content entity is a non-realizable information entity t
     </owl:Class>
     
 
+    <!-- http://purl.obofoundry.org/obo/IAO_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000079">
+        <rdfs:label xml:lang="en">density plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+        <IAO_0000119 xml:lang="en"
+            >group:Flow Cytometry community</IAO_0000119>
+        <IAO_0000119>OBI_0000179</IAO_0000119>
+        <IAO_0000115 xml:lang="en"
+            >A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</IAO_0000115>
+        <IAO_0000112 xml:lang="en"
+            >Density plot of SSC-H and FSC-H.</IAO_0000112>
+        <IAO_0000111 xml:lang="en">density plot</IAO_0000111>
+        <IAO_0000117 xml:lang="en">person:Allyson</IAO_0000117>
+        <IAO_0000117 xml:lang="en"
+            >person:Chris Stoeckert</IAO_0000117>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
+    </owl:Class>
+    
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000088 -->
 
