@@ -1156,6 +1156,140 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
             >An information bearer is an artifact, such as a hard drive, upon which an information content entity generically depends.</IAO_0000115>
     </owl:Class>
     
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000179">
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Melanie Courtot</IAO_0000117>
+    <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GROUP:OBI</IAO_0000119>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Chris Stoeckert</IAO_0000117>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A histogram is a report graph which is a statistical description of a
+distribution in terms of occurrence frequencies of different event classes.</IAO_0000115>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:James Malone</IAO_0000117>
+    <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >histogram</IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >histogram</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+  </owl:Class>
+
+
+
+
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000180">
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Melanie Courtot</IAO_0000117>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A heatmap is a report graph which is a graphical representation of data
+where the values taken by a variable(s) are shown as colors in a
+two-dimensional map.</IAO_0000115>
+    <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GROUP:OBI</IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heatmap</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >heatmap</IAO_0000111>
+    <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:James Malone</IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Chris Stoeckert</IAO_0000117>
+  </owl:Class>
+
+
+
+
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000181">
+    <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:James Malone</IAO_0000117>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Chris Stoeckert</IAO_0000117>
+    <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WEB: http://en.wikipedia.org/wiki/Venn_diagram</IAO_0000119>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Venn diagram</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A Venn diagram is a report graph showing all hypothetically possible
+logical relations between a finite collection of sets.</IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Venn diagram</rdfs:label>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Melanie Courtot</IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000182">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >survival curve</rdfs:label>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Melanie Courtot</IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Chris Stoeckert</IAO_0000117>
+    <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
+    <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WEB: http://www.graphpad.com/www/book/survive.htm</IAO_0000119>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A survival curve is a report graph which is a graphical representation of data where the percentage of survival is plotted as a function of time.</IAO_0000115>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:James Malone</IAO_0000117>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >survival curve</IAO_0000111>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000183">
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Chris Stoeckert</IAO_0000117>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A dendrogram is a report graph which is a tree diagram
+frequently used to illustrate the arrangement of the clusters produced by a
+clustering algorithm.</IAO_0000115>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Melanie Courtot</IAO_0000117>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dendrogram</IAO_0000111>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:James Malone</IAO_0000117>
+    <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WEB: http://en.wikipedia.org/wiki/Dendrogram</IAO_0000119>
+    <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
+    <IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Dendrograms are often used in computational biology to
+illustrate the clustering of genes.</IAO_0000112>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dendrogram</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000184">
+    <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WEB: http://en.wikipedia.org/wiki/Scatterplot</IAO_0000119>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scatterplot</IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scatterplot</rdfs:label>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Melanie Courtot</IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
+    <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
+    <IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scattergraph</IAO_0000118>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:Chris Stoeckert</IAO_0000117>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A scatterplot is a report graph which uses Cartesian coordinates to
+display values for two variables for a set of data. The data is displayed
+as a collection of points, each having the value of one variable
+determining the position on the horizontal axis and the value of the other
+variable determining the position on the vertical axis.</IAO_0000115>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON:James Malone</IAO_0000117>
+  </owl:Class>
 
 
     <!-- http://www.ifomis.org/bfo/1.1#Entity -->
