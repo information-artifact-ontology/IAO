@@ -1,4 +1,4 @@
-; Wed Dec 10 22:01:59 PST 2008
+; Wed Dec 24 11:05:44 PST 2008
 ; 
 ;+ (version "3.4")
 ;+ (build "Build 130")
@@ -6,13 +6,13 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[IAO-P3_ProjectKB_Instance_10165]
-		[IAO-P3_ProjectKB_Instance_10166]
-		[IAO-P3_ProjectKB_Instance_10167]
-		[IAO-P3_ProjectKB_Instance_10168]
-		[IAO-P3_ProjectKB_Instance_10169]
-		[IAO-P3_ProjectKB_Instance_10170]
-		[IAO-P3_ProjectKB_Instance_10171]))
+		[IAO-P3_ProjectKB_Instance_51]
+		[IAO-P3_ProjectKB_Instance_52]
+		[IAO-P3_ProjectKB_Instance_53]
+		[IAO-P3_ProjectKB_Instance_54]
+		[IAO-P3_ProjectKB_Instance_55]
+		[IAO-P3_ProjectKB_Instance_56]
+		[IAO-P3_ProjectKB_Instance_57]))
 
 ([CLSES_TAB] of  Widget
 
@@ -36,41 +36,6 @@
 
 ([IAO-P3_ProjectKB_Instance_10] of  Property_List
 )
-
-([IAO-P3_ProjectKB_Instance_10165] of  String
-
-	(name "IAO_0000078")
-	(string_value "rdfs%3Alabel"))
-
-([IAO-P3_ProjectKB_Instance_10166] of  String
-
-	(name "owl:Class")
-	(string_value "rdfs%3Alabel"))
-
-([IAO-P3_ProjectKB_Instance_10167] of  String
-
-	(name "rdf:Property")
-	(string_value "rdfs%3Alabel"))
-
-([IAO-P3_ProjectKB_Instance_10168] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([IAO-P3_ProjectKB_Instance_10169] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([IAO-P3_ProjectKB_Instance_10170] of  String
-
-	(name "owl:Thing")
-	(string_value "%3ANAME"))
-
-([IAO-P3_ProjectKB_Instance_10171] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
 
 ([IAO-P3_ProjectKB_Instance_11] of  Widget
 
@@ -272,6 +237,41 @@
 
 ([IAO-P3_ProjectKB_Instance_50] of  Property_List
 )
+
+([IAO-P3_ProjectKB_Instance_51] of  String
+
+	(name "IAO_0000078")
+	(string_value "rdfs%3Alabel"))
+
+([IAO-P3_ProjectKB_Instance_52] of  String
+
+	(name "owl:Class")
+	(string_value "rdfs%3Alabel"))
+
+([IAO-P3_ProjectKB_Instance_53] of  String
+
+	(name "rdf:Property")
+	(string_value "rdfs%3Alabel"))
+
+([IAO-P3_ProjectKB_Instance_54] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([IAO-P3_ProjectKB_Instance_55] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([IAO-P3_ProjectKB_Instance_56] of  String
+
+	(name "owl:Thing")
+	(string_value "%3ANAME"))
+
+([IAO-P3_ProjectKB_Instance_57] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
 
 ([IAO-P3_ProjectKB_Instance_6] of  Property_List
 )
@@ -923,9 +923,6 @@
 ([KB_221055_Instance_71] of  Property_List
 )
 
-([KB_254242_Instance_0] of  Map
-)
-
 ([KB_301165_Instance_1013] of  Widget
 
 	(is_hidden FALSE)
@@ -1029,6 +1026,9 @@
 	(name ":OWL-ANONYMOUS-ROOT")
 	(property_list [XY_Instance_665])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
+
+([KB_380000_Instance_0] of  Map
+)
 
 ([KB_444675_Instance_0] of  String
 
@@ -5634,12 +5634,12 @@
 		[STANDARD_SLOT_FORM_WIDGET]
 		[KB_713803_Instance_693]
 		[KB_313796_Instance_943]
-		[KB_713803_Instance_303]
 		[STANDARD_CLASS_FORM_WIDGET]
+		[KB_713803_Instance_303]
 		[KB_313796_Instance_852]
 		[Instance_1005]
-		[KB_301165_Instance_1013]
 		[Instance_581]
+		[KB_301165_Instance_1013]
 		[KB_764103_Instance_545]
 		[KB_713803_Instance_390]
 		[KB_938545_Instance_329]
@@ -5681,12 +5681,12 @@
 		"xsd:base64Binary"
 		"rdfs:Container"
 		"owl:Ontology"
-		"owl:DataRange"
-		"xsd:gMonthDay"
 		":TO"
+		"xsd:gMonthDay"
+		"owl:DataRange"
 		"xsd:NMTOKEN"
-		"xsd:QName"
 		"xsd:unsignedInt"
+		"xsd:QName"
 		"owl:FunctionalProperty"
 		"xsd:long"
 		"owl:onProperty"
@@ -5712,40 +5712,40 @@
 		"rdf:rest"
 		"xsd:decimal"
 		"rdf:subject"
-		"xsd:Name"
-		"owl:sameAs"
-		"rdf:value"
 		"owl:SymmetricProperty"
+		"rdf:value"
+		"owl:sameAs"
+		"xsd:Name"
 		"xsd:byte"
-		"owl:differentFrom"
 		"owl:AllDifferent"
+		"owl:differentFrom"
 		"owl:Nothing"
-		"owl:cardinality"
 		"owl:InverseFunctionalProperty"
+		"owl:cardinality"
 		"xsd:nonNegativeInteger"
 		"rdf:Statement"
-		":FROM"
 		"rdfs:Literal"
-		"xsd:anySimpleType"
+		":FROM"
 		"owl:disjointWith"
+		"xsd:anySimpleType"
 		"owl:minCardinality"
 		"xsd:ID"
 		"xsd:gDay"
 		"xsd:gYearMonth"
-		"xsd:NCName"
 		"owl:distinctMembers"
+		"xsd:NCName"
 		"xsd:nonPositiveInteger"
 		"rdfs:Datatype"
-		":DIRECTED-BINARY-RELATION"
-		"xsd:token"
 		"owl:TransitiveProperty"
-		"xsd:ENTITY"
-		"xsd:normalizedString"
+		"xsd:token"
+		":DIRECTED-BINARY-RELATION"
 		"xsd:IDREF"
+		"xsd:normalizedString"
+		"xsd:ENTITY"
 		"xsd:gMonth"
-		"rdf:type"
-		"owl:oneOf"
 		"owl:maxCardinality"
+		"owl:oneOf"
+		"rdf:type"
 		"rdf:object")
 	(journaling_enabled FALSE)
 	(next_frame_number 0)
