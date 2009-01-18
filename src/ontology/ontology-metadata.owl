@@ -150,13 +150,13 @@
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000113">
         <rdfs:label xml:lang="en">in branch</rdfs:label>
-        <IAO_0000119>OBI_0000277</IAO_0000119>
+        <obo:IAO_0000119>OBI_0000277</obo:IAO_0000119>
     </owl:AnnotationProperty>
 
     <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en"
             >has curation status</rdfs:label>
-        <IAO_0000119>OBI_0000281</IAO_0000119>
+        <obo:IAO_0000119>OBI_0000281</obo:IAO_0000119>
     </owl:AnnotationProperty>
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030">
@@ -250,7 +250,7 @@
   <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymType">
        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
   </owl:Class>
-
+  <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
 </rdf:RDF>
 
 <!-- Created with Protege (with OWL Plugin 3.4, Build 513)  http://protege.stanford.edu -->
