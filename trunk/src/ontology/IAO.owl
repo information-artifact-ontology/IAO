@@ -25,8 +25,8 @@
             >a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon.</rdfs:comment>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://www.obofoundry.org/ro/ro.owl"/>
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+        <owl:imports rdf:resource="http://www.obofoundry.org/ro/ro.owl"/>
     </owl:Ontology>
     
 
@@ -290,7 +290,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <IAO_0000111 xml:lang="en"
             >instruction trigger</IAO_0000111>
         <IAO_0000115 xml:lang="en"
-            >is a plan to carry out a process or an event if the trigger condition is fulfilled</IAO_0000115>
+            >is information about a realizable that specifies that what  should happen if the trigger condition is fulfilled</IAO_0000115>
     </owl:Class>
     
 
@@ -326,19 +326,20 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
+        <IAO_0000117>Barry Smith</IAO_0000117>
+        <IAO_0000119>OBI_0000217</IAO_0000119>
+        <IAO_0000117>Alan Ruttenberg</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            >An objective specification is an information entity about a realizable entity that describes a intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</IAO_0000115>
         <IAO_0000116 xml:lang="en"
             >Answers the question, why did you do this experiment?</IAO_0000116>
-        <IAO_0000113 xml:lang="en">IAO</IAO_0000113>
-        <IAO_0000119>OBI_0000217</IAO_0000119>
-        <IAO_0000117 xml:lang="en"
-            >Jennifer Fostel /Barry Smith</IAO_0000117>
-        <IAO_0000115 xml:lang="en"
-            >objective is an non realizable information entity which can serve as that  proper part of a plan  towards which the realization of the plan is directed. (note: achievement</IAO_0000115>
+        <IAO_0000117>Jennifer Fostel</IAO_0000117>
+        <IAO_0000119 xml:lang="en"
+            >OBI Plan and Planned Process/Roles Branch</IAO_0000119>
         <IAO_0000111 xml:lang="en"
             >objective specification</IAO_0000111>
         <IAO_0000112 xml:lang="en"
             >purpose of a study; support of hypothesis, discovery of new information</IAO_0000112>
-        <IAO_0000119 xml:lang="en">source pending</IAO_0000119>
     </owl:Class>
     
 
@@ -363,6 +364,23 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
             >narrative object</IAO_0000111>
         <IAO_0000117 xml:lang="en"
             >person:Chris Stoeckert</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000007">
+        <rdfs:label
+            >action Specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+        <IAO_0000117 xml:lang="en">Alan Ruttenberg</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            >An action specification is information about a realizable that describes an action the bearer will take</IAO_0000115>
+        <IAO_0000119 xml:lang="en"
+            >OBI Plan and Planned Process branch</IAO_0000119>
+        <IAO_0000112 xml:lang="en"
+            >Pour the contents of flask 1 into flask 2</IAO_0000112>
     </owl:Class>
     
 
@@ -576,7 +594,11 @@ process... I would include lists, tables, sentences... I think I might
 defer to Barry, or to Brian Cantwell Smith
 
 JAR: A data item is an approximately justified approximately true approximate belief</IAO_0000116>
+        <IAO_0000115
+            >a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</IAO_0000115>
         <IAO_0000117>Jonathan Rees</IAO_0000117>
+        <IAO_0000118 xml:lang="en">data</IAO_0000118>
+        <IAO_0000118 xml:lang="en">datum</IAO_0000118>
     </owl:Class>
     
 
@@ -652,13 +674,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -686,17 +708,11 @@ Previous. An information content entity is a non-realizable information entity t
         </rdfs:subClassOf>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
-        <IAO_0000119>OBI_0000337</IAO_0000119>
-        <IAO_0000115
-            >is the specification of a plan that can be concretized and realized by an actor.</IAO_0000115>
-        <IAO_0000119 xml:lang="en"
-            >OBI branch derived</IAO_0000119>
         <IAO_0000116
             >Werner pushed back on calling it realizable information entity as it isn&#39;t realizable. However this name isn&#39;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&#39;t about the plan, it, once concretized, *is* the plan. -Alan</IAO_0000116>
-        <IAO_0000117 xml:lang="en"
-            >PlanAndPlannedProcess Branch</IAO_0000117>
-        <IAO_0000111 xml:lang="en">guide</IAO_0000111>
-        <IAO_0000118 xml:lang="en">instruction</IAO_0000118>
+        <IAO_0000115
+            >An information entity about a realizable is an information content entity about a realizable.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Alan Ruttenberg</IAO_0000117>
     </owl:Class>
     
 
@@ -1120,21 +1136,24 @@ blah:
                 <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
         <IAO_0000119>OBI_0000344</IAO_0000119>
+        <IAO_0000115 xml:lang="en"
+            >A plan specification is an information entity about a realizable entity. The specification includes parts such as objective specification, action specifications and conditional specifications. When concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Alan Ruttenberg</IAO_0000117>
         <IAO_0000116 xml:lang="en"
             >Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</IAO_0000116>
         <IAO_0000119 xml:lang="en"
-            >OBI branch derived</IAO_0000119>
+            >OBI Plan and Planned Process branch</IAO_0000119>
         <IAO_0000112 xml:lang="en"
             >PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</IAO_0000112>
-        <IAO_0000116 xml:lang="en"
-            >Part of range for an object property is_potentially_realizable_as in obi before split (LF 040907)</IAO_0000116>
-        <IAO_0000117 xml:lang="en"
-            >PlanAndPlannedProcess Branch</IAO_0000117>
-        <IAO_0000115 xml:lang="en"
-            >a plan specification is a specification of a process that an actor can engage in to achieve the objective specified as part of the plan</IAO_0000115>
         <IAO_0000111 xml:lang="en"
             >plan specification</IAO_0000111>
     </owl:Class>
@@ -1503,17 +1522,7 @@ variable determining the position on the vertical axis.</IAO_0000115>
             </owl:Restriction>
         </owl:someValuesFrom>
     </owl:Restriction>
-    <!-- http://purl.obofoundry.org/obo/IAO_0000027 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000027">
-        <obo:IAO_0000115
-            >a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements. </obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">datum</obo:IAO_0000118>
-    </owl:Class>
 </rdf:RDF>
-
-
 
 
 
