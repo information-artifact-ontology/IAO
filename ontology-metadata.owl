@@ -17,7 +17,7 @@
     xmlns:obo="http://purl.obofoundry.org/obo/"
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-  xml:base="http://purl.obofoundry.org/obo/iao/ontology-metadata.owl">
+  xml:base="http://purl.obofoundry.org/obo/iao/2009-01-23/ontology-metadata.owl">
   <owl:Ontology rdf:about="">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
