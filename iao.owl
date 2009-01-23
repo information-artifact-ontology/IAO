@@ -404,7 +404,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000007">
         <rdfs:label
-            >action Specification</rdfs:label>
+            >action specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
         <IAO_0000117 xml:lang="en">Alan Ruttenberg</IAO_0000117>
         <IAO_0000115 xml:lang="en"
