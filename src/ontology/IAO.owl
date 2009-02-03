@@ -39,38 +39,43 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000283">
-    <rdfs:label xml:lang="en">imported from</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000116">
-    <rdfs:label xml:lang="en">editor note</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000118">
-    <rdfs:label xml:lang="en">alternative term</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000112">
-    <rdfs:label xml:lang="en">example of usage</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000115">
-    <rdfs:label xml:lang="en">definition</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000111">
-    <rdfs:label xml:lang="en">preferred term</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000119">
-    <rdfs:label xml:lang="en">definition source</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000117">
-    <rdfs:label xml:lang="en">definition editor</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000113">
-        <rdfs:label xml:lang="en">in branch</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en"
             >has curation status</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000283">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000113">
+        <rdfs:label xml:lang="en">in branch</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en"
+            >example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en"
+            >definition editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">preferred term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en"
+            >alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en"
+            >definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
 
 
     <!-- 
@@ -459,6 +464,33 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obofoundry.org/obo/IAO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000011">
+        <rdfs:label xml:lang="en"
+            >independent variable specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000117
+            >Person: Bjoern Peters</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            > independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</IAO_0000115>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 Original definition - In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
+        <IAO_0000119
+            >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obofoundry.org/obo/IAO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000012">
@@ -501,6 +533,33 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obofoundry.org/obo/IAO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000014">
+        <rdfs:label xml:lang="en"
+            >dependent variable specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
+        <IAO_0000119
+            >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
+        <IAO_0000117
+            >Person: Bjoern Peters</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            >dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.</IAO_0000115>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obofoundry.org/obo/IAO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000015">
@@ -516,6 +575,31 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
             >The pattern in ink on a page of a paperback novel.</IAO_0000112>
         <IAO_0000119
             >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000016">
+        <rdfs:label xml:lang="en"
+            >controlled variable specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won&#39;t be valid</IAO_0000116>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
+        <IAO_0000117
+            >Person: Bjoern Peters</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            >Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</IAO_0000115>
+        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     </owl:Class>
     
 
@@ -608,6 +692,8 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdfs:label xml:lang="en">data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
         <IAO_0000116 xml:lang="en"
+            >2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</IAO_0000116>
+        <IAO_0000116 xml:lang="en"
             >JAR: datum     -- well, this will be very tricky to define, but maybe some 
 information-like stuff that might be put into a computer and that is 
 meant, by someone, to denote and/or to be interpreted by some 
@@ -615,9 +701,9 @@ process... I would include lists, tables, sentences... I think I might
 defer to Barry, or to Brian Cantwell Smith
 
 JAR: A data item is an approximately justified approximately true approximate belief</IAO_0000116>
-        <IAO_0000115
-            >a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</IAO_0000115>
         <IAO_0000117>Jonathan Rees</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            >a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</IAO_0000115>
         <IAO_0000118 xml:lang="en">data</IAO_0000118>
         <IAO_0000118 xml:lang="en">datum</IAO_0000118>
     </owl:Class>
@@ -695,13 +781,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -734,6 +820,8 @@ Previous. An information content entity is a non-realizable information entity t
         <IAO_0000115
             >An information entity about a realizable is an information content entity about a realizable.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Alan Ruttenberg</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            >Question: Should study specification be part of IAO?</IAO_0000115>
     </owl:Class>
     
 
@@ -1115,8 +1203,14 @@ blah:
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
         <IAO_0000119>OBI_0000042</IAO_0000119>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009
+
+Is this what we need. There are also data sets like all measurement taken in a time course experiement on one patient.
+
+What is the result of one FACS experiment?</IAO_0000116>
         <IAO_0000115 xml:lang="en"
-            >A data set is an information content entity that is an aggregate of other information_content_entities that have something in common and are considered to form a unit.</IAO_0000115>
+            >A data set is an information content entity that is an aggregate of other data items that have something in common and are considered to form a unit and are packaged together for some purpose, for example depositing into a repository.</IAO_0000115>
         <IAO_0000111 xml:lang="en">data set</IAO_0000111>
         <IAO_0000119 xml:lang="en">group:OBI</IAO_0000119>
         <IAO_0000117 xml:lang="en">person:Allyson</IAO_0000117>
@@ -1209,9 +1303,11 @@ blah:
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000027"/>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
+        <IAO_0000119>OBI_0000305</IAO_0000119>
+        <IAO_0000116
+            >2/2/2009 is_specified_output of some assay?</IAO_0000116>
         <IAO_0000115 xml:lang="en"
             >A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by an instrument.</IAO_0000115>
-        <IAO_0000119>OBI_0000305</IAO_0000119>
         <IAO_0000112 xml:lang="en"
             >Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</IAO_0000112>
         <IAO_0000119 xml:lang="en">group:OBI</IAO_0000119>
@@ -1517,6 +1613,23 @@ variable determining the position on the vertical axis.</IAO_0000115>
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000125 -->
+
+    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000125"/>
     
 
 
