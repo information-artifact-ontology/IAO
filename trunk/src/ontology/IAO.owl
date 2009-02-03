@@ -23,10 +23,19 @@
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:comment
             >a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon.</rdfs:comment>
-        <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-        <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
-        <owl:imports rdf:resource="http://www.obofoundry.org/ro/ro.owl"/>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/ontology-metadata.owl"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://www.ifomis.org/bfo/1.1"/>
+    </owl:imports>
+    <owl:imports>
+      <owl:Ontology rdf:about="http://www.obofoundry.org/ro/ro.owl"/>
+    </owl:imports>
+
     </owl:Ontology>
     
 
@@ -456,7 +465,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <IAO_0000117 xml:lang="en"
             >PERSON: Melanie Courtot</IAO_0000117>
         <IAO_0000115 xml:lang="en"
-            >Series of encoded instructions that can be directly executed by a CPU, or transformed in to a form that can be. For programming texts that are syntactically correct and which are in a language that can be executed by an interpreter this would correspond to the tokenized version of the text stripped of comments.</IAO_0000115>
+            >Software is a plan specification which is a series of encoded instructions that can be directly executed by a processing unit or transformed in to a form that can be. For programming texts that are syntactically correct and which are in a language that can be executed by an interpreter this would correspond to the tokenized version of the text stripped of comments. </IAO_0000115>
         <IAO_0000116 xml:lang="en"
             >see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</IAO_0000116>
         <IAO_0000111 xml:lang="en">software</IAO_0000111>
