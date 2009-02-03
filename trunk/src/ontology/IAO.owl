@@ -476,17 +476,18 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
                 <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
         <IAO_0000117
             >Person: Bjoern Peters</IAO_0000117>
-        <IAO_0000115 xml:lang="en"
-            > independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</IAO_0000115>
         <IAO_0000116 xml:lang="en"
             >2/2/2009 Original definition - In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
         <IAO_0000119
             >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
         <IAO_0000116 xml:lang="en"
             >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
-        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+        <IAO_0000115 xml:lang="en"
+            >independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</IAO_0000115>
     </owl:Class>
     
 
@@ -545,6 +546,8 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
                 <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
         <IAO_0000116 xml:lang="en"
             >2/2/2009 In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
         <IAO_0000119
@@ -555,7 +558,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
             >Person: Bjoern Peters</IAO_0000117>
         <IAO_0000115 xml:lang="en"
             >dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.</IAO_0000115>
-        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     </owl:Class>
     
 
@@ -591,6 +593,8 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
                 <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
         <IAO_0000116 xml:lang="en"
             >2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won&#39;t be valid</IAO_0000116>
         <IAO_0000116 xml:lang="en"
@@ -599,7 +603,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
             >Person: Bjoern Peters</IAO_0000117>
         <IAO_0000115 xml:lang="en"
             >Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</IAO_0000115>
-        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     </owl:Class>
     
 
@@ -781,13 +784,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1248,17 +1251,25 @@ What is the result of one FACS experiment?</IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
+        <rdfs:comment xml:lang="en"
+            >2/3/2009 Comment from OBI review.
+
+Action specification not well enough specified.
+Conditional specification not well enough specified.
+Question whether all plan specifications have objective specifications.
+
+Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
         <IAO_0000119>OBI_0000344</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >A plan specification is an information entity about a realizable entity. The specification includes parts such as objective specification, action specifications and conditional specifications. When concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified.</IAO_0000115>
@@ -1613,23 +1624,6 @@ variable determining the position on the vertical axis.</IAO_0000115>
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000125 -->
-
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000125"/>
     
 
 
