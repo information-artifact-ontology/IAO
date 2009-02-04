@@ -10,7 +10,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:oboContent="http://purl.org/obo/owl/"
-  xml:base="http://purl.org/obo/owl/relationship">
+  xml:base="http://purl.org/obo/owl/ro.owl">
   <owl:Ontology rdf:about="">
     <oboInOwl:savedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >cjm</oboInOwl:savedBy>
