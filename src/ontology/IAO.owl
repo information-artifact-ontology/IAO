@@ -1407,6 +1407,15 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
             >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
         <IAO_0000116
             >Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</IAO_0000116>
+        <IAO_0000116 xml:lang="en"
+            >2/3/2009 Feedback from OBI
+
+This should be a &quot;setting specification&quot;. There is a question of whether it is information about a realizable or not.
+
+Pro other specification are about realizables.
+Cons sometimes specifies a quality which is not a realizable.
+
+</IAO_0000116>
         <IAO_0000115
             >A settings datum is a datum that denotes some configuration of an instrument.</IAO_0000115>
     </owl:Class>
