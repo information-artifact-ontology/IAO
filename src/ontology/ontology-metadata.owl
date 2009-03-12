@@ -142,6 +142,8 @@
     <obo:IAO_0000116 xml:lang="en"
     >The creation of this class has been inspired in part by Werner Ceusters' paper, Applying evolutionary terminology auditing to the Gene Ontology.</obo:IAO_0000116>
   </owl:Class>
+
+
   <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Synonym">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
@@ -155,13 +157,15 @@
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030">
     <rdfs:label xml:lang="en">information content entity</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Subset">
-    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
-  </owl:Class>
+
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
     <obo:IAO_0000119 xml:lang="en"
     >OBI_0000281</obo:IAO_0000119>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000231">
+    <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
   </owl:AnnotationProperty>
 
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000283">
@@ -207,6 +211,11 @@
       <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000230"/>
     </owl:distinctMembers>
   </owl:AllDifferent>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <oboInOwl:Subset rdf:about="http://purl.obofoundry.org/obo/IAO_0000224"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000112">
     <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
     <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
@@ -229,16 +238,8 @@
     >OBI_0000277</obo:IAO_0000119>
   </owl:AnnotationProperty>
 
-  <oboInOwl:Subset rdf:about="http://purl.obofoundry.org/obo/IAO_0000224">
-    <obo:IAO_0000117 xml:lang="en"
-    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000117 xml:lang="en"
-    >PERSON: Melanie Courtot</obo:IAO_0000117>
-    <rdfs:label xml:lang="en"
-    >core</rdfs:label>
-    <obo:IAO_0000115 xml:lang="en"
-    >Core is an instance of a grouping of terms from an ontology or ontologies. It is used by OBI to identify main classes.</obo:IAO_0000115>
-  </oboInOwl:Subset>
+
+
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000111">
     <rdfs:label xml:lang="en">preferred term</rdfs:label>
     <obo:IAO_0000111 xml:lang="en">preferred term</obo:IAO_0000111>
@@ -265,6 +266,22 @@
     <rdfs:label xml:lang="en">definition editor</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+
+
+  <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#Subset">
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:oneOf rdf:parseType="Collection">
+          <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000002">
+            <rdfs:label xml:lang="en"
+            >example to be eventually removed</rdfs:label>
+          </obo:IAO_0000078>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
 
 </rdf:RDF>
 
