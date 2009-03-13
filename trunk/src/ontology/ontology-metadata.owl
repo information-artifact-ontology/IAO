@@ -273,15 +273,6 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <obo:IAO_0000078 rdf:about="http://purl.obofoundry.org/obo/IAO_0000002">
-            <rdfs:label xml:lang="en"
-            >example to be eventually removed</rdfs:label>
-          </obo:IAO_0000078>
-        </owl:oneOf>
-      </owl:Class>
-    </owl:equivalentClass>
-  </owl:Class>
-
  <oboInOwl:Subset rdf:about="http://purl.obofoundry.org/obo/IAO_0000224">
     <obo:IAO_0000117 xml:lang="en"
     >PERSON: Alan Ruttenberg</obo:IAO_0000117>
@@ -292,6 +283,12 @@
     <obo:IAO_0000115 xml:lang="en"
     >Core is an instance of a grouping of terms from an ontology or ontologies. It is used by OBI to identify main classes.</obo:IAO_0000115>
   </oboInOwl:Subset>
+        </owl:oneOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+
+
 </rdf:RDF>
 
 <!-- Created with Protege (with OWL Plugin 3.4, Build 518)  http://protege.stanford.edu -->
