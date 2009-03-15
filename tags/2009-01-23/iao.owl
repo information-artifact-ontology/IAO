@@ -489,23 +489,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000018 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000018">
-        <rdfs:label>material entity</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart"/>
-                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Object"/>
-                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-    </owl:Class>
-    
-
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000019 -->
 
@@ -1251,7 +1234,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000178">
         <rdfs:label
             >material information bearer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000018"/>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
         <IAO_0000115
             >An information bearer is an artifact, such as a hard drive, upon which an information content entity generically depends.</IAO_0000115>
     </owl:Class>
