@@ -929,16 +929,32 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <rdfs:label xml:lang="en">programming language</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000091">
-    <obo:IAO_0000115 xml:lang="en">A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements.</obo:IAO_0000115>
-    <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
-    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000088"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000006"/>
-    <obo:IAO_0000111 xml:lang="en">report display element</obo:IAO_0000111>
-    <rdfs:label xml:lang="en">report display element</rdfs:label>
-    <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000117 xml:lang="en">PERSON: Allyson Lister</obo:IAO_0000117>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: was report display element with definition: A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements.</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Melanie Courtot</obo:IAO_0000117>
+    <obo:IAO_0000115 xml:lang="en">A report element is a narrative object in which information is presented and consumed by a human being, and is part of a report. Examples of report elements are figure (dot plot), table, text portion (may include a movie or audio clip on a web page).</obo:IAO_0000115>
+    <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: needs some more work (clarify relations).</obo:IAO_0000116>
+    <obo:IAO_0000111 xml:lang="en">report element</obo:IAO_0000111>
+    <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000001</obo:IAO_0000119>
-    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000120"/>
+    <rdfs:label xml:lang="en">report element</rdfs:label>
     <obo:IAO_0000116 xml:lang="en">There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</obo:IAO_0000116>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000057">
