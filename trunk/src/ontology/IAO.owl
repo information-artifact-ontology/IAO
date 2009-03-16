@@ -40,8 +40,7 @@
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000091"/>
     </rdfs:subClassOf>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
     <rdfs:label xml:lang="en">report table</rdfs:label>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000265</obo:IAO_0000119>
@@ -58,8 +57,7 @@
     <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by an instrument.</obo:IAO_0000115>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000305</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <rdfs:label xml:lang="en">measurement datum</rdfs:label>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
   </owl:Class>
@@ -68,8 +66,7 @@
     <obo:IAO_0000112 xml:lang="en">Density plot of SSC-H and FSC-H.</obo:IAO_0000112>
     <obo:IAO_0000111 xml:lang="en">density plot</obo:IAO_0000111>
     <obo:IAO_0000115 xml:lang="en">A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</obo:IAO_0000115>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000179</obo:IAO_0000119>
     <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
@@ -81,8 +78,6 @@
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000038">
     <obo:IAO_0000111 xml:lang="en">report graph</obo:IAO_0000111>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
     <rdfs:label xml:lang="en">report graph</rdfs:label>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000240</obo:IAO_0000119>
@@ -92,12 +87,12 @@
     <obo:IAO_0000115 xml:lang="en">A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >group:OBI</obo:IAO_0000119>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000181">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
     <obo:IAO_0000115 xml:lang="en">A Venn diagram is a report graph showing all hypothetically possible
 logical relations between a finite collection of sets.</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
@@ -109,25 +104,24 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Venn_diagram</obo:IAO_0000119>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000033">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000115 xml:lang="en">Question: Should study specification be part of IAO?</obo:IAO_0000115>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An information entity about a realizable is an information content entity about a realizable.</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">Question: Should study specification be part of IAO?</obo:IAO_0000115>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
     <rdfs:label xml:lang="en">information entity about a realizable</rdfs:label>
     <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000136"/>
         </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
       </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000008">
@@ -136,8 +130,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000184">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
     <obo:IAO_0000115 xml:lang="en">A scatterplot is a report graph which uses Cartesian coordinates to
 display values for two variables for a set of data. The data is displayed
@@ -162,8 +155,7 @@ variable determining the position on the vertical axis.</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000098">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <rdfs:label xml:lang="en">data format specification</rdfs:label>
     <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
@@ -171,9 +163,9 @@ variable determining the position on the vertical axis.</obo:IAO_0000115>
 
 blah:
  for organizing information artifacts. Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</obo:IAO_0000115>
-    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000187</obo:IAO_0000119>
+    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000010">
@@ -183,8 +175,7 @@ blah:
     <obo:IAO_0000116 xml:lang="en">see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
     <rdfs:label xml:lang="en">software</rdfs:label>
     <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000120"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000120"/>
     <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000104"/>
@@ -201,29 +192,27 @@ blah:
     >OBI_0000159</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">Journal article content is a narrative object that is the information content encoded in a article published in a serious, scholarly publication, most often peer-reviewed.</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
     <obo:IAO_0000112 xml:lang="en">Examples of encodings of journal article content are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number.</obo:IAO_0000112>
     <obo:IAO_0000111 xml:lang="en">journal article content</obo:IAO_0000111>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <rdfs:label xml:lang="en">journal article content</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000140">
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</obo:IAO_0000116>
     <obo:IAO_0000116 xml:lang="en">2/3/2009 Feedback from OBI
 
 This should be a "setting specification". There is a question of whether it is information about a realizable or not.
 
 Pro other specification are about realizables.
 Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</obo:IAO_0000116>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000027"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >setting datum</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A settings datum is a datum that denotes some configuration of an instrument.</obo:IAO_0000115>
   </owl:Class>
@@ -231,18 +220,12 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <obo:IAO_0000115 xml:lang="en">A plan specification is an information entity about a realizable entity. The specification includes parts such as objective specification, action specifications and conditional specifications. When concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified.</obo:IAO_0000115>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom>
-          <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000005"/>
-        </owl:someValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
         </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000007"/>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000005"/>
+        </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">plan specification</rdfs:label>
@@ -260,9 +243,14 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     >OBI_0000344</obo:IAO_0000119>
     <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000007"/>
+        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000003">
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -275,8 +263,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <obo:IAO_0000111 xml:lang="en">measurement unit label</obo:IAO_0000111>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A measurement unit label is an label that is part of a measurement datum and denotes a unit of measure.</obo:IAO_0000115>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000009"/>
     </rdfs:subClassOf>
@@ -284,8 +271,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000024">
     <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The length of a ruler.</obo:IAO_0000112>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -303,19 +289,17 @@ Request that IAO either clarify these or change definitions not to use them</rdf
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000012"/>
     </rdfs:subClassOf>
     <obo:IAO_0000111 xml:lang="en">binary executable</obo:IAO_0000111>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
-    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000222</obo:IAO_0000119>
+    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000117 xml:lang="en">person:Jennifer Fostel</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000034">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
+    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000331</obo:IAO_0000119>
-    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">revisit?</obo:IAO_0000115>
     <rdfs:label xml:lang="en">time trigger</rdfs:label>
     <rdfs:subClassOf>
@@ -331,17 +315,16 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Person: Bjoern Peters</obo:IAO_0000117>
     <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
-    <rdfs:label xml:lang="en">independent variable specification</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of"/>
         </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">independent variable specification</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
   </owl:Class>
@@ -353,22 +336,20 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.</obo:IAO_0000115>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+    <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
+    <rdfs:label xml:lang="en">dependent variable specification</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of"/>
         </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
-    <rdfs:label xml:lang="en">dependent variable specification</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000141">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000121"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000121"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >digital quality</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
@@ -380,25 +361,25 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     >Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >scalar measurement datum</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000004"/>
+        </owl:onProperty>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000039"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000039"/>
-        </owl:onProperty>
-        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:minCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:FunctionalProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000004"/>
-        </owl:onProperty>
-        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:minCardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a scalar measurement datum is a measurement datum that is composed of two parts, a single numeral and a unit label.</obo:IAO_0000115>
     <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -406,25 +387,33 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000035">
-    <obo:IAO_0000115 xml:lang="en">A conclusion is a narrative object which can be published in a paper summerizing and interpreting a protocol application.</obo:IAO_0000115>
-    <obo:IAO_0000117 xml:lang="en">Jennifer Fostel</obo:IAO_0000117>
-    <obo:IAO_0000111 xml:lang="en">conclusion</obo:IAO_0000111>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OBI_0000005</obo:IAO_0000119>
+    <obo:IAO_0000111 xml:lang="en">study interpretation</obo:IAO_0000111>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: definition was "A conclusion is a narrative object which can be published in a paper summerizing and interpreting a protocol application."</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
+    <rdfs:label xml:lang="en">study interpretation</rdfs:label>
+    <obo:IAO_0000115 xml:lang="en">A study interpretation is a narrative object interpreting a study result.  Examples include whether a hypothesis is false, the study failed to address the hypothesis, the study results have led to new hypotheses.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000006"/>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">conclusion</rdfs:label>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >OBI_0000005</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Melanie Courtot</obo:IAO_0000117>
+    <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >conclusion</obo:IAO_0000118>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000182">
     <obo:IAO_0000111 xml:lang="en">survival curve</obo:IAO_0000111>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
     <obo:IAO_0000119 xml:lang="en">WEB: http://www.graphpad.com/www/book/survive.htm</obo:IAO_0000119>
     <rdfs:label xml:lang="en">survival curve</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
     <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
     <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">A survival curve is a report graph which is a graphical representation of data where the percentage of survival is plotted as a function of time.</obo:IAO_0000115>
@@ -440,8 +429,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <obo:IAO_0000111 xml:lang="en">report of results</obo:IAO_0000111>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000099</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000006"/>
     </rdfs:subClassOf>
@@ -452,8 +440,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <rdfs:label xml:lang="en">image</rdfs:label>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000030</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
@@ -463,12 +450,11 @@ Request that IAO either clarify these or change definitions not to use them</rdf
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000016">
     <rdfs:label xml:lang="en">controlled variable specification</rdfs:label>
-    <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
     <obo:IAO_0000116 xml:lang="en">2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won't be valid</obo:IAO_0000116>
+    <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Person: Bjoern Peters</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</obo:IAO_0000115>
-    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
@@ -477,8 +463,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000029">
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -497,8 +483,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <rdfs:label xml:lang="en">histogram</rdfs:label>
     <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
     <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
     <obo:IAO_0000111 xml:lang="en">histogram</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">A histogram is a report graph which is a statistical description of a
@@ -509,8 +494,7 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     >Person: Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</obo:IAO_0000116>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000028"/>
     </rdfs:subClassOf>
@@ -531,6 +515,7 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000027">
+    <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
     <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
 information-like stuff that might be put into a computer and that is 
 meant, by someone, to denote and/or to be interpreted by some 
@@ -538,12 +523,11 @@ process... I would include lists, tables, sentences... I think I might
 defer to Barry, or to Brian Cantwell Smith
 
 JAR: A data item is an approximately justified approximately true approximate belief</obo:IAO_0000116>
-    <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Jonathan Rees</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
-    <obo:IAO_0000118 xml:lang="en">datum</obo:IAO_0000118>
     <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+    <obo:IAO_0000118 xml:lang="en">datum</obo:IAO_0000118>
     <rdfs:label xml:lang="en">data item</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
@@ -557,8 +541,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000128"/>
     </rdfs:subClassOf>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >batch number</obo:IAO_0000118>
   </owl:Class>
@@ -570,14 +553,12 @@ JAR: A data item is an approximately justified approximately true approximate be
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000128"/>
     </rdfs:subClassOf>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Note: during the call there was some confusion between serial number and model number. We agreed that it would be very helpful for all those terms to have example of usages - please add if you have any :-)</obo:IAO_0000116>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000015">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -597,8 +578,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     </rdfs:subClassOf>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000042</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000115 xml:lang="en">A data set is an information content entity that is an aggregate of other data items that have something in common and are considered to form a unit and are packaged together for some purpose, for example depositing into a repository.</obo:IAO_0000115>
     <rdfs:label xml:lang="en">data set</rdfs:label>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
@@ -613,8 +593,7 @@ What is the result of one FACS experiment?</obo:IAO_0000116>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000064">
     <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
     <rdfs:label xml:lang="en">algorithm</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000115 xml:lang="en">an algorithm is a plan which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</obo:IAO_0000115>
     <obo:IAO_0000111 xml:lang="en">algorithm</obo:IAO_0000111>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
@@ -631,8 +610,7 @@ What is the result of one FACS experiment?</obo:IAO_0000116>
     </rdfs:subClassOf>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000132</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000116 xml:lang="en">digital_entity</obo:IAO_0000116>
     <rdfs:label xml:lang="en">text based digital entity</rdfs:label>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
@@ -642,15 +620,14 @@ What is the result of one FACS experiment?</obo:IAO_0000116>
     <obo:IAO_0000115 xml:lang="en">A text based digital entity is a digital entity that is encoded so that it only contains text characters.</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000001">
+    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000349</obo:IAO_0000119>
-    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <rdfs:label xml:lang="en">conditional specification</rdfs:label>
     <obo:IAO_0000111 xml:lang="en">instruction trigger</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000115 xml:lang="en">is information about a realizable that specifies that what  should happen if the trigger condition is fulfilled</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000065">
@@ -662,8 +639,7 @@ What is the result of one FACS experiment?</obo:IAO_0000116>
     >OBI_0000199</obo:IAO_0000119>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000064"/>
     <obo:IAO_0000112 xml:lang="en">R program, Perl interpreter, Java virtual machine</obo:IAO_0000112>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000111 xml:lang="en">software interpreter</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">A  software interpreter is a generically dependent realizable entity that takes, as input, some digital entity, and takes action driven by the information content of that digital entity</obo:IAO_0000115>
@@ -675,8 +651,7 @@ What is the result of one FACS experiment?</obo:IAO_0000116>
     <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000129">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name.</obo:IAO_0000115>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -697,8 +672,7 @@ two-dimensional map.</obo:IAO_0000115>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
     <rdfs:label xml:lang="en">heatmap</rdfs:label>
     <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000009">
@@ -711,21 +685,19 @@ two-dimensional map.</obo:IAO_0000115>
     >label</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000012">
-    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000261</obo:IAO_0000119>
+    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">A digital entity is an information entity which is a collection of bits that can be interpreted by a computer. Two digital entities are the same if they are bitwise identical.</obo:IAO_0000115>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000141"/>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000111 xml:lang="en">digital entity</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
     <rdfs:label xml:lang="en">digital entity</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000183">
     <obo:IAO_0000111 xml:lang="en">dendrogram</obo:IAO_0000111>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
     <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Dendrogram</obo:IAO_0000119>
     <rdfs:label xml:lang="en">dendrogram</rdfs:label>
     <obo:IAO_0000112 xml:lang="en">Dendrograms are often used in computational biology to
@@ -740,14 +712,13 @@ clustering algorithm.</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000105">
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000012"/>
-    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000195</obo:IAO_0000119>
+    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000117 xml:lang="en">person:Jennifer Fostel</obo:IAO_0000117>
     <rdfs:label xml:lang="en">digital document</rdfs:label>
     <obo:IAO_0000115 xml:lang="en">A digital document is a digital entity consisting of an electronic file which can be rendered into human-readable form by one or more computational applications.  The digital document does not refer to the information content of the document but to an instance of the file.</obo:IAO_0000115>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000111 xml:lang="en">digital document</obo:IAO_0000111>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030">
@@ -757,8 +728,7 @@ Previous. An information content entity is a non-realizable information entity t
     <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
     <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -778,16 +748,16 @@ Previous. An information content entity is a non-realizable information entity t
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
             <owl:onProperty>
               <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000294"/>
             </owl:onProperty>
-            <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
           </owl:Restriction>
           <owl:Restriction>
+            <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
             <owl:onProperty>
               <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
             </owl:onProperty>
-            <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
           </owl:Restriction>
         </owl:intersectionOf>
       </owl:Class>
@@ -802,8 +772,7 @@ Previous. An information content entity is a non-realizable information entity t
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000091"/>
     </rdfs:subClassOf>
     <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000116 xml:lang="en">I prepended the 'report ' to make it clear that we mean parts of reports here. We may want a more generic version of 'figure', in which case this would become a defined class - figure and part_of some report</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">report figure</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
@@ -817,8 +786,7 @@ Previous. An information content entity is a non-realizable information entity t
     >_identifier is a container under information content entity for collecting types of terms to indicate a specific instance or clas of what was used or participated in an investigation. Identifiers are borne by a product or its packaging, and can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.
 
 Note: everybody agreed that identifier is probably a too general term. We however felt that it would be appropriate to group "identifiying" terms under some kind of umbrella. We therefore propose to use _identifier for that purpose. As per OBI conventions, the _ prefixing identifier indicates that this is a helper class and shouldn't be considered as final.</obo:IAO_0000116>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000121"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000121"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >_identifier</rdfs:label>
   </owl:Class>
@@ -832,8 +800,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     >a numeral that denotes an integer</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000006">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000111 xml:lang="en">narrative object</obo:IAO_0000111>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
     <obo:IAO_0000115 xml:lang="en">A narrative object is an information content entity that is a set of propositions.</obo:IAO_0000115>
@@ -847,8 +814,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000055">
     <rdfs:label xml:lang="en">rule</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000119 xml:lang="en">PRS</obo:IAO_0000119>
     <obo:IAO_0000112 xml:lang="en">example to be added</obo:IAO_0000112>
     <obo:IAO_0000117 xml:lang="en">PRS</obo:IAO_0000117>
@@ -867,8 +833,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <obo:IAO_0000112 xml:lang="en">Dot plot of SSC-H and FSC-H.</obo:IAO_0000112>
     <rdfs:label xml:lang="en">dot plot</rdfs:label>
     <obo:IAO_0000115 xml:lang="en">A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</obo:IAO_0000115>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000038"/>
     <obo:IAO_0000111 xml:lang="en">dot plot</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
@@ -887,8 +852,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <obo:IAO_0000112 xml:lang="en">purpose of a study; support of hypothesis, discovery of new information</obo:IAO_0000112>
     <rdfs:label xml:lang="en">objective specification</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
@@ -903,15 +867,13 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     >OBI_0000039</obo:IAO_0000119>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <obo:IAO_0000111 xml:lang="en">source code module</obo:IAO_0000111>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000019">
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000012"/>
     <obo:IAO_0000115 xml:lang="en">A binary digital entity is a digital entity that is encoded in a way that is not easily human readable and that contains other than text characters.</obo:IAO_0000115>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000111 xml:lang="en">binary digital entity</obo:IAO_0000111>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000244</obo:IAO_0000119>
@@ -930,8 +892,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000058</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.</obo:IAO_0000115>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <rdfs:label xml:lang="en">programming language</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000091">
@@ -944,8 +905,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000001</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000116 xml:lang="en">There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</obo:IAO_0000116>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000057">
@@ -957,15 +917,63 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <obo:IAO_0000111 xml:lang="en">contour plot</obo:IAO_0000111>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000246</obo:IAO_0000119>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000002"/>
     <obo:IAO_0000116 xml:lang="en">generically_dependent_continuants</obo:IAO_0000116>
     <rdfs:label xml:lang="en">contour plot</rdfs:label>
   </owl:Class>
+  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000039">
+    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >has measurement unit label</rdfs:label>
+    <rdfs:range rdf:resource="http://purl.obofoundry.org/obo/IAO_0000003"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000297">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000294"/>
+    </owl:inverseOf>
+    <rdfs:label xml:lang="en">is_concretized_as</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000294">
+    <rdfs:label xml:lang="en">is_concretization_of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000136">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >is about</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a representation is_about anything exactly when some part of the information_artifact denotes the entity</obo:IAO_0000115>
+    <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This document is about information artifacts and their representations</obo:IAO_0000112>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+    <rdfs:domain rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000222">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >describes</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000219">
+    <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The word Boston on a traffic signn in Massachusetts generically denotes the city of Boston</obo:IAO_0000112>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >g generically denotes r =def 
+r is a portion of reality
+there is some c that is a concretization of g 
+every c that is a concretization of g specifically denotes r</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >generically denotes</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000221">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000136"/>
-    </rdfs:subPropertyOf>
+    <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >m is a quality measurement of q at t when
 q is a determinable quality 
@@ -1004,44 +1012,12 @@ Werner suggests a solution based on "Magnitudes" a proposal for which we are awa
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >is quality measurement of</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000297">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000294"/>
-    </owl:inverseOf>
-    <rdfs:label xml:lang="en">is_concretized_as</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000294">
-    <rdfs:label xml:lang="en">is_concretization_of</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000222">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >describes</rdfs:label>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000136"/>
-    </rdfs:subPropertyOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000136">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >is about</rdfs:label>
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
-    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >person:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >a representation is_about anything exactly when some part of the information_artifact denotes the entity</obo:IAO_0000115>
-    <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >This document is about information artifacts and their representations</obo:IAO_0000112>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
-    <rdfs:domain rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >There is controversy about this relation intended to represent the relation between some arbitrary physical thing that is used as a represention/proxy/pointer to something else</obo:IAO_0000116>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000135">
- <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1075,22 +1051,6 @@ Pattern of ink arrayed on paper as mark when writing down a friend's name
 Case 3
 Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file.</obo:IAO_0000115>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000219">
-    <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
-    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >person:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >The word Boston on a traffic signn in Massachusetts generically denotes the city of Boston</obo:IAO_0000112>
-    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >g generically denotes r =def 
-r is a portion of reality
-there is some c that is a concretization of g 
-every c that is a concretization of g specifically denotes r</obo:IAO_0000115>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >generically denotes</rdfs:label>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000223">
     <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1101,39 +1061,17 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000115>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >materially denotes</rdfs:label>
   </owl:ObjectProperty>
-  <owl:FunctionalProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000039">
-    <rdfs:subPropertyOf rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >has measurement unit label</rdfs:label>
-    <rdfs:range rdf:resource="http://purl.obofoundry.org/obo/IAO_0000003"/>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000004">
+  <owl:DatatypeProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000004">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >has measurement value</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </owl:FunctionalProperty>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000112">
     <rdfs:label xml:lang="en">example of usage</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000111">
     <rdfs:label xml:lang="en">preferred term</rdfs:label>
   </owl:AnnotationProperty>
-  <owl:Restriction>
-    <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-    <owl:someValuesFrom>
-      <owl:Restriction>
-        <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000135"/>
-        <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
-      </owl:Restriction>
-    </owl:someValuesFrom>
-    <owl:equivalentClass>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
-        <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
-      </owl:Restriction>
-    </owl:equivalentClass>
-  </owl:Restriction>
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000118">
     <rdfs:label xml:lang="en">alternative term</rdfs:label>
   </owl:AnnotationProperty>
@@ -1155,6 +1093,21 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000115>
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000116">
     <rdfs:label xml:lang="en">editor note</rdfs:label>
   </owl:AnnotationProperty>
+  <owl:Restriction>
+    <owl:someValuesFrom>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000135"/>
+        <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+      </owl:Restriction>
+    </owl:someValuesFrom>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
+        <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+  </owl:Restriction>
   <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000113">
     <rdfs:label xml:lang="en">in branch</rdfs:label>
   </owl:AnnotationProperty>
