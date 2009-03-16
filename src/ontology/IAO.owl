@@ -5,6 +5,7 @@
      xmlns:obo="http://purl.obofoundry.org/obo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
@@ -254,6 +255,31 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obofoundry.org/obo/OBI_0000294 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000294">
+        <rdfs:label xml:lang="en"
+            >is_concretization_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/OBI_0000297 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000297">
+        <rdfs:label xml:lang="en"
+            >is_concretized_as</rdfs:label>
+        <owl:inverseOf rdf:resource="http://purl.obofoundry.org/obo/OBI_0000294"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+    
+
+
     <!-- http://www.obofoundry.org/ro/ro.owl#has_part -->
 
     <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_part"/>
@@ -298,6 +324,105 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAOX_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000011">
+        <rdfs:label xml:lang="en"
+            >independent variable specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 Original definition - In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
+        <IAO_0000117
+            >Person: Bjoern Peters</IAO_0000117>
+        <IAO_0000119
+            >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
+        <IAO_0000115 xml:lang="en"
+            >independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAOX_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000014">
+        <rdfs:label xml:lang="en"
+            >dependent variable specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
+        <IAO_0000119
+            >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
+        <IAO_0000117
+            >Person: Bjoern Peters</IAO_0000117>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
+        <IAO_0000115 xml:lang="en"
+            >dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAOX_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000016">
+        <rdfs:label xml:lang="en"
+            >controlled variable specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won&#39;t be valid</IAO_0000116>
+        <IAO_0000116 xml:lang="en"
+            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
+        <IAO_0000117
+            >Person: Bjoern Peters</IAO_0000117>
+        <IAO_0000115 xml:lang="en"
+            >Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAOX_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000017">
+        <rdfs:label>model number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000028"/>
+        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
+        <IAO_0000116
+            >manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</IAO_0000116>
+        <IAO_0000115
+            >A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</IAO_0000115>
+        <IAO_0000117
+            >Person: Alan Ruttenberg</IAO_0000117>
+    </owl:Class>
     
 
 
@@ -415,14 +540,9 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obofoundry.org/obo/IAO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000008">
-        <rdfs:label xml:lang="en">artifact</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
-        <IAO_0000115
-            >An artifact is an independent continuant that is the intended output of an objective driven process</IAO_0000115>
-        <IAO_0000116
-            >There is not yet consensus this term</IAO_0000116>
+        <rdfs:label
+            >obsolete_artifact</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
     </owl:Class>
     
 
@@ -461,34 +581,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <IAO_0000116 xml:lang="en"
             >see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</IAO_0000116>
         <IAO_0000111 xml:lang="en">software</IAO_0000111>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000011">
-        <rdfs:label xml:lang="en"
-            >independent variable specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
-        <IAO_0000117
-            >Person: Bjoern Peters</IAO_0000117>
-        <IAO_0000116 xml:lang="en"
-            >2/2/2009 Original definition - In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
-        <IAO_0000119
-            >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
-        <IAO_0000116 xml:lang="en"
-            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
-        <IAO_0000115 xml:lang="en"
-            >independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</IAO_0000115>
     </owl:Class>
     
 
@@ -535,34 +627,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000014 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000014">
-        <rdfs:label xml:lang="en"
-            >dependent variable specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
-        <IAO_0000116 xml:lang="en"
-            >2/2/2009 In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</IAO_0000116>
-        <IAO_0000119
-            >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</IAO_0000119>
-        <IAO_0000116 xml:lang="en"
-            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
-        <IAO_0000117
-            >Person: Bjoern Peters</IAO_0000117>
-        <IAO_0000115 xml:lang="en"
-            >dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.</IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000015">
@@ -582,62 +646,12 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000016 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000016">
-        <rdfs:label xml:lang="en"
-            >controlled variable specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#part_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000125</IAO_0000114>
-        <IAO_0000116 xml:lang="en"
-            >2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won&#39;t be valid</IAO_0000116>
-        <IAO_0000116 xml:lang="en"
-            >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</IAO_0000116>
-        <IAO_0000117
-            >Person: Bjoern Peters</IAO_0000117>
-        <IAO_0000115 xml:lang="en"
-            >Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000017 -->
-
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000017">
-        <rdfs:label>model number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000028"/>
-        <IAO_0000116
-            >manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</IAO_0000116>
-        <IAO_0000115
-            >A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</IAO_0000115>
-        <IAO_0000117
-            >Person: Alan Ruttenberg</IAO_0000117>
-        <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obofoundry.org/obo/IAO_0000018 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000018">
-        <rdfs:label>material entity</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart"/>
-                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Object"/>
-                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+        <rdfs:label
+            >obsolete_material_entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
     </owl:Class>
     
 
@@ -801,13 +815,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000004"/>
+                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1446,7 +1460,20 @@ Cons sometimes specifies a quality which is not a realizable.</IAO_0000116>
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000178">
         <rdfs:label
             >material information bearer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000018"/>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/OBI_0000294"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <IAO_0000115
             >An information bearer is an artifact, such as a hard drive, upon which an information content entity generically depends.</IAO_0000115>
     </owl:Class>
@@ -1597,6 +1624,12 @@ variable determining the position on the vertical axis.</IAO_0000115>
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1#Entity -->
 
     <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1#Entity"/>
@@ -1645,26 +1678,33 @@ variable determining the position on the vertical axis.</IAO_0000115>
     
 
 
+    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#MaterialEntity -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#MaterialEntity">
+        <rdfs:label>material entity</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#FiatObjectPart"/>
+                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#Object"/>
+                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000125 -->
-
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000125"/>
     
 
 
