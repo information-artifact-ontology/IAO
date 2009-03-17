@@ -32,9 +32,11 @@
     >en</protege:defaultLanguage>
   </owl:Ontology>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000016">
-    <obo:IAO_0000115 xml:lang="en">Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+    <obo:IAO_0000116 xml:lang="en">2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won't be valid</obo:IAO_0000116>
+    <rdfs:label xml:lang="en">controlled variable specification</rdfs:label>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Person: Bjoern Peters</obo:IAO_0000117>
+    >PERSON: Chris Stoeckert</obo:IAO_0000117>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
@@ -45,13 +47,19 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000033"/>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">controlled variable specification</rdfs:label>
-    <obo:IAO_0000116 xml:lang="en">2/2/2009 Original definition: Controlled variables are also important to identify in experiments. They are the variables that are kept constant to prevent their influence on the effect of the independent variable on the dependent. Every experiment has a controlling variable, and it is necessary to not change it, or the results of the experiment won't be valid</obo:IAO_0000116>
-    <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
-    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+    <obo:IAO_0000115 xml:lang="en">Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WEB: http://en.wikipedia.org/wiki/Control_variable</obo:IAO_0000119>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Bjoern Peters</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000097">
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
@@ -126,17 +134,8 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Venn_diagram</obo:IAO_0000119>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000033">
-    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-    <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >An information entity about a realizable is an information content entity about a realizable.</obo:IAO_0000115>
-    <obo:IAO_0000115 xml:lang="en">Question: Should study specification be part of IAO?</obo:IAO_0000115>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
-    <rdfs:label xml:lang="en">information entity about a realizable</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
-    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -145,6 +144,18 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
         <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An information entity about a realizable is an information content entity about a realizable.</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">Question: Should study specification be part of IAO?</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  "is the specification of a process that can be
+concretized and realized by an actor" with alternative term  "instruction".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    <rdfs:label xml:lang="en">information entity about a realizable</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000008">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -177,18 +188,22 @@ variable determining the position on the vertical axis.</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000098">
-    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
-    <rdfs:label xml:lang="en">data format specification</rdfs:label>
-    <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
-    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <obo:IAO_0000115 xml:lang="en">A data format specification is the information content borne by the document published defining the specification.
-
-blah:
- for organizing information artifacts. Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</obo:IAO_0000115>
+Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</obo:IAO_0000115>
+    <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
+    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000187</obo:IAO_0000119>
-    <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-    <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: provenance: term imported from OBI_0000187, which had original definition "A data format specification is a plan which organizes
+information. Example: The ISO document specifying what encompasses an
+XML document; The instructions in a XSD file"</obo:IAO_0000116>
+    <rdfs:label xml:lang="en">data format specification</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000010">
     <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
@@ -262,6 +277,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
       </owl:Restriction>
     </rdfs:subClassOf>
     <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was " a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan". It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -458,6 +475,8 @@ whole sentence is deleted.</obo:IAO_0000116>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000014">
     <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.</obo:IAO_0000115>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -467,14 +486,18 @@ whole sentence is deleted.</obo:IAO_0000116>
         <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WEB: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Chris Stoeckert</obo:IAO_0000117>
     <rdfs:label xml:lang="en">dependent variable specification</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <obo:IAO_0000116 xml:lang="en">2/2/2009 In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</obo:IAO_0000116>
     <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Person: Bjoern Peters</obo:IAO_0000117>
+    >PERSON: Bjoern Peters</obo:IAO_0000117>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</obo:IAO_0000116>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000029">
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -680,12 +703,19 @@ two-dimensional map.</obo:IAO_0000115>
     <obo:IAO_0000116 xml:lang="en">2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
     <obo:IAO_0000116 xml:lang="en">2/2/2009 Original definition - In the design of experiments, independent variables are those whose values are controlled or selected by the person experimenting (experimenter) to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled.</obo:IAO_0000116>
     <obo:IAO_0000115 xml:lang="en">independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Web: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify thisdefinition please notify OBI.</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Person: Bjoern Peters</obo:IAO_0000117>
+    >PERSON: Bjoern Peters</obo:IAO_0000117>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <rdfs:label xml:lang="en">independent variable specification</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Chris Stoeckert</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
@@ -694,7 +724,6 @@ two-dimensional map.</obo:IAO_0000115>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000009">
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -706,7 +735,9 @@ two-dimensional map.</obo:IAO_0000115>
     >label</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000017">
-    <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000028"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000128"/>
+    </rdfs:subClassOf>
     <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Person: Alan Ruttenberg</obo:IAO_0000117>
@@ -755,13 +786,10 @@ clustering algorithm.</obo:IAO_0000115>
     <obo:IAO_0000111 xml:lang="en">digital document</obo:IAO_0000111>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030">
-    <obo:IAO_0000116 xml:lang="en">information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
-
-Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity.</obo:IAO_0000116>
-    <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
-    <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
     <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OBI_0000142</obo:IAO_0000119>
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -771,8 +799,13 @@ Previous. An information content entity is a non-realizable information entity t
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >OBI_0000142</obo:IAO_0000119>
+    <obo:IAO_0000116 xml:lang="en">information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
+
+Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity.</obo:IAO_0000116>
+    <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+    <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Chris Stoeckert</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000178">
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -880,16 +913,22 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process/Roles Branch</obo:IAO_0000119>
     <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
     <obo:IAO_0000115 xml:lang="en">An objective specification is an information entity about a realizable entity that describes a intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
-    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Jennifer Fostel</obo:IAO_0000117>
-    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Barry Smith</obo:IAO_0000117>
     <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000033"/>
     <obo:IAO_0000112 xml:lang="en">purpose of a study; support of hypothesis, discovery of new information</obo:IAO_0000112>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Bjoern Peters</obo:IAO_0000117>
     <rdfs:label xml:lang="en">objective specification</rdfs:label>
     <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000124"/>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Alan Ruttenberg</obo:IAO_0000117>
+    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2009-03-16: original definition when imported from OBI read: "objective is an
+non realizable information entity which can serve as that  proper part
+of a plan  towards which the realization of the plan is directed."</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Jennifer Fostel</obo:IAO_0000117>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Barry Smith</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000096">
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
