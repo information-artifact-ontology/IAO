@@ -230,6 +230,7 @@
                     <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000226"/>
                     <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000227"/>
                     <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000230"/>
+                    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000103"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -306,6 +307,17 @@
 
     
 
+    <!-- http://purl.obofoundry.org/obo/IAO_0000103 -->
+
+    <obo:IAO_0000225 rdf:about="http://purl.obofoundry.org/obo/IAO_0000103">
+        <rdfs:label xml:lang="en"
+            >failed exploratory term</rdfs:label>
+        <obo:IAO_0000117
+            >Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en"
+            >The term was used used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+    </obo:IAO_0000225>
+    
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000002 -->
 
