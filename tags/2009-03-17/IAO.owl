@@ -22,7 +22,7 @@
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
   xml:base="http://purl.obofoundry.org/obo/iao.owl">
   <owl:Ontology rdf:about="">
-    <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">1.0.96</owl:versionInfo>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon.</rdfs:comment>
     <owl:imports>
