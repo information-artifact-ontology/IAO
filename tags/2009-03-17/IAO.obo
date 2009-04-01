@@ -1,24 +1,28 @@
 format-version: 1.2
-date: 17:03:2009 16:18
+date: 01:04:2009 13:26
 saved-by: iao
 auto-generated-by: http://purl.obofoundry.org/obo/obi/repository/trunk/src/tools/build/generate-obo.lisp
 default-namespace: IAO
 idspace: OBO_REL http://www.obofoundry.org/ro/ro.owl# "OBO Relation ontology official home on OBO Foundry"
+idspace: PATO http://purl.org/obo/owl/PATO "Phenotype Ontology"
 idspace: snap http://www.ifomis.org/bfo/1.1/snap# "BFO SNAP ontology (continuants)"
 idspace: span http://www.ifomis.org/bfo/1.1/span# "BFO SPAN ontology (occurrents)"
 idspace: OBI http://purl.obofoundry.org/obo/OBI_ "Ontology for Biomedical Investigations"
-remark: This file is a subset of IAO adequate for indexing using the OLS service. It does not include all logical assertions present in the OWL file, which can be obtained at http://purl.obofoundry.org/obo/iao.owl
+idspace: CHEBI http://purl.org/obo/owl/CHEBI# "Chemical Entities of Biological Interest"
+idspace: CL http://purl.org/obo/owl/CL# "Cell Ontology"
+idspace: NCBITaxon http://purl.org/obo/owl/NCBITaxon# "NCBI Taxonomy"
+remark: This file is a subset of OBI adequate for indexing using the OLS service. It does not include all logical assertions present in the OWL file, which can be obtained at http://purl.obofoundry.org/obo/iao.owl
 
 [Term]
 id: IAO:0000027
 name: data item
-def:"a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
+def:"a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000030 ! information content entity
 
 [Term]
 id: IAO:0000182
 name: survival curve
-def:"A survival curve is a report graph which is a graphical representation of data where the percentage of survival is plotted as a function of time." []
+def:"A survival curve is a report graph which is a graphical representation of data where the percentage of survival is plotted as a function of time." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
@@ -30,13 +34,13 @@ is_a: snap:IndependentContinuant ! independent_continuant
 [Term]
 id: IAO:0000032
 name: scalar measurement datum
-def:"a scalar measurement datum is a measurement datum that is composed of two parts, a single numeral and a unit label." []
+def:"a scalar measurement datum is a measurement datum that is composed of two parts, a single numeral and a unit label." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000109 ! measurement datum
 
 [Term]
 id: IAO:0000035
 name: study interpretation
-def:"A study interpretation is a narrative object interpreting a study result.  Examples include whether a hypothesis is false, the study failed to address the hypothesis, the study results have led to new hypotheses." []
+def:"A study interpretation is a narrative object interpreting a study result.  Examples include whether a hypothesis is false, the study failed to address the hypothesis, the study results have led to new hypotheses." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000006 ! narrative object
 
 [Term]
@@ -57,31 +61,31 @@ is_a: span:TemporalRegion ! temporal_region
 [Term]
 id: span:SpatiotemporalInstant
 name: spatiotemporal_instant
-def:"Examples: the space time region occupied by a single instantaneous temporal slice (part) of a process; Definition: A connected space time region [span:ConnectedSpaceTimeRegion] at a specific moment." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
+def:"Definition: A connected spatiotemporal region [span:ConnectedSpatiotemporalRegion] at a specific moment.; Examples: the spatiotemporal region occupied by a single instantaneous temporal slice (part) of a process" [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
 is_a: span:ConnectedSpatiotemporalRegion ! connected_spatiotemporal_region
 
 [Term]
 id: IAO:0000005
 name: objective specification
-def:"An objective specification is an information entity about a realizable entity that describes a intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved." []
+def:"An objective specification is an information entity about a realizable entity that describes a intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
 id: IAO:0000010
 name: software
-def:"Software is a plan specification which is a series of encoded instructions that can be directly executed by a processing unit or transformed in to a form that can be. For programming texts that are syntactically correct and which are in a language that can be executed by an interpreter this would correspond to the tokenized version of the text stripped of comments." []
+def:"Software is a plan specification which is a series of encoded instructions that can be directly executed by a processing unit or transformed in to a form that can be. For programming texts that are syntactically correct and which are in a language that can be executed by an interpreter this would correspond to the tokenized version of the text stripped of comments." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000104 ! plan specification
 
 [Term]
 id: IAO:0000013
 name: journal article content
-def:"Journal article content is a narrative object that is the information content encoded in a article published in a serious, scholarly publication, most often peer-reviewed." []
+def:"Journal article content is a narrative object that is the information content encoded in a article published in a serious, scholarly publication, most often peer-reviewed." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000088 ! report
 
 [Term]
 id: IAO:0000011
 name: independent variable specification
-def:"independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled" []
+def:"independent variable specification is an information entity about a realizable which is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
@@ -97,13 +101,13 @@ is_a: IAO:0000102 ! data about an ontology part
 [Term]
 id: IAO:0000009
 name: label
-def:"A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" []
+def:"A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000027 ! data item
 
 [Term]
 id: IAO:0000064
 name: algorithm
-def:"an algorithm is a plan which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." []
+def:"an algorithm is a plan which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000104 ! plan specification
 
 [Term]
@@ -126,13 +130,13 @@ is_a: IAO:0000102 ! data about an ontology part
 [Term]
 id: IAO:0000093
 name: binary executable
-def:"Binary executable is a digital entity consisting of the binary representation of machine instructions of a specific processor or they may be binary pseudocode for a virtual machine. A non-source executable file is also called an object program. It is assumed that the binary executable file contains properly-formatted computer instructions.  (derived from Wikipedia, Nov 1, 2007)" []
+def:"Binary executable is a digital entity consisting of the binary representation of machine instructions of a specific processor or they may be binary pseudocode for a virtual machine. A non-source executable file is also called an object program. It is assumed that the binary executable file contains properly-formatted computer instructions.  (derived from Wikipedia, Nov 1, 2007)" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000012 ! digital entity
 
 [Term]
 id: IAO:0000059
 name: report figure
-def:"A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements" []
+def:"A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000091 ! report element
 
 [Term]
@@ -143,7 +147,7 @@ is_a: IAO:0000028 ! symbol
 [Term]
 id: IAO:0000102
 name: data about an ontology part
-def:"data about an ontology part is a data item about a part of an ontology, for example a term" []
+def:"data about an ontology part is a data item about a part of an ontology, for example a term" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000027 ! data item
 
 [Term]
@@ -161,19 +165,19 @@ is_a: snap:RealizableEntity ! realizable_entity
 [Term]
 id: IAO:0000037
 name: dot plot
-def:"A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions." []
+def:"A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
 id: IAO:0000097
 name: report table
-def:"A report table is a report display element consisting of a matrix of cells layed out in a grid, some set of which are filled with some information content" []
+def:"A report table is a report display element consisting of a matrix of cells layed out in a grid, some set of which are filled with some information content" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000091 ! report element
 
 [Term]
 id: IAO:0000006
 name: narrative object
-def:"A narrative object is an information content entity that is a set of propositions." []
+def:"A narrative object is an information content entity that is a set of propositions." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000030 ! information content entity
 
 [Term]
@@ -185,7 +189,7 @@ is_a: snap:SpatialRegion ! spatial_region
 [Term]
 id: IAO:0000183
 name: dendrogram
-def:"A dendrogram is a report graph which is a tree diagram frequently used to illustrate the arrangement of the clusters produced by a clustering algorithm." []
+def:"A dendrogram is a report graph which is a tree diagram frequently used to illustrate the arrangement of the clusters produced by a clustering algorithm." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
@@ -197,7 +201,7 @@ is_a: span:TemporalRegion ! temporal_region
 [Term]
 id: IAO:0000098
 name: data format specification
-def:"A data format specification is the information content borne by the document published defining the specification. Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file" []
+def:"A data format specification is the information content borne by the document published defining the specification. Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
@@ -209,7 +213,7 @@ is_a: span:ConnectedTemporalRegion ! connected_temporal_region
 [Term]
 id: IAO:0000129
 name: version number
-def:"A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name." []
+def:"A version number is an information content entity which is a sequence of characters borne by part of each of a class of manufactured products or its packaging and indicates its order within a set of other products having the same name." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000128 ! _identifier
 
 [Term]
@@ -221,7 +225,7 @@ is_a: snap:SpatialRegion ! spatial_region
 [Term]
 id: IAO:0000014
 name: dependent variable specification
-def:"dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies." []
+def:"dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
@@ -233,7 +237,7 @@ is_a: span:ProcessualEntity ! processual_entity
 [Term]
 id: IAO:0000047
 name: text based digital entity
-def:"A text based digital entity is a digital entity that is encoded so that it only contains text characters." []
+def:"A text based digital entity is a digital entity that is encoded so that it only contains text characters." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000105 ! digital document
 
 [Term]
@@ -255,31 +259,31 @@ is_obsolete: true
 [Term]
 id: span:ScatteredSpatiotemporalRegion
 name: scattered_spatiotemporal_region
-def:"Examples: the space and time occupied by the individual games of the World Cup, the space and time occupied by the individual liaisons in a romantic affair; Definition: A space time region [span:SpaceTimeRegion] that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
+def:"Examples: the space and time occupied by the individual games of the World Cup, the space and time occupied by the individual liaisons in a romantic affair; Definition: A spatiotemporal region [span:SpatiotemporalRegion] that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
 is_a: span:SpatiotemporalRegion ! spatiotemporal_region
 
 [Term]
 id: IAO:0000015
 name: information carrier
-def:"an information carrier is that quality of an information bearer that imparts the information content" []
+def:"an information carrier is that quality of an information bearer that imparts the information content" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: snap:Quality ! quality
 
 [Term]
 id: IAO:0000079
 name: density plot
-def:"A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel." []
+def:"A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
 id: IAO:0000132
 name: lot number
-def:"A lot number is an information content entity which is an identical sequence of character borne by part of manufactured product or its packaging for each instances of a product class in a discrete batch of an item. Lot numbers are usually assigned to each separate production run of an item. Manufacturing as a lot might be due to a variety of reasons, for example,  a single process during which many individuals are made from the same portion of source material. Lot numbers can be encoded in a pattern  of other information objects, such as bar codes, numerals, or patterns of dots." []
+def:"A lot number is an information content entity which is an identical sequence of character borne by part of manufactured product or its packaging for each instances of a product class in a discrete batch of an item. Lot numbers are usually assigned to each separate production run of an item. Manufacturing as a lot might be due to a variety of reasons, for example,  a single process during which many individuals are made from the same portion of source material. Lot numbers can be encoded in a pattern  of other information objects, such as bar codes, numerals, or patterns of dots." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000128 ! _identifier
 
 [Term]
 id: IAO:0000180
 name: heatmap
-def:"A heatmap is a report graph which is a graphical representation of data where the values taken by a variable(s) are shown as colors in a two-dimensional map." []
+def:"A heatmap is a report graph which is a graphical representation of data where the values taken by a variable(s) are shown as colors in a two-dimensional map." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
@@ -303,7 +307,7 @@ is_a: snap:RealizableEntity ! realizable_entity
 [Term]
 id: IAO:0000024
 name: unit of measure
-def:"a unit of measure is the quality of some material entity compared to which another quality is some multiple of." []
+def:"a unit of measure is the quality of some material entity compared to which another quality is some multiple of." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: snap:Quality ! quality
 
 [Term]
@@ -320,19 +324,19 @@ is_a: span:ConnectedTemporalRegion ! connected_temporal_region
 [Term]
 id: IAO:0000012
 name: digital entity
-def:"A digital entity is an information entity which is a collection of bits that can be interpreted by a computer. Two digital entities are the same if they are bitwise identical." []
+def:"A digital entity is an information entity which is a collection of bits that can be interpreted by a computer. Two digital entities are the same if they are bitwise identical." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000141 ! digital quality
 
 [Term]
 id: IAO:0000178
 name: material information bearer
-def:"An information bearer is a material_entity, such as a hard drive, upon which an information content entity generically depends." []
+def:"An information bearer is a material_entity, such as a hard drive, upon which an information content entity generically depends." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: snap:MaterialEntity ! material_entity
 
 [Term]
 id: IAO:0000181
 name: Venn diagram
-def:"A Venn diagram is a report graph showing all hypothetically possible logical relations between a finite collection of sets." []
+def:"A Venn diagram is a report graph showing all hypothetically possible logical relations between a finite collection of sets." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
@@ -356,37 +360,37 @@ is_a: snap:RealizableEntity ! realizable_entity
 [Term]
 id: IAO:0000105
 name: digital document
-def:"A digital document is a digital entity consisting of an electronic file which can be rendered into human-readable form by one or more computational applications.  The digital document does not refer to the information content of the document but to an instance of the file." []
+def:"A digital document is a digital entity consisting of an electronic file which can be rendered into human-readable form by one or more computational applications.  The digital document does not refer to the information content of the document but to an instance of the file." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000012 ! digital entity
 
 [Term]
 id: IAO:0000055
 name: rule
-def:"a rule is an executable which guides, defines, restricts actions" []
+def:"a rule is an executable which guides, defines, restricts actions" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000001 ! conditional specification
 
 [Term]
 id: IAO:0000096
 name: source code module
-def:"A source code module is an information content entity that specifies, using a programming language, some algorithm." []
+def:"A source code module is an information content entity that specifies, using a programming language, some algorithm." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
 id: IAO:0000031
 name: integer numeral
-def:"a numeral that denotes an integer" []
+def:"a numeral that denotes an integer" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000029 ! numeral
 
 [Term]
 id: IAO:0000025
 name: programming language
-def:"A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it." []
+def:"A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000104 ! plan specification
 
 [Term]
 id: IAO:0000003
 name: measurement unit label
-def:"A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure." []
+def:"A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000009 ! label
 
 [Term]
@@ -397,7 +401,7 @@ is_a: IAO:0000038 ! report graph
 [Term]
 id: IAO:0000091
 name: report element
-def:"A report element is a narrative object in which information is presented and consumed by a human being, and is part of a report. Examples of report elements are figure (dot plot), table, text portion (may include a movie or audio clip on a web page)." []
+def:"A report element is a narrative object in which information is presented and consumed by a human being, and is part of a report. Examples of report elements are figure (dot plot), table, text portion (may include a movie or audio clip on a web page)." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000006 ! narrative object
 
 [Term]
@@ -419,19 +423,19 @@ name: ObsoleteClass
 [Term]
 id: IAO:0000034
 name: time trigger
-def:"revisit?" []
+def:"revisit?" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000001 ! conditional specification
 
 [Term]
 id: IAO:0000019
 name: binary digital entity
-def:"A binary digital entity is a digital entity that is encoded in a way that is not easily human readable and that contains other than text characters." []
+def:"A binary digital entity is a digital entity that is encoded in a way that is not easily human readable and that contains other than text characters." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000012 ! digital entity
 
 [Term]
 id: IAO:0000088
 name: report
-def:"A report is a narrative object assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)" []
+def:"A report is a narrative object assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000006 ! narrative object
 
 [Term]
@@ -443,7 +447,7 @@ is_a: snap:SpecificallyDependentContinuant ! specifically_dependent_continuant
 [Term]
 id: IAO:0000016
 name: controlled variable specification
-def:"Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent." []
+def:"Controlled variable specification  is a part of a study design. They are the entities that could vary, but are kept constant to prevent their influence on the effect of the independent variable on the dependent." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
@@ -454,37 +458,37 @@ is_a: IAO:0000102 ! data about an ontology part
 [Term]
 id: IAO:0000100
 name: data set
-def:"A data set is an information content entity that is an aggregate of other data items that have something in common and are considered to form a unit and are packaged together for some purpose, for example depositing into a repository." []
+def:"A data set is an information content entity that is an aggregate of other data items that have something in common and are considered to form a unit and are packaged together for some purpose, for example depositing into a repository." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000027 ! data item
 
 [Term]
 id: span:SpatiotemporalInterval
 name: spatiotemporal_interval
-def:"Definition: A connected space time region [span:ConnectedSpaceTimeRegion] that endures for more than a single moment of time.; Examples: the space time region occupied by a process or by a fiat processual part" [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
+def:"Definition: A connected spatiotemporal region [span:ConnectedSpatiotemporalRegion] that endures for more than a single moment of time.; Examples: the spatiotemporal region occupied by a process or by a fiat processual part" [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
 is_a: span:ConnectedSpatiotemporalRegion ! connected_spatiotemporal_region
 
 [Term]
 id: IAO:0000030
 name: information content entity
-def:"an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity" []
+def:"an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: snap:GenericallyDependentContinuant ! generically_dependent_continuant
 
 [Term]
 id: IAO:0000007
 name: action specification
-def:"An action specification is information about a realizable that describes an action the bearer will take" []
+def:"An action specification is information about a realizable that describes an action the bearer will take" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
 id: IAO:0000179
 name: histogram
-def:"A histogram is a report graph which is a statistical description of a distribution in terms of occurrence frequencies of different event classes." []
+def:"A histogram is a report graph which is a statistical description of a distribution in terms of occurrence frequencies of different event classes." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
 id: IAO:0000109
 name: measurement datum
-def:"A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by an instrument." []
+def:"A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by an instrument." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000027 ! data item
 
 [Term]
@@ -495,7 +499,7 @@ is_obsolete: true
 [Term]
 id: snap:Site
 name: site
-def:"Examples: a particular room in a particular hospital, Maria's nostril or her intestines for a variety of bacteria.; Comment: An instance of Site [snap:Site] is a mixture of independent continuant [snap:IndependentContinuant] entities which act as surrounding environments for other independent continuant [snap:IndependentContinuant] entities, most importantly for instances of object [snap:Object]. A site [snap:Site] is typically made of object [snap:Object] or fiat object part [snap:FiatObjectPart] entities and a surrounding medium in which is found an object [snap:Object] occupying the site [snap:Site]. Independent continuant [snap:IndependentContinuant] entities may be associated with others (which, then, are sites) through a relation of \"occupation\". That relation is connected to, but distinct from, the relation of spatial location. Site [snap:Site] entities are not to be confused with spatial region [snap:SpatialRegion] entities. In BFO, site [snap:Site] allows for a so-called relational view of space which is different from the view corresponding to the class spatial region [snap:SpatialRegion] (see the comment on this class).; Definition: An independent continuant [snap:IndependentContinuant] consisting of a characteristic spatial shape in relation to some arrangement of other continuant [snap:Continuant] entities and of the medium which is enclosed in whole or in part by this characteristic spatial shape. Site [snap:Site] entities are entities that can be occupied by other continuant [snap:Continuant] entities." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
+def:"Examples: a particular room in a particular hospital, Maria's nostril or her intestines for a variety of bacteria.; Definition: An independent continuant [snap:IndependentContinuant] consisting of a characteristic spatial shape in relation to some arrangement of other continuant [snap:Continuant] entities and of the medium which is enclosed in whole or in part by this characteristic spatial shape. Site [snap:Site] entities are entities that can be occupied by other continuant [snap:Continuant] entities.; Comment: An instance of Site [snap:Site] is a mixture of independent continuant [snap:IndependentContinuant] entities which act as surrounding environments for other independent continuant [snap:IndependentContinuant] entities, most importantly for instances of object [snap:Object]. A site [snap:Site] is typically made of object [snap:Object] or fiat object part [snap:FiatObjectPart] entities and a surrounding medium in which is found an object [snap:Object] occupying the site [snap:Site]. Independent continuant [snap:IndependentContinuant] entities may be associated with others (which, then, are site [snap:Site] entities) through a relation of \"occupation\". That relation is connected to, but distinct from, the relation of spatial location. Site [snap:Site] entities are not to be confused with spatial region [snap:SpatialRegion] entities. In BFO, site [snap:Site] allows for a so-called relational view of space which is different from the view corresponding to the class spatial region [snap:SpatialRegion] (see the comment on this class)." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
 is_a: snap:IndependentContinuant ! independent_continuant
 
 [Term]
@@ -519,7 +523,7 @@ is_a: snap:MaterialEntity ! material_entity
 [Term]
 id: IAO:0000184
 name: scatterplot
-def:"A scatterplot is a report graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis." []
+def:"A scatterplot is a report graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000038 ! report graph
 
 [Term]
@@ -531,13 +535,13 @@ is_a: snap:Continuant ! continuant
 [Term]
 id: IAO:0000078
 name: curation status specification
-def:"The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
+def:"The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000102 ! data about an ontology part
 
 [Term]
 id: IAO:0000101
 name: image
-def:"An image is an information content entity which provides a visual representation of for the result of a measurement." []
+def:"An image is an information content entity which provides a visual representation of for the result of a measurement." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000030 ! information content entity
 
 [Term]
@@ -554,13 +558,13 @@ is_a: span:Occurrent ! occurrent
 [Term]
 id: span:ConnectedSpatiotemporalRegion
 name: connected_spatiotemporal_region
-def:"Definition: A space time region [span:SpaceTimeRegion] that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same space time region [span:SpaceTimeRegion].; Examples: the spatial and temporal location of an individual organism's life, the spatial and temporal location of the development of a fetus" [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
+def:"Examples: the spatial and temporal location of an individual organism's life, the spatial and temporal location of the development of a fetus; Definition: A spatiotemporal region [span:SpatiotemporalRegion] that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same spatiotemporal region [span:SpatiotemporalRegion]." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
 is_a: span:SpatiotemporalRegion ! spatiotemporal_region
 
 [Term]
 id: IAO:0000017
 name: model number
-def:"A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots." []
+def:"A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000128 ! _identifier
 
 [Term]
@@ -572,31 +576,31 @@ is_a: snap:Continuant ! continuant
 [Term]
 id: IAO:0000104
 name: plan specification
-def:"A plan specification is an information entity about a realizable entity. The specification includes parts such as objective specification, action specifications and conditional specifications. When concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified.; 2/3/2009 Comment from OBI review.  Action specification not well enough specified. Conditional specification not well enough specified. Question whether all plan specifications have objective specifications.  Request that IAO either clarify these or change definitions not to use them" []
+def:"A plan specification is an information entity about a realizable entity. The specification includes parts such as objective specification, action specifications and conditional specifications. When concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified.; 2/3/2009 Comment from OBI review.  Action specification not well enough specified. Conditional specification not well enough specified. Question whether all plan specifications have objective specifications.  Request that IAO either clarify these or change definitions not to use them" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
 id: IAO:0000131
 name: serial number
-def:"A serial number is an information content entity which is a unique sequence of characters borne by part of manufactured product or its packaging that is assigned to each individual in some class of products, and so can serve as a way to identify an individual product within the class. Serial numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots." []
+def:"A serial number is an information content entity which is a unique sequence of characters borne by part of manufactured product or its packaging that is assigned to each individual in some class of products, and so can serve as a way to identify an individual product within the class. Serial numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000128 ! _identifier
 
 [Term]
 id: IAO:0000001
 name: conditional specification
-def:"is information about a realizable that specifies that what  should happen if the trigger condition is fulfilled" []
+def:"is information about a realizable that specifies that what  should happen if the trigger condition is fulfilled" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000033 ! information entity about a realizable
 
 [Term]
 id: IAO:0000033
 name: information entity about a realizable
-def:"Question: Should study specification be part of IAO?; An information entity about a realizable is an information content entity about a realizable." []
+def:"Question: Should study specification be part of IAO?; An information entity about a realizable is an information content entity about a realizable." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000030 ! information content entity
 
 [Term]
 id: IAO:0000065
 name: software interpreter
-def:"A  software interpreter is a generically dependent realizable entity that takes, as input, some digital entity, and takes action driven by the information content of that digital entity" []
+def:"A  software interpreter is a generically dependent realizable entity that takes, as input, some digital entity, and takes action driven by the information content of that digital entity" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000064 ! algorithm
 
 [Term]
@@ -620,13 +624,13 @@ is_a: snap:SpatialRegion ! spatial_region
 [Term]
 id: IAO:0000140
 name: setting datum
-def:"A settings datum is a datum that denotes some configuration of an instrument." []
+def:"A settings datum is a datum that denotes some configuration of an instrument." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000027 ! data item
 
 [Term]
 id: IAO:0000225
 name: obsolescence reason specification
-def:"The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." []
+def:"The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000102 ! data about an ontology part
 
 [Term]
@@ -638,13 +642,13 @@ is_a: span:Occurrent ! occurrent
 [Term]
 id: span:ProcessualContext
 name: processual_context
-def:"Examples: The processual context for a given manipulation occurring as part of an experiment is made of processual entities which occur in parallel, are not necessarily all parts of the experiment themselves and may involve continuant [snap:Continuant] entities which are in the spatial vicinity of the participants in the experiment.; Comment: An instance of a processual context [span:ProcessualContext] is a mixture of processual entity [span:ProcessualEntity] which stand as surrounding environments for other processual entity [span:ProcessualEntity] entities. The class processual context [span:ProcessualContext] is the analogous among occurrent [span:Occurrent] entities to the class site [snap:Site] among continuant [snap:Continuant] entities.; Definition: An occurrent [span:Occurrent] consisting of a characteristic spatial shape inhering in some arrangement of other occurrent [span:Occurrent] entities. processual context [span:ProcessualContext] entities are characteristically entities at or in which other occurrent [span:Occurrent] entities can be located or occur." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
+def:"Examples: The processual context for a given manipulation occurring as part of an experiment is made of processual entities which occur in parallel, are not necessarily all parts of the experiment themselves and may involve continuant [snap:Continuant] entities which are in the spatial vicinity of the participants in the experiment.; Comment: An instance of a processual context [span:ProcessualContext] is a mixture of processual entity [span:ProcessualEntity] which stand as surrounding environments for other processual entity [span:ProcessualEntity] entities. The class processual context [span:ProcessualContext] is the analogous among occurrent [span:Occurrent] entities to the class site [snap:Site] among continuant [snap:Continuant] entities.; Definition: An occurrent [span:Occurrent] consisting of a characteristic spatial shape inhering in some arrangement of other occurrent [span:Occurrent] entities. Processual context [span:ProcessualContext] entities are characteristically entities at or in which other occurrent [span:Occurrent] entities can be located or occur." [IAO:imported "http://www.ifomis.org/bfo/1.1/"]
 is_a: span:ProcessualEntity ! processual_entity
 
 [Term]
 id: IAO:0000038
 name: report graph
-def:"A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way." []
+def:"A report graph is a report figure that presents one or more tuples of information my mapping those tuples in to a two dimensional space in a non arbitrary way." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000059 ! report figure
 
 [Typedef]
@@ -654,17 +658,17 @@ name: in branch
 [Typedef]
 id: IAO:0000112
 name: example of usage
-def:"A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not" []
+def:"A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: IAO:0000119
 name: definition source
-def:"formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007" []
+def:"formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: IAO:0000118
 name: alternative term
-def:"An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)" []
+def:"An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: OBI:0000283
@@ -678,22 +682,22 @@ name: has curation status
 [Typedef]
 id: IAO:0000115
 name: definition
-def:"The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions." []
+def:"The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: IAO:0000111
 name: preferred term
-def:"The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)" []
+def:"The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: IAO:0000116
 name: editor note
-def:"An administrative note intended for its editor. It will not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology." []
+def:"An administrative note intended for its editor. It will not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: IAO:0000117
 name: definition editor
-def:"Name of editor entering the definition" []
+def:"Name of editor entering the definition" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: IAO:0000231
@@ -743,7 +747,7 @@ inverse_of: OBI:0000297 ! is_concretized_as
 [Typedef]
 id: IAO:0000136
 name: is about
-def:"a representation is_about anything exactly when some part of the information_artifact denotes the entity" []
+def:"a representation is_about anything exactly when some part of the information_artifact denotes the entity" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 
 [Typedef]
 id: OBO_REL:has:agent
@@ -767,7 +771,7 @@ inverse_of: OBO_REL:participates:in ! participates_in
 [Typedef]
 id: IAO:0000219
 name: generically denotes
-def:"g generically denotes r =def  r is a portion of reality there is some c that is a concretization of g  every c that is a concretization of g specifically denotes r" []
+def:"g generically denotes r =def  r is a portion of reality there is some c that is a concretization of g  every c that is a concretization of g specifically denotes r" [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000136 ! is about
 
 [Typedef]
@@ -861,7 +865,7 @@ inverse_of: OBO_REL:has:part ! has_part
 [Typedef]
 id: IAO:0000135
 name: specifically denotes
-def:"c specifically denotes r =def  r is a portion of reality & c is a particular quality & c depends specifically on some independent continuant b  & b acquired c as the result of the achievement of an objective to enable pointing to r repeatedly.   Marked means there is a changed or additional quality of the bearer - the  quality is the information carrier.  Case 1 Memory trace as mark created when reading some description of some friend. The trace can denote.  Case 2 Pattern of ink arrayed on paper as mark when writing down a friend's name  Case 3 Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file." []
+def:"c specifically denotes r =def  r is a portion of reality & c is a particular quality & c depends specifically on some independent continuant b  & b acquired c as the result of the achievement of an objective to enable pointing to r repeatedly.   Marked means there is a changed or additional quality of the bearer - the  quality is the information carrier.  Case 1 Memory trace as mark created when reading some description of some friend. The trace can denote.  Case 2 Pattern of ink arrayed on paper as mark when writing down a friend's name  Case 3 Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000136 ! is about
 
 [Typedef]
@@ -889,7 +893,7 @@ inverse_of: OBO_REL:derives:from ! derives_from
 [Typedef]
 id: IAO:0000221
 name: is quality measurement of
-def:"m is a quality measurement of q at t when q is a determinable quality  there is a measurement process p that has_output m m has a value part that together with the units of the value of q at t.  p is a assay   assay: process and has_input some material entity and has_output some information content entity  and which is such that instances of this process type reliably generate outputs that describes the input.  a is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality.   unit of measure is a quality, e.g. the length of a ruler.  a represents b means either a denotes b or a describes  describe: a describes b means a is about b and a allows an inference of at least one quality of b  Example:  q = height of barry p is the process using a tape measure extend across the longer part of barry and reading off the number at the far end. v is that number # dimension is height unit of measure is inches  We have had a long discussion about denotes versus describes." []
+def:"m is a quality measurement of q at t when q is a determinable quality  there is a measurement process p that has_output m m has a value part that together with the units of the value of q at t.  p is a assay   assay: process and has_input some material entity and has_output some information content entity  and which is such that instances of this process type reliably generate outputs that describes the input.  a is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality.   unit of measure is a quality, e.g. the length of a ruler.  a represents b means either a denotes b or a describes  describe: a describes b means a is about b and a allows an inference of at least one quality of b  Example:  q = height of barry p is the process using a tape measure extend across the longer part of barry and reading off the number at the far end. v is that number # dimension is height unit of measure is inches  We have had a long discussion about denotes versus describes." [IAO:imported "http://purl.obofoundry.org/obo/iao.owl"]
 is_a: IAO:0000136 ! is about
 
 [Typedef]
