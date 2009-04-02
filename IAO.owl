@@ -35,7 +35,7 @@
       <owl:Ontology rdf:about="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
     </owl:imports>
     <owl:imports>
-      <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/2009-03-17/ontology-metadata.owl"/>
+      <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/ontology-metadata.owl"/>
     </owl:imports>
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
