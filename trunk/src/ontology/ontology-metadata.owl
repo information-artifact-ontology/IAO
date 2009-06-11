@@ -82,6 +82,17 @@
         <obo:IAO_0000111 xml:lang="en">preferred term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0100001">
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en"
+            >Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en"
+            >Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en"
+            >Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000283">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
         <obo:IAO_0000115 xml:lang="en"
