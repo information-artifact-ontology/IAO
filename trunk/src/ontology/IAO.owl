@@ -299,6 +299,10 @@ We have had a long discussion about denotes versus describes.</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
         <IAO_0000116
             >7/6/2009 Alan Ruttenberg: Add this relation following conversation with Jonathan Rees that N&amp;S GCI for is_about was too strong. Really it was simply sufficient. To effect this change we introduce this relation, which is subproperty of is_about, and have previous GCI use this relation &quot;mentions&quot; in it&#39;s (logical) definition</IAO_0000116>
+
+        <IAO_0000116
+            >7/6/2009 Alan Ruttenberg. P4 RC1 munges our GCI so remove it for now: mentions some entity equivalentTo has_part some ('generically denotes' some entity)</IAO_0000116>
+	
         <IAO_0000114 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000125"/>
     </owl:ObjectProperty>
     
@@ -1620,30 +1624,6 @@ variable determining the position on the vertical axis.</obo:IAO_0000115>
     </owl:Class>
     
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:Restriction>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000142"/>
-                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
-        <owl:someValuesFrom>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obofoundry.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1#"/>
-            </owl:Restriction> 
-        </owl:someValuesFrom>
-    </owl:Restriction>
 </rdf:RDF>
 
 
