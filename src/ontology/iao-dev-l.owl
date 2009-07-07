@@ -30,8 +30,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000117"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000119"/>
 </rdf:RDF>
 
 
