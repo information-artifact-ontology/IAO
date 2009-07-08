@@ -16,7 +16,7 @@
  * Sorting what goes in IAO versus OBI
  * Relation between data and visualization (leads to Larisa's use of "represents" relationship)
 
-== Exploring Larisa's "represents" relatio cases ==
+== Exploring Larisa's "represents" relation cases ==
 
  # You have the same data in more than one "format", e.g. XML, or Tab delimited.  
  # To relate two report graphs generated from the same data (visualization)
