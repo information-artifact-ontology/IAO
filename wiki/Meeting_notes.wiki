@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary List of meeting notes
 #labels Featured,Meeting-notes
 
 = List of meeting notes =
