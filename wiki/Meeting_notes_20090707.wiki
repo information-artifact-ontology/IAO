@@ -1,4 +1,5 @@
 #summary Meeting notes July 7th 2009
+#labels Featured
 
 = IAO Meeting notes of July 7th 2009 =
 
