@@ -1,0 +1,35 @@
+#summary Meeting notes July 7th 2009
+
+= IAO Meeting notes of July 7th 2009 =
+
+== Details ==
+
+ * Convened by: Melanie, Alan 
+ * Notes by: Melanie
+ * Where: Skype
+ * Attendees:  Larisa, Chris, Bjoern, James, Alan, Melanie
+
+== Some topics discussed ==
+
+ * Changing name of "information content entity" to "information artifact" / Clarifying scope of IAO - connected with [http://code.google.com/p/information-artifact-ontology/issues/detail?id=21 Issue 21] 
+ * Sorting what goes in IAO versus OBI
+ * Relation between data and visualization (leads to Larisa's use of "represents" relationship)
+
+== Exploring Larisa's "represents" relatio cases ==
+
+ # You have the same data in more than one "format", e.g. XML, or Tab delimited.  
+ # To relate two report graphs generated from the same data (visualization)
+ # hypothesis. First english is presented, second logical is presented.
+
+Current solution is to use is_about, but we may need a more specific relation. For example, relation between information content entity and material document is that the _material document_ *bears* a specifically dependent continuant that is the *concretization of* the  _information content entity_.
+
+
+== Action items == 
+ * James will check how to link data and their visualization - example: clustered data visualization (process) has_specified_input only clustered data and has_specified_output some dot plot or..... (list)
+ * Chris to identify if there is anything in IAO holding up DENRIE, and submit issues if any under tracker.
+ * Melanie to make describes and represents obsolete (at least until they have definitions)
+ * Larisa to send her use cases for "represents"
+ * Alan to work on the definition of denotes and specifically denotes (cf http://code.google.com/p/information-artifact-ontology/issues/detail?id=25)
+ * Bjoern to review relations and submit issues if any under the tracker
+ * Alan to review and propose sorting of IAO/OBI terms as he edits IAO in next 2 weeks.
+ * All: submit issues under tracker, add comments to existing issues
