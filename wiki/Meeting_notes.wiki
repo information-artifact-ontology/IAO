@@ -1,6 +1,7 @@
+#summary List of meeting notes
 #labels Featured,Meeting-notes
- #summary List of meeting notes
 
 = List of meeting notes =
 
+* [Meeting_notes_20090714]
 * [Meeting_notes_20090707]
