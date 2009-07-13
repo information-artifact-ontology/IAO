@@ -1,18 +1,22 @@
 From AI:
-[	1.	You have the same data in more than one "format", e.g. XML, or Tab delimited.
-	2.	To relate two report graphs generated from the same data (visualization)
-	3.	hypothesis. First english is presented, second logical is presented.
+[	
+1. You have the same data in more than one "format", e.g. XML, or Tab delimited.
+2. To relate two report graphs generated from the same data (visualization)
+3. hypothesis. First english is presented, second logical is presented.
 ]
+
 I think that all points above are about the relation between an information content entity and some form of representation: format, graph, linguistic.
-We use the model proposed by Riichiro Mizoguchi (I am sure Alan knows about this model). In this model there are three essential entities:
+We use the model proposed by Riichiro Mizoguchi (I am sure Alan knows about this model). 
+
+In this model there are three essential entities:
 
 1) information content entity
 2) representation ( we have subclasses: logical representation, textual representation, mathematical representation)
 3) material entity
 
-1) and 3) are covered by IAO and BFO wonderfully. [MC: For example, relation between information content entity and material document is that the material document bears a specifically dependent continuant that is the concretization of the information content entity.] - I completely agree with this.
+1) and 3) are covered by IAO and BFO wonderfully. (MC: For example, relation between information content entity and material document is that the material document bears a specifi)ally dependent continuant that is the concretization of the information content entity.] - I completely agree with this.
 
-2) information content entity can have multiple representations. I am straggling with mapping of representations to OBI and IAO classes.  The nearest is information carrier (SDC), the definition fits well, but I am not completely sure given the examples of the usage [The pattern in ink on a page of a paperback novel]. What is a relation  between an information carrier and the corresponding information content entity? If assume that the mapping is representation = information carrier, than the relation is "represents".
+2) information content entity can have multiple representations. I am struggling with mapping of representations to OBI and IAO classes.  The nearest is information carrier (SDC), the definition fits well, but I am not completely sure given the examples of the usage (The pattern in ink on a page of a paperback novel]). What is a relation  between an information carrier and the corresponding information content entity? If assume that the mapping is representation = information carrier, than the relation is "represents".
 This is a fragment from a real use case:
 
 -------------------------------------------------------------------
@@ -20,22 +24,22 @@ Systems Biology models analysis use case
 study of iND750 systems biology model has_proposition h1
 h1 is_instance_of hypothesis 
 
-h1 is_represented_as  "iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for rich media"
-"iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for rich media" is_instance_of text representation
+h1 is_represented_as "iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for rich media"
 
-h1 is_represented_as not_match(model_iND750_prediction,re-use_study_results,rich_media)
-  not_match(model_iND750_prediction,re-use_study_results,rich_media) is_instance_of logical representation
+"iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for rich media" is_instance_of text representation
 
-
+h1 is_represented_as not_match(model_iND750_prediction,re-use_study_results,rich_media) not_match(model_iND750_prediction,re-use_study_results,rich_media) is_instance_of logical representation
 
 study of iND750 systems biology model has_proposition h2
 h2 is_instance_of hypothesis
 
-h2 is_represented_as  "iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for minimal media"
-"iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for minimal media" is_instance_of text representation
+h2 is_represented_as "iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for minimal media"
+
+"iND750 systems biology model prediction are not consistent with  the results of the investigation into the reuse of formalized experiment information for minimal media" is_instance_of text representation
 
 h2 is_represented_as not_match(model_iND750_prediction,re-use_study_results,minimal_media)
   not_match(model_iND750_prediction,re-use_study_results,minimal_media) is_instance_of logical representation
+
 --------------------------------------------
 This is a simple example, in other studies we have thousands of hypotheses and an efficient representation is truly essential for processing. I do not expect from OBI to cover such cases as it is still not typical for biological experiments, but IAO should be able to support such seriously information-driven investigations. 
 
@@ -44,4 +48,3 @@ Is it possible to have a relation between a process and information content enti
 Example: investigation has_proposition hypothesis; investigation has_proposition goal.
 Of course I can use plan specification has_part hypothesis/ goal
 But is this enough? I think that a direct relation between a process and information content entity would be useful. But I can live without that. 
-
