@@ -58,6 +58,13 @@
     </owl:AnnotationProperty>
 
 
+    <!-- http://purl.obofoundry.org/obo/IAO_0000222 -->
+    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000222">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes</rdfs:label>
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+<obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+    </owl:ObjectProperty>
+
     <!-- http://purl.obofoundry.org/obo/IAO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000008">
@@ -68,6 +75,14 @@
     </owl:Class>
     
 
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000223 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000223">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represents</rdfs:label>
+  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+<obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+    </owl:ObjectProperty>
 
     <!-- http://purl.obofoundry.org/obo/IAO_0000012 -->
 

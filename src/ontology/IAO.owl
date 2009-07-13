@@ -251,21 +251,10 @@ We have had a long discussion about denotes versus describes.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000222 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000222">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
-    </owl:ObjectProperty>
+
     
 
-
-    <!-- http://purl.obofoundry.org/obo/IAO_0000223 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000223">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represents</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000136"/>
-    </owl:ObjectProperty>
     
 
 
