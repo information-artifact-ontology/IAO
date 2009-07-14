@@ -1,4 +1,5 @@
 #summary Meeting notes July 14th 2009
+#labels Meeting-notes
 
 = IAO Meeting notes of July 14th 2009 =
 
@@ -7,7 +8,8 @@
  * Convened by: Melanie, Alan 
  * Notes by: Melanie, Alan
  * Where: Skype
- * Attendees:  
+ * Attendees:  Melanie, Alan, Bjoern, James, Barry
+ * [http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2007-07-14-raw.html Raw transcript]
 
 == Review Action items ==
  * James will check how to link data and their visualization - example: clustered data visualization (process) has_specified_input only clustered data and has_specified_output some dot plot or..... (list)
