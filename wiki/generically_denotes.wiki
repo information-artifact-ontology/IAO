@@ -2,10 +2,10 @@
 
 = Current definition =
 
-* g generically denotes r =def 
-* r is a portion of reality
-* there is some c that is a concretization of g 
-* every c that is a concretization of g specifically denotes r
+ * g generically denotes r =def 
+ * r is a portion of reality
+ * there is some c that is a concretization of g 
+ * every c that is a concretization of g specifically denotes r
 
 = Details =
 
@@ -34,4 +34,3 @@ We want this relation because in practice we will almost always be working with 
 The word Boston on a traffic sign in Massachusetts generically denotes the city of Boston. 
 
 When I write "The word Boston" I mean a generically dependent continuant because the same word boston is on many signs, and the statement I am making - about traffic signs in Massachusetts, means that I am taking about all of them, not a specific one. In each case, however, there is a specific writing of the word "Boston" and in each case that word denotes the city of Boston. Hence the generic denotation.
-
