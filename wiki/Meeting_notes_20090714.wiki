@@ -13,7 +13,7 @@
  * James will check how to link data and their visualization - example: clustered data visualization (process) has_specified_input only clustered data and has_specified_output some dot plot or..... (list)
  * Chris to identify if there is anything in IAO holding up DENRIE, and submit issues if any under tracker.
  * Melanie to make describes and represents obsolete (at least until they have definitions) - *DONE*
- * Larisa to send her use cases for "represents" - *DONE*
+ * Larisa to send her use cases for "represents" - *DONE* - [http://code.google.com/p/information-artifact-ontology/wiki/RepresentsUseCase Represents use case]
  * Alan to work on the definition of denotes and specifically denotes (cf http://code.google.com/p/information-artifact-ontology/issues/detail?id=25) - *DONE*
  * Bjoern to review relations and submit issues if any under the tracker
  * Alan to review and propose sorting of IAO/OBI terms as he edits IAO in next 2 weeks.
