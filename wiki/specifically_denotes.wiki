@@ -1,0 +1,62 @@
+# Explanation of the specifically denotes relationship.
+
+= Current definition =
+
+ * c specifically denotes r =def 
+ * r is a portion of reality 
+ * & c is a particular quality
+ * & c depends specifically on some independent continuant b 
+ * & b acquired c as the result of the achievement of an objective to enable pointing to r repeatedly. 
+
+= Details == 
+
+Let's take the definition line by line:
+
+*c specifically denotes r =de f*
+
+The relation we are defining is called "specifically denotes". We are going to give necessary and sufficient conditions for when two entities, _c_ and _r_ to be related by this relation. Read this as "forall(c) forall(r) c specifically denotes r if and only if ..."
+
+*r is a portion of reality*
+
+*r* is the thing that is to be denoted. We want this to be anything. We perhaps should have said bfo:Entity instead of "portion of reality" and perhaps it will land up this way. The case that might fall outside this is what Werner Ceusters calls "configurations" or (paraphrasing) the real world targets of true propositions  or sentences. For example if it is the case that some jar j is on top of some table t, then "j being on top of t" is a configuration, but is not a bfo:Entity. See slide 21 "Representation and the three levels" in Werner's [http://www.referent-tracking.com/RTU/sendfile/?file=CeustersInterOntology2009.ppt InterOntology 2009 presentation]. I (Alan) am not sure that I think that configurations should be considered the targets of denotation, but this is a matter for further discussion.
+
+*c is a particular quality*
+
+_Particular_ is a synonym for individual or instance. so *c* is a quality instance.
+
+*c depends specifically on some independent continuant b*
+
+Every dependent continuant, such as a quality, is by definition dependent on an independent continuant. This sentence is in the definition so that we can introduce the variable *b* so that we can refer to it in the next clause. We write _specifically depends_ to contrast this dependence with generic dependence. See [Specific and generic dependence]
+
+* & b acquired c as the result of the achievement of an objective to enable pointing to r repeatedly. *
+
+The essential idea about denotation is what a symbol does when it names a thing - you can imagine an imaginary arrow that _points_ from the symbol to the thing. However there is a question about how this pointing comes about. This phrase attempts to link this to a kind of process that creates such pointing. _achievement of an objective_ is another way to say that there was some intention (the objective) to point. _enable pointing repeatedly_ is to say that that the pointing has to happen at least twice. The example in mind here is that a denotation that is not used twice doesn't seem to make sense as such. Denotation can be considered a constituent of communication or a basic element in constructing meaning. In the communication case, there is a sender and receiver (perhaps the same entity). In the case of _meaning_ not pointing twice would mean that the denotation couldn't be used for anything - the first and only pointing establishes the denotation. Then what?
+
+== Critical view ==
+
+Each part of this definition has issues - denotation is a hard thing to define. Here are a couple of questions that come to mind:
+
+* As noted above, should configurations should be considered targets of denotation?
+* Is the denotation always by quality. The prototypical case we are thinking of is writing a word or symbol on a piece of paper. The pattern of ink is the quality we are speaking of here, that is the subject of the denotation. A counter might be to say that there need not be any change in quality - suppose that you are sitting on a beach, pick up a piece of driftwood and say "suppose this [piece of wood] is Alan", then go on to tell a story in which the piece of wood is used in place of the word "Alan". Arguably there has been no change in quality to the wood, but the wood has become a symbol and is the subject of a denotation relationship.
+* Do we need to be as complicated as the last part of the definition - can't we just say _c points to r_? Why bring in this round about way of bringing intention into the picture?  (You need to argue with Barry if you want to contest this one :) )
+
+
+
+
+
+
+
+
+
+== Annotated examples ==
+
+Marked means there is a changed or additional quality of the bearer - the  quality is the information carrier.
+
+Case 1
+Memory trace as mark created when reading some description of some friend. The trace can denote.
+
+Case 2
+Pattern of ink arrayed on paper as mark when writing down a friend's name
+
+Case 3
+Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file.
