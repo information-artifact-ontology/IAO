@@ -24,13 +24,13 @@
 
 == Minutes ==
 
-Discussion on generically_denotes and specifically_denotes
+*Discussion on generically_denotes and specifically_denotes*
 
 Background material:
-- specifically denotes: http://code.google.com/p/information-artifact-ontology/wiki/specifically_denotes
-- generically denotes: http://code.google.com/p/information-artifact-ontology/wiki/generically_denotes
-- specific and generic dependence: http://code.google.com/p/information-artifact-ontology/wiki/Specific_and_generic_dependence
-- Issue 25 under IAO tracker: http://code.google.com/p/information-artifact-ontology/issues/detail?id=25
+* specifically denotes: http://code.google.com/p/information-artifact-ontology/wiki/specifically_denotes
+* generically denotes: http://code.google.com/p/information-artifact-ontology/wiki/generically_denotes
+* specific and generic dependence: http://code.google.com/p/information-artifact-ontology/wiki/Specific_and_generic_dependence
+* Issue 25 under IAO tracker: http://code.google.com/p/information-artifact-ontology/issues/detail?id=25
 
 AI: Alan: make it clear that denotes has domain information content entity (related to http://code.google.com/p/information-artifact-ontology/issues/detail?id=28, domain of is_about)
 
