@@ -14,7 +14,7 @@
  * Chris to identify if there is anything in IAO holding up DENRIE, and submit issues if any under tracker.
  * Melanie to make describes and represents obsolete (at least until they have definitions) - *DONE*
  * Larisa to send her use cases for "represents" - *DONE*
- * Alan to work on the definition of denotes and specifically denotes (cf http://code.google.com/p/information-artifact-ontology/issues/detail?id=25)
+ * Alan to work on the definition of denotes and specifically denotes (cf http://code.google.com/p/information-artifact-ontology/issues/detail?id=25) - *DONE*
  * Bjoern to review relations and submit issues if any under the tracker
  * Alan to review and propose sorting of IAO/OBI terms as he edits IAO in next 2 weeks.
  * All: submit issues under tracker, add comments to existing issues
