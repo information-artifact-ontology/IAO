@@ -38,7 +38,7 @@ Each part of this definition has issues - denotation is a hard thing to define. 
 
 * As noted above, should configurations should be considered targets of denotation?
 * Is the denotation always by quality. The prototypical case we are thinking of is writing a word or symbol on a piece of paper. The pattern of ink is the quality we are speaking of here, that is the subject of the denotation. A counter might be to say that there need not be any change in quality - suppose that you are sitting on a beach, pick up a piece of driftwood and say "suppose this [piece of wood] is Alan", then go on to tell a story in which the piece of wood is used in place of the word "Alan". Arguably there has been no change in quality to the wood, but the wood has become a symbol and is the subject of a denotation relationship.
-* Do we need to be as complicated as the last part of the definition - can't we just say _c points to r_ ? Why bring in this round about way of bringing intention into the picture?  (You need to argue with Barry if you want to contest this one :) )
+ * Do we need to be as complicated as the last part of the definition - can't we just say _c points to r_ ? Why bring in this round about way of bringing intention into the picture?  (You need to argue with Barry if you want to contest this one :) )
 
 
 == Examples ==
