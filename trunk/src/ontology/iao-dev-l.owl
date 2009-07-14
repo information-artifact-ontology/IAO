@@ -15,16 +15,16 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:obo="http://purl.obofoundry.org/obo/"
     xmlns:iao="http://purl.obofoundry.org/obo/iao.owl#"
-  xml:base="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/iao-dev-l.owl">
+>
   <owl:Ontology rdf:about="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/iao-dev-l.owl">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
-    <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/external/ro.owl"/>
-    <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/external/protege-dc.owl"/>
-    <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/IAO.owl"/>
-    <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/external/ro_bfo_bridge11.owl"/>
- <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/obsolete.owl"/>
-    <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/external/bfo11.owl"/>
+    <owl:imports rdf:resource="external/ro.owl"/>
+    <owl:imports rdf:resource="external/protege-dc.owl"/>
+    <owl:imports rdf:resource="IAO.owl"/>
+    <owl:imports rdf:resource="external/ro_bfo_bridge11.owl"/>
+ <owl:imports rdf:resource="obsolete.owl"/>
+    <owl:imports rdf:resource="external/bfo11.owl"/>
 
   </owl:Ontology>
 
