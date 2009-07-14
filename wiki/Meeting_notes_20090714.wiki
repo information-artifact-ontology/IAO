@@ -19,6 +19,10 @@
  * Alan to review and propose sorting of IAO/OBI terms as he edits IAO in next 2 weeks.
  * All: submit issues under tracker, add comments to existing issues
 
+== IAO tutorial prep ==
+
+10 questions people will want to know about IAO
+
 == Exploring Larisa's "represents" relation cases ==
 
  # You have the same data in more than one "format", e.g. XML, or Tab delimited.  
