@@ -1,0 +1,19 @@
+# Explain the idea of specific and generic dependence
+
+== Existential dependence ==
+
+If it something can't exist without something else existing then we say there is an existential dependence of one on the other. In the current BFO there is one kind of existential dependency - inherence. Dependent continuants such as qualities inhere in independent continuants, such as material entities. For example there can't be a shape quality without it being the shape of something.
+
+There are other kinds of implied existential dependencies in BFO. For example there can't be a boundary without it being a boundary of something. The next version of BFO will introduce dependence relations that are more general than the current "inheres".
+
+== Specific dependence ==
+
+In the case of the inheres relationship, there is a one to one relationship between the depender and the depended on. The particular shape of a particular ball is the shape of only that ball. If the ball ceases to exist, the shape quality ceases existing - it can't migrate to some other ball. This kind of dependence is called specific dependence.
+
+== Generic dependence ==
+
+In other cases, particularly in the case of information content entities, the dependence can be on any of a number of entities, and can migrate. That there is a word "Boston" that is used to denote the City of Boston depends on it being written down in and used to denote Boston at least once. But since the word can used again and again the word in general doesn't depend on any single particular use of it. Imagine that a particular piece of paper with the word written on it burns up - this doesn't mean that the generic "Boston" ceases to exist. So in this way the generic dependence between an information entity and its concretizations difference from the dependence that we see with inherence - a specific dependence. However, if all writings, memories, etc. of a word cease to exist, then the generic version also ceases to exist - things like information content entities don't exist in a vacuum - by the same principle that all entities that exist, from a realist point of view,  eventually ground out in some chain of dependence to something material. 
+
+== Note ==
+
+The idea of generic dependence, as discussed in the philosophical literature,  extends beyond the examples I give here, however I (Alan) am not particularly studied in these other uses. Ask Barry if you want more background.
