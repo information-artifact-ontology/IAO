@@ -1,0 +1,37 @@
+# Explanation of the specifically denotes relationship to address issue 25
+
+= Current definition =
+
+* g generically denotes r =def 
+* r is a portion of reality
+* there is some c that is a concretization of g 
+* every c that is a concretization of g specifically denotes r
+
+= Details =
+
+First read [specifically_denotes].
+
+* g generically denotes r =def  *
+
+We are giving necessary and sufficient conditions for the relation to hold. g is an information content entity, a generically dependent continuant. 
+
+* r is a portion of reality *
+
+as explained in [specifically_denotes]
+
+* there is some c that is a concretization of g *
+
+concretization is the relation between a generically dependent continuant each specifically dependent continuant on which it existentially depends. Here we are repeating that there needs to be at least one specifically dependent continuant otherwise our generic dependent continuant can't exist (since it is existentially dependent on the specifics).
+
+* every c that is a concretization of g specifically denotes r
+
+This is the meat of the definition. We have generic denotation when we have a information content entity, for example the thing that is common to all the writings of the word "Boston", and in each of these cases the writing of the word specifically denotes the same thing (e.g. the city of Boston). 
+
+We want this relation because in practice we will almost always be working with the generically dependent information content entities - for the typical purposes of representation we won't care about the differences between same-content copies of an information entity.
+
+== Example ==
+
+The word Boston on a traffic sign in Massachusetts generically denotes the city of Boston. 
+
+When I write "The word Boston" I mean a generically dependent continuant because the same word boston is on many signs, and the statement I am making - about traffic signs in Massachusetts, means that I am taking about all of them, not a specific one. In each case, however, there is a specific writing of the word "Boston" and in each case that word denotes the city of Boston. Hence the generic denotation.
+
