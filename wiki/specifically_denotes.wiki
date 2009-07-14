@@ -1,4 +1,4 @@
-# Explanation of the specifically denotes relationship.
+# Explanation of the specifically denotes relationship to address [http://code.google.com/p/information-artifact-ontology/issues/detail?id=25 issue 25]
 
 = Current definition =
 
@@ -41,22 +41,18 @@ Each part of this definition has issues - denotation is a hard thing to define. 
 * Do we need to be as complicated as the last part of the definition - can't we just say _c points to r_? Why bring in this round about way of bringing intention into the picture?  (You need to argue with Barry if you want to contest this one :) )
 
 
+== Examples ==
 
+Marked refers to the changed or additional quality(c)  of the bearer (b) in the definition above - the  quality (c) is the _information carrier_ aka subject of the denotation. 
 
+_Case 1:  Memory trace as mark created when reading some description of some friend. The trace can denote._
 
+By memory trace I mean whatever changes occur in a brain when it memorizes something - imagined hear as changes in shape and number of synapses, for instance. The changed qualities of the brain are the *c*. The formed memory becomes the basis of further communication about the friend - that basis being denotation.
 
+_Case 2: Pattern of ink arrayed on paper as mark when writing down a friend's name_
 
+This is the prototypical case. You write down a symbol on a piece of paper.
 
+_Case 3: Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file_
 
-== Annotated examples ==
-
-Marked means there is a changed or additional quality of the bearer - the  quality is the information carrier.
-
-Case 1
-Memory trace as mark created when reading some description of some friend. The trace can denote.
-
-Case 2
-Pattern of ink arrayed on paper as mark when writing down a friend's name
-
-Case 3
-Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file.
+We need to make sure that our definition works for media invented after the pencil. Changed patterns of magnetic domains (c) on a hard disk (b) work just as well as the subject of the denotation relation.
