@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obofoundry.org/obo/"
-     xml:base="http://purl.obofoundry.org/obo/iao/dev/obsolete.owl"
+     xml:base="http://purl.obofoundry.org/obo/iao/2009-07-15/obsolete.owl"
      xmlns:obo="http://purl.obofoundry.org/obo/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
