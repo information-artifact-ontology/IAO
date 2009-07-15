@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obofoundry.org/obo/"
-     xml:base="http://purl.obofoundry.org/obo/iao/dev/obsolete.owl"
-     xmlns:obo="http://purl.obofoundry.org/obo/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xml:base="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,86 +13,86 @@
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
     <owl:imports>
-      <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/ontology-metadata.owl"/>
+      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
     </owl:imports>
     </owl:Ontology>
     
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000114">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en"
             >has curation status</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/OBI_0000283">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000115">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000116">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label xml:lang="en">editor note</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000113">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
         <rdfs:label xml:lang="en">in branch</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000112">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label xml:lang="en"
             >example of usage</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000117">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label xml:lang="en"
             >definition editor</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000111">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">preferred term</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000118">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label xml:lang="en"
             >alternative term</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000119">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label xml:lang="en"
             >definition source</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000231">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
         <rdfs:label xml:lang="en"
             >has obsolescence reason</rdfs:label>
     </owl:AnnotationProperty>
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000222 -->
-    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000222">
+    <!-- http://purl.obolibrary.org/obo/IAO_0000222 -->
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000222">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">describes</rdfs:label>
   <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-<obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:ObjectProperty>
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000008 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000008 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000008">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000008">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >obsolete_artifact</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000223 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000223 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000223">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000223">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">represents</rdfs:label>
   <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-<obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:ObjectProperty>
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000012 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000012">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000012">
         <rdfs:label xml:lang="en"
             >obsolete_digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000261</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</obo:IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 
@@ -104,31 +104,31 @@ Superclass was &#39;digitial quality&#39;</obo:IAO_0000116>
             >obsolete_digital entity</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en"
             >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000018 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000018 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000018">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000018">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >obsolete_material_entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000226"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000019 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000019 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000019">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000019">
         <rdfs:label xml:lang="en"
             >obsolete_binary digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000244</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</obo:IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 Superclass was &#39;digital entity&#39;</obo:IAO_0000116>
@@ -140,21 +140,21 @@ Superclass was &#39;digital entity&#39;</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en"
             >person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000047 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000047 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000047">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000047">
         <rdfs:label xml:lang="en"
             >obsolete_text based digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000132</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</obo:IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 superclass was &#39;digital document&#39;</obo:IAO_0000116>
@@ -165,20 +165,20 @@ superclass was &#39;digital document&#39;</obo:IAO_0000116>
             >person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en"
             >text based digital entity</obo:IAO_0000111>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000093 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000093 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000093">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000093">
         <rdfs:label xml:lang="en"
             >obsolete_binary executable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000222</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</obo:IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 superclass was &#39;digital entity&#39;</obo:IAO_0000116>
@@ -189,20 +189,20 @@ superclass was &#39;digital entity&#39;</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en"
             >person:Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000105 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000105 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000105">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000105">
         <rdfs:label xml:lang="en"
             >obsolete_digital document</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000195</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</obo:IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 superclass was &#39;digial entity&#39;</obo:IAO_0000116>
@@ -213,24 +213,24 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en"
             >person:Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000141 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000141 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000141">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000141">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >obsolete_digital quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Need to rework digital entity. Digital quality was suggested by Barry.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000121</obo:IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000121</obo:IAO_0000114>
         <obo:IAO_0000116
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4</obo:IAO_0000116>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
 
@@ -258,67 +258,67 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000012 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000012 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000012">
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000012">
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000019 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000019 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000019">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000019">
         <obo:IAO_0000112 xml:lang="en"
             >MS Word document, ZIP file, DICOM file, JPEG file</obo:IAO_0000112>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000047 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000047 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000047">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000047">
         <obo:IAO_0000112 xml:lang="en"
             >XML file, C++ source code file</obo:IAO_0000112>
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000093 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000093 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000093">
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000093">
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000103 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000103"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000103"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000105 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000105 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000105">
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000105">
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000141 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000141 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000141">
-        <obo:IAO_0000231 rdf:resource="http://purl.obofoundry.org/obo/IAO_0000103"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000141">
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000226 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000226 -->
 
-    <rdf:Description rdf:about="http://purl.obofoundry.org/obo/IAO_0000226"/>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
 </rdf:RDF>
 
 
