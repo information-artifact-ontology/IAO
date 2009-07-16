@@ -167,15 +167,18 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-    
-
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en"
+            >data item</rdfs:label>
+    </owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:label xml:lang="en"
             >information content entity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     </owl:Class>
     
 
