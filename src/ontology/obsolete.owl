@@ -13,7 +13,7 @@
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
     <owl:imports>
-      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
+      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
     </owl:imports>
     </owl:Ontology>
     
