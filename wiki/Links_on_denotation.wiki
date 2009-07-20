@@ -1,6 +1,6 @@
 #summary Capture background on the subject of denotation
 
-* http://en.wikipedia.org/wiki/Descriptive_theory_of_names
-* http://en.wikipedia.org/wiki/Sense_and_reference
-* http://plato.stanford.edu/entries/logic-intensional/
-* http://plato.stanford.edu/entries/frege/
+ * http://en.wikipedia.org/wiki/Descriptive_theory_of_names
+ * http://en.wikipedia.org/wiki/Sense_and_reference
+ * http://plato.stanford.edu/entries/logic-intensional/
+ * http://plato.stanford.edu/entries/frege/
