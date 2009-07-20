@@ -1,6 +1,26 @@
 #summary Capture background on the subject of denotation
 
+== Reading ==
  * http://en.wikipedia.org/wiki/Descriptive_theory_of_names
  * http://en.wikipedia.org/wiki/Sense_and_reference
  * http://plato.stanford.edu/entries/logic-intensional/
  * http://plato.stanford.edu/entries/frege/
+
+== Probes ==
+
+Various ways in which denotation and related relations are teased apart.
+
+Compare:
+ * "Barack Obama"
+ * "The president of the United State on July 20, 2009"
+The _referent_, or entity _designated_ by these two information entities is the same.  In what ways are the two entities and their relationship to Barack Obama (the person) different?
+
+--
+
+What is the relationship between "1 + 2" and 3. 
+
+-- 
+
+Eric Arthur Blair is George Orwell
+
+"Eric Arthur Blair" and "George Orwell" refer to the same individual. If their total meaning was what they refer to then the sentence above wouldn't have any content. If you think it does (and people think it does), then there's something more to these names then just what they refer to.
