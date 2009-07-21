@@ -5,6 +5,7 @@
  * http://en.wikipedia.org/wiki/Sense_and_reference
  * http://plato.stanford.edu/entries/logic-intensional/
  * http://plato.stanford.edu/entries/frege/
+ * http://plato.stanford.edu/entries/goodman-aesthetics/
 
 == Probes ==
 
