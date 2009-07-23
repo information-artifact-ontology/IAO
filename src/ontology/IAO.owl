@@ -483,7 +483,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">label</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -743,7 +743,7 @@ JAR: A data item is an approximately justified approximately true approximate be
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000028">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symbol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >a smallish, word-like datum...</obo:IAO_0000116>
