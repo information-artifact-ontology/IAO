@@ -1614,6 +1614,26 @@ variable determining the position on the vertical axis.</obo:IAO_0000115>
     </owl:Class>
     
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000185 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000185">
+        <rdfs:label xml:lang="en">photograph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
+        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000115 xml:lang="en"
+            >A photograph is created by projecting an image onto a photosensitive surface such as a chemically treated plate or film, CCD receptor, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en"
+            >PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en"
+            >PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en"
+            >PERSON:Joanne Luciano</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en"
+            >WEB: http://en.wiktionary.org/wiki/photograph</obo:IAO_0000119>
+
+    </owl:Class>
+
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
   </owl:AnnotationProperty>
