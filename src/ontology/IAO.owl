@@ -903,7 +903,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
         <obo:IAO_0000115 xml:lang="en"
-            >A study interpretation is a narrative object interpreting a study result.  Examples include whether a hypothesis is false, the study failed to address the hypothesis, the study results have led to new hypotheses.</obo:IAO_0000115>
+            >A study interpretation is a narrative object interpreting a study result. Examples include discussion of whether a hypothesis is false, whether the study failed to address the hypothesis, and whether the study results have led to new hypotheses</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en"
             >PERSON: Jennifer Fostel</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en"
