@@ -1634,6 +1634,36 @@ variable determining the position on the vertical axis.</obo:IAO_0000115>
 
     </owl:Class>
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000186">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >photographic print</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000294"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000185"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000117 xml:lang="en"
+            >PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en"
+            >PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >A photographic print is a material entity upon which a photograph generically depends.</obo:IAO_0000115>
+    </owl:Class>
+    
+
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
   </owl:AnnotationProperty>
