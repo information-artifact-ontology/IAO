@@ -1282,10 +1282,11 @@ What is the result of one FACS experiment?</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
             >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
         <obo:IAO_0000115 xml:lang="en"
-            >An image is an information content entity which provides a visual representation of for the result of a measurement.</obo:IAO_0000115>
+            >An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <obo:IAO_0000111 xml:lang="en">image</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
+  <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en"
             >person:Chris Stoeckert</obo:IAO_0000117>
     </owl:Class>
