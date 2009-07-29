@@ -71,13 +71,13 @@
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
         <rdfs:label xml:lang="en">preferred term</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231">
-        <rdfs:label xml:lang="en"
-            >has obsolescence reason</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
         <rdfs:label xml:lang="en"
             >definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231">
+        <rdfs:label xml:lang="en"
+            >has obsolescence reason</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
         <rdfs:label xml:lang="en">editor note</rdfs:label>
@@ -831,13 +831,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1145,8 +1145,7 @@ whole sentence is deleted.</IAO_0000116>
         <IAO_0000117 xml:lang="en"
             >PERSON:Chris Stoeckert</IAO_0000117>
         <IAO_0000231 xml:lang="en"
-            >Replaced by document
-</IAO_0000231>
+            >Replaced by document</IAO_0000231>
         <IAO_0000116 xml:lang="en"
             >disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</IAO_0000116>
         <IAO_0000111 xml:lang="en">report</IAO_0000111>
@@ -1323,13 +1322,13 @@ What is the result of one FACS experiment?</IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000116 rdf:datatype="&xsd;string"
@@ -1708,6 +1707,12 @@ variable determining the position on the vertical axis.</IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000301">
         <rdfs:label>citation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000112 xml:lang="en"
             >Verspoor, K., Cohen, KB., Hunter, L. Textual characteristics of traditional and Open Access scientific journals are similar, BMC Bioinformatics 2009, 10:183.</IAO_0000112>
@@ -1751,6 +1756,12 @@ variable determining the position on the vertical axis.</IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000304">
         <rdfs:label>caption</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000308"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
             >A textual entity that describes a figure</IAO_0000115>
         <IAO_0000112 xml:lang="en"
@@ -1779,14 +1790,14 @@ variable determining the position on the vertical axis.</IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000306">
         <rdfs:label>table</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
-        <IAO_0000112 xml:lang="en"
-            >     | T     F
---+-----
-T   | T     F
-F   |  F    F</IAO_0000112>
         <IAO_0000115 xml:lang="en"
             >A textual entity that contains a two-dimensional arrangement of texts repeated at regular intervals across a spatial range, such that the spatial relationships among the constituent texts expresses propositions</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
+        <IAO_0000112 xml:lang="en"
+            >| T     F
+--+-----
+T   | T     F
+F   |  F    F</IAO_0000112>
     </owl:Class>
     
 
@@ -1900,8 +1911,14 @@ GO   gene ontology</IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000314">
         <rdfs:label>document part</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000112 xml:lang="en"
-            >An abstract, introduction, method or results section.  </IAO_0000112>
+            >An abstract, introduction, method or results section.</IAO_0000112>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000115 xml:lang="en"
             >an information content entity that is part of a document</IAO_0000115>
@@ -1914,11 +1931,17 @@ GO   gene ontology</IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000315">
         <rdfs:label>abstract</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
             >A summary of the entire document that is substantially smaller than the document it summarizes.  It is about the document it summarizes.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000112 xml:lang="en"
-            >The profusion of high-throughput instruments and the explosion of new results in the scientific literature, particularly in molecular biomedicine, is both a blessing and a curse to the bench researcher.   Even knowledgeable and experienced scientists can benefit from computational tools that help navigate this vast and rapidly evolving terrain. In this paper, we describe a novel computational approach to this challenge, a knowledge-based system that combines reading, reasoning and reporting methods to facilitate analysis of experimental data. Reading methods extract information from external resources, either by parsing structured data or biomedical language processing to extract information from unstructured data, and track knowledge provenance.  Reasoning methods enrich the knowledge that results from reading by, for example, noting two genes that are annotated to the same ontology term or database entry.  Reasoning is also used to combine all sources into a knowledge network that represents the integration of all sorts of relationships between a pair of genes, and to calculate a combined reliability score. Reporting methods combine the knowledge network with a congruent network constructed from experimental data and visualize the combined network in a tool that facilitates the knowledge-based analysis of that data. </IAO_0000112>
+            >The profusion of high-throughput instruments and the explosion of new results in the scientific literature, particularly in molecular biomedicine, is both a blessing and a curse to the bench researcher.   Even knowledgeable and experienced scientists can benefit from computational tools that help navigate this vast and rapidly evolving terrain. In this paper, we describe a novel computational approach to this challenge, a knowledge-based system that combines reading, reasoning and reporting methods to facilitate analysis of experimental data. Reading methods extract information from external resources, either by parsing structured data or biomedical language processing to extract information from unstructured data, and track knowledge provenance.  Reasoning methods enrich the knowledge that results from reading by, for example, noting two genes that are annotated to the same ontology term or database entry.  Reasoning is also used to combine all sources into a knowledge network that represents the integration of all sorts of relationships between a pair of genes, and to calculate a combined reliability score. Reporting methods combine the knowledge network with a congruent network constructed from experimental data and visualize the combined network in a tool that facilitates the knowledge-based analysis of that data.</IAO_0000112>
     </owl:Class>
     
 
@@ -1958,6 +1981,12 @@ GO   gene ontology</IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000318">
         <rdfs:label>results section</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000303"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
             >A part of a publication about an investigation that is about one or more data collections or study results.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
@@ -1987,8 +2016,14 @@ GO   gene ontology</IAO_0000112>
         <rdfs:label
             >references section</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
-            >A part of a document that enumerates citations</IAO_0000115>
+            >A part of a document that has citations as parts</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000112 xml:lang="en"
             >The list of citations found at the end of a scientific publication, grant proposal or patent application, sometimes called &quot;literature cited&quot; or &quot;bibliography&quot;</IAO_0000112>
@@ -2001,6 +2036,12 @@ GO   gene ontology</IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000321">
         <rdfs:label>author list</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000302"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000112 xml:lang="en"
             >Lawrence Hunter and Kevin Brettonel Cohen</IAO_0000112>
@@ -2020,7 +2061,7 @@ GO   gene ontology</IAO_0000112>
         <IAO_0000112 xml:lang="en"
             >The University of Colorado Denver School of Medicine and the University of Colorado Boulder.</IAO_0000112>
         <IAO_0000115 xml:lang="en"
-            >part of a document that enumerates the institutions associated with the authors of the document</IAO_0000115>
+            >part of a document that has parts that are institution identifications associated with the authors of the document</IAO_0000115>
     </owl:Class>
     
 
