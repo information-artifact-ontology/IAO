@@ -6,6 +6,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
     <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY obo2 "http://purl.obofoundry.org/obo/" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
@@ -40,6 +41,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:obo2="http://purl.obofoundry.org/obo/"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -119,6 +121,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obo2;IAO_0000136"/>
     
 
 
@@ -372,6 +380,30 @@ We have had a long discussion about denotes versus describes.</IAO_0000115>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/IAO_0000005 -->
+
+    <owl:Class rdf:about="&obo2;IAO_0000005"/>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/OBI_0000066 -->
+
+    <owl:Class rdf:about="&obo2;OBI_0000066"/>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/OBI_0000471 -->
+
+    <owl:Class rdf:about="&obo2;OBI_0000471"/>
+    
+
+
+    <!-- http://purl.obofoundry.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="&obo2;OBI_0500000"/>
     
 
 
@@ -1881,6 +1913,12 @@ GO   gene ontology</IAO_0000112>
         <rdfs:label
             >publication about an investigation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000311"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo2;OBI_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
             >A publication that is about an investigation</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
@@ -1952,8 +1990,14 @@ GO   gene ontology</IAO_0000112>
         <rdfs:label
             >introduction to a publication about an investigation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo2;IAO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
-            >A part of a publication about an investigation that is about the research objective and the hypothesis of the investigation</IAO_0000115>
+            >A part of a publication about an investigation that is about the objective specification (why the investigation is being done)</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000112 xml:lang="en"
             >Section labelled &#39;introduction&#39; of a typical scientific journal article</IAO_0000112>
@@ -1967,6 +2011,12 @@ GO   gene ontology</IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000317">
         <rdfs:label>methods section</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo2;OBI_0500000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
             >A part of a publication about an investigation that is about the study design of the investigation</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
@@ -1983,12 +2033,12 @@ GO   gene ontology</IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000303"/>
+                <owl:onProperty rdf:resource="&obo2;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo2;OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
-            >A part of a publication about an investigation that is about one or more data collections or study results.</IAO_0000115>
+            >A part of a publication about an investigation that is about a study design execution</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000112 xml:lang="en"
             >The section labelled &#39;results&#39; in a typical scientific journal article</IAO_0000112>
@@ -2002,6 +2052,12 @@ GO   gene ontology</IAO_0000112>
         <rdfs:label
             >discussion section of a publication about an investigation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
             >A part of a publication about an investigation that is about the study interpretation of the investigation</IAO_0000115>
         <IAO_0000118 xml:lang="en"
@@ -2039,7 +2095,7 @@ GO   gene ontology</IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000302"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000302"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
@@ -2057,6 +2113,12 @@ GO   gene ontology</IAO_0000112>
         <rdfs:label
             >institution list</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&ro;has_part"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000303"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
         <IAO_0000112 xml:lang="en"
             >The University of Colorado Denver School of Medicine and the University of Colorado Boulder.</IAO_0000112>
@@ -2101,6 +2163,12 @@ GO   gene ontology</IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000325">
         <rdfs:label>footnote</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000314"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo2;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000314"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en"
             >A part of a document that is about a specific other part of the document.  Usually footnotes are spatially segregated from the rest of the document.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Lawrence Hunter</IAO_0000117>
