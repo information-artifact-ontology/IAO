@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obofoundry.org/obo/"
-     xml:base="http://purl.obofoundry.org/obo/iao/dev/examples.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xml:base="http://purl.obolibrary.org/obo/iao/dev/examples.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
-     xmlns:obo="http://purl.obofoundry.org/obo/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -35,16 +35,16 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000114"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000116"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000113"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000112"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000117"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000111"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obofoundry.org/obo/IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -60,14 +60,14 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000020 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000020 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000020">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000020">
         <rdfs:label xml:lang="en">p-value</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAOX_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAOX_0000056"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000175</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >A p-value is a quantitative confidence value which represents the probability of obtaining a result at least as extreme as that actually obtained, assuming that the actual value was the result of chance alone.</IAO_0000115>
@@ -80,14 +80,14 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000021 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000021 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000021">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000021">
         <rdfs:label xml:lang="en">patent content</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000006"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</IAO_0000114>
         <IAO_0000119>OBI_0000028</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >A patent content is a report for the purpose of obtaining a license from a government conferring for a set period the sole right to make, use, or sell some process or invention</IAO_0000115>
@@ -100,16 +100,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000022 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000022 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000022">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000022">
         <rdfs:label xml:lang="en"
             >analytical cytology data file</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000012"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >group:Flow Cytometry community</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000115 xml:lang="en"
             >A digital entity intended to capture data in analytical cytology domain.</IAO_0000115>
         <IAO_0000112 xml:lang="en"
@@ -125,15 +125,15 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000023 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000023">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000023">
         <rdfs:label xml:lang="en">eMedical record</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000105"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000105"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >article-without-pmid-or-doi:CDISCglossary</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000078</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >An eMedical record is a digital document derived from a computer system used primarily for patient care in a clinical setting.  Not required to be compliant with requirements of 21 CFR Part 11.</IAO_0000115>
@@ -144,14 +144,14 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000026 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000026 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000026">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000026">
         <rdfs:label xml:lang="en">cluster</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000251</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >A data cluster is a data set which is a subset of data that are a similar to each other in some way.</IAO_0000115>
@@ -167,16 +167,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000036 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000036 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000036">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000036">
         <rdfs:label xml:lang="en"
             >eSource document</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000105"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000105"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >article-without-pmid-or-doi:CDISCglossary</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000158</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >an eSource document is a digital document consisting of a logical collection of Source data and other eSource documents that can be presented in an ordered way and capture the time of completion, change, and any signatures</IAO_0000115>
@@ -188,15 +188,15 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000041 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000041 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000041">
         <rdfs:label xml:lang="en"
             >electronic case report tabulation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000105"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000105"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC glossary</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000083</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >An electronic case report tabulation is a digital document containing tabular data about multiple trial participants which is part of a clinical regulatory submission.  An eCRT has the property that it can be audited and compliant with requirements of 21 CFR Part 11  and has format suited to review by regulators.</IAO_0000115>
@@ -208,16 +208,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000045 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000045 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000045">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000045">
         <rdfs:label xml:lang="en"
             >number of lost events electronic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000125</IAO_0000119>
         <IAO_0000112 xml:lang="en"
             >74, 0, 14 events lost due to data acquisition electronic coincidence.</IAO_0000112>
@@ -232,14 +232,14 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000046 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000046 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000046">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000046">
         <rdfs:label xml:lang="en">standard error</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAOX_0000056"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAOX_0000056"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000235</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >Standard error is a quantitative confidence value which is the standard deviations of the sample in a frequency distribution, obtained by dividing the standard deviation by the total number of cases in the frequency distribution.</IAO_0000115>
@@ -251,13 +251,13 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000051 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000051 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000051">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000051">
         <rdfs:label xml:lang="en">assessment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000035"/>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</IAO_0000114>
         <IAO_0000119>OBI_0000150</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >Assessment is a conclusion derived from the processes used to learn about a patient&#39;s condition.  In part from NCI</IAO_0000115>
@@ -267,15 +267,15 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000056 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000056 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000056">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000056">
         <rdfs:label xml:lang="en"
             >quantitative confidence value</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</IAO_0000114>
         <IAO_0000115 xml:lang="en"
             >A quantitative confidence value is a information content entity which is used to indicate the degree of uncertainty about a measurement.</IAO_0000115>
         <IAO_0000119>OBI_0000071</IAO_0000119>
@@ -287,14 +287,14 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000060 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000060 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000060">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000060">
         <rdfs:label xml:lang="en"
             >adverse event trigger</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119 xml:lang="en"
             >OBI branch derived</IAO_0000119>
         <IAO_0000119>OBI_0000310</IAO_0000119>
@@ -307,15 +307,15 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000066 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000066 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000066">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000066">
         <rdfs:label xml:lang="en"
             >fluorescent reporter intensity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000140"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000116 xml:lang="en"
             >From the DT branch: This term and definition were originally submitted by the community to our branch, but we thought they best fit DENRIE. However we see several issues with this. First of all the name &#39;probe&#39; might not be used in OBI. Instead we have a &#39;reporter&#39; role. Also, albeit the term &#39;probe intensity&#39; is often used in communities such as the microarray one, the name &#39;probe&#39; is ambiguous (some use it to refer to what&#39;s on the array, some use it to refer to what&#39;s hybed to the array). Furthermore, this concept could possibly be encompassed by combining different OBI terms, such as the roles of analyte, detector and reporter (you need something hybed to a probe on the array to get an intensity) and maybe a more general term for &#39;measuring intensities&#39;. We need to find the right balance between what is consistent with OBI and combinations of its terms and what is user-friendly. Finally, note that &#39;intensity&#39; is already in the OBI .owl file and is also in PATO. Why didn&#39;t OBI import it from PATO? This might be a problem.</IAO_0000116>
         <IAO_0000119>OBI_0000010</IAO_0000119>
@@ -329,16 +329,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000068 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000068 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000068">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000068">
         <rdfs:label xml:lang="en"
             >measured expression level</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >OBI Data Transformation branch</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000101</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >A measured expression level is a datum that is the outcome of the quantification of an assay for the activity of a gene, or the number of RNA trancsripts.</IAO_0000115>
@@ -352,13 +352,13 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000070 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000070 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000070">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000070">
         <rdfs:label xml:lang="en">protocol</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000104"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000272</IAO_0000119>
         <IAO_0000119 xml:lang="en"
             >OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</IAO_0000119>
@@ -373,16 +373,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000073 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000073 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000073">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000073">
         <rdfs:label xml:lang="en"
             >number of lost events computer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000269</IAO_0000119>
         <IAO_0000112 xml:lang="en"
             >0, 125, 787 events lost due to computer busy.</IAO_0000112>
@@ -397,14 +397,14 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000077 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000077 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000077">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000077">
         <rdfs:label xml:lang="en">gene list</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000115 xml:lang="en"
             >A gene list is a report of the names or identifiers of genes that are the outcome of an analysis or have been put together for the purpose of an analysis.</IAO_0000115>
         <IAO_0000112 xml:lang="en"
@@ -419,16 +419,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000084 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000084 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000084">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000084">
         <rdfs:label xml:lang="en"
             >fluorescence compensation matrix</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000140"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >group:Flow Cytometry community</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000112 xml:lang="en"
             >((1.053096, -0.22476), (-0.24877, 1.053096))</IAO_0000112>
         <IAO_0000115 xml:lang="en"
@@ -444,16 +444,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000103 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000103 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000103">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000103">
         <rdfs:label xml:lang="en"
             >number of particles in subset</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000109"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000119</IAO_0000119>
         <IAO_0000112 xml:lang="en">500, 200, 0</IAO_0000112>
         <IAO_0000115 xml:lang="en"
@@ -467,15 +467,15 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000107 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000107 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000107">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000107">
         <rdfs:label xml:lang="en"
             >electronic case report form</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000105"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000105"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC glossary</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000119>OBI_0000167</IAO_0000119>
         <IAO_0000115 xml:lang="en"
             >An electronic case report form is a digital document used to record all of the protocol required information to be reported for each trial subject. An eCRF has the property that it can be audited and compliant with requirements of 21 CFR Part 11.</IAO_0000115>
@@ -487,16 +487,16 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000108 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000108 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000108">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000108">
         <rdfs:label xml:lang="en"
             >parameter threshold</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000140"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000140"/>
         <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Submitted by the Flow Cytometry community in DigitalEntity-FlowCytometry-2007-03-30.txt</IAO_0000119>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000112 xml:lang="en">0.01, 0.03</IAO_0000112>
         <IAO_0000119>OBI_0000172</IAO_0000119>
         <IAO_0000115 xml:lang="en"
@@ -510,27 +510,27 @@
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000133 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000133 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000133">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000133">
         <rdfs:label>catalog number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000128"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000128"/>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000124</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000124</IAO_0000114>
         <IAO_0000115
             >A catalog number is an information content entity which is a sequence of characters identifying a product for a provider and/or manufacturer. Catalog numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAOX_0000134 -->
+    <!-- http://purl.obolibrary.org/obo/IAOX_0000134 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAOX_0000134">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOX_0000134">
         <rdfs:label
             >genome sequence version number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obofoundry.org/obo/IAO_0000128"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000128"/>
         <IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obofoundry.org/obo/IAO_0000002</IAO_0000114>
+            >http://purl.obolibrary.org/obo/IAO_0000002</IAO_0000114>
         <IAO_0000116
             >Note1: this has been submitted to our tracker: cf
 http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1844273&amp;group_id=177891&amp;atid=886178
@@ -541,75 +541,75 @@ Note2: this would be a child of version number above.</IAO_0000116>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000001"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000006 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000006"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000006"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000012 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000012"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000012"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000030 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000030"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000035 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000035 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000035"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000035"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000088 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000088 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000088"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000088"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000100 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000100"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000104 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000104"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000105 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000105 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000105"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000105"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000109 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000109"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000128 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000128 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000128"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000128"/>
     
 
 
-    <!-- http://purl.obofoundry.org/obo/IAO_0000140 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
 
-    <owl:Class rdf:about="http://purl.obofoundry.org/obo/IAO_0000140"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140"/>
 </rdf:RDF>
 
 
