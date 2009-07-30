@@ -56,7 +56,6 @@
 <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/dev/iao.owl"/>
 <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/dev/examples.owl"/>
 <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/dev/owl2bits.owl"/>
- <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/obsolete.owl"/>
 
   </owl:Ontology>
 
