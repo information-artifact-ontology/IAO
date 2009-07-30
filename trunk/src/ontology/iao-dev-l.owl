@@ -4,7 +4,7 @@
     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-    xmlns:p1="http://purl.obofoundry.org/obo/iao2.owl#"
+    xmlns:p1="http://purl.obolibrary.org/obo/iao2.owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
@@ -13,10 +13,10 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:obo="http://purl.obofoundry.org/obo/"
-    xmlns:iao="http://purl.obofoundry.org/obo/iao.owl#"
+    xmlns:obo="http://purl.obolibrary.org/obo/"
+    xmlns:iao="http://purl.obolibrary.org/obo/iao.owl#"
 >
-  <owl:Ontology rdf:about="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/iao-dev-l.owl">
+  <owl:Ontology rdf:about="">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
     <owl:imports rdf:resource="external/ro.owl"/>
