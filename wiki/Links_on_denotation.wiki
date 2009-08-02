@@ -42,5 +42,5 @@ Simon's Parts (http://books.google.com/books?id=vX7t7n9Mk_wC) uses the term _des
 
 == Ways of referring ==
 
-* (a) The utterer has direct experience with some set of particulars and creates an information entity to designate those exact things by giving them one or more proper names.
+ * (a) The utterer has direct experience with some set of particulars and creates an information entity to designate those exact things by giving them one or more proper names.
  
