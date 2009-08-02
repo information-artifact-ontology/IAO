@@ -26,3 +26,18 @@ What is the relationship between "1 + 2" and 3.
 Eric Arthur Blair is George Orwell
 
 "Eric Arthur Blair" and "George Orwell" refer to the same individual. If their total meaning was what they refer to then the sentence above wouldn't have any content. If you think it does (and people think it does), then there's something more to these names then just what they refer to.
+
+--
+http://ismir2001.ismir.net/pdf/smiraglia.pdf describes Pierce's distinctions:
+a) likenesses, which convey ideas of the things they 
+represent through imitation; b) indications, which show 
+something about things by being physically connected with them; 
+and c) symbols, or general signs, which have become associated 
+with their meanings by usage. These bodies of work derive meaning from their function in 
+culture as well as from their relations with other works and other 
+bodies of work. Individual works derive meaning from their 
+relations to their human receptors. These core bodies of work, 
+
+--
+
+Simon's Parts (http://books.google.com/books?id=vX7t7n9Mk_wC) uses the term _designation_ when discussing the relation of symbols to entities, specifically in the area of mereology. Further distinguished are singular versus plural designation.
