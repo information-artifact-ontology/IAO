@@ -1,0 +1,33 @@
+#summary Meeting notes August 4th 2009
+
+= IAO Meeting notes of August 4th 2009 =
+
+== Details ==
+
+ * Convened by: Melanie, Alan 
+ * Notes by: Melanie, Alan
+ * Where: Skype
+ * Attendees: 
+ * Regrets: 
+
+
+== Agenda ==
+"IAO and OBI"
+
+ * how to interact: mireot OBI terms into IAO, else?
+	-- add terms accordingly, eg documenting http://code.google.com/p/information-artifact-ontology/issues/detail?id=22
+
+	-- if we decide to mireot, add terms needed following Larry's latest edits: OBI_0000066 - investigation, OBI_0000471 - study design execution, OBI_0500000 - study design
+
+ * move variables back into OBI - http://code.google.com/p/information-artifact-ontology/issues/detail?id=27
+
+ * specific types of graphs: IAO, OBI? http://code.google.com/p/information-artifact-ontology/issues/detail?id=19
+
+ * parameter status: http://code.google.com/p/information-artifact-ontology/issues/detail?id=17
+
+ * James' list of items? (if possible add to tracker at http://code.google.com/p/information-artifact-ontology/issues/list)
+
+== Minutes ==
+
+
+== Action items == 
