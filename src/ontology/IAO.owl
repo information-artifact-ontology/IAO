@@ -1502,6 +1502,8 @@ a is a magnitude means a is a determinate quality particular inhering in some be
     >This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it "measuring" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.
 
 Werner suggests a solution based on "Magnitudes" a proposal for which we are awaiting details.</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later</obo:IAO_0000116>
     <rdfs:subPropertyOf>
       <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
     </rdfs:subPropertyOf>
@@ -1512,6 +1514,8 @@ there is a measurement process p that has specified output m, a measurement datu
 </obo:IAO_0000115>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >is quality measurement of</rdfs:label>
+  <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+  <rdfs:range><owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000001"><rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label></owl:Class></rdfs:range>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#part_of">
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
