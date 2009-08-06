@@ -1,0 +1,85 @@
+default endpoint:http://sparql.obo.neurocommons.org/sparql/
+
+# define the prefixes that will be added to all queries
+
+prefix:rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix:owl: <http://www.w3.org/2002/07/owl#>
+prefix:obi: <http://purl.obofoundry.org/obo/>
+prefix:tax: <http://purl.org/obo/owl/NCBITaxon#NCBITaxon>
+prefix:obo: <http://www.geneontology.org/formats/oboInOwl#>
+prefix:iao: <http://purl.obofoundry.org/obo/>
+
+# give names to our annotation properties
+
+alias:preferredTerm=iao:IAO_0000111
+alias:definition=iao:IAO_0000115
+
+# give names to the top obi taxa 
+alias:bacteria=tax:_2
+alias:eukaryota=tax:_2759
+alias:archaea=tax:_2157
+alias:viruses=tax:_10239
+alias:cellularOrganism=tax:_131567
+
+# get the labels for the 4 classes we import into obi. No definitions in NCBI taxonomy. 
+# Maybe pick up synonyms later.
+== once only ==
+construct
+ { ?super rdf:type owl:Class.
+   ?super rdfs:label ?label.
+ }
+where
+ { ?super rdfs:label ?label.
+   {?super rdfs:subClassOf tax:_1} UNION {?super rdfs:subClassOf alias:cellularOrganism}
+   FILTER ((?super=alias:bacteria) || (?super=alias:eukaryota) || (?super=alias:viruses) || (?super=alias:archaea))
+ }  
+
+# Get the taxon term and superclasses up to the 4 we include in OBI, and labels for them
+== http://purl.org/obo/owl/NCBITaxon == 
+construct
+ { ?super rdf:type owl:Class.
+   ?super rdfs:subClassOf ?parent.
+   ?super iao:IAO_0000111 ?label.
+   ?super rdfs:label ?label.
+ }
+where  
+{
+
+# part 1
+ { # We harvest the transitive superclass annotations
+    _ID_GOES_HERE_ rdfs:subClassOf ?super. 
+    graph <http://purl.org/science/graph/obo/NCBITaxon>
+     { ?super rdfs:subClassOf ?parent.
+       ?super rdfs:label ?label.
+     }
+  }
+UNION
+
+ { graph <http://purl.org/science/graph/obo/NCBITaxon>
+   { ?super rdfs:subClassOf ?parent.
+     ?super rdfs:label ?label.
+     FILTER (?super=_ID_GOES_HERE_)
+   }
+  }
+
+FILTER (!((?super=tax:_2) || (?super=tax:_2759) || (?super=tax:_10239) || (?super=tax:_2157) || (?super = tax:_131567) ||
+ (?parent = tax:_131567)))
+}
+# get the label and definition for your basic OBO term.
+== http://purl.org/obo/owl/.* == 
+construct
+{ 
+  _ID_GOES_HERE_ rdf:type owl:Class.
+  _ID_GOES_HERE_ alias:preferredTerm ?label.
+  _ID_GOES_HERE_ rdfs:label ?label.
+  _ID_GOES_HERE_ alias:definition ?definition.
+}
+where
+{
+  {   _ID_GOES_HERE_ rdfs:label ?label. }
+  UNION
+  {   _ID_GOES_HERE_ obo:hasDefinition ?blank.
+      ?blank rdfs:label ?definition}
+}
+
+

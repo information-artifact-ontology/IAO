@@ -3,8 +3,8 @@
 
 (in-package :asdf)
 
-(setf (logical-pathname-translations "obi")
-      `(("branches;*.*" ,(make-pathname :directory
+(setf (logical-pathname-translations "iao")
+      `(("*.*" ,(make-pathname :directory
 						    (append (butlast (pathname-directory *load-pathname*) 3)
 							    '("src" "ontology"))
 						    :name :wild
@@ -36,6 +36,7 @@
     :components
     (
      (:file "write-purls")
+     (:file "create-external-derived")
      )
     :depends-on (owl))
 
