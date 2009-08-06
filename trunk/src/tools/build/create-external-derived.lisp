@@ -116,6 +116,8 @@
 	(#"write" writer model (new '|FileOutputStream| path) base)
 	))))
 
+(defparameter *repos-still-has-obofoundry-urls* nil)
+
 (defun create-external-derived (&key
 				(kb (load-kb-jena "iao:branches;external.owl"))
 				(templates-path "iao:lisp;external-templates.txt")
@@ -128,10 +130,10 @@
   (let ((*sparql-always-trace* (or *sparql-always-trace* debug)))
     (declare (special *sparql-always-trace*))
     (let ((classes 
-	   (sparql '(:select (?class ?where ?parent) () 
+	   (sparql  '(:select (?class ?where ?parent) () 
 		     (?class !rdf:type !owl:Class)
 		     (?class !obi:OBI_0000283 ?where)
-		     (?class !rdfs:subClassOf ?parent))
+		     (?class !rdfs:subClassOf ?parent)) 
 		   :use-reasoner :none ;; turn the reasoner off, so that we don't get the obi superclasses
 		   :kb kb)))
       (format t "There are ~a external classes~%" (length classes))
@@ -142,6 +144,7 @@
 	  (let ((rdfs 
 		 (append
 		  (loop for query in (cadr (assoc "Once Only" templates :test 'equalp))
+		       do (if debug (print-db query))
 		     collect (get-url endpoint :post `(("query" ,query)) :persist nil :dont-cache t :force-refetch t))
 		  (loop for (class where) in classes
 		     append
@@ -150,6 +153,8 @@
 			append
 			(loop for query in queries
 			   for filled-query = (#"replaceAll" query "_ID_GOES_HERE_" (format nil "<~a>" (uri-full class)))
+			   do (if *repos-still-has-obofoundry-urls* 
+				  (setq filled-query (#"replaceAll" filled-query "purl.obolibrary.org" "purl.obofoundry.org")))
 			   collect (if debug
 				       (progn
 					 (print-db filled-query)
@@ -160,7 +165,11 @@
 		     (loop for (class nil parent) in classes
 			do (format s "<owl:Class rdf:about=~s></owl:Class>~%"
 				   (uri-full class) )))))
-	      (combine-template-query-results (cons basic-info rdfs) output-path))
+	      (combine-template-query-results (cons basic-info (if *repos-still-has-obofoundry-urls*
+								   (mapcar (lambda(e) (#"replaceAll" e "purl.obofoundry.org" "purl.obolibrary.org"))
+									   rdfs)
+								   rdfs))
+						    output-path))
 	    (clean-rdf (namestring (truename output-path)) *obi-prefixes*)
 	    nil
 	    ))))))
