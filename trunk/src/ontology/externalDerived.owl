@@ -43,7 +43,7 @@
     <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >study design execution</obi:IAO_0000111>
     <obi:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >bp</obi:IAO_0000115>
+    >a planned process that realizes the concretization of a study design</obi:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
     <obi:IAO_0000111 xml:lang="en">investigation</obi:IAO_0000111>
