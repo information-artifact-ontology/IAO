@@ -273,17 +273,17 @@ GO   gene ontology</obo:IAO_0000112>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000006">
     <obo:IAO_0000116 xml:lang="en">agree - DENRIE. Issue(alan) do we only mean text? What about a story told by mime. Does music count? (no) what about an oral report. Regarding definition, saying it is a set of propositions means we loose the idea that wording matters. Maybe adjust saying a narrative object has some relationshop to a set of propositions</obo:IAO_0000116>
-    <obo:IAO_0000231 xml:lang="en">Replaced by textual entity and figure</obo:IAO_0000231>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000013</obo:IAO_0000119>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'textual entity' and 'figure'. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+      <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
     </rdfs:subClassOf>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000111 xml:lang="en">narrative object</obo:IAO_0000111>
     <obo:IAO_0000115 xml:lang="en">A narrative object is an information content entity that is a set of propositions.</obo:IAO_0000115>
-    <rdfs:label xml:lang="en">obsolete_narrative object</rdfs:label>
+    <rdfs:label xml:lang="en">narrative object</rdfs:label>
     <obo:IAO_0000112 xml:lang="en">Examples of narrative objects are reports, journal  articles, and patents submission.</obo:IAO_0000112>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
   </owl:Class>
@@ -375,14 +375,14 @@ Previous. An information content entity is a non-realizable information entity t
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000097">
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000091"/>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
-    <obo:IAO_0000231 xml:lang="en">Replaced by the textual entity table.</obo:IAO_0000231>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'textual entity table'. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000265</obo:IAO_0000119>
     <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
-    <rdfs:label xml:lang="en">obsolete_report table</rdfs:label>
+    <rdfs:label xml:lang="en">report table</rdfs:label>
     <obo:IAO_0000111 xml:lang="en">report table</obo:IAO_0000111>
     <obo:IAO_0000115 xml:lang="en">A report table is a report display element consisting of a matrix of cells layed out in a grid, some set of which are filled with some information content</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
@@ -682,7 +682,7 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     <obo:IAO_0000115 xml:lang="en">A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000088">
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PERSON: Melanie Courtot</obo:IAO_0000117>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -695,7 +695,8 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
-    <rdfs:label xml:lang="en">obsolete_report</rdfs:label>
+    <rdfs:label xml:lang="en">report</rdfs:label>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'document'. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: comment from Darren Natale: I am slightly uneasy with the sentence "Topic of the report is on 
 something that has completed."  Should it be restricted to those things 
@@ -703,7 +704,6 @@ that are completed?  For example, a progress report is (usually) about
 something that definitely has *not* been completed, or may include 
 (only) projections.  I think the definition would not suffer if the 
 whole sentence is deleted.</obo:IAO_0000116>
-    <obo:IAO_0000231 xml:lang="en">Replaced by document</obo:IAO_0000231>
     <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
     <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
     <obo:IAO_0000116 xml:lang="en">disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</obo:IAO_0000116>
@@ -1332,17 +1332,18 @@ clustering algorithm.</obo:IAO_0000115>
     <obo:IAO_0000231 xml:lang="en">Replaced by textual entity and figure</obo:IAO_0000231>
     <obo:IAO_0000117 xml:lang="en">PERSON: Allyson Lister</obo:IAO_0000117>
     <obo:IAO_0000111 xml:lang="en">report element</obo:IAO_0000111>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'textual entity' and 'figure'. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: needs some more work (clarify relations).</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PERSON: Melanie Courtot</obo:IAO_0000117>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
     <obo:IAO_0000116 xml:lang="en">There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</obo:IAO_0000116>
     <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    <rdfs:label xml:lang="en">obsolete_report element</rdfs:label>
+    <rdfs:label xml:lang="en">report element</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
