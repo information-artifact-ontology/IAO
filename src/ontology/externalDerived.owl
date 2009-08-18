@@ -45,6 +45,19 @@
     <obi:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a planned process that realizes the concretization of a study design</obi:IAO_0000115>
   </owl:Class>
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001"> <!-- length unit -->
+    <rdfs:label>length unit</rdfs:label>
+    <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >length unit label</obi:IAO_0000111>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122"> <!-- length quality -->
+    <rdfs:label>length</rdfs:label>
+    <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >length</obi:IAO_0000111>
+  </owl:Class>
+
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
     <obi:IAO_0000111 xml:lang="en">investigation</obi:IAO_0000111>
     <rdfs:label xml:lang="en">investigation</rdfs:label>
