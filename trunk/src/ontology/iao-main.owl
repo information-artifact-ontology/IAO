@@ -19,7 +19,7 @@
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
     xmlns:p1="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl#"
-  xml:base="http://purl.obolibrary.org/obo/iao/dev/main.owl">
+  xml:base="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl">
   <owl:Ontology rdf:about="">
     <rdfs:seeAlso>
       <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/"/>
@@ -671,20 +671,6 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >information carrier</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000059">
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
-    <obo:IAO_0000116 xml:lang="en">I prepended the 'report ' to make it clear that we mean parts of reports here. We may want a more generic version of 'figure', in which case this would become a defined class - figure and part_of some report</obo:IAO_0000116>
-    <obo:IAO_0000111 xml:lang="en">report figure</obo:IAO_0000111>
-    <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000115 xml:lang="en">A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements</obo:IAO_0000115>
-    <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >OBI_0000027</obo:IAO_0000119>
-    <obo:IAO_0000231 xml:lang="en">Replaced by defined version of figure</obo:IAO_0000231>
-    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-    <rdfs:label xml:lang="en">obsolete_report figure</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000321">
     <obo:IAO_0000115 xml:lang="en">part of a document that enumerates the authors of the document</obo:IAO_0000115>
