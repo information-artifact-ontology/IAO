@@ -1,0 +1,14 @@
+#summary One-sentence summary of this page.
+
+= Details =
+
+Convened by: Melanie, Alan
+Where: Skype
+
+= Agenda =
+
+ * discussion textual entity: http://code.google.com/p/information-artifact-ontology/issues/detail?id=42
+ * report: http://code.google.com/p/information-artifact-ontology/issues/detail?id=33
+ * documenting http://code.google.com/p/information-artifact-ontology/issues/detail?id=22
+ * relations: http://code.google.com/p/information-artifact-ontology/issues/detail?id=20
+ * others as desired
