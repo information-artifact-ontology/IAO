@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+ #summary One-sentence summary of this page.
 
 = Details =
 
@@ -12,3 +12,7 @@ Where: Skype
  * documenting http://code.google.com/p/information-artifact-ontology/issues/detail?id=22
  * relations: http://code.google.com/p/information-artifact-ontology/issues/detail?id=20
  * others as desired
+
+== Minutes ==
+
+[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-09-01-raw.html raw transcript]
