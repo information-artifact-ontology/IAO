@@ -1236,8 +1236,8 @@ of this, different, term.</obo:IAO_0000116>
     <obo:IAO_0000117 xml:lang="en">Lawrence Hunter</obo:IAO_0000117>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >textual entity</rdfs:label>
-    <obo:IAO_0000115 xml:lang="en">An expression of a set of propositions in writing</obo:IAO_0000115>
-    <obo:IAO_0000112 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000112>
+    <obo:IAO_0000115 xml:lang="en">A textual entity is a part of a manifestation (FRBR sense), a generically dependent continuant whose concretizations are patterns of glyphs intended to be interpreted as words, formulas, etc.</obo:IAO_0000115>
+    <obo:IAO_0000112 xml:lang="en">Words, sentences, paragraphs, and the written (non-figure) parts of publications are all textual entities</obo:IAO_0000112>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MC, 2009-09-14 (following IAO call 2009-09-01): textual entities live at the FRBR (http://en.wikipedia.org/wiki/Functional_Requirements_for_Bibliographic_Records) manifestation level. Everything is significant: line break, pdf and html versions of same document are different textual entities.</obo:IAO_0000116>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
