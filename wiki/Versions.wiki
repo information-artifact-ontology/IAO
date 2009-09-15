@@ -1,6 +1,10 @@
 #summary Describing snapshots for which date PURLs have been allocated
 #labels Featured
 
+= Policy =
+
+We use the subversion repository to host files. Releases are named by date released YYYY-MM-DD and have tags of that form in the releases directory. Purls of the form http://purl.obolibrary.org/obo/iao/YYYY-MM-DD/ are used to point to these tagged versions and imports statements in the file in the release use these as well. 
+
 = IAO Ontology URI =
 
  * http://purl.obolibrary.org/obo/iao.owl 
