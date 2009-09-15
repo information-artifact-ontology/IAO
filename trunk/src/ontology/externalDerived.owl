@@ -72,7 +72,7 @@ information entity by planning protocol applications included in an overall stud
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
   </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
     <rdfs:label xml:lang="en">imported from</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">

@@ -43,35 +43,35 @@
 <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
  <!-- investigation -->
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    <OBI_0000283 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
   </owl:Class>
 <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471"> <!-- study design execution -->
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    <OBI_0000283 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
   </owl:Class>
 <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"> <!-- study design -->
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-    <OBI_0000283 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
   </owl:Class>
 <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"> <!-- planned process -->
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
-    <OBI_0000283 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
   </owl:Class>
 
   <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001"> <!-- length unit -->
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/> <!-- measurement unit label -->
-    <OBI_0000283 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
   </owl:Class>
 
   <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122"> <!-- length quality -->
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/> <!-- snap:Quality -->
-    <OBI_0000283 rdf:resource="http://purl.org/obo/owl/PATO"/>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
   </owl:Class>
 
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
   </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
     <rdfs:label xml:lang="en">imported from</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
