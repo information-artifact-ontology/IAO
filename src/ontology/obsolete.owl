@@ -336,7 +336,8 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000027</obo:IAO_0000119>
-    <obo:IAO_0000231 xml:lang="en">Replaced by defined version of figure</obo:IAO_0000231>
+<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+<obo:IAO_0000116 xml:lang="en">Replaced by defined version of figure</obo:IAO_0000116>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <rdfs:label xml:lang="en">obsolete_report figure</rdfs:label>
   </owl:Class>
