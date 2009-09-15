@@ -343,8 +343,10 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
     <rdfs:label xml:lang="en">obsolete_imported from</rdfs:label>
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-    <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported. Replaced with IAO_0000412</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported.</obo:IAO_0000115>
     <obo:IAO_0000111 xml:lang="en">obsolete_imported from</obo:IAO_0000111>
+<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000230"/>
+<obo:IAO_0000116 xml:lang="en">Replaced by IAO_0000412</obo:IAO_0000116>
   </owl:AnnotationProperty>
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
