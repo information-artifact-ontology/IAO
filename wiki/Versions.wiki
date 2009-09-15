@@ -1,4 +1,5 @@
 #summary Describing snapshots for which date PURLs have been allocated
+#labels Featured
 
 = IAO Ontology URI =
 
@@ -39,5 +40,3 @@ Use the PURL for the version you want. Ignore any complaints from tools that the
 Use http://purl.obolibrary.org/obo/iao.owl as the ontologyIRI and the PURL for the version you want as the versionIRI.
 
 See http://www.w3.org/2007/OWL/wiki/Syntax#Ontology_IRI_and_Version_IRI
-
-
