@@ -11,13 +11,13 @@ One of the components of IAO, ontology-metadata.owl, can be used standalone, is 
 
  * http://purl.obolibrary.org/obo/iao.owl 
 
-Currently points to http://purl.obolibrary.org/obo/iao/2009-03-17/iao.owl
+Always points to latest dated version.
 
 = Ontology Metadata URI = 
 
  * http://purl.obolibrary.org/obo/iao/ontology-metadata.owl
 
-Currently points to http://purl.obolibrary.org/obo/iao/2009-03-17/ontology-metadata.owl
+Always points to latest dated version.
 
 = Allocated PURLs =
 
