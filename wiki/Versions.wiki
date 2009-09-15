@@ -3,7 +3,9 @@
 
 = Policy =
 
-We use the subversion repository to host files. Releases are named by date released YYYY-MM-DD and have tags of that form in the releases directory (some currently in tags, FIXME). Purls of the form http://purl.obolibrary.org/obo/iao/YYYY-MM-DD/ are used to point to these tagged versions and imports statements in the file in the release use these as well. The latest dated version is also pointed to by the ontology URI: http://purl.obolibrary.org/obo/iao.owl. There are also PURLs for the live latest versions in the repository, see  development version, below.
+We use the subversion repository to host files. Releases are named by date released YYYY-MM-DD and have tags of that form in the releases directory (some currently in tags, FIXME). Purls of the form `http://purl.obolibrary.org/obo/iao/YYYY-MM-DD/iao.owl` are used to point to these tagged versions and imports statements in the file in the release use these as well. The latest dated version is also pointed to by the ontology URI: http://purl.obolibrary.org/obo/iao.owl. There are also PURLs for the live latest versions in the repository, see  development version, below.
+
+One of the components of IAO, ontology-metadata.owl, can be used standalone, is used in several projects as such, and is intended to be the basis for the next version of the OWL translation of the OBO ontologies.
 
 = IAO Ontology URI =
 
