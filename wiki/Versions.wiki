@@ -1,0 +1,43 @@
+#summary Describing snapshots for which date PURLs have been allocated
+
+= IAO Ontology URI =
+
+ * http://purl.obolibrary.org/obo/iao.owl 
+
+Currently points to http://purl.obolibrary.org/obo/iao/2009-03-17/iao.owl
+
+= Ontology Metadata URI = 
+
+ * http://purl.obolibrary.org/obo/iao/ontology-metadata.owl
+
+Currently points to http://purl.obolibrary.org/obo/iao/2009-03-17/ontology-metadata.owl
+
+= Allocated PURLs =
+
+ * http://purl.obolibrary.org/obo/iao/2008-11-24/iao.owl
+ * http://purl.obolibrary.org/obo/iao/2008-11-24/ontology-metadata.owl
+ * http://purl.obolibrary.org/obo/iao/2009-01-23/iao.owl
+ * http://purl.obolibrary.org/obo/iao/2009-01-23/ontology-metadata.owl
+ * http://purl.obolibrary.org/obo/iao/2009-03-17/iao.owl
+ * http://purl.obolibrary.org/obo/iao/2009-03-17/ontology-metadata.owl
+ * http://purl.obolibrary.org/obo/iao/2009-07-15/iao.owl
+ * http://purl.obolibrary.org/obo/iao/2009-07-15/ontology-metadata.owl
+
+= Development version purls =
+
+ * http://purl.obolibrary.org/obo/iao/dev/iao.owl 
+ * http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl 
+ * http://purl.obolibrary.org/obo/iao/dev/iao-main.owl
+ * http://purl.obolibrary.org/obo/iao/dev/obsolete.owl
+
+= OWL 1 usage =
+
+Use the PURL for the version you want. Ignore any complaints from tools that the ontology URI doesn't match the physical URI
+
+= OWL 2 usage =
+
+Use http://purl.obolibrary.org/obo/iao.owl as the ontologyIRI and the PURL for the version you want as the versionIRI.
+
+See http://www.w3.org/2007/OWL/wiki/Syntax#Ontology_IRI_and_Version_IRI
+
+
