@@ -214,7 +214,7 @@
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     <rdfs:label xml:lang="en">information content entity</rdfs:label>
   </owl:Class>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
     <rdfs:label xml:lang="en">imported from</rdfs:label>
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>

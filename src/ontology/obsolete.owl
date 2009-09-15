@@ -21,9 +21,6 @@
         <rdfs:label xml:lang="en"
             >has curation status</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
@@ -343,7 +340,12 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <rdfs:label xml:lang="en">obsolete_report figure</rdfs:label>
   </owl:Class>
-
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
+    <rdfs:label xml:lang="en">obsolete_imported from</rdfs:label>
+    <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+    <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported. Replaced with IAO_0000412</obo:IAO_0000115>
+    <obo:IAO_0000111 xml:lang="en">obsolete_imported from</obo:IAO_0000111>
+  </owl:AnnotationProperty>
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
         <rdfs:label xml:lang="en"
@@ -352,9 +354,6 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
 
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
-  </owl:AnnotationProperty>
-  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
-    <rdfs:label xml:lang="en">imported from</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
     <rdfs:label xml:lang="en">editor note</rdfs:label>
