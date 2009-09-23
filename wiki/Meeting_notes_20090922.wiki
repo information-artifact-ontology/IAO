@@ -1,0 +1,35 @@
+#summary Meeting notes August 4th 2009
+
+= IAO Meeting notes of Sept 22nd 2009 =
+
+== Details ==
+
+ * Convened by: Alan 
+ * Notes by: raw transcript
+ * Where: Skype
+ * Attendees: Larry, Melanie, Alan
+
+== Agenda ==
+"Vaccine Ontology"
+
+== Minutes ==
+
+[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-09-01-raw.html raw transcript]
+
+We discussed the issue of representing postal addresses to IAO, settling on adding, at least, 'information about a location', and documenting a general pattern for representing information artifacts found in addresses, by using the denotes relation and terms from GEO and GAZ. Larry suggests we can autogenerate a number of useful terms from GEO/GAZ directly.
+
+Some issues and cases:
+ * A sample address that is "Ship number"
+ * Whether addresses denote places or instructions for delivery
+ * Addresses for a purpose (technical support, customer support, etc)
+ * The initial case from Vaccine Ontology: Laboratory Address
+ * Post office boxes - more of a way to get something to someone than a location
+ * A common postal address type (there are a variety) as a collection of different types of entities, some denoting geopolitical regions of various granularities, such entities defined using GEO/GAZ.
+ * Use for specifying what the contents of forms are 
+
+== Action items == 
+
+ * Add 'information about a location'
+ * Write some examples of US postal addresses.
+
+
