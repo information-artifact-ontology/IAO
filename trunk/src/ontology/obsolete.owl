@@ -85,7 +85,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000012">
         <rdfs:label xml:lang="en"
-            >obsolete_digital entity</rdfs:label>
+            >obsolete2_digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000261</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
@@ -121,7 +121,7 @@ Superclass was &#39;digitial quality&#39;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000019">
         <rdfs:label xml:lang="en"
-            >obsolete_binary digital entity</rdfs:label>
+            >obsolete2_binary digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000244</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
@@ -146,7 +146,7 @@ Superclass was &#39;digital entity&#39;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000047">
         <rdfs:label xml:lang="en"
-            >obsolete_text based digital entity</rdfs:label>
+            >obsolete2_text based digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000132</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</obo:IAO_0000119>
@@ -171,7 +171,7 @@ superclass was &#39;digital document&#39;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000093">
         <rdfs:label xml:lang="en"
-            >obsolete_binary executable</rdfs:label>
+            >obsolete2_binary executable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000222</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
@@ -195,7 +195,7 @@ superclass was &#39;digital entity&#39;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000105">
         <rdfs:label xml:lang="en"
-            >obsolete_digital document</rdfs:label>
+            >obsolete2_digital document</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000195</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
@@ -339,7 +339,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
 <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
 <obo:IAO_0000116 xml:lang="en">Replaced by defined version of figure</obo:IAO_0000116>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-    <rdfs:label xml:lang="en">obsolete_report figure</rdfs:label>
+    <rdfs:label xml:lang="en">obsolete2_report figure</rdfs:label>
   </owl:Class>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000283">
     <rdfs:label xml:lang="en">obsolete_imported from</rdfs:label>
