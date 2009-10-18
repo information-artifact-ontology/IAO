@@ -251,11 +251,11 @@
     <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-    <rdfs:label xml:lang="en">preferred term</rdfs:label>
+    <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
     <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-    <obo:IAO_0000111 xml:lang="en">preferred term</obo:IAO_0000111>
+    <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
