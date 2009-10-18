@@ -710,9 +710,9 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">Journal article content is a narrative object that is the information content encoded in a article published in a serious, scholarly publication, most often peer-reviewed.</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">Examples of encodings of journal article content are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number.</obo:IAO_0000112>
-    <obo:IAO_0000111 xml:lang="en">journal article content</obo:IAO_0000111>
+    <obo:IAO_0000111 xml:lang="en">journal article</obo:IAO_0000111>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-    <rdfs:label xml:lang="en">journal article content</rdfs:label>
+    <rdfs:label xml:lang="en">journal article</rdfs:label>
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000402">
