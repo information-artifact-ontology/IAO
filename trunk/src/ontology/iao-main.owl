@@ -1293,6 +1293,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <rdfs:label xml:lang="en">data item</rdfs:label>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PERSON: Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000323">
     <obo:IAO_0000117 xml:lang="en">Lawrence Hunter</obo:IAO_0000117>
