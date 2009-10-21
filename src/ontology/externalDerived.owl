@@ -61,8 +61,6 @@
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
     <obi:IAO_0000111 xml:lang="en">investigation</obi:IAO_0000111>
     <rdfs:label xml:lang="en">investigation</rdfs:label>
-    <obi:IAO_0000115 xml:lang="en">An investigation is a process with the objective to generate an 
-information entity by planning protocol applications included in an overall study design, carrying them out and documenting  the results. In addition, an investigation can include a sub process of interpreting the data to draw conclusions.</obi:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
     <obi:IAO_0000115 xml:lang="en">A planned process is the realization of a plan  borne by an agent that initiates this process in order to bring about the objective(s) specified as part of the plan specification.</obi:IAO_0000115>
