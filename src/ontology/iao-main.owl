@@ -2376,7 +2376,15 @@ GO   gene ontology</obo:IAO_0000112>
             >that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper &#39;Pilot clinical study to evaluate the anticoagulant activity of fucoidan&#39;, by Lowenthal et. al.PMID:19696660</obo:IAO_0000112>
     </owl:Class>
     
-
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000442">
+    <obo:IAO_0000115 xml:lang="en">An author role is a role attributed to someone creating an information_object</obo:IAO_0000115>
+    <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000230"/>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
+    <rdfs:label xml:lang="en">author role</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
+        <obo:IAO_0000116 xml:lang="en"
+            >2009/10/24 Melanie Courtot: term moved from OBI. We need to work on the definition still</obo:IAO_0000116>
+  </owl:Class>
 
     <!-- http://purl.org/obo/owl/PATO#PATO_0000122 -->
 
