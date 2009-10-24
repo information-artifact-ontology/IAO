@@ -328,7 +328,16 @@ there is a measurement process p that has specified output m, a measurement datu
 
     <!-- http://purl.obolibrary.org/obo/TMPIAO_0000003 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/TMPIAO_0000003"/>
+  <owl:ObjectProperty rdf:about="&obo;TMPIAO_0000003">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">relates a process to a time-measurement-datum that represents the duration of the process</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. This class is a class that should be added to IAO. It was motivated by the Fucoidan trial use case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+    <rdfs:label rdf:datatype="&xsd;string">is duration of</rdfs:label>
+    <rdfs:range rdf:resource="&obo;TMPIAO_0000002"/>
+    <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+  </owl:ObjectProperty>
     
 
 
