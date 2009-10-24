@@ -616,7 +616,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
         <obo:IAO_0000116 xml:lang="en"
             >2/2/2009 part of a study specification. Should study specification be part of IAO? Or should this term be part of OBI?</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en"
-            >a directive information entity that is part of a study design. Independent variables are entities whose values are controlled or which are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</obo:IAO_0000115>
+            >a directive information entity that is part of a study design. Independent variables are entities whose values are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled</obo:IAO_0000115>
     </owl:Class>
     
 
