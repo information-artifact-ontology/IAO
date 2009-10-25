@@ -2344,9 +2344,9 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/TMPIAO_0000004 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000144 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMPIAO_0000004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000144">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >conclusion textual entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
