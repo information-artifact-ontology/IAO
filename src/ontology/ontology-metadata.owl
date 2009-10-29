@@ -316,11 +316,18 @@
   <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
-    <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It will not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
     <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     <rdfs:label xml:lang="en">editor note</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+    <obo:IAO_0000115 xml:lang="en">An administrative note of use for a curator but of no use for a user</obo:IAO_0000115>
+    <obo:IAO_0000111 xml:lang="en">curator note</obo:IAO_0000111>
+    <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    <rdfs:label xml:lang="en">curator note</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AllDifferent>
     <owl:distinctMembers rdf:parseType="Collection">
