@@ -610,6 +610,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000144">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >conclusion textual entity</rdfs:label>
+<obo:IAO_0000118 xml:lang="en">conclusion</obo:IAO_0000118>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Person:Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1059,6 +1060,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/TMPIAO_0000005">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >hypothesis textual entity</rdfs:label>
+<obo:IAO_0000118 xml:lang="en">hypothesis</obo:IAO_0000118>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A textual entity that expresses an assertion that is intended to be tested.</obo:IAO_0000115>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
