@@ -60,7 +60,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
     <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001">
     <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
