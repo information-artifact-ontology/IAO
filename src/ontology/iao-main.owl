@@ -1107,7 +1107,8 @@ concretized and realized by an actor" with alternative term  "instruction".It ha
         <owl:someValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <obo:IAO_0000115 xml:lang="en">Question: Should study specification be part of IAO?</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Question: Should study specification be part of IAO?</obo:IAO_0000116>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >8/6/2009 Alan Ruttenberg: Changed label from "information entity about a realizable" after discussions at ICBO</obo:IAO_0000116>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
