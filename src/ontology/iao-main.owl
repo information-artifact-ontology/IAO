@@ -173,7 +173,7 @@
     >Person:Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A scalar measurement datum that is the result of measuring a temporal interval</obo:IAO_0000115>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000301">
     <obo:IAO_0000115 xml:lang="en">a textual entity intended to identify a particular publication</obo:IAO_0000115>
@@ -257,6 +257,7 @@ GO   gene ontology</obo:IAO_0000112>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000403">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >three dimensional cartesian spatial coordinate datum</rdfs:label>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000400"/>
     </rdfs:subClassOf>
@@ -371,7 +372,7 @@ GO   gene ontology</obo:IAO_0000112>
       <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     </rdfs:subClassOf>
     <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000116 xml:lang="en">information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity.</obo:IAO_0000116>
@@ -390,7 +391,7 @@ Previous. An information content entity is a non-realizable information entity t
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
     <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,"grams"}, the recording of an observation of the behavior of the mouse {,process,"agitated"}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2/2/2009 is_specified_output of some assay?</obo:IAO_0000116>
@@ -733,6 +734,7 @@ distribution in terms of occurrence frequencies of different event classes.</obo
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000402">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >two dimensional cartesian spatial coordinate datum</rdfs:label>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A cartesion spatial coordinate datum that  uses two values to specify a position within a two dimensional spatial region</rdfs:comment>
     <rdfs:subClassOf>
@@ -833,7 +835,7 @@ whole sentence is deleted.</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
     <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type</obo:IAO_0000116>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
     </rdfs:subClassOf>
@@ -1014,6 +1016,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     >length measurement datum</rdfs:label>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Alan Ruttenberg</obo:IAO_0000117>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032"/>
     </rdfs:subClassOf>
@@ -1058,10 +1061,11 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  "is the specification of a process that can be
 concretized and realized by an actor" with alternative term  "instruction".It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Werner pushed back on calling it realizable information entity as it isn't realizable. However this name isn't right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn't about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
-    <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+<obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -1072,11 +1076,9 @@ concretized and realized by an actor" with alternative term  "instruction".It ha
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">directive information entity</rdfs:label>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Question: Should study specification be part of IAO?</obo:IAO_0000116>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >8/6/2009 Alan Ruttenberg: Changed label from "information entity about a realizable" after discussions at ICBO</obo:IAO_0000116>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >An information entity about a realizable is an information content entity about a realizable.</obo:IAO_0000115>
+    >An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1256,6 +1258,7 @@ F   |  F    F</obo:IAO_0000112>
     >2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >data item</obo:IAO_0000111>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
     <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
@@ -1312,7 +1315,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032"/>
     </rdfs:subClassOf>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >mass measurement datum</rdfs:label>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1496,7 +1499,8 @@ clustering algorithm.</obo:IAO_0000115>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >A cartesian spatial coordinate datum is a represenation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude</obo:IAO_0000115>
+    >A cartesian spatial coordinate datum is a representation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude</obo:IAO_0000115>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >cartesian spatial coordinate datum</rdfs:label>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1557,6 +1561,7 @@ clustering algorithm.</obo:IAO_0000115>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >one dimensional cartesian spatial coordinate datum</rdfs:label>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</rdfs:comment>
   </owl:Class>
@@ -1578,6 +1583,7 @@ clustering algorithm.</obo:IAO_0000115>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Would write this as: has_part some 'measurement unit label' and has_part some numeral and has_part exactly 2, except for the fact that this won't let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
