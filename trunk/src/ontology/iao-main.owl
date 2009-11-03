@@ -548,7 +548,7 @@ Previous. An information content entity is a non-realizable information entity t
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
     </rdfs:subClassOf>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000096">
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -888,7 +888,7 @@ whole sentence is deleted.</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">data format specification</obo:IAO_0000111>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000187</obo:IAO_0000119>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
     <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -914,6 +914,7 @@ XML document; The instructions in a XSD file"</obo:IAO_0000116>
     <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">a directive information entity that describes an action the bearer will take</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">Pour the contents of flask 1 into flask 2</obo:IAO_0000112>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000181">
@@ -1085,7 +1086,7 @@ concretized and realized by an actor" with alternative term  "instruction".It ha
     >PERSON: Bjoern Peters</obo:IAO_0000117>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PERSON: Jennifer Fostel</obo:IAO_0000117>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PERSON: Barry Smith</obo:IAO_0000117>
