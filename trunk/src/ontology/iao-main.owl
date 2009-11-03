@@ -427,8 +427,6 @@ Previous. An information content entity is a non-realizable information entity t
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >time measurement datum</rdfs:label>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009/09/28 Alan Ruttenberg. This class is a class that should be added to IAO. It was motivated by the Fucoidan trial use case</obo:IAO_0000116>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001"/>
@@ -622,8 +620,6 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper 'Pilot clinical study to evaluate the anticoagulant activity of fucoidan', by Lowenthal et. al.PMID:19696660</obo:IAO_0000112>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009/09/28 Alan Ruttenberg. This class is a class that should be added to IAO. It was motivated by the Fucoidan trial use case</obo:IAO_0000116>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A conclusion is a textual entity that expresses the results of reasoning about a problem, for instance as typically found towards the end of scientific papers.</obo:IAO_0000115>
   </owl:Class>
@@ -1051,8 +1047,6 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     >mass measurement datum</rdfs:label>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009/09/28 Alan Ruttenberg. This class is a class that should be added to IAO. It was motivated by the Fucoidan trial use case</obo:IAO_0000116>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A scalar measurement datum that is the result of measurement of mass quality</obo:IAO_0000115>
   </owl:Class>
@@ -1070,8 +1064,6 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     </rdfs:subClassOf>
     <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper 'Pilot clinical study to evaluate the anticoagulant activity of fucoidan', by Lowenthal et. al.PMID:19696660</obo:IAO_0000112>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009/09/28 Alan Ruttenberg. This class is a class that should be added to IAO. It was motivated by the Fucoidan trial use case</obo:IAO_0000116>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
   </owl:Class>
@@ -1774,14 +1766,42 @@ there is a measurement process p that has specified output m, a measurement datu
     >Person:Alan Ruttenberg</obo:IAO_0000117>
     <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009/09/28 Alan Ruttenberg. This class is a class that should be added to IAO. It was motivated by the Fucoidan trial use case</obo:IAO_0000116>
     <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >relates a process to a time-measurement-datum that represents the duration of the process</obo:IAO_0000115>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >is duration of</rdfs:label>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inverse of the relation of is quality measurement of</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is quality measured as</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000418">
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Bjoern Peters</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is quality specification of</rdfs:label>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000419">
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inverse of the relation of is quality specification of</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Bjoern Peters</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality is specified as</rdfs:label>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000418"/>
+  </owl:ObjectProperty>
+
   <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000220">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >materially denotes</rdfs:label>
