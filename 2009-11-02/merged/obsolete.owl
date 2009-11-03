@@ -12,9 +12,6 @@
             >obsolete classes from the information artifact ontology. see http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
-    <owl:imports>
-      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/2009-11-02/ontology-metadata.owl"/>
-    </owl:imports>
     </owl:Ontology>
     
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
