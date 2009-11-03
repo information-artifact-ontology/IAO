@@ -617,6 +617,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
     </rdfs:subClassOf>
     <obo:IAO_0000116 xml:lang="en">2009/10/23 Alan Ruttenberg: We need to work on the definition still</obo:IAO_0000116>
+    <obo:IAO_0000116 xml:lang="en">2009/11/02 Alan Ruttenberg: 'Conclusion' added as alternate term for this, to some controversy, with concerns that that it is not an exact synonmym. To be revisited</obo:IAO_0000116>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper 'Pilot clinical study to evaluate the anticoagulant activity of fucoidan', by Lowenthal et. al.PMID:19696660</obo:IAO_0000112>
@@ -1057,6 +1058,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
 <obo:IAO_0000118 xml:lang="en">hypothesis</obo:IAO_0000118>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A textual entity that expresses an assertion that is intended to be tested.</obo:IAO_0000115>
+    <obo:IAO_0000116 xml:lang="en">2009/11/02 Alan Ruttenberg: 'hypothesis' added as alternate term for this, to some controversy, with concerns that that it is not an exact synonmym. To be revisited</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Person:Alan Ruttenberg</obo:IAO_0000117>
     <rdfs:subClassOf>
