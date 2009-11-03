@@ -13,7 +13,7 @@
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
     <owl:imports>
-      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
+      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/2009-11-02/ontology-metadata.owl"/>
     </owl:imports>
     </owl:Ontology>
     
@@ -88,8 +88,7 @@
             >obsolete2_digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000261</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"></obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 
@@ -124,8 +123,7 @@ Superclass was &#39;digitial quality&#39;</obo:IAO_0000116>
             >obsolete2_binary digital entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000244</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"></obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 Superclass was &#39;digital entity&#39;</obo:IAO_0000116>
@@ -150,8 +148,7 @@ Superclass was &#39;digital entity&#39;</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000132</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"></obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 superclass was &#39;digital document&#39;</obo:IAO_0000116>
@@ -174,8 +171,7 @@ superclass was &#39;digital document&#39;</obo:IAO_0000116>
             >obsolete2_binary executable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000222</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"></obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 superclass was &#39;digital entity&#39;</obo:IAO_0000116>
@@ -198,8 +194,7 @@ superclass was &#39;digital entity&#39;</obo:IAO_0000116>
             >obsolete2_digital document</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000195</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"></obo:IAO_0000114>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
 superclass was &#39;digial entity&#39;</obo:IAO_0000116>
@@ -223,8 +218,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Need to rework digital entity. Digital quality was suggested by Barry.</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000121</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"></obo:IAO_0000114>
         <obo:IAO_0000116
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4</obo:IAO_0000116>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
@@ -244,8 +238,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
             >The length of a ruler.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >a unit of measure is the quality of some material entity compared to which another quality is some multiple of.</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"></obo:IAO_0000114>
 <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
 
