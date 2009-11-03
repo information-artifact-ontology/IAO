@@ -1563,12 +1563,13 @@ clustering algorithm.</obo:IAO_0000115>
     >A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</rdfs:comment>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000442">
-    <obo:IAO_0000115 xml:lang="en">An author role is a role attributed to someone creating an information_object</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">A role inhering in a person or organization that is realized when the bearer participates in the work which is the basis of the document, in the writing of the document, and signs it with their name.</obo:IAO_0000115>
     <rdfs:label xml:lang="en">author role</rdfs:label>
     <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000230"/>
-    <obo:IAO_0000116 xml:lang="en">2009/10/24 Melanie Courtot: term moved from OBI. We need to work on the definition still</obo:IAO_0000116>
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
