@@ -68,8 +68,6 @@
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >numeral</obo:IAO_0000111>
   </owl:Class>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000057">
     <obo:IAO_0000112 xml:lang="en">Contour plot of SSC-H, FSC-H, and FL1-H.</obo:IAO_0000112>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -83,7 +81,6 @@
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
   </owl:Class>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
     <rdfs:label xml:lang="en">software</rdfs:label>
     <obo:IAO_0000116 xml:lang="en">see sourceforge tracker discussion at http://sourceforge.net/tracker/index.php?func=detail&amp;aid=1958818&amp;group_id=177891&amp;atid=886178</obo:IAO_0000116>
@@ -165,17 +162,13 @@
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Restriction>
-            <owl:allValuesFrom>
-              <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000003"/>
-            </owl:allValuesFrom>
+		<owl:allValuesFrom rdf:resource="http://purl.org/obo/owl/UO#UO_0000003"/>
             <owl:onProperty>
               <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039"/>
             </owl:onProperty>
           </owl:Restriction>
           <owl:Restriction>
-            <owl:allValuesFrom>
-              <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process"/>
-            </owl:allValuesFrom>
+            <owl:allValuesFrom rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
             <owl:onProperty>
               <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000413"/>
             </owl:onProperty>
@@ -222,9 +215,6 @@
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >integer numeral</obo:IAO_0000111>
   </owl:Class>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"/>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion"/>
-  <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000318">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -448,7 +438,6 @@ Previous. An information content entity is a non-realizable information entity t
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >figure</obo:IAO_0000111>
   </owl:Class>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000097">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
@@ -482,7 +471,6 @@ Previous. An information content entity is a non-realizable information entity t
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A textual entity that expresses an assertion that is intended to be tested.</obo:IAO_0000115>
   </owl:Class>
-  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000317">
     <obo:IAO_0000115 xml:lang="en">A part of a publication about an investigation that is about the study design of the investigation</obo:IAO_0000115>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1109,7 +1097,6 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1436,7 +1423,6 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >obsolete_identifier</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000315">
     <obo:IAO_0000115 xml:lang="en">A summary of the entire document that is substantially smaller than the document it summarizes.  It is about the document it summarizes.</obo:IAO_0000115>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -1458,7 +1444,6 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     >abstract</rdfs:label>
     <obo:IAO_0000112 xml:lang="en">The profusion of high-throughput instruments and the explosion of new results in the scientific literature, particularly in molecular biomedicine, is both a blessing and a curse to the bench researcher.   Even knowledgeable and experienced scientists can benefit from computational tools that help navigate this vast and rapidly evolving terrain. In this paper, we describe a novel computational approach to this challenge, a knowledge-based system that combines reading, reasoning and reporting methods to facilitate analysis of experimental data. Reading methods extract information from external resources, either by parsing structured data or biomedical language processing to extract information from unstructured data, and track knowledge provenance.  Reasoning methods enrich the knowledge that results from reading by, for example, noting two genes that are annotated to the same ontology term or database entry.  Reasoning is also used to combine all sources into a knowledge network that represents the integration of all sorts of relationships between a pair of genes, and to calculate a combined reliability score. Reporting methods combine the knowledge network with a congruent network constructed from experimental data and visualize the combined network in a tool that facilitates the knowledge-based analysis of that data.</obo:IAO_0000112>
   </owl:Class>
-  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000309">
     <obo:IAO_0000112 xml:lang="en">A molecular structure ribbon cartoon showing helices, turns and sheets and their relations to each other in space.</obo:IAO_0000112>
     <obo:IAO_0000115 xml:lang="en">A figure that expresses one or more propositions</obo:IAO_0000115>
