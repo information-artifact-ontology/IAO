@@ -1,5 +1,5 @@
 #labels Featured
- #summary Describing snapshots for which date PURLs have been allocated
+ # summary Describing snapshots for which date PURLs have been allocated
 
 = Policy =
 
