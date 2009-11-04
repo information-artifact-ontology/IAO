@@ -80,12 +80,14 @@
   <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >length</rdfs:label>
+    <obi:IAO_0000115 xml:lang="en">A 1-D extent quality which is equal to the distance between two points.</obi:IAO_0000115>
     <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >length</obi:IAO_0000111>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125">
     <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >mass</obi:IAO_0000111>
+    <obi:IAO_0000115 xml:lang="en">A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.</obi:IAO_0000115>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >mass</rdfs:label>
   </owl:Class>
