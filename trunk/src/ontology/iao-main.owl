@@ -553,7 +553,7 @@ Previous. An information content entity is a non-realizable information entity t
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000096">
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000039</obo:IAO_0000119>
-    <obo:IAO_0000115 xml:lang="en">A source code module is an information content entity that specifies, using a programming language, some algorithm.</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">A source code module is a directive information entity that specifies, using a programming language, some algorithm.</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">The written source code that implements part of an algorithm. Test - if you know that it was written in a specific language, then it can be source code module. We mean here, roughly, the wording of a document such as a perl script.</obo:IAO_0000112>
     <obo:IAO_0000111 xml:lang="en">source code module</obo:IAO_0000111>
     <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
@@ -563,7 +563,7 @@ Previous. An information content entity is a non-realizable information entity t
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033"/>
     </rdfs:subClassOf>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000304">
     <obo:IAO_0000115 xml:lang="en">A textual entity that describes a figure</obo:IAO_0000115>
@@ -584,7 +584,7 @@ Previous. An information content entity is a non-realizable information entity t
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was " a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan". It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
@@ -970,7 +970,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     <obo:IAO_0000111 xml:lang="en">programming language</obo:IAO_0000111>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000115 xml:lang="en">A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.</obo:IAO_0000115>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000058</obo:IAO_0000119>
@@ -1172,10 +1172,10 @@ of a plan  towards which the realization of the plan is directed."</obo:IAO_0000
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >software interpreter</rdfs:label>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000116 xml:lang="en">Do we care? Jennifer: Yes, there was a particular version of R that had a bug and it was fixed later. That would imply that we mean specific version of an interpreter. So an instance of this would be a particular version of the interpreter</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">software interpreter</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">A  software interpreter is a generically dependent realizable entity that takes, as input, some digital entity, and takes action driven by the information content of that digital entity</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">An algorithmy that takes, as input, some digital entity, and takes action driven by the information content of that algorithm</obo:IAO_0000115>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000199</obo:IAO_0000119>
     <obo:IAO_0000112 xml:lang="en">R program, Perl interpreter, Java virtual machine</obo:IAO_0000112>
@@ -1367,7 +1367,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
     <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
     <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1376,7 +1376,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <rdfs:label xml:lang="en">algorithm</rdfs:label>
     <obo:IAO_0000119 xml:lang="en">adapted from discussion on OBI list (Matthew Pocock, Christian Cocos, Alan Ruttenberg)</obo:IAO_0000119>
     <obo:IAO_0000111 xml:lang="en">algorithm</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">an algorithm is a plan which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">A plan specification which describes inputs, output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000312">
     <obo:IAO_0000112 xml:lang="en">Most scientific journal articles</obo:IAO_0000112>
