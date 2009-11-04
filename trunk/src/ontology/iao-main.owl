@@ -140,6 +140,7 @@
     >a smallish, word-like datum...</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000328">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">A table that relates figures in a document to specific locations in that document (usually page numbers).  This is also a document part (subsumption there should be inferred).</obo:IAO_0000115>
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -183,6 +184,7 @@
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000301">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000115 xml:lang="en">a textual entity intended to identify a particular publication</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">Verspoor, K., Cohen, KB., Hunter, L. Textual characteristics of traditional and Open Access scientific journals are similar, BMC Bioinformatics 2009, 10:183.</obo:IAO_0000112>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -254,6 +256,7 @@
     <obo:IAO_0000117 xml:lang="en">person:Allyson</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000307">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000115 xml:lang="en">A table where the constituent texts are abbreviations and their expansions</obo:IAO_0000115>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >table of abbreviations</rdfs:label>
@@ -455,6 +458,7 @@ Previous. An information content entity is a non-realizable information entity t
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000415">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -510,6 +514,7 @@ Previous. An information content entity is a non-realizable information entity t
     <obo:IAO_0000117 xml:lang="en">PRS</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000303">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000115 xml:lang="en">A textual entity intended to identify a particular institution</obo:IAO_0000115>
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >institutional identification</obo:IAO_0000111>
@@ -522,6 +527,7 @@ Previous. An information content entity is a non-realizable information entity t
     >institutional identification</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000178">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -603,6 +609,7 @@ Previous. An information content entity is a non-realizable information entity t
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000304">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000115 xml:lang="en">A textual entity that describes a figure</obo:IAO_0000115>
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >caption</obo:IAO_0000111>
@@ -695,6 +702,7 @@ two-dimensional map.</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">PERSON:James Malone</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000329">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >running title</obo:IAO_0000111>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -749,6 +757,7 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000302">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
     </rdfs:subClassOf>
@@ -893,6 +902,7 @@ whole sentence is deleted.</obo:IAO_0000116>
     <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000305">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -905,6 +915,7 @@ whole sentence is deleted.</obo:IAO_0000116>
     >document title</obo:IAO_0000111>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000186">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >photographic print</rdfs:label>
     <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
@@ -1314,6 +1325,7 @@ of this, different, term.</obo:IAO_0000116>
     >version number</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000306">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
     <obo:IAO_0000115 xml:lang="en">A textual entity that contains a two-dimensional arrangement of texts repeated at regular intervals across a spatial range, such that the spatial relationships among the constituent texts expresses propositions</obo:IAO_0000115>
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1518,6 +1530,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     <obo:IAO_0000115 xml:lang="en">A photograph is created by projecting an image onto a photosensitive surface such as a chemically treated plate or film, CCD receptor, etc.</obo:IAO_0000115>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000327">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1714,6 +1727,7 @@ clustering algorithm.</obo:IAO_0000115>
 this case we explicitly refer to the singular form</obo:IAO_0000116>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
+<obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >GROUP: IAO</obo:IAO_0000117>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
