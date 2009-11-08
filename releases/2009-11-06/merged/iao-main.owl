@@ -2060,42 +2060,42 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </rdfs:subClassOf>
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
   <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000002">
-    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000003">
-    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001">
-    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122">
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
-    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125">
     <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
-    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
     <rdfs:label xml:lang="en">investigation</rdfs:label>
