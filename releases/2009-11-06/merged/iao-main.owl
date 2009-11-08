@@ -22,21 +22,21 @@
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
     xmlns:p1="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl#"
-  xml:base="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl">
+  xml:base="http://purl.obolibrary.org/obo/iao/iao-main.owl">
   <owl:Ontology rdf:about="">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
+    <owl:versionInfo xml:lang="en">2009-11-06</owl:versionInfo>
+    <owl:versionIRI xml:lang="en">http://purl.obolibrary.org/obo/iao/2009-11-06/iao-main.owl</owl:versionIRI>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This file is based on checkout of our SVN repository revision $Revision: 2489 $</rdfs:comment>
     <owl:imports rdf:resource="http://www.obofoundry.org/ro/ro.owl"/>
     <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2009-11-06/ontology-metadata.owl"/>
     <rdfs:seeAlso>
       <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/"/>
     </rdfs:seeAlso>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl"/>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/external.owl"/>
-    <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
     <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
   </owl:Ontology>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000038">
@@ -1377,6 +1377,12 @@ JAR: A data item is an approximately justified approximately true approximate be
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PERSON: Alan Ruttenberg</obo:IAO_0000117>
   </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+    <rdfs:label xml:lang="en">data item</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    </rdfs:subClassOf>
+  </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000323">
     <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -2050,6 +2056,107 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </rdfs:subClassOf>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000002">
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000003">
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001">
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122">
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125">
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
+    <rdfs:label xml:lang="en">investigation</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">investigation</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000002">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mass unit</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mass unit label</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >a planned process that realizes the concretization of a study design</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >study design execution</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >study design execution</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+    <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
+    <rdfs:label xml:lang="en">study design</rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A study design is a plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000003">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >time unit</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >time unit label</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+    <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+    <rdfs:label xml:lang="en">planned process</rdfs:label>
+    <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >length unit</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >length unit label</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >length</rdfs:label>
+    <obo:IAO_0000115 xml:lang="en">A 1-D extent quality which is equal to the distance between two points.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >length</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mass</obo:IAO_0000111>
+    <obo:IAO_0000115 xml:lang="en">A physical quality that inheres in a bearer by virtue of the proportion of the bearer's amount of matter.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mass</rdfs:label>
+  </owl:Class>
 </rdf:RDF>
 
-<!-- Created with Protege (with OWL Plugin 3.4, Build 529)  http://protege.stanford.edu -->
+<!-- Created with Protege (with OWL Plugin 3.4.2, Build 550)  http://protege.stanford.edu -->
+
+
+</rdf:RDF>
