@@ -441,22 +441,6 @@ Previous. An information content entity is a non-realizable information entity t
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >figure</obo:IAO_0000111>
   </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000097">
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    </rdfs:subClassOf>
-    <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'textual entity table'. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >OBI_0000265</obo:IAO_0000119>
-    <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
-    <rdfs:label xml:lang="en">obsolete_report table</rdfs:label>
-    <obo:IAO_0000111 xml:lang="en">report table</obo:IAO_0000111>
-    <obo:IAO_0000115 xml:lang="en">A report table is a report display element consisting of a matrix of cells layed out in a grid, some set of which are filled with some information content</obo:IAO_0000115>
-    <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-  </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000415">
 <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -1055,31 +1039,6 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >lot number</obo:IAO_0000111>
   </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000035">
-    <obo:IAO_0000115 xml:lang="en">A study interpretation is a textual entity about the implications of a study result. Examples include discussion of whether a hypothesis is false, whether the study failed to address the hypothesis, and whether the study results have led to new hypotheses</obo:IAO_0000115>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
-    <obo:IAO_0000231>
-      <owl:Thing rdf:about="http://purl.obolibrary.org/obo/IAO_0000103"/>
-    </obo:IAO_0000231>
-    <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >conclusion</obo:IAO_0000118>
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >OBI_0000005</obo:IAO_0000119>
-    <obo:IAO_0000111 xml:lang="en">obsolete_study interpretation</obo:IAO_0000111>
-    <obo:IAO_0000116 xml:lang="en">The obsoleting of narrative object required a modest change in the definition of this term.  Circularity with "interpretation... interprets" has been removed, using "about the implications" instead.</obo:IAO_0000116>
-    <obo:IAO_0000117 xml:lang="en">Lawrence Hunter</obo:IAO_0000117>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-    <rdfs:label xml:lang="en">obsolete_study interpretation</rdfs:label>
-    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >PERSON: Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009-03-16: definition was "A conclusion is a narrative object which can be published in a paper summerizing and interpreting a protocol application."</obo:IAO_0000116>
-    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >PERSON: Melanie Courtot</obo:IAO_0000117>
-    <obo:IAO_0000117 xml:lang="en">PERSON: Jennifer Fostel</obo:IAO_0000117>
-  </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000408">
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
@@ -1428,19 +1387,6 @@ JAR: A data item is an approximately justified approximately true approximate be
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >A scalar measurement datum that is the result of measurement of mass quality</obo:IAO_0000115>
   </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000128">
-    <obo:IAO_0000231>
-      <owl:Thing rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
-    </obo:IAO_0000231>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >_identifier is a container under information content entity for collecting types of terms to indicate a specific instance or clas of what was used or participated in an investigation. Identifiers are borne by a product or its packaging, and can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.
-
-Note: everybody agreed that identifier is probably a too general term. We however felt that it would be appropriate to group "identifiying" terms under some kind of umbrella. We therefore propose to use _identifier for that purpose. As per OBI conventions, the _ prefixing identifier indicates that this is a helper class and shouldn't be considered as final.</obo:IAO_0000116>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >obsolete_identifier</rdfs:label>
-  </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000315">
     <obo:IAO_0000115 xml:lang="en">A summary of the entire document that is substantially smaller than the document it summarizes.  It is about the document it summarizes.</obo:IAO_0000115>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -1591,30 +1537,6 @@ clustering algorithm.</obo:IAO_0000115>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
-  </owl:Class>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000091">
-    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >OBI_0000001</obo:IAO_0000119>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009-03-16: was report display element with definition: A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements.</obo:IAO_0000116>
-    <obo:IAO_0000231 xml:lang="en">Replaced by textual entity and figure</obo:IAO_0000231>
-    <obo:IAO_0000117 xml:lang="en">PERSON: Allyson Lister</obo:IAO_0000117>
-    <obo:IAO_0000111 xml:lang="en">report element</obo:IAO_0000111>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009-03-16: needs some more work (clarify relations).</obo:IAO_0000116>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'textual entity' and 'figure'. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
-    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >PERSON: Melanie Courtot</obo:IAO_0000117>
-    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    <obo:IAO_0000116 xml:lang="en">There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</obo:IAO_0000116>
-    <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
-    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-    <rdfs:label xml:lang="en">obsolete_report element</rdfs:label>
-    <obo:IAO_0000115 xml:lang="en">A report element is a narrative object in which information is presented and consumed by a human being, and is part of a report. Examples of report elements are figure (dot plot), table, text portion (may include a movie or audio clip on a web page).</obo:IAO_0000115>
-    <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000400">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
