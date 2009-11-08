@@ -17,18 +17,14 @@
     xmlns:obo="http://purl.obolibrary.org/obo/"
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-  xml:base="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl">
+  xml:base="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl">
   <owl:Ontology rdf:about="">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
-    <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+    <owl:versionInfo xml:lang="en">2009-11-06</owl:versionInfo>
+    <owl:versionIRI xml:lang="en">http://purl.obolibrary.org/obo/iao/2009-11-06/ontology-metadata.owl</owl:versionIRI>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This file is based on checkout of our SVN repository revision $Revision: 2489 $</rdfs:comment>
   </owl:Ontology>
-  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
-    <rdfs:label xml:lang="en">data item</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    </rdfs:subClassOf>
-  </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000409">
     <owl:equivalentClass>
       <owl:Class>
