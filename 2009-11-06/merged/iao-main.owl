@@ -22,8 +22,8 @@
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
     xmlns:p1="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl#"
-  xml:base="http://purl.obolibrary.org/obo/iao/iao-main.owl">
-  <owl:Ontology rdf:about="">
+  xml:base="http://purl.obolibrary.org/obo/">
+  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/iao-main.owl">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
     <owl:versionInfo xml:lang="en">2009-11-06</owl:versionInfo>
