@@ -17,11 +17,10 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
     xmlns:UO="http://purl.org/obo/owl/UO#"
-    xmlns="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl#"
+    xmlns="http://purl.obolibrary.org/obo/iao/iao-main.owl#"
     xmlns:obo="http://purl.obolibrary.org/obo/"
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-    xmlns:p1="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl#"
   xml:base="http://purl.obolibrary.org/obo/">
   <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/iao-main.owl">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
