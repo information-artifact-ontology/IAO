@@ -39,7 +39,7 @@
             <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Hard to give a definition for. Intuitively a "natural kind" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents.</obo:IAO_0000116>
           </obo:IAO_0000409>
-          <obo:IAO_0000409 rdf:ID="IAO_0000409_3">
+          <obo:IAO_0000409 rdf:about="http://purl.obolibrary.org/obo/IAO_0000413">
             <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >defined class</rdfs:label>
             <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -49,7 +49,7 @@
             <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Alan Ruttenberg</obo:IAO_0000117>
           </obo:IAO_0000409>
-          <obo:IAO_0000409 rdf:ID="IAO_0000409_4">
+          <obo:IAO_0000409 rdf:about="http://purl.obolibrary.org/obo/IAO_0000414">
             <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >named class expression</rdfs:label>
             <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
