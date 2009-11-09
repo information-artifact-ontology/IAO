@@ -150,7 +150,7 @@
           <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000125"/>
           <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000121">
             <rdfs:label xml:lang="en">placeholder</rdfs:label>
-            <obo:IAO_0000115 xml:lang="en">This isn't a class that OBI will keep - it's a placeholder for edits that are underway. The class name should start with an underscore</obo:IAO_0000115>
+            <obo:IAO_0000115 xml:lang="en">This isn't a class that the ontology will keep - it's a placeholder for edits that are underway. The class name should start with an underscore</obo:IAO_0000115>
           </obo:IAO_0000078>
           <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
             <rdfs:label xml:lang="en">metadata complete</rdfs:label>
@@ -161,7 +161,7 @@
             <obo:IAO_0000115 xml:lang="en">Nothing done yet beyond assigning a unique class ID and proposing a preferred term.</obo:IAO_0000115>
           </obo:IAO_0000078>
           <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
-            <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next OBI release. Any class lacking "ready_for_release" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed "ready_for_release" will also derived from a chain of ancestor classes that are also "ready_for_release."</obo:IAO_0000115>
+            <obo:IAO_0000115 xml:lang="en">Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking "ready_for_release" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed "ready_for_release" will also derived from a chain of ancestor classes that are also "ready_for_release."</obo:IAO_0000115>
             <rdfs:label xml:lang="en">ready for release</rdfs:label>
           </obo:IAO_0000078>
           <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
@@ -202,7 +202,7 @@
         <owl:oneOf rdf:parseType="Collection">
           <oboInOwl:Subset rdf:about="http://purl.obolibrary.org/obo/IAO_0000224">
             <rdfs:label xml:lang="en">core</rdfs:label>
-            <obo:IAO_0000115 xml:lang="en">Core is an instance of a grouping of terms from an ontology or ontologies. It is used by OBI to identify main classes.</obo:IAO_0000115>
+            <obo:IAO_0000115 xml:lang="en">Core is an instance of a grouping of terms from an ontology or ontologies. It is used by the ontology to identify main classes.</obo:IAO_0000115>
             <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
             <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
           </oboInOwl:Subset>
@@ -273,7 +273,7 @@
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
     <rdfs:label xml:lang="en">definition</rdfs:label>
-    <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+    <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
