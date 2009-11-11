@@ -915,6 +915,7 @@ GO   gene ontology</obo:IAO_0000112>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >PERSON: Chris Stoeckert</obo:IAO_0000117>
+    <rdfs:label xml:lang="en">information content entity</rdfs:label>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000142</obo:IAO_0000119>
     <rdfs:subClassOf>
