@@ -406,6 +406,7 @@ GO   gene ontology</obo:IAO_0000112>
       <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
     </rdfs:subClassOf>
     <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+    <rdfs:label xml:lang="en">information content entity</rdfs:label>
     <obo:IAO_0000116 xml:lang="en">information_content_entity 'is_encoded_in' some digital_entity in obi before split (040907). information_content_entity 'is_encoded_in' some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that 'is encoded in' some digital or physical entity.</obo:IAO_0000116>
