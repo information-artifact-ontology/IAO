@@ -37,6 +37,7 @@
     (
      (:file "write-purls")
      (:file "create-external-derived")
+     (:file "generate-obo")
      )
     :depends-on (owl))
 
