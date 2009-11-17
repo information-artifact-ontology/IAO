@@ -1,0 +1,55 @@
+#summary Meeting notes November 3rd 2009
+
+= IAO Meeting notes of November 3rd 2009 =
+
+== Details ==
+
+ * Convened by: Melanie, Alan 
+ * Notes by: Melanie
+ * Where: Skype
+ * Attendees: Larry, Michel, Philippe
+ * Regrets: Alan, Bjoern
+
+
+== Agenda ==
+- http://code.google.com/p/information-artifact-ontology/issues/detail?id=64 - measurement datum 
+
+- http://code.google.com/p/information-artifact-ontology/issues/detail?id=62 - update "eternalDerived" file 
+
+- http://code.google.com/p/information-artifact-ontology/issues/detail?id=65
+  - _identifier 
+
+== Minutes ==
+
+- http://code.google.com/p/information-artifact-ontology/issues/detail?id=64
+ - measurement datum 
+definition needs to be updated 
+AI for AR - DL Nov 4th 
+
+- http://code.google.com/p/information-artifact-ontology/issues/detail?id=62
+  - update "eternalDerived" file 
+AI for MC - DL Nov 4th 
+
+- http://code.google.com/p/information-artifact-ontology/issues/detail?id=65 - identifier 
+
+We had a discussion on how to define _identifier, label and symbol. 
+
+The result summarized: 
+- symbol: denotes something. cannot be decomposed into parts that   
+denote the same thing. Examples: letters, words, chinese characters. 
+- identifier: a symbol that denotes something and is created with the   
+intend to pick out that something from a larger set. Example: Lot   
+number, SSN, Pubmed ID 
+- label: a symbol or textual entity that describes an entity 
+
+Some points of the discussion: 
+- identifiers should be linked to their objective: identifier would be   
+a defined class 
+- symbols are unitary information artifact: they cannot be decomposed   
+into parts denoting the same than the symbol as a whole 
+- a label doesn't have to be unitary, it can be decomposed. A label is   
+descriptive, and is not always meant to identify something. 
+
+== Action items == 
+
+All: continue discussion. Check with Jonathan for feedback.
