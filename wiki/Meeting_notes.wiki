@@ -3,6 +3,8 @@
 
 = List of meeting notes =
 
+*[Meeting_notes_20091110]
+
 *[Meeting_notes_20090901]
 
 *[Meeting_notes_20090804]
@@ -10,5 +12,3 @@
 *[Meeting_notes_20090714]
 
 *[Meeting_notes_20090707]
-
-
