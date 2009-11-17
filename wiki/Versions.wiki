@@ -38,6 +38,10 @@ Always points to latest dated version.
  * http://purl.obolibrary.org/obo/iao/2009-11-02/ontology-metadata.owl
  * http://purl.obolibrary.org/obo/iao/2009-11-02/iao-main.owl
  * http://purl.obolibrary.org/obo/iao/2009-11-02/obsolete.owl
+ * http://purl.obolibrary.org/obo/iao/2009-11-06/iao.owl
+ * http://purl.obolibrary.org/obo/iao/2009-11-06/ontology-metadata.owl
+ * http://purl.obolibrary.org/obo/iao/2009-11-06/iao-main.owl
+ * http://purl.obolibrary.org/obo/iao/2009-11-06/obsolete.owl
 
 = Development version PURLs =
 
