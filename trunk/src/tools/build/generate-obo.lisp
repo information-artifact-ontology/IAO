@@ -82,17 +82,17 @@
 				  (if has-isbn
 				      (format nil "ISBN:~a ~s" has-isbn defs)
 				      ;; otherwise, we are not a term and use OBO:sourced and the string for definition source
-				      (format nil "OBI:sourced ~s" (#"replaceFirst" defs "OBI_" "OBI:" )))))))))))
+				      (format nil "IAO:sourced ~s" (#"replaceFirst" defs "IAO_" "IAO:" )))))))))))
 	(loop for defs in definition-source
 	   for is-msi = (or (search "MSI.owl" defs) (search "NMR.owl" defs) (search "CHROM.owl" defs)) ; special case the MSI ontologies. Prototype.
 	   when is-msi
 	   collect (format nil "xref_analog: MSI:~a ~s~%" (caar (all-matches defs ".owl#msi_(.*)" 1)) defs))
 	)
     ;; no definition source. Return empty list
-    (if (#"matches" (uri-full class)  ".*/OBI_.*")
-	" [OBI:sourced \"OBI Consortium http://purl.obolibrary.org/obo/obi\"]"
+    (if (#"matches" (uri-full class)  ".*/IAO_.*")
+	" [IAO:sourced \"IAO http://purl.obolibrary.org/obo/iao\"]"
 	(progn 
-	  (format nil " [OBI:imported ~s]" (ontology-of class))
+	  (format nil " [IAO:imported ~s]" (ontology-of class))
 	  ))))
 		     
 
@@ -109,7 +109,7 @@
 	(format f "format-version: 1.2
 date: ~a
 saved-by: iao
-auto-generated-by: 
+auto-generated-by: http://information-artifact-ontology.googlecode.com/svn/trunk/src/tools/build/generate-obo.lisp
 default-namespace: IAO
 idspace: OBO_REL http://www.obofoundry.org/ro/ro.owl# \"OBO Relation ontology official home on OBO Foundry\"
 idspace: snap http://www.ifomis.org/bfo/1.1/snap# \"BFO SNAP ontology (continuants)\"
@@ -124,7 +124,6 @@ remark: This file is a conversion of the iao-main.owl file, which remains the au
 	   do 
 	   ;; write term ID and name
 	   (format f "[Term]~%id: ~a~%name: ~a~%"
-		   ;;(#"replaceFirst"  (#"replaceFirst" (uri-full class) ".*(OBI|CHEBI|CL|NCBITaxon)(_\\d+)" "$1:$1$2") "OBI:" "")
 		   (localname-namespaced class)
 		   (or (rdfs-label class) (localname class)))
 	   ;; write definition and dbxref for them
