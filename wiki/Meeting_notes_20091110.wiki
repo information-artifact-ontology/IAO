@@ -1,0 +1,54 @@
+#summary Meeting notes November 10th 2009
+
+= IAO Meeting notes of November 10th 2009 =
+
+== Details ==
+
+ * Convened by: Melanie, Alan 
+ * Notes by: Melanie, Alan
+ * Where: Skype
+ * Attendees: James, Bjoern, Michel, William
+ * Regrets: Larry, Adam
+
+
+== Agenda ==
+- identifier: postponed until Jonathan joins
+
+- remove "specifically and materially denotes"
+1. http://code.google.com/p/information-artifact-ontology/issues/detail?id=20&q=denote
+2. http://code.google.com/p/information-artifact-ontology/issues/detail?id=25&q=denote
+
+== Minutes ==
+
+Bjoern:
+There was agreement to remove 'specifically denotes', and instead use
+'denotes' only, which will have the meaning that 'generically denotes' has now. 
+Can we go ahead and implement?
+
+MC: difference denotes/about?
+word boston on sign denotes boston
+sentence "I was in boston" is about boston
+"alan is a nice name" -> is_about
+"I met alan yesterday" -> denotes (we refer specifically to somebody)
+
+=> denotes is less general than is_about (it is a subproperty of is_about)
+
+from http://www.thefreedictionary.com/denotes
+3. To signify directly; refer to specifically. seems adequate for us.
+
+We use denote in its logical sense: 
+from http://www.w3.org/TR/rdf-mt/:
+Model theory tries to be metaphysically and ontologically neutral. It is typically couched in the language of set theory simply because that is the normal language of mathematics - for example, this semantics assumes that names denote things in a set IR called the 'universe' - but the use of set-theoretic language here is not supposed to imply that the things in the universe are set-theoretic in nature. Model theory is usually most relevant to implementation via the notion of entailment, described later, which makes it possible to define valid inference rules.
+
+It is an instance relationship.
+
+
+Some examples and counter examples:
+- "boston - 50 miles" denotes Boston ("consistent" association) but doesn't denote the distance to boston
+- red flare denotes danger: while valid english, this is not a valid use of denote in our case
+- the symbol "pi" denotes 3.14159......
+
+
+== Action items == 
+
+AR to update the file accordingly
