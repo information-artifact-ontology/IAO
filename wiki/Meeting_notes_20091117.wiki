@@ -17,4 +17,4 @@
 
 == Minutes ==
 
-[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-09-01-raw.html raw transcript]
+[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-11-17-raw.html raw transcript]
