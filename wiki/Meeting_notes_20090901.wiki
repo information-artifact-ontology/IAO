@@ -1,3 +1,5 @@
+ #summary One-sentence summary of this page.
+
 = Details =
 
 Convened by: Melanie, Alan
@@ -13,6 +15,4 @@ Where: Skype
 
 == Minutes ==
 
-[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-11-17-raw.html raw transcript]
-
-For a flavor of the meeting, see Jonathan's [http://code.google.com/p/information-artifact-ontology/wiki/JAR_ICE_notes comments after the meeting]
+[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-09-01-raw.html raw transcript]
