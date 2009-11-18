@@ -1,13 +1,20 @@
-#summary One-sentence summary of this page.
+#summary Meeting notes November 17th 2009
 
-= Introduction =
+= IAO Meeting notes of November 17th 2009 =
 
-Add your content here.
+== Details ==
 
+ * Convened by: Melanie 
+ * Notes by: skype
+ * Where: Skype
+ * Attendees: Alan, Melanie, Jonathan, Michel
+ * Regrets: Bjoern
 
-= Details =
+== Agenda ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ * identifiers
+ * denotes
+
+== Minutes ==
+
+[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-09-01-raw.html raw transcript]
