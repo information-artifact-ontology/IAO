@@ -1,0 +1,15 @@
+#summary JAR's attempts to confine the mysticism of 'information content entity'.
+
+= Introduction =
+
+Because of exposure to corrupting influences as a teenager, I squirm when I hear uses of relations such as "denotes", "is about", "mentions", "means", "prescribes", "intends", and so on that putatively hold between an "information artifact" and something else (a specific thing, a class, a property, a verb, a state of affairs, an inclination, etc.). All these words are rather mystical and they hide complex processes that we don't usual have the energy to analyze. When these things can be tied to some particular theory or mechanism, I'm not worried about it, as in the mathematical framework of denotational (compositional) "semantics" where "meaning" is defined as a point in a mathematical space, without any reference to the world. In some cases I'd even be willing to accept maybe one or two unexplained relationships (like one of the mystical terms I listed) hoping that through further use and testing their nature will become clear. But in a context where you would strive for scientific ideals such as objectivity, reproducibility, and falsifiability, nailing down any of these terms in a satisfying way just seems excruciatingly difficult.
+
+Although it is subject to all sorts of criticisms, the BARG (basic action-response game) model of ethology is appealing to me because it seems to be on the road to being falsifiable. And now that the connection of IAO to OBI, together with the idea of attaching the sender's is becoming clearer to me I am seeing some connections between BARG and OBI, and this may point the way to better explanations. So I will try to expand on this below.
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
