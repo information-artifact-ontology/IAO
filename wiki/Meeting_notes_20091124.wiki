@@ -1,0 +1,19 @@
+= IAO Meeting notes of November 24th 2009 =
+
+== Details ==
+
+ * Convened by: Alan 
+ * Notes by: skype
+ * Where: Skype
+ * Attendees: Alan, Michel, Bjoern, James
+ * Regrets: Melanie
+
+== Agenda ==
+
+ * identifiers, CRIDs, SGIDs - http://code.google.com/p/information-artifact-ontology/issues/detail?id=65
+
+== Minutes ==
+
+[http://information-artifact-ontology.googlecode.com/svn/trunk/docs/meeting-transcripts/iao-tc-2009-11-24-raw.html raw transcript]
+
+Next week we work on the OWL file directly to try to implement some of this stuff
