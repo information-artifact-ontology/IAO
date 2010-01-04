@@ -1,8 +1,8 @@
 format-version: 1.2
-date: iao
+date:  06:11:2009 14:19
 saved-by: IAO
 auto-generated-by: http://purl.obolibrary.org/obo/obi/repository/trunk/src/tools/build/generate-obo.lisp
-default-namespace: 18:11:2009 14:19
+default-namespace: iao
 idspace: RO http://www.obofoundry.org/ro/ro.owl# "OBO Relation ontology official home on OBO Foundry"
 idspace: ROP http://purl.org/obo/owl/OBO_REL# "Relation ontology proposed terms"
 idspace: PATO http://purl.org/obo/owl/PATO# "Phenotype Ontology"
