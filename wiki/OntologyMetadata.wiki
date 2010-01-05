@@ -1,0 +1,16 @@
+#documentation about the ontology-metadata.owl file
+
+= Availability =
+
+ * the latest released version of the ontology metadata file is always available at http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl
+ * previously released versions of the ontology metadata file are available using a date based PURL corresponding to their release date, _e.g._, http://purl.obolibrary.org/obo/iao/2009-11-06/ontology-metadata.owl
+ * the latest development version of the ontology metadata file is always available at http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl
+
+= Content =
+
+The ontology metadata file contains all the information required to use the IAO style of annotation properties.
+
+
+= Discussion = 
+
+See http://code.google.com/p/information-artifact-ontology/issues/detail?id=38
