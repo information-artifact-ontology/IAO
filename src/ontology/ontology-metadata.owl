@@ -241,6 +241,7 @@
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
     <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
+    <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
     <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
@@ -289,6 +290,7 @@
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
     <rdfs:label xml:lang="en">in branch</rdfs:label>
     <obo:IAO_0000119 xml:lang="en">OBI_0000277</obo:IAO_0000119>
+  <obo:IAO_0000115 xml:lang="en">An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet.</obo:IAO_0000115>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
     <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
