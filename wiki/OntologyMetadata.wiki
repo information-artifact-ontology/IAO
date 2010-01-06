@@ -9,6 +9,43 @@
 = Content =
 
 The ontology metadata file contains all the information required to use the IAO style of annotation properties.
+    * *editor preferred term*: The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers that reflects community usage, or disambiguates the term if necessary. (before 16.10.07 this was: The concise, meaningful, and human-friendly name for a class or property
+          o Cardinality: each class must have a single editor preferred term
+          o Implementation: annotation property specified as a functional property named "preferred term". 
+    * *definition*: The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with informal definitions to further explain the meaning of the term.
+          o Cardinality: each class must have a single definition
+          o Implementation: annotation property specified as a functional property named "definition". 
+    * *definition editor*: The name of the editor of the definition.
+          o Cardinality: each class can have many definition editors 
+    * definition source: An unambiguous and traceable reference to the source of the definition. Examples: ISBN, URI plus date, MeSH Term, PUBMED ID, DOI.
+          o Cardinality: each class can have one or more definition sources
+          o Implementation: annotation property named "definition source". See guidelines for providing sources for term definitions. 
+    * *curation status*:
+          o Each class has a single curation status
+          o The curation status of a class or property. The allowed values must come from this enumerated list of predefined terms: 
+ # uncurated: Nothing done yet beyond assigning a unique class ID and proposing a preferred term
+ # metadata incomplete: Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.
+ # metadata complete: Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.
+ # pending final vetting: All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.
+ # ready for release: Class has undergone final review, is ready for use, and will be included in the next OBI release.
+
+          o Cardinality: 1..1
+          o Implementation: enumerated value 
+
+    * *example of usage*: A phrase describing how a term should be used. May also include other kinds of examples, such as widely known subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.
+          o Cardinality: each class can have none, one, or more examples of usage
+          o Implementation: annotation property named "example of usage". 
+    * *alternative term*: An alternative name for a class or property which means the same thing, i.e. semantically equivalent, as the preferred term.
+          o Cardinality: Each class can have many alternative terms
+          o Implementation: annotation property 
+    * *editor note*: A note containing points under consideration for further term development that may be included in released versions of the ontology. It should contain nothing embarrassing and something potentially useful for end users to understand the ontology. Editor notes should include the date of edit (YYYY/MM/DD) and the author.
+          o Cardinality: Each class can have one, or many editor notes
+          o Implementation: annotation property 
+    * *curator note*: An administrative note intended for the curator of the ontology. It will not be included in the released versions of the ontology, so it should contain nothing necessary for end users to understand the ontology. Curator notes should include the date of edit (YYYY/MM/DD) and the author.
+          o Cardinality: Each class can have one, or many curator notes
+          o Implementation: annotation property 
+
+
 
 
 = Discussion = 
