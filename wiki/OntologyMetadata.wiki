@@ -9,15 +9,15 @@
 = Content =
 
 The ontology metadata file contains all the information required to use the IAO style of annotation properties.
-    * *editor preferred term*: The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers that reflects community usage, or disambiguates the term if necessary. (before 16.10.07 this was: The concise, meaningful, and human-friendly name for a class or property
+    * *editor preferred term*: The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)
           o Cardinality: each class must have a single editor preferred term
           o Implementation: annotation property specified as a functional property named "preferred term". 
-    * *definition*: The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with informal definitions to further explain the meaning of the term.
+    * *definition*: The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.
           o Cardinality: each class must have a single definition
           o Implementation: annotation property specified as a functional property named "definition". 
-    * *definition editor*: The name of the editor of the definition.
+    * *definition editor*: Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people.
           o Cardinality: each class can have many definition editors 
-    * definition source: An unambiguous and traceable reference to the source of the definition. Examples: ISBN, URI plus date, MeSH Term, PUBMED ID, DOI.
+    * *definition source*: formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007
           o Cardinality: each class can have one or more definition sources
           o Implementation: annotation property named "definition source". See guidelines for providing sources for term definitions. 
     * *curation status specification*:
@@ -33,10 +33,10 @@ The ontology metadata file contains all the information required to use the IAO 
           o Cardinality: 1..1
           o Implementation: enumerated value 
 
-    * *example of usage*: A phrase describing how a term should be used. May also include other kinds of examples, such as widely known subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.
+    * *example of usage*: A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not
           o Cardinality: each class can have none, one, or more examples of usage
           o Implementation: annotation property named "example of usage". 
-    * *alternative term*: An alternative name for a class or property which means the same thing, i.e. semantically equivalent, as the preferred term.
+    * *alternative term*: An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)
           o Cardinality: Each class can have many alternative terms
           o Implementation: annotation property 
     * *editor note*: A note containing points under consideration for further term development that may be included in released versions of the ontology. It should contain nothing embarrassing and something potentially useful for end users to understand the ontology. Editor notes should include the date of edit (YYYY/MM/DD) and the author.
