@@ -1,0 +1,78 @@
+= IAO Meeting notes of January 5th 2010 =
+
+== Details ==
+
+ * Convened by: Alan 
+ * Notes by: Melanie
+ * Where: Skype
+ * Attendees: Alan, Michel, Melanie
+
+
+== Agenda ==
+
+ * work on defining information related processes, such as
+writing, processes related to issue 65, perhaps a first go at
+communication process.
+
+I don't know if it's worth discussing, in this context, the CD
+primitives mtrans, mbuild, attend, speak
+http://www.cc.gatech.edu/computing/classes/cs3361_96_spring/Fall95/Notes/cd.html
+
+== Minutes ==
+
+MD: difference objective specification and objective?
+AR: same controversy than textual entities
+It is hard to know what objective exactly is, so we try with sthg related that we know, ie objective specification - protocol, sthg written down
+One missing bit: no process bearing information currently
+
+
+Michel: Suppose we had plans directly as realizable entities
+plans versus objectives discussion.
+what does an objective specification specify?
+
+MC: agree with MD - don't see issue having objective/conclusion, being concretized as specification or textual entities
+
+AR: Current thinking: objective is a "state of affairs"
+example: Owning a car for: Objective to have a car.
+objective specification: a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved
+
+AR: if we can do whatever we need to with objective specification no need to define objective - otherwise we may need to
+
+in OBI: achieves_planned_objective: This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process.
+
+Example:
+IAO meeting = process (sthg happening over time)
+objective specification = part of the meeting agenda
+
+"I suggest we work on defining information related processes, such as
+writing, processes related to issue 65, perhaps a first go at
+communication process"
+AR: is there an objective specification here? Is there a plan specification here?
+"we work on defining information related processes": is that a plan specification?
+in IAO: plan specification: a directive information entity that when concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified. Plan specifications includes parts such as objective specification, action specifications and conditional specifications.
+
+MC: in this example, the plan specification = working on defining. objective specification: having definition at the end of the call
+
+AR: "we work on defining information related processes" is part of a plan specification in that it specifies an action - the work. In that description is there an objective specification?
+MC:There is an implicit objective specification, to define information related processes
+AR:  there is no objective specification *in that text*
+
+Per its definition every plan specification has an objective specification and an action specification. If we admit that "we work on defining information related processes" is a plan specification then there has to be an objective.
+
+AR: Is the agenda a plan specification? It doesn't seem to have an objective specification.
+
+MC: plan specification is having IAO meeting and discuss agenda
+action specification are agenda items
+objective specification: describes end point. The objective (specification) is implicit.
+MC: when realizing process you rarely explicitly state your objective - but when you work on definition you implicitly mean that you will have a definition at the end
+
+Discussion: What happens when it appears that there is no "specification" of the objective? There are still objectives that are implicit.
+AR: For our meeting. Objective: To work on definitions? Objective: to have definitions?
+"we work on defining information related processes"
+Issue: We say plan specification always have a part which is an objective specification. What happens when we don't see the objective specification.
+Sentiment: If we worked with plans and objectives we could say that every plan has an objective, but not say that every plan specification has an objective specification
+
+Clear need - we have to give examples of what instances of plan specification and objective specification are.
+
+Another view: You read that email with the agenda. You create a full fledged plan specification (borne by your brain).
+AR had plan originally, wrote down plan specification as agenda for the meeting, and MC and MD interpreted that specification, and created a plan in their head. What is exchanged/communicated is the plan specification.
