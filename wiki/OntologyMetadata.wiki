@@ -52,3 +52,32 @@ The ontology metadata file contains all the information required to use the IAO 
 = Discussion = 
 
 See http://code.google.com/p/information-artifact-ontology/issues/detail?id=38
+
+= Activate label display in Protege 3 = 
+
+Most of the time, you will want to display the labels of the annotation properties within the Protege 3 editor, i.e. display "definition" instead of for example IAO_0000115.
+
+If this is the case, you need to follow the following steps:
+# add the declaration of the protege defaultLanguage in your ontology
+# add the declaration of the corresponding annotation property
+
+Your file should be similar to:
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://purl.obolibrary.org/obo/"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1262909536.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >en</protege:defaultLanguage>
+  </owl:Ontology>
+  <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
+</rdf:RDF>
