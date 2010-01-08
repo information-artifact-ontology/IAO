@@ -62,18 +62,8 @@ If this is the case, you need to follow the following steps:
 # add the declaration of the corresponding annotation property
 
 Your file should be similar to:
-<?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://purl.obolibrary.org/obo/"
-    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://www.owl-ontologies.com/Ontology1262909536.owl">
+{{{
+[...]
   <owl:Ontology rdf:about="">
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -81,3 +71,15 @@ Your file should be similar to:
   </owl:Ontology>
   <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
 </rdf:RDF>
+}}}
+
+You then need to follow the traditional steps to activate the label display within Protege:
+ # In Protege, in the menu OWL, choose preferences. This will open a new window.
+ # In this window, choose the Visibility tab. The section at the top left corner of that tab is called Metaclasses. Check the box "All" in this section, which should automatically check all the other boxes of the section for you. Do the same for the section RDF Properties and Annotation Properties.
+ # You can now close that window.
+ # In the Protege main window, you should see 5 tabs: Metadata (protege opens by default on that window), OWL Classes, Properties, Individuals and Forms. Choose the Forms tab.
+ # In the Forms tab, the left part is the Form browser. Select owl:Thing in the Form Browser.
+ # The right part of the tab, the Form editor, has a display slot at the top. In this display slot, scroll to select rdfs:label instead of :NAME
+ # Expand the sub tree rdfs:class by clicking the small grey triangle in front of it. Select owl:Class. As in 6., change the display slot to rdfs:label instead of :NAME
+ # In the form browser (left part of the window), select rdf:Property, and as in 6., change the display slot to rdfs:label instead of :NAME
+ # You can now choose the OWL Classes tab, and you should have the labels displayed instead of the numerical identifiers.
