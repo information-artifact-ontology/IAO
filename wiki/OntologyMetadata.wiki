@@ -58,8 +58,8 @@ See http://code.google.com/p/information-artifact-ontology/issues/detail?id=38
 Most of the time, you will want to display the labels of the annotation properties within the Protege 3 editor, i.e. display "definition" instead of for example IAO_0000115.
 
 If this is the case, you need to follow the following steps:
-# add the declaration of the protege defaultLanguage in your ontology
-# add the declaration of the corresponding annotation property
+ # add the declaration of the protege defaultLanguage in your ontology
+ # add the declaration of the corresponding annotation property
 
 Your file should be similar to:
 {{{
