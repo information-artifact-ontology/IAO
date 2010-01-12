@@ -1,0 +1,17 @@
+= IAO Meeting notes of January 12th 2010 =
+
+== Details ==
+
+ * Convened by: Melanie 
+ * Notes by:
+ * Where: Skype
+ * Attendees:
+
+
+== Agenda ==
+
+ * http://code.google.com/p/information-artifact-ontology/issues/detail?id=22 - documenting
+ * http://code.google.com/p/information-artifact-ontology/issues/detail?id=73 - list of authors names
+ * http://code.google.com/p/information-artifact-ontology/issues/detail?id=19 - survival curve
+
+== Minutes ==
