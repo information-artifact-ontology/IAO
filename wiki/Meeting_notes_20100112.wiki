@@ -10,8 +10,8 @@
 
 == Agenda ==
 
- * http://code.google.com/p/information-artifact-ontology/issues/detail?id=22 - documenting
- * http://code.google.com/p/information-artifact-ontology/issues/detail?id=73 - list of authors names
- * http://code.google.com/p/information-artifact-ontology/issues/detail?id=19 - survival curve
+ * [http://code.google.com/p/information-artifact-ontology/issues/detail?id=22 Issue 22] - documenting
+ * [http://code.google.com/p/information-artifact-ontology/issues/detail?id=73 Issue 73]- list of authors names
+ * [http://code.google.com/p/information-artifact-ontology/issues/detail?id=19 Issue 19]- survival curve
 
 == Minutes ==
