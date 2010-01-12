@@ -14,4 +14,6 @@
  * [http://code.google.com/p/information-artifact-ontology/issues/detail?id=73 Issue 73]- list of authors names
  * [http://code.google.com/p/information-artifact-ontology/issues/detail?id=19 Issue 19]- survival curve
 
+Possibly continue the agenda from the [Meeting_notes_20100105 last meeting]
+
 == Minutes ==
