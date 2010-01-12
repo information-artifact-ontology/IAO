@@ -3,18 +3,17 @@
 
 = List of meeting notes =
 
-*[Meeting_notes_20100105]
+=== 2010 ===
 
-*[Meeting_notes_20091124]
+*[Meeting_notes_20100112 January 12]
+*[Meeting_notes_20100105 January 5]
 
-*[Meeting_notes_20091110]
+=== 2009 ===
 
-*[Meeting_notes_20091103]
-
-*[Meeting_notes_20090901]
-
-*[Meeting_notes_20090804]
-
-*[Meeting_notes_20090714]
-
-*[Meeting_notes_20090707]
+*[Meeting_notes_20091124 December 24]
+*[Meeting_notes_20091110 November 10]
+*[Meeting_notes_20091103 November 3]
+*[Meeting_notes_20090901 September 1]
+*[Meeting_notes_20090804 October 4]
+*[Meeting_notes_20090714 July 14]
+*[Meeting_notes_20090707 July 7]
