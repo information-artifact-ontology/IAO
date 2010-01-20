@@ -1469,6 +1469,25 @@ two-dimensional map.</obo:IAO_0000115>
     
 
 
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000573">
+        <rdfs:label xml:lang="en">line graph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000115 xml:lang="en"
+            >A line graph is a type of graph created by connecting a series of data
+points together with a line.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en"
+            >PERSON:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en"
+            >PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">line graph</obo:IAO_0000111>
+    <obo:IAO_0000118 xml:lang="en">line chart</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en"
+            >WEB: http://en.wikipedia.org/wiki/Line_chart</obo:IAO_0000119>
+    </owl:Class>
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000181 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000181">
