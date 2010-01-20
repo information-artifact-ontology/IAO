@@ -1511,25 +1511,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000182 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000182">
-        <rdfs:label xml:lang="en">survival curve</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
-        <obo:IAO_0000114 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
-        <obo:IAO_0000115 xml:lang="en"
-            >A survival curve is a report graph which is a graphical representation of data where the percentage of survival is plotted as a function of time.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en"
-            >PERSON:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >PERSON:James Malone</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en"
-            >PERSON:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en"
-            >WEB: http://www.graphpad.com/www/book/survive.htm</obo:IAO_0000119>
-        <obo:IAO_0000111 xml:lang="en">survival curve</obo:IAO_0000111>
-    </owl:Class>
     
 
 
@@ -2603,7 +2585,7 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en"
             >a planned process in which a document is created or added to by including the specified input in it.</obo:IAO_0000115>
     </owl:Class>
-    
+
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
