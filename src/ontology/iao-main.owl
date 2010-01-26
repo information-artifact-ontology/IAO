@@ -365,28 +365,7 @@ there is a measurement process p that has specified output m, a measurement datu
     
 
 
-    <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of">
-        <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#DependentContinuant"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in">
-  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >inheres in</rdfs:label>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a &#39;cardinality 1&#39; restriction to the definition of specifically dependent continuant.</obo:IAO_0000116>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >This relation belongs in BFO/RO, and will be in BFO 2</obo:IAO_0000116>
-        <owl:inverseOf rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
-        <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-        <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-    </owl:ObjectProperty>
     
 
 
