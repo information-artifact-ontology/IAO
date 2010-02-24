@@ -145,7 +145,7 @@
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >a smallish, word-like datum...</obo:IAO_0000115>
   </owl:Class>
-  <owl:Class rdf:ID="Class_1">
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/Class_1">
     <rdfs:subClassOf>
       <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
     </rdfs:subClassOf>
@@ -510,7 +510,7 @@ Previous. An information content entity is a non-realizable information entity t
     >Bjoern Peters</obo:IAO_0000117>
   </owl:Class>
   <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-  <owl:Class rdf:ID="Class_3">
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/Class_3">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >establishing a CRID registry</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -987,7 +987,7 @@ whole sentence is deleted.</obo:IAO_0000116>
     <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
     <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
   </owl:Class>
-  <owl:Class rdf:ID="Class_2">
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/Class_2">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >associating information with a CRID in the CRID registry</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
