@@ -4,6 +4,7 @@
 = Meeting notes =
 
 === 2010 ===
+ * March 23rd: no call - OBI meeting
  * [Meeting_notes_20100309 March 9th]
  * [Meeting_notes_20100112 January 12]
  * [Meeting_notes_20100105 January 5]
