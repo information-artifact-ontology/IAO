@@ -14,6 +14,6 @@ Introducing relationships describing the intellectual/cognitive connections betw
 
 I intend to use this relationship to organize literature about evolutionary biology, reaching back throughout its entire history, from today to Darwin. This is part of an ongoing project at the American Museum of Natural History.
 
-The issue and document are at available [http://code.google.com/p/information-artifact-ontology/issues/detail?id=76 here]
+The issue and document are available [http://code.google.com/p/information-artifact-ontology/issues/detail?id=76 here]
 
 == Minutes ==
