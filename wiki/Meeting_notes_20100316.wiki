@@ -1,0 +1,19 @@
+= IAO Meeting notes of March 16th 2010 =
+
+== Details ==
+
+ * Convened by: Adam
+ * Notes by:
+ * Where: Skype
+ * Attendees:
+
+
+== Agenda ==
+
+Introducing relationships describing the intellectual/cognitive connections between information content entities, which I call "lineages of works." I have posted a document concerning conceptual problems and the basic conceptualization of the relationship. I'd be happy to lead a discussion explaining the idea and also hearing people's concerns.
+
+I intend to use this relationship to organize literature about evolutionary biology, reaching back throughout its entire history, from today to Darwin. This is part of an ongoing project at the American Museum of Natural History.
+
+The issue and document are at available [http://code.google.com/p/information-artifact-ontology/issues/detail?id=76 here]
+
+== Minutes ==
