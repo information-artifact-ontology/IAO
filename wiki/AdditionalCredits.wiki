@@ -4,10 +4,10 @@
 
 Several people have provided (and keep doing so) invaluable feedback to the project. This page is an attempt to thank them all for their contribution in making IAO the resource it is today.
 
- * Larry Hunter
- * Michel Dumontier
+ * [http://compbio.uchsc.edu/hunter Lawrence Hunter]
+ * [http://dumontierlab.com/?page=people Michel Dumontier]
  * William Hogan
- * Adam Goldstein
- * Jonathan Rees
- * Chris Mungall
- * Philippe Rocca-Serra
+ * [http://www.iona.edu/faculty/agoldstein/ Adam Goldstein]
+ * [http://mumble.net/~jar/ Jonathan Rees]
+ * [http://www.fruitfly.org/~cjm/ Chris Mungall]
+ * [http://www.ebi.ac.uk/Information/Staff/person_maintx.php?s_person_id=422 Philippe Rocca-Serra]
