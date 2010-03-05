@@ -1,0 +1,13 @@
+#summary Additional credits
+
+= IAO contributors =
+
+Several people have provided (and keep doing so) invaluable feedback to the project. This page is an attempt to thank them all for their contribution in making IAO the resource it is today.
+
+* Larry Hunter
+* Michel Dumontier
+* William Hogan
+* Adam Goldstein
+* Jonathan Rees
+* Chris Mungall
+* Philippe Rocca-Serra
