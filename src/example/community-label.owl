@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obofoundry.org/obo/iao/example/community-label.owl#"
-     xml:base="http://purl.obofoundry.org/obo/iao/example/community-label.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/example/community-label.owl#"
+     xml:base="http://purl.obolibrary.org/obo/iao/example/community-label.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#">
-    <owl:Ontology rdf:about="http://purl.obofoundry.org/obo/iao/example/community-label.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/example/community-label.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
     </owl:Ontology>
     
