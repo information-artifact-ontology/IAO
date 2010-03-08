@@ -1978,8 +1978,8 @@ Some currently missing phenomena that should be considered "about" are predicati
     >is duration of</rdfs:label>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-    <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
-    <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+    <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+    <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000294">
     <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
