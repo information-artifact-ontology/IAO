@@ -11,3 +11,4 @@ Several people have provided (and keep doing so) invaluable feedback to the proj
  * [http://mumble.net/~jar/ Jonathan Rees]
  * [http://www.fruitfly.org/~cjm/ Chris Mungall]
  * [http://www.ebi.ac.uk/Information/Staff/person_maintx.php?s_person_id=422 Philippe Rocca-Serra]
+ * all participants in the IAO discussions at http://groups.google.com/group/information-ontology
