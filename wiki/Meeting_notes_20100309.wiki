@@ -12,6 +12,10 @@
 
 QTT: Quick Term Templates
 
-See [http://groups.google.com/group/information-ontology/browse_thread/thread/59724cd906d31841 discussion] on the IAO list and submitted paper [http://obi.svn.sourceforge.net/viewvc/obi/trunk/docs/papers/QuickTerms_ICBO2009/AO-resubmission/OBI-QTT-ICBO-AO-resubmission.doc doc]
+Background documents
+ * [http://groups.google.com/group/information-ontology/browse_thread/thread/59724cd906d31841 discussion] on the IAO list 
+ * submitted paper [http://obi.svn.sourceforge.net/viewvc/obi/trunk/docs/papers/QuickTerms_ICBO2009/AO-resubmission/OBI-QTT-ICBO-AO-resubmission.doc Overcoming the ontology enrichment bottleneck with Quick Term Templates] _Philippe Rocca-Serra, Alan Ruttenberg, Martin J. O’Connor, Patricia L Whetzel, Daniel Schober, Jay Greenbaum, Mélanie Courtot, Ryan R. Brinkman, Susanna Assunta Sansone, Richard Scheuermann, the OBI consortium and Bjoern Peters_
+ * [http://obi-ontology.org/page/Quick_Term_Templates OBI website]
+ * [http://precedings.nature.com/documents/3970/version/1 ICBO 2009 presentation]
 
 == Minutes ==
