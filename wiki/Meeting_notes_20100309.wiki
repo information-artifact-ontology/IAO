@@ -3,9 +3,10 @@
 == Details ==
 
  * Convened by: Bill 
+ * Chaired by: Philippe
  * Notes by:
  * Where: Skype
- * Attendees:
+ * Attendees: Bill, Philippe, Alan, Melanie
 
 
 == Agenda ==
