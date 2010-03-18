@@ -20,3 +20,76 @@ Background documents
  * [http://precedings.nature.com/documents/3970/version/1 ICBO 2009 presentation]
 
 == Minutes ==
+
+IAO call: topic QTT and clinical test:
+
+Attendees:
+Bill Hogan, Melanie Courtot, Alan Ruttenberg, Philippe Rocca-Serra.
+
+
+6 main topics:
+--------------
+
+1. modify analyte assay representation to accomodate reliance on unit as instance
+
+relation should be modified from:
+has_unit some <Unit Class>
+to:
+has_unit value <Unit Class>
+
+2. lab test results may measure the same entity but will return results in possibly different units:
+to represent the range of possible units, use:
+
+has_unit value {<Unit Class1>,..,<Unit ClassN>}
+
+3.mmol per liter [UO:300] is not available from OLS
+
+*Action Item: Alan may have requested those and assumed they were added - he will check with UO
+
+4. Assay measuring an enzymatic activity rate/volume as proxy for Protein presence and quantity:
+
+First issue: -> analyte assay are defined as ('is quality measurement of' some 'molecular concentration') 
+this somewhat does not apply to enzymatic activity concentration even though it is used as a proxy for a molecular concentration.
+
+Second issue: -> is it not a true analyte assay?
+NOTE: post-call: this answer is probably 'yes', -> Bill used UI/L which generically indicates a concentration.
+these types of assay do not measure directly the amount of proteins rather, they measure the rate of conversion of substrate  by protein assuming a proportional relation between this rate and the amount for functional protein present in the 'evaluant'
+
+The unit needed is missing and would back measuring the amount of catalytic activity to a reference volume
+*Action Item: submit to UO
+
+Discussion about setting quality automatically upon selection of unit
+AR: not always possible
+
+Option: have more general relation towards other types of entities
+
+5. Discussion about "normal ranges"
+
+Issue: Should clinical assay representation include information about upper and lower measurement values considered as "normal"?
+
+Defining 'normality values' is hard as those vary depending  on species, physiological / pathological state
+(for reference: http://upload.wikimedia.org/wikipedia/commons/c/cb/Blood_values_sorted_by_mass_and_molar_concentration.png)
+-> overly complex.
+
+Key observation by Bill Hogan: " normal range is passed around with result of a test" so might be worth considering the following representation
+
+Main modification is to changing the specific output of an assay 
+model scalar measurement datum with range -> + extra template to generate subtype of normal value
+the issue is that a lab test typically carries in its result both the tested value and the upper and
+lower range of normal for that test instance
+
+For evaluation purpose though, a QTT could be modified to test the feasibility of the following representation:
+"human normal blood sodium concentration value" is_a "normal value"
+has_measurement_value some  [< 38 >32]
+has_measurement_unit mg/dL
+
+Simplest case two extra columns to the template to allow reporting of (min , max) normal.
+
+
+6. Derived Measurements computed from Measurement values resulting from analyte assays:
+
+Some tests as described in OBI-QTT-Analyte-Assay.xls document such "BUN/Cr ratio" or "albumin/globulin ratio" aren't really 'analyte assay', rather should be data transformation where the specific_inputs are measurement values from BUN and Creatinine analyte assays.
+ 
+For simple ratios, a new qtt could be create where numerator and denominator are specified -> more discussion needed.
+
+
