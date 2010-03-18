@@ -85,7 +85,7 @@ lower range of normal for that test instance
 
 For evaluation purpose though, a QTT could be modified to test the feasibility of the following representation:
 "human normal blood sodium concentration value" is_a "normal value"
-has_measurement_value some  [>32, <38]
+has_measurement_value some  [( >32, < 38 )]
 has_measurement_unit mg/dL
 
 Simplest case two extra columns to the template to allow reporting of (min , max) normal.
