@@ -52,10 +52,15 @@ First issue: -> analyte assay are defined as ('is quality measurement of' some '
 this somewhat does not apply to enzymatic activity concentration even though it is used as a proxy for a molecular concentration.
 
 Second issue: -> is it not a true analyte assay?
-NOTE: post-call: this answer is probably 'yes', -> Bill used UI/L which generically indicates a concentration.
+
+NOTE: post-call: this answer is probably 'yes', 
+
+-> Bill used UI/L which generically indicates a concentration.
+
 these types of assay do not measure directly the amount of proteins rather, they measure the rate of conversion of substrate  by protein assuming a proportional relation between this rate and the amount for functional protein present in the 'evaluant'
 
 The unit needed is missing and would back measuring the amount of catalytic activity to a reference volume
+
 *Action Item: submit to UO
 
 Discussion about setting quality automatically upon selection of unit
@@ -68,7 +73,7 @@ Option: have more general relation towards other types of entities
 Issue: Should clinical assay representation include information about upper and lower measurement values considered as "normal"?
 
 Defining 'normality values' is hard as those vary depending  on species, physiological / pathological state
-(for reference: http://upload.wikimedia.org/wikipedia/commons/c/cb/Blood_values_sorted_by_mass_and_molar_concentration.png)
+(for reference, http://en.wikipedia.org/wiki/File:Blood_values_sorted_by_mass_and_molar_concentration.png)
 -> overly complex.
 
 Key observation by Bill Hogan: " normal range is passed around with result of a test" so might be worth considering the following representation
@@ -91,5 +96,3 @@ Simplest case two extra columns to the template to allow reporting of (min , max
 Some tests as described in OBI-QTT-Analyte-Assay.xls document such "BUN/Cr ratio" or "albumin/globulin ratio" aren't really 'analyte assay', rather should be data transformation where the specific_inputs are measurement values from BUN and Creatinine analyte assays.
  
 For simple ratios, a new qtt could be create where numerator and denominator are specified -> more discussion needed.
-
-
