@@ -10,7 +10,7 @@
 
 == Agenda ==
 
-I the issues identified in http://code.google.com/p/information-artifact-ontology/issues/detail?id=79
+The issues identified in http://code.google.com/p/information-artifact-ontology/issues/detail?id=79
 
 There have been a number of issues that have arisen in working with
 measurement data. First, there is the structural similarity between
@@ -25,5 +25,7 @@ potential to interfere with an orderly single inheritance hierarchy.
 
 We can also discuss the example alluded to Melanie's issue report -
 the handedness assay that we worked through.
+
+Finally see a [http://sourceforge.net/mailarchive/forum.php?thread_name=06A279DD8870984A9AC6FB38AE00021F195B3E5355%40NIHMLBXBB02.nih.gov&forum_name=obi-devel discussion on obi-dev] regarding pH and empirical units.
 
 == Minutes ==
