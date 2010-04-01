@@ -1,0 +1,29 @@
+= IAO Agenda and Meeting notes of April 13th 2010 =
+
+== Details ==
+
+ * Convened by: Alan
+ * Notes by:
+ * Where: Skype
+ * Attendees: Alan, Bjoern, ...
+
+
+== Agenda ==
+
+I the issues identified in http://code.google.com/p/information-artifact-ontology/issues/detail?id=79
+
+There have been a number of issues that have arisen in working with
+measurement data. First, there is the structural similarity between
+some specifications, such as a dose, or a specification of length in
+instructions on how long to cut a piece of wood, and measurement data,
+in that both have values and units.
+
+In addition Tom Russ and Gully Burns have raised the issue of
+measurement scales a la Stevens
+(http://en.wikipedia.org/wiki/Level_of_measurement) which has the
+potential to interfere with an orderly single inheritance hierarchy.
+
+We can also discuss the example alluded to Melanie's issue report -
+the handedness assay that we worked through.
+
+== Minutes ==
