@@ -106,6 +106,15 @@
         <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
     </owl:ObjectProperty>
 
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/GAZ"/>
+    <rdfs:label xml:lang="en">geographical location</rdfs:label>
+    <IAO_0000115>A reference to a place on the Earth, by its name or by its geographical location.</IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://ifomis.org/bfo/1.1/snap#Site"/>
+  </owl:Class>
+
+
+
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
   </owl:AnnotationProperty>
