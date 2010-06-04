@@ -2294,7 +2294,6 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://code.google.com/p/information-artifact-ontology/ -->
 
     <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     </owl:Thing>
     
 
@@ -2302,7 +2301,6 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
 
     <owl:Thing rdf:about="http://purl.obolibrary.org/obo/IAO_0000120">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     </owl:Thing>
 </rdf:RDF>
 
