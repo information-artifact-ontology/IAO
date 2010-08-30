@@ -2303,15 +2303,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000423 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423">
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000078"/>
-        <rdfs:label xml:lang="en">to be replaced with external ontology term</rdfs:label>
-        <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">Terms with this status should eventually replaced with a term from another ontology because they are out of the scope of OBI</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-    </owl:NamedIndividual>
+ 
 </rdf:RDF>
 
 
