@@ -558,12 +558,6 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000428"/>
         </owl:distinctMembers>
     </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
-        <owl:distinctMembers rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
-        </owl:distinctMembers>
-    </rdf:Description>
 </rdf:RDF>
 
 
