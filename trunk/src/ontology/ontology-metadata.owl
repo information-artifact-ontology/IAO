@@ -34,6 +34,7 @@
      -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424">
+	<obo:IAO_0000111 xml:lang="en">expand expression to</obo:IAO_0000111>
         <rdfs:label xml:lang="en">expand expression to</rdfs:label>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
@@ -45,6 +46,8 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
         <rdfs:label xml:lang="en">in branch</rdfs:label>
+  	<obo:IAO_0000117 xml:lang="en">GROUP:OBI</obo:IAO_0000117>
+	<obo:IAO_0000111 xml:lang="en">in branch</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An annotation property indicating which module the terms belong to. This is currently experimental and not implemented yet.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">OBI_0000277</obo:IAO_0000119>
     </owl:AnnotationProperty>
@@ -65,6 +68,7 @@ Annotations: IAO_0000424 &quot;http://purl.obolibrary.org/obo/BFO_0000051 some (
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000425">
         <rdfs:label xml:lang="en">expand assertion to</rdfs:label>
+	<obo:IAO_0000111 xml:lang="en">expand assertion to</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an annotation property which can be expanded into a more detailed axiom.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO???
@@ -98,6 +102,8 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000426">
         <rdfs:label xml:lang="en">first order logic expression</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">first order logic expression</obo:IAO_0000111>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
@@ -108,18 +114,26 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000411">
+        <obo:IAO_0000111 xml:lang="en">is denotator type</obo:IAO_0000111>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is denotator type</rdfs:label>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In OWL 2 add AnnotationPropertyRange(&#39;is denotator type&#39; &#39;denotator type&#39;)</obo:IAO_0000116>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relates an class defined in an ontology, to the type of it&#39;s denotator</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+	<obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has obsolescence reason</obo:IAO_0000111>
         <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+	<obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+	<obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+	<obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
@@ -132,6 +146,8 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
     <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
+	<obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+	<obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
@@ -155,6 +171,7 @@ Annotations: expand_assertion_to &quot;DisjointClasses: (http://purl.obolibrary.
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000427">
+ 	<obo:IAO_0000111 xml:lang="en">antisymmetric property</obo:IAO_0000111>
         <rdfs:label xml:lang="en">antisymmetric property</rdfs:label>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000112 xml:lang="en">part_of antisymmetric property xsd:true</obo:IAO_0000112>
