@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl#"
-     xml:base="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/externalDerived.owl#"
+     xml:base="http://purl.obolibrary.org/obo/iao/externalDerived.owl"
      xmlns:envo="http://purl.org/obo/owl/ENVO#"
      xmlns:UO="http://purl.org/obo/owl/UO#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
@@ -31,7 +31,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/externalDerived.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$Revision: 80 $</owl:versionInfo>
     </owl:Ontology>
     
