@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://purl.obolibrary.org/obo/iao/dev/iao.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:seeAlso>
+      <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/"/>
+    </rdfs:seeAlso>
+    <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/external.owl"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
+    <owl:imports><owl:Ontology rdf:about="http://www.obofoundry.org/ro/ro.owl"/></owl:imports>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
+    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+    <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
+  </owl:Ontology>
+</rdf:RDF>
+
