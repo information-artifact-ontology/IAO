@@ -28,10 +28,10 @@
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/external.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/externalByHand.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/externalDerived.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2010-20-16/external.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2010-20-16/externalByHand.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2010-20-16/externalDerived.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2010-20-16/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
         <owl:imports rdf:resource="http://www.obofoundry.org/ro/ro.owl"/>
     </owl:Ontology>
