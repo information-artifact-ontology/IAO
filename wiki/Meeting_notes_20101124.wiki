@@ -1,0 +1,13 @@
+= IAO Agenda and Meeting notes of November 24th 2010 =
+
+== Details ==
+
+ * Convened by: Melanie
+ * Notes by:
+ * Where: Skype
+ * Attendees: 
+
+
+== Agenda ==
+
+The issues identified in http://code.google.com/p/information-artifact-ontology/issues/detail?id=65
