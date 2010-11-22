@@ -4,6 +4,7 @@
 = Meeting notes =
 
 === 2010 ===
+ * [Meeting_notes_20101124 November 24th]
  * [Meeting_notes_20100413 April 13th]
  * March 23rd: no call - [http://obi-ontology.org/page/Workshop_OBI_Vancouver_2010_Mar OBI meeting]
  * [Meeting_notes_20100316 March 16th]
