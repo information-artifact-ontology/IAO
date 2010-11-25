@@ -3,11 +3,35 @@
 == Details ==
 
  * Convened by: Melanie
- * Notes by:
+ * Notes by: Bjoern
  * Where: Skype
- * Attendees: 
+ * Attendees: Alan, Bill, Bjoern, Melanie
 
 
 == Agenda ==
 
 The issues identified in http://code.google.com/p/information-artifact-ontology/issues/detail?id=65
+
+== Minutes ==
+
+
+We talked about finishing up the centrally registered identifier (CRID) proposal, and specifically worked on the the ICE definitions (while previously we had worked on the processes). This should hopefully work towards cleaning up the current mess with symbol/label/identifier etc. In order to not get lost in high level discussions, we consider all CRID identifiers to be symbols (even though they may potentially be Figures). 
+
+Here is a summary of the definitions to add:
+ 
+"CRID" =def: An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. 
+
+Examples: "Entries in a Column of which the header is "Pubmed ID", "The following sentence contains a CRID: "The article with Pubmed ID: 19918065". The following URL: "http://www.ncbi.nlm.nih.gov/pubmed/19918065"
+Editor note: potentially the CRID denotes the instance it was associated with during creation. 
+
+"CRID symbol"=def: A symbol that is part_of a CRID and that is sufficient to look up a record from the CRID's registry. 
+Example: "19918065"
+
+"CRID registry"=def: A dataset of CRID records, each consisting of a CRID symbol and information associated it. This information was recorded in the registry through ... processes. 
+Example: The Pubmed database. 
+
+In addition, we decided to 
+- deprecate the process "creating CRID system" as it seems unnecessary and just complicates things
+- add the process : "looking up a CRID" defined as "a planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol".
+
+
