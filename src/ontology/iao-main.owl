@@ -2691,7 +2691,7 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&ro;has_part"/>
-                <owl:someValuesFrom rdf:resource="#&obo;IAO_0000577"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112
@@ -2791,9 +2791,9 @@ points together with a line.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/dev/iao-main.owl#http://purl.obolibrary.org/obo/IAO_0000577 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
 
-    <owl:Class rdf:about="#&obo;IAO_0000577">
+    <owl:Class rdf:about="&obo;IAO_0000577">
         <rdfs:label>CRID symbol</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000028"/>
         <obo:IAO_0000119
