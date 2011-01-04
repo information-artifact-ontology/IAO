@@ -161,8 +161,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
             >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="&xsd;string"
             >This document is about information artifacts and their representations</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string"
             >is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
@@ -186,8 +185,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
             >PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >Person: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
     </owl:ObjectProperty>
     
@@ -533,8 +531,7 @@ of this, different, term.</obo:IAO_0000116>
             >A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000112 xml:lang="en"
             >Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en"
@@ -564,8 +561,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
             >PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >PERSON: Jennifer Fostel</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000116 xml:lang="en"
             >Answers the question, why did you do this experiment?</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en"
@@ -589,8 +585,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
         <obo:IAO_0000116 rdf:datatype="&xsd;string"
             >2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by &#39;textual entity&#39; and &#39;figure&#39;. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000013</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000115 xml:lang="en"
             >A narrative object is an information content entity that is a set of propositions.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en"
@@ -612,8 +607,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
         <rdfs:label rdf:datatype="&xsd;string"
             >action specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000123</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en"
             >OBI Plan and Planned Process branch</obo:IAO_0000119>
@@ -633,8 +627,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
         <obo:IAO_0000115 rdf:datatype="&xsd;string"
             >A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP: IAO</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000123</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000116 rdf:datatype="&xsd;string"
             >http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">label</obo:IAO_0000111>
@@ -713,8 +706,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
             >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <obo:IAO_0000112 rdf:datatype="&xsd;string"
             >The pattern in ink on a page of a paperback novel.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string"
             >information carrier</obo:IAO_0000111>
     </owl:Class>
@@ -730,8 +722,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
             >A model number is an information content entity specifically borne by catalogs, design specifications, advertising materials, inventory systems and similar  that is about manufactured objects of the same class. The model number is an alternative term for the class. The manufactered objects may or may not also bear the model number. Model numbers can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >Person: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000116 rdf:datatype="&xsd;string"
             >manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</obo:IAO_0000116>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">model number</obo:IAO_0000111>
@@ -779,8 +770,7 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">data item</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000116 xml:lang="en"
             >2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en"
@@ -845,8 +835,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000142</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >PERSON: Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000112 xml:lang="en"
             >Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en"
@@ -931,8 +920,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
             >An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="&xsd;string"
             >Werner pushed back on calling it realizable information entity as it isn&#39;t realizable. However this name isn&#39;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&#39;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000123</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117 xml:lang="en"
             >PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en"
@@ -947,8 +935,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <rdfs:label xml:lang="en">time trigger</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000001"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000331</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000119 xml:lang="en"
             >OBI branch derived</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en"
@@ -965,8 +952,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <rdfs:label xml:lang="en">dot plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000123</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000002</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
         <obo:IAO_0000115 xml:lang="en"
             >A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en"
@@ -988,8 +974,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000309"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000240</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en"
             >A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en"
@@ -1009,8 +994,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <rdfs:label xml:lang="en">rule</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000001"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0500021</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000116 xml:lang="en">MSI</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PRS</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">PRS</obo:IAO_0000119>
@@ -1029,8 +1013,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <rdfs:label xml:lang="en">contour plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000246</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000002</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
         <obo:IAO_0000112 xml:lang="en"
             >Contour plot of SSC-H, FSC-H, and FL1-H.</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">contour plot</obo:IAO_0000111>
@@ -1099,8 +1082,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <rdfs:label xml:lang="en">density plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000179</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000002</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
         <obo:IAO_0000115 xml:lang="en"
             >A density plot is a report graph which is a graphical representation of data where the tint of a particular pixel corresponds to some kind of function corresponding the the amount of data points relativelly with their distance from the the pixel.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en"
@@ -1139,8 +1121,7 @@ whole sentence is deleted.</obo:IAO_0000116>
             >PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000112 xml:lang="en"
             >Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article.</obo:IAO_0000112>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
@@ -1162,8 +1143,7 @@ whole sentence is deleted.</obo:IAO_0000116>
             >source code module</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000039</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000115 xml:lang="en"
             >A source code module is a directive information entity that specifies, using a programming language, some algorithm.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en"
@@ -1192,8 +1172,7 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000187</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000123</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115 xml:lang="en"
             >A data format specification is the information content borne by the document published defining the specification.
 Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</obo:IAO_0000115>
@@ -1236,8 +1215,7 @@ Example: The ISO document specifying what encompasses an XML document; The instr
         <rdfs:label xml:lang="en">image</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000308"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000030</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
@@ -1329,8 +1307,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP: IAO</obo:IAO_0000117>
         <obo:IAO_0000116 rdf:datatype="&xsd;string"
             >Note: we feel that at the moment we are happy with a general version number, and that we will subclass as needed in the future. For example, see 7. genome sequence version</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">version number</obo:IAO_0000111>
     </owl:Class>
     
@@ -1346,8 +1323,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP: IAO</obo:IAO_0000117>
         <obo:IAO_0000116 rdf:datatype="&xsd;string"
             >Note: during the call there was some confusion between serial number and model number. We agreed that it would be very helpful for all those terms to have example of usages - please add if you have any :-)</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">serial number</obo:IAO_0000111>
     </owl:Class>
     
@@ -1362,8 +1338,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             >A lot number is an information content entity which is an identical sequence of character borne by part of manufactured product or its packaging for each instances of a product class in a discrete batch of an item. Lot numbers are usually assigned to each separate production run of an item. Manufacturing as a lot might be due to a variety of reasons, for example,  a single process during which many individuals are made from the same portion of source material. Lot numbers can be encoded in a pattern  of other information objects, such as bar codes, numerals, or patterns of dots.</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP: IAO</obo:IAO_0000117>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">batch number</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">lot number</obo:IAO_0000111>
     </owl:Class>
     
@@ -1378,8 +1353,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
             >A settings datum is a datum that denotes some configuration of an instrument.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="&xsd;string"
             >Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
         <obo:IAO_0000116 xml:lang="en"
             >2/3/2009 Feedback from OBI
 
@@ -1452,8 +1426,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;IAO_0000179">
         <rdfs:label xml:lang="en">histogram</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >A histogram is a report graph which is a statistical description of a
 distribution in terms of occurrence frequencies of different event classes.</obo:IAO_0000115>
@@ -1474,8 +1447,7 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     <owl:Class rdf:about="&obo;IAO_0000180">
         <rdfs:label xml:lang="en">heatmap</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >A heatmap is a report graph which is a graphical representation of data
 where the values taken by a variable(s) are shown as colors in a
@@ -1497,8 +1469,7 @@ two-dimensional map.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000181">
         <rdfs:label xml:lang="en">Venn diagram</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >A Venn diagram is a report graph showing all hypothetically possible
 logical relations between a finite collection of sets.</obo:IAO_0000115>
@@ -1520,8 +1491,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;IAO_0000183">
         <rdfs:label xml:lang="en">dendrogram</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >A dendrogram is a report graph which is a tree diagram
 frequently used to illustrate the arrangement of the clusters produced by a
@@ -1547,8 +1517,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000184">
         <rdfs:label xml:lang="en">scatter plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en"
@@ -1572,8 +1541,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000185">
         <rdfs:label xml:lang="en">photograph</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000101"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >A photograph is created by projecting an image onto a photosensitive surface such as a chemically treated plate or film, CCD receptor, etc.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en"
@@ -1611,8 +1579,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
         </owl:equivalentClass>
         <obo:IAO_0000115 rdf:datatype="&xsd;string"
             >A photographic print is a material entity upon which a photograph generically depends.</obo:IAO_0000115>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string"
             >photographic print</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en"
@@ -1656,8 +1623,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">citation</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000117 xml:lang="en"
             >PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000112 xml:lang="en"
@@ -1676,8 +1642,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string"
             >author identification</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en"
             >A textual entity intended to identify a particular author</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">L. Hunter</obo:IAO_0000112>
@@ -1693,8 +1658,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
         <rdfs:label rdf:datatype="&xsd;string"
             >institutional identification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string"
             >institutional identification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en"
@@ -1719,8 +1683,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">caption</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en"
             >A textual entity that describes a figure</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en"
@@ -1737,8 +1700,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
         <rdfs:label rdf:datatype="&xsd;string">document title</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">document title</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en"
             >A textual entity that names a document</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en"
@@ -1754,8 +1716,7 @@ illustrate the clustering of genes.</obo:IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000306">
         <rdfs:label rdf:datatype="&xsd;string">table</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">table</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en"
             >A textual entity that contains a two-dimensional arrangement of texts repeated at regular intervals across a spatial range, such that the spatial relationships among the constituent texts expresses propositions</obo:IAO_0000115>
@@ -1776,8 +1737,7 @@ F   |  F    F</obo:IAO_0000112>
         <rdfs:label rdf:datatype="&xsd;string"
             >table of abbreviations</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000306"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string"
             >table of abbreviations</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en"
@@ -2202,8 +2162,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:label rdf:datatype="&xsd;string"
             >table of contents</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000306"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string"
             >table of contents</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en"
@@ -2220,8 +2179,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:label rdf:datatype="&xsd;string"
             >table of figures</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000306"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string"
             >table of figures</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en"
@@ -2237,8 +2195,7 @@ GO   gene ontology</obo:IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000329">
         <rdfs:label rdf:datatype="&xsd;string">running title</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000305"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">running title</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en"
             >A shorter version of a document title</obo:IAO_0000115>
@@ -2328,8 +2285,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:comment rdf:datatype="&xsd;string"
             >A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
     </owl:Class>
     
 
@@ -2371,8 +2327,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:comment rdf:datatype="&xsd;string"
             >A cartesion spatial coordinate datum that  uses two values to specify a position within a two dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
     </owl:Class>
     
 
@@ -2420,8 +2375,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:comment rdf:datatype="&xsd;string"
             >A cartesion spatial coordinate datum that  uses three values to specify a position within a three dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000124</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
     </owl:Class>
     
 
@@ -2447,8 +2401,7 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="&xsd;string"
             >A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000123</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
 
@@ -2479,8 +2432,7 @@ GO   gene ontology</obo:IAO_0000112>
             >A scalar measurement datum that is the result of measurement of mass quality</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000123</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
 
@@ -2532,8 +2484,7 @@ GO   gene ontology</obo:IAO_0000112>
             >A scalar measurement datum that is the result of measuring a temporal interval</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="&xsd;string"
             >Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000123</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
 
@@ -2563,8 +2514,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:label xml:lang="en">author role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Role"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">author role</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en"
             >A role inhering in a person or organization that is realized when the bearer participates in the work which is the basis of the document, in the writing of the document, and signs it with their name.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en"
@@ -2611,8 +2561,7 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000112 rdf:datatype="&xsd;string"
             >Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database.</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string"
             >wikipedia http://en.wikipedia.org/wiki/Documenting</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en"
@@ -2626,8 +2575,7 @@ GO   gene ontology</obo:IAO_0000112>
     <owl:Class rdf:about="&obo;IAO_0000573">
         <rdfs:label xml:lang="en">line graph</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000038"/>
-        <obo:IAO_0000114 rdf:datatype="&xsd;anyURI"
-            >http://purl.obolibrary.org/obo/IAO_0000122</obo:IAO_0000114>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
             >A line graph is a type of graph created by connecting a series of data
 points together with a line.</obo:IAO_0000115>
