@@ -1059,7 +1059,7 @@ concretized and realized by an actor&quot; with alternative term  &quot;instruct
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000064"/>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI_0000199</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en"
-            >An algorithmy that takes, as input, some digital entity, and takes action driven by the information content of that algorithm</obo:IAO_0000115>
+            >An algorithm that takes, as input, some digital entity, and takes action driven by the information content of that algorithm</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en"
             >Do we care? Jennifer: Yes, there was a particular version of R that had a bug and it was fixed later. That would imply that we mean specific version of an interpreter. So an instance of this would be a particular version of the interpreter</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en"
