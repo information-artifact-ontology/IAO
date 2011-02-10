@@ -53,6 +53,8 @@ The ontology metadata file contains all the information required to use the IAO 
  # terms merged: An editor note should explain what were the merged terms and the reason for the merge.
  # term split: This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
  # placeholder removed: This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.
+ # term imported: This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.
+
 
 
     * *OBO foundry unique label*: An alternative name for a class or property which is unique across the OBO Foundry.
