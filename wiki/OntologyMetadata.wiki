@@ -64,7 +64,11 @@ The ontology metadata file contains all the information required to use the IAO 
 
 = Discussion = 
 
-See http://code.google.com/p/information-artifact-ontology/issues/detail?id=38
+See 
+
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=38 (closed)
+
+obo2owl conversion:
 
 http://code.google.com/p/information-artifact-ontology/issues/detail?id=90
 
