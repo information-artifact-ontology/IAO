@@ -65,6 +65,17 @@ The ontology metadata file contains all the information required to use the IAO 
 = Discussion = 
 
 See http://code.google.com/p/information-artifact-ontology/issues/detail?id=38
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=90
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=91
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=92
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=93
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=94
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=95
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=96
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=97
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=98
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=99
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=100
 
 = Activate label display in Protege 3 = 
 
