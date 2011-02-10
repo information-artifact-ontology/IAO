@@ -46,6 +46,15 @@ The ontology metadata file contains all the information required to use the IAO 
           o Cardinality: Each class can have one, or many curator notes
           o Implementation: annotation property 
 
+    * *obsolescence reason specification*:
+          o Each deprecated class has a single obsolescence reason
+          o The obsolescence reason of a class or property. The allowed values must come from this enumerated list of predefined terms: 
+ # failed exploratory term: The term was used used in an attempt to structure part of the ontology but in retrospect failed to do a good job
+ # terms merged: An editor note should explain what were the merged terms and the reason for the merge.
+ # term split: This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
+ # placeholder removed: This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.
+
+
     * *OBO foundry unique label*: An alternative name for a class or property which is unique across the OBO Foundry.
           o Implementation: The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools.
 
