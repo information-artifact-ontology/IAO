@@ -516,7 +516,19 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
             >WEB: http://www.graphpad.com/www/book/survive.htm</obo:IAO_0000119>
         <obo:IAO_0000111 xml:lang="en">obsolete_survival curve</obo:IAO_0000111>
     <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+    <!-- http://purl.obolibrary.org/obo/IAO_0000576 -->
+    
+
+
     </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000576">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_establishing a CRID registry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process with the objective to establish a system that allows to refer to specific entities of a certain kind and store information about them, by establishing a CRID registry and plan specifications for the process of 1) assigning a CRID and 2) looking up a CRID.</obo:IAO_0000115>
+        <obo:IAO_0000116>MC, 20101124: deprecated following discussion at IAO call 20101124. Term was deemed not necessary - no use case for now.</obo:IAO_0000116>
+        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+    </owl:Class>
+
 
 
 
