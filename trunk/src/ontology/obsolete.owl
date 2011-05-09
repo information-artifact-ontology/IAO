@@ -376,6 +376,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by 'textual entity table'. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
+<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000265</obo:IAO_0000119>
     <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
