@@ -2227,9 +2227,9 @@ points together with a line.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A new pubmed ID being created for a journal article, and the associated pubmed record containing information to the journal article. A license plate number registered at the DMV to be belonging to a specific vehicle and owner. Placing a barcode on a product and entering information in a database that this barcode is assigned.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117>Person:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </owl:Class>
     
@@ -2259,7 +2259,7 @@ points together with a line.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a CRID registry associates an information content entity with a CRID symbol</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </owl:Class>
     
@@ -2268,16 +2268,16 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000577">
-        <rdfs:label>CRID symbol</rdfs:label>
+        <rdfs:label xml:lang="en">CRID symbol</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
-        <obo:IAO_0000115>A symbol that is part_of a CRID and that is sufficient to look up a record from the CRID&#39;s registry.</obo:IAO_0000115>
-        <obo:IAO_0000119>Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <obo:IAO_0000117>PERSON: Bill Hogan</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000112>PMID:12345, 12345 in a database column which has header &quot;pubmedID&quot;</obo:IAO_0000112>
-        <obo:IAO_0000116>IAO call, 20101124: 12345 is not a CRID symbol. To be a CRID symbol you need to have some information about the registry within which the CRID is recorded.</obo:IAO_0000116>
-        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A symbol that is part_of a CRID and that is sufficient to look up a record from the CRID&#39;s registry.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">PMID:12345, 12345 in a database column which has header &quot;pubmedID&quot;</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">IAO call, 20101124: 12345 is not a CRID symbol. To be a CRID symbol you need to have some information about the registry within which the CRID is recorded.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -2285,7 +2285,7 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
-        <rdfs:label>CRID</rdfs:label>
+        <rdfs:label xml:lang="en">CRID</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2293,20 +2293,20 @@ points together with a line.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. </obo:IAO_0000115>
-        <obo:IAO_0000112>The following sentence contains a CRID: &quot;The article with Pubmed ID: 19918065&quot;. </obo:IAO_0000112>
-        <obo:IAO_0000117>PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000112>Entries in a Column of which the header is &quot;Pubmed ID&quot; </obo:IAO_0000112>
-        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000116>Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. </obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">The following sentence contains a CRID: &quot;The article with Pubmed ID: 19918065&quot;. </obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">Entries in a Column of which the header is &quot;Pubmed ID&quot; </obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
 </obo:IAO_0000116>
-        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000112>PMID:12345</obo:IAO_0000112>
-        <obo:IAO_0000112>The following URL: &quot;http://www.ncbi.nlm.nih.gov/pubmed/19918065&quot;</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">PMID:12345</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">The following URL: &quot;http://www.ncbi.nlm.nih.gov/pubmed/19918065&quot;</obo:IAO_0000112>
         <obo:IAO_0000118>Centrally Registered IDentifier</obo:IAO_0000118>
-        <obo:IAO_0000116>Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
-        <obo:IAO_0000117>PERSON: Bill Hogan</obo:IAO_0000117>
-        <obo:IAO_0000119>Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2314,15 +2314,15 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579">
-        <rdfs:label>CRID registry</rdfs:label>
+        <rdfs:label xml:lang="en">CRID registry</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000117>PERSON: Bill Hogan</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000119>Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
-        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000115>A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</obo:IAO_0000115>
-        <obo:IAO_0000116>IAO call, 20101124: PubMed registry is an instance of CRID registry</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">IAO call, 20101124: PubMed registry is an instance of CRID registry</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
     </owl:Class>
     
@@ -2331,7 +2331,7 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000580 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000580">
-        <rdfs:label>looking up a CRID</rdfs:label>
+        <rdfs:label xml:lang="en">looking up a CRID</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2345,152 +2345,17 @@ points together with a line.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000117>PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON: Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000115>A planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117>PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000471 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/PATO#PATO_0000122 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/PATO#PATO_0000125 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/UO#UO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/UO#UO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000002"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/UO#UO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000003"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
-
-    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1#Entity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1#Entity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Role"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process"/>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
-    
+       
 
 
     <!-- 
