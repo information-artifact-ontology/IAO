@@ -665,7 +665,6 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
         <obo:IAO_0000117 xml:lang="en">Person: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000116 xml:lang="en">manufactered items may have more than one model number, sometimes by rebranding, or because companies are sold and the products issued new model numbers</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">model number</obo:IAO_0000111>
-        <obo:IAO_0000115>A CRID symbol is a symbol part of a CRID. It represents the part that will be resolved by the CRID registry system to return the information associated with the CRID symbol.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:Class>
     
