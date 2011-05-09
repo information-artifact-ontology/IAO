@@ -428,7 +428,9 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     >OBI_0000001</obo:IAO_0000119>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: was report display element with definition: A report display element is a narrative object that is part of a report. Report display elements are set off from the textual parts of a report and are typically given a label(e.g. Figure 2) which is used to refer to the element from the text. Typically the 2d layout is part of the identity of such elements.</obo:IAO_0000116>
-    <obo:IAO_0000231 xml:lang="en">Replaced by textual entity and figure</obo:IAO_0000231>
+    <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Replaced by textual entity and figure</obo:IAO_0000116>
+<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     <obo:IAO_0000117 xml:lang="en">PERSON: Allyson Lister</obo:IAO_0000117>
     <obo:IAO_0000111 xml:lang="en">report element</obo:IAO_0000111>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
