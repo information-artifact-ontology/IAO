@@ -31,8 +31,9 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/externalDerived.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$Revision: 80 $</owl:versionInfo>
+	<owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-05-09/externalDerived.owl"/>
     </owl:Ontology>
     
 

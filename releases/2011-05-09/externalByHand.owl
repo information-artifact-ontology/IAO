@@ -29,12 +29,12 @@
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns="http://purl.obolibrary.org/obo/"
     xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
-  xml:base="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl">
+  xml:base="http://purl.obolibrary.org/obo/iao/externalByHand.owl">
   <owl:Ontology rdf:about="">
     <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >$Revision: 80 $</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-05-09/externalByHand.owl"/>
   </owl:Ontology>
-
   <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
     <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >has_specified_output</obo:IAO_0000111>
