@@ -18,11 +18,12 @@
     xmlns:obo="http://purl.obolibrary.org/obo/"
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-  xml:base="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl">
+  xml:base="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl">
   <owl:Ontology rdf:about="">
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
     <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+    <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-05-09/ontology-metadata.owl"/>
   </owl:Ontology>
   <rdfs:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">

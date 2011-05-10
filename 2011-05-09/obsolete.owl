@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
-     xml:base="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"
+     xml:base="http://purl.obolibrary.org/obo/iao/obsolete.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -12,8 +12,9 @@
             >obsolete classes from the information artifact ontology. see http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
+	<owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-05-09/obsolete.owl"/>
     <owl:imports>
-      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
+      <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/2011-05-09/ontology-metadata.owl"/>
     </owl:imports>
     </owl:Ontology>
     

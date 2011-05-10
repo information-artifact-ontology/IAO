@@ -28,10 +28,9 @@
     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
     xmlns="http://purl.obolibrary.org/obo/"
     xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
-  xml:base="http://purl.obolibrary.org/obo/iao/dev/external.owl">
+  xml:base="http://purl.obolibrary.org/obo/iao/external.owl">
   <owl:Ontology rdf:about="">
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >$Revision: 80 $</owl:versionInfo>
+    <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-05-09/external.owl"/>
   </owl:Ontology>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
     <rdfs:subClassOf>
