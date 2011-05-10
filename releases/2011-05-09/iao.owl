@@ -5,8 +5,8 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xml:base="http://purl.obolibrary.org/obo/iao/dev/iao.owl">
-  <owl:Ontology rdf:about="">
+  xml:base="http://purl.obolibrary.org/obo/">
+  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao.owl">
     <rdfs:seeAlso>
       <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/"/>
     </rdfs:seeAlso>
