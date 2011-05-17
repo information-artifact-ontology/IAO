@@ -58,35 +58,39 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&obo;iao/dev/obo2owlconversion.owl#index_with_narrower">
-        <rdfs:label xml:lang="en">index with narrower</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">Information artefact that links an ontology term to a term in language that, within some specified publication or discipline, has a narrower set of referents than the ontology term.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">narrow synonym</obo:IAO_0000118>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
-    </owl:AnnotationProperty>
-    <owl:Axiom>
-        <obo2owlconversion:in_context xml:lang="en">OBO community</obo2owlconversion:in_context>
-        <owl:annotatedTarget xml:lang="en">narrow synonym</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;iao/dev/obo2owlconversion.owl#index_with_narrower"/>
-    </owl:Axiom>
-    <owl:AnnotationProperty rdf:about="&obo;iao/dev/obo2owlconversion.owl#in_context">
-        <rdfs:label>in context</rdfs:label>
-        <obo:IAO_0000112>For example, the OBO community prefers the label &quot;broad synonym&quot; for the IAO:index with broader annotation property</obo:IAO_0000112>
-        <obo:IAO_0000115>an annotation property to be used on alternative terms to relate them to the community or context in which they are being used</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;iao/dev/obo2owlconversion.owl#index_with_broader">
-        <rdfs:label xml:lang="en">index with broader</rdfs:label>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001234">
+        <rdfs:label xml:lang="en">broad alternative label</rdfs:label>
         <obo:IAO_0000115>Information artefact that links an ontology term to a term in language that, within some specified publication or discipline, has a broader set of referents than the ontology term.</obo:IAO_0000115>
-        <obo:IAO_0000118>broad synonym</obo:IAO_0000118>
+        <obo:IAO_0000116 xml:lang="en">MC, 20110517: The label and preferred editor term will be updated at a later stage, before inclusion in the ontology-metadata.owl file.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">broad alternative label</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">broad synonym</obo:IAO_0001235>
+        <obo:IAO_0000112 xml:lang="en">burrow is a broad alternative label for rabbit hole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">skull is a broad alternative label for cranium</obo:IAO_0000112>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:AnnotationProperty>
-    <owl:Axiom>
-        <obo2owlconversion:in_context>OBO community</obo2owlconversion:in_context>
-        <owl:annotatedTarget>broad synonym</owl:annotatedTarget>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000118"/>
-        <owl:annotatedSource rdf:resource="&obo;iao/dev/obo2owlconversion.owl#index_with_broader"/>
-    </owl:Axiom>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001235">
+        <rdfs:label xml:lang="en">OBO community label</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">OBO community label</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000232 xml:lang="en">This annotation property has been created to replace the addition of the annotation axiom on the annotation property: we could have &quot;tagged&quot; the alternative label &quot;broad synonym&quot; with an annotation &quot;OBO community&quot;, but this mechanism was less desirable as there is currently no way to render an annotation property by the value of its annotation.</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">an annotation property assigning an OBO coommunity preferred alternative label to the term. In this context, the OBO community represents the set of editor relying on the OBO language for ontology development</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">the OBO community label is meant to be used during the OBO to OWL conversion and roundtrip, to translate for example the IAO annotation properties labels into their OBO format specific counterpart</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -102,5 +106,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.2.2.1789) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.2.1785) http://owlapi.sourceforge.net -->
 
