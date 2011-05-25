@@ -77,11 +77,9 @@
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0001237">
-        <rdfs:label xml:lang="en">index with narrower</rdfs:label>
+        <rdfs:label xml:lang="en">narrow alternative label</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has a slightly narrower meaning than this ontology term</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
-        <obo:IAO_0000111 xml:lang="en">index with narrower</obo:IAO_0000111>
-        <obo:IAO_0001235 xml:lang="en">narrow synonym</obo:IAO_0001235>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
@@ -89,12 +87,15 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">index with narrower</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">narrow synonym</obo:IAO_0001235>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0001238">
         <rdfs:label xml:lang="en">related alternative label</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has nearly the same meaning as this ontology term, but where the meaning is not simply broader or narrower.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
@@ -102,7 +103,6 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
         <obo:IAO_0000111 xml:lang="en">related alternative label</obo:IAO_0000111>
         <obo:IAO_0001235 xml:lang="en">related synonym</obo:IAO_0001235>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
@@ -124,6 +124,9 @@
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0001236">
+        <rdfs:label xml:lang="en">exact alternative label</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has exactly the same meaning as this ontology term.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
@@ -131,9 +134,6 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">exact alternative label</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has exactly the same meaning as this ontology term.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
         <obo:IAO_0000111 xml:lang="en">exact alternative label</obo:IAO_0000111>
         <obo:IAO_0001235 xml:lang="en">exact synonym</obo:IAO_0001235>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
