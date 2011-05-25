@@ -141,6 +141,13 @@
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0001239">
         <rdfs:label xml:lang="en">indexing term</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has exactly or nearly the same meaning as this ontology term.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
         <obo:IAO_0000111 xml:lang="en">indexing term</obo:IAO_0000111>
