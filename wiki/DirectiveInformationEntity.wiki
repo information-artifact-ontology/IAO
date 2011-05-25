@@ -1,0 +1,9 @@
+#summary A document aiming at explaining how directive information entity and its subclasses relate to plan and planned processes.
+
+= Introduction =
+
+See issue at http://code.google.com/p/information-artifact-ontology/issues/detail?id=112
+
+
+= Details =
+
