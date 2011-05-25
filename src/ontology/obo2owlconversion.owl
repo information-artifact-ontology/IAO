@@ -73,7 +73,7 @@
         <obo:IAO_0001235 xml:lang="en">broad synonym</obo:IAO_0001235>
         <obo:IAO_0000112 xml:lang="en">burrow is a broad alternative label for rabbit hole</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">skull is a broad alternative label for cranium</obo:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0001237">
@@ -89,7 +89,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">index with narrower</obo:IAO_0000111>
         <obo:IAO_0001235 xml:lang="en">narrow synonym</obo:IAO_0001235>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0001238">
@@ -105,7 +105,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">related alternative label</obo:IAO_0000111>
         <obo:IAO_0001235 xml:lang="en">related synonym</obo:IAO_0001235>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;IAO_0001235">
         <rdfs:label xml:lang="en">OBO community label</rdfs:label>
@@ -136,12 +136,19 @@
         <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">exact alternative label</obo:IAO_0000111>
         <obo:IAO_0001235 xml:lang="en">exact synonym</obo:IAO_0001235>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001239">
+        <rdfs:label xml:lang="en">indexing term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has exactly or nearly the same meaning as this ontology term.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
+        <obo:IAO_0000111 xml:lang="en">indexing term</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">synonym</obo:IAO_0001235>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
     </owl:AnnotationProperty>
     <rdf:Description rdf:about="&obo;IAO_0000118">
         <rdfs:comment xml:lang="en">MC, 20110525: I added synonym as an OBO community label for alternative term, because I think the intent is the same. This may (and probably will) change. This follows discussion available at http://code.google.com/p/information-artifact-ontology/issues/detail?id=103.  All participants should be added as editors if needed.</rdfs:comment>
-        <obo:IAO_0001235 xml:lang="en">synonym</obo:IAO_0001235>
     </rdf:Description>
     
 
