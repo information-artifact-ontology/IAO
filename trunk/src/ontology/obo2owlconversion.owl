@@ -23,8 +23,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;iao/dev/ontology-metadata.owl#"
-     xml:base="&obo;iao/dev/ontology-metadata.owl"
+<rdf:RDF xmlns="&obo;iao/"
+     xml:base="&obo;iao/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
