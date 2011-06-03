@@ -24,7 +24,6 @@
     >en</protege:defaultLanguage>
     <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
   </owl:Ontology>
-  <rdfs:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
     <rdfs:label xml:lang="en">data item</rdfs:label>
     <rdfs:subClassOf>
