@@ -110,11 +110,7 @@
             <rdfs:label xml:lang="en">term split</rdfs:label>
             <obo:IAO_0000116 xml:lang="en">This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
           </obo:IAO_0000225>
-          <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000230">
-            <obo:IAO_0000116 xml:lang="en">We expect to be able to mine these new reasons and add instances as required.</obo:IAO_0000116>
-            <obo:IAO_0000116 xml:lang="en">This is to be used if none of the existing instances cover the reason for obsolescence. An editor note should indicate this new reason.</obo:IAO_0000116>
-            <rdfs:label xml:lang="en">other</rdfs:label>
-          </obo:IAO_0000225>
+
           <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000226">
             <rdfs:label xml:lang="en">placeholder removed</rdfs:label>
           </obo:IAO_0000225>
@@ -366,7 +362,6 @@ Annotations: expand_assertion_to "DisjointClasses: (http://purl.obolibrary.org/o
       <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
       <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
       <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
-      <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000230"/>
     </owl:distinctMembers>
   </owl:AllDifferent>
   <owl:AllDifferent>

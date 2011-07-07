@@ -332,7 +332,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported.</obo:IAO_0000115>
     <obo:IAO_0000111 xml:lang="en">obsolete_imported from</obo:IAO_0000111>
-<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000230"/>
+<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
 <obo:IAO_0000116 xml:lang="en">Replaced by IAO_0000412</obo:IAO_0000116>
   </owl:AnnotationProperty>
 
@@ -532,7 +532,12 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
 
-
+          <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000230">
+            <obo:IAO_0000116 xml:lang="en">We expect to be able to mine these new reasons and add instances as required.</obo:IAO_0000116>
+            <obo:IAO_0000116 xml:lang="en">This is to be used if none of the existing instances cover the reason for obsolescence. An editor note should indicate this new reason.</obo:IAO_0000116>
+            <rdfs:label xml:lang="en">other</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+          </obo:IAO_0000225>
 
 
 </rdf:RDF>
