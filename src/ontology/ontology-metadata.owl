@@ -89,7 +89,7 @@
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000225">
     <obo:IAO_0000114>
       <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
-        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the definition editor.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
       </obo:IAO_0000078>
     </obo:IAO_0000114>
