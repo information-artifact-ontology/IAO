@@ -36,7 +36,7 @@
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label xml:lang="en"
-            >definition editor</rdfs:label>
+            >term editor</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
@@ -366,7 +366,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <rdfs:label xml:lang="en">definition source</rdfs:label>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
-    <rdfs:label xml:lang="en">definition editor</rdfs:label>
+    <rdfs:label xml:lang="en">term editor</rdfs:label>
   </owl:AnnotationProperty>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000097">
     <rdfs:subClassOf>
