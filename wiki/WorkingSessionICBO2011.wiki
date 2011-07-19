@@ -37,7 +37,8 @@ application) _Bill Hogan_
 
 = Attendees =
 (in no specific order)
-* Melanie Courtot
-* Alan Ruttenberg
-* Matthias Brochhausen
-* Bill Hogan
+
+ * Melanie Courtot
+ * Alan Ruttenberg
+ * Matthias Brochhausen
+ * Bill Hogan
