@@ -1,0 +1,43 @@
+Working session at ICBO 21011
+
+= Introduction =
+
+See announcement [http://ncorwiki.buffalo.edu/index.php/ICBO_Conference_Logistics here]
+
+
+= Agenda =
+
+# OBO to OLW conversion annotation properties
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=90 tracker 90], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=92 tracker 92], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=93 tracker 93], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=100  tracker 100], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=103  tracker 103], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=104 tracker 104], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=105  tracker 105], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=106 tracker 106], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=107  tracker 107], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=110 tracker 110], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=111 tracker 111].
+
+# textual entity/document/document part overlap
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=33 tracker 33], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=85 tracker 85], 
+ [http://code.google.com/p/information-artifact-ontology/issues/detail?id=42  tracker 42].
+
+# plan specification documentation
+[http://code.google.com/p/information-artifact-ontology/issues/detail?id=112 tracker 112] _Mathias Brochhausen_
+
+# Names, parts of names, and whether it's worth differentiating names on
+the basis of the type of entity the name refers to (person, physical
+location where mail is delivered, physical location where someone
+lives, building, software application, instance of software
+application) _Bill Hogan_
+
+
+= Attendees =
+(in no specific order)
+* Melanie Courtot
+* Alan Ruttenberg
+* Matthias Brochhausen
+* Bill Hogan
