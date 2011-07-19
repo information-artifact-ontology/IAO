@@ -7,7 +7,7 @@ See announcement [http://ncorwiki.buffalo.edu/index.php/ICBO_Conference_Logistic
 
 = Agenda =
 
-# OBO to OLW conversion annotation properties
+ # OBO to OLW conversion annotation properties
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=90 tracker 90], 
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=92 tracker 92], 
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=93 tracker 93], 
@@ -20,12 +20,12 @@ See announcement [http://ncorwiki.buffalo.edu/index.php/ICBO_Conference_Logistic
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=110 tracker 110], 
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=111 tracker 111].
 
-# textual entity/document/document part overlap
+ # textual entity/document/document part overlap
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=33 tracker 33], 
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=85 tracker 85], 
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=42  tracker 42].
 
-# plan specification documentation
+ # plan specification documentation
 [http://code.google.com/p/information-artifact-ontology/issues/detail?id=112 tracker 112] _Mathias Brochhausen_
 
 # Names, parts of names, and whether it's worth differentiating names on
