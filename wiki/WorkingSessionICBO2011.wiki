@@ -48,3 +48,4 @@ application) _Bill Hogan_
  * Bill Duncan
  * Bjoern Peters
  * James Malone
+ * Tomasz Adamusiak
