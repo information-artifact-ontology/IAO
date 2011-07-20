@@ -43,3 +43,6 @@ application) _Bill Hogan_
  * Matthias Brochhausen
  * Bill Hogan
  * Chris Mungall
+ * Bill Duncan
+ * Bjoern Peters
+ * James Malone
