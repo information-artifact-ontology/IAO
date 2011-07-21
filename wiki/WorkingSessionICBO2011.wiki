@@ -49,3 +49,4 @@ application) _Bill Hogan_
  * Bjoern Peters
  * James Malone
  * Tomasz Adamusiak
+ * Lawrence Hunter
