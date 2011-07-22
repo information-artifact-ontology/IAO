@@ -38,16 +38,20 @@ application) _Bill Hogan_
 
 
 = Attendees =
-(in no specific order)
-
- * Melanie Courtot
- * Alan Ruttenberg
- * Matthias Brochhausen
- * Bill Hogan
- * Chris Mungall
- * Bill Duncan
- * Bjoern Peters
- * James Malone
+(in alphabetical order)
  * Tomasz Adamusiak
+ * Matthias Brochhausen
+ * Melanie Courtot
+ * Bill Duncan
+ * Bill Hogan
  * Lawrence Hunter
+ * James Malone
+ * Chris Mungall
  * David Osumi-Sutherland
+ * Bjoern Peters
+ * Alan Ruttenberg
+
+
+
+
+
