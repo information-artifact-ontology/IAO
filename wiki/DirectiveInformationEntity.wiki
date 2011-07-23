@@ -39,11 +39,15 @@ In the following Bjoern's suggested relating to amendments of BFO to cover this 
 
 One option would be to make a slim extension of BFO that would be imported by both IAO and OBI that would have only a minimal set of classes and relations including
 
-* information content entity
+information content entity
+
     plan specification
+
     objective specification
-* plan
-* planned process
+
+plan
+
+planned process
 
 Alan had in the past been reluctant to do this because he still wanted flexibility to change definitions for ICE, but I think at this point it is time to bite that bullet." (Source: http://code.google.com/p/information-artifact-ontology/issues/detail?id=112)
 
