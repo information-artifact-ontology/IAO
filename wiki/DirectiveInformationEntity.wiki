@@ -20,8 +20,42 @@ Currently the definition of plan specification reads:
 In the discussion we reached agreement on the fact that maybe this definition is not formulated in an easy and straightforward manner. The definition entails many aspects of the definition of a concretization of a plan specification which might raise misunderstandings.
 Hitherto, no new formulation had been suggested or agreed upon. We should try to resolve this issue.
 
+
 === Differences between representation of "plan specification" in IAO and OBI ===
 
+One of the key issues that triggered the discussion was that the definition as given above states that the concretizations of a plan specification is realized *in a process in which the bearer* [of the concretization, not of the plan specification, since "information content entities" do not have bearers]*tries to achieve  the objectives.*
+
+This, obviously, was not true for plan specification which are concretized in qualities of e.g. a piece of paper (specific pattern of ink), since the piece of paper does nothing to achieve nay objectives. The example brought up by Mathias was "study design", which does not really seem to fit the definition of "plan specification" as is.
+
+Bjoern pointed out that this unclarity might arise from the fact that, unlike OBI, IOA does not have the realizable entity subclass "plan". The latter might be able to provide the distinction between concretizations of plans in agents or in carriers (paper, audio, etc.).
+
+This would probably solve the problem, even though the definition of "plan specification" might need amendment to spell that out more clearly.
+
+One thing that we need to take into account is that at the moment it seems unclear what a plan is about [at least it is to Mathias]. If a plan specification is about an plan we are going circular. We might want to discuss this. Mathias proposal towards the end of the discussion, although sub-optimal, tries to take this into account.
+
+In the following Bjoern's suggested relating to amendments of BFO to cover this issues is given full text. This ought to be discussed with BFO representatives:
+
+"One thing this discussion is pointing out is that the split between IAO and OBI is problematic. IAO was originally only going to deal with pure ICEs, and therefore was not going to take planned process, plan and such things, all of which were originally developed in OBI. 
+
+One option would be to make a slim extension of BFO that would be imported by both IAO and OBI that would have only a minimal set of classes and relations including
+
+* information content entity
+    plan specification
+    objective specification
+* plan
+* planned process
+
+Alan had in the past been reluctant to do this because he still wanted flexibility to change definitions for ICE, but I think at this point it is time to bite that bullet." [Source: http://code.google.com/p/information-artifact-ontology/issues/detail?id=112]
 
 
-=== Alternative representation (maybe obsolete) ===
+
+=== Open Issues ===
+
+a)Definition of "plan specification"
+
+b)Definition of "study design" and making it subtype to "plan specification"
+
+c) reconciliation of IAO, OBI and BFO (unified representation of the plan specification issue 
+
+
+
