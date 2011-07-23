@@ -55,8 +55,8 @@ Alan had in the past been reluctant to do this because he still wanted flexibili
 
 === Open Issues ===
 
-a)Definition of "plan specification"
+a) Definition of "plan specification"
 
-b)Definition of "study design" and making it subtype to "plan specification"
+b) Definition of "study design" and making it subtype to "plan specification"
 
 c) Reconciliation of IAO, OBI and BFO (unified representation of the plan specification issue 
