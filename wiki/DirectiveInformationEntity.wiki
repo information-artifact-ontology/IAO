@@ -14,7 +14,9 @@ In the following I will summarize the issues identified and the solutions propos
 === Wording of the textual definition of "plan specification" ===
 
 Currently the definition of plan specification reads:
+
 "a directive information entity that when concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified. Plan specifications includes parts such as objective specification, action specifications and conditional specifications."
+
 In the discussion we reached agreement on the fact that maybe this definition is not formulated in an easy and straightforward manner. The definition entails many aspects of the definition of a concretization of a plan specification which might raise misunderstandings.
 Hitherto, no new formulation had been suggested or agreed upon. We should try to resolve this issue.
 
