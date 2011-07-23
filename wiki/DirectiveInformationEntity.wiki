@@ -55,4 +55,4 @@ a)Definition of "plan specification"
 
 b)Definition of "study design" and making it subtype to "plan specification"
 
-c) reconciliation of IAO, OBI and BFO (unified representation of the plan specification issue 
+c) Reconciliation of IAO, OBI and BFO (unified representation of the plan specification issue 
