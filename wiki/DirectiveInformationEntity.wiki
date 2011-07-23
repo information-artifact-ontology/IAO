@@ -7,3 +7,12 @@ See issue at http://code.google.com/p/information-artifact-ontology/issues/detai
 
 = Details =
 
+In the following I will summarize the issues identified and the solutions proposed during the discussion. If you want to review the entire discussion please refer to the link above.
+
+== Issues ==
+
+=== Wording of the textual definition of "plan specification" ===
+
+=== Differences between representation of "plan specification" in IAO and OBI ===
+
+=== Alternative representation (maybe obsolete) ===
