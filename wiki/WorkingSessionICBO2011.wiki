@@ -28,7 +28,7 @@ See announcement [http://ncorwiki.buffalo.edu/index.php/ICBO_Conference_Logistic
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=42  tracker 42].
 
  * plan specification documentation
-[http://code.google.com/p/information-artifact-ontology/issues/detail?id=112 tracker 112] _Mathias Brochhausen_
+[http://code.google.com/p/information-artifact-ontology/issues/detail?id=112 tracker 112] _Mathias Brochhausen_<br>
 see this [http://code.google.com/p/information-artifact-ontology/wiki/DirectiveInformationEntity wiki page]
 
  * Names, parts of names, and whether it's worth differentiating names on
@@ -52,4 +52,3 @@ application) _Bill Hogan_
  * Bjoern Peters
  * Alan Ruttenberg
  * Barry Smith
-
