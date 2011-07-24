@@ -50,8 +50,7 @@ application) _Bill Hogan_
  * David Osumi-Sutherland
  * Bjoern Peters
  * Alan Ruttenberg
-
-
+ * Barry Smith
 
 
 
