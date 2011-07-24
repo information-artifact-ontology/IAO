@@ -9,7 +9,7 @@ See announcement [http://ncorwiki.buffalo.edu/index.php/ICBO_Conference_Logistic
 
 = Agenda =
 
- * OBO to OLW conversion annotation properties
+ * OBO to OWL conversion annotation properties
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=90 tracker 90], 
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=92 tracker 92], 
  [http://code.google.com/p/information-artifact-ontology/issues/detail?id=93 tracker 93], 
@@ -52,3 +52,4 @@ application) _Bill Hogan_
  * Bjoern Peters
  * Alan Ruttenberg
  * Barry Smith
+ * Jie Zheng
