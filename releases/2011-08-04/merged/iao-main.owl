@@ -27,7 +27,7 @@
 
 
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
-     xml:base="http://purl.obolibrary.org/obo/
+     xml:base="http://purl.obolibrary.org/obo/"
      xmlns:PATO="http://purl.org/obo/owl/PATO#"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
