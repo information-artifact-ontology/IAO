@@ -21,6 +21,7 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl">
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+    <owl:versionIRI xml:lang="en">http://purl.obolibrary.org/obo/iao/2010-10-26/ontology-metadata.owl</owl:versionIRI>
     </owl:Ontology>
     
 
