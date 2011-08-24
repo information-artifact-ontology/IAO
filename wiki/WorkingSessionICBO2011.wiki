@@ -37,6 +37,34 @@ location where mail is delivered, physical location where someone
 lives, building, software application, instance of software
 application) _Bill Hogan_
 
+= Minutes = 
+
+1. question of what is an IAO release
+	- addition of curation statuses + announce of deprecation + sent around for review IAO-core
+
+2. plan specification 
+Every plan is a concretization of its plan specification
+A plan can form the basis of an intentional action
+
+Many protocols are plan specification that never become plan. 
+example: any grant XX writes -> he never intends on doing what he says
+
+
+DIE (directive information entity)
+	is_about plan : not sufficient: many entities are about plan but are not DIE e.g., "this plan is in the corner of the room"
+
+model: clinical study design written down somewhere (MB). Study design is subtype of plan specification which needs to be concretized but will never happen on piece of paper
+
+=> proposal: has to be concretized as plan or sthg else.  Only plan specification (no other information artifact) can be concretized as a plan
+import plan from OBI
+
+3. OBO2OWL annotation properties
+
+=> mapping problem with IAO, large community of OBO users
+
+Barry: will define what is a synonym in an ontology
+
+
 
 = Attendees =
 (in alphabetical order)
