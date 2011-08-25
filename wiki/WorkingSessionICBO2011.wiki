@@ -65,7 +65,56 @@ import plan from OBI
 
 Barry: will define what is a synonym in an ontology
 
+== Mapping OBO 'synonyms' to IAO (Notes by David OS) ==
 
+Discussion of these started in the meeting but continued among a smaller group afterwards.
+
+In discussion after the session 'approximate synonym' seemed to have general agreement as the label to use (although we'll see if that holds...).  I think that means we keep synonym for cases of exactly the same meaning. I'm sure others will yell if they disagree.
+
+ The agreement on definitions was, I believe, pretty close to the more formal definitions I suggested before the meeting (e.g.- here). The main issue we discussed was defining what counts as broader or narrower referents.  This makes sense for things with spatial and temporal boundaries.  Perhaps not for things that without them.  I've had a go at taking this into account here.
+
+* Note - I've started all the defs here with 'A word or phrase that...' Barry suggested: "A noun or noun phrase that..."  I'd be happy to go with that if others are.
+
+=>
+
+name: synonym
+def: "A word or phrase that*, within some paper of community, has exactly the same set of referents as this ontology term."
+maps to OBO:synonym + scope 'EXACT'
+
+name: approximate synonym^
+def: "A word or phrase that*, within some paper or community, has nearly the same set of referents as this ontology term, or has a set of referents whose members are very similar to the referents of this ontology term."
+comment: Examples of very similar referents: 2 anatomical structures with minor differences in their boundaries; 2 occurrents with minor differences in their temporal boundaries.  Two nearly indistinguishable shades of off-white (?)
+maps to OBO:synonym + scope 'RELATED'
+
+name: broad approximate synonym
+def: "A word or phrase that*, within some paper or community, has a slightly broader set of referents than this ontology term, or has a set of referents whose members have slightly broader spatial or temporal boundaries to the referents of this ontology term."
+comment: Note, as independent continuants do not have spatial or temporal boundaries, use approximate synonym instead for these cases.
+SubAnnotationPropertyOf: approximate synonym
+maps to OBO:synonym + scope 'broad'
+
+name: narrow approximate synonym
+def: "A word or phrase that*, within some paper or community has a slightly broader set of referents than this ontology term, or has a set of referents whose members have slightly narrower spatial or temporal boundaries to the referents of this ontology term."
+comment: Note, as independent continuants do not have spatial or temporal boundaries, use approximate synonym instead for these cases.
+SubAnnotationPropertyOf: approximate synonym
+maps to OBO:synonym + scope 'broad'
+
+
+For the record, here are various suggested labels shouted out during the session. [Square bracket contain my comments]
+
+search term [carries no connotation of closeness of meaning]
+entry term [may be good precedent for this from its use in libraries]
+closely related term
+interface term [perhaps misleading - given the various uses of OBO 'synonyms']
+ontologically similar to  [Don't like this as it confuses language and ontology]
+close match/exact match
+alias [Sounds like (exact) synonym to me]
+
+[General note, I'm not keen on 'term' as it is used so much in the ontology world to refer to the human-readable identifiers of classes in ontologies.  I want to keep a distinction between these and words in language.]
+
+
+
+
+                     
 
 = Attendees =
 (in alphabetical order)
