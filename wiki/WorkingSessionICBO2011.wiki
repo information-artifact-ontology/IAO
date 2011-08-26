@@ -41,6 +41,7 @@ application) _Bill Hogan_
 
 *1. question of what is an IAO release*
 	- addition of curation statuses + announce of deprecation + sent around for review IAO-core
+        - 'joint core release' would show how 'plan specification' would work with 'plan' and 'planned process', something that was raised by Matthias to be confusing right now. When we mentioned that part of the confusion was due to parts being in OBI and parts in IAO, Alan suggested (and there was no disagreement), that we should be working on a 'core release' that merges the things in OBI and IAO that build on each other. Bjoern will put together a minimal list of terms to that effect.
 
 *2. plan specification* 
 
