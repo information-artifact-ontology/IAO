@@ -62,42 +62,11 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
         <rdfs:label xml:lang="en">in branch</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000598">
-        <rdfs:label>has ID policy for</rdfs:label>
-        <obo:IAO_0000115>Relating an ontology used to record id policy to the ontology namespace whose policy it manages</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
-  Annotations: 
-     &#39;has ID prefix&#39;: &quot;http://purl.obolibrary.org/obo/RO_&quot;
-     &#39;has ID digit count&#39; : 7,
-     rdfs:label &quot;RO id policy&quot;
-     &#39;has ID policy for&#39;: &quot;RO&quot;</obo:IAO_0000112>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/IAO_0000599">
-        <rdfs:label xml:lang="en">has ID prefix</rdfs:label>
-        <obo:IAO_0000115>Relates an ontology used to record id policy to a prefix concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits) to construct an ID for a term being created.</obo:IAO_0000115>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
-  Annotations: 
-     &#39;has ID prefix&#39;: &quot;http://purl.obolibrary.org/obo/RO_&quot;
-     &#39;has ID digit count&#39; : 7,
-     rdfs:label &quot;RO id policy&quot;
-     &#39;has ID policy for&#39;: &quot;RO&quot;</obo:IAO_0000112>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000597">
-        <rdfs:label xml:lang="en">has ID range allocated to</rdfs:label>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000112>Datatype: idrange:1
-Annotations: &#39;has ID range allocated to&#39;: &quot;Chris Mungall&quot;
-EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
-</obo:IAO_0000112>
-        <obo:IAO_0000115>Relates a datatype that encodes a range of integers to the name of the person or organization who can use those ids constructed in that range to define new terms</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label xml:lang="en">definition source</rdfs:label>
@@ -113,20 +82,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000596">
-        <rdfs:label xml:lang="en">has ID digit count</rdfs:label>
-        <obo:IAO_0000112>Ontology: &lt;http://purl.obolibrary.org/obo/ro/idrange/&gt;
-  Annotations: 
-     &#39;has ID prefix&#39;: &quot;http://purl.obolibrary.org/obo/RO_&quot;
-     &#39;has ID digit count&#39; : 7,
-     rdfs:label &quot;RO id policy&quot;
-     &#39;has ID policy for&#39;: &quot;RO&quot;</obo:IAO_0000112>
-        <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000115>Relates an ontology used to record id policy to the number of digits in the URI. The URI is: the &#39;has ID prefix&quot; annotation property value concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits)</obo:IAO_0000115>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
-        <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
     
 
