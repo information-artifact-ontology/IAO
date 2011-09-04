@@ -66,6 +66,8 @@ import plan from OBI
 
 Barry: will define what is a synonym in an ontology
 
+BS: First steps: To define a synonym we need to define what it is for one term to be similar in meaning to another term. Approaches: 1. postulate meanings (in IAO?) and define a similarity relation. 2. conceive meaning in terms of the context of a term in a wider system of terms (for example corresponding to a specific discipline, and define similarity in relation to these contexts and systems). 
+
 
 = Attendees =
 (in alphabetical order)
