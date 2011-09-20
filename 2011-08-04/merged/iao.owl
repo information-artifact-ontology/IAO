@@ -12,7 +12,7 @@
       <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/"/>
     </rdfs:seeAlso>
     <owl:versionInfo xml:lang="en">2011-08-04</owl:versionInfo>
-    <owl:versionIRI xml:lang="en">http://purl.obolibrary.org/obo/iao/2011-08-04/iao.owl</owl:versionIRI>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-08-04/iao.owl"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This file is based on checkout of our SVN repository revision $Revision: 506 $</rdfs:comment>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
