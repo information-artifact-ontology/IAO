@@ -22,7 +22,7 @@
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >en</protege:defaultLanguage>
     <owl:versionInfo xml:lang="en">2011-08-04</owl:versionInfo>
-    <owl:versionIRI xml:lang="en">http://purl.obolibrary.org/obo/iao/2011-08-04/ontology-metadata.owl</owl:versionIRI>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-08-04/ontology-metadata.owl"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This file is based on checkout of our SVN repository revision $Revision: 506 $</rdfs:comment>
   </owl:Ontology>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
