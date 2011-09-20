@@ -12,7 +12,7 @@
             >obsolete classes from the information artifact ontology. see http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
     <owl:versionInfo xml:lang="en">2009-11-06</owl:versionInfo>
-    <owl:versionIRI xml:lang="en">http://purl.obolibrary.org/obo/iao/2009-11-06/obsolete.owl</owl:versionIRI>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2009-11-06/obsolete.owl"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This file is based on checkout of our SVN repository revision $Revision: 2489 $</rdfs:comment>
     </owl:Ontology>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
