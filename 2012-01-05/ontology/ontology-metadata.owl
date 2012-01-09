@@ -381,7 +381,7 @@ Annotations: expand_assertion_to "DisjointClasses: (http://purl.obolibrary.org/o
     <rdfs:label xml:lang="en">expand expression to</rdfs:label>
     <obo:IAO_0000112 xml:lang="en">ObjectProperty: RO_0002104
 Label: has plasma membrane part
-Annotations: IAO_0000424 "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)"
+Annotations: IAO_0000424 "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)"
 </obo:IAO_0000112>
     <obo:IAO_0000115 xml:lang="en">A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones</obo:IAO_0000115>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"

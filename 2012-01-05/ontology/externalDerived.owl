@@ -1,36 +1,26 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl#"
      xml:base="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl"
-     xmlns:envo="http://purl.org/obo/owl/ENVO#"
-     xmlns:UO="http://purl.org/obo/owl/UO#"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:pro="http://purl.org/obo/owl/PRO#"
-     xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:caro="http://purl.org/obo/owl/CARO#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:ncbitax="http://purl.org/obo/owl/NCBITaxon#"
-     xmlns:so="http://purl.org/obo/owl/SO#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rotoo="http://purl.org/obo/owl/ro#"
-     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
-     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
-     xmlns:obi="http://purl.obolibrary.org/obo/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
-     xmlns:cell="http://purl.org/obo/owl/CL#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:rotoo="http://purl.org/obo/owl/ro#"
+     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
      xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
-     xmlns:pato="http://purl.org/obo/owl/PATO#"
-     xmlns:go="http://purl.org/obo/owl/GO#"
-     xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
-     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$Revision: 80 $</owl:versionInfo>
     </owl:Ontology>
@@ -95,8 +85,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
         <rdfs:label xml:lang="en">planned process</rdfs:label>
-        <obi:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obi:IAO_0000115>
-        <obi:IAO_0000111 xml:lang="en">planned process</obi:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
     </owl:Class>
     
 
@@ -105,8 +95,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
         <rdfs:label xml:lang="en">investigation</rdfs:label>
-        <obi:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obi:IAO_0000115>
-        <obi:IAO_0000111 xml:lang="en">investigation</obi:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">investigation</obo:IAO_0000111>
     </owl:Class>
     
 
@@ -115,8 +105,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</rdfs:label>
-        <obi:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that realizes the concretization of a study design</obi:IAO_0000115>
-        <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</obi:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that realizes the concretization of a study design</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</obo:IAO_0000111>
     </owl:Class>
     
 
@@ -125,55 +115,55 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
         <rdfs:label xml:lang="en">study design</rdfs:label>
-        <obi:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study design is a plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obi:IAO_0000115>
-        <obi:IAO_0000111 xml:lang="en">study design</obi:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study design is a plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/PATO#PATO_0000122 -->
+    <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length</rdfs:label>
-        <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length</obi:IAO_0000111>
-        <obi:IAO_0000115 xml:lang="en">A 1-D extent quality which is equal to the distance between two points.</obi:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A 1-D extent quality which is equal to the distance between two points.</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/PATO#PATO_0000125 -->
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass</rdfs:label>
-        <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass</obi:IAO_0000111>
-        <obi:IAO_0000115 xml:lang="en">A physical quality that inheres in a bearer by virtue of the proportion of the bearer&#39;s amount of matter.</obi:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A physical quality that inheres in a bearer by virtue of the proportion of the bearer&#39;s amount of matter.</obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/UO#UO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length unit</rdfs:label>
-        <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length unit</obi:IAO_0000111>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length unit</obo:IAO_0000111>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/UO#UO_0000002 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass unit</rdfs:label>
-        <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass unit</obi:IAO_0000111>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass unit</obo:IAO_0000111>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/UO#UO_0000003 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time unit</rdfs:label>
-        <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time unit</obi:IAO_0000111>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time unit</obo:IAO_0000111>
     </owl:Class>
 </rdf:RDF>
 
