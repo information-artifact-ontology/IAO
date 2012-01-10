@@ -1,12 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl#"
      xml:base="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl"
-     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:rotoo="http://purl.org/obo/owl/ro#"
-     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
-     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
-     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
      xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:dcterms="http://purl.org/dc/terms/"

@@ -1,11 +1,5 @@
 <?xml version="1.0"?>
 <rdf:RDF
-    xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
-    xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
-    xmlns:robfo="http://purl.obolibrary.org/obo/ro_bfo_bridge/1.1#"
-    xmlns:rotoo="http://purl.obolibrary.org/obo/ro#"
-    xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:dcterms="http://purl.org/dc/terms/"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -50,18 +44,18 @@
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
     <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
     <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/UO"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
-    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/PATO"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
-    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
     <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/PATO"/>
   </owl:Class>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
