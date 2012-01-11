@@ -25,7 +25,7 @@
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/UO"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
@@ -39,7 +39,7 @@
     <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/UO"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -47,16 +47,16 @@
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/UO"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/PATO"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
   </owl:Class>
   <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
     <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/PATO"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
   </owl:Class>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
     <rdfs:label xml:lang="en">has curation status</rdfs:label>
