@@ -29,8 +29,8 @@ http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion	http://purl.obolibrary.
 http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion	http://purl.obolibrary.org/obo/BFO_0000026
 http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion	http://purl.obolibrary.org/obo/BFO_0000009
 http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion	http://purl.obolibrary.org/obo/BFO_0000028
-http://purl.obolibrary.org/obo/OBI_0000294	http://purl.obolibrary.org/obo/BFO_0000058
-http://purl.obolibrary.org/obo/OBI_0000297	http://purl.obolibrary.org/obo/BFO_0000059
+http://purl.obolibrary.org/obo/OBI_0000294	http://purl.obolibrary.org/obo/BFO_0000059
+http://purl.obolibrary.org/obo/OBI_0000297	http://purl.obolibrary.org/obo/BFO_0000058
 http://purl.obolibrary.org/obo/OBI_0000300	http://purl.obolibrary.org/obo/BFO_0000054
 http://purl.obolibrary.org/obo/OBI_0000308 	http://purl.obolibrary.org/obo/BFO_0000055
 
