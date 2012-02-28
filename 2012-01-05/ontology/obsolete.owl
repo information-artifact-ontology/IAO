@@ -56,8 +56,8 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000222 -->
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000222">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_describes</rdfs:label>
-  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
+  		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
+		<obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:ObjectProperty>
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000008 -->
@@ -65,7 +65,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000008">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >obsolete_artifact</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:Class>
     
@@ -75,7 +75,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000223">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_represents</rdfs:label>
-  <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
 <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
     </owl:ObjectProperty>
 
@@ -84,7 +84,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000012">
         <rdfs:label xml:lang="en"
             >obsolete2_digital entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000261</obo:IAO_0000119>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
@@ -107,7 +107,7 @@ Superclass was &#39;digitial quality&#39;</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000018">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >obsolete_material_entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
     </owl:Class>
     
@@ -118,7 +118,7 @@ Superclass was &#39;digitial quality&#39;</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000019">
         <rdfs:label xml:lang="en"
             >obsolete2_binary digital entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000244</obo:IAO_0000119>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
@@ -141,7 +141,7 @@ Superclass was &#39;digital entity&#39;</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000047">
         <rdfs:label xml:lang="en"
             >obsolete2_text based digital entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000132</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group:OBI</obo:IAO_0000119>
         <obo:IAO_0000116 xml:lang="en"
@@ -164,7 +164,7 @@ superclass was &#39;digital document&#39;</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000093">
         <rdfs:label xml:lang="en"
             >obsolete2_binary executable</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000222</obo:IAO_0000119>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
@@ -186,7 +186,7 @@ superclass was &#39;digital entity&#39;</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000105">
         <rdfs:label xml:lang="en"
             >obsolete2_digital document</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBI_0000195</obo:IAO_0000119>
         <obo:IAO_0000116 xml:lang="en"
             >3/22/2009 Alan Ruttenberg, obsoleted per http://groups.google.com/group/information-ontology/browse_thread/thread/789ad4b7708d5cf4
@@ -208,7 +208,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000141">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >obsolete_digital quality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Need to rework digital entity. Digital quality was suggested by Barry.</obo:IAO_0000116>
         <obo:IAO_0000116
@@ -222,7 +222,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000024">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_unit of measure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
@@ -234,9 +234,9 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     </owl:Class>
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+    <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
 
-    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
     
 
 
@@ -317,7 +317,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000115 xml:lang="en">A report figure is a report display element that has some aspect of illustration, but may be a composite of figures, images, and other elements</obo:IAO_0000115>
     <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
     <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >OBI_0000027</obo:IAO_0000119>
 <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
@@ -360,7 +360,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
   </owl:AnnotationProperty>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000097">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
     </rdfs:subClassOf>
     <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
@@ -389,7 +389,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     <obo:IAO_0000111 xml:lang="en">obsolete_study interpretation</obo:IAO_0000111>
     <obo:IAO_0000116 xml:lang="en">The obsoleting of narrative object required a modest change in the definition of this term.  Circularity with "interpretation... interprets" has been removed, using "about the implications" instead.</obo:IAO_0000116>
     <obo:IAO_0000117 xml:lang="en">Lawrence Hunter</obo:IAO_0000117>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     <rdfs:label xml:lang="en">obsolete_study interpretation</rdfs:label>
     <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -408,7 +408,7 @@ superclass was &#39;digial entity&#39;</obo:IAO_0000116>
     >_identifier is a container under information content entity for collecting types of terms to indicate a specific instance or clas of what was used or participated in an investigation. Identifiers are borne by a product or its packaging, and can be encoded in a variety of other information objects, such as bar codes, numerals, or patterns of dots.
 
 Note: everybody agreed that identifier is probably a too general term. We however felt that it would be appropriate to group "identifiying" terms under some kind of umbrella. We therefore propose to use _identifier for that purpose. As per OBI conventions, the _ prefixing identifier indicates that this is a helper class and shouldn't be considered as final.</obo:IAO_0000116>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >obsolete_identifier</rdfs:label>
@@ -431,7 +431,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     >PERSON: Melanie Courtot</obo:IAO_0000117>
     <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >2009-03-16: work has been done on this term during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
-    <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
     <obo:IAO_0000116 xml:lang="en">There will be some issue here about whether these are defined classes. As intended these are meant to denote the parts of the report that are not textual but are typically boxed and set within the text, labelled with some identifier, and referred to in the text</obo:IAO_0000116>
     <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
     <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -445,7 +445,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
     >see http://code.google.com/p/information-artifact-ontology/issues/detail?id=25&amp;q=denote</obo:IAO_0000116>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >obsolete_materially denotes</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000135">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -463,7 +463,7 @@ Here the ink + paper is the independent continuant and the carrier is the patter
 c = pattern in the ink
 b = paper + ink
 r = friend</obo:IAO_0000112>
-    <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedProperty"/>
     <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >c specifically denotes r =def 
 r is a portion of reality
@@ -494,7 +494,7 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000182">
         <rdfs:label xml:lang="en">obsolete_survival curve</rdfs:label>
            <rdfs:subClassOf>
-      <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
     </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en"
@@ -516,7 +516,7 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
     </owl:Class>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000576">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_establishing a CRID registry</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process with the objective to establish a system that allows to refer to specific entities of a certain kind and store information about them, by establishing a CRID registry and plan specifications for the process of 1) assigning a CRID and 2) looking up a CRID.</obo:IAO_0000115>
         <obo:IAO_0000116>MC, 20101124: deprecated following discussion at IAO call 20101124. Term was deemed not necessary - no use case for now.</obo:IAO_0000116>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
