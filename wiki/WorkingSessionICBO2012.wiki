@@ -4,6 +4,8 @@
 
 A working session on IAO is organized on Saturday July 21st, 6-8pm during the ICBO conference. 
 
+This event is targeted at members of the IAO developers group. While everybody will be welcome to attend, there won’t be any general presentation of the IAO, and attendees are expected to be very familiar with the IAO. Agenda will be limited to those items above that have been approved for discussion by the community of developers. If you are planning to attend, please help us plan by adding your name to the attendee list below. Add any topic you want to see discussed to the agenda, specifying your name as proposer (e.g. "topic X, proposed by Y)
+
 See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworkingsession.htm here]
 
 
@@ -14,6 +16,7 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
 
 
 = Attendees =
+
 (in alphabetical order)
  * Matthias Brochhausen
  * Melanie Courtot
