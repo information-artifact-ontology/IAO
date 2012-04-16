@@ -23,4 +23,5 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
  * Gwen Frishkoff
  * Lawrence Hunter
  * Alan Ruttenberg
+ * Chris Stoeckert
  * Jie Zheng
