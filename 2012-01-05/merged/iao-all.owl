@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl#"
-     xml:base="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/iao-all.owl#"
+     xml:base="http://purl.obolibrary.org/obo/iao/dev/iao-all.owl"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:iao="http://purl.obolibrary.org/obo/iao/"
@@ -15,7 +15,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/iao-all.owl">
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
