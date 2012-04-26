@@ -11,6 +11,8 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
 
 = Agenda =
 
+ICE and parts: In a CTSA meeting regarding ontologies the question was brought up whether an instance of a plan specification that has_part an instance of an objectives specification, once the objective specification changes this PS stays the same. Analogy to ICs suggest it does, but participants expressed interest in further discussion.
+
 
 = Minutes = 
 
