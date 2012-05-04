@@ -21,6 +21,7 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
 = Attendees =
 
 (in alphabetical order)
+ * Mauricio Almeida
  * Mathias Brochhausen
  * Melanie Courtot
  * Gwen Frishkoff
