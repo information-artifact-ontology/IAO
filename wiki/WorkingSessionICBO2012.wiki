@@ -13,6 +13,7 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
 
   * *ICE and parts:* In a CTSA meeting regarding ontologies the question was brought up whether an instance of a plan specification that has_part an instance of an objectives specification, once the objective specification changes this PS stays the same. Analogy to ICs suggest it does, but participants expressed interest in further discussion (proposed by Mathias).
 
+* *IAO Top Nodes Working Group:* I want to propose and discuss starting a small group of IAO developers who are interested and have time at their hands to work on optimizing the upper level of IAO (not BFO, of course, but the classes immediately below 'information content entity' and come up with a consistent hierarchy and consistent definitions. In the past we had worked on single examples of inconsistency (e.g. data item and measurement datum), but I feel it would be beneficial to loo at the big picture and get things in line. My proposal is that the working group works on providing a proposal at ICBO 2013 to the IAO community. Meanwhile there will be progress reports on the mailing list to encourage discussion. (Proposed by Mathias)
 
 = Minutes = 
 
