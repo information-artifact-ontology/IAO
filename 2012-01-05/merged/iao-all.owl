@@ -21,7 +21,7 @@
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2010-05-25/ruttenberg-bfo2.owl"/>
     </owl:Ontology>
     
 
