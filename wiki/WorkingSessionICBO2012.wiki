@@ -31,4 +31,3 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
  * Alan Ruttenberg
  * Chris Stoeckert
  * Jie Zheng
- * Mauricio Almeida
