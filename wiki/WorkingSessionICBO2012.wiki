@@ -25,6 +25,7 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
  * André Q. Andrade.
  * Mathias Brochhausen
  * Melanie Courtot
+ * Randall Dipert
  * Gwen Frishkoff
  * Lawrence Hunter
  * Alan Ruttenberg
