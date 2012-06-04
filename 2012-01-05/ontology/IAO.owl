@@ -19,7 +19,7 @@
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/external.owl"/>
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2010-05-25/ruttenberg-bfo2.owl"/>
     <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
   </owl:Ontology>
