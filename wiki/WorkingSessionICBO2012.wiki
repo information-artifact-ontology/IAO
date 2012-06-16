@@ -30,6 +30,6 @@ If you want to attend dinner please mention so next to your name. Note that this
  * Gwen Frishkoff
  * Lawrence Hunter
  * Alan Ruttenberg
- * Chris Stoeckert
  * Barry Smith
+ * Chris Stoeckert
  * Jie Zheng
