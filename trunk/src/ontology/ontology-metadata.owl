@@ -317,6 +317,20 @@ Annotations: expand_assertion_to "DisjointClasses: (http://purl.obolibrary.org/o
     <obo:IAO_0000111 xml:lang="en">elucidation</obo:IAO_0000111>
     <obo:IAO_0000600 xml:lang="en">Primitive terms in a highest-level ontology such as BFO are terms which are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms</obo:IAO_0000600>
   </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+    <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+    <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+    <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000111 xml:lang="en">has associated axiom(nl)</obo:IAO_0000111>
+    <obo:IAO_0000600 xml:lang="en">An axiom associated with a term expressed using natural language</obo:IAO_0000600>
+  </owl:AnnotationProperty>
+   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+    <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+    <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+    <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000111 xml:lang="en">has associated axiom(fol)</obo:IAO_0000111>
+    <obo:IAO_0000600 xml:lang="en">An axiom expressed in first order logic using CLIF syntax</obo:IAO_0000600>
+  </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
     <rdfs:label xml:lang="en">definition</rdfs:label>
