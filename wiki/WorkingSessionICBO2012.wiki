@@ -31,5 +31,5 @@ If you want to attend dinner please mention so next to your name. Note that this
  * Lawrence Hunter
  * Alan Ruttenberg
  * Barry Smith
- * Chris Stoeckert
+ * Chris Stoeckert (dinner)
  * Jie Zheng
