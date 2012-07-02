@@ -5,6 +5,8 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+   xmlns:obo="http://purl.obolibrary.org/obo/"
+   xmlns="http://purl.obolibrary.org/obo/"
   xml:base="http://purl.obolibrary.org/obo/iao/dev/iao.owl">
   <owl:Ontology rdf:about="">
     <rdfs:seeAlso>
@@ -13,6 +15,8 @@
     <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"/>
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl"/>
@@ -23,6 +27,13 @@
     <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
     <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-  </owl:Ontology>
+ </owl:Ontology>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/pno.owl">
+      <obo:IAO_0000603 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0020000-IAO_0020999</obo:IAO_0000603>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/d_acts.owl">
+      <obo:IAO_0000603 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000603>
+    </rdf:Description> 
+  <owl:AnnotationProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000603"/>
 </rdf:RDF>
 
