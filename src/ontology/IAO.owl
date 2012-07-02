@@ -27,13 +27,15 @@
     <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
     <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
  </owl:Ontology>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/pno.owl">
+  <owl:AnnotationProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000603"/>    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/pno.owl">
       <obo:IAO_0000603 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0020000-IAO_0020999</obo:IAO_0000603>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/d_acts.owl">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl">
       <obo:IAO_0000603 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO_0021000-IAO_0021999</obo:IAO_0000603>
     </rdf:Description> 
-  <owl:AnnotationProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000603"/>
+
 </rdf:RDF>
 
