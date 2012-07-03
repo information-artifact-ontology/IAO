@@ -15,7 +15,7 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
 
   * *IAO Top Nodes Working Group:* I want to propose and discuss starting a small group of IAO developers who are interested and have time at their hands to work on optimizing the upper level of IAO (not BFO, of course, but the classes immediately below 'information content entity') and come up with a consistent hierarchy and consistent definitions. In the past we had worked on single examples of inconsistency (e.g. data item and measurement datum), but I feel it would be beneficial to look at the big picture and get things in line. My proposal is that the working group works on providing a proposal at ICBO 2013 to the IAO community. Meanwhile there will be progress reports on the mailing list to enable discussion. (Proposed by Mathias)
 
-  * *IAO Releases:"* Can the working group assemble volunteers for making this more regular and getting a newer version into BioPortal (current verison is THREE years old)?
+  * *IAO Releases:* Can the working group assemble volunteers for making this more regular and getting a newer version into Bioportal (current verison is THREE years old)?
 
 = Minutes = 
 
