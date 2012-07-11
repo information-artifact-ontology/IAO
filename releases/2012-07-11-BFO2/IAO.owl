@@ -18,12 +18,12 @@
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2012-07-11-BFO2/iao-main.owl"/>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2012-07-11-BFO2//externalDerived.owl"/>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2012-07-11-BFO2/external.owl"/>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2012-07-11-BFO2/externalByHand.owl"/>
+    <owl:imports rdf:resource="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/iao-main.owl"/>
+    <owl:imports rdf:resource="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/externalDerived.owl"/>
+    <owl:imports rdf:resource="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/external.owl"/>
+    <owl:imports rdf:resource="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/externalByHand.owl"/>
     <owl:imports><owl:Ontology rdf:about="http://www.obofoundry.org/ro/ro.owl"/></owl:imports>
-    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2012-07-11-BFO2/ontology-metadata.owl"/>
+    <owl:imports rdf:resource="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/ontology-metadata.owl"/>
     <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
     <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/bfo.owl"/>
     <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
