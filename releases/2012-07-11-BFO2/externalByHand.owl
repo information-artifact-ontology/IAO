@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY cell "http://purl.org/obo/owl/CL#" >
+    <!ENTITY hpo "http://purl.org/obo/owl/HP#" >
+    <!ENTITY rotoo "http://purl.org/obo/owl/ro#" >
+    <!ENTITY go "http://purl.org/obo/owl/GO#" >
+    <!ENTITY fma "http://purl.org/obo/owl/FMA#" >
+    <!ENTITY pro "http://purl.org/obo/owl/PRO#" >
+    <!ENTITY pato "http://purl.org/obo/owl/PATO#" >
+    <!ENTITY envo "http://purl.org/obo/owl/ENVO#" >
+    <!ENTITY caro "http://purl.org/obo/owl/CARO#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY chebi "http://purl.org/obo/owl/CHEBI#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ncbitax "http://purl.org/obo/owl/NCBITaxon#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY robfo "http://purl.org/obo/owl/ro_bfo_bridge/1.1#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+    <!ENTITY protege-dc "http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xml:base="http://purl.obolibrary.org/obo/"
+     xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:ncbitax="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:envo="http://purl.org/obo/owl/ENVO#"
+     xmlns:rotoo="http://purl.org/obo/owl/ro#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:hpo="http://purl.org/obo/owl/HP#"
+     xmlns:pato="http://purl.org/obo/owl/PATO#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:caro="http://purl.org/obo/owl/CARO#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:cell="http://purl.org/obo/owl/CL#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pro="http://purl.org/obo/owl/PRO#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
+     xmlns:fma="http://purl.org/obo/owl/FMA#"
+     xmlns:go="http://purl.org/obo/owl/GO#">
+    <owl:Ontology rdf:about="&obo;iao/dev/externalByHand.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">$Revision: 80 $</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;OBI_0000293">
+        <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
+        <IAO_0000116 rdf:datatype="&xsd;string">8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &#39;has participant&#39; works.</IAO_0000116>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Bjoern Peters</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Larry Hunter</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Melanie Coutot</IAO_0000117>
+        <IAO_0000111 rdf:datatype="&xsd;string">has_specified_input</IAO_0000111>
+        <IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</IAO_0000117>
+        <IAO_0000112 xml:lang="en">see is_input_of example_of_usage</IAO_0000112>
+        <rdfs:domain rdf:resource="&obo;OBI_0000011"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000113">
+        <rdfs:label xml:lang="en">in branch</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&OBO_REL;bearer_of">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;OBI_0000299">
+        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Bjoern Peters</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Larry Hunter</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Melanie Courtot</IAO_0000117>
+        <IAO_0000111 rdf:datatype="&xsd;string">has_specified_output</IAO_0000111>
+        <IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</IAO_0000117>
+        <rdfs:domain rdf:resource="&obo;OBI_0000011"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;OBI_0000300">
+        <rdfs:label xml:lang="en">is_realized_by</rdfs:label>
+        <IAO_0000117 rdf:datatype="&xsd;string">GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Chris Mungall</IAO_0000117>
+        <IAO_0000115 rdf:datatype="&xsd;string">Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]</IAO_0000115>
+        <IAO_0000118 rdf:datatype="&xsd;string">executed_during</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">has_realization</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">is_realized_as</IAO_0000118>
+        <IAO_0000111 rdf:datatype="&xsd;string">is_realized_by</IAO_0000111>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&OBO_REL;inheres_in">
+        <rdfs:label rdf:datatype="&xsd;string">inheres in</rdfs:label>
+        <IAO_0000116 rdf:datatype="&xsd;string">This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a &#39;cardinality 1&#39; restriction to the definition of specifically dependent continuant.</IAO_0000116>
+        <IAO_0000116 rdf:datatype="&xsd;string">This relation belongs in BFO/RO, and will be in BFO 2</IAO_0000116>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:AnnotationProperty>
+    
+
+
+
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000293">
+        <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
+        <IAO_0000116 rdf:datatype="&xsd;string">8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &#39;has participant&#39; works.</IAO_0000116>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Bjoern Peters</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Larry Hunter</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Melanie Coutot</IAO_0000117>
+        <IAO_0000111 rdf:datatype="&xsd;string">has_specified_input</IAO_0000111>
+        <IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</IAO_0000117>
+        <IAO_0000112 xml:lang="en">see is_input_of example_of_usage</IAO_0000112>
+        <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299">
+        <rdfs:label xml:lang="en">has_specified_output</rdfs:label>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Bjoern Peters</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Larry Hunter</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Melanie Courtot</IAO_0000117>
+        <IAO_0000111 rdf:datatype="&xsd;string">has_specified_output</IAO_0000111>
+        <IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</IAO_0000117>
+        <owl:inverseOf rdf:resource="&obo;OBI_0000312"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;has_participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000300">
+        <rdfs:label xml:lang="en">is_realized_by</rdfs:label>
+        <IAO_0000117 rdf:datatype="&xsd;string">GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</IAO_0000117>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Chris Mungall</IAO_0000117>
+        <IAO_0000115 rdf:datatype="&xsd;string">Relation between a realizable and a process. Reciprocal relation of realizes [GOC:cjm]</IAO_0000115>
+        <IAO_0000118 rdf:datatype="&xsd;string">executed_during</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">has_realization</IAO_0000118>
+        <IAO_0000118 rdf:datatype="&xsd;string">is_realized_as</IAO_0000118>
+        <IAO_0000111 rdf:datatype="&xsd;string">is_realized_by</IAO_0000111>
+        <rdfs:range rdf:resource="&obo;BFO_0000015"/>
+        <IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000312">
+        <rdfs:label xml:lang="en">is_specified_output_of</rdfs:label>
+        <IAO_0000117 rdf:datatype="&xsd;string">PERSON:Bjoern Peters</IAO_0000117>
+        <IAO_0000111 rdf:datatype="&xsd;string">is_specified_output_of</IAO_0000111>
+        <IAO_0000115 xml:lang="en">A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Alan Ruttenberg</IAO_0000117>
+        <rdfs:range rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subPropertyOf rdf:resource="&ro;participates_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
+
+    <owl:ObjectProperty rdf:about="&OBO_REL;bearer_of">
+        <rdfs:range rdf:resource="&obo;BFO_0000020"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
+
+    <owl:ObjectProperty rdf:about="&OBO_REL;inheres_in">
+        <rdfs:label rdf:datatype="&xsd;string">inheres in</rdfs:label>
+        <IAO_0000116 rdf:datatype="&xsd;string">This clarifies that only specifically dependent continuants inhere in (specifically) one independent continuant over all time. For GDCs, there in implicitly inherence to all the independent continuants in which the concretizations inhere. Should add a &#39;cardinality 1&#39; restriction to the definition of specifically dependent continuant.</IAO_0000116>
+        <IAO_0000116 rdf:datatype="&xsd;string">This relation belongs in BFO/RO, and will be in BFO 2</IAO_0000116>
+        <rdfs:range rdf:resource="&obo;BFO_0000004"/>
+        <owl:inverseOf rdf:resource="&OBO_REL;bearer_of"/>
+    </owl:ObjectProperty>
+    
+
+ 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00000448">
+        <rdfs:label xml:lang="en">geographical location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000029"/>
+        <IAO_0000115>A reference to a place on the Earth, by its name or by its geographical location.</IAO_0000115>
+        <IAO_0000412 rdf:resource="&obo;GAZ"/>
+    </owl:Class>
+    
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
