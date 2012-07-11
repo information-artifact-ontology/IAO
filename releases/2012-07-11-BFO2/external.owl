@@ -57,7 +57,7 @@
      xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
      xmlns:fma="http://purl.org/obo/owl/FMA#"
      xmlns:go="http://purl.org/obo/owl/GO#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/external.owl">
+    <owl:Ontology rdf:about="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/external.owl">
         <owl:versionInfo rdf:datatype="&xsd;string">$Revision: 80 $</owl:versionInfo>
     </owl:Ontology>
     
