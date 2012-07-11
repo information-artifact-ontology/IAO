@@ -47,7 +47,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;iao/dev/iao-main.owl">
+    <owl:Ontology rdf:about="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/iao-main.owl">
         <protege:defaultLanguage rdf:datatype="&xsd;string">en</protege:defaultLanguage>
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
