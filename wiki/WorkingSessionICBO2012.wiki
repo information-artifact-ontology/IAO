@@ -37,6 +37,18 @@ Barry pointed ou that the best strategy to ensure that this holds, is to activel
 
 
   * *IAO Releases:*
+The topic arises from the situation that multiple IAO version exist at that time, due to the existence of two different versions of BFO (bfo1.1 and bfo_ruttenberg). OBI imported the later BFO version whereas the major release of IAO still uses bfo1.1.
+From these issues a number of questions arise:
+  # Should the IAO release process be in sync with the OBI release process? How often should there be a release?
+  # How can we ensure that the version pointed to by the PURL or provided to BioPortal is the newest release version?
+  # Should we provided release notes to each release? How could that be organized?
+
+
+*ad 1:* Melanie proposes that whenever changes that are critical for OBI occur in IAO there needs to be an IAO release. She points out the qualities of the OBI release process and states that for the time being she'd be happy if IAO releases happened in sync with OBI releases. Regarding issues related to minor vs. major releases (updating of PURL/BioPortal) it seems that there are not (and should not be) a differentiation between major and minor releases. There are dated release versions, which are stable, and there is the development version, which is not. Melanie pointed out earlier in the discussion that dated releases enable users of IAO to stick with a previous released version.
+
+*ad 2:* Melanie points out that Alan is the one with the BioPortal keys and that he is aware of the situation and working on it. James already asked to be added as an administrator to the IAO account with BioPortal and we are looking for more people to volunteer. With respect to the PURL there, too, exist a group of people administrating the IAO PURL. Melanie offers to add Jie immediately to that group to allow her to update the target link of the PURL. Jie brings up the question of whether those resources ought only to be updated to the last major release version or, rather, to all releases, including minor ones.
+
+*ad 3:* As far as release notes are concerned we recognize that all development on IAO is done by people on their own time, so editing extensive notes might be to much to ask. However, we agreed on the necessity of better documentation of changes in IAO. Mathias and Chris point out that one step towards providing release notes might be to invest more time in the change log by reporting a) the changes and b) the rationale or reasoning behind the changes. Sivaram points out that is a basic software development policy and that this is not only important for users, but for the developer's themselves. Despite the fact that we all agree that it is hard at times to write really helpful log messages, there seems to be agreement that we'd advertise better documentation and will try to engage in better documentation ourselves. As far as release notes are concerned Melanie proposes to provide a t least a paragraph of release notes for all major releases of IAO. The release notes can be derived from the log messages.
 
   * *IAO Top Nodes Working Group:*
   * *iao:data item:*
