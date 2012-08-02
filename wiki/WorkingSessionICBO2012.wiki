@@ -51,6 +51,11 @@ From these issues a number of questions arise:
 *ad 3:* As far as release notes are concerned we recognize that all development on IAO is done by people on their own time, so editing extensive notes might be to much to ask. However, we agreed on the necessity of better documentation of changes in IAO. Mathias and Chris point out that one step towards providing release notes might be to invest more time in the change log by reporting a) the changes and b) the rationale or reasoning behind the changes. Sivaram points out that is a basic software development policy and that this is not only important for users, but for the developer's themselves. Despite the fact that we all agree that it is hard at times to write really helpful log messages, there seems to be agreement that we'd advertise better documentation and will try to engage in better documentation ourselves. As far as release notes are concerned Melanie proposes to provide a t least a paragraph of release notes for all major releases of IAO. The release notes can be derived from the log messages.
 
   * *IAO Top Nodes Working Group:*
+Mathias proposed a joined effort to clean up the upper nodes of IAO, bot with respect to hierarchy and with respect to textual and formal definitions. It seems that there are multiple (conflicting?) partitions represented in IAO without clear documentation.
+Part of the problem seems to be that people tend to use ICE in an unintended way. Barry points out that ICEs are meant to be persistent and therefore are restricted to information content recorded in an artifact. Shifting from ICE to either "information" or "information content" is, according to Barry, not helpful, since those are mass terms. Mass terms are notorious for creating confusion in ontological representation.
+The problem of the top nodes of IAO can, according to Barry, not be tackled without the ontology of mental representation.
+The proposal to get together a group of people to clean up IAO at that point does not find supporters.
+
   * *iao:data item:*
 
 = Attendees =
