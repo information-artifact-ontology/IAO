@@ -90,7 +90,7 @@ See the restaurant [http://www.welscherstubn.at/  website] and some [http://www.
  * Catalina Martínez Costa
 
 = Post-Working-Session Communications =
-[Provided by Christian Boelling]
+(Provided by Christian Boelling)
 
 The workshop and post-workshop communications were helpful in making clearer the different perspectives on the issue and separating terminological, ontological and application-oriented (i.e. representation in RDF/OWL, ease of use for representation & query) parts of the discussion.
  
