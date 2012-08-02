@@ -29,10 +29,13 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
 = Minutes = 
 (based on notes taken by André Q. Andrade and on a video provided by Mustafa Jarrar)
 
-* *ICE and parts:*
-* *IAO Releases:*
-* *IAO Top Nodes Working Group:*
- * *iao:data item:*
+# *ICE and parts:*
+
+# *IAO Releases:*
+
+# *IAO Top Nodes Working Group:*
+
+# *iao:data item:*
 
 = Attendees =
 (in alphabetical order)
