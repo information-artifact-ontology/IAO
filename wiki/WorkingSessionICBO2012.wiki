@@ -57,6 +57,14 @@ The problem of the top nodes of IAO can, according to Barry, not be tackled with
 The proposal to get together a group of people to clean up IAO at that point does not find supporters.
 
   * *iao:data item:*
+The problem, which has been discussed for quite a while, is that currently IAO states that a data item is intended to be a truthful statement. 
+This creates two main problems:
+a) the claim of truth
+b) the claim that a data item is a statement.
+As far as a) is concerned there seems some people in the group agree that the fact that the definition states that a data item "is intended to be a true statement" takes care of this. However, some issue remain, especially for measurement datum, since sometimes they employ assumption and estimates. Therefore, the claim of truthfulness still seems to be dubious. One possible solution would be create a new class for measurements process variables.
+The proposers of the section started out from the assumption that "10mg" should be a measurement datum, however, before the meeting they already proposed a new class called "Value specification". Each measurement datum would then have a value specification as part.
+Regardless of the very enlightening discussion there was no agreement achieved during the working session. However, the meeting spawned multiple discussion during the following days which are reported below (Post-Working-Session Communications) 
+
 
 = Attendees =
 (in alphabetical order)
@@ -81,6 +89,4 @@ See the restaurant [http://www.welscherstubn.at/  website] and some [http://www.
  * Jie Zheng (dinner)
  * Catalina Martínez Costa
 
-= Post-Working Session Communications =
-
-= Summary of Proposals =
+= Post-Working-Session Communications =
