@@ -30,7 +30,7 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
 (based on notes taken by André Q. Andrade and on a video provided by Mustafa Jarrar)
 
   # *ICE and parts:*
-In a Clinical and Translational Science Ontology Workshop in Baltimore in April [http://www.bioontology.org/wiki/index.php/Clinical_and_Translational_Science_Ontology_Workshop] the question was raised whether ICEs, more specifically "plan specification", stay identical if one of its part, for instance "objective specification" or "action specification" changes. 
+In a Clinical and Translational Science Ontology Workshop in Baltimore in April (http://www.bioontology.org/wiki/index.php/Clinical_and_Translational_Science_Ontology_Workshop) the question was raised whether ICEs, more specifically "plan specification", stay identical if one of its part, for instance "objective specification" or "action specification" changes. 
 It was pointed out by Sivaram that this is basically a problem of individuals, not so much of classes. However, Chris pointed out that it seems to touch on issues of class membership for individuals, too.
 It seems that for most cases the change of a part of a plan specification changes the plan specification as such. This can result in the individual plan specification being member in a different class than initially.
 Barry pointed ou that the best strategy to ensure that this holds, is to actively look for counterexamples.
