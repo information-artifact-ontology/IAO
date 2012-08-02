@@ -27,6 +27,7 @@ See announcement [http://kr-med.org/icbofois2012/icboinformalmeetings/IAOworking
     * there is an inconsistency between the 'measurement unit label' definition and its subclass as a consequence of mireoting UO classes ([http://sourceforge.net/mailarchive/message.php?msg_id=29459064 7])
 
 = Minutes = 
+(based on notes taken by André Q. Andrade and on a video provided by Mustafa Jarrar)
 
 
 = Attendees =
@@ -51,3 +52,7 @@ See the restaurant [http://www.welscherstubn.at/  website] and some [http://www.
  * Chris Stoeckert (dinner)
  * Jie Zheng (dinner)
  * Catalina Martínez Costa
+
+= Post-Working Session Communications =
+
+= Summary of Proposals =
