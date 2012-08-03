@@ -95,21 +95,23 @@ See the restaurant [http://www.welscherstubn.at/  website] and some [http://www.
 (Provided by Christian Boelling)
 
 The workshop and post-workshop communications were helpful in making clearer the different perspectives on the issue and separating terminological, ontological and application-oriented (i.e. representation in RDF/OWL, ease of use for representation & query) parts of the discussion.
- 
+
 AR = Alan Ruttenberg
 CS = Chris Stoeckert
 CB = Christian Bölling
- 
+
 Running example:
 Mouse#1 has a mass of 10 gram. This mass was determined in a particular measurement process (measurement#1) using a particular scale (scale#1).
- 
+
 AR and CS clarified that the term "data item" was intended to denote the concept of an information content entity that, as a hallmark, provides true information about something and that this motivated the current textual definition for data item.
 CS emphasized that the difference between a data item and a value specification is aboutness: data items are entities that are about something (e.g. a quality of an object) while value specifications are not.
+
 From this perspective, the 'data item' in the running example is more than just the '10 g'. As summarized by AR (see figure) the data item in the running example could be characterized as the entity that is related to the particular weight quality via the is_quality_measurement_of property and to the particular measurement process via the is_specified_output_of property and has parts '10' and 'g'.
+
 AR and CB agree that the entities which can be true or false are statements. The relevant statement that can be formed in this example is, according to AR: <data item> is_quality_measurement_of <mouse#1>. AR agrees with CB that in this view, data items are part of statements and that the current textual definition for data item should be revised. AR suggests to change the beginning of the textual definition to "A data item is an information content entity that can be used to form truthful statements…"
- 
+
 CB's concept of 'data item' corresponds by and large to the '10 gram' and is therefore close, if not identical to the suggested concept of 'value specification' (which makes up the terminological part of the discussion) Because of this, he has argued that data items aren't statements and are neither true nor false and that the current textual definiton should be revised accordingly, dropping also any reference to truthfulness, claims of which can, as he argues, in any way only be judged by evaluating information of how the measurement or prediction result was generated.
- 
+
 Equating CB's notion of 'data item' with the notion of the proposed 'value specification' makes some of the discussion points obsolete . However, CB argues that in his experience entities such as '10 g' are routinely referred to by wet-lab biologists and modellers as 'data' and that therefore 'data item' or 'datum' is a better term than 'value specification' for these entities.
- 
+
 Other points from the data item agenda have only briefly been touched, in particular whether it is necessary or desirable to refernce plan specifications and/or the (hypothetical) measurements specified in them to be able to point to the things that predictions are about. AR concedes that model-based estimations about past events or objects present problems as exposed by CB's examples. AR and CB agree that this needs to be discussed further.
