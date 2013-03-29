@@ -419,11 +419,6 @@ We also have the outstanding issue of how to aim different definitions to differ
       <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
     </owl:distinctMembers>
   </owl:AllDifferent>
-  <owl:AllDifferent>
-    <owl:distinctMembers rdf:parseType="Collection">
-      <oboInOwl:Subset rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
-    </owl:distinctMembers>
-  </owl:AllDifferent>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000427">
     <obo:IAO_0000115 xml:lang="en">use boolean value xsd:true to indicate that the property is an antisymmetric property</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">part_of antisymmetric property xsd:true</obo:IAO_0000112>
