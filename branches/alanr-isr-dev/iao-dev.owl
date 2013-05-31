@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;"
+     xml:base="http://purl.obolibrary.org/obo/iao/dev/iao-dev.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#">
+ 
+   
+
+   <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/iao-dev.owl">
+    <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >en</protege:defaultLanguage>
+        <rdfs:comment
+            >a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon.</rdfs:comment>
+<owl:imports> <owl:Ontology  rdf:about="http://purl.org/obo/owl/OBO_REL"/></owl:imports>
+<owl:imports> <owl:Ontology  rdf:about="http://www.ifomis.org/bfo/1.1"/></owl:imports>
+<owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/examples.owl"/>
+<owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/owl2bits.owl"/>
+
+  </owl:Ontology>
+
+</rdf:RDF>

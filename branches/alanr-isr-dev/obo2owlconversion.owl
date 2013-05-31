@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bfo "http://www.ifomis.org/bfo/1.1#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY daml "http://www.daml.org/2001/03/daml+oil#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+    <!ENTITY obo2owlconversion "http://purl.obolibrary.org/obo/iao/dev/obo2owlconversion.owl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;iao/"
+     xml:base="&obo;iao/"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:obo2owlconversion="&obo;iao/dev/obo2owlconversion.owl#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;iao/dev/obo2owlconversion.owl">
+        <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+        <owl:imports rdf:resource="&obo;iao/dev/ontology-metadata.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001234">
+        <rdfs:label xml:lang="en">broad alternative label</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has a slightly broader meaning than this ontology term.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">MC, 20110517: The label and preferred editor term will be updated at a later stage, before inclusion in the ontology-metadata.owl file.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">broad alternative label</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">broad synonym</obo:IAO_0001235>
+        <obo:IAO_0000112 xml:lang="en">burrow is a broad alternative label for rabbit hole</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">skull is a broad alternative label for cranium</obo:IAO_0000112>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001237">
+        <rdfs:label xml:lang="en">narrow alternative label</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has a slightly narrower meaning than this ontology term</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">index with narrower</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">narrow synonym</obo:IAO_0001235>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001238">
+        <rdfs:label xml:lang="en">related alternative label</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has nearly the same meaning as this ontology term, but where the meaning is not simply broader or narrower.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">related alternative label</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">related synonym</obo:IAO_0001235>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001235">
+        <rdfs:label xml:lang="en">OBO community label</rdfs:label>
+        <obo:IAO_0000111 xml:lang="en">OBO community label</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000232 xml:lang="en">This annotation property has been created to replace the addition of the annotation axiom on the annotation property: we could have &quot;tagged&quot; the alternative label &quot;broad synonym&quot; with an annotation &quot;OBO community&quot;, but this mechanism was less desirable as there is currently no way to render an annotation property by the value of its annotation.</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">an annotation property assigning an OBO coommunity preferred alternative label to the term. In this context, the OBO community represents the set of editor relying on the OBO language for ontology development</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">the OBO community label is meant to be used during the OBO to OWL conversion and roundtrip, to translate for example the IAO annotation properties labels into their OBO format specific counterpart</obo:IAO_0000116>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001236">
+        <rdfs:label xml:lang="en">exact alternative label</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has exactly the same meaning as this ontology term.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">exact alternative label</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">exact synonym</obo:IAO_0001235>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0001239"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000428"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0001239">
+        <rdfs:label xml:lang="en">indexing term</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Amelia Ireland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: David Osumi-Sutherland</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Heiko Dietze</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Shahid Manzoor</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A word or phrase that, within some paper or community, has exactly or nearly the same meaning as this ontology term.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">MC, 20110525: this term has been created to ease discussions. Expect it to change.</rdfs:comment>
+        <obo:IAO_0000111 xml:lang="en">indexing term</obo:IAO_0000111>
+        <obo:IAO_0001235 xml:lang="en">synonym</obo:IAO_0001235>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+    </owl:AnnotationProperty>
+    <rdf:Description rdf:about="&obo;IAO_0000118">
+        <rdfs:comment xml:lang="en">MC, 20110525: I added synonym as an OBO community label for alternative term, because I think the intent is the same. This may (and probably will) change. This follows discussion available at http://code.google.com/p/information-artifact-ontology/issues/detail?id=103.  All participants should be added as editors if needed.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1789) http://owlapi.sourceforge.net -->
+

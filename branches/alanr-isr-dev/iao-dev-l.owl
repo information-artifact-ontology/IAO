@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+    xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:p1="http://purl.obolibrary.org/obo/iao2.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:obo="http://purl.obolibrary.org/obo/"
+    xmlns:iao="http://purl.obolibrary.org/obo/iao.owl#"
+>
+  <owl:Ontology rdf:about="">
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >en</protege:defaultLanguage>
+    <owl:imports rdf:resource="external/ro.owl"/>
+    <owl:imports rdf:resource="external/protege-dc.owl"/>
+    <owl:imports rdf:resource="IAO.owl"/>
+    <owl:imports rdf:resource="external/ro_bfo_bridge11.owl"/>
+ <owl:imports rdf:resource="obsolete.owl"/>
+    <owl:imports rdf:resource="external/bfo11.owl"/>
+
+  </owl:Ontology>
+
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 529)  http://protege.stanford.edu     <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/iao-examples.owl"/>     <owl:imports rdf:resource="file:/Users/mcourtot/Desktop/projects/IAO/SVN/iao/trunk/src/ontology/iao-owl2.owl"/>-->
