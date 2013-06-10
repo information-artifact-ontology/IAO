@@ -703,9 +703,9 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         </owl:equivalentClass>
         <obo:IAO_0000116 xml:lang="en">12/15/09: There is a concern that some ways that carry information may be processes rather than qualities, such as in a &apos;delayed wave carrier&apos;.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A quality of an information bearer that imparts the information content</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case.</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en">The pattern in ink on a page of a paperback novel.</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">information carrier</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
     </owl:Class>
@@ -854,13 +854,13 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1291,9 +1291,9 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000112 xml:lang="en">A page of a paperback novel with writing on it. The paper itself is a material information bearer, the pattern of ink is the information carrier. Additional examples: a hard drive, a brain.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information bearer is a material_entity in which a concretization of an information content entity inheres.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">a hard drive, a piece of paper with writing on it, a brain</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">material information bearer</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
@@ -1955,14 +1955,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000018"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000407"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000407"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009-08-18 Alan Ruttenberg - question to BFO list about whether the BFO sense of the lower dimensional regions is that they are always part of actual space (the three dimensional sort) http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</obo:IAO_0000116>
@@ -2071,13 +2071,13 @@ GO   gene ontology</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000404"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000406"/>
                 <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000406"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000404"/>
                 <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2101,14 +2101,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
-                <owl:someValuesFrom rdf:resource="&obo;PATO_0000122"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="&obo;UO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:someValuesFrom rdf:resource="&obo;UO_0000001"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000122"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
@@ -2259,14 +2259,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000088"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape</obo:IAO_0000116>
@@ -2331,6 +2331,12 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
@@ -2339,12 +2345,6 @@ points together with a line.</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a CRID registry associates an information content entity with a CRID symbol</obo:IAO_0000115>
@@ -2673,14 +2673,14 @@ interpreter.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000602"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:allValuesFrom rdf:resource="&obo;UO_0000002"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000605"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000605"/>
-                <owl:someValuesFrom rdf:resource="&obo;PATO_0000125"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:allValuesFrom rdf:resource="&obo;UO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
