@@ -119,7 +119,15 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">investigation</obo:IAO_0000111>
     </owl:Class>
+
     
+    <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+        <rdfs:label xml:lang="en">assay</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A planned process with the objective to produce information about the material entity that is the evaluant, by physically examining it or its proxies.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">assay</obo:IAO_0000111>
+    </owl:Class>
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000471 -->

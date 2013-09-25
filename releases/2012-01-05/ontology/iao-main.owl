@@ -552,7 +552,7 @@ Cristian Cocos, and subsequently moved to IAO where the objective for
 which the original term was defined was satisfied with the definition
 of this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data item label that denotes a unit of measure.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
@@ -640,11 +640,18 @@ purpose of a study; support of hypothesis, discovery of new information</obo:IAO
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="&obo;IAO_0000009">
-        <rdfs:label xml:lang="en">datum label</rdfs:label>
+        <rdfs:label xml:lang="en">data item label</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is part of some data item and is used to partially define the denotation of that data item.</obo:IAO_0000115>
+        <obo:IAO_0000118>datum label</obo:IAO_0000118>
         <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;datum label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
 </obo:IAO_0000232>
-        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
@@ -800,6 +807,12 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000058"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -812,12 +825,6 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
@@ -1173,16 +1180,23 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="&obo;IAO_0000109">
-        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">measurement data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000118>measurement datum</obo:IAO_0000118>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 is_specified_output of some assay?</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data item that is a recording of the output of an assay.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
@@ -1953,14 +1967,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000407"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="&obo;BFO_0000018"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000407"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009-08-18 Alan Ruttenberg - question to BFO list about whether the BFO sense of the lower dimensional regions is that they are always part of actual space (the three dimensional sort) http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</obo:IAO_0000116>
@@ -1979,12 +1993,6 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000404"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1997,6 +2005,12 @@ GO   gene ontology</obo:IAO_0000112>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000404"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</rdfs:comment>
@@ -2013,6 +2027,12 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000406"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2025,12 +2045,6 @@ GO   gene ontology</obo:IAO_0000112>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000406"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2053,13 +2067,19 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000405"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000404"/>
                 <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000405"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000406"/>
                 <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2079,12 +2099,6 @@ GO   gene ontology</obo:IAO_0000112>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000406"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A cartesion spatial coordinate datum that  uses three values to specify a position within a three dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
@@ -2099,14 +2113,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
-                <owl:someValuesFrom rdf:resource="&obo;PATO_0000122"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="&obo;UO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:someValuesFrom rdf:resource="&obo;UO_0000001"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000122"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
@@ -2233,14 +2247,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000013"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
@@ -2257,14 +2271,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000088"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape</obo:IAO_0000116>
@@ -2302,14 +2316,14 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A new pubmed ID being created for a journal article, and the associated pubmed record containing information to the journal article. A license plate number registered at the DMV to be belonging to a specific vehicle and owner. Placing a barcode on a product and entering information in a database that this barcode is assigned.</obo:IAO_0000112>
@@ -2330,6 +2344,12 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
             </owl:Restriction>
@@ -2338,12 +2358,6 @@ points together with a line.</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a CRID registry associates an information content entity with a CRID symbol</obo:IAO_0000115>
@@ -2432,14 +2446,14 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000577"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000579"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol</obo:IAO_0000115>
@@ -2593,12 +2607,6 @@ interpreter.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000601"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2615,6 +2623,12 @@ interpreter.</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>an information content entity that has been generated by a prediction process in which an estimate of a value of an entity is made which can be measured but without performing such a measurement. The value specification is intended to be close to the value a measurement process would produce modulo a prediction error.</obo:IAO_0000115>
@@ -2647,13 +2661,13 @@ interpreter.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000601"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2681,14 +2695,14 @@ interpreter.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000602"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000605"/>
-                <owl:someValuesFrom rdf:resource="&obo;PATO_0000125"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+                <owl:allValuesFrom rdf:resource="&obo;UO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:allValuesFrom rdf:resource="&obo;UO_0000002"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000605"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
