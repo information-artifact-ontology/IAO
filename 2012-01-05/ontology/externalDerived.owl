@@ -139,6 +139,15 @@
     </owl:Class>
     
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933">
+        <rdfs:label>value specification</rdfs:label>
+        <obo:IAO_0000115>An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">value specification</obo:IAO_0000111>
+    </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
 
@@ -147,6 +156,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study design is a plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">study design</obo:IAO_0000111>
     </owl:Class>
+
     
 
 

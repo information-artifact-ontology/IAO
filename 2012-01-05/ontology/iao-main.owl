@@ -220,7 +220,7 @@
         <obo:IAO_0000115>A relation between a value specification and its unit of measurement.</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000051"/>
         <rdfs:range rdf:resource="&obo;IAO_0000003"/>
-        <rdfs:domain rdf:resource="&obo;IAO_0000601"/>
+        <rdfs:domain rdf:resource="&obo;OBI_0001933"/>
     </owl:ObjectProperty>
     
 
@@ -430,17 +430,6 @@ there is a measurement process p that has specified output m, a measurement datu
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000605 -->
-
-    <owl:ObjectProperty rdf:about="&obo;IAO_0000605">
-        <rdfs:label>specifies value of</rdfs:label>
-        <obo:IAO_0000115>A relation between a value specification and an entity which the specification is about.</obo:IAO_0000115>
-        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
-        <rdfs:domain rdf:resource="&obo;IAO_0000601"/>
     </owl:ObjectProperty>
     
 
@@ -862,18 +851,6 @@ Previous. An information content entity is a non-realizable information entity t
     <owl:Class rdf:about="&obo;IAO_0000032">
         <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
 this case we explicitly refer to the singular form</obo:IAO_0000116>
@@ -1196,7 +1173,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000601"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0001933"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>measurement datum</obo:IAO_0000118>
@@ -2122,12 +2099,6 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="&obo;PATO_0000122"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:someValuesFrom rdf:resource="&obo;UO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
@@ -2139,17 +2110,7 @@ GO   gene ontology</obo:IAO_0000112>
 
     <owl:Class rdf:about="&obo;IAO_0000414">
         <rdfs:label xml:lang="en">mass measurement datum</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000109"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000604"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
         <obo:IAO_0000116 xml:lang="en">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of mass quality</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
@@ -2603,207 +2564,6 @@ interpreter.</obo:IAO_0000115>
     </owl:Class>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000600">
-        <rdfs:label>predicted value</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;IAO_0000104"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
-                                <owl:allValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000606"/>
-                                    </owl:Restriction>
-                                </owl:allValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000601"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>an information content entity that has been generated by a prediction process in which an estimate of a value of an entity is made which can be measured but without performing such a measurement. The value specification is intended to be close to the value a measurement process would produce modulo a prediction error.</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000601 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000601">
-        <rdfs:label>value specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000112>The value of &apos;positive&apos; in a classification scheme of &quot;positive or negative&quot;; the value of &apos;20g&apos; on the quantitative scale of mass.</obo:IAO_0000112>
-        <obo:IAO_0000116>This term is currently a descendant of &apos;information content entity&apos;, which requires that it &apos;is about&apos; something. A value specification of &apos;20g&apos; for a measurement data item of the mass of a particular mouse &apos;is about&apos; the mass of that mouse. However there are cases where a value specification is not clearly about any particular. In the future we may change &apos;value specification&apos; to remove the &apos;is about&apos; requirement.</obo:IAO_0000116>
-        <obo:IAO_0000115>An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000602 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000602">
-        <rdfs:label>scalar value specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000601"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000115>A value specification that consists of two parts: a numeral and a unit label</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000603 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000603">
-        <rdfs:label>categorical value specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000601"/>
-        <obo:IAO_0000115>A value specification that is specifies one category out of a fixed number of nominal categories</obo:IAO_0000115>
-        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000604 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000604">
-        <rdfs:label>mass value specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000602"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
-                <owl:allValuesFrom rdf:resource="&obo;UO_0000002"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000605"/>
-                <owl:someValuesFrom rdf:resource="&obo;PATO_0000125"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000606 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000606">
-        <rdfs:label>comparing prediction to measurement</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;BFO_0000007"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                                <owl:someValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="&obo;IAO_0000109"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                                                <owl:someValuesFrom>
-                                                    <owl:Class>
-                                                        <owl:intersectionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="&obo;BFO_0000001"/>
-                                                            <owl:Restriction>
-                                                                <owl:onProperty>
-                                                                    <rdf:Description>
-                                                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
-                                                                    </rdf:Description>
-                                                                </owl:onProperty>
-                                                                <owl:someValuesFrom rdf:resource="&obo;IAO_0000600"/>
-                                                            </owl:Restriction>
-                                                        </owl:intersectionOf>
-                                                    </owl:Class>
-                                                </owl:someValuesFrom>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000600"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000609 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000609">
-        <rdfs:label>prediction process</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OBI_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000600"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000610 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000610">
-        <rdfs:label>predicted mass value</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000600"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000604"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000600"/>
-        <obo:IAO_0000117>PERSON:Bjoern Peters</obo:IAO_0000117>
-    </owl:Class>
-    
 
 
     <!-- 
