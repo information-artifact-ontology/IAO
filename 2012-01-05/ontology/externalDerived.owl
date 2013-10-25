@@ -139,16 +139,6 @@
     </owl:Class>
     
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933">
-        <rdfs:label>value specification</rdfs:label>
-        <obo:IAO_0000115>An information content entity that specifies a value within a classification scheme or on a quantitative scale.</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">value specification</obo:IAO_0000111>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
