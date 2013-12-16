@@ -51,7 +51,7 @@ The ontology metadata file contains all the information required to use the IAO 
           o The obsolescence reason of a class or property. The allowed values must come from this enumerated list of predefined terms: 
  # failed exploratory term: The term was used used in an attempt to structure part of the ontology but in retrospect failed to do a good job
  # terms merged: An editor note should explain what were the merged terms and the reason for the merge.
- # term split: This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.</obo:IAO_0000116>
+ # term split: This is to be used when a term has been split in two or more new terms. An editor note should indicate the reason for the split and indicate the URIs of the new terms created.
  # placeholder removed: This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.
  # term imported: This is to be used when the original term has been replaced by a term imported from an other ontology. An editor note should indicate what is the URI of the new term to use.
 
