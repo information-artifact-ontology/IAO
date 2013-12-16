@@ -58,7 +58,7 @@ The ontology metadata file contains all the information required to use the IAO 
 
 
     * *OBO foundry unique label*: An alternative name for a class or property which is unique across the OBO Foundry.
-          o Implementation: The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools.
+          o Implementation: The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + label, etc. , MA could specify 'mouse + label' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools.
 
 
 
