@@ -61,8 +61,8 @@
             >"definitions", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal.</obo:IAO_0000116>
             <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Alan Ruttenberg</obo:IAO_0000117>
-            <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000117>
+            <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal</obo:IAO_0000115>
           </obo:IAO_0000409>
         </owl:oneOf>
       </owl:Class>
@@ -97,7 +97,7 @@
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
           <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000103">
-            <obo:IAO_0000115 xml:lang="en">The term was used used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
+            <obo:IAO_0000115 xml:lang="en">The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job</obo:IAO_0000115>
             <rdfs:label xml:lang="en">failed exploratory term</rdfs:label>
             <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
             >Person:Alan Ruttenberg</obo:IAO_0000117>
