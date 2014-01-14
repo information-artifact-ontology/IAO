@@ -484,7 +484,7 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
      rdfs:label &quot;RO id policy&quot;
      &#39;has ID policy for&#39;: &quot;RO&quot;</obo:IAO_0000112>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/iao/IAO_0000599">
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000599">
         <rdfs:label xml:lang="en">has ID prefix</rdfs:label>
         <obo:IAO_0000115>Relates an ontology used to record id policy to a prefix concatenated with an integer in the id range (left padded with &quot;0&quot;s to make this many digits) to construct an ID for a term being created.</obo:IAO_0000115>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
