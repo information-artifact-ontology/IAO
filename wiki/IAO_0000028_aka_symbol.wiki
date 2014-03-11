@@ -26,3 +26,398 @@ All the senses other than numeral clearly are about something if you accept that
 Numeral is dicey as in many cases the numeral represents something else. As such it is more like a syntactic object like 'word' and belongs in the to-be-created information structure branch.
 
 ----
+
+2014-03-08 James Overton IAO Issue 159:
+Status: Accepted
+Owner: ja...@overton.ca
+Labels: Type-Defect Priority-Medium
+
+New issue 159 by ja...@overton.ca: Improve CRIDs
+http://code.google.com/p/information-artifact-ontology/issues/detail?id=159
+
+During the OBI Core review we tried to clean up the CRID terms. See notes here: https://docs.google.com/document/d/1Iv5VS8kbOnoQbBTt-FaJU37gK9MXkENm7pHGSk_q4d0/edit?usp=sharing
+
+I think these changes to "CRID registry" and "assigning a CRID" are good. In light of recent discussion on the OBI list, the other two terms might still require work. See: https://sourceforge.net/p/obi/mailman/obi-devel/thread/CAFKQJ8kbsq%2BrVjhDxa_NH9DCq2oFFjpaXfwoWPVR9SEBVSyUaw%40mail.gmail.com/#msg32062647
+
+- IAO_0000579 CRID registry
+  - add alternative term: centrally registered identifier registry
+  - change textual definition: A data set that consists of CRIDs (centrally registered identifiers) and additional information about their corresponding entities, that were recorded in the dataset through an assigning a centrally registered identifier process.
+  - example of use: PubMed and GenBank both have CRID registries as parts of their database systems.
+  - change status: ready for release
+
+- IAO_0000574 assigning a centrally registered identifier
+  - add alternative term: assigning a CRID
+  - change textual definition: A planned process in which a new CRID (centrally registered identifier) is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity.
+  - change status: ready for release
+
+- IAO_0000577 CRID symbol
+  - change label: CRID
+  - add alternative term: centrally registered identifier
+  - change textual definition: A symbol that is sufficient to look up information about the corresponding entity from its CRID (centrally registered identifier) registry.
+  - change example of usage: PubMed identifier "PMID:12345"
+  - change status: ready for release
+
+- IAO_0000578 CRID
+  - change label: centrally registered identifier
+  - change status: ready for release
+----
+
+2014-02-25 Back and forth discussion about CRID, CRID symbol and symbol
+
+Mathias Brochhausen
+
+Folks,
+I am puzzled by the way CRID is represented in OBI. According to the IAO "CRID" is a subclass of "information
+content entity". However, in OBI it is a subclass to symbol. Basically, I was wondering how that happens
+(technically, I mean. I would have assumed that the good old IAO just gets imported).
+[I might be of on this one, but I checked both the release version of IAO and the development version and they
+were all the same regarding the hierarchical place of "CRID"}
+If IAO gets "vetted", "altered" or "bended", I would like to ask whether the OBI community agree that doing so is
+good practice
+Secondly, I question whether that affirmation is correct, given the definition of symbol. I will try to be on the next
+call and hope we can put that on the agenda (sorry for missing three calls in a row. I promise to be more
+available in the future). So, if someone already wants to reiterate the reasoning behind that decision, I would
+greatly appreciate it.
+Thanks,
+Mathias
+--
+
+Alan Ruttenberg
+
+Weird. The label and alternative term are from CRID, but the definition and URI are of CRID symbol.
+The source in trunk/src/ontology/branches/obi.owl imports iao/dev/iao.owl which has the correct information.
+Something introduced in the release?
+The error won't affect the logic as the URI is in the right place, but if imported with IAO there will be two labels.
+-­Alan
+--
+
+jie zheng
+
+Changes were made on IAO BFO pre-­graz version. Please see the file:
+https://information-­artifact-­ontology.googlecode.com/svn/releases/2012-­01-­05/ontology/iao-­main.owl
+CRID symbol was discussed during OBI core review. Details please see the google doc 'CRID symbol' section:
+https://docs.google.com/document/d/1Iv5VS8kbOnoQbBTt-­FaJU37gK9MXkENm7pHGSk_q4d0/edit#
+James edited the owl file based on OBI dev call and committed the file as SVN Revision 642.
+Here is the definitions of CRID and CRID symbol in http://purl.obolibrary.org/obo/iao.owl
+CRID
+Term IRI: http://purl.obolibrary.org/obo/IAO_0000578
+definition: An information content entity that consists of a CRID symbol and additional information about which
+CRID registry it belongs.
+example of usage: PMID:12345
+CRID†symbol
+Term IRI: http://purl.obolibrary.org/obo/IAO_0000577
+definition: A symbol that is part_of a CRID and that is sufficient to look up a record from the CRID's registry.
+editor note:
+IAO call, 20101124: 12345 is not a CRID symbol. To be a CRID symbol you need to have some information
+about the registry within which the CRID is recorded
+example of usage: PMID:12345, 12345 in a database column which has header "pubmedID"
+Based on the definitions, notes and examples, I cannot tell the difference between CRID and CRID symbol. I
+think they are same. If anyone can clarify it would be great.
+Thanks,
+Jie
+
+--
+
+Bjoern Peters
+
+The same 'symbol', e.g. 6192348 can be e.g. a social security number, a telephone number
+or a pubmed ID.
+The complete crids would be conveying beyond the symbol also the context in which it is
+meant to be used e.g. (telephone number: 619 23 48), (PMID: 6192348), (SSN: 619 2348).
+As for the mismatching IAO vs. IAO in OBI versions -­ that is due to the fun that associated
+with the "BFO 2.0 transition". We are hoping to have a re-­alignment in place soon, definitely
+in time for the manuscript.
+-­ Bjoern
+
+--
+
+Alan Ruttenberg
+
+Bjoern Peters <bpeters@liai.org> wrote:
+The same 'symbol', e.g. 6192348 can be e.g. a social security number, a telephone number
+or a pubmed ID.
+The complete crids would be conveying beyond the symbol also the context in which it is
+meant to be used e.g. (telephone number: 619 23 48), (PMID: 6192348), (SSN: 619 2348).
+As for the mismatching IAO vs. IAO in OBI versions -­ that is due to the fun that associated
+with the "BFO 2.0 transition". We are hoping to have a re-­alignment in place soon,
+definitely in time for the manuscript.
+
+How is this related to the bfo2 transition?
+
+--
+
+Alan Ruttenberg
+
+To be clear, all I can tell from this story is that there was an edit to a non OBI term locally in OBI based on a
+misunderstanding of the term.
+I offer this as an attempt at diagnosis, not as accusation.
+-­Alan
+
+--
+
+Alan Ruttenberg
+
+No, I am incorrect. There was an edit to one version of IAO but not the main version. That version was intended
+to address issues related to the transition between BFO1 and BFO2.
+That is why you are saying it is related to the transition Bjoern, correct? This is how it is even possible that there
+is a mismatch.
+There would not have been a mismatch if the term was first changed in IAO-­dev and then propagated to the the
+alternative transitional IAO, which was intended to differ from IAO-­dev only with respect to the transition issue.
+It would have probably made sense to file an IAO issue about the term, since if that was done there would be a
+chance to correct the misunderstanding and the consequent change and divergence could have been avoided.
+I think it makes sense to revert the CRID related changes to the transitional version, if Bjoern's explanation
+suffices (his is my understanding as well) and in this way bring the versions into alignment for this term.
+-­Alan
+
+--
+
+Mathias Brochhausen
+
+Alan,
+to me at the time (before I got the words of wisdom) it made perfect sense to file an OBI issue, since to me
+knowledge at that point that was where the problem was.
+Now, knowing what we know now, of course, one could file an IAO issue. I'd prefer to refrain from doing so,
+because I am not sure I understand the problem fully.
+Best,
+Mathias
+
+--
+
+Melanie Courtot
+
+My understanding of the difference between CRID and CRID symbol is that while PID:123456 is a CRID symbol,
+it is not a CRID as there is no information as to which registry it belongs. The PMID example may be slightly
+misleading in that sense, as we all make the link to pubmed)
+So 123456 is a symbol, PID:123456 is a CRID symbol, and the sentences "the BCCRC employee with
+PID:123456", "the parts catalog number in manufacturer X with PID:123456" are CRIDs. Re reading the
+definitions/editor notes, I am confused about what "centrally registered" means. IMO, if there exists a
+correspondence table, database, mapping system or else that can be shared and provide resolution for CRID
+symbols, those are CRID registries. I am not sure how to distinguish between "centrally registered within
+organization X" and "centrally registered in the world" (which distinction the note on CRID seems to make "UPCs
+(Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.")
+As to the definitions of symbol etc, those have proven to be extremely difficult to properly define and any help in
+doing so would be greatly appreciated.
+Cheers,
+Melanie
+
+--
+
+Alan Ruttenberg†
+
+On Wed, Feb 26, 2014 at 1:17 PM, Melanie Courtot <mcourtot@gmail.com> wrote:
+My understanding of the difference between CRID and CRID symbol is that while PID:123456 is a CRID
+symbol, it is not a CRID as there is no information as to which registry it belongs. The PMID example may be
+slightly misleading in that sense, as we all make the link to pubmed)
+So 123456 is a symbol, PID:123456 is a CRID symbol, and the sentences "the BCCRC employee with
+PID:123456", "the parts catalog number in manufacturer X with PID:123456" are CRIDs. Re reading the
+definitions/editor notes, I am confused about what "centrally registered" means. IMO, if there exists a
+correspondence table, database, mapping system or else that can be shared and provide resolution for CRID
+symbols, those are CRID registries. I am not sure how to distinguish between "centrally registered within
+organization X" and "centrally registered in the world" (which distinction the note on CRID seems to make
+"UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.")
+The intention was that these were identifiers with a single authority and single namespace. The scope isn't
+defining -­ whether it is within a single organization or it is the world. What is ruled out, however, would be a bunch
+of separate organizations which are ostensibly using the same namespace but which do not coordinate and for
+which there is no unified registry. UPCs are not centrally registered in the sense intended -­ they are more like
+internet addressees in which authority is given to different organizations and in different sized chunks. With
+internet addresses that scheme is recursive with only the most immediate authority necessarily keeping track of
+the allocations. That's not a case of central registered, but another very interesting case of identifiers we would
+ideally define. Another interesting one are GUIDs, for which allocation is independent done by many under the
+assumption that there is little likelihood of collision.
+As to the definitions of symbol etc, those have proven to be extremely difficult to properly define and any help
+in doing so would be greatly appreciated.
+concur.
+
+--
+
+Mathias Brochhausen
+
+Ok. As for the definition of symbol, I am not sure, my feeling is that I think that the label doesn't fit the definition.
+Here is wikipedia's definition, which is a decent approximation: "A symbol is an object that represents, stands
+for, or suggests an idea, visual image, belief, action, or material entity."
+The things we seem to talk about (see Bjoern's mail) seem to be strings that are used as identifiers. Alan and I
+had a discussion about identifiers and I think that we could amend PNO (proper name ontology) or IAO do
+representent identifiers better.
+Also, let me just add that I think letters are not symbols! (they can be part of symbols, though).
+How to call word-like information content entities, I don't know. I think we should strive to get identifiers and
+names sorted out.
+Best,
+mathias
+
+--
+
+
+Alan Ruttenberg
+
+ Bjoern Peters <bpeters@liai.org> wrote:
+The same 'symbol', e.g. 6192348 can be e.g. a social security number, a telephone number
+or a pubmed ID.
+The complete crids would be conveying beyond the symbol also the context in which it is
+meant to be used e.g. (telephone number: 619 23 48), (PMID: 6192348), (SSN: 619 2348).
+To perhaps clarify.
+The CRID Symbol is the literal/visible representation of the identifier. A CRID symbol could be "6192348" or
+"PMID: 6192348" or a bar code. We don't require that the CRID symbol include information about the registry.
+However the CRID is a entity with relations to both things -­ the CRID symbol, and the registry itself(*).
+Conceptually it is an operation on the registry to pass it the CRID Symbol and retrieve the information associated
+with it.
+(*) The definition says: "An information content entity that consists of a CRID symbol and additional information
+about which CRID registry it belongs.". On review I see we have not defined the relation from CRID to registry.
+This is an omission according to my understanding of the definition.
+We currently establish the relation from registry to CRID symbol via processes that involve the registry, for
+example 'associating information with a CRID in the CRID registry'
+As a practical matter, mentions of CRID symbols often include nearby information that some community
+(perhaps global perhaps not) uses to infer what the CRID registry is. A part of a string "PMID:" from
+"PMID:6192348" should not be understood as the normative way to represent the registry. This is illustrated in an
+example of usage on CRID "The following sentence contains a CRID: "The article with Pubmed ID: 19918065".
+Note there is no string "PMID:" here. Rather there is enough information in the sentence to make the connection
+to the registry. I would take the CRID symbol in that example to be '19918065' and 'Pubmed ID:' to be a phrase
+that denotes the registry.
+I think that example could be worded better by saying "The following sentence *mentions* a CRID" i.e
+s/contains/mentions/ "Contains" would suggest that the registry is a substring of the sentence, whereas
+"mentions" makes it clear that part of the sentence used to denote to the registry.
+An equally valid example of usage would be "I suggested that he review the articles with pubmed ids: 24495276,
+3223684 and 24249522".
+Here the mention of the registry is made once and it is clear that the CRID symbols do not need that information
+repeated in each case.
+-­Alan
+
+-- 
+
+Bjoern Peters
+
+Just to confirm: Alan's clarification is in perfect agreement with what I intended to write.
+
+--
+
+Mathias Brochhausen
+
+Alan,
+given that the definition of "symbol" needs work and somehow doesn't really fit the label, wouldn't it be wise not
+to subsume CRID under symbol for now, but leave it as subclass of information content entity (This is where I
+think it was previously)?
+Best,
+Mathias
+
+--
+
+Mathias Brochhausen
+
+Let me give you an argument for the point I am trying to make;;
+http://purl.obolibrary.org/obo/IAO_0000028 label:symbol definition: "a smallish, word-­like datum..."
+According to this definition "aw" and "er" are symbols (I mean,I don't know what "word-­like" means, but they
+seem to be word-­like in many ways to me).
+But the Venus symbol (http://en.wikipedia.org/wiki/Venus_symbol), which most people would assume, is not s
+symbol (It is in many senses not word-­like).
+Best,
+Mathias
+
+--
+
+Alan Ruttenberg
+
+CRID is not under symbol. CRID symbol is under symbol.
+A question to address is whether the current definition associated with the label 'symbol' is adequate and correct
+describes the subclasses, in which case the issue is whether there is cause to change the label, or whether the
+definition doesn't document a class that subsumes CRID symbol, in which case the remedy you suggest is
+appropriate. I tend to lean to the situation being the former.
+-­Alan
+
+--
+
+Alan Ruttenberg to Mathias
+
+Are you taking into account the part of the definition that mentions 'datum'?
+
+--
+
+Mathias Brochhausen <mbrochhausen@gmail.com> Wed, Mar 5, 2014 at 9:28 AM
+To: Alan Ruttenberg <alanruttenberg@gmail.com>
+Cc: OBI Developers <obi-­devel@lists.sourceforge.net>
+
+Ok, sorry, my bad.
+Thanks for the clarification.
+
+--
+
+Mathias Brochhausen<mbrochhausen@gmail.com> Wed, Mar 5, 2014 at 9:29 AM
+To: Alan Ruttenberg <alanruttenberg@gmail.com>
+If you give me a definition of "datum", I certainly will.
+;;-­)
+
+--
+
+
+Melanie Courtot <mcourtot@gmail.com> Wed, Mar 5, 2014 at 11:49 AM
+To: Bjoern Peters <bpeters@liai.org>
+Cc: Alice Nzinga <aknzinga@ualr.edu>, OBI Developers <obi-­devel@lists.sourceforge.net>
+
+I think we should clarify that the symbol "6192348" that I write on a piece of paper is not a CRID symbol until it is
+made part of a CRID, by saying something like "phone number: 6192348", or "I wrote down the pubmed ID of the
+article we were talking about"
+This is what the editor note on CRID symbol "IAO call, 20101124: 12345 is not a CRID symbol. To be a CRID
+symbol you need to have some information about the registry within which the CRID is recorded." meant.
+The example of usage on CRID symbol explains this as well: PMID:12345, 12345 in a database column which
+has header "pubmedID" (we should split those into 2 annotation properties). In the latter case, despite being only
+"12345", because of the column header it is a CRID symbol.
+I am not sure about the complete CRIDs. I understand PMID: 6192348 to be a CRID symbol. To be a CRID, I
+would need to know that PMID means Pubmed ID, i.e. have the additional information about which registry the
+CRID belongs to. For example, there seems to be a messaging system using PMIDs for their users
+(http://forums.crackberry.com/discover-­bbm-­friends-­f51/pmessenger-­pmid-­450803/, "My PMID is 21269340")
+The same CRID symbol "PMID:21269340" can belong to 2 different CRIDs: (1) The article with Pubmed ID:
+21269340 (2) The user on the pmessenger system with ID 21269340.
+This is what I was trying to exemplify with the example 123456 is a symbol, PID:123456 is a CRID symbol, and
+the sentences "the BCCRC employee with PID:123456", "the parts catalog number in manufacturer X with
+PID:123456" are CRIDs. Until we know which registry the CRID symbol belongs to (i.e., what registry the PID
+denotes) it is not a full CRID.
+Melanie
+
+--
+
+
+Alan Ruttenberg <alanruttenberg@gmail.com> Wed, Mar 5, 2014 at 12:24 PM
+To: Mathias Brochhausen <mbrochhausen@gmail.com>
+look at data item, measurement datum
+
+--
+
+Mathias Brochhausen<mbrochhausen@gmail.com> Wed, Mar 5, 2014 at 12:26 PM
+To: Alan Ruttenberg <alanruttenberg@gmail.com>
+
+Are you saying symbol ought to be a subclass to data item?
+
+--
+
+Alan Ruttenberg<alanruttenberg@gmail.com> Wed, Mar 5, 2014 at 12:43 PM
+To: Mathias Brochhausen <mbrochhausen@gmail.com>
+
+Well, that term, yes. I think. Should review it I guess. :)
+Look at the defs not the label and tell me what you think.
+
+--
+
+Mathias Brochhausen <mbrochhausen@gmail.com> Wed, Mar 5, 2014 at 1:14 PM
+To: Alan Ruttenberg <alanruttenberg@gmail.com>
+
+Ok.
+so, we have
+http://purl.obolibrary.org/obo/IAO_0000577 Def:"A symbol that is part_of a CRID and that is sufficient to look up
+a record from the CRID's registry."
+[I assume, we think that "PID" or "SSN" are instances of that class, right]
+http://purl.obolibrary.org/obo/IAO_0000028 Def: "a smallish, word-­like datum..."
+and
+http://purl.obolibrary.org/obo/IAO_0000027 Def;; "a data item is an information content entity that is intended to be
+a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is
+constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."
+There is no problem with the fact that http://purl.obolibrary.org/obo/IAO_0000577 is a subclass to
+http://purl.obolibrary.org/obo/IAO_0000028 (at least it is possible.
+But that they are subclass to http://purl.obolibrary.org/obo/IAO_0000027 doesn't seem to be correct. The
+members of http://purl.obolibrary.org/obo/IAO_0000027 are statements. Word-­like things themselves are not
+statements. (we can discuss whether there are statements that only have one word as a part, but there being a
+statement hinges on context and intention. In addition, word-­like entities like PID or SSN cannot be true and not
+even intended to be true.
+Let me speak about labels for just one second. I think symbols ought to be in IAO. There definition should be
+based on thisWikipedia definition (only based on it, we can probably do better): "A symbol is an object that
+represents, stands for, or suggests an idea, visual image, belief, action, or material entity."
+Is this helpful?
+Best,
+mathias
