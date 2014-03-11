@@ -1,1 +1,28 @@
-Placeholder for documenting the discussion about the IAO term currently (2014-03) with the label 'symbol'
+#labels document,the,controversy
+Documenting the discussion about the IAO term currently (2014-03) with the label 'symbol'
+
+----
+2014-03-10 Alan Ruttenberg responding to Jonathan Rees's email _"They aren't 'about' anything"_ in response to [https://code.google.com/p/information-artifact-ontology/issues/detail?id=154 Issue 154]
+
+In IAO they are currently about something as they are below information content entity.
+I'm not sure how to define what the english use of symbol is - it may be too ambiguously used. 
+Here's what wordnet says:
+
+S: (n) symbol (an arbitrary sign (written or printed) that has acquired a conventional significance)
+S: (n) symbol, symbolization, symbolisation, symbolic representation (something visible that by association or convention represents something else that is invisible) "the eagle is a symbol of the United States"
+
+Our current def:
+"a smallish, word-like datum..."
+
+datum would imply data item but it is not a subclass of data item. Not says you were definition editor for that - did you intend that datum meant iao:data item?
+
+The current usage is within 'centrally registered identifier' (CRID) - that is an entity which is comprised of CRID Symbol - something like "12994173" and a pointer to a registry which made the initial association between  CRID Symbol and what it identifies. It it also superclass of serial number, lot number, etc, which don't actually have to be numbers (they could be bar codes, for example). Lastly they are superclass of numeral. 
+
+I need less that this class be called 'symbol' than I need a superclass for this set of terms that makes sense. 
+
+They are sort of like proper names in that they similarly denote instances, but can have more structure in that people sometimes embed meaning into identifiers or serial numbers.
+
+All the senses other than numeral clearly are about something if you accept that denotes is a subproperty of is_about.
+Numeral is dicey as in many cases the numeral represents something else. As such it is more like a syntactic object like 'word' and belongs in the to-be-created information structure branch.
+
+----
