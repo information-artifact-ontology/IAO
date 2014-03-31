@@ -1,0 +1,12 @@
+#summary document the controversy - Just started
+
+= Introduction =
+
+The is_about relation, sometimes referred to as the 'relation of aboutness' has generated a lot of controversy. This page will server, over time, to collect the discussions about the relation, it's (il)legitimacy, attempts at definition that would rescue it from being a primitive.
+
+
+= Details =
+
+= Posts =
+
+See Jonathan Rees's [http://odontomachus.wordpress.com/2014/03/30/aboutness-objects-propositions/  blog post] discussing an alternative to the current relation as a relation between a proposition (rather than an information content entity) and an object.
