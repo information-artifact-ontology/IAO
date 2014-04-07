@@ -320,7 +320,7 @@ outputs that describes the input.</obo:IAO_0000116>
 Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which we are awaiting details.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">m is a quality measurement of q at t when
 q is a quality 
-there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
+there is a measurement process p that has specified output m, a measurement data item, that is about q</obo:IAO_0000115>
         <rdfs:domain rdf:resource="&obo;IAO_0000109"/>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
         <rdfs:range rdf:resource="&snap;Quality"/>
@@ -333,7 +333,7 @@ there is a measurement process p that has specified output m, a measurement datu
     <owl:ObjectProperty rdf:about="&obo;IAO_0000407">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">has coordinate unit label</rdfs:label>
-        <rdfs:comment xml:lang="en">relating a cartesian spatial coordinate datum to a unit label that together with the values represent a point</rdfs:comment>
+        <rdfs:comment xml:lang="en">relating a cartesian spatial coordinate data item to a unit label that together with the values represent a point</rdfs:comment>
         <rdfs:domain rdf:resource="&obo;IAO_0000400"/>
         <rdfs:range rdf:resource="&UO;UO_0000001"/>
         <rdfs:subPropertyOf rdf:resource="&ro;has_part"/>
@@ -346,7 +346,7 @@ there is a measurement process p that has specified output m, a measurement datu
     <owl:ObjectProperty rdf:about="&obo;IAO_0000413">
         <rdfs:label xml:lang="en">is duration of</rdfs:label>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">relates a process to a time-measurement-datum that represents the duration of the process</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">relates a process to a time-measurement-data item that represents the duration of the process</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
         <rdfs:domain rdf:resource="&obo;IAO_0000416"/>
@@ -401,7 +401,7 @@ there is a measurement process p that has specified output m, a measurement datu
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">has time stamp</rdfs:label>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">relates a time stamped measurement data item to the time measurement data item that denotes the time when the measurement was taken</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <rdfs:range rdf:resource="&obo;IAO_0000416"/>
         <rdfs:domain rdf:resource="&obo;IAO_0000582"/>
@@ -413,9 +413,9 @@ there is a measurement process p that has specified output m, a measurement datu
     <!-- http://purl.obolibrary.org/obo/IAO_0000583 -->
 
     <owl:ObjectProperty rdf:about="&obo;IAO_0000583">
-        <rdfs:label xml:lang="en">has measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">has measurement data item</rdfs:label>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">relates a time stamped measurement datum to the measurement datum that was measured</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">relates a time stamped measurement data item to the measurement data item that was measured</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <rdfs:domain rdf:resource="&obo;IAO_0000582"/>
         <rdfs:subPropertyOf rdf:resource="&ro;has_part"/>
@@ -586,7 +586,7 @@ Cristian Cocos, and subsequently moved to IAO where the objective for
 which the original term was defined was satisfied with the definition
 of this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: review of this term done during during the OBI workshop winter 2009 and the current definition was considered acceptable for use in OBI. If there is a need to modify this definition please notify OBI.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A measurement unit label is as a label that is part of a scalar measurement data item and denotes a unit of measure.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Examples of measurement unit labels are liters, inches, weight per volume.</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
@@ -654,13 +654,13 @@ of a plan  towards which the realization of the plan is directed.&quot;</obo:IAO
     <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="&obo;IAO_0000009">
-        <rdfs:label xml:lang="en">datum label</rdfs:label>
+        <rdfs:label xml:lang="en">data item label</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;datum label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+        <obo:IAO_0000232>9/22/11 BP: changed the rdfs:label for this class from &apos;label&apos; to &apos;data item label&apos; to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a data item. 
 </obo:IAO_0000232>
-        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A label is a symbol that is part of some other data item and is used to either partially define  the denotation of that data item or to provide a means for identifying the data item as a member of the set of data with the same label</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">datum label</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">data item label</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">http://www.golovchenko.org/cgi-bin/wnsearch?q=label#4n</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
     </owl:Class>
@@ -766,8 +766,8 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and data item to be one entity, not knowing how to define singular versus plural. So data item is more general than data item.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: removed data item as alternative term as data item specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
         <obo:IAO_0000116 xml:lang="en">JAR: datum     -- well, this will be very tricky to define, but maybe some 
 information-like stuff that might be put into a computer and that is 
@@ -794,7 +794,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">a smallish, word-like datum...</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a smallish, word-like data item...</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">symbol</obo:IAO_0000111>
     </owl:Class>
     
@@ -862,7 +862,7 @@ Previous. An information content entity is a non-realizable information entity t
     <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
 
     <owl:Class rdf:about="&obo;IAO_0000032">
-        <rdfs:label xml:lang="en">scalar measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">scalar measurement data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -877,12 +877,12 @@ Previous. An information content entity is a non-realizable information entity t
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
-        <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
+        <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep data item singular in scalar measurement data item, as in
 this case we explicitly refer to the singular form</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a scalar measurement data item is a measurement data item that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
     
@@ -1186,14 +1186,14 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="&obo;IAO_0000109">
-        <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">measurement data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 is_specified_output of some assay?</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A measurement data item is an information content entity that is a recording of the output of a measurement such as produced by a device.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Examples of measurement data are the recoding of the weight of a mouse as {40,mass,&quot;grams&quot;}, the recording of an observation of the behavior of the mouse {,process,&quot;agitated&quot;}, the recording of the expression level of a gene as measured through the process of microarray experiment {3.4,luminosity,}.</obo:IAO_0000112>
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <obo:IAO_0000111 xml:lang="en">measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">measurement data item</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
@@ -1245,7 +1245,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
 
     <owl:Class rdf:about="&obo;IAO_0000140">
-        <rdfs:label xml:lang="en">setting datum</rdfs:label>
+        <rdfs:label xml:lang="en">setting data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000116 xml:lang="en">2/3/2009 Feedback from OBI
 
@@ -1253,8 +1253,8 @@ This should be a &quot;setting specification&quot;. There is a question of wheth
 
 Pro other specification are about realizables.
 Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A settings datum is a datum that denotes some configuration of an instrument.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">Alan grouped these in placeholder for the moment. Name by analogy to measurement datum.</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A settings data item is a data item that denotes some configuration of an instrument.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Alan grouped these in placeholder for the moment. Name by analogy to measurement data item.</obo:IAO_0000116>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
     
@@ -1956,7 +1956,7 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000400 -->
 
     <owl:Class rdf:about="&obo;IAO_0000400">
-        <rdfs:label xml:lang="en">cartesian spatial coordinate datum</rdfs:label>
+        <rdfs:label xml:lang="en">cartesian spatial coordinate data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1971,7 +1971,7 @@ GO   gene ontology</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009-08-18 Alan Ruttenberg - question to BFO list about whether the BFO sense of the lower dimensional regions is that they are always part of actual space (the three dimensional sort) http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A cartesian spatial coordinate datum is a representation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A cartesian spatial coordinate data item is a representation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:seeAlso xml:lang="en">http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</rdfs:seeAlso>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
@@ -1982,7 +1982,7 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000401 -->
 
     <owl:Class rdf:about="&obo;IAO_0000401">
-        <rdfs:label xml:lang="en">one dimensional cartesian spatial coordinate datum</rdfs:label>
+        <rdfs:label xml:lang="en">one dimensional cartesian spatial coordinate data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2006,7 +2006,7 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</rdfs:comment>
+        <rdfs:comment xml:lang="en">A cartesion spatial coordinate data item that  uses one value to specify a position along a one dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
@@ -2016,7 +2016,7 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000402 -->
 
     <owl:Class rdf:about="&obo;IAO_0000402">
-        <rdfs:label xml:lang="en">two dimensional cartesian spatial coordinate datum</rdfs:label>
+        <rdfs:label xml:lang="en">two dimensional cartesian spatial coordinate data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2046,7 +2046,7 @@ GO   gene ontology</obo:IAO_0000112>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A cartesion spatial coordinate datum that  uses two values to specify a position within a two dimensional spatial region</rdfs:comment>
+        <rdfs:comment xml:lang="en">A cartesion spatial coordinate data item that  uses two values to specify a position within a two dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
@@ -2056,7 +2056,7 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000403 -->
 
     <owl:Class rdf:about="&obo;IAO_0000403">
-        <rdfs:label xml:lang="en">three dimensional cartesian spatial coordinate datum</rdfs:label>
+        <rdfs:label xml:lang="en">three dimensional cartesian spatial coordinate data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2092,7 +2092,7 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A cartesion spatial coordinate datum that  uses three values to specify a position within a three dimensional spatial region</rdfs:comment>
+        <rdfs:comment xml:lang="en">A cartesion spatial coordinate data item that  uses three values to specify a position within a three dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
     </owl:Class>
@@ -2102,7 +2102,7 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000408 -->
 
     <owl:Class rdf:about="&obo;IAO_0000408">
-        <rdfs:label xml:lang="en">length measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">length measurement data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2116,7 +2116,7 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="&UO;UO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement data item that is the result of measurement of length quality</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
     </owl:Class>
@@ -2126,7 +2126,7 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000414 -->
 
     <owl:Class rdf:about="&obo;IAO_0000414">
-        <rdfs:label xml:lang="en">mass measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">mass measurement data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2143,7 +2143,7 @@ GO   gene ontology</obo:IAO_0000112>
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of mass quality</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement data item that is the result of measurement of mass quality</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
     </owl:Class>
@@ -2168,7 +2168,7 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
 
     <owl:Class rdf:about="&obo;IAO_0000416">
-        <rdfs:label xml:lang="en">time measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">time measurement data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2185,7 +2185,7 @@ GO   gene ontology</obo:IAO_0000112>
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measuring a temporal interval</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement data item that is the result of measuring a temporal interval</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
     </owl:Class>
@@ -2474,7 +2474,7 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000582 -->
 
     <owl:Class rdf:about="&obo;IAO_0000582">
-        <rdfs:label xml:lang="en">time stamped measurement datum</rdfs:label>
+        <rdfs:label xml:lang="en">time stamped measurement data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Class>
