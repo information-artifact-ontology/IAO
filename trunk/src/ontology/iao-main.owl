@@ -718,7 +718,8 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A quality of an information bearer that imparts the information content</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
-        <obo:IAO_0000112 xml:lang="en">The pattern in ink on a page of a paperback novel.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case.</obo:IAO_0000112>
+        <obo:IAO_0000116>2014-03-10: We are not certain that all information carriers are qualities. There was a discussion of dropping it.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">information carrier</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
     </owl:Class>
@@ -833,12 +834,13 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000116 xml:lang="en">information_content_entity &apos;is_encoded_in&apos; some digital_entity in obi before split (040907). information_content_entity &apos;is_encoded_in&apos; some physical_document in obi before split (040907).
 
 Previous. An information content entity is a non-realizable information entity that &apos;is encoded in&apos; some digital or physical entity.</obo:IAO_0000116>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of "thing" is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:Class>
     
 
@@ -1292,11 +1294,13 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115 xml:lang="en">An information bearer is a material_entity in which a concretization of an information content entity inheres.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity in which a concretization of an information content entity inheres.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">GROUP: IAO</obo:IAO_0000117>
-        <obo:IAO_0000112 xml:lang="en">a hard drive, a piece of paper with writing on it, a brain</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">A page of a paperback novel with writing on it. The paper itself is a material information bearer, the pattern of ink is the information carrier.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hard drive</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a brain</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">material information bearer</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:Class>
     
 
