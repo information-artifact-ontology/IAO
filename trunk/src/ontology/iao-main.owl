@@ -791,8 +791,15 @@ JAR: A data item is an approximately justified approximately true approximate be
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
         <obo:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">a smallish, word-like datum...</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of 'mark' and 'sign' in the future (see https://code.google.com/p/information-artifact-ontology/issues/detail?id=154).</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">symbol</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">a written proper name such as "OBI"</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a serial number such as "12324X"</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a stop sign</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
     </owl:Class>
     
 
