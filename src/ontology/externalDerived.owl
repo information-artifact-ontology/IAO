@@ -1,31 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl#"
      xml:base="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl"
-     xmlns:envo="http://purl.org/obo/owl/ENVO#"
-     xmlns:UO="http://purl.org/obo/owl/UO#"
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:pro="http://purl.org/obo/owl/PRO#"
      xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:caro="http://purl.org/obo/owl/CARO#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:ncbitax="http://purl.org/obo/owl/NCBITaxon#"
-     xmlns:so="http://purl.org/obo/owl/SO#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rotoo="http://purl.org/obo/owl/ro#"
      xmlns:daml="http://www.daml.org/2001/03/daml+oil#"
      xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
      xmlns:obi="http://purl.obolibrary.org/obo/"
      xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
-     xmlns:cell="http://purl.org/obo/owl/CL#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
-     xmlns:pato="http://purl.org/obo/owl/PATO#"
-     xmlns:go="http://purl.org/obo/owl/GO#"
-     xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -131,9 +121,9 @@
     
 
 
-    <!-- http://purl.org/obo/owl/PATO#PATO_0000122 -->
+    <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000122">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length</rdfs:label>
         <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length</obi:IAO_0000111>
         <obi:IAO_0000115 xml:lang="en">A 1-D extent quality which is equal to the distance between two points.</obi:IAO_0000115>
@@ -141,9 +131,9 @@
     
 
 
-    <!-- http://purl.org/obo/owl/PATO#PATO_0000125 -->
+    <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass</rdfs:label>
         <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass</obi:IAO_0000111>
         <obi:IAO_0000115 xml:lang="en">A physical quality that inheres in a bearer by virtue of the proportion of the bearer&#39;s amount of matter.</obi:IAO_0000115>
@@ -151,27 +141,27 @@
     
 
 
-    <!-- http://purl.org/obo/owl/UO#UO_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0000001 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length unit</rdfs:label>
         <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">length unit</obi:IAO_0000111>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/UO#UO_0000002 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0000002 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass unit</rdfs:label>
         <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mass unit</obi:IAO_0000111>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/obo/owl/UO#UO_0000003 -->
+    <!-- http://purl.obolibrary.org/obo/UO_0000003 -->
 
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time unit</rdfs:label>
         <obi:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time unit</obi:IAO_0000111>
     </owl:Class>
