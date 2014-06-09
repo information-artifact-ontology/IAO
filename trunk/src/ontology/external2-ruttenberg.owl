@@ -199,7 +199,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
-        <rdfs:subClassOf rdf:resource="obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
     </owl:Class>
     
@@ -208,7 +208,7 @@
     <!-- http://purl.obolibrary.org/obo/PATO_0000125 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
-        <rdfs:subClassOf rdf:resource="obo;BFO_0000019"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
     </owl:Class>
     
