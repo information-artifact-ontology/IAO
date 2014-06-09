@@ -329,7 +329,7 @@ q is a quality
 there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
         <rdfs:domain rdf:resource="&obo;IAO_0000109"/>
         <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
-        <rdfs:range rdf:resource="&snap;Quality"/>
+        <rdfs:range rdf:resource="&obo;BFO_0000019"/>
     </owl:ObjectProperty>
     
 
@@ -444,28 +444,6 @@ there is a measurement process p that has specified output m, a measurement datu
     <owl:ObjectProperty rdf:about="&obo;OBI_0000293"/>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000294">
-        <rdfs:label xml:lang="en">is_concretization_of</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">a relationship between a generically dependent continuant and at least one specifically dependent continuant upon which it existentially depends</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&snap;GenericallyDependentContinuant"/>
-        <rdfs:domain rdf:resource="&snap;SpecificallyDependentContinuant"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000297 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000297">
-        <rdfs:label xml:lang="en">is_concretized_as</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">a relationship between a generically dependent continuant and at least one specifically dependent continuant upon which it existentially depends</obo:IAO_0000115>
-        <owl:inverseOf rdf:resource="&obo;OBI_0000294"/>
-        <rdfs:domain rdf:resource="&snap;GenericallyDependentContinuant"/>
-        <rdfs:range rdf:resource="&snap;SpecificallyDependentContinuant"/>
-    </owl:ObjectProperty>
-    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
@@ -922,7 +900,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&snap;RealizableEntity"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term realizable information entity was proposed for OBI (OBI_0000337) , edited by the PlanAndPlannedProcess branch. Original definition was  &quot;is the specification of a process that can be concretized and realized by an actor&quot; with alternative term  &quot;instruction&quot;.It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
@@ -2139,7 +2117,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="&snap;ZeroDimensionalRegion"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2174,10 +2152,10 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&snap;ZeroDimensionalRegion"/>
+                            <rdf:Description rdf:about="&obo;BFO_0000018"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&ro;part_of"/>
-                                <owl:someValuesFrom rdf:resource="&snap;OneDimensionalRegion"/>
+                                <owl:someValuesFrom rdf:resource="&obo;BFO_0000026"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2214,10 +2192,10 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&snap;ZeroDimensionalRegion"/>
+                            <rdf:Description rdf:about="&obo;BFO_0000018"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&ro;part_of"/>
-                                <owl:someValuesFrom rdf:resource="&snap;TwoDimensionalRegion"/>
+                                <owl:someValuesFrom rdf:resource="&obo;BFO_0000009"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2254,10 +2232,10 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&snap;ZeroDimensionalRegion"/>
+                            <rdf:Description rdf:about="&obo;BFO_0000018"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="&ro;part_of"/>
-                                <owl:someValuesFrom rdf:resource="&snap;ThreeDimensionalRegion"/>
+                                <owl:someValuesFrom rdf:resource="&obo;BFO_0000028"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2841,47 +2819,6 @@ That the value specification is at least a structure but maybe about one thing o
     
 
 
-    <!-- http://www.ifomis.org/bfo/1.1/snap#GenericallyDependentContinuant -->
-
-    <owl:Class rdf:about="&snap;GenericallyDependentContinuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#OneDimensionalRegion -->
-
-    <owl:Class rdf:about="&snap;OneDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
-
-    <owl:Class rdf:about="&snap;RealizableEntity"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#ThreeDimensionalRegion -->
-
-    <owl:Class rdf:about="&snap;ThreeDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#TwoDimensionalRegion -->
-
-    <owl:Class rdf:about="&snap;TwoDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#ZeroDimensionalRegion -->
-
-    <owl:Class rdf:about="&snap;ZeroDimensionalRegion"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
-
-    <owl:Class rdf:about="&span;Process"/>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -2901,16 +2838,6 @@ That the value specification is at least a structure but maybe about one thing o
     </owl:Thing>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000103 -->
-
-    <owl:Thing rdf:about="&obo;IAO_0000103"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000120 -->
-
-    <owl:Thing rdf:about="&obo;IAO_0000120"/>
 </rdf:RDF>
 
 
