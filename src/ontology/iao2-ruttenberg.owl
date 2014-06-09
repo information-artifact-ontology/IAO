@@ -204,6 +204,27 @@
 
 Is it information structure equivalentTo: Information artifact and has part some a that structures information with some information artifact?</obo:IAO_0000116>
         <rdfs:comment>a structures information with b if a is an information artifact and b is an information artifact and there is an information structure that has part a and has part b</rdfs:comment>
+        <obo:IAO_0000115>a structures information with b iff
+
+1) a and b are information entities and
+2) there is an information structure entity c that has proper parts p[i](i=1..N) and
+3) a=p[m], b=p[n], n ≠ m, n,m 
+3) every concretization of c (has parts that?) also concretize all the p[i] and 
+4) concretizations of c are such at that there exists a planned process with specified inputs only the concretizations of p[i]  that reliably copies c (creates another concretization of c). </obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000112>empty spreadsheet cell D1, a[i]={&quot;D&quot;,&quot;1&quot;} with D and 1 vertically above and horizontally beside a material entity which bears no concretization of an information entity.
+</obo:IAO_0000112>
+        <obo:IAO_0000112>Ratio 1/2, a[i]={&quot;1&quot;,&quot;/&quot;,&quot;2&quot;}
+ </obo:IAO_0000112>
+        <obo:IAO_0000116>Alan Ruttenberg 2014-06:
+
+I need to try this with a bunch of examples, but wanted to get it captured before it slips my mind.
+
+There is still the issue of identity - are all digital concretizations of the spreadsheet cell a concretization of the same entity as the one concretized on my screen? If so we have to make clear that the process referred to in (4) can differ from concretization to concretization of GDC (I), and that subsets of concretizations can include concretizations of GDC marks that are not necessarily part of concretizations of I.
+
+If not then we have to deal with how to work with the different entities that are the digital GDC and the GDC concretized as visually accessible qualities.
+</obo:IAO_0000116>
+        <obo:IAO_0000119>Person: Alan Ruttenberg</obo:IAO_0000119>
     </owl:ObjectProperty>
     
 
@@ -787,13 +808,17 @@ JAR: A data item is an approximately justified approximately true approximate be
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/IAO_0000102"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/IAO_0000107"/>
+        <obo:IAO_0000116>Alan Ruttenberg 2014-06: It is intended that it be captured that information content entities gain the target of is about when they are created, which is established by its creator or designator. 
+ 
+Creation comes in two forms: By associating new marks with something they are about, or by associating an existing set of marks with something.  </obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2014-03-10: The use of &quot;thing&quot; is intended to be general enough to include universals and configurations (see https://groups.google.com/d/msg/information-ontology/GBxvYZCk1oc/-L6B5fSBBTQJ).</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Examples of information content entites include journal articles, data, graphical layouts, and graphs.</obo:IAO_0000112>
         <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117>Person: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:Class>
@@ -1112,6 +1137,33 @@ Example: The ISO document specifying what encompasses an XML document; The instr
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000102">
+        <rdfs:label xml:lang="en">meme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000105"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/IAO_0000106"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/IAO_0000107"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/IAO_0000108"/>
+        <obo:IAO_0000116>Alan Ruttenberg 2014-06:
+
+The term is intended to capture the notion of on or more idea or target of aboutness being picked up by a community and evolving on its own, perhaps chaging the target of aboutness with time or diverging geographically. 
+
+It is to be distinguished from information content entities which get their is about target when they are created and do not change thereafter but acknowledge the appearence of  relatively stable information entities that nonetheless evolve.
+
+One might argue that the distinction that FRBR makes between work and expression is better captured by meme, with the cluster members including the originally created information content entity and subsequent transformations of it - expressions or performances - each of which is a new creative work (in the common sense).
+
+TBD: Should we define &quot;work&quot; as so, or perhaps the root information content entity from which the others are derived.
+
+Inspired by a conversation with Barry Smith and by dissatisfaction with the FRBR distinction between work and expression.</obo:IAO_0000116>
+        <obo:IAO_0000117>Person: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000119>Person: Alan Ruttenberg
+</obo:IAO_0000119>
+        <obo:IAO_0000115>a cluster of information content entities deriving from a social process involving interpretation or reinterpreation transformations from one or more seed information content entities or some other member of the meme.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
@@ -1120,13 +1172,13 @@ Example: The ISO document specifying what encompasses an XML document; The instr
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
@@ -1153,8 +1205,14 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IAO_0000105 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000105">
-        <rdfs:label xml:lang="en">information artifact</rdfs:label>
+        <rdfs:label xml:lang="en">information entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000068"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1165,12 +1223,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000068"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000110"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000116>change label to information entity as Barry wants to use the term information artifact to refer either to information content entities or their bearers.</obo:IAO_0000116>
         <obo:IAO_0000116>Where do SHA256 and Digital watermarks live?
 
 Are they marks or are they about what they hash?</obo:IAO_0000116>
@@ -1209,6 +1262,9 @@ Trees are an interesting mixture of marks and (i want to say ICE&apos;s but with
 sites: A decision tree
 marks only: A production rule
 </obo:IAO_0000116>
+        <obo:IAO_0000119>Person: Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000117>any information entity that structures information with another</obo:IAO_0000117>
+        <obo:IAO_0000117>Person: Alan Ruttenberg</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1225,11 +1281,12 @@ marks only: A production rule
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/IAO_0000108"/>
-        <obo:IAO_0000115>a part of an information artifact that is not about anything</obo:IAO_0000115>
         <obo:IAO_0000112>The borders that delimit a spreadsheet cell, within which there is an information site.</obo:IAO_0000112>
+        <obo:IAO_0000119>Person: Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000112>Block and sector marks as created in factory low-level formatting of a hard disk by a Servowriter #http://en.wikipedia.org/wiki/Servowriter, http://www.uniassignment.com/essay-samples/it/computer-forensics.php</obo:IAO_0000112>
+        <obo:IAO_0000115>a part of an information entity that is not about anything</obo:IAO_0000115>
         <obo:IAO_0000112>A word absent a denotation, for example the word &quot;bank&quot; which can mean a financial institution or the side of a river. </obo:IAO_0000112>
-        <obo:IAO_0000112>The stroke of the letter &quot;i&quot;</obo:IAO_0000112>
+        <obo:IAO_0000117>Person: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000116>Are the borders displayed around a cell in a visual presentation of a spreadsheet generically dependent parts?
 
 The argument against is that the internal representation of the spreadsheet doesn&apos;t have the marks.
@@ -1241,6 +1298,7 @@ Against: words are marks.
 Are there necessarily equivalents for the digital representation? Seems not as the memory location is a place calculated from row and column. 
 
 Are there 2 information artifacts? The underlying representation and the presentation?</obo:IAO_0000116>
+        <obo:IAO_0000112>The stroke of the letter &quot;i&quot;</obo:IAO_0000112>
     </owl:Class>
     <owl:Axiom>
         <obo:IAO_0000116>But what about the cases where marks become information content entities by an act. For example the binding of a variable name to a value. Or when I say &quot;let&apos;s suppose this square is our family?&quot;
@@ -1260,10 +1318,23 @@ Otherwise we have to qualify the disjointness as at any time or at all times.</o
     <!-- http://purl.obolibrary.org/obo/IAO_0000108 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000108">
-        <rdfs:label xml:lang="en">information site</rdfs:label>
+        <rdfs:label xml:lang="en">variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000105"/>
+        <obo:IAO_0000112>A fill in the blank in a form or dialog box</obo:IAO_0000112>
         <obo:IAO_0000112>A place in a form where you are to fill in a date</obo:IAO_0000112>
-        <obo:IAO_0000116>Each bearer of a concretization of an information side bears a disposition to have an overlapping concretization of an information entity. That&apos;s true for things like paper forms, but not for magnetic media, but yes for screen concretizations.</obo:IAO_0000116>
+        <obo:IAO_0000115>an information entity which is not about anything at the time it is created but which is intended to be associated with one or more information entities over time. To be distinguished with information content entities come into existence with a target aboutness established by their creator and which which is rigidly retained.</obo:IAO_0000115>
+        <obo:IAO_0000119>Person: Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000116>An earlier attempt to define information site in structural terms:
+
+Each bearer of a concretization of an information side bears a disposition to have an overlapping concretization of an information entity. That&apos;s true for things like paper forms, but not for magnetic media, but yes for screen concretizations.</obo:IAO_0000116>
+        <obo:IAO_0000112>unpopulated part of a database</obo:IAO_0000112>
+        <obo:IAO_0000116>Alan Ruttenberg 2014-06
+
+It is unclear to me whether the variable is the thing that takes on different values  - i.e. has identity despite changing, or whether it is a rigid class but with a relation to the filling entity, which changes or comes and goes</obo:IAO_0000116>
+        <obo:IAO_0000112>a symbol in a logical formula such as &apos;x&apos; in (forall x, x a man =&gt; x a mortal)</obo:IAO_0000112>
+        <obo:IAO_0000112>a variable in the sense used in computer programming</obo:IAO_0000112>
+        <obo:IAO_0000117>Person: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000112>A cell in a spreadsheet</obo:IAO_0000112>
     </owl:Class>
     
 
@@ -2103,6 +2174,12 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2117,12 +2194,6 @@ GO   gene ontology</obo:IAO_0000112>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
@@ -2135,12 +2206,6 @@ GO   gene ontology</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000402">
         <rdfs:label xml:lang="en">two dimensional cartesian spatial coordinate datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
@@ -2163,6 +2228,12 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A cartesion spatial coordinate datum that  uses two values to specify a position within a two dimensional spatial region</rdfs:comment>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
@@ -2175,6 +2246,12 @@ GO   gene ontology</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000403">
         <rdfs:label xml:lang="en">three dimensional cartesian spatial coordinate datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
@@ -2193,19 +2270,13 @@ GO   gene ontology</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000405"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000405"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2223,14 +2294,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
@@ -2385,14 +2456,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape</obo:IAO_0000116>
@@ -2430,14 +2501,14 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2014-05-05: It is the CRID registry that assigns CRIDs, not the users of the registry.</obo:IAO_0000116>
@@ -2466,13 +2537,13 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a CRID registry associates an information content entity with a CRID symbol</obo:IAO_0000115>
@@ -2572,8 +2643,8 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2584,8 +2655,8 @@ points together with a line.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol</obo:IAO_0000115>
