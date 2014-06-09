@@ -1323,6 +1323,17 @@ Otherwise we have to qualify the disjointness as at any time or at all times.</o
         <obo:IAO_0000112>A fill in the blank in a form or dialog box</obo:IAO_0000112>
         <obo:IAO_0000112>A place in a form where you are to fill in a date</obo:IAO_0000112>
         <obo:IAO_0000115>an information entity which is not about anything at the time it is created but which is intended to be associated with one or more information entities over time. To be distinguished with information content entities come into existence with a target aboutness established by their creator and which which is rigidly retained.</obo:IAO_0000115>
+        <obo:IAO_0000116>Alan Ruttenberg 2014-06
+
+It&apos;s easy to get confused about identity when referring to variables with labels. For example one writes a program using a global dynamic variable called &apos;a&apos;, shadowing it with a lexical variable in two different functions. The program is run several times. How many variables are there.
+
+I think at least 3 corresponding to the distinct scopes (not scope types), i.e. 1 dynamic, 2 lexical. 
+
+I am mixed about subsequent runs of the program but arguably the identity of a variable in a program is tied to the memory allocated to hold it, and subsequent runs allocate different memory.
+
+Similarly with a form with a SSN field. Does each form have a different variable (each of which is filled separately)?
+
+I&apos;m inclined at the moment to go with the multiples - each program run has a new variable. In which case we would name the SSN blank as a variable &lt;i&gt;type&lt;/i&gt; instantiating it in each case of use.</obo:IAO_0000116>
         <obo:IAO_0000119>Person: Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000116>An earlier attempt to define information site in structural terms:
 
