@@ -36,7 +36,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/external.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/external2-ruttenberg.owl">
         <owl:versionInfo rdf:datatype="&xsd;string">$Revision: 80 $</owl:versionInfo>
     </owl:Ontology>
     
