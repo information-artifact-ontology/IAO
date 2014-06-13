@@ -1,0 +1,6 @@
+../ontology-metadata.owl?forceReadOnly=true
+./iao-owl-full.owl?forceReadOnly=true
+../external/bfo11.owl?forceReadOnly=true
+../external/protege-dc.owl?forceReadOnly=true
+../external/protege.owl?forceReadOnly=true
+../external/ro.owl?forceReadOnly=true
