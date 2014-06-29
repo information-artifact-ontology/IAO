@@ -1,0 +1,110 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl
+
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+http://purl.obolibrary.org/obo/OBI_0000066 #investigation
+http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
+http://purl.obolibrary.org/obo/OBI_0500000 #study design
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+subClassOf http://www.ifomis.org/bfo/1.1/span#ProcessualEntity
+http://purl.obolibrary.org/obo/OBI_0000066 #investigation
+subClassOf http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
+subClassOf http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/OBI_0500000 #study design
+subClassOf http://purl.obolibrary.org/obo/IAO_0000104
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115
+
+###################################################
+
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000122 #length
+http://purl.obolibrary.org/obo/PATO_0000125 #mass
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000122 #length
+subClassOf http://www.ifomis.org/bfo/1.1/snap#Quality
+http://purl.obolibrary.org/obo/PATO_0000125 #mass
+subClassOf http://www.ifomis.org/bfo/1.1/snap#Quality
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115
+
+    
+###################################################
+
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
+UO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UO_0000001 #length unit
+http://purl.obolibrary.org/obo/UO_0000002 #mass unit
+http://purl.obolibrary.org/obo/UO_0000003 #time unit
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UO_0000001 #length unit
+subClassOf http://purl.obolibrary.org/obo/IAO_0000003
+http://purl.obolibrary.org/obo/UO_0000002 #mass unit
+subClassOf http://purl.obolibrary.org/obo/IAO_0000003
+http://purl.obolibrary.org/obo/UO_0000003 #time unit
+subClassOf http://purl.obolibrary.org/obo/IAO_0000003
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115
+
+
+
+###################################################
+
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
+GAZ
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
+subClassOf http://www.ifomis.org/bfo/1.1/snap#Site
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115
+
