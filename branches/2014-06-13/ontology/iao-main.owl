@@ -433,30 +433,6 @@ there is a measurement process p that has specified output m, a measurement datu
     <owl:ObjectProperty rdf:about="&obo;OBI_0000293"/>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000294">
-        <rdfs:label xml:lang="en">is_concretization_of</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">a relationship between a generically dependent continuant and at least one specifically dependent continuant upon which it existentially depends</obo:IAO_0000115>
-        <rdfs:range rdf:resource="&snap;GenericallyDependentContinuant"/>
-        <rdfs:domain rdf:resource="&snap;SpecificallyDependentContinuant"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000297 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OBI_0000297">
-        <rdfs:label xml:lang="en">is_concretized_as</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">a relationship between a generically dependent continuant and at least one specifically dependent continuant upon which it existentially depends</obo:IAO_0000115>
-        <owl:inverseOf rdf:resource="&obo;OBI_0000294"/>
-        <rdfs:domain rdf:resource="&snap;GenericallyDependentContinuant"/>
-        <rdfs:range rdf:resource="&snap;SpecificallyDependentContinuant"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
