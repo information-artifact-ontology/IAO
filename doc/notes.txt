@@ -1,0 +1,25 @@
+1. Import classes from external resources using OntoFox based on MIREOT strategy, generated import-OBO.owl
+
+2. Change <owl:import> in IAO.owl and iao-main.owl, replace import external.owl and externalDerived.owl by import-OBO.owl
+
+3. Delete imported relations which will be replaced by BFO 2.0 relations
+
+4. Modify xml:base and xmlns of externalByHand.owl and obsolete.owl for making these files loaded from local documents using OWL-API
+
+5. Update IRIs based on mapping file
+
+6. Clean up ontology headers including removing unused xmlns and owl:import of BFO 1.1 and RO and add import of BFO2.0 class only
+
+7. Add BFO 2.0 relations in externalByHand.owl
+
+
+Got inconsistency when running Hermit 1.3.8 because 'information conponent' has part was used in defining subClasses of 'cartesian spatial coordinate datum', such as:
+	denotes some 
+	    ('zero-dimensional spatial region'
+     and ('componet of information entity' some 'one-dimensional spatial region'))
+     
+'componet of information entity' with domain and range ICE, so, what should we use here? 
+
+
+
+
