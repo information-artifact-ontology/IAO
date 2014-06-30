@@ -1,14 +1,10 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
-     xml:base="http://purl.obolibrary.org/obo/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl#"
+     xml:base="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
-     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:rotoo="http://purl.org/obo/owl/ro#"
-     xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -16,10 +12,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
-     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
-     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">$Revision: 80 $</owl:versionInfo>
     </owl:Ontology>
@@ -34,47 +27,86 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label xml:lang="en">definition</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
-        <rdfs:label xml:lang="en">editor note</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
-        <rdfs:label xml:lang="en">in branch</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
-        <rdfs:label xml:lang="en">has curation status</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <rdfs:label xml:lang="en">definition source</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
-        <rdfs:label xml:lang="en">term editor</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </owl:AnnotationProperty>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000113 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
+        <rdfs:label xml:lang="en">in branch</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -84,16 +116,204 @@
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+     -->   
 
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
+        <rdfs:label xml:lang="en">inheres in at all times</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Inherence is a subrelation of s-depends_on which holds between a dependent continuant and an independent continuant that is not a spatial region. Since dependent continuants cannot migrate from one independent continuant bearer to another, it follows that if b s-depends_on independent continuant c at some time, then b s-depends_on c at all times at which a exists. Inherence is in this sense redundantly time-indexed.For example, consider the particular instance of openness inhering in my mouth at t as I prepare to take a bite out of a donut, followed by a closedness at t+1 when I bite the donut and start chewing. The openness instance is then shortlived, and to say that it s-depends_on my mouth at all times at which this openness exists, means: at all times during this short life. Every time you make a fist, you make a new (instance of the universal) fist. (Every time your hand has the fist-shaped quality, there is created a new instance of the universal fist-shaped quality.)</obo:IAO_0000116>
+        <obo:BFO_0000180>inheresInAt</obo:BFO_0000180>
+        <obo:BFO_0000179>inheres-in_at</obo:BFO_0000179>
+        <obo:IAO_0000602>(iff (inheresInAt a b t) (and (DependentContinuant a) (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))) // axiom label in BFO2 CLIF: [051-002] </obo:IAO_0000602>
+        <obo:IAO_0000116>BFO2 Reference: independent continuant that is not a spatial region</obo:IAO_0000116>
+        <obo:IAO_0000116>Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance-level, relation. The BFO reading of the binary relation &apos;inheres in at all times@en&apos; is: forall(t) exists_at(x,t) -&gt; exists_at(y,t) and &apos;inheres in@en(x,y,t)&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116>BFO2 Reference: specifically dependent continuant</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">b inheres_in c at t =Def. b is a dependent continuant &amp; c is an independent continuant that is not a spatial region &amp; b s-depends_on c at t. (axiom label in BFO2 Reference: [051-002])</obo:IAO_0000115>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
     
+    
+    
+    <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000053">
+        <rdfs:label xml:lang="en">bearer of at some time</rdfs:label>
+        <obo:IAO_0000602>(iff (bearerOfAt a b t) (and (specificallyDependsOnAt b a t) (IndependentContinuant a) (not (SpatialRegion a)) (existsAt b t))) // axiom label in BFO2 CLIF: [053-004] </obo:IAO_0000602>
+        <obo:IAO_0000116>BFO2 Reference: independent continuant that is not a spatial region</obo:IAO_0000116>
+        <obo:IAO_0000116>Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;bearer of at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;bearer of@en&apos;(x,y,t)</obo:IAO_0000116>
+        <obo:IAO_0000116>BFO2 Reference: specifically dependent continuant</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">b bearer_of c at t =Def. c s-depends_on b at t &amp; b is an independent continuant that is not a spatial region. (axiom label in BFO2 Reference: [053-004])</obo:IAO_0000115>
+        <obo:BFO_0000180>bearerOfAt</obo:BFO_0000180>
+        <obo:BFO_0000179>bearer-of_st</obo:BFO_0000179>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+    
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+        <obo:IAO_0000602>(forall (x y z t) (if (and (RealizableEntity x) (Process y) (realizesAt y x t) (bearerOfAt z x t)) (hasParticipantAt y z t))) // axiom label in BFO2 CLIF: [106-002] </obo:IAO_0000602>
+        <obo:IAO_0000600>[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">if a realizable entity b is realized in a process p, then p stands in the has_participant relation to the bearer of b. (axiom label in BFO2 Reference: [106-002])</obo:IAO_0000601>
+        <obo:BFO_0000179>realized-in</obo:BFO_0000179>
+        <obo:BFO_0000180>realizedIn</obo:BFO_0000180>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    </owl:ObjectProperty>    
+    
+    
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+        <obo:IAO_0000602>(forall (x y t) (if (realizesAt x y t) (and (Process x) (or (Disposition y) (Role y)) (exists (z) (and (MaterialEntity z) (hasParticipantAt x z t) (bearerOfAt z y t)))))) // axiom label in BFO2 CLIF: [059-003] </obo:IAO_0000602>
+        <obo:BFO_0000179>realizes</obo:BFO_0000179>
+        <obo:BFO_0000180>realizes</obo:BFO_0000180>
+        <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    </owl:ObjectProperty>
+    
+    
+    
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000056">
+        <rdfs:label xml:lang="en">participates in at some time</rdfs:label>
+        <obo:IAO_0000116>[copied from inverse property &apos;has participant at some time&apos;] BFO2 Reference: process</obo:IAO_0000116>
+        <obo:IAO_0000116>[copied from inverse property &apos;has participant at some time&apos;] Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;has participant at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;has participant@en&apos;(x,y,t)</obo:IAO_0000116>
+        <obo:IAO_0000116>[copied from inverse property &apos;has participant at some time&apos;] BFO2 Reference: independent continuant that is not a spatial region, specifically dependent continuant, generically dependent continuant</obo:IAO_0000116>
+        <obo:BFO_0000179>participates-in_st</obo:BFO_0000179>
+        <obo:IAO_0000600>[copied from inverse property &apos;has participant at some time&apos;] has_participant is an instance-level relation between a process, a continuant, and a temporal region at which the continuant participates in some way in the process. (axiom label in BFO2 Reference: [086-003])</obo:IAO_0000600>
+        <obo:IAO_0000116>[copied from inverse property &apos;has participant at some time&apos;] BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
+        <obo:BFO_0000180>participatesInAt</obo:BFO_0000180>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
+        <rdfs:label xml:lang="en">has participant at some time</rdfs:label>
+        <obo:IAO_0000602>(forall (x y t) (if (hasParticipantAt x y t) (Continuant y))) // axiom label in BFO2 CLIF: [088-001] </obo:IAO_0000602>
+        <obo:BFO_0000179>has-participant_st</obo:BFO_0000179>
+        <obo:BFO_0000180>hasParticipantAt</obo:BFO_0000180>
+        <obo:IAO_0000116>BFO2 Reference: process</obo:IAO_0000116>
+        <obo:IAO_0000602>(forall (x y t) (if (hasParticipantAt x y t) (Occurrent x))) // axiom label in BFO2 CLIF: [087-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y t) (if (hasParticipantAt x y t) (existsAt y t))) // axiom label in BFO2 CLIF: [089-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y t) (if (and (hasParticipantAt x y t) (GenericallyDependentContinuant y)) (exists (z) (and (IndependentContinuant z) (not (SpatialRegion z)) (genericallyDependsOn y z t) (specificallyDependsOnAt x z t))))) // axiom label in BFO2 CLIF: [091-003] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y t) (if (and (hasParticipantAt x y t) (SpecificallyDependentContinuant y)) (exists (z) (and (IndependentContinuant z) (not (SpatialRegion z)) (specificallyDependsOnAt x z t) (specificallyDependsOnAt y z t))))) // axiom label in BFO2 CLIF: [090-003] </obo:IAO_0000602>
+        <obo:IAO_0000116>Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;has participant at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;has participant@en&apos;(x,y,t)</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
+        <obo:IAO_0000116>BFO2 Reference: independent continuant that is not a spatial region, specifically dependent continuant, generically dependent continuant</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">has_participant is an instance-level relation between a process, a continuant, and a temporal region at which the continuant participates in some way in the process. (axiom label in BFO2 Reference: [086-003])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">if b has_participant c at t &amp; c is a generically dependent continuant, then there is some independent continuant that is not a spatial region d, and which is such that c g-depends on d at t &amp; b s-depends_on d at t. (axiom label in BFO2 Reference: [091-003])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b has_participant c at t &amp; c is a specifically dependent continuant, then there is some independent continuant that is not a spatial region d, c s-depends_on d at t &amp; b s-depends_on d at t. (axiom label in BFO2 Reference: [090-003])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b has_participant c at t then b is an occurrent. (axiom label in BFO2 Reference: [087-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b has_participant c at t then c exists at t. (axiom label in BFO2 Reference: [089-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b has_participant c at t then c is a continuant. (axiom label in BFO2 Reference: [088-001])</obo:IAO_0000601>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000055"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000052"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000058 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000058">
+        <rdfs:label xml:lang="en">concretized by at some time</rdfs:label>
+        <obo:BFO_0000179>concretized-by_st</obo:BFO_0000179>
+        <obo:IAO_0000112>[copied from inverse property &apos;concretizes at some time&apos;] you may concretize a poem as a pattern of memory traces in your head</obo:IAO_0000112>
+        <obo:IAO_0000600>[copied from inverse property &apos;concretizes at some time&apos;] b concretizes c at t means: b is a specifically dependent continuant &amp; c is a generically dependent continuant &amp; for some independent continuant that is not a spatial region d, b s-depends_on d at t &amp; c g-depends on d at t &amp; if c migrates from bearer d to another bearer e than a copy of b will be created in e. (axiom label in BFO2 Reference: [075-002])</obo:IAO_0000600>
+        <obo:IAO_0000112>[copied from inverse property &apos;concretizes at some time&apos;] You may concretize a piece of software by installing it in your computer</obo:IAO_0000112>
+        <obo:IAO_0000116>[copied from inverse property &apos;concretizes at some time&apos;] Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;concretizes at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;concretizes@en&apos;(x,y,t)</obo:IAO_0000116>
+        <obo:IAO_0000112>[copied from inverse property &apos;concretizes at some time&apos;] You may concretize a recipe that you find in a cookbook by turning it into a plan which exists as a realizable dependent continuant in your head.</obo:IAO_0000112>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    </owl:ObjectProperty>
+    
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000059">
+        <rdfs:label xml:lang="en">concretizes at some time</rdfs:label>
+        <obo:BFO_0000180>concretizesAt</obo:BFO_0000180>
+        <obo:IAO_0000602>(forall (x y t) (if (genericallyDependsOnAt x y t) (exists (z) (and (concretizesAt z x t) (specificallyDependsOnAt z y t))))) // axiom label in BFO2 CLIF: [076-001] </obo:IAO_0000602>
+        <obo:IAO_0000116>Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;concretizes at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;concretizes@en&apos;(x,y,t)</obo:IAO_0000116>
+        <obo:IAO_0000602>(forall (x y t) (if (concretizesAt x y t) (and (SpecificallyDependentContinuant x) (GenericallyDependentContinuant y) (exists (z) (and (IndependentContinuant z) (specificallyDependsOnAt x z t) (genericallyDependsOnAt y z t)))))) // axiom label in BFO2 CLIF: [075-002] </obo:IAO_0000602>
+        <obo:BFO_0000179>concretizes_st</obo:BFO_0000179>
+        <obo:IAO_0000112 xml:lang="en">You may concretize a piece of software by installing it in your computer</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">You may concretize a recipe that you find in a cookbook by turning it into a plan which exists as a realizable dependent continuant in your head.</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">b concretizes c at t means: b is a specifically dependent continuant &amp; c is a generically dependent continuant &amp; for some independent continuant that is not a spatial region d, b s-depends_on d at t &amp; c g-depends on d at t &amp; if c migrates from bearer d to another bearer e than a copy of b will be created in e. (axiom label in BFO2 Reference: [075-002])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">if b g-depends on c at some time t, then there is some d, such that d concretizes b at t and d s-depends_on c at t. (axiom label in BFO2 Reference: [076-001])</obo:IAO_0000601>
+        <obo:IAO_0000112 xml:lang="en">you may concretize a poem as a pattern of memory traces in your head</obo:IAO_0000112>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000058"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+    </owl:ObjectProperty>
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works.</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how &apos;has participant&apos; works.</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Larry Hunter</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Coutot</obo:IAO_0000117>
@@ -104,7 +324,8 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </owl:ObjectProperty>    
+    </owl:ObjectProperty>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
@@ -121,7 +342,8 @@
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-    </owl:ObjectProperty>    
+    </owl:ObjectProperty>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
@@ -135,19 +357,7 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000056"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    </owl:ObjectProperty>    
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#has_participant -->
-
-    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_participant"/>
-    
-
-
-    <!-- http://www.obofoundry.org/ro/ro.owl#participates_in -->
-
-    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#participates_in"/>
+    </owl:ObjectProperty>
     
 
 
@@ -158,42 +368,40 @@
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#SpecificallyDependentContinuant"/>
-    
-
-
-    <!-- http://www.ifomis.org/bfo/1.1/span#ProcessualEntity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
-    
-    
-    
-    <!-- http://www.ifomis.org/bfo/1.1/snap#RealizableEntity -->
-
-    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#RealizableEntity"/>
-    
-    
-
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
 
