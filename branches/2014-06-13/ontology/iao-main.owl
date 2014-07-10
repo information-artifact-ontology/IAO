@@ -24,9 +24,9 @@
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/bfo2-transitional/iao-external-by-hand.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/bfo2-transitional/iao-obo-imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/bfo2-transitional/ontology-metadata.owl"/>
     </owl:Ontology>
     
 
