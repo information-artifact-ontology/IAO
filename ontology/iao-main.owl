@@ -200,7 +200,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">has measurement unit label</rdfs:label>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
     </owl:ObjectProperty>
     
 
@@ -317,7 +317,7 @@ there is a measurement process p that has specified output m, a measurement datu
         <rdfs:comment xml:lang="en">relating a cartesian spatial coordinate datum to a unit label that together with the values represent a point</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
     </owl:ObjectProperty>
     
 
@@ -386,7 +386,7 @@ there is a measurement process p that has specified output m, a measurement datu
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
     </owl:ObjectProperty>
     
 
@@ -399,7 +399,7 @@ there is a measurement process p that has specified output m, a measurement datu
         <obo:IAO_0000115 xml:lang="en">relates a time stamped measurement datum to the measurement datum that was measured</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -426,9 +426,9 @@ there is a measurement process p that has specified output m, a measurement datu
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/IAO_0000708 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000708 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao/IAO_0000708">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000708">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label>component of information entity</rdfs:label>
         <obo:IAO_0000116>No definition yet - the intuition is that if an information content entity has a component and if that component is about something, then every concretization has a part that is about the same thing.</obo:IAO_0000116>
@@ -437,14 +437,14 @@ will be used to replace OBO-REL &apos;part of&apos; between ICEs to address issu
         <obo:IAO_0000116>Alan Ruttenberg: The temporal qualification of this relation is not yet specified. Calling it transitive would seem to somewhat constrain it. We need to look at this and adjust depending on whether information artifact is considered rigid or not. Transivity is not promised, but if not then adequate prep needs to be done so appliciations don&apos;t break</obo:IAO_0000116>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/iao/IAO_0000709 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000709 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/iao/IAO_0000709">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000709">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label>has information entity component</rdfs:label>
         <obo:IAO_0000116>relation proposed by Alan and Mathias, 
@@ -1124,13 +1124,13 @@ Example: The ISO document specifying what encompasses an XML document; The instr
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1643,7 +1643,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000708"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000708"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1758,7 +1758,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000301"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1778,7 +1778,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000302"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1798,7 +1798,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000303"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2332,7 +2332,7 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000708"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000708"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2356,13 +2356,13 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
@@ -2472,7 +2472,7 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/iao/IAO_0000709"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000709"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
             </owl:Restriction>
         </rdfs:subClassOf>
