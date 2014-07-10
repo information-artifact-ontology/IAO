@@ -14,7 +14,7 @@ http://purl.obolibrary.org/obo/OBI_0500000 #study design
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OBI_0000011 #planned process
-subClassOf http://www.ifomis.org/bfo/1.1/span#ProcessualEntity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
 http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 subClassOf http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
@@ -43,9 +43,9 @@ http://purl.obolibrary.org/obo/PATO_0000125 #mass
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000122 #length
-subClassOf http://www.ifomis.org/bfo/1.1/snap#Quality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 http://purl.obolibrary.org/obo/PATO_0000125 #mass
-subClassOf http://www.ifomis.org/bfo/1.1/snap#Quality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000019
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -98,7 +98,7 @@ http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
-subClassOf http://www.ifomis.org/bfo/1.1/snap#Site
+subClassOf http://purl.obolibrary.org/obo/BFO_0000029
 
 [Source term retrieval setting]
 includeNoIntermediates
