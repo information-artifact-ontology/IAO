@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl#"
-     xml:base="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl#"
+     xml:base="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
@@ -11,9 +11,10 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl">
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl"/>
     </owl:Ontology>
     
 
