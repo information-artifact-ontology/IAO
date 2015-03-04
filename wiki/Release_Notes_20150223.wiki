@@ -20,7 +20,7 @@ The ontology metadata file contains all the terms required to annotate an ontolo
 <p>This version in OWL format: [http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl] 
 <p>The latest released version in OWL format: [http://purl.obolibrary.org/obo/iao/ontology-metadata.owl]
 
-This release directory in Subversion: https://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23     
+*This release directory in Subversion:* https://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23     
 
 ==New in this Release==
 The major changes in this release include: 
