@@ -1,0 +1,49 @@
+=Information Artifact Ontology (IAO) and Ontology Metadata =
+
+*Date of Release:* 2015-02-23
+
+*Subversion Revision:* 717
+
+==Information Artifact Ontology (IAO)==
+The Information Artifact Ontology (IAO) is an ontology of information entities, originally driven by work by the Ontology for Biomedical Investigations (OBI) digital entity and realizable information entity branch. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/  
+
+==Ontology metadata==
+The ontology metadata file contains all the terms required to annotate an ontology or ontology term developed in OWL format. Currently it is part of the IAO project and has been widely used in the OBO Foundry community when developing an ontology in OWL format. For more information, see the ontology metadata wiki page at: [https://code.google.com/p/information-artifact-ontology/wiki/OntologyMetadata]  
+
+==Availability==
+===Information Artifact Ontology (IAO)===
+<p>This version in OWL format: [http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl] 
+<p>The latest released version in OWL format: [http://purl.obolibrary.org/obo/iao.owl] 
+<p>Browse the latest version at Ontobee.org: [http://www.ontobee.org/browser/index.php?o=IAO] 
+
+===Ontology metadata===
+<p>This version in OWL format: [http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl] 
+<p>The latest released version in OWL format: [http://purl.obolibrary.org/obo/iao/ontology-metadata.owl]
+
+This release directory in Subversion: https://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23     
+
+==New in this Release==
+The major changes in this release include: 
+  * Transition from BFO 1.1 and OBO-Rel relations to BFO 2.0 classes only (http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl) and RO core (http://purl.obolibrary.org/obo/ro/releases/2015-02-11/core.owl). For details of the transition process, please see files under directory: https://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/BFO 1.1 to 2.0 conversion
+  * Some crucial high level terms were reviewed and improved during the OBI core terms review process. For details of the reviewed terms, please see: http://obi-ontology.org/page/Core_review 
+  * One new term has been added and labels of six terms have been changed since the last release on 2011/08/04
+
+One new term was added:
+||IAO_0000429 ||email address||
+
+The labels of six terms were changed:
+||IAO_0000009 ||label -> datum label||
+||IAO_0000575 ||associating information with a CRID in the CRID registry -> associating information with a centrally registered identifier in its registry||
+||IAO_0000577 ||CRID symbol -> centrally registered identifier symbol||
+||IAO_0000578 ||CRID -> centrally registered identifier||
+||IAO_0000579 ||CRID registry -> centrally registered identifier registry||
+||IAO_0000580 ||looking up a CRID -> looking up a centrally registered identifier||
+
+==Known Issues==
+Terms from http://www.geneontology.org/formats/oboInOwl: !DbXref, Definition, Subset, Synonym, !SynonymType, do not resolve the URI and consequently do not have annotations.
+
+==Contact Us==
+<p>To  contact IAO developers or participate in IAO discussion, you can sign up for the IAO mailing list at https://groups.google.com/forum/#!forum/information-ontology  
+<p>For IAO term requests, as well as reports of bugs or other issues, please use the IAO tracker: https://code.google.com/p/information-artifact-ontology/issues/list
+
+*Release note authors:* Jie Zheng & Chris Stoeckert
