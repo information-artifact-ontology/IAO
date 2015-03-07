@@ -17,10 +17,11 @@ The ontology metadata file contains all the terms required to annotate an ontolo
 <p>Browse the latest version at Ontobee.org: [http://www.ontobee.org/browser/index.php?o=IAO] 
 
 ===Ontology metadata===
-<p>This version in OWL format: [http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl] 
+<p>This version in OWL format: [http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl] 
 <p>The latest released version in OWL format: [http://purl.obolibrary.org/obo/iao/ontology-metadata.owl]
+<p>Browse the latest version at Ontobee.org: [http://www.ontobee.org/browser/index.php?o=IAO-Onto-Meta] 
 
-*This release directory in Subversion:* https://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23     
+<p>*This release directory in Subversion:* https://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23     
 
 ==New in this Release==
 The major changes in this release include: 
