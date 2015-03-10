@@ -17,6 +17,7 @@ The ontology metadata file contains all the terms required to annotate an ontolo
 <p>This version in OWL format: [http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl] 
 <p>The latest released version in OWL format: [http://purl.obolibrary.org/obo/iao.owl] 
 <p>Browse the latest version at Ontobee.org: [http://www.ontobee.org/browser/index.php?o=IAO] 
+<p>Browse the latest version at Bioportal: http://bioportal.bioontology.org/ontologies/IAO?p=classes
 
 ===Ontology metadata===
 <p>This version in OWL format: [http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl] 
