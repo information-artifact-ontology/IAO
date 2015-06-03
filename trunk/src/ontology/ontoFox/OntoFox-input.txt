@@ -115,24 +115,24 @@ http://purl.obolibrary.org/obo/IAO_0000115
 
 
 ###################################################
-
-[Source ontology]
+#
+#[Source ontology]
 #comment here
 #List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
-GAZ
+#GAZ
 
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
+#[Low level source term URIs]
+#http://purl.obolibrary.org/obo/GAZ_00000448 #geographic location
 
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
-subClassOf http://purl.obolibrary.org/obo/BFO_0000029 #site
+#[Top level source term URIs and target direct superclass URIs]
+#http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
+#subClassOf http://purl.obolibrary.org/obo/BFO_0000029 #site
 
-[Source term retrieval setting]
-includeNoIntermediates
+#[Source term retrieval setting]
+#includeNoIntermediates
 
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-copyTo http://purl.obolibrary.org/obo/IAO_0000111
-http://purl.obolibrary.org/obo/IAO_0000115
+#[Source annotation URIs]
+#http://www.w3.org/2000/01/rdf-schema#label
+#copyTo http://purl.obolibrary.org/obo/IAO_0000111
+#http://purl.obolibrary.org/obo/IAO_0000115
 

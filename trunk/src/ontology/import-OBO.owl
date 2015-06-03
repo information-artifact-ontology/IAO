@@ -32,6 +32,7 @@
         <obo:IAO_0000111>definition</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label xml:lang="en">editor note</rdfs:label>
@@ -40,9 +41,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
@@ -52,6 +51,16 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label xml:lang="en">definition source</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
@@ -60,6 +69,7 @@
         <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label xml:lang="en">term editor</rdfs:label>
@@ -69,6 +79,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
@@ -81,6 +92,7 @@
         <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
@@ -89,6 +101,7 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     
 
@@ -199,23 +212,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000029"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000029"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</obo:IAO_0000111>
-    </owl:Class>
     
 
 
@@ -350,21 +346,31 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
-
-    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geographic location</obo:IAO_0000111>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000122 -->
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
         <rdfs:label xml:lang="en">ready for release</rdfs:label>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000125 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000125">
+        <rdfs:label xml:lang="en">pending final vetting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/iao.owl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/iao.owl"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obi.owl -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/obi.owl"/>
 </rdf:RDF>
 
 
