@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1353349096015" name="http://purl.obolibrary.org/obo/" uri="obsolete.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1353349096015" name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1353349096015" name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="externalByHand.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1353349096015" name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="externalDerived.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1353349096015" name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="iao-main.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1353349096015" name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="IAO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1353349096015" name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+    </group>
+</catalog>

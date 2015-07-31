@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns="http://purl.obolibrary.org/obo/"
+  xml:base="http://purl.obolibrary.org/obo/iao/dev/external.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >$Revision: 80 $</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </rdfs:subClassOf>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </rdfs:subClassOf>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000002">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000003">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000001">
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000122">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000125">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
+  </owl:Class>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+    <rdfs:label xml:lang="en">has curation status</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+    <rdfs:label xml:lang="en">term editor</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+    <rdfs:label xml:lang="en">definition source</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+    <rdfs:label xml:lang="en">imported from</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+    <rdfs:label xml:lang="en">example of usage</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <rdfs:label xml:lang="en">definition</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+    <rdfs:label xml:lang="en">alternative term</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+    <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+    <rdfs:label xml:lang="en">editor note</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
+    <rdfs:label xml:lang="en">in branch</rdfs:label>
+  </owl:AnnotationProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.2, Build 550)  http://protege.stanford.edu -->

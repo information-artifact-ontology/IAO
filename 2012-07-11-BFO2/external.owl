@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY UO "http://purl.org/obo/owl/UO#" >
+    <!ENTITY cell "http://purl.org/obo/owl/CL#" >
+    <!ENTITY hpo "http://purl.org/obo/owl/HP#" >
+    <!ENTITY rotoo "http://purl.org/obo/owl/ro#" >
+    <!ENTITY go "http://purl.org/obo/owl/GO#" >
+    <!ENTITY fma "http://purl.org/obo/owl/FMA#" >
+    <!ENTITY pro "http://purl.org/obo/owl/PRO#" >
+    <!ENTITY pato "http://purl.org/obo/owl/PATO#" >
+    <!ENTITY envo "http://purl.org/obo/owl/ENVO#" >
+    <!ENTITY caro "http://purl.org/obo/owl/CARO#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY chebi "http://purl.org/obo/owl/CHEBI#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY ncbitax "http://purl.org/obo/owl/NCBITaxon#" >
+    <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY robfo "http://purl.org/obo/owl/ro_bfo_bridge/1.1#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+    <!ENTITY protege-dc "http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xml:base="http://purl.obolibrary.org/obo/"
+     xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+     xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+     xmlns:ncbitax="http://purl.org/obo/owl/NCBITaxon#"
+     xmlns:envo="http://purl.org/obo/owl/ENVO#"
+     xmlns:rotoo="http://purl.org/obo/owl/ro#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:hpo="http://purl.org/obo/owl/HP#"
+     xmlns:pato="http://purl.org/obo/owl/PATO#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:caro="http://purl.org/obo/owl/CARO#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:UO="http://purl.org/obo/owl/UO#"
+     xmlns:cell="http://purl.org/obo/owl/CL#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pro="http://purl.org/obo/owl/PRO#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
+     xmlns:fma="http://purl.org/obo/owl/FMA#"
+     xmlns:go="http://purl.org/obo/owl/GO#">
+    <owl:Ontology rdf:about="https://information-artifact-ontology.googlecode.com/svn/releases/2012-07-11-BFO2/external.owl">
+        <owl:versionInfo rdf:datatype="&xsd;string">$Revision: 80 $</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
+        <rdfs:label xml:lang="en">in branch</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000471 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/PATO#PATO_0000122 -->
+
+    <owl:Class rdf:about="&pato;PATO_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/PATO#PATO_0000125 -->
+
+    <owl:Class rdf:about="&pato;PATO_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UO#UO_0000001 -->
+
+    <owl:Class rdf:about="&UO;UO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UO#UO_0000002 -->
+
+    <owl:Class rdf:about="&UO;UO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/obo/owl/UO#UO_0000003 -->
+
+    <owl:Class rdf:about="&UO;UO_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
+        <IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://purl.obolibrary.org/obo/iao.owl">
+  <owl:Ontology rdf:about="">
+    <rdfs:seeAlso>
+      <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/"/>
+    </rdfs:seeAlso>
+    <owl:versionInfo xml:lang="en">2011-08-04</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2011-08-04/iao.owl"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This file is based on checkout of our SVN repository revision $Revision: 506 $</rdfs:comment>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2011-08-04/obsolete.owl"/>
+    <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2011-08-04/iao-main.owl"/>
+    <owl:imports><owl:Ontology rdf:about="http://www.obofoundry.org/ro/ro.owl"/></owl:imports>
+    <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+    <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
+  </owl:Ontology>
+
+<doap:Project rdf:about="http://purl.obolibrary.org/obo/obi/project">
+   <doap:bug-database><owl:Thing rdf:about="http://purl.obolibrary.org/obo/iao/tracker"/></doap:bug-database>
+   <doap:homepage><owl:Thing rdf:about="http://purl.obolibrary.org/obo/iao"/></doap:homepage>
+   <doap:mailing-list><owl:Thing rdf:about="mailto:information-ontology@googlegroups.com"/></doap:mailing-list>
+   <doap:release><owl:Thing rdf:about="http://purl.obolibrary.org/obo/iao/version-2011-08-04"/></doap:release>
+   <doap:repository><doap:SVNRepository rdf:about="http://purl.obolibrary.org/obo/iao/repository"/></doap:repository>
+   <doap:wiki><owl:Thing rdf:about="http://purl.obolibrary.org/obo/iao"/></doap:wiki>
+ </doap:Project>
+
+ <doap:Version rdf:about="http://purl.obolibrary.org/obo/iao/version-2011-08-04">
+   <rdfs:label>ICBO2011 release</rdfs:label>
+   <doap:file-release><owl:Thing rdf:about="http://purl.obolibrary.org/obo/iao/2011-08-04/iao.owl"/></doap:file-release>
+   <doap:file-release><owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao.owl"/></doap:file-release>
+   <doap:revision>SVN $Revision: 506 $</doap:revision>
+ </doap:Version>
+
+ <owl:Class rdf:about="http://usefulinc.com/ns/doap#Project"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+ </owl:Class> 
+ 
+ <owl:Class rdf:about="http://usefulinc.com/ns/doap#SVNRepository">
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+ </owl:Class> 
+
+ <owl:Class rdf:about="http://usefulinc.com/ns/doap#Version"> 
+   <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+ </owl:Class> 
+ 
+ <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#browse"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+ 
+  <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#bug-database"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+ 
+  <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#homepage"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+ 
+  <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#mailing-list"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+ 
+  <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#release"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+ 
+  <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#repository"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+ 
+  <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#wiki"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+ 
+  <owl:ObjectProperty rdf:about="http://usefulinc.com/ns/doap#file-release"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+  </owl:ObjectProperty> 
+
+ <owl:DatatypeProperty rdf:about="http://usefulinc.com/ns/doap#revision"> 
+    <rdfs:isDefinedBy rdf:resource="http://usefulinc.com/ns/doap"/> 
+ </owl:DatatypeProperty> 
+
+ <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/> 
+
+ <owl:Thing rdf:about="http://usefulinc.com/ns/doap"/>
+
+
+</rdf:RDF>
