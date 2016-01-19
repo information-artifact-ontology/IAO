@@ -51,8 +51,8 @@
 		<dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
 		<dc:contributor xml:lang="en">William Duncan</dc:contributor>
 		<dc:contributor xml:lang="en">William Hogan</dc:contributor>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl"/>
-		<owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2015-02-11/core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+		<owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>        
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
