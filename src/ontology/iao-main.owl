@@ -1,62 +1,62 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl#"
      xml:base="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl">
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
+        <dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
+        <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
+        <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
+        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
+        <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
+        <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
+        <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
+        <dc:contributor xml:lang="en">Darren Natale</dc:contributor>
+        <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
+        <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
+        <dc:contributor xml:lang="en">Holger Stenzhorn</dc:contributor>
+        <dc:contributor xml:lang="en">James A. Overton</dc:contributor>
+        <dc:contributor xml:lang="en">James Malone</dc:contributor>
+        <dc:contributor xml:lang="en">Jennifer Fostel</dc:contributor>
+        <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
+        <dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
+        <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
+        <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matt Brush</dc:contributor>
+        <dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
+        <dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
+        <dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
+        <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
+        <dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
+        <dc:contributor xml:lang="en">Randy Dipert</dc:contributor>
+        <dc:contributor xml:lang="en">Ron Rudnicki</dc:contributor>
+        <dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
+        <dc:contributor xml:lang="en">Sivaram Arabandi</dc:contributor>
+        <dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
+        <dc:contributor xml:lang="en">William Duncan</dc:contributor>
+        <dc:contributor xml:lang="en">William Hogan</dc:contributor>
+        <dc:contributor xml:lang="en">Yongqun (Oliver) He</dc:contributor>
         <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
-		<dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
-		<dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
-		<dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
-		<dc:contributor xml:lang="en">Barry Smith</dc:contributor>
-		<dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
-		<dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
-		<dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
-		<dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
-		<dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
-		<dc:contributor xml:lang="en">Darren Natale</dc:contributor>
-		<dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
-		<dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
-		<dc:contributor xml:lang="en">Holger Stenzhorn</dc:contributor>
-		<dc:contributor xml:lang="en">James A. Overton</dc:contributor>
-		<dc:contributor xml:lang="en">James Malone</dc:contributor>
-		<dc:contributor xml:lang="en">Jennifer Fostel</dc:contributor>
-		<dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
-		<dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
-		<dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
-		<dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
-		<dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-		<dc:contributor xml:lang="en">Matt Brush</dc:contributor>
-		<dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
-		<dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
-		<dc:contributor xml:lang="en">Yongqun (Oliver) He</dc:contributor>
-		<dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
-		<dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
-		<dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
-		<dc:contributor xml:lang="en">Randy Dipert</dc:contributor>
-		<dc:contributor xml:lang="en">Ron Rudnicki</dc:contributor>
-		<dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
-		<dc:contributor xml:lang="en">Sivaram Arabandi</dc:contributor>
-		<dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
-		<dc:contributor xml:lang="en">William Duncan</dc:contributor>
-		<dc:contributor xml:lang="en">William Hogan</dc:contributor>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl"/>
-		<owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2015-02-11/core.owl"/>
         <owl:imports rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
     </owl:Ontology>
     
 
@@ -484,7 +484,7 @@ there is a measurement process p that has specified output m, a measurement datu
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">has measurement value</rdfs:label>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -1177,13 +1177,13 @@ Example: The ISO document specifying what encompasses an XML document; The instr
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000007"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
@@ -1987,19 +1987,19 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000407"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A cartesian spatial coordinate datum is a representation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000232>AR notes: We need to discuss whether it should include site.</obo:IAO_0000232>
         <obo:IAO_0000116 xml:lang="en">2009-08-18 Alan Ruttenberg - question to BFO list about whether the BFO sense of the lower dimensional regions is that they are always part of actual space (the three dimensional sort) http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A cartesian spatial coordinate datum is a representation of a point in a spatial region, in which equal changes in the magnitude of a coordinate value denote length qualities with the same magnitude</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:seeAlso xml:lang="en">http://groups.google.com/group/bfo-discuss/browse_thread/thread/9d04e717e39fb617</rdfs:seeAlso>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -2012,12 +2012,6 @@ GO   gene ontology</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000401">
         <rdfs:label xml:lang="en">one dimensional cartesian spatial coordinate datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
@@ -2034,6 +2028,12 @@ GO   gene ontology</obo:IAO_0000112>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -2046,12 +2046,6 @@ GO   gene ontology</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000402">
         <rdfs:label xml:lang="en">two dimensional cartesian spatial coordinate datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
@@ -2074,6 +2068,12 @@ GO   gene ontology</obo:IAO_0000112>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A cartesion spatial coordinate datum that  uses two values to specify a position within a two dimensional spatial region</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -2086,6 +2086,18 @@ GO   gene ontology</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000403">
         <rdfs:label xml:lang="en">three dimensional cartesian spatial coordinate datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000405"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
@@ -2108,18 +2120,6 @@ GO   gene ontology</obo:IAO_0000112>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000405"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A cartesion spatial coordinate datum that  uses three values to specify a position within a three dimensional spatial region</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
@@ -2134,14 +2134,14 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000122"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A scalar measurement datum that is the result of measurement of length quality</obo:IAO_0000115>
@@ -2342,14 +2342,14 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>assigning a CRID</obo:IAO_0000118>
@@ -2371,6 +2371,12 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
             </owl:Restriction>
@@ -2379,12 +2385,6 @@ points together with a line.</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>Articles in Pubmed are reviewed by curators who add MESH terms to the Pubmed records in order to categorize them better and improve the ability to search for them. </obo:IAO_0000112>
@@ -2428,18 +2428,18 @@ points together with a line.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>CRID</obo:IAO_0000118>
@@ -2490,23 +2490,23 @@ points together with a line.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000118>looking up a CRID</obo:IAO_0000118>
         <obo:IAO_0000112>Going to the PubMed website and entering a PubMed ID in order to retrieve the Pubmed information associated with that ID. </obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
     </owl:Class>
     
@@ -2677,5 +2677,5 @@ interpreter.</obo:IAO_0000115>
 
 
 
-<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
