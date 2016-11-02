@@ -1,0 +1,879 @@
+---
+ src/ontology/iao-main.owl | 792 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 792 insertions(+)
+
+diff --git a/src/ontology/iao-main.owl b/src/ontology/iao-main.owl
+index 1cf8b6e..adb6b3a 100644
+--- a/src/ontology/iao-main.owl
++++ b/src/ontology/iao-main.owl
+@@ -1726,8 +1726,470 @@ GO   gene ontology</obo:IAO_0000112>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+     </owl:Class>
+     
++    
++        <!-- http://purl.obolibrary.org/obo/IAOTEMP_abbreviation_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_abbreviation_textual_entity">
++        <rdfs:label xml:lang="en">abbreviation textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity listing abbreviations and their expansions that are used in a document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
++
++BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary acidic protein; MAP: Microtubule-associated protein; MRI: Magnetic resonance imaging; NSC: Neural stem cell; PDA: Patent ductus arteriosus; PMG: Polymicrogyria; PNH: Periventricular nodular heterotopia; VSD: Ventricular septal defect.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">abbreviation textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_abbreviations_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_abbreviations_section">
++        <rdfs:label xml:lang="en">abbreviations section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_abbreviation_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document where abbreviations and their long-forms used within the document are listed.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;abbreviations&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">abbreviations</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">abbreviations list</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">abbreviations section</obo:IAO_0000111>
++        <obo:IAO_0000118 xml:lang="en">abbreviations used</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">list of abbreviations</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">list of abbreviations used</obo:IAO_0000118>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_author_information_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_author_information_section">
++        <rdfs:label xml:lang="en">author information section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_author_information_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about the authors that provides biographical information and may discuss how the authors&apos; professional experiences are relevant to the work described in the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;author information&apos; in a typical scientific journal article, e.g. in Takon. Ann Gen Psychiatry. 2011; 10: 25. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3204268/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">author information</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">author information section</obo:IAO_0000111>
++        <obo:IAO_0000118 xml:lang="en">authors’ information</obo:IAO_0000118>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_author_information_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_author_information_textual_entity">
++        <rdfs:label xml:lang="en">author information textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity expression information about an author of a document. This information may include biographical information and may discuss how the authors&apos; professional experiences are relevant to the work described in the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Takon. Ann Gen Psychiatry. 2011; 10: 25. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3204268/):
++
++IT [the author] is the lead paediatrician for ADHD services in East Hertfordshire, UK, where she runs a weekly joint ADHD clinic with the Child and Adolescent psychiatrist and works within an ADHD specialist team. IT also sees children with other neurodisability issues who may have comorbid ADHD, where the presentation may be more complex and challenging to manage. IT has vast experience in managing children with complex ADHD. She has 18 years of experience in paediatrics and also has extensive experience in the use of psychopharmacologic agents in managing children with ADHD.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">author information textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
+ 
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_author_summary_section -->
+ 
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_author_summary_section">
++        <rdfs:label xml:lang="en">author summary section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_author_summary_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document, distinct from the abstract, that describes the significance and broader context of the document content. The author summary is often written in a non-technical manner and is aimed at both scientists and non-scientist readers.</obo:IAO_0000115>
++        <obo:IAO_0000119 xml:lang="en">Article submission guidelines for PLoS Genetics (http://journals.plos.org/plosgenetics/s/submission-guidelines)</obo:IAO_0000119>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;synopsis&apos; in a typical scientific journal article, e.g. in Pendse et al. BMC Genomics. 2013; 14: 136. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3608171/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">author summary</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">author summary section</obo:IAO_0000111>
++        <obo:IAO_0000118 xml:lang="en">summary</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">synopsis</obo:IAO_0000118>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_author_summary_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_author_summary_textual_entity">
++        <rdfs:label xml:lang="en">author summary textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity, distinct from the abstract, that describes the significance and broader context of the document content. The author summary is often written in a non-technical manner and is aimed at both scientists and non-scientist readers, e.g as described in the article submission guidelines for PLoS Genetics (http://journals.plos.org/plosgenetics/s/submission-guidelines).</obo:IAO_0000115>
++        <obo:IAO_0000119 xml:lang="en">Article submission guidelines for PLoS Genetics (http://journals.plos.org/plosgenetics/s/submission-guidelines).</obo:IAO_0000119>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Pendse et al. BMC Genomics. 2013; 14: 136. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3608171/):
++
++
++The search for genetic risk factors for common human diseases often relies on the use of linkage and association studies to establish correlation between genomic markers and disease risk. These studies require additional functional evaluation of candidate genes, including their possible interaction with diet and environment. The number of candidate genes is typically large and the development of appropriate genetic tools in mammalian systems is slow. By contrast, large-scale genetic screens, using widely available genetic tools, are routinely conducted in the fruit fly Drosophila melanogaster. In this study, we used Drosophila to screen candidate genes identified in human genome-wide scans as associated with risk of metabolic abnormalities such as type 2 diabetes. We show that a number of human candidate genes have fly orthologs that play an important role in Drosophila tolerance to high dietary sucrose. We further explored some of the specific metabolic abnormalities that can result when these genes’ activities are reduced in flies, focusing on a gene we call dHHEX (CG7056), the fly ortholog of human HHEX.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">author summary textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_availability_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_availability_textual_entity">
++        <rdfs:label xml:lang="en">availability textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity expressing the location of a resource, e.g. software, or the manner in which a resource can be obtained.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/):
++
++Project home page:http://krux.googlecode.com</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">availability textual entity</obo:IAO_0000111>
++    </owl:Class>
++  
++    
++    
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_availability_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_availability_section">
++        <rdfs:label xml:lang="en">availability section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_availability_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about a resource described in the document, e.g. software, that describes where and/or how that resource can be obtained.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;availability and requirements&apos; in a typical scientific journal article, e.g. Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/).</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">availability</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">availability section</obo:IAO_0000111>
++    </owl:Class>
++
++    
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_case_report_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_case_report_section">
++        <rdfs:label xml:lang="en">case report section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_case_report_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about the medical history of a specific patient as it relates to the topic of the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;case report&apos; in a typical scientific journal article, e.g. in Taglia et al. Acta Myol. 2012 Dec; 31(3): 201–203. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3631801/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">case presentation</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">case report</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">case report section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_case_report_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_case_report_textual_entity">
++        <rdfs:label xml:lang="en">case report textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that expresses a detailed account of a portion of the medical history for a specific patient.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">Excerpt from Taglia et al. Acta Myol. 2012 Dec; 31(3): 201–203. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3631801/):
++
++The patient is a 50-year-old man. His medical history was not contributory. At the age of 37 years, he complained of persistent fatigue and dyspnoea even for modest efforts and oedema of lower limbs. The patient was examined at the department of internal medicine of the local hospital, and hospitalised with a diagnosis of dilated cardiomyopathy probably consequence of a myocarditis process. Soon after he was transferred to the cardiologic department of the regional hospital, and pharmacologically treated for heart failure and pulmonary hypertension.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">case report textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++    
++    
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_conclusion_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_conclusion_section">
++        <rdfs:label xml:lang="en">conclusion section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000144"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document used to summarize the findings discussed in the document. The conclusion section is typically found near the end of a document. </obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;conclusion&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">concluding remarks</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">conclusion</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">conclusion section</obo:IAO_0000111>
++        <obo:IAO_0000118 xml:lang="en">conclusions</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">findings</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">summary</obo:IAO_0000118>
++    </owl:Class>
++    
++    
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_conflict_of_interest_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_conflict_of_interest_section">
++        <rdfs:label xml:lang="en">conflict of interest section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_conflict_of_interest_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document used to declare any competing interests regarding the authors and/or funding organization for the work described in the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;conflict of interest statement&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">competing interests</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">conflict of interest</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">conflict of interest section</obo:IAO_0000111>
++        <obo:IAO_0000118 xml:lang="en">conflict of interest statement</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">declaration of competing interests</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">disclosure of potential conflicts of interest</obo:IAO_0000118>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_conflict_of_interest_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_conflict_of_interest_textual_entity">
++        <rdfs:label xml:lang="en">conflict of interest textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that expresses a situation involving one or more of the authors, or the funding source of a document whereby the authors or funding source stand to potentially gain (typically financially) from the results reported in the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">SD [an author] is a Merck employee and Merck is the sponsor of this study. [Taken from &apos;Effects of obstructive sleep apnoea risk on postoperative respiratory complications: protocol for a hospital-based registry study&apos; Shin et al. 2016  (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4735131/)] </obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">conflict of interest statement</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_consent_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_consent_section">
++        <rdfs:label xml:lang="en">consent section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_consent_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about the consent process that was used to enroll patients in a study.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;consent&apos; in a typical scientific journal article, e.g. Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">consent</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">consent section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_consent_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_consent_textual_entity">
++        <rdfs:label xml:lang="en">consent textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that documents the consenting process used to enroll patients in a study.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
++
++Written informed consent was obtained from the patient’s parents for publication of this Case report and any accompanying images. A copy of the written consent is available for review by the Editor-in chief of this journal.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">consent textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_ethical_approval_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_ethical_approval_section">
++        <rdfs:label xml:lang="en">ethical approval section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_ethical_approval_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about the governance body responsible for approving the work discussed in a document on an ethical basis.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;ethical approval&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">ethical approval</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">ethical approval section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_ethical_approval_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_ethical_approval_textual_entity">
++        <rdfs:label xml:lang="en">ethical approval textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that documents the ethical approval of some study design.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):
++
++The NHS National Research Ethics Service had previously approved the use of these anonymised data for research purposes and this analysis did not require independent review.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">ethical approval textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++    
++    
++     <!-- http://purl.obolibrary.org/obo/IAOTEMP_figures_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_figures_section">
++        <rdfs:label xml:lang="en">figures section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document that contains one or more figures.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;figures&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">figures</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">figures section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_funding_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_funding_section">
++        <rdfs:label xml:lang="en">funding source declaration section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_funding_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document used to detail information regarding the source of funding used in support of the generation of the document content.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;funding&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">funding</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">funding information</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">funding source declaration section</obo:IAO_0000111>
++        <obo:IAO_0000118 xml:lang="en">funding sources</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">funding statement</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">funding/support</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">source of funding</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">sources of funding</obo:IAO_0000118>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_funding_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_funding_textual_entity">
++        <rdfs:label xml:lang="en">funding source declaration textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity documenting the source of funding that supported some study.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Stephan et al. Accid Anal Prev. 2011 May; 43(3): 1062–1067. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3062852/):
++
++This study was supported by the International Collaborative Research Grants Scheme with joint grants from the Wellcome Trust UK (GR071587MA) and the Australian NHMRC (268055). The funding sources played no role in study design, data collection, analysis or interpretation, writing the report, or the decision to submit the paper for publication.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">funding souce declaration textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_future_directions_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_future_directions_section">
++        <rdfs:label xml:lang="en">future directions section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_future_directions_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document detailing extensions of the described work that may be implemented at some future point in time.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;future directions&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">future challenges</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future considerations</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future developments</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future directions</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">future directions section</obo:IAO_0000111>
++        <obo:IAO_0000118 xml:lang="en">future outlook</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future perspectives</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future plans</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future prospects</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future research</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future research directions</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future studies</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">future work</obo:IAO_0000118>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_future_directions_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_future_directions_textual_entity">
++        <rdfs:label xml:lang="en">future directions textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity expressing ideas regarding future work relevant to work described in a document that could be done.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">Excerpt from Wang and Li. Acta Pharmacol Sin. 2016 Jan; 37(1): 25–33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4722976/):
++
++In the future, several questions will need to be resolved regarding the physiological assembly of KCNQ channels and their functional implications in complex neural circuits. First, we still lack sufficiently selective inhibitors and activators among the KCNQ family members.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">future directions textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_genome_announcement_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_genome_announcement_section">
++        <rdfs:label xml:lang="en">genome announcement section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_genome_announcement_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A document part announcing the publication of a novel draft genome sequence.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;genome announcement&apos; in a typical scientific journal article, e.g. in Kim et al. J Bacteriol. 2011 Oct; 193(19): 5537. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3187466/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">genome announcement</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">genome announcement section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_genome_announcement_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_genome_announcement_textual_entity">
++        <rdfs:label xml:lang="en">genome announcement textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that describes the generation and public release of a novel, draft genome sequence.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">Excerpt from Kim et al. J Bacteriol. 2011 Oct; 193(19): 5537. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3187466/):
++
++Here we report the genome sequence of Lactobacillus malefermentans KCTC 3548, which we obtained using a whole-genome shotgun strategy (4) with Roche 454 GS (FLX Titanium) pyrosequencing (257,559 reads totaling ∼89.8 Mb; ∼45-fold coverage of the genome) at the Genome Resource Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB).</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">genome announcement textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++    
++    
+     <!-- http://purl.obolibrary.org/obo/IAO_0000316 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000316">
+@@ -1743,12 +2205,106 @@ GO   gene ontology</obo:IAO_0000112>
+         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+         <obo:IAO_0000112 xml:lang="en">Section labelled &apos;introduction&apos; of a typical scientific journal article</obo:IAO_0000112>
+         <obo:IAO_0000118 xml:lang="en">introduction</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">background</obo:IAO_0000118>
+         <obo:IAO_0000111 xml:lang="en">introduction to a publication about an investigation</obo:IAO_0000111>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+     </owl:Class>
+     
+ 
+ 
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_keyword_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_keyword_textual_entity">
++        <rdfs:label xml:lang="en">keyword textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity listing keywords indicating the major theme(s) of a document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From: Fu and Lin. Identification of gene-oriented exon orthology between human and mouse. BMC Genomics. 2012; 13(Suppl 1): S10. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303729/):
++
++Exon orthology; alternative splicing; exon duplication; intron-exon structure.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">keyword textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_keywords_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_keywords_section">
++        <rdfs:label xml:lang="en">keywords section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_keyword_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document where keywords selected by the author to categorize the major theme(s) of a document are listed.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;keywords&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">keywords</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">keywords section</obo:IAO_0000111>
++    </owl:Class>
++    
++    
++    
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_limitations_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_limitations_section">
++        <rdfs:label xml:lang="en">study limitations section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_limitations_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about biases or short comings related to the study design and execution.</obo:IAO_0000115>
++        <obo:IAO_0000119 xml:lang="en">Author guidelines published by The Society for Academic Emergency Medicine. (http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1553-2712/homepage/ForAuthors.html)</obo:IAO_0000119>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;limitations&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">limitations</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">study limitations</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">study limitations section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_limitations_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_limitations_textual_entity">
++        <rdfs:label xml:lang="en">study limitations textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity addressing a shortcoming or bias of a study design or execution.</obo:IAO_0000115>
++        <obo:IAO_0000119 xml:lang="en">Author guidelines published by The Society for Academic Emergency Medicine. (http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1553-2712/homepage/ForAuthors.html)</obo:IAO_0000119>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">Excerpt from the Limitations section of Fermann et al 2015, Acad Emerg Med. 2015 Mar; 22(3): 299–307 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4405051/). 
++
++Owing to the nature of a post hoc study, any significant values must be interpreted with caution. In the current analysis, no multiple testing was conducted and p-values remain unadjusted. Moreover, a selection bias arising from the randomized open-label design of the original EINSTEIN PE study cannot be ruled out.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">study limitations textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_materials_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_materials_section">
++        <rdfs:label xml:lang="en">materials section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about the materials required to reproduce the content of the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;materials&apos; in a typical scientific journal article, e.g. Nguyen et al. BMC Bioinformatics. 2010; 11: 279. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2889936/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">materials</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">materials section</obo:IAO_0000111>
++    </owl:Class>
++ 
++    
++    
+     <!-- http://purl.obolibrary.org/obo/IAO_0000317 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000317">
+@@ -1763,12 +2319,183 @@ GO   gene ontology</obo:IAO_0000112>
+         <obo:IAO_0000115 xml:lang="en">A part of a publication about an investigation that is about the study design of the investigation</obo:IAO_0000115>
+         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;Methods&apos; or &apos;Materials and Methods&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">experimental</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">experimental procedures</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">experimental section</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">methods</obo:IAO_0000118>
+         <obo:IAO_0000111 xml:lang="en">methods section</obo:IAO_0000111>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+     </owl:Class>
+     
+ 
+ 
++        <!-- http://purl.obolibrary.org/obo/IAOTEMP_notes_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_notes_section">
++        <rdfs:label xml:lang="en">notes section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <obo:IAO_0000115 xml:lang="en">A part of a document containing typically short notes about the document itself and/or the authors. Often the notes section contains subsections related to funding, competing interests, ethical approval, etc.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;notes&apos; in a typical scientific journal article, e.g. McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">footnotes</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">notes</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">notes section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_patient_consent_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_patient_consent_section">
++        <rdfs:label xml:lang="en">patients section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_patient_consent_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about the patients that participated in a study.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;patients&apos; in a typical scientific journal article, e.g. in Citak et al. Acta Orthop. 2013 Jun; 84(3): 326–327. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3715825/)</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">patients section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_patient_consent_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_patient_consent_textual_entity">
++        <rdfs:label xml:lang="en">patients textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity expressing information regarding the patients used in a study.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">Excerpt from Citak et al. Acta Orthop. 2013 Jun; 84(3): 326–327. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3715825/):
++
++Between January 1996 and February 2012, we treated 4 patients with interprosthetic femoral fractures (3 of them women) (Figure 2) using a custom-made interposition device (Waldemar Link GmbH, Hamburg, Germany) (Figure 1). Mean age was 74 (59–86) years. The fractures occurred mean 18 (13–28) years after primary THA and mean 14 (10–17) years after primary TKA. At the latest follow-up, after mean 8 (0.5–16) years, revision surgery with a total femur replacement was required in 1 case due to aseptic loosening. No other complications requiring revision surgery occurred.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">patients textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_prepublication_history_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_prepublication_history_section">
++        <rdfs:label xml:lang="en">pre-publication history section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_prepublication_history_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of the document about the publication history of a document. This section typically details dates of document submission to a journal and dates of any re-submissions as well as reviewer comments and responses to reviewers by the authors.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;pre-publication history&apos; in a typical scientific journal article, e.g. in Xiao et al. BMC Anesthesiol. 2013; 13: 33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4016475/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">notice of republication</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">pre-publication history</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">pre-publication history section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_prepublication_history_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_prepublication_history_textual_entity">
++        <rdfs:label xml:lang="en">pre-publication history textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that expresses the pre-publication history (submission dates, reviewer comments, etc) for a document, often including a hyperlink to a web page detailing the information.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Xiao et al. BMC Anesthesiol. 2013; 13: 33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4016475/):
++
++The pre-publication history for this paper can be accessed here:
++http://www.biomedcentral.com/1471-2253/13/33/prepub</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">pre-publication history textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_related_work_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_related_work_section">
++        <rdfs:label xml:lang="en">related work section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_related_work_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about work in other publications that is relevant to the content of the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;related work&apos; in a typical scientific journal article, e.g. Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">related literature</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">related work</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">related work section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_related_work_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_related_work_textual_entity">
++        <rdfs:label xml:lang="en">related work textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that discusses work from other publications and expresses their relevancy to the content of a document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">Excerpt from Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/):
++
++Our work presented here is similar in spirit to our recently developed methodology for data fusion via collective matrix factorization (Žitnik and Zupan, 2015).
++
++</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">related work textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_requirements_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_requirements_section">
++        <rdfs:label xml:lang="en">requirements section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_requirements_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document about a resource described in the document, e.g. software, that describes the requirements necessary to use the resource, e.g. operating systems, hardware, etc. in the case of a software resource.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;availability and requirements&apos; in a typical scientific journal article, e.g. Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/).</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">requirements</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">requirements section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_requirements_textual_entity -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_requirements_textual_entity">
++        <rdfs:label xml:lang="en">requirements textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity that expresses the requirements necessary to use a resource, e.g. software.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/):
++
++• Operating systems: Platform independent
++
++• Programming language: Matlab, R, Python
++
++• Other requirements: None
++
++• License: GNU GPL v3
++
++• Any restrictions to use by non-academics: None</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">requirements textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++    
++    
+     <!-- http://purl.obolibrary.org/obo/IAO_0000318 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000318">
+@@ -1783,12 +2510,69 @@ GO   gene ontology</obo:IAO_0000112>
+         <obo:IAO_0000115 xml:lang="en">A part of a publication about an investigation that is about a study design execution</obo:IAO_0000115>
+         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;results&apos; in a typical scientific journal article</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">results</obo:IAO_0000118>
+         <obo:IAO_0000111 xml:lang="en">results section</obo:IAO_0000111>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+     </owl:Class>
+     
++    
++    
++    
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_statistica_analysis_textual_entity -->
+ 
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_statistica_analysis_textual_entity">
++        <rdfs:label xml:lang="en">statistical analysis textual entity</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
++        <obo:IAO_0000115 xml:lang="en">A textual entity documenting statistical analysis tools and techniques employed.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">From Mondo et al. Cardiovasc J Afr. 2013 Mar; 24(2): 28–33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3734881/):
+ 
++Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Stata version 10 for analysis. Continuous variables were summarised as mean (± standard deviation) and median (inter-quartile range), and presented in the tables. Categorical data were analysed using frequency and percentages, and results are presented in frequency tables and bar charts. Test of significance (p-value) was determined using the chi-square test. A p-value of less than 0.05 was considered significant.</obo:IAO_0000112>
++        <obo:IAO_0000111 xml:lang="en">statistical analysis textual entity</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_statistical_analysis_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_statistical_analysis_section">
++        <rdfs:label xml:lang="en">statistical analysis section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAOTEMP_statistica_analysis_textual_entity"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of the document used to describe the statistical methodologies employed in the work presented in the document.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;statistical analysis&apos; in a typical scientific journal article, e.g. Mondo et al. Cardiovasc J Afr. 2013 Mar; 24(2): 28–33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3734881/)</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">statistical analysis</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">statistical analysis section</obo:IAO_0000111>
++    </owl:Class>
++    
++
++
++    <!-- http://purl.obolibrary.org/obo/IAOTEMP_tables_section -->
++
++    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAOTEMP_tables_section">
++        <rdfs:label xml:lang="en">tables section</rdfs:label>
++        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
++        <rdfs:subClassOf>
++            <owl:Restriction>
++                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
++                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
++            </owl:Restriction>
++        </rdfs:subClassOf>
++        <obo:IAO_0000115 xml:lang="en">A part of a document that contains one or more tables.</obo:IAO_0000115>
++        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
++        <obo:IAO_0000112 xml:lang="en">The section labelled &apos;tables&apos; in a typical scientific journal article.</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">tables</obo:IAO_0000118>
++        <obo:IAO_0000111 xml:lang="en">tables section</obo:IAO_0000111>
++    </owl:Class>
++ 
++    
++    
+     <!-- http://purl.obolibrary.org/obo/IAO_0000319 -->
+ 
+     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000319">
+@@ -1796,6 +2580,7 @@ GO   gene ontology</obo:IAO_0000112>
+         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+         <obo:IAO_0000115 xml:lang="en">A part of a publication about an investigation that is about the study interpretation of the investigation</obo:IAO_0000115>
+         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
++        <obo:IAO_0000118 xml:lang="en">discussion</obo:IAO_0000118>
+         <obo:IAO_0000118 xml:lang="en">discussion section</obo:IAO_0000118>
+         <obo:IAO_0000111 xml:lang="en">discussion section of a publication about an investigation</obo:IAO_0000111>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+@@ -1871,6 +2656,8 @@ GO   gene ontology</obo:IAO_0000112>
+         <obo:IAO_0000115 xml:lang="en">A part of a publication that is about the specific contributions of each author</obo:IAO_0000115>
+         <obo:IAO_0000112 xml:lang="en">LH conceived of the hypothesis, designed the study and contributed to the writing of the manuscript.  KBC executed the experiments, analyzed the data, and contributed to the writing of the manuscript.</obo:IAO_0000112>
+         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
++        <obo:IAO_0000118 xml:lang="en">author contributions</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">contributions by the authors</obo:IAO_0000118>
+         <obo:IAO_0000111 xml:lang="en">author contributions section</obo:IAO_0000111>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+     </owl:Class>
+@@ -1885,6 +2672,8 @@ GO   gene ontology</obo:IAO_0000112>
+         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+         <obo:IAO_0000115 xml:lang="en">Part of a publication that is about the contributions of people or institutions other than the authors.</obo:IAO_0000115>
+         <obo:IAO_0000112 xml:lang="en">The authors wish to thank Alan Ruttenberg for his constructive comments about an earlier draft of this manuscript</obo:IAO_0000112>
++        <obo:IAO_0000118 xml:lang="en">acknowledgements</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">acknowledgments</obo:IAO_0000118>
+         <obo:IAO_0000111 xml:lang="en">acknowledgements section</obo:IAO_0000111>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+     </owl:Class>
+@@ -1921,6 +2710,9 @@ GO   gene ontology</obo:IAO_0000112>
+         <obo:IAO_0000118 xml:lang="en">appendix</obo:IAO_0000118>
+         <obo:IAO_0000115 xml:lang="en">part of a document that is segregated from the rest of the document due to its size</obo:IAO_0000115>
+         <obo:IAO_0000118 xml:lang="en">supplementary material</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">supporting information</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">additional information</obo:IAO_0000118>
++        <obo:IAO_0000118 xml:lang="en">supplemental information</obo:IAO_0000118>        
+         <obo:IAO_0000111 xml:lang="en">supplementary material to a document</obo:IAO_0000111>
+         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+     </owl:Class>
+-- 
+1.8.5.2 (Apple Git-48)
+
