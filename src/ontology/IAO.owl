@@ -12,10 +12,8 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
-		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a transitional artifact for discussion, not to be used for production</rdfs:comment>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-        <owl:versionInfo xml:lang="en">$Revision$</owl:versionInfo>
-        <rdfs:seeAlso rdf:resource="http://code.google.com/p/information-artifact-ontology/"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
 		<dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
 		<dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
 		<dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
