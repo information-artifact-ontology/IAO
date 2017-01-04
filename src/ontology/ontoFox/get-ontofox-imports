@@ -1,0 +1,2 @@
+#!/bin/bash -x
+curl -s -F file=@OntoFox-input.txt -o ../import-OBO.owl  http://ontofox.hegroup.org/service.php
