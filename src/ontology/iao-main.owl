@@ -762,7 +762,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://code.google.com/p/information-artifact-ontology/issues/detail?id=154).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://github.com/information-artifact-ontology/IAO/issues/154).</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
@@ -2114,7 +2114,7 @@ GO   gene ontology</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A textual entity that is used as directive to deliver something to a person, or organization</obo:IAO_0000115>
-        <obo:IAO_0000116>2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue http://code.google.com/p/information-artifact-ontology/issues/detail?id=59</obo:IAO_0000116>
+        <obo:IAO_0000116>2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue https://github.com/information-artifact-ontology/IAO/issues/59</obo:IAO_0000116>
         <rdfs:label xml:lang="en">postal address</rdfs:label>
     </owl:Class>
     
@@ -2125,7 +2125,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">email address</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 1/3/2012 - Provisional id, see issue at http://code.google.com/p/information-artifact-ontology/issues/detail?id=130&amp;thanks=130&amp;ts=1325636583</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 1/3/2012 - Provisional id, see issue at https://github.com/information-artifact-ontology/IAO/issues/130&amp;thanks=130&amp;ts=1325636583</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Person:Chris Stoeckart</obo:IAO_0000117>
         <rdfs:label xml:lang="en">email address</rdfs:label>
@@ -2435,7 +2435,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity that denotes a particular in reality.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=114</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/114</obo:IAO_0000119>
         <obo:IAO_0000232 xml:lang="en">The qualifier &quot;written&quot; is to set it apart from spoken names.  Also, note the restrictions to particulars.  We are not naming universals.   We could however, be naming, attributive collections which are particulars, so &quot;All people located in the boundaries of the city of Little Rock, AR on June 18, 2011 at 9:50a CDT&quot; would be a name.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">written name</rdfs:label>
     </owl:Class>
@@ -2449,7 +2449,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A software method (also called subroutine, subprogram, procedure, method, function, or routine) is software designed to execute a specific task.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software method</rdfs:label>
     </owl:Class>
     
@@ -2462,7 +2462,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en"> A software module is software composed of a collection of software methods.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanei Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software module</rdfs:label>
     </owl:Class>
     
@@ -2475,7 +2475,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A software library is software composed of a collection of software modules and/or software methods in a form that can be statically or dynamically linked to some software application.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software library</rdfs:label>
     </owl:Class>
     
@@ -2488,7 +2488,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A software application is software that can be directly executed by some processing unit.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software application</rdfs:label>
     </owl:Class>
     
@@ -2502,7 +2502,7 @@ points together with a line.</obo:IAO_0000115>
 interpreter.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software script</rdfs:label>
     </owl:Class>
     
