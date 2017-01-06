@@ -12,10 +12,10 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao.owl">
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao/2017-01-04/externalByHand.owl"/>
         <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
         <dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/externalByHand.owl"/>
         <dc:contributor xml:lang="en">James A. Overton</dc:contributor>
         <dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
         <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
@@ -24,46 +24,47 @@
         <dc:contributor xml:lang="en">Darren Natale</dc:contributor>
         <dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
         <dc:contributor xml:lang="en">Jennifer Fostel</dc:contributor>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/iao-main.owl"/>
         <dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is a transitional artifact for discussion, not to be used for production</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/import-OBO.owl"/>
         <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
         <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/iao.owl"/>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
         <dc:contributor xml:lang="en">William Hogan</dc:contributor>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Holger Stenzhorn</dc:contributor>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao/2017-01-04/import-OBO.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/bfo-axioms.owl"/>
         <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao/2017-01-04/obsolete.owl"/>
         <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao/2017-01-04/iao-main.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/annotations.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/core.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/bfo-classes-minimal.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/iao.owl"/>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/obsolete.owl"/>
         <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
         <dc:contributor xml:lang="en">William Duncan</dc:contributor>
         <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/ontology-metadata.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This version of the ontology is the merge of all its imports and has added axioms inferred by an OWL reasoner</rdfs:comment>
         <dc:contributor xml:lang="en">Matt Brush</dc:contributor>
         <dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
         <dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao/2017-01-04/ontology-metadata.owl"/>
         <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
         <dc:contributor xml:lang="en">James Malone</dc:contributor>
         <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro/bfo-axioms.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
         <dc:contributor xml:lang="en">Yongqun (Oliver) He</dc:contributor>
         <dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
         <dc:contributor xml:lang="en">Randy Dipert</dc:contributor>
-        <obo:IAO_0000412 rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro/bfo-classes-minimal.owl"/>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-04/iao.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro/annotations.owl"/>
         <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
     </owl:Ontology>
     
@@ -112,17 +113,21 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000111>editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000111>editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label>editor preferred label</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
         <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -174,6 +179,7 @@
         <obo:IAO_0000111>definition</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</obo:IAO_0000111>
+        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
@@ -204,6 +210,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -849,12 +856,6 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/homepage -->
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
@@ -1294,6 +1295,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 xml:lang="en">has_specified_input</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
@@ -1306,6 +1308,14 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melanie Coutot</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">has_specified_input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
+        <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -6554,6 +6564,7 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000471">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</obo:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that carries out a study design</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that realizes the concretization of a study design</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</rdfs:label>

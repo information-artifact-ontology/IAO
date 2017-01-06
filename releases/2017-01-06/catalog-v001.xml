@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
+      <uri name="http://purl.obolibrary.org/obo/iao/2017-01-06/protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="protege-dc.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/annotations.owl" uri="annotations.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/bfo-axioms.owl" uri="bfo-axioms.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/bfo-classes-minimal.owl" uri="bfo-classes-minimal.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/core.owl" uri="core.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/externalByHand.owl" uri="externalByHand.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/iao-main.owl" uri="iao-main.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/import-OBO.owl" uri="import-OBO.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/obsolete.owl" uri="obsolete.owl"/>
+      <uri name="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+    </group>
+</catalog>
+
+
