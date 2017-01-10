@@ -39,7 +39,7 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/bfo-axioms.owl"/>
         <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-10/iao.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/iao.owl"/>
         <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/annotations.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
