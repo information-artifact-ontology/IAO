@@ -12,10 +12,12 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao.owl">
+        <dc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://creativecommons.org/licenses/by/4.0/</dc:license>
         <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
         <dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/externalByHand.owl"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Information Artifact Ontology (IAO) is licensed under the Creative Commons Attribution License (CC-BY) version 4.0. You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially. for any purpose, even commercially. The licensor cannot revoke these freedoms as long as you follow the license terms. You must give appropriate credit (by using the original ontology IRI for the whole ontology and original term IRIs for individual terms), provide a link to the license, and indicate if any changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. For more information see http://www.obofoundry.org/docs/Citation.html</rdfs:comment>
         <dc:contributor xml:lang="en">James A. Overton</dc:contributor>
         <dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
         <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
@@ -37,13 +39,14 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/bfo-axioms.owl"/>
         <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-10/iao.owl"/>
         <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/annotations.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/core.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/bfo-classes-minimal.owl"/>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/iao.owl"/>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
         <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/obsolete.owl"/>
         <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
@@ -55,7 +58,6 @@
         <dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
         <dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
         <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at http://code.google.com/p/information-artifact-ontology/</rdfs:comment>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
         <dc:contributor xml:lang="en">James Malone</dc:contributor>
@@ -113,21 +115,13 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <obo:IAO_0000111>editor preferred label</obo:IAO_0000111>
-        <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
-        <obo:IAO_0000111>editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
-        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label>editor preferred label</rdfs:label>
-        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
-        <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
-        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -136,9 +130,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
-        <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
@@ -176,13 +168,8 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <obo:IAO_0000111>definition</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</obo:IAO_0000111>
-        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
 Barry Smith
@@ -207,11 +194,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-        <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label>textual definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -236,7 +220,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -882,7 +866,18 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
     <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
@@ -905,6 +900,17 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000111 xml:lang="en">has part</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
@@ -926,7 +932,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
@@ -946,6 +965,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
@@ -963,7 +995,20 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000066">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -989,6 +1034,19 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000067">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000067"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000111 xml:lang="en">site of</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">[copied from inverse property &apos;occurs in&apos;] b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
         <rdfs:comment>Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant</rdfs:comment>
@@ -1002,6 +1060,16 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
         <rdfs:label xml:lang="en">has measurement unit label</rdfs:label>
@@ -1013,6 +1081,11 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000135">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000135"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The process of creation is, for example,  writing down on paper the name of a friend by deliberately creating a certain pattern using ink.
 
 Here the ink + paper is the independent continuant and the carrier is the pattern in the ink.
@@ -1038,7 +1111,7 @@ Pattern of ink arrayed on paper as mark when writing down a friend&apos;s name
 Case 3
 Pattern of magnetic domains on scattered pieces of a hard disk platter as mark when saving a file.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8/6/2009 Alan Ruttenberg: The suggestions is to deprecate specific and generically denotes in favor of a single denote relationship that corresponds to the generic sense</obo:IAO_0000116>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see http://code.google.com/p/information-artifact-ontology/issues/detail?id=25&amp;q=denote</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see https://github.com/information-artifact-ontology/IAO/issues/25&amp;q=denote</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
@@ -1051,6 +1124,12 @@ Pattern of magnetic domains on scattered pieces of a hard disk platter as mark w
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -1071,6 +1150,11 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000142"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An information artifact IA mentions an entity E exactly when it has a component/part that denotes E</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. P4 RC1 munges our GCI so remove it for now: mentions some entity equivalentTo has_part some (&apos;generically denotes&apos; some entity)</obo:IAO_0000116>
@@ -1086,6 +1170,11 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000112 xml:lang="en">A person&apos;s name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance &quot;Alan&quot; can denote different people. In each case of use, there is a case of the denotation relation obtaining, between &quot;Alan&quot; and the person that is being named.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have &apos;specifically denotes&apos;, which would have been primitive, so make this relation primitive.
@@ -1105,7 +1194,12 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000220">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see http://code.google.com/p/information-artifact-ontology/issues/detail?id=25&amp;q=denote</obo:IAO_0000116>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000220"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see https://github.com/information-artifact-ontology/IAO/issues/25&amp;q=denote</obo:IAO_0000116>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_materially denotes</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -1116,8 +1210,20 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000221 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000115 xml:lang="en">m is a quality measurement of q at t when
@@ -1169,6 +1275,11 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000222">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000222"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_describes</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -1180,6 +1291,11 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000223">
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000223"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete_represents</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -1191,6 +1307,16 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000407">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000407"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UO_0000001"/>
@@ -1204,6 +1330,13 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000413">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000413"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -1217,6 +1350,23 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/IAO_0000417 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">inverse of the relation of is quality measurement of</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009/10/19 Alan Ruttenberg. Named &apos;junk&apos; relation useful in restrictions, but not a real instance relationship</obo:IAO_0000116>
@@ -1229,8 +1379,18 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/IAO_0000418 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000418">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000419"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000419"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000418"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">a relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
@@ -1243,6 +1403,21 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/IAO_0000419 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000419">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000418"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000419"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">inverse of the relation of is quality specification of</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009/10/19 Alan Ruttenberg. Named &apos;junk&apos; relation useful in restrictions, but not a real instance relationship</obo:IAO_0000116>
@@ -1257,6 +1432,16 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000581">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000581"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
@@ -1272,6 +1457,16 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000583">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000583"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000582"/>
         <rdfs:range>
             <owl:Class>
@@ -1294,8 +1489,25 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 xml:lang="en">has_specified_input</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">see is_input_of example_of_usage</obo:IAO_0000112>
@@ -1315,6 +1527,24 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:label xml:lang="en">is_specified_input_of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1323,8 +1553,25 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 xml:lang="en">has_specified_output</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1342,7 +1589,24 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 xml:lang="en">is_specified_output_of</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -1358,7 +1622,18 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this fragility inheres in this vase</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this red color inheres in this apple</obo:IAO_0000112>
@@ -1374,6 +1649,17 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000111 xml:lang="en">bearer of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">this apple is bearer of this red color</obo:IAO_0000112>
@@ -1391,7 +1677,20 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000056">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <obo:IAO_0000111 xml:lang="en">participates in</obo:IAO_0000111>
@@ -1408,6 +1707,19 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <obo:IAO_0000111 xml:lang="en">has participant</obo:IAO_0000111>
@@ -1426,7 +1738,20 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
@@ -1440,6 +1765,19 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
@@ -1453,8 +1791,25 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000079 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000079">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000079"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <obo:IAO_0000112 xml:lang="en">this catalysis function is a function of this enzyme</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence</obo:IAO_0000115>
@@ -1469,8 +1824,23 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000080">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000112 xml:lang="en">this red color is a quality of this apple</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A quality inheres in its bearer at all times for which the quality exists.</obo:IAO_0000116>
@@ -1484,8 +1854,25 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000081">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000112 xml:lang="en">this investigator role is a role of this person</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.</obo:IAO_0000116>
@@ -1499,7 +1886,24 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000085 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000085">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000079"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000085"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
         <obo:IAO_0000112 xml:lang="en">this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)</obo:IAO_0000112>
@@ -1514,7 +1918,22 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000086">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000080"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000112 xml:lang="en">this apple has quality this red color</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence</obo:IAO_0000115>
@@ -1528,7 +1947,24 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo:IAO_0000112 xml:lang="en">this person has role this investigator role (more colloquially: this person has this role of investigator)</obo:IAO_0000112>
@@ -1543,8 +1979,25 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000091 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000091">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000092"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000092"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence</obo:IAO_0000115>
@@ -1556,7 +2009,24 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0000092 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000092">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000091"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000092"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:label xml:lang="en">disposition of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1565,7 +2035,18 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0001000 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001000">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001001"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001001"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000112 xml:lang="en">this cell derives from this parent cell (cell division)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this nucleus derives from this parent nucleus (nuclear division)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -1580,6 +2061,17 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0001001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001001">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001001"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <obo:IAO_0000112 xml:lang="en">this parent cell derives into this cell (cell division)</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">this parent nucleus derives into this nucleus (nuclear division)</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -1594,7 +2086,18 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0001015 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001015">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000111 xml:lang="en">is location of</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my head is the location of my brain</obo:IAO_0000112>
@@ -1611,6 +2114,17 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001025">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001015"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">my brain is located in my head</obo:IAO_0000112>
@@ -1629,7 +2143,20 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0002000 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002000">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002002"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002002"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002000"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000112 xml:lang="en">the surface of my skin is a 2D boundary of my body</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">A 2D boundary may have holes and gaps, but it must be a single connected entity, not an aggregate of several disconnected parts.</obo:IAO_0000116>
@@ -1647,6 +2174,19 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0002002 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002002">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002000"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002002"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
         <obo:IAO_0000112 xml:lang="en">my body has 2D boundary the surface of my skin</obo:IAO_0000112>
@@ -1664,8 +2204,24 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002350">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+            </rdf:Description>
+        </owl:inverseOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000112>An organism that is a member of a population of organisms</obo:IAO_0000112>
         <obo:IAO_0000115>is member of is a mereological relation between a item and a collection.</obo:IAO_0000115>
         <obo:IAO_0000118>is member of</obo:IAO_0000118>
@@ -1680,7 +2236,22 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+            </rdf:Description>
+        </owl:inverseOf>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <obo:IAO_0000115>has member is a mereological relation between a collection and an item.</obo:IAO_0000115>
         <obo:IAO_0000119>SIO</obo:IAO_0000119>
@@ -1692,7 +2263,14 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+            </rdf:Description>
+        </owl:inverseOf>
+    </owl:ObjectProperty>
     
 
 
@@ -1710,6 +2288,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/IAO_0000004 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
@@ -1721,6 +2300,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/IAO_0000404 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000404">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -1732,6 +2312,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/IAO_0000405 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000405">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -1743,6 +2324,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/IAO_0000406 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000406">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -1765,6 +2347,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <obo:BFO_0000179>entity</obo:BFO_0000179>
         <obo:BFO_0000180>Entity</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
@@ -1779,17 +2362,17 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/001-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
         <owl:annotatedTarget xml:lang="en">Entity doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. For example Werner Ceusters &apos;portions of reality&apos; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &apos;How to track absolutely everything&apos; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/0000004"/>
         <rdfs:comment>per discussion with Barry Smith</rdfs:comment>
         <rdfs:seeAlso rdf:resource="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/001-001"/>
     </owl:Axiom>
     
 
@@ -2185,30 +2768,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
-        <owl:annotatedTarget xml:lang="en">A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
@@ -2241,6 +2800,30 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/095-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
     </owl:Axiom>
     
@@ -3424,6 +4007,7 @@ Superclass was &apos;digitial quality&apos;</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:IAO_0000111 xml:lang="en">information carrier</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">In the case of a printed paperback novel the physicality of the ink and of the paper form part of the information bearer. The qualities of appearing black and having a certain pattern for the ink and appearing white for the paper form part of the information carrier in this case.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
@@ -3553,7 +4137,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">20091104, MC: this needs work and will most probably change</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://code.google.com/p/information-artifact-ontology/issues/detail?id=154).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2014-03-31: We would like to have a deeper analysis of &apos;mark&apos; and &apos;sign&apos; in the future (see https://github.com/information-artifact-ontology/IAO/issues/154).</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: James A. Overton</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">based on Oxford English Dictionary</obo:IAO_0000119>
@@ -4264,6 +4848,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000111 xml:lang="en">material information bearer</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">A page of a paperback novel with writing on it. The paper itself is a material information bearer, the pattern of ink is the information carrier.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a brain</obo:IAO_0000112>
@@ -4418,6 +5003,7 @@ clustering algorithm.</obo:IAO_0000115>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000178"/>
         <obo:IAO_0000111 xml:lang="en">photographic print</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A photographic print is a material entity upon which a photograph generically depends.</obo:IAO_0000115>
@@ -5257,7 +5843,7 @@ GO   gene ontology</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000115>A textual entity that is used as directive to deliver something to a person, or organization</obo:IAO_0000115>
-        <obo:IAO_0000116>2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue http://code.google.com/p/information-artifact-ontology/issues/detail?id=59</obo:IAO_0000116>
+        <obo:IAO_0000116>2010-05-24 Alan Ruttenberg. Use label for the string representation. See issue https://github.com/information-artifact-ontology/IAO/issues/59</obo:IAO_0000116>
         <rdfs:label xml:lang="en">postal address</rdfs:label>
     </owl:Class>
     
@@ -5269,7 +5855,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">email address</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 1/3/2012 - Provisional id, see issue at http://code.google.com/p/information-artifact-ontology/issues/detail?id=130&amp;thanks=130&amp;ts=1325636583</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alan Ruttenberg 1/3/2012 - Provisional id, see issue at https://github.com/information-artifact-ontology/IAO/issues/130&amp;thanks=130&amp;ts=1325636583</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Person:Chris Stoeckart</obo:IAO_0000117>
         <rdfs:label xml:lang="en">email address</rdfs:label>
@@ -5605,7 +6191,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A textual entity that denotes a particular in reality.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=114</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/114</obo:IAO_0000119>
         <obo:IAO_0000232 xml:lang="en">The qualifier &quot;written&quot; is to set it apart from spoken names.  Also, note the restrictions to particulars.  We are not naming universals.   We could however, be naming, attributive collections which are particulars, so &quot;All people located in the boundaries of the city of Little Rock, AR on June 18, 2011 at 9:50a CDT&quot; would be a name.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">written name</rdfs:label>
     </owl:Class>
@@ -5620,7 +6206,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A software method (also called subroutine, subprogram, procedure, method, function, or routine) is software designed to execute a specific task.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software method</rdfs:label>
     </owl:Class>
     
@@ -5634,7 +6220,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en"> A software module is software composed of a collection of software methods.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanei Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software module</rdfs:label>
     </owl:Class>
     
@@ -5648,7 +6234,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A software library is software composed of a collection of software modules and/or software methods in a form that can be statically or dynamically linked to some software application.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software library</rdfs:label>
     </owl:Class>
     
@@ -5662,7 +6248,7 @@ points together with a line.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A software application is software that can be directly executed by some processing unit.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software application</rdfs:label>
     </owl:Class>
     
@@ -5677,7 +6263,7 @@ points together with a line.</obo:IAO_0000115>
 interpreter.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://code.google.com/p/information-artifact-ontology/issues/detail?id=80</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
         <rdfs:label xml:lang="en">software script</rdfs:label>
     </owl:Class>
     
@@ -6565,7 +7151,6 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</obo:IAO_0000111>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that carries out a study design</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that realizes the concretization of a study design</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</rdfs:label>
     </owl:Class>
@@ -6663,6 +7248,7 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obsolete Class</rdfs:label>
     </owl:Class>
     
@@ -6707,14 +7293,6 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://code.google.com/p/information-artifact-ontology/ -->
-
-    <owl:Thing rdf:about="http://code.google.com/p/information-artifact-ontology/">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    </owl:Thing>
     
 
 
