@@ -1,5 +1,5 @@
 Made with LSW https://github.com/alanruttenberg/lsw2/
-Commit: d086ce140eae06571dc35b20a1308feb367f5465
+Commit: 4f49e66a80c83fc6ec50523ce0494d76fabb577f
 
 (make-release  "iao" "~/repos/information-artifact-ontology/src/ontology/iao.owl"
                :when 3692716953
