@@ -3,7 +3,6 @@
      xml:base="http://purl.obolibrary.org/obo/iao.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -13,13 +12,13 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/iao.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/import-OBO.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/obsolete.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/iao-main.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/externalByHand.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ro/core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ontology-metadata.owl"/>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
         <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
@@ -63,6 +62,23 @@
         <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
         <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000603 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000603"/>
     
 
 
