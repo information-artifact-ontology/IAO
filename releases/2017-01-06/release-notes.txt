@@ -1,0 +1,46 @@
+This release is primarily for maintenance and requested terms 
+
+Released versions:
+
+http://purl.obolibrary.org/obo/iao.owl
+http://purl.obolibrary.org/obo/iao/2017-01-06/iao.owl
+
+Retrieves a version that has all imports merged and to which inferred axioms have been added.
+
+http://purl.obolibrary.org/obo/iao/ontology-metadata.owl 
+http://purl.obolibrary.org/obo/iao/2017-01-06/ontology-metadata.owl
+
+A version as stated (has no dependents, primarily annotation properties)
+
+http://purl.obolibrary.org/obo/iao/iao-stated.owl 
+http://purl.obolibrary.org/obo/iao/2017-06-01/iao-stated.owl
+
+A version without inferences with import as separate files
+
+http://purl.obolibrary.org/obo/iao/iao-main.owl
+http://purl.obolibrary.org/obo/iao/2017-06-01/iao-main.owl
+
+As iao-stated.owl but without obsolete terms
+
+http://purl.obolibrary.org/obo/iao/dev/iao.owl
+http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl
+http://purl.obolibrary.org/obo/iao/dev/iao-main.owl
+
+Live, direct from the repo. Can change without notice. It's probably not what you want.
+
+Main visible changes in this version:
+- Issue #187: ETL class
+- Issue #183: proposed extensions to IAO:'document part' and IAO:'textual entity
+
+Under the hood:
+- Imports refreshed 2017-01-06
+- A new release process reduces work required to push out new releases
+-- All dependents now versioned, so  http://purl.obolibrary.org/iao/2017-01-06/iao-stated.owl should always load the same files
+-- This entailed making copies of ro/core.owl and its imports ro/bfo-axioms.owl and ro/anotations.owl which did not have versioned PURLs
+-- Now: http://purl.obolibrary.org/obo/iao/2017-01-06/ro/core.owl, etc.
+-- Copies were downloaded 2017-01-06
+- BFO version http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl
+- Stopped using protege-dc instead adding declarations for those properties to ontology-metadata.owl
+- files no longer used deleted from repo
+- Consistent use of versionIRI for our files - /dev/ is versionIRI, not ontologyIRI
+- purl.obolibrary.org config cleaned up

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl#"
-     xml:base="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl#"
+     xml:base="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/dev/2017-01-06/ontology-metadata.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2017-01-06/ontology-metadata.owl"/>
         <dc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://creativecommons.org/licenses/by/4.0/</dc:license>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Information Artifact Ontology (IAO) is licensed under the Creative Commons Attribution License (CC-BY) version 4.0. You are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially. for any purpose, even commercially. The licensor cannot revoke these freedoms as long as you follow the license terms. You must give appropriate credit (by using the original ontology IRI for the whole ontology and original term IRIs for individual terms), provide a link to the license, and indicate if any changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. For more information see http://www.obofoundry.org/docs/Citation.html</rdfs:comment>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
@@ -35,23 +35,7 @@
     
 
 
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
-
-<!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
@@ -469,6 +453,96 @@ EquivalentTo: xsd:integer[&gt; 2151 , &lt;= 2300]
         <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
         <rdfs:label xml:lang="en">term replaced by</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/coverage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
     
 
 

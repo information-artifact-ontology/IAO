@@ -1,0 +1,23 @@
+# For 'products:' section
+- iao.owl: http://cdn.rawgit.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao-merged.owl
+
+# For 'entries: (current)' section
+-exact: /iao-stated.owl
+  replacement: http://cdn.rawgit.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao.owl
+
+-exact: /ontology-metadata.owl
+  replacement: http://cdn.rawgit.com/information-artifact-ontology/IAO/master/releases/2017-01-06/ontology-metadata.owl
+
+-exact: /iao-main.owl
+  replacement: http://cdn.rawgit.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao-main.owl
+
+# For 'entries: (versions)' section
+-exact: /2017-01-06/iao.owl
+  replacement: http://cdn.rawgit.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao-merged.owl
+
+-exact: /2017-01-06/iao-stated.owl
+  replacement: http://cdn.rawgit.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao.owl
+
+-prefix: /2017-01-06/ 
+  replacement: http://cdn.rawgit.com/information-artifact-ontology/IAO/master/releases/2017-01-06/
+
