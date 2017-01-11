@@ -14,7 +14,8 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
-		<dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dev/iao.owl"/>
+	<dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
 		<dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
 		<dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
 		<dc:contributor xml:lang="en">Barry Smith</dc:contributor>
