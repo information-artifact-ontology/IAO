@@ -13,12 +13,12 @@ http://purl.obolibrary.org/obo/iao/2017-01-06/ontology-metadata.owl
 A version as stated (has no dependents, primarily annotation properties)
 
 http://purl.obolibrary.org/obo/iao/iao-stated.owl 
-http://purl.obolibrary.org/obo/iao/2017-06-01/iao-stated.owl
+http://purl.obolibrary.org/obo/iao/2017-01-06/iao-stated.owl
 
 A version without inferences with import as separate files
 
 http://purl.obolibrary.org/obo/iao/iao-main.owl
-http://purl.obolibrary.org/obo/iao/2017-06-01/iao-main.owl
+http://purl.obolibrary.org/obo/iao/2017-01-06/iao-main.owl
 
 As iao-stated.owl but without obsolete terms
 
