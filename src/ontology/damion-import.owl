@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
+     xml:base="http://purl.obolibrary.org/obo/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/damion-import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/dev/damion-import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <IAO_0000111 xml:lang="en">example</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <IAO_0000111 xml:lang="en">has curation status</IAO_0000111>
+        <IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</IAO_0000117>
+        <IAO_0000117 xml:lang="en">PERSON:Bill Bug</IAO_0000117>
+        <IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</IAO_0000117>
+        <IAO_0000119 xml:lang="en">OBI_0000281</IAO_0000119>
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <IAO_0000111 xml:lang="en">definition</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</IAO_0000115>
+        <IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: &apos;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&apos;  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&apos;t be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don&apos;t have definitions of &apos;meaning&apos; or &apos;expression&apos; or &apos;property&apos;. For &apos;reference&apos; in the intended sense I think we use the term &apos;denotation&apos;. For &apos;expression&apos;, I think we you mean symbol, or identifier. For &apos;meaning&apos; it differs for class and property. For class we want documentation that let&apos;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&apos;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &apos;intended reader&apos; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </IAO_0000116>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <IAO_0000111 xml:lang="en">editor note</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</IAO_0000119>
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <IAO_0000111 xml:lang="en">term editor</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</IAO_0000115>
+        <IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</IAO_0000116>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <IAO_0000111 xml:lang="en">definition source</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</IAO_0000115>
+        <IAO_0000117 xml:lang="en">PERSON:Daniel Schober</IAO_0000117>
+        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</IAO_0000119>
+        <IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</IAO_0000119>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000429 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000429">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+        <IAO_0000111 xml:lang="en">email address</IAO_0000111>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <IAO_0000115 xml:lang="en">An &quot;email address&quot; is a textual entity whose syntax minimally adheres to the RFC 5322 internet protocol, section 3.4.1.  &quot;Addr-Spec Specification&quot; (https://tools.ietf.org/html/rfc5322). Introduced as a human-associated CRID used in network message transfer systems, it now has broader usage in user authorization and data identification.</IAO_0000115>
+        <IAO_0000116 xml:lang="en">Alan Ruttenberg 1/3/2012 - Provisional id, see issue at https://github.com/information-artifact-ontology/IAO/issues/130&amp;thanks=130&amp;ts=1325636583</IAO_0000116>
+        <IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</IAO_0000117>
+        <IAO_0000117 xml:lang="en">Person:Chris Stoeckart</IAO_0000117>
+        <IAO_0000117 xml:lang="en">Person:Damion Dooley</IAO_0000117>
+        <rdfs:label xml:lang="en">email address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000577"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">A data request state is a metadata state that describes why and in what way a request to some provider to retrieve or receive a datum at some time t can be satisfied or not.  The state may be specifically related to the requesting user, group or system involved.</IAO_0000115>
+        <IAO_0000116 xml:lang="en">Damion Dooley Feb 2, 2017: If a datum can be retrieved, but would be randomized or otherwise transformed for privacy reasons, a data retrieval state should indicate so. If a datum can not be retrieved, a data request state should exist to indicate the general reason why. For example the storage system may have no datum matching the request, or the datum may be withheld for privacy reasons, or the datum was lost, or was never collected in the first place.
+
+These metadata states are mainly inspired by the International Nucleotide Database Collaboration (INSDC) specification for missing value reporting.</IAO_0000116>
+        <IAO_0000117 xml:lang="en">person: Damion Dooley</IAO_0000117>
+        <rdfs:comment xml:lang="en">Note this advice for use of missing value terms in submissions to International Nucleotide Database Collaboration related databases:
+
+&quot;Please use [INSDC] standardised missing value vocabulary only if a true value of an expected format for a MANDATORY field is missing. If a true value is missing for a RECOMMENDED or an OPTIONAL field then these fields should not be used for reporting at all. For any use cases we discourage the usage of the top level term &apos;missing&apos; and encourage to use a lower level term with a higher granularity to declare the reason for the absence of a true value.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="en">data request state</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ebi.ac.uk/ena/about/missing-values-reporting</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000652 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000652">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000651"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;data available&quot; data request state indicates that a provider has or can provide a value for the requested data to the requestor.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <rdfs:label xml:lang="en">data available</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000653 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000653">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000651"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;data unavailable&quot; data request state indicates that the data cannot be located or retrieved by a provider for the requestor at some time t.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <IAO_0000118 xml:lang="en">missing</IAO_0000118>
+        <IAO_0000119 xml:lang="en">http://www.ebi.ac.uk/ena/about/missing-values-reporting</IAO_0000119>
+        <rdfs:label xml:lang="en">data unavailable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000654">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000651"/>
+        <IAO_0000112 xml:lang="en">A right femur length measurement datum should be marked &quot;not applicable&quot; for a patient with a missing right limb.</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;not applicable&quot; data request state indicates that the requested datum does not apply to a given context, or indicates that the (requestor&apos;s) datum standard itself fails to model or represent the returned datum value appropriately at some time t.</IAO_0000115>
+        <IAO_0000117>Damion Dooley</IAO_0000117>
+        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ebi.ac.uk/ena/about/missing-values-reporting</IAO_0000119>
+        <rdfs:label xml:lang="en">not applicable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000655 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000653"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;In process&quot; datum request state indicates that data will be available from a provider, but has not finished being collected, is awaiting verification, or has not yet been communicated at some time t.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <rdfs:label xml:lang="en">in process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000656 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000653"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &apos;data not collected&apos; data request state indicates data of an expected format was not given because it has not been collected by the provider at some time t.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <IAO_0000119 xml:lang="en">http://www.ebi.ac.uk/ena/about/missing-values-reporting</IAO_0000119>
+        <rdfs:label xml:lang="en">not collected</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000657 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000657">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000653"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;restricted access&quot; data request state indicates data exists at time t but can not be released openly [or by a provider to a requestor] because of privacy concerns.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.ebi.ac.uk/ena/about/missing-values-reporting</IAO_0000119>
+        <rdfs:label xml:lang="en">restricted access</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000658 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0000658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000654"/>
+        <IAO_0000112 xml:lang="en">A request for a &quot;phenotypic sex&quot; datum that returns &quot;pseudohermaphrodite&quot; may yeild an &quot;incompatible data&quot; metadata state if the requestor has no such value in its list of permitted phenotypic sex categories.</IAO_0000112>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;incompatible data&quot; data request state indicates that the requested datum&apos;s value is not compatible with the requestor&apos;s data specification for the same datum.</IAO_0000115>
+        <IAO_0000117>Damion Dooley</IAO_0000117>
+        <rdfs:label xml:lang="en">incompatible</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000659 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0000659">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000653"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;not provided&quot; data request state indicates data of an expected format was not given by a provider at time t, but a value may be given at a later stage.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <IAO_0000119 xml:lang="en">http://www.ebi.ac.uk/ena/about/missing-values-reporting</IAO_0000119>
+        <rdfs:label xml:lang="en">not provided</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000660 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0000660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000657"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;encrypted&quot; data request state indicates data of an expected format is available at time t, but is encrypted and can only be decrypted if the requestor has an appropriate key.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <rdfs:label xml:lang="en">data encrypted</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000661 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0000661">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000657"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;data obfuscated&quot; data request state indicates data of an expected format exists at time t, but is obfuscated for the given requestor for privacy reasons.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <rdfs:label xml:lang="en">data obfuscated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000662 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0000662">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000657"/>
+        <IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <IAO_0000115 xml:lang="en">The &quot;data aggregated&quot; data request state indicates data of an expected format exists at time t, but is only available for privacy reasons by way of queries or reports that have sufficiently aggregated values.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Damion Dooley</IAO_0000117>
+        <rdfs:label xml:lang="en">data aggregated</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000428 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428">
+        <IAO_0000115 xml:lang="en">A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Alan Ruttenberg</IAO_0000117>
+        <IAO_0000119 xml:lang="en">group:OBI</IAO_0000119>
+        <rdfs:label xml:lang="en">requires discussion</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
