@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/iao.owl" uri="iao.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao.owl" uri="iao.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/import-OBO.owl" uri="import-OBO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/import-OBO.owl" uri="import-OBO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/ro/core.owl" uri="ro/core.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ro/core.owl" uri="ro/core.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/ro/bfo-axioms.owl" uri="ro/bfo-axioms.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ro/bfo-axioms.owl" uri="ro/bfo-axioms.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/ro/annotations.owl" uri="ro/annotations.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ro/annotations.owl" uri="ro/annotations.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/ro/bfo-classes-minimal.owl" uri="ro/bfo-classes-minimal.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/ro/bfo-classes-minimal.owl" uri="ro/bfo-classes-minimal.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/iao-main.owl" uri="iao-main.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/iao-main.owl" uri="iao-main.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/externalByHand.owl" uri="externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/externalByHand.owl" uri="externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/2017-03-24/obsolete.owl" uri="obsolete.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/obsolete.owl" uri="obsolete.owl"/>
+</catalog>
