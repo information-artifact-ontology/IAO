@@ -6,11 +6,11 @@ The IAO mailing-list is available at http://groups.google.com/group/information-
 
 ### Files
 
-|File|Stable version|Development version|
-|---|---|---|---|---| 
-|IAO|http://purl.obolibrary.org/obo/iao.owl|http://purl.obolibrary.org/obo/iao/dev/iao.owl| 
-|Ontology metadata|http://purl.obolibrary.org/obo/iao/ontology-metadata.owl|http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl|
-|IAO-dev|  |http://purl.obolibrary.org/obo/iao/dev/iao-dev.owl| 
+| File | Stable version | Development version |
+| --- | --- | --- | 
+| IAO | http://purl.obolibrary.org/obo/iao.owl|http://purl.obolibrary.org/obo/iao/dev/iao.owl | 
+| Ontology metadata |http://purl.obolibrary.org/obo/iao/ontology-metadata.owl|http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl |
+| IAO-dev |  | http://purl.obolibrary.org/obo/iao/dev/iao-dev.owl | 
 
 The IAO file imports all files needed for the full version of the IAO ontology:
  - obsolete classes and properties [Stable version](http://purl.obolibrary.org/obo/iao/obsolete.owl) [Development version](http://purl.obolibrary.org/obo/iao/dev/obsolete.owl)
