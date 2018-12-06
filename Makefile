@@ -13,8 +13,8 @@ SHELL := bash
 # (3) copy src/ontology files to release directory and update IRIs
 # (4) copy catalog to release directory and update IRIs
 # (5) create a merged RO core.owl with annotations
-# (6) copy iao.owl to release directory and update import IRIs
-# (7) merge imports and reason to create iao-merged.owl
+# (6) copy iao.owl to release directory, update imports, and reason
+# (7) merge iao.owl with imports to create iao-merged.owl
 # (8) clean build files
 
 # If you wish to keep build/robot.jar, run `make release` instead.
@@ -118,7 +118,9 @@ $(TARGET)/iao.owl: $(SRC)/iao.owl | $(IAO_COMPS) catalog build/robot.jar
 	@echo "Copying iao.owl to $(TARGET)" && \
 	sed -e 's#/obo/iao/dev#/obo/iao/$(DATE)#g' $< | \
 	sed -e 's#ro/core#iao/$(DATE)/ro/core#g' > $@ && \
-	robot annotate --input $@ --version-iri $(V)/iao.owl
+	robot reason --input $@ --create-new-ontology false\
+	 --annotate-inferred-axioms false \
+	annotate --version-iri $(V)/iao.owl --output $@
 
 # merge all components then reason
 # set ontology and version IRIs
@@ -126,6 +128,5 @@ merged: $(MERGED)
 $(MERGED): $(TARGET)/iao.owl | build/robot.jar
 	@echo "Merging release" && \
 	robot merge --input $< --collapse-import-closure true \
-	reason --create-new-ontology false --annotate-inferred-axioms false \
 	annotate --ontology-iri $(OBO)/iao/iao-merged.owl\
 	 --version-iri $(V)/iao-merged.owl --output $@
