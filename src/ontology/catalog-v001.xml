@@ -14,4 +14,5 @@
         <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="iao-main.owl"/>
         <uri name="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl" uri="import-OBO.owl"/>
         <uri name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/iao/dev/ro/core.owl" uri="ro/core.owl"/>
 </catalog>

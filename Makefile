@@ -8,14 +8,14 @@ SHELL := bash
 .SECONDARY:
 
 # Run `make all` to create a new IAO release:
-# (1) download the latest build of ROBOT
-# (2) create a new release directory
-# (3) copy src/ontology files to release directory and update IRIs
-# (4) copy catalog to release directory and update IRIs
-# (5) create a merged RO core.owl with annotations
-# (6) copy iao.owl to release directory, update imports, and reason
-# (7) merge iao.owl with imports to create iao-merged.owl
-# (8) clean build files
+# - download the latest build of ROBOT
+# - create a merged RO core.owl with annotations
+# - merge iao-main.owl with imports to create iao-merged.owl
+# - reason over iao-merged.owl to create iao.owl
+# - create a new release directory
+# - copy ontology files to release directory and update IRIs
+# - copy catalog to release directory and update IRIs
+# - clean build files
 
 # If you wish to keep build/robot.jar, run `make release` instead.
 
@@ -36,9 +36,8 @@ DATE = $(shell date +'%Y-%m-%d')
 V = $(OBO)/iao/$(DATE)
 
 # dependencies & targets
-CAT = catalog-v001.xml 
-MERGED = $(TARGET)/iao-merged.owl
-RO = $(TARGET)/ro
+RO = $(SRC)/ro
+CAT = catalog-v001.xml
 
 # ===============================
 #           MAIN TASKS
@@ -46,9 +45,7 @@ RO = $(TARGET)/ro
 
 # run `make all` or `make release` to make a new release
 # `make all` will remove the build dir with ROBOT on completion
-all: release clean
-release: merged
-	@echo "A new release is available in $(TARGET)"
+all: clean
 
 # various directories
 build $(RO) $(TARGET):
@@ -58,11 +55,12 @@ build $(RO) $(TARGET):
 #             ROBOT
 # ===============================
 
+# download the most recent build of ROBOT
 build/robot.jar: | build
 	@echo "Getting ROBOT" && \
 	curl -Ls https://build.berkeleybop.org/job/robot/lastSuccessfulBuild/artifact/bin/robot.jar> $@
 
-clean: merged
+clean: | release
 	@echo "Removing build files" && \
 	rm -rf build
 
@@ -73,60 +71,69 @@ clean: merged
 RO_CORE = $(RO)/core.owl
 # bfo axioms and bfo classes minimal are already included in core
 # right now we just need to get the annotations
-RO_COMPS = annotations.owl
+ANNOTATIONS = annotations.owl
 
-ro: $(RO_CORE)
-
-$(RO_COMPS): $(RO)
+# download RO annotations
+.PHONY: $(ANNOTATIONS)
+$(ANNOTATIONS): $(RO)
 	@echo "Downloading RO $@" && \
 	curl -Ls $(OBO)/ro/$@ > $(RO)/$@
 
-$(RO_CORE): $(RO_COMPS) | build/robot.jar
+# get RO core by IRI and add annotations
+.PHONY: $(RO_CORE)
+$(RO_CORE): $(ANNOTATIONS) | build/robot.jar
 	@echo "Generating $@" && \
 	$(ROBOT) merge --input-iri $(OBO)/ro/core.owl\
 	 --input $(RO)/annotations.owl --collapse-import-closure true \
-	annotate --version-iri $(V)/ro/core.owl --output $@
+	annotate --ontology-iri $(OBO)/ro/core.owl \
+	 --version-iri $(V)/ro/core.owl --output $@
 
 # ===============================
 #           IAO TASKS
 # ===============================
 
-IAO_COMPS = externalByHand.owl \
- iao-main.owl \
- import-OBO.owl \
- obsolete.owl \
- ontology-metadata.owl
+release: move
+	@echo "A new release is available in $(TARGET)"
 
-# move the IAO components to the release dir and set the version IRI
-$(IAO_COMPS): $(TARGET) | build/robot.jar
-	@echo "Copying $@ to $<" && \
-	$(ROBOT) annotate --input $(SRC)/$@\
-	 --version-iri $(V)/$@ --output $(TARGET)/$@
+# merge components to generate iao-merged
+$(SRC)/iao-merged.owl: $(SRC)/iao-main.owl | $(RO_CORE) build/robot.jar
+	@echo "Merging $< to $@" && \
+	$(ROBOT) merge --input $< --collapse-import-closure true \
+	annotate --ontology-iri $(OBO)/iao/iao-merged.owl --version-iri $(V)/iao-merged.owl --output $@
 
-# move the catalog file to the release dir
-# make sure the IRIs are correct
-# add the RO core mapping
-catalog: $(TARGET)/$(CAT)
-$(TARGET)/$(CAT): $(SRC)/$(CAT) ro | $(TARGET)
-	@echo "Copying catalog to $(TARGET)" && \
-	sed -e 's#/iao/dev/#/iao/$(DATE)/#g' $< | \
-	sed -e '$$i\'$$'\n''<uri name="$(V)/ro/core.owl" uri="ro/core.owl"/>' > $@
-
-# move the main file to the release dir
-# make sure the IRIs are correct and set version IRI
-$(TARGET)/iao.owl: $(SRC)/iao.owl | $(IAO_COMPS) catalog build/robot.jar
-	@echo "Copying iao.owl to $(TARGET)" && \
-	sed -e 's#/obo/iao/dev#/obo/iao/$(DATE)#g' $< | \
-	sed -e 's#ro/core#iao/$(DATE)/ro/core#g' > $@ && \
-	robot reason --input $@ --create-new-ontology false\
+# reason over iao-merged to generate IAO
+$(SRC)/iao.owl: $(SRC)/iao-merged.owl | build/robot.jar
+	@echo "Reasoning $< to $@" && \
+	$(ROBOT) reason --input $< --create-new-ontology false\
 	 --annotate-inferred-axioms false \
-	annotate --version-iri $(V)/iao.owl --output $@
+	annotate --ontology-iri $(OBO)/iao.owl --version-iri $(V)/iao.owl --output $@
 
-# merge all components then reason
-# set ontology and version IRIs
-merged: $(MERGED)
-$(MERGED): $(TARGET)/iao.owl | build/robot.jar
-	@echo "Merging release" && \
-	robot merge --input $< --collapse-import-closure true \
-	annotate --ontology-iri $(OBO)/iao/iao-merged.owl\
-	 --version-iri $(V)/iao-merged.owl --output $@
+# components to be copied to release dir
+IAO_COMPS = $(TARGET)/externalByHand.owl \
+ $(TARGET)/import-OBO.owl \
+ $(TARGET)/obsolete.owl \
+ $(TARGET)/ontology-metadata.owl
+
+# copy the catalog, updating the version IRIs
+$(TARGET)/$(CAT): $(SRC)/$(CAT) $(RO_CORE) | $(TARGET)
+	@echo "Copying catalog to $(TARGET)" && \
+	sed -e 's#/iao/dev/#/iao/$(DATE)/#g' $< > $@
+
+# copy IAO main, updating the version IRIs
+$(TARGET)/iao-main.owl: $(SRC)/iao-main.owl | $(TARGET)/$(CAT)
+	@echo "Copying $< to $@" && \
+	sed -e 's#/iao/dev/#/iao/$(DATE)/#g' $< > $@
+
+# move the components to the release dir
+# also update the version IRIs
+$(IAO_COMPS): $(TARGET) | $(TARGET)/iao-main.owl build/robot.jar
+	@echo "Copying $(SRC)/$(notdir $@) to $<" && \
+	$(ROBOT) annotate --input $(SRC)/$(notdir $@)\
+	 --version-iri $(V)/$(notdir $@) --output $@
+
+# move the generated release files to the release dir
+move: $(SRC)/iao-merged.owl $(SRC)/iao.owl $(RO) | $(IAO_COMPS)
+	@echo "Moving $^ to $(TARGET)" && \
+	cp $< $(TARGET)/iao-merged.owl && \
+	cp $(word 2,$^) $(TARGET)/iao.owl && \
+	cp -R $(word 3,$^) $(TARGET)/ro
