@@ -68,25 +68,18 @@ clean: | release
 #            RO TASKS
 # ===============================
 
+$(RO)/bfo-axioms.owl: $(RO)
+	@echo "Downloading $@" && \
+	curl -Ls $(OBO)/ro/bfo-axioms.owl > $@
+
+$(RO)/bfo-classes-minimal.owl: $(RO)
+	@echo "Downloading $@" && \
+	curl -Ls $(OBO)/ro/bfo-classes-minimal.owl > $@
+
 RO_CORE = $(RO)/core.owl
-# bfo axioms and bfo classes minimal are already included in core
-# right now we just need to get the annotations
-ANNOTATIONS = annotations.owl
-
-# download RO annotations
-.PHONY: $(ANNOTATIONS)
-$(ANNOTATIONS): $(RO)
-	@echo "Downloading RO $@" && \
-	curl -Ls $(OBO)/ro/$@ > $(RO)/$@
-
-# get RO core by IRI and add annotations
-.PHONY: $(RO_CORE)
-$(RO_CORE): $(ANNOTATIONS) | build/robot.jar
-	@echo "Generating $@" && \
-	$(ROBOT) merge --input-iri $(OBO)/ro/core.owl\
-	 --input $(RO)/annotations.owl --collapse-import-closure true \
-	annotate --ontology-iri $(OBO)/ro/core.owl \
-	 --version-iri $(V)/ro/core.owl --output $@
+$(RO_CORE): $(RO)/bfo-axioms.owl $(RO)/bfo-classes-minimal.owl
+	@echo "Downloading $@" && \
+	curl -Ls $(OBO)/ro/core.owl > $@
 
 # ===============================
 #           IAO TASKS
@@ -133,7 +126,7 @@ $(IAO_COMPS): $(TARGET) | $(TARGET)/iao-main.owl build/robot.jar
 
 # move the generated release files to the release dir
 move: $(SRC)/iao-merged.owl $(SRC)/iao.owl $(RO) | $(IAO_COMPS)
-	@echo "Moving $^ to $(TARGET)" && \
+	@echo "Copying $^ to $(TARGET)" && \
 	cp $< $(TARGET)/iao-merged.owl && \
 	cp $(word 2,$^) $(TARGET)/iao.owl && \
 	cp -R $(word 3,$^) $(TARGET)/ro
