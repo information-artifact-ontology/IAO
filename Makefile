@@ -59,7 +59,7 @@ build $(RO) $(TARGET):
 # download the most recent build of ROBOT
 build/robot.jar: | build
 	@echo "Getting ROBOT" && \
-	curl -Ls https://build.berkeleybop.org/job/robot/lastSuccessfulBuild/artifact/bin/robot.jar> $@
+	curl -Ls https://github.com/ontodev/robot/releases/download/v1.2.0/robot.jar > $@
 
 clean: | release
 	@echo "Removing build files" && \
