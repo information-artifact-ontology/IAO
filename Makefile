@@ -70,14 +70,14 @@ clean: | release
 # ===============================
 
 .PHONY: $(RO)/bfo-axioms.owl
-$(RO)/bfo-axioms.owl: $(RO)
+$(RO)/bfo-axioms.owl: $(RO) | build/robot.jar
 	@echo "Downloading $@" && \
 	curl -Ls $(OBO)/ro/bfo-axioms.owl > $@ && \
 	$(ROBOT) annotate --input $@ --ontology-iri $(OBO)/iao/$@\
 	 --version-iri $(OBO)/iao/$(DATE)/ro/bfo-axioms.owl --output $@
 
 .PHONY: $(RO)/bfo-classes-minimal.owl
-$(RO)/bfo-classes-minimal.owl: $(RO)
+$(RO)/bfo-classes-minimal.owl: $(RO) | build/robot.jar
 	@echo "Downloading $@" && \
 	curl -Ls $(OBO)/ro/bfo-classes-minimal.owl > $@ && \
 	$(ROBOT) annotate --input $@ --ontology-iri $(OBO)/iao/$@\
