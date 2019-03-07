@@ -14,7 +14,4 @@
         <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="iao-main.owl"/>
         <uri name="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl" uri="import-OBO.owl"/>
         <uri name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="ontology-metadata.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/ro/core.owl" uri="ro/core.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/ro/bfo-axioms.owl" uri="ro/bfo-axioms.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/ro/bfo-classes-minimal.owl" uri="ro/bfo-classes-minimal.owl"/>
 </catalog>
