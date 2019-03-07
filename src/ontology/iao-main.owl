@@ -10,12 +10,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/iao-main.owl">
-    <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/iao-main.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
@@ -80,6 +81,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
@@ -87,6 +89,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000113 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000113">
         <rdfs:label xml:lang="en">in branch</rdfs:label>
@@ -94,6 +97,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
@@ -101,6 +105,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
@@ -108,6 +113,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label xml:lang="en">editor note</rdfs:label>
@@ -115,6 +121,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label xml:lang="en">term editor</rdfs:label>
@@ -122,6 +129,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
@@ -129,6 +137,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label xml:lang="en">definition source</rdfs:label>
@@ -136,6 +145,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231">
         <rdfs:label xml:lang="en">has obsolescence reason</rdfs:label>
@@ -143,6 +153,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
@@ -150,6 +161,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000604 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000604">
         <obo:IAO_0000111 xml:lang="en">retired from use as of</obo:IAO_0000111>
@@ -179,6 +191,12 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/page"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -190,16 +208,19 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000039 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000039">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -210,6 +231,7 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -228,6 +250,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000142 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -242,9 +265,13 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000235"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000112 xml:lang="en">A person&apos;s name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance &quot;Alan&quot; can denote different people. In each case of use, there is a case of the denotation relation obtaining, between &quot;Alan&quot; and the person that is being named.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have &apos;specifically denotes&apos;, which would have been primitive, so make this relation primitive.
@@ -260,6 +287,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000221 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000221">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -311,6 +339,20 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000235 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000235">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">inverse of the relation &apos;denotes&apos;</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng, Chris Stoeckert, Mike Conlon</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/206"/>
+        <rdfs:label xml:lang="en">denoted by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000407 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000407">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -323,6 +365,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000413 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000413">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -336,6 +379,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000417 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000417">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -347,6 +391,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000418 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000418">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -360,6 +405,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000419 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000419">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
@@ -372,6 +418,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000581 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000581">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -386,6 +433,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000583 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000583">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -408,26 +456,31 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000058"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
     
@@ -444,6 +497,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000004 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000004">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -454,6 +508,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000404 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000404">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -464,6 +519,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000405 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000405">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -474,6 +530,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000406 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000406">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -495,46 +552,55 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000009"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000018"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000026"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000028"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GAZ_00000448"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
@@ -549,6 +615,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000009"/>
@@ -569,6 +636,7 @@ of this, different, term.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
@@ -591,6 +659,7 @@ of this, different, term.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -608,6 +677,7 @@ of this, different, term.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
@@ -621,6 +691,7 @@ of this, different, term.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -636,6 +707,7 @@ of this, different, term.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
@@ -654,6 +726,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
@@ -670,6 +743,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000015">
         <owl:equivalentClass>
@@ -696,6 +770,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
@@ -709,6 +784,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
@@ -725,6 +801,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -752,6 +829,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -771,6 +849,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
@@ -783,6 +862,7 @@ JAR: A data item is an approximately justified approximately true approximate be
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
@@ -807,6 +887,7 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000029"/>
@@ -819,6 +900,7 @@ Previous. An information content entity is a non-realizable information entity t
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
@@ -847,6 +929,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -869,6 +952,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
@@ -883,6 +967,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000037 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -899,6 +984,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000038 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000309"/>
@@ -915,6 +1001,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
@@ -931,6 +1018,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -947,6 +1035,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000064 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
@@ -963,6 +1052,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000065 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000064"/>
@@ -980,6 +1070,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -996,6 +1087,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
@@ -1023,6 +1115,7 @@ whole sentence is deleted.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
@@ -1039,6 +1132,7 @@ whole sentence is deleted.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
@@ -1058,6 +1152,7 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1076,6 +1171,7 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
@@ -1092,6 +1188,7 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
@@ -1129,6 +1226,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1145,6 +1243,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
@@ -1158,6 +1257,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
@@ -1171,6 +1271,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
@@ -1184,6 +1285,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000140 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1201,6 +1303,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000144 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000144">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -1216,6 +1319,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000178 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000178">
         <owl:equivalentClass>
@@ -1246,6 +1350,7 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000179 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000179">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -1262,6 +1367,7 @@ distribution in terms of occurrence frequencies of different event classes.</obo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000180 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -1279,6 +1385,7 @@ two-dimensional map.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000181 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -1295,6 +1402,7 @@ logical relations between a finite collection of sets.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000183 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000183">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -1314,6 +1422,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000184 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000184">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -1331,6 +1440,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000185 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000185">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
@@ -1345,6 +1455,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000186 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000186">
         <owl:equivalentClass>
@@ -1373,6 +1484,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000300">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -1389,6 +1501,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000301 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000301">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -1408,6 +1521,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000302 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000302">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000590"/>
@@ -1421,6 +1535,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000303 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000303">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -1434,6 +1549,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000304 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000304">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -1453,6 +1569,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000305 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000305">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -1466,6 +1583,7 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000306 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000306">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -1482,6 +1600,7 @@ F   |  F    F</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000307 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000307">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
@@ -1497,6 +1616,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000308 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000308">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -1510,6 +1630,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000309 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000309">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000308"/>
@@ -1523,6 +1644,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -1536,6 +1658,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000311 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000311">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
@@ -1549,6 +1672,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000312 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000312">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000311"/>
@@ -1569,6 +1693,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000313 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000313">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
@@ -1582,6 +1707,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000314 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -1601,6 +1727,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000315 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000315">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1620,6 +1747,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000316 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000316">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1641,6 +1769,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000317 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000317">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1664,6 +1793,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000318 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1684,6 +1814,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000319 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000319">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1698,6 +1829,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000320 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000320">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1717,6 +1849,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000321 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000321">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1736,6 +1869,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000322 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000322">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1755,6 +1889,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000323 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000323">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1770,6 +1905,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000324 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000324">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1785,6 +1921,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000325 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000325">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1805,6 +1942,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000326 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000326">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1822,6 +1960,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000327 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000327">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
@@ -1834,6 +1973,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000328 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000328">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
@@ -1846,6 +1986,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000329 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000329">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000305"/>
@@ -1858,6 +1999,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000330 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000330">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
@@ -1871,6 +2013,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000400 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000400">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
@@ -1897,6 +2040,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000401 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000401">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
@@ -1930,6 +2074,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000402 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000402">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
@@ -1969,6 +2114,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000403 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000403">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
@@ -2014,6 +2160,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000408 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000408">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
@@ -2037,6 +2184,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000414 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000414">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
@@ -2063,6 +2211,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000415 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000415">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -2077,6 +2226,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000416">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
@@ -2103,6 +2253,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000422 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000422">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -2120,6 +2271,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000429 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000429">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -2133,6 +2285,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000442 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000442">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
@@ -2146,6 +2299,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000443 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000443">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -2169,6 +2323,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000572">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -2195,6 +2350,7 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000573 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000573">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
@@ -2212,6 +2368,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000574 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000574">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -2240,6 +2397,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000575 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000575">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -2271,6 +2429,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000577">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
@@ -2294,6 +2453,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
@@ -2332,6 +2492,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
@@ -2349,6 +2510,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000580 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000580">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -2383,6 +2545,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000582 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000582">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
@@ -2406,6 +2569,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000584 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000584">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
@@ -2425,6 +2589,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000590 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000590">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
@@ -2442,6 +2607,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000591 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000591">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
@@ -2455,6 +2621,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000592 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000592">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
@@ -2468,6 +2635,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000593 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000593">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
@@ -2481,6 +2649,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000594 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000594">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
@@ -2494,6 +2663,7 @@ points together with a line.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000595 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000595">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
@@ -2508,9 +2678,9 @@ interpreter.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000605 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000605">
-              <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">abbreviation textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
@@ -2518,15 +2688,15 @@ interpreter.</obo:IAO_0000115>
 BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary acidic protein; MAP: Microtubule-associated protein; MRI: Magnetic resonance imaging; NSC: Neural stem cell; PDA: Patent ductus arteriosus; PMG: Polymicrogyria; PNH: Periventricular nodular heterotopia; VSD: Ventricular septal defect.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity listing abbreviations and their expansions that are used in a document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">abbreviation textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000606">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
-
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2543,14 +2713,15 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
         <obo:IAO_0000118 xml:lang="en">abbreviations used</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">list of abbreviations</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">list of abbreviations used</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">abbreviations section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000607 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000607">
-            <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2564,29 +2735,31 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">author information</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">authors’ information</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">author information section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000608 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000608">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
-      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">author information textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Takon. Ann Gen Psychiatry. 2011; 10: 25. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3204268/):
 
 IT [the author] is the lead paediatrician for ADHD services in East Hertfordshire, UK, where she runs a weekly joint ADHD clinic with the Child and Adolescent psychiatrist and works within an ADHD specialist team. IT also sees children with other neurodisability issues who may have comorbid ADHD, where the presentation may be more complex and challenging to manage. IT has vast experience in managing children with complex ADHD. She has 18 years of experience in paediatrics and also has extensive experience in the use of psychopharmacologic agents in managing children with ADHD.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity expression information about an author of a document. This information may include biographical information and may discuss how the authors&apos; professional experiences are relevant to the work described in the document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">author information textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000609">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2602,14 +2775,15 @@ IT [the author] is the lead paediatrician for ADHD services in East Hertfordshir
         <obo:IAO_0000118 xml:lang="en">summary</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">synopsis</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Article submission guidelines for PLoS Genetics (http://journals.plos.org/plosgenetics/s/submission-guidelines)</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">author summary section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000610">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">author summary textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Pendse et al. BMC Genomics. 2013; 14: 136. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3608171/):
@@ -2619,14 +2793,15 @@ The search for genetic risk factors for common human diseases often relies on th
         <obo:IAO_0000115 xml:lang="en">A textual entity, distinct from the abstract, that describes the significance and broader context of the document content. The author summary is often written in a non-technical manner and is aimed at both scientists and non-scientist readers, e.g as described in the article submission guidelines for PLoS Genetics (http://journals.plos.org/plosgenetics/s/submission-guidelines).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Article submission guidelines for PLoS Genetics (http://journals.plos.org/plosgenetics/s/submission-guidelines).</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">author summary textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000611 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000611">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2639,14 +2814,15 @@ The search for genetic risk factors for common human diseases often relies on th
         <obo:IAO_0000115 xml:lang="en">A part of a document about a resource described in the document, e.g. software, that describes where and/or how that resource can be obtained.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">availability</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">availability section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000612 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000612">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">availability textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/):
@@ -2654,14 +2830,15 @@ The search for genetic risk factors for common human diseases often relies on th
 Project home page:http://krux.googlecode.com</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity expressing the location of a resource, e.g. software, or the manner in which a resource can be obtained.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">availability textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000613 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000613">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2675,14 +2852,15 @@ Project home page:http://krux.googlecode.com</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">case presentation</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">case report</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">case report section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000614 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000614">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">case report textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Excerpt from Taglia et al. Acta Myol. 2012 Dec; 31(3): 201–203. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3631801/):
@@ -2690,14 +2868,15 @@ Project home page:http://krux.googlecode.com</obo:IAO_0000112>
 The patient is a 50-year-old man. His medical history was not contributory. At the age of 37 years, he complained of persistent fatigue and dyspnoea even for modest efforts and oedema of lower limbs. The patient was examined at the department of internal medicine of the local hospital, and hospitalised with a diagnosis of dilated cardiomyopathy probably consequence of a myocarditis process. Soon after he was transferred to the cardiologic department of the regional hospital, and pharmacologically treated for heart failure and pulmonary hypertension.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that expresses a detailed account of a portion of the medical history for a specific patient.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">case report textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000615 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000615">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2714,14 +2893,15 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
         <obo:IAO_0000118 xml:lang="en">conclusions</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">findings</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">summary</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">conclusion section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000616 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000616">
-            <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2738,28 +2918,29 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
         <obo:IAO_0000118 xml:lang="en">conflict of interest statement</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">declaration of competing interests</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">disclosure of potential conflicts of interest</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">conflict of interest section</rdfs:label>
     </owl:Class>
     
-   
 
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000617 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000617">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
-      <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">conflict of interest statement</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">SD [an author] is a Merck employee and Merck is the sponsor of this study. [Taken from &apos;Effects of obstructive sleep apnoea risk on postoperative respiratory complications: protocol for a hospital-based registry study&apos; Shin et al. 2016  (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4735131/)] </obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that expresses a situation involving one or more of the authors, or the funding source of a document whereby the authors or funding source stand to potentially gain (typically financially) from the results reported in the document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">conflict of interest textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000618 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000618">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2772,14 +2953,15 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
         <obo:IAO_0000115 xml:lang="en">A part of a document about the consent process that was used to enroll patients in a study.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">consent</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">consent section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000619 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000619">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">consent textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/):
@@ -2787,14 +2969,15 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
 Written informed consent was obtained from the patient’s parents for publication of this Case report and any accompanying images. A copy of the written consent is available for review by the Editor-in chief of this journal.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that documents the consenting process used to enroll patients in a study.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">consent textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000620 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000620">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2807,14 +2990,15 @@ Written informed consent was obtained from the patient’s parents for publicati
         <obo:IAO_0000115 xml:lang="en">A part of a document about the governance body responsible for approving the work discussed in a document on an ethical basis.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">ethical approval</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">ethical approval section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000621 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000621">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2828,14 +3012,15 @@ Written informed consent was obtained from the patient’s parents for publicati
 The NHS National Research Ethics Service had previously approved the use of these anonymised data for research purposes and this analysis did not require independent review.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that documents the ethical approval of some study design.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">ethical approval textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000622 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000622">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2848,14 +3033,15 @@ The NHS National Research Ethics Service had previously approved the use of thes
         <obo:IAO_0000115 xml:lang="en">A part of a document that contains one or more figures.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">figures</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">figures section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000623 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000623">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2874,14 +3060,15 @@ The NHS National Research Ethics Service had previously approved the use of thes
         <obo:IAO_0000118 xml:lang="en">funding/support</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">source of funding</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">sources of funding</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">funding source declaration section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000624 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000624">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">funding souce declaration textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Stephan et al. Accid Anal Prev. 2011 May; 43(3): 1062–1067. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3062852/):
@@ -2889,14 +3076,15 @@ The NHS National Research Ethics Service had previously approved the use of thes
 This study was supported by the International Collaborative Research Grants Scheme with joint grants from the Wellcome Trust UK (GR071587MA) and the Australian NHMRC (268055). The funding sources played no role in study design, data collection, analysis or interpretation, writing the report, or the decision to submit the paper for publication.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity documenting the source of funding that supported some study.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">funding source declaration textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000625 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000625">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2920,14 +3108,15 @@ This study was supported by the International Collaborative Research Grants Sche
         <obo:IAO_0000118 xml:lang="en">future research directions</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">future studies</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">future work</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">future directions section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000626 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000626">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">future directions textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Excerpt from Wang and Li. Acta Pharmacol Sin. 2016 Jan; 37(1): 25–33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4722976/):
@@ -2935,14 +3124,15 @@ This study was supported by the International Collaborative Research Grants Sche
 In the future, several questions will need to be resolved regarding the physiological assembly of KCNQ channels and their functional implications in complex neural circuits. First, we still lack sufficiently selective inhibitors and activators among the KCNQ family members.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity expressing ideas regarding future work relevant to work described in a document that could be done.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">future directions textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000627 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000627">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2955,14 +3145,15 @@ In the future, several questions will need to be resolved regarding the physiolo
         <obo:IAO_0000115 xml:lang="en">A document part announcing the publication of a novel draft genome sequence.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">genome announcement</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">genome announcement section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000628 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000628">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">genome announcement textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Excerpt from Kim et al. J Bacteriol. 2011 Oct; 193(19): 5537. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3187466/):
@@ -2970,14 +3161,15 @@ In the future, several questions will need to be resolved regarding the physiolo
 Here we report the genome sequence of Lactobacillus malefermentans KCTC 3548, which we obtained using a whole-genome shotgun strategy (4) with Roche 454 GS (FLX Titanium) pyrosequencing (257,559 reads totaling ∼89.8 Mb; ∼45-fold coverage of the genome) at the Genome Resource Center, Korea Research Institute of Bioscience and Biotechnology (KRIBB).</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that describes the generation and public release of a novel, draft genome sequence.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">genome announcement textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000629 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000629">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">keyword textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From: Fu and Lin. Identification of gene-oriented exon orthology between human and mouse. BMC Genomics. 2012; 13(Suppl 1): S10. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3303729/):
@@ -2985,14 +3177,15 @@ Here we report the genome sequence of Lactobacillus malefermentans KCTC 3548, wh
 Exon orthology; alternative splicing; exon duplication; intron-exon structure.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity listing keywords indicating the major theme(s) of a document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">keyword textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000630 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000630">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3005,14 +3198,15 @@ Exon orthology; alternative splicing; exon duplication; intron-exon structure.</
         <obo:IAO_0000115 xml:lang="en">A part of a document where keywords selected by the author to categorize the major theme(s) of a document are listed.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">keywords</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">keywords section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000631 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000631">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3033,14 +3227,15 @@ Exon orthology; alternative splicing; exon duplication; intron-exon structure.</
         <obo:IAO_0000118 xml:lang="en">limitations</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">study limitations</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">Author guidelines published by The Society for Academic Emergency Medicine. (http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1553-2712/homepage/ForAuthors.html)</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">study limitations section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000632 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000632">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">study limitations textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Excerpt from the Limitations section of Fermann et al 2015, Acad Emerg Med. 2015 Mar; 22(3): 299–307 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4405051/). 
@@ -3049,28 +3244,30 @@ Owing to the nature of a post hoc study, any significant values must be interpre
         <obo:IAO_0000115 xml:lang="en">A textual entity addressing a shortcoming or bias of a study design or execution.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Author guidelines published by The Society for Academic Emergency Medicine. (http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1553-2712/homepage/ForAuthors.html)</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">study limitations textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000633 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000633">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000111 xml:lang="en">materials section</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;materials&apos; in a typical scientific journal article, e.g. Nguyen et al. BMC Bioinformatics. 2010; 11: 279. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2889936/)</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document about the materials required to reproduce the content of the document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">materials</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">materials section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000634 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000634">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000111 xml:lang="en">notes section</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;notes&apos; in a typical scientific journal article, e.g. McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):</obo:IAO_0000112>
@@ -3078,14 +3275,15 @@ Owing to the nature of a post hoc study, any significant values must be interpre
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">footnotes</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">notes</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">notes section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000635 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000635">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3097,14 +3295,15 @@ Owing to the nature of a post hoc study, any significant values must be interpre
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;patients&apos; in a typical scientific journal article, e.g. in Citak et al. Acta Orthop. 2013 Jun; 84(3): 326–327. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3715825/)</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document about the patients that participated in a study.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">patients section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000636 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000636">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">patients textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Excerpt from Citak et al. Acta Orthop. 2013 Jun; 84(3): 326–327. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3715825/):
@@ -3112,14 +3311,15 @@ Owing to the nature of a post hoc study, any significant values must be interpre
 Between January 1996 and February 2012, we treated 4 patients with interprosthetic femoral fractures (3 of them women) (Figure 2) using a custom-made interposition device (Waldemar Link GmbH, Hamburg, Germany) (Figure 1). Mean age was 74 (59–86) years. The fractures occurred mean 18 (13–28) years after primary THA and mean 14 (10–17) years after primary TKA. At the latest follow-up, after mean 8 (0.5–16) years, revision surgery with a total femur replacement was required in 1 case due to aseptic loosening. No other complications requiring revision surgery occurred.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity expressing information regarding the patients used in a study.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">patients textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000637 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000637">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3133,14 +3333,15 @@ Between January 1996 and February 2012, we treated 4 patients with interprosthet
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">notice of republication</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">pre-publication history</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">pre-publication history section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000638 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000638">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">pre-publication history textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Xiao et al. BMC Anesthesiol. 2013; 13: 33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4016475/):
@@ -3149,14 +3350,15 @@ The pre-publication history for this paper can be accessed here:
 http://www.biomedcentral.com/1471-2253/13/33/prepub</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that expresses the pre-publication history (submission dates, reviewer comments, etc) for a document, often including a hyperlink to a web page detailing the information.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">pre-publication history textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000639 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000639">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3170,14 +3372,15 @@ http://www.biomedcentral.com/1471-2253/13/33/prepub</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">related literature</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">related work</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">related work section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000640 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000640">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">related work textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Excerpt from Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/):
@@ -3187,14 +3390,15 @@ Our work presented here is similar in spirit to our recently developed methodolo
 </obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that discusses work from other publications and expresses their relevancy to the content of a document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">related work textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000641 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000641">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3207,14 +3411,15 @@ Our work presented here is similar in spirit to our recently developed methodolo
         <obo:IAO_0000115 xml:lang="en">A part of a document about a resource described in the document, e.g. software, that describes the requirements necessary to use the resource, e.g. operating systems, hardware, etc. in the case of a software resource.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">requirements</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">requirements section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000642 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000642">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">requirements textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/):
@@ -3230,14 +3435,15 @@ Our work presented here is similar in spirit to our recently developed methodolo
 • Any restrictions to use by non-academics: None</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity that expresses the requirements necessary to use a resource, e.g. software.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">requirements textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000643 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000643">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000300"/>
         <obo:IAO_0000111 xml:lang="en">statistical analysis textual entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">From Mondo et al. Cardiovasc J Afr. 2013 Mar; 24(2): 28–33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3734881/):
@@ -3245,14 +3451,15 @@ Our work presented here is similar in spirit to our recently developed methodolo
 Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Stata version 10 for analysis. Continuous variables were summarised as mean (± standard deviation) and median (inter-quartile range), and presented in the tables. Categorical data were analysed using frequency and percentages, and results are presented in frequency tables and bar charts. Test of significance (p-value) was determined using the chi-square test. A p-value of less than 0.05 was considered significant.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A textual entity documenting statistical analysis tools and techniques employed.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">statistical analysis textual entity</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000644 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000644">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3265,14 +3472,15 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000115 xml:lang="en">A part of the document used to describe the statistical methodologies employed in the work presented in the document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">statistical analysis</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">statistical analysis section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000645 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000645">
-      <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3285,11 +3493,13 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000115 xml:lang="en">A part of a document that contains one or more tables.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">tables</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">tables section</rdfs:label>
     </owl:Class>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000650 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000650">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -3317,21 +3527,9 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <rdfs:label xml:lang="en">database extract, transform, and load process</rdfs:label>
         <foaf:page rdf:resource="https://en.wikipedia.org/wiki/Extract,_transform,_load"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:Thing rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
