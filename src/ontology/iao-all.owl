@@ -50,13 +50,8 @@
 		<dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
 		<dc:contributor xml:lang="en">William Duncan</dc:contributor>
 		<dc:contributor xml:lang="en">William Hogan</dc:contributor>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-	<owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-edit.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-edit.owl"/>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
     </owl:Ontology>
     
 
