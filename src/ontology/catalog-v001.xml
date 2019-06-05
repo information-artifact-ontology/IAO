@@ -6,5 +6,4 @@
     <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-all.owl" uri="iao-all.owl"/>
     <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-edit.owl" uri="iao-edit.owl"/>
     <uri name="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl" uri="import-OBO.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="ontology-metadata.owl"/>
 </catalog>
