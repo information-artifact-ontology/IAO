@@ -10,7 +10,7 @@ SHELL := bash
 # Run `make all` to create a new IAO release:
 # - download the latest build of ROBOT
 # - create a merged RO core.owl with annotations
-# - merge iao-main.owl with imports to create iao-merged.owl
+# - merge iao-iao-all.owl with imports to create iao-merged.owl
 # - reason over iao-merged.owl to create iao.owl
 # - create a new release directory
 # - copy ontology files to release directory and update IRIs
@@ -107,10 +107,11 @@ release: move
 .PHONY: src/ontology/import-OBO.owl
 $(SRC)/import-OBO.owl:
 	@echo "Generating $@" && \
-	cd src/ontology/ontofox && sh get-ontofox-imports
+	cd src/ontology/ontofox && \
+	curl -s -F file=@OntoFox-input.txt http://ontofox.hegroup.org/service.php > ../import-OBO.owl
 
 # merge components to generate iao-merged
-$(SRC)/iao-merged.owl: $(SRC)/iao-main.owl $(SRC)/import-OBO.owl $(RO_CORE) | build/robot.jar
+build/iao-merged.owl: $(SRC)/iao-all.owl $(SRC)/import-OBO.owl $(RO_CORE) | build/robot.jar
 	@echo "Merging $< to $@" && \
 	$(ROBOT) merge --input $< --collapse-import-closure true \
 	annotate --ontology-iri $(OBO)/iao/iao-merged.owl\
@@ -118,7 +119,7 @@ $(SRC)/iao-merged.owl: $(SRC)/iao-main.owl $(SRC)/import-OBO.owl $(RO_CORE) | bu
 	 --version-iri $(V)/iao-merged.owl --output $@
 
 # reason over iao-merged to generate IAO
-$(SRC)/iao.owl: $(SRC)/iao-merged.owl | build/robot.jar
+iao.owl: build/iao-merged.owl | build/robot.jar
 	@echo "Reasoning $< to $@" && \
 	$(ROBOT) reason --input $< --reasoner jfact\
 	 --create-new-ontology false --annotate-inferred-axioms false \
@@ -128,8 +129,7 @@ $(SRC)/iao.owl: $(SRC)/iao-merged.owl | build/robot.jar
 # components to be copied to release dir
 IAO_COMPS = $(TARGET)/externalByHand.owl \
  $(TARGET)/import-OBO.owl \
- $(TARGET)/obsolete.owl \
- $(TARGET)/ontology-metadata.owl
+ $(TARGET)/obsolete.owl
 
 # copy the catalog, updating the version IRIs
 $(TARGET)/$(CAT): $(SRC)/$(CAT) $(RO_CORE) | $(TARGET)
@@ -138,7 +138,7 @@ $(TARGET)/$(CAT): $(SRC)/$(CAT) $(RO_CORE) | $(TARGET)
 	sed -e 's#ro/#iao/$(DATE)/ro/#g' > $@
 
 # copy IAO main, updating the version IRIs
-$(TARGET)/iao-main.owl: $(SRC)/iao-main.owl $(BFO) | $(TARGET)/$(CAT)
+$(TARGET)/iao-all.owl: $(SRC)/iao-all.owl $(BFO) | $(TARGET)/$(CAT)
 	$(eval BFO_V := $(shell grep "owl:versionIRI rdf:resource=\"[^\"]*" $(BFO) |\
 	 sed 's/<owl:versionIRI rdf:resource="//g' |\
 	 sed 's/"\/>//g' | awk '{$$1=$$1};1'))
@@ -149,14 +149,15 @@ $(TARGET)/iao-main.owl: $(SRC)/iao-main.owl $(BFO) | $(TARGET)/$(CAT)
 
 # move the components to the release dir
 # also update the version IRIs
-$(IAO_COMPS): $(TARGET) | $(TARGET)/iao-main.owl build/robot.jar
+$(IAO_COMPS): $(TARGET) | $(TARGET)/iao-all.owl build/robot.jar
 	@echo "Copying $(SRC)/$(notdir $@) to $<" && \
 	$(ROBOT) annotate --input $(SRC)/$(notdir $@)\
 	 --version-iri $(V)/$(notdir $@) --output $@
 
 # move the generated release files to the release dir
-move: $(SRC)/iao-merged.owl $(SRC)/iao.owl $(RO) | $(IAO_COMPS)
+move: build/iao-merged.owl iao.owl $(RO) | $(IAO_COMPS)
 	@echo "Copying $^ to $(TARGET)" && \
 	cp $< $(TARGET)/iao-merged.owl && \
 	cp $(word 2,$^) $(TARGET)/iao.owl && \
-	cp -R $(word 3,$^) $(TARGET)/ro
+	cp -R $(word 3,$^) $(TARGET)/ro && \
+        rm -rf $(SRC)/ro
