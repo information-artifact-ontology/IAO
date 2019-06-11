@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri name="http://purl.obolibrary.org/obo/iao/2019-06-07/externalByHand.owl" uri="externalByHand.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/2019-06-07/obsolete.owl" uri="obsolete.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/2019-06-07/examples.owl" uri="iao-examples.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/2019-06-07/iao-all.owl" uri="iao-all.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/2019-06-07/iao-edit.owl" uri="iao-edit.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/2019-06-07/import-OBO.owl" uri="import-OBO.owl"/>
-</catalog>
