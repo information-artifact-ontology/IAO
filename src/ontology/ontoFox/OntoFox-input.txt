@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/iao/import-OBO.owl
+http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl
 
 [Source ontology]
 #comment here
@@ -68,15 +68,18 @@ PATO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000122 #length
 http://purl.obolibrary.org/obo/PATO_0000125 #mass
+http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/PATO_0000122 #length
-subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
-http://purl.obolibrary.org/obo/PATO_0000125 #mass
+#http://purl.obolibrary.org/obo/PATO_0000122 #length
+#subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
+#http://purl.obolibrary.org/obo/PATO_0000125 #mass
+#subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
+http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
 
 [Source term retrieval setting]
-includeNoIntermediates
+includeAllIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
@@ -115,24 +118,41 @@ http://purl.obolibrary.org/obo/IAO_0000115
 
 
 ###################################################
-#
-#[Source ontology]
+
+[Source ontology]
 #comment here
 #List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
-#GAZ
+GAZ
 
-#[Low level source term URIs]
-#http://purl.obolibrary.org/obo/GAZ_00000448 #geographic location
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GAZ_00000448 #geographic location
 
-#[Top level source term URIs and target direct superclass URIs]
-#http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
-#subClassOf http://purl.obolibrary.org/obo/BFO_0000029 #site
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
+subClassOf http://purl.obolibrary.org/obo/BFO_0000029 #site
 
-#[Source term retrieval setting]
-#includeNoIntermediates
+[Source term retrieval setting]
+includeNoIntermediates
 
-#[Source annotation URIs]
-#http://www.w3.org/2000/01/rdf-schema#label
-#copyTo http://purl.obolibrary.org/obo/IAO_0000111
-#http://purl.obolibrary.org/obo/IAO_0000115
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
+
+
+[Source ontology]
+#comment here
+RO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/RO_0001900 #temporal interpretation
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
+
 

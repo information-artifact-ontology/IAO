@@ -8,13 +8,13 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao-all.owl">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dev/iao.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/dev/iao-all.owl"/>
 	<dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
 		<dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
 		<dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
@@ -50,13 +50,8 @@
 		<dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
 		<dc:contributor xml:lang="en">William Duncan</dc:contributor>
 		<dc:contributor xml:lang="en">William Hogan</dc:contributor>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-	<owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2019-06-07/iao-edit.owl"/>
+         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2019-06-07/obsolete.owl"/>
     </owl:Ontology>
     
 

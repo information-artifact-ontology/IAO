@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-	<uri name="http://purl.obolibrary.org/obo/iao/externalByHand.owl" uri="externalByHand.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/obsolete.owl" uri="obsolete.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/examples.owl" uri="iao-examples.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/iao.owl" uri="iao.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/iao-main.owl" uri="iao-main.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/import-OBO.owl" uri="import-OBO.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl" uri="ontology-metadata.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="externalByHand.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="obsolete.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/dev/examples.owl" uri="iao-examples.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="iao.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="iao-main.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl" uri="import-OBO.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="ontology-metadata.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="obsolete.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/examples.owl" uri="iao-examples.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-all.owl" uri="iao-all.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-edit.owl" uri="iao-edit.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl" uri="import-OBO.owl"/>
 </catalog>
