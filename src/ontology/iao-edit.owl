@@ -20,6 +20,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -47,6 +48,8 @@
         <dc:contributor xml:lang="en">James Malone</dc:contributor>
         <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
         <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
         <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
@@ -60,6 +63,7 @@
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
         <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
 
