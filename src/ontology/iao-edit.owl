@@ -1,69 +1,69 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/iao/iao-edit.owl/"
      xml:base="http://purl.obolibrary.org/obo/iao/iao-edit.owl/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao/iao-edit.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/dev/iao-edit.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-        <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
-        <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
-        <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
-        <dc:contributor xml:lang="en">William Duncan</dc:contributor>
-        <dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
-        <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
-        <dc:contributor xml:lang="en">Matt Brush</dc:contributor>
-        <dc:contributor xml:lang="en">James A. Overton</dc:contributor>
-        <dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
-        <dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
-        <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
-        <dc:contributor xml:lang="en">Sivaram Arabandi</dc:contributor>
-        <dc:contributor xml:lang="en">Ron Rudnicki</dc:contributor>
-        <dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
-        <dc:contributor xml:lang="en">Darren Natale</dc:contributor>
-        <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
-        <dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
-        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
-        <dc:contributor xml:lang="en">Jennifer Fostel</dc:contributor>
+        <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
-        <dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
-        <dc:contributor xml:lang="en">James Malone</dc:contributor>
+        <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
+        <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
+        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
+        <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
+        <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
         <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
+        <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
+        <dc:contributor xml:lang="en">Darren Natale</dc:contributor>
+        <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
+        <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
+        <dc:contributor xml:lang="en">Holger Stenzhorn</dc:contributor>
+        <dc:contributor xml:lang="en">James A. Overton</dc:contributor>
+        <dc:contributor xml:lang="en">James Malone</dc:contributor>
+        <dc:contributor xml:lang="en">Jennifer Fostel</dc:contributor>
+        <dc:contributor xml:lang="en">Jie Zheng</dc:contributor>
+        <dc:contributor xml:lang="en">Jonathan Rees</dc:contributor>
+        <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
+        <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matt Brush</dc:contributor>
+        <dc:contributor xml:lang="en">Melanie Courtot</dc:contributor>
+        <dc:contributor xml:lang="en">Michel Dumontier</dc:contributor>
+        <dc:contributor xml:lang="en">Paolo Ciccarese</dc:contributor>
+        <dc:contributor xml:lang="en">Pat Hayes</dc:contributor>
+        <dc:contributor xml:lang="en">Philippe Rocca-Serra</dc:contributor>
+        <dc:contributor xml:lang="en">Randy Dipert</dc:contributor>
+        <dc:contributor xml:lang="en">Ron Rudnicki</dc:contributor>
+        <dc:contributor xml:lang="en">Satya Sahoo</dc:contributor>
+        <dc:contributor xml:lang="en">Sivaram Arabandi</dc:contributor>
+        <dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
+        <dc:contributor xml:lang="en">William Duncan</dc:contributor>
+        <dc:contributor xml:lang="en">William Hogan</dc:contributor>
+        <dc:contributor xml:lang="en">Yongqun (Oliver) He</dc:contributor>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
-        <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
-        <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
-        <dc:contributor xml:lang="en">William Hogan</dc:contributor>
-        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
-        <dc:contributor xml:lang="en">Holger Stenzhorn</dc:contributor>
-        <dc:contributor xml:lang="en">Yongqun (Oliver) He</dc:contributor>
-        <dc:contributor xml:lang="en">Werner Ceusters</dc:contributor>
-        <dc:contributor xml:lang="en">Randy Dipert</dc:contributor>
-        <dc:contributor xml:lang="en">Larisa Soldatova</dc:contributor>
-        <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
-        <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
-        <dc:contributor xml:lang="en">Lawrence Hunter</dc:contributor>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
 
@@ -113,6 +113,8 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -145,6 +147,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -162,6 +165,14 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+    </rdf:Description>
     
 
 
@@ -185,7 +196,9 @@
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -553,6 +566,38 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000008">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000096"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that has specified output a software product and that involves the creation of source code.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Software_development</obo:IAO_0000119>
+        <obo:IAO_0000600 xml:lang="en">A planned process resulting in a software product involving the creation of source code.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">software development</rdfs:label>
+    </owl:Class>
     
 
 
@@ -3535,5 +3580,5 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
