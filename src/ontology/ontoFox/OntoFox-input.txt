@@ -2,8 +2,7 @@
 http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl
 
 [Source ontology]
-#comment here
-#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
+#List of ontologies, such as: OBI, PATO, PNO, UO, GAZ, UO
 OBI
 
 [Low level source term URIs]
@@ -11,6 +10,7 @@ http://purl.obolibrary.org/obo/OBI_0000011 #planned process
 http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
 http://purl.obolibrary.org/obo/OBI_0500000 #study design
+http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OBI_0000011 #planned process
@@ -21,6 +21,8 @@ http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
 subClassOf http://purl.obolibrary.org/obo/OBI_0000011
 http://purl.obolibrary.org/obo/OBI_0500000 #study design
 subClassOf http://purl.obolibrary.org/obo/IAO_0000104
+http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
+subClassOf http://purl.obolibrary.org/obo/OBI_0000011 #planned process
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -34,7 +36,6 @@ http://purl.obolibrary.org/obo/IAO_0000115
 ###################################################
 [Source ontology]
 #comment here
-#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
 OBI
 
 [Low level source term URIs]
@@ -62,21 +63,48 @@ includeAllAxioms
 
 [Source ontology] 
 #comment here
-#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
 PATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000122 #length
 http://purl.obolibrary.org/obo/PATO_0000125 #mass
+http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+http://purl.obolibrary.org/obo/PATO_0000051 #morphology
 http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
 
 [Top level source term URIs and target direct superclass URIs]
-#http://purl.obolibrary.org/obo/PATO_0000122 #length
-#subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
-#http://purl.obolibrary.org/obo/PATO_0000125 #mass
-#subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
+http://purl.obolibrary.org/obo/PATO_0000122 #length
+subClassOf http://purl.obolibrary.org/obo/PATO_0000051 #morphology
+http://purl.obolibrary.org/obo/PATO_0000051 #morphology
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
+http://purl.obolibrary.org/obo/PATO_0000125 #mass
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+subClassOf http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
 http://purl.obolibrary.org/obo/PATO_0001241 #physical object quality
 subClassOf http://purl.obolibrary.org/obo/BFO_0000019 #quality
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115
+
+
+###################################################
+
+[Source ontology] 
+#comment here
+PNO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0020000 #identifier
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0020000 #identifier
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -91,7 +119,6 @@ http://purl.obolibrary.org/obo/IAO_0000115
 
 [Source ontology]
 #comment here
-#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
 UO
 
 [Low level source term URIs]
@@ -121,7 +148,6 @@ http://purl.obolibrary.org/obo/IAO_0000115
 
 [Source ontology]
 #comment here
-#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
 GAZ
 
 [Low level source term URIs]
