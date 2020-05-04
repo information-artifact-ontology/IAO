@@ -89,7 +89,11 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label>editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -142,6 +146,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -630,7 +635,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <obo:IAO_0000115 xml:lang="en">A measurement datum that is the output of counting.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <obo:IAO_0000600 xml:lang="en">A measurement datum that is the output of counting.</obo:IAO_0000600>
         <apollo_sv:APOLLO_SV_0000040 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">count</apollo_sv:APOLLO_SV_0000040>
         <rdfs:label xml:lang="en">count</rdfs:label>
@@ -656,9 +660,103 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000115 xml:lang="en">The planned process of finding the number of elements in a finite set of objects.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Counting</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl</obo:IAO_0000412>
         <obo:IAO_0000600 xml:lang="en">The planned process of finding the number of elements in a finite set of objects.</obo:IAO_0000600>
         <rdfs:label xml:lang="en">counting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000522 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000096"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000096"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">software source code version control repository</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A document that comprises at least one source code module and provenance data about who contributed the set of files making up the module(s), and optionally comprises also multiple versions of files with detailed change history about who committed files and when, a license for the software, readme files, documentation, executables, etc.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">Refers to the stuff that lives on GitHub, not to GitHub or the git software on which it is based</rdfs:comment>
+        <rdfs:label xml:lang="en">source code repository</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000096"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">process of compiling software</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A planned process that converts human-written or curated software into a machine-executable or interpretable set of instructions.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">It&apos;s compiling &quot;software&quot; (scare quotes) and not &quot;source code&quot; because you can compile Java bytecode to machine code, and Java bytecode is not technically &quot;source code&quot;.  Compiling source code would be a subclass of this class (as would compiling Java bytecode, etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Source code can be automatically generated to some extent, but we&apos;re assuming humans still curate it minimally. Also, in the case of Java and its JVM, it&apos;s machine interpretable instructions, not directly executable. Ditto for other languages with intermediate form like Java byte code.</rdfs:comment>
+        <rdfs:label xml:lang="en">compiling software</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000796 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000796">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">creating a data set</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A planned process that has a data set as its specified output.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">data set creation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">dataset creation</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">dataset creating</rdfs:label>
     </owl:Class>
     
 
