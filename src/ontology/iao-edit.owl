@@ -90,13 +90,7 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <rdfs:label>editor preferred label</rdfs:label>
-        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
-        <rdfs:label>editor preferred term</rdfs:label>
-        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
-        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111"/>
     
 
 
@@ -119,9 +113,7 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
-        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -136,30 +128,19 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
-        <rdfs:label xml:lang="en">definition editor</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
-        <rdfs:label>term editor</rdfs:label>
-        <rdfs:label xml:lang="en">term editor</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <rdfs:label>alternative term</rdfs:label>
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <rdfs:label xml:lang="en">definition source</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -273,7 +254,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of &quot;mentions&quot; relation. Weaken the is_about relationship to be primitive. 
 
 We will try to build it back up by elaborating the various subproperties that are more precisely defined.
@@ -309,7 +290,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
         <obo:IAO_0000112 xml:lang="en">A person&apos;s name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance &quot;Alan&quot; can denote different people. In each case of use, there is a case of the denotation relation obtaining, between &quot;Alan&quot; and the person that is being named.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to &apos;pick out&apos; the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have &apos;specifically denotes&apos;, which would have been primitive, so make this relation primitive.
 g denotes r =def 
 r is a portion of reality
@@ -330,9 +311,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000417"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115 xml:lang="en">m is a quality measurement of q at t when
-q is a quality 
-there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]
 
@@ -433,7 +412,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000419"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">a relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Person:Bjoern Peters</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is quality specification of</rdfs:label>
@@ -817,7 +796,7 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000111 xml:lang="en">conditional specification</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">a directive information entity that specifies what should happen if the trigger condition is fulfilled</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that specifies what should happen if the trigger condition is fulfilled.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000349</obo:IAO_0000119>
@@ -854,7 +833,7 @@ of this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">objective specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: original definition when imported from OBI read: &quot;objective is an non realizable information entity which can serve as that  proper part of a plan towards which the realization of the plan is directed.&quot;</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2014-03-31: In the example of usage (&quot;In the protocol of a ChIP assay the objective specification says to identify protein and DNA interaction&quot;) there is a protocol which is the ChIP assay protocol. In addition to being concretized on paper, the protocol can be concretized as a realizable entity, such as a plan that inheres in a person. The objective specification is the part that says that some protein and DNA interactions are identified. This is a specification of a process endpoint: the boundary in the process before which they are not identified and after which they are. During the realization of the plan, the goal is to get to the point of having the interactions, and participants in the realization of the plan try to do that.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Answers the question, why did you do this experiment?</obo:IAO_0000116>
@@ -894,7 +873,7 @@ of this, different, term.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000112 xml:lang="en">Pour the contents of flask 1 into flask 2</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">a directive information entity that describes an action the bearer will take</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity that describes an action the bearer will take.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
         <rdfs:label xml:lang="en">action specification</rdfs:label>
@@ -944,7 +923,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">journal article</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">a report that is published in a journal</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A report that is published in a journal.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000159</obo:IAO_0000119>
@@ -1019,7 +998,7 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
@@ -1104,7 +1083,7 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000029"/>
         <obo:IAO_0000111 xml:lang="en">integer numeral</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">a numeral that denotes an integer</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A numeral that denotes an integer</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <rdfs:label xml:lang="en">integer numeral</rdfs:label>
     </owl:Class>
@@ -1129,7 +1108,7 @@ Previous. An information content entity is a non-realizable information entity t
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
 this case we explicitly refer to the singular form</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
@@ -1169,10 +1148,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000001"/>
         <obo:IAO_0000111 xml:lang="en">time trigger</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000124"/>
-        <obo:IAO_0000115 xml:lang="en">revisit?</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PlanAndPlannedProcess Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000331</obo:IAO_0000119>
         <rdfs:label xml:lang="en">time trigger</rdfs:label>
     </owl:Class>
     
@@ -1219,7 +1195,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">rule</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">example to be added</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en">a rule is an executable which guides, defines, restricts actions</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A rule is an executable which guides, defines, restricts actions.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">MSI</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PRS</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0500021</obo:IAO_0000119>
@@ -1270,7 +1246,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">software interpreter</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">R program, Perl interpreter, Java virtual machine</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A software interpreter is a software application that executes some specified input software. </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A software interpreter is a software application that executes some specified input software.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">Do we care? Jennifer: Yes, there was a particular version of R that had a bug and it was fixed later. That would imply that we mean specific version of an interpreter. So an instance of this would be a particular version of the interpreter</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
@@ -1305,7 +1281,7 @@ this case we explicitly refer to the singular form</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">report</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples of reports are gene lists and investigation reports. These are not published (journal) articles but may be included in a journal article.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">a document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record).</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: comment from Darren Natale: I am slightly uneasy with the sentence &quot;Topic of the report is on 
 something that has completed.&quot;  Should it be restricted to those things 
 that are completed?  For example, a progress report is (usually) about 
@@ -1725,7 +1701,7 @@ clustering algorithm.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">citation</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Verspoor, K., Cohen, KB., Hunter, L. Textual characteristics of traditional and Open Access scientific journals are similar, BMC Bioinformatics 2009, 10:183.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">a textual entity intended to identify a particular publication</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A textual entity intended to identify a particular publication.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <rdfs:label xml:lang="en">citation</rdfs:label>
     </owl:Class>
@@ -1931,7 +1907,7 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">document part</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">An abstract, introduction, method or results section.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">an information content entity that is part of a document</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is part of a document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <rdfs:label xml:lang="en">document part</rdfs:label>
     </owl:Class>
@@ -2073,7 +2049,7 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">author list</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Lawrence Hunter and Kevin Brettonel Cohen</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">part of a document that enumerates the authors of the document</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A part of a document that enumerates the authors of the document</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <rdfs:label xml:lang="en">author list</rdfs:label>
     </owl:Class>
@@ -2093,7 +2069,7 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000111 xml:lang="en">institution list</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The University of Colorado Denver School of Medicine and the University of Colorado Boulder.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">part of a document that has parts that are institution identifications associated with the authors of the document</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A part of a document that has parts that are institution identifications associated with the authors of the document</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <rdfs:label xml:lang="en">institution list</rdfs:label>
     </owl:Class>
@@ -2159,7 +2135,7 @@ GO   gene ontology</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
         <obo:IAO_0000111 xml:lang="en">supplementary material to a document</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">part of a document that is segregated from the rest of the document due to its size</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A part of a document that is segregated from the rest of the document due to its size</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">additional information</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">appendix</obo:IAO_0000118>
@@ -2527,7 +2503,7 @@ GO   gene ontology</obo:IAO_0000112>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>a planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing</obo:IAO_0000115>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label>data item extraction from journal article</rdfs:label>
     </owl:Class>
@@ -2552,7 +2528,7 @@ GO   gene ontology</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">a planned process in which a document is created or added to by including the specified input in it.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process in which a document is created or added to by including the specified input in it.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">wikipedia http://en.wikipedia.org/wiki/Documenting</obo:IAO_0000119>
@@ -2597,7 +2573,7 @@ points together with a line.</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">A new pubmed ID being created for a journal article, and the associated pubmed record containing information to the journal article. A license plate number registered at the DMV to be belonging to a specific vehicle and owner. Placing a barcode on a product and entering information in a database that this barcode is assigned.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">a planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2014-05-05: It is the CRID registry that assigns CRIDs, not the users of the registry.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Person:Bjoern Peters</obo:IAO_0000117>
@@ -2837,7 +2813,7 @@ points together with a line.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000592">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en"> A software module is software composed of a collection of software methods.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A software module is software composed of a collection of software methods.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanei Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
@@ -2879,8 +2855,7 @@ points together with a line.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000595">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
-        <obo:IAO_0000115 xml:lang="en"> A software script is software whose instructions can be executed using a software 
-interpreter.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A software script is software whose instructions can be executed using a software interpreter.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Michel Dumontier</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/80</obo:IAO_0000119>
@@ -3097,7 +3072,7 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
         </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">conclusion section</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;conclusion&apos; in a typical scientific journal article.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A part of a document used to summarize the findings discussed in the document. The conclusion section is typically found near the end of a document. </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A part of a document used to summarize the findings discussed in the document. The conclusion section is typically found near the end of a document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">concluding remarks</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">conclusion</obo:IAO_0000118>
