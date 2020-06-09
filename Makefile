@@ -90,6 +90,7 @@ iao.owl: build/iao-merged.owl
 	$(ROBOT) reason \
 	--input $< \
 	--reasoner HermiT \
+	--exclude-tautologies all \
 	annotate \
 	--ontology-iri "$(OBO)/iao.owl" \
 	--version-iri "$(OBO)/iao/$(TODAY)/iao.owl" \
