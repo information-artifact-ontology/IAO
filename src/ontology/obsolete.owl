@@ -517,7 +517,7 @@ Note: everybody agreed that identifier is probably a too general term. We howeve
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/IAO_0000225"/>
         <IAO_0000116 xml:lang="en">This is to be used if none of the existing instances cover the reason for obsolescence. An editor note should indicate this new reason.</IAO_0000116>
         <IAO_0000116 xml:lang="en">We expect to be able to mine these new reasons and add instances as required.</IAO_0000116>
-        <rdfs:label xml:lang="en">other</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete_other</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:NamedIndividual>
 </rdf:RDF>
