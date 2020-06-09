@@ -1,0 +1,25 @@
+Level,Rule Name,Subject,Property,Value,JZ comments
+WARN,duplicate_exact_synonym,IAO:0000609,IAO:0000118,summary@en,https://github.com/information-artifact-ontology/IAO/issues/227
+WARN,duplicate_exact_synonym,IAO:0000615,IAO:0000118,summary@en,
+WARN,missing_definition,IAO:0000004,IAO:0000115,,https://github.com/information-artifact-ontology/IAO/issues/228
+WARN,missing_definition,IAO:0000034,IAO:0000115,,
+WARN,missing_definition,IAO:0000039,IAO:0000115,,
+WARN,missing_definition,IAO:0000057,IAO:0000115,,
+WARN,missing_definition,IAO:0000404,IAO:0000115,,
+WARN,missing_definition,IAO:0000405,IAO:0000115,,
+WARN,missing_definition,IAO:0000406,IAO:0000115,,
+WARN,missing_definition,IAO:0000407,IAO:0000115,,
+WARN,missing_definition,IAO:0000429,IAO:0000115,,
+WARN,missing_definition,IAO:0000582,IAO:0000115,,
+WARN,missing_definition,http://purl.obolibrary.org/obo/apollo_sv.owl/APOLLO_SV_0000040,IAO:0000115,,https://github.com/information-artifact-ontology/IAO/issues/230
+INFO,lowercase_definition,IAO:0000221,IAO:0000115,"m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en",
+INFO,lowercase_definition,IAO:0000235,IAO:0000115,inverse of the relation 'denotes'@en,
+INFO,lowercase_definition,IAO:0000413,IAO:0000115,relates a process to a time-measurement-datum that represents the duration of the process@en,
+INFO,lowercase_definition,IAO:0000417,IAO:0000115,inverse of the relation of is quality measurement of@en,
+INFO,lowercase_definition,IAO:0000419,IAO:0000115,inverse of the relation of is quality specification of@en,
+INFO,lowercase_definition,IAO:0000581,IAO:0000115,relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken@en,
+INFO,lowercase_definition,IAO:0000583,IAO:0000115,relates a time stamped measurement datum to the measurement datum that was measured@en,
+INFO,lowercase_definition,IAO:0000604,IAO:0000115,"relates a class of CRID to the date after which further instances should not be made, according to the central authority",
+INFO,missing_superclass,IAO:0000015,rdfs:subClassOf,,defined class
+INFO,missing_superclass,IAO:0000178,rdfs:subClassOf,,defined class
+INFO,missing_superclass,IAO:0000186,rdfs:subClassOf,,defined class
