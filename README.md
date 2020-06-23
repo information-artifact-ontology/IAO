@@ -6,18 +6,20 @@ The IAO mailing-list is available at http://groups.google.com/group/information-
 
 ### Files
 
-|File|Stable version|Development version|
+|Version|Filename|PURL Link|
 |---|---|---|
-|IAO|http://purl.obolibrary.org/obo/iao.owl|http://purl.obolibrary.org/obo/iao/dev/iao.owl| 
-|Ontology metadata|http://purl.obolibrary.org/obo/iao/ontology-metadata.owl|http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl|
-|IAO-dev|  |http://purl.obolibrary.org/obo/iao/dev/iao-dev.owl| 
+|Release|iao.owl|http://purl.obolibrary.org/obo/iao.owl| 
+|Development|iao-edit.owl|http://purl.obolibrary.org/obo/iao/dev/iao-edit.owl| 
 
-The IAO file imports all files needed for the full version of the IAO ontology:
- - obsolete classes and properties [Stable version](http://purl.obolibrary.org/obo/iao/obsolete.owl) [Development version](http://purl.obolibrary.org/obo/iao/dev/obsolete.owl)
- - iao-main [Stable version](http://purl.obolibrary.org/obo/iao/iao-main.owl) [Development version](http://purl.obolibrary.org/obo/iao/dev/iao-main.owl)
- - ontology-metadata [Stable version](http://purl.obolibrary.org/obo/iao/ontology-metadata.owl) [Development version](http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl)
+The development version IAO (iao-edit.owl) imports all ontologies/files needed for the full version of the IAO ontology:
+ - [Basic Formal Ontology](http://purl.obolibrary.org/obo/bfo.owl): latest release
+ - [OBO Metadata Ontology](http://purl.obolibrary.org/obo/omo.owl): latest release
+ - [Relation Ontology Core subset](http://purl.obolibrary.org/obo/ro/core.owl): latest release
+ - [import-OBO.owl](http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl): reused terms in external ontologies, retrieved using ontoFox tool
+ - [externalByHand.owl](http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl): terms or axioms associated with terms in external ontologies, added manually
+ - [obsolete.owl](http://purl.obolibrary.org/obo/iao/dev/obsolete.owl): obsolete classes and properties
 
-As part of the IAO project, ontology metadata, a distinct file defining common metadata properties has been created. This file can be used by any project, independently of IAO. Documentation is available [here](https://github.com/information-artifact-ontology/IAO/wiki/OntologyMetadata)
+OBO Metadata Ontology (OMO) was part of the IAO, developed in a separate OWL file. It contains [metadata properties](https://github.com/information-artifact-ontology/IAO/wiki/OntologyMetadata) that have been widely used by many OBO Foundry ontologies. In early 2020, it was registered as an indepentent ontology. Please check the OBO Metadata Ontology (OMO) on the [ontology-metadata repository](https://github.com/information-artifact-ontology/ontology-metadata).
 
 A reasonable place to start browsing the IAO is at the terms [information content entity](http://purl.obolibrary.org/obo/IAO_0000030) or [data item](http://purl.obolibrary.org/obo/IAO_0000027) or the property [is about](http://purl.obolibrary.org/obo/IAO_0000136).
 
