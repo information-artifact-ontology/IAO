@@ -2564,6 +2564,21 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A document that is in preparation for submission to be published.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">EFO_0001795 in preparation</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/232"/>
+        <obo:IAO_0000234 xml:lang="en">VEuPathDB</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">document in preparation for publication</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000572">
