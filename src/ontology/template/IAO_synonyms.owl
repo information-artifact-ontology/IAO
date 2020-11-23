@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.obolibrary.org/obo/IAO/IAO_synonyms.owl#"
+     xml:base="https://purl.obolibrary.org/obo/IAO/IAO_synonyms.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://purl.obolibrary.org/obo/IAO/IAO_synonyms.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000315 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000315">
+        <obo:IAO_0000118 xml:lang="en">precis</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000316">
+        <obo:IAO_0000118 xml:lang="en">overview</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000317">
+        <obo:IAO_0000118 xml:lang="en">experimental methods</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">method</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">methodology</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000319">
+        <obo:IAO_0000118 xml:lang="en">discussions</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000320">
+        <obo:IAO_0000118 xml:lang="en">literature cited</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">reference</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">reference list</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">references</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000323">
+        <obo:IAO_0000118 xml:lang="en">authors&apos; contribution</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">authors&apos; contributions</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">authors&apos; roles</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">contributorship</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000324">
+        <obo:IAO_0000118 xml:lang="en">acknowledgement</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">acknowledgment</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000325">
+        <obo:IAO_0000118 xml:lang="en">footnotes</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000326">
+        <obo:IAO_0000118 xml:lang="en">additional file</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">additional files</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">electronic supplementary material</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">electronic supplementary materials</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplemental data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplemental material</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary files</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary information</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary materials</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000606">
+        <obo:IAO_0000118 xml:lang="en">abbreviation and acronyms</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">abbreviation list</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">abbreviations and acronyms</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">definitions for abbreviations</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">non-standard abbreviations</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">nonstandard abbreviations</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">nonstandard abbreviations and acronyms</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000607 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000607">
+        <obo:IAO_0000118 xml:lang="en">biographies</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">contributor information</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000611 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000611">
+        <obo:IAO_0000118 xml:lang="en">availability of data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data archiving</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data availability</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data availability statement</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data sharing statement</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000616 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000616">
+        <obo:IAO_0000118 xml:lang="en">authors&apos; disclosures of potential conflicts of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">competing financial interests</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">conflict of interests</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">conflicts of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">declaration of competing interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">declaration of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">declaration of interests</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">disclosure of conflict of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">duality of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">statement of interest</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000620 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000620">
+        <obo:IAO_0000118 xml:lang="en">ethical requirements</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ethics</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ethics statement</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000623">
+        <obo:IAO_0000118 xml:lang="en">financial support</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">grants</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">role of the funding source</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">study funding</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000625 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000625">
+        <obo:IAO_0000118 xml:lang="en">outlook</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

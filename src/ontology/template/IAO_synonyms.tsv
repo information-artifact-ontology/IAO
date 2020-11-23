@@ -1,0 +1,18 @@
+ontology ID	alternative term	editor note	term tracker item
+ID	AL alternative term@en SPLIT=|	AL editor note@en SPLIT=|	AI term tracker item
+IAO:0000606	abbreviation and acronyms|abbreviations and acronyms|abbreviation list|definitions for abbreviations|non-standard abbreviations|nonstandard abbreviations|nonstandard abbreviations and acronyms		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000315	precis		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000324	acknowledgement|acknowledgment		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000323	authors' contribution|authors' contributions|authors' roles|contributorship		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000607	biographies|contributor information		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000611	availability of data|data archiving|data availability|data availability statement|data sharing statement		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000616	conflict of interests|conflicts of interest|declaration of competing interest|declaration of interest|declaration of interests|disclosure of conflict of interest|duality of interest|statement of interest|authors' disclosures of potential conflicts of interest|competing financial interests		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000319	discussions		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000620	ethical requirements|ethics|ethics statement		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000325	footnotes		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000623	financial support|grants|role of the funding source|study funding		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000625	outlook		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000316	overview		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000317	method|experimental methods|methodology		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000320	literature cited|reference|references|reference list		https://github.com/information-artifact-ontology/IAO/issues/234
+IAO:0000326	additional file|additional files|electronic supplementary material|electronic supplementary materials|supplemental data|supplemental material|supplementary data|supplementary files|supplementary information|supplementary materials		https://github.com/information-artifact-ontology/IAO/issues/234
