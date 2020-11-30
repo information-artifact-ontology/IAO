@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/iao.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2020-06-10/iao.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/iao/2020-11-30/iao.owl"/>
         <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
         <dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
         <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
@@ -57,7 +57,7 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-06-10</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-11-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3535,12 +3535,19 @@ Superclass was &apos;digitial quality&apos;</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000088"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000311"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000444"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000111 xml:lang="en">journal article</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Examples are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A report that is published in a journal.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI_0000159</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">journal article</rdfs:label>
@@ -4049,8 +4056,8 @@ whole sentence is deleted.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-08-10 Alan Ruttenberg: Larry Hunter suggests that this be obsoleted and replaced by &apos;document&apos;. Alan restored as there are OBI dependencies and this merits further discussion</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">disagreement about where reports go. alan: only some gene lists are reports. Is a report all the content of some document? The example of usage suggests that a report may be part of  some article. Term needs clarification</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000099</obo:IAO_0000119>
         <rdfs:label xml:lang="en">report</rdfs:label>
@@ -4770,12 +4777,28 @@ GO   gene ontology</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/IAO_0000311 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000311">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000444"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
         <obo:IAO_0000111 xml:lang="en">publication</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">A journal article or book</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">journal article, newspaper story, book, etc.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A document that has been accepted by a publisher</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A document that is the output of a publishing process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">published document</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/232"/>
+        <rdfs:comment xml:lang="en">Revisit the term in Octorber 2020. Improve the defintion.</rdfs:comment>
         <rdfs:label xml:lang="en">publication</rdfs:label>
     </owl:Class>
     
@@ -4851,6 +4874,8 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A summary of the entire document that is substantially smaller than the document it summarizes.  It is about the document it summarizes.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">precis</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">abstract</rdfs:label>
     </owl:Class>
     
@@ -4873,6 +4898,8 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">background</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">introduction</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">overview</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">introduction to a publication about an investigation</rdfs:label>
     </owl:Class>
     
@@ -4894,9 +4921,13 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a publication about an investigation that is about the study design of the investigation</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">experimental</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">experimental methods</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">experimental procedures</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">experimental section</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">method</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">methodology</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">methods</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">methods section</rdfs:label>
     </owl:Class>
     
@@ -4933,6 +4964,8 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">discussion</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">discussion section</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">discussions</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">discussion section of a publication about an investigation</rdfs:label>
     </owl:Class>
     
@@ -4953,6 +4986,11 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A part of a document that has citations as parts</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">literature cited</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">reference</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">reference list</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">references</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">references section</rdfs:label>
     </owl:Class>
     
@@ -5008,7 +5046,12 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a publication that is about the specific contributions of each author</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">author contributions</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">authors&apos; contribution</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">authors&apos; contributions</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">authors&apos; roles</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">contributions by the authors</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">contributorship</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">author contributions section</rdfs:label>
     </owl:Class>
     
@@ -5023,8 +5066,11 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">Part of a publication that is about the contributions of people or institutions other than the authors.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">acknowledgement</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">acknowledgements</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">acknowledgment</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">acknowledgments</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">acknowledgements section</rdfs:label>
     </owl:Class>
     
@@ -5046,6 +5092,8 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document that is about a specific other part of the document.  Usually footnotes are spatially segregated from the rest of the document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">endnote</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">footnotes</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">footnote</rdfs:label>
     </owl:Class>
     
@@ -5059,11 +5107,22 @@ GO   gene ontology</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A part of a document that is segregated from the rest of the document due to its size</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Lawrence Hunter</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">additional file</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">additional files</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">additional information</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">appendix</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">electronic supplementary material</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">electronic supplementary materials</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplemental data</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">supplemental information</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplemental material</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary files</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary information</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">supplementary material</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">supplementary materials</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">supporting information</obo:IAO_0000118>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">supplementary material to a document</rdfs:label>
     </owl:Class>
     
@@ -5455,6 +5514,36 @@ GO   gene ontology</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Person: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Publishing</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/232"/>
+        <obo:IAO_0000234 xml:lang="en">VEuPathDB</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">publishing process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000445 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000445">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A document that is in preparation for submission to be published.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">EFO_0001795 in preparation</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/232"/>
+        <obo:IAO_0000234 xml:lang="en">VEuPathDB</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">document in preparation for publication</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000572">
@@ -5601,7 +5690,7 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -5852,12 +5941,20 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;abbreviations&apos; in a typical scientific journal article.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document where abbreviations and their long-forms used within the document are listed.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">abbreviation and acronyms</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">abbreviation list</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">abbreviations</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">abbreviations and acronyms</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">abbreviations list</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">abbreviations used</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">definitions for abbreviations</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">list of abbreviations</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">list of abbreviations used</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">non-standard abbreviations</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">nonstandard abbreviations</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">nonstandard abbreviations and acronyms</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">abbreviations section</rdfs:label>
     </owl:Class>
     
@@ -5879,7 +5976,10 @@ BAC: Bacterial artificial chromosome; CR: Calretinin; GFAP: Glial fibrillary aci
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">author information</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">authors’ information</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">biographies</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">contributor information</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">author information section</rdfs:label>
     </owl:Class>
     
@@ -5958,7 +6058,13 @@ The search for genetic risk factors for common human diseases often relies on th
         <obo:IAO_0000115 xml:lang="en">A part of a document about a resource described in the document, e.g. software, that describes where and/or how that resource can be obtained.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">availability</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">availability of data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data archiving</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data availability</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data availability statement</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data sharing statement</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">availability section</rdfs:label>
     </owl:Class>
     
@@ -6057,12 +6163,23 @@ The patient is a 50-year-old man. His medical history was not contributory. At t
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;conflict of interest statement&apos; in a typical scientific journal article.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document used to declare any competing interests regarding the authors and/or funding organization for the work described in the document.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">authors&apos; disclosures of potential conflicts of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">competing financial interests</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">competing interests</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">conflict of interest</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">conflict of interest statement</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">conflict of interests</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">conflicts of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">declaration of competing interest</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">declaration of competing interests</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">declaration of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">declaration of interests</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">disclosure of conflict of interest</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">disclosure of potential conflicts of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">duality of interest</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">statement of interest</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">conflict of interest section</rdfs:label>
     </owl:Class>
     
@@ -6134,7 +6251,11 @@ Written informed consent was obtained from the patient’s parents for publicati
         <obo:IAO_0000115 xml:lang="en">A part of a document about the governance body responsible for approving the work discussed in a document on an ethical basis.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">ethical approval</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ethical requirements</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ethics</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ethics statement</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">ethical approval section</rdfs:label>
     </owl:Class>
     
@@ -6197,14 +6318,19 @@ The NHS National Research Ethics Service had previously approved the use of thes
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;funding&apos; in a typical scientific journal article.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document used to detail information regarding the source of funding used in support of the generation of the document content.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">financial support</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">funding</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">funding information</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">funding sources</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">funding statement</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">funding/support</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">grants</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">role of the funding source</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">source of funding</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">sources of funding</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">study funding</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">funding source declaration section</rdfs:label>
     </owl:Class>
     
@@ -6252,7 +6378,9 @@ This study was supported by the International Collaborative Research Grants Sche
         <obo:IAO_0000118 xml:lang="en">future research directions</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">future studies</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">future work</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">outlook</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
         <rdfs:label xml:lang="en">future directions section</rdfs:label>
     </owl:Class>
     
@@ -6417,7 +6545,6 @@ Owing to the nature of a post hoc study, any significant values must be interpre
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;notes&apos; in a typical scientific journal article, e.g. McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document containing typically short notes about the document itself and/or the authors. Often the notes section contains subsections related to funding, competing interests, ethical approval, etc.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">footnotes</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">notes</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">notes section</rdfs:label>
@@ -6704,6 +6831,130 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <rdfs:isDefinedBy rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
         <rdfs:label xml:lang="en">database extract, transform, and load process</rdfs:label>
         <foaf:page rdf:resource="https://en.wikipedia.org/wiki/Extract,_transform,_load"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000111 xml:lang="en">descriptive data section</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A document part that lists and defines data variables, describes data characteristics (e.g. missing data information) and any assumptions and simplifications made.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
+        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">descriptive data section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000702 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000702">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000318"/>
+        <obo:IAO_0000111 xml:lang="en">additional results section</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A results section that reports analyses other than main results of the study (e.g. subgroups analyses, adjusted analyses, sensitivity analyses, etc.)</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/consort/</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/strobe/</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
+        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">additional results section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000111 xml:lang="en">research participants section</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A document part that describes human subject(s) that participated in a study (e.g. inclusion &amp; exclusion criteria, recruitment methods, reasons for non-participation, grouping and randomisation, methods of follow-up, etc.).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/consort/</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/strobe-nut/</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
+        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">research participants section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000317"/>
+        <obo:IAO_0000111 xml:lang="en">measurement methods section</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A methods section that describes details of data assessment methods (data measurement).</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/strobe/</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
+        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">measurement methods section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000705 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000705">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000111 xml:lang="en">research settings section</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A document part that describes the physical/social/cultural conditions around a research trial.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK262175/</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
+        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">research settings section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000706 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000706">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000631"/>
+        <obo:IAO_0000111 xml:lang="en">study bias section</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A study limitations section that describes systematic error introduced into sampling or testing by selecting or encouraging one outcome or answer over others.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI: 10.1097/PRS.0b013e3181de24bc</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
+        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <rdfs:label xml:lang="en">study bias section</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000707 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000707">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000315"/>
+        <obo:IAO_0000111 xml:lang="en">graphical abstract</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">An abstract that is pictorial summary of the main findings described in the document.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tim Beck</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">visual abstract</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.elsevier.com/authors/journal-authors/graphical-abstract</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
+        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical literature NLP project </obo:IAO_0000234>
+        <rdfs:label xml:lang="en">graphical abstract</rdfs:label>
     </owl:Class>
     
 
