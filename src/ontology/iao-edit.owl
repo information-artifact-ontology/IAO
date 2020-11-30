@@ -3567,7 +3567,6 @@ Owing to the nature of a post hoc study, any significant values must be interpre
         <obo:IAO_0000112 xml:lang="en">The section labelled &apos;notes&apos; in a typical scientific journal article, e.g. McLean et al. Br J Gen Pract. 2014 Jul; 64(624): e440–e447 (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4073730/):</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A part of a document containing typically short notes about the document itself and/or the authors. Often the notes section contains subsections related to funding, competing interests, ethical approval, etc.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Bill Baumgartner</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">footnotes</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">notes</obo:IAO_0000118>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/183"/>
         <rdfs:label xml:lang="en">notes section</rdfs:label>
