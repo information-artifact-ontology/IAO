@@ -34,7 +34,7 @@ The IAO is a descendant of the [DENRIE branch](http://ashby.csail.mit.edu/presen
 
 ### Presentations and Meetings
 
-The [first workshop](http://neurocommons.org/page/First_IAO_workshop) on the IAO took place in Boston at the MIT Stata Center, June 9, 2008. 
+The [first workshop](https://web.archive.org/web/20170712204335/http://neurocommons.org/page/First_IAO_workshop) on the IAO took place in Boston at the MIT Stata Center, June 9, 2008. 
 
 In July 2009, a tutorial [From Basic Formal Ontology to the Information Artifact Ontology](http://www.bioontology.org/wiki/index.php/From_BFO_to_IAO) was presented, colocated at the [ICBO: International Conference on Biomedical Ontology](http://icbo.buffalo.edu/). Slides that include a section on topics in the IAO are [here](http://icbo.buffalo.edu/Presentations/Ruttenberg.pdf). Other [presentations may be of interest](http://icbo.buffalo.edu/Presentations/).
 
