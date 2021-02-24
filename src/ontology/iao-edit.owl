@@ -1087,23 +1087,12 @@ Previous. An information content entity is a non-realizable information entity t
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115 xml:lang="en">A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is composed of a numeral, and optionally a unit label.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: we decided to keep datum singular in scalar measurement datum, as in
 this case we explicitly refer to the singular form</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">In OBI a &apos;scalar measurement datum&apos; now &apos;has value specification&apos; some &apos;scalar value specification&apos; which contains the value component, and potentially a unit.  Hence, the &apos;scalar measurement datum&apos; axioms &apos;has measurement value&apos; and &apos;has measurement unit label&apos; have been removed (Feb. 2021).</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Would write this as: has_part some &apos;measurement unit label&apos; and has_part some numeral and has_part exactly 2, except for the fact that this won&apos;t let us take advantage of OWL reasoning over the numbers. Instead use has measurment value property to represent the same. Use has measurement unit label (subproperty of has_part) so we can easily say that there is only one of them.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
