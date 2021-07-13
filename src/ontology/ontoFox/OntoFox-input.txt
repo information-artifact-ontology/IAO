@@ -148,25 +148,6 @@ http://purl.obolibrary.org/obo/IAO_0000115
 
 [Source ontology]
 #comment here
-GAZ
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/GAZ_00000448 #geographic location
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/GAZ_00000448 #geographical location
-subClassOf http://purl.obolibrary.org/obo/BFO_0000029 #site
-
-[Source term retrieval setting]
-includeNoIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115
-
-
-[Source ontology]
-#comment here
 RO
 
 [Low level source term URIs]
