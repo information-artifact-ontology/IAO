@@ -34,6 +34,7 @@
         <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
+        <dc:contributor xml:lang="en">Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">Darren Natale</dc:contributor>
         <dc:contributor xml:lang="en">David Osumi-Sutherland</dc:contributor>
         <dc:contributor xml:lang="en">Gwen Frishkoff</dc:contributor>
@@ -1381,11 +1382,12 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Clint Dowland</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">2/3/2009 Comment from OBI review.
@@ -1395,6 +1397,8 @@ Conditional specification not well enough specified.
 Question whether all plan specifications have objective specifications.
 
 Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
+        <obo:IAO_0000116 xml:lang="en">2022-01-16 Updated definition to that proposed by Clint Dowloand, IAO Issue 231.</obo:IAO_0000116>
+        <rdfs:seeAlso xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131</rdfs:seeAlso>
         <rdfs:label xml:lang="en">plan specification</rdfs:label>
     </owl:Class>
     
