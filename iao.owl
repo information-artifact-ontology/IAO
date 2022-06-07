@@ -7016,12 +7016,12 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A dubbing process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An identifier creating process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">identifier creating process</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">dubbing process</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">naming</obo:IAO_0000118>
         <dc:creator>Mathias Brochhausen</dc:creator>
-        <rdfs:label xml:lang="en">dubbing process</rdfs:label>
+        <rdfs:label xml:lang="en">identifier creating process</rdfs:label>
     </owl:Class>
     
 
