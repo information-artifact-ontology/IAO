@@ -254,6 +254,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000142">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000143"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An information artifact IA mentions an entity E exactly when it has a component/part that denotes E</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">7/6/2009 Alan Ruttenberg. P4 RC1 munges our GCI so remove it for now: mentions some entity equivalentTo has_part some (&apos;generically denotes&apos; some entity)</obo:IAO_0000116>
@@ -261,6 +262,18 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Person: Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mentions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000143 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000143">
+        <obo:IAO_0000115 xml:lang="en">Inverse of the relation &apos;mentions&apos;</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="http://orcid.org/0000-0002-8844-9165"/>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/250"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-28T07:20:08Z</dc:date>
+        <rdfs:label xml:lang="en">mentioned by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1385,6 +1398,7 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2014-03-31: A plan specification can have other parts, such as conditional specifications.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">2022-01-16 Updated definition to that proposed by Clint Dowloand, IAO Issue 231.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Alternative previous definition: a plan is a set of instructions that specify how an objective should be achieved</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Clint Dowland</obo:IAO_0000117>
@@ -1397,9 +1411,8 @@ Conditional specification not well enough specified.
 Question whether all plan specifications have objective specifications.
 
 Request that IAO either clarify these or change definitions not to use them</rdfs:comment>
-        <obo:IAO_0000116 xml:lang="en">2022-01-16 Updated definition to that proposed by Clint Dowloand, IAO Issue 231.</obo:IAO_0000116>
-        <rdfs:seeAlso xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131</rdfs:seeAlso>
         <rdfs:label xml:lang="en">plan specification</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/231#issuecomment-1010455131</rdfs:seeAlso>
     </owl:Class>
     
 
