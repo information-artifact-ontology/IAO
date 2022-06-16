@@ -5734,7 +5734,7 @@ points together with a line.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a dataset of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A CRID registry is a dataset of CRID records, each consisting of a CRID symbol and additional information which was recorded in the dataset through a assigning a centrally registered identifier process.</obo:IAO_0000115>
@@ -6967,157 +6967,11 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
     <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020000">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020010"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000111 xml:lang="en">identifier</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">proper name</obo:IAO_0000118>
-        <dc:creator>Mathias Brochhausen</dc:creator>
-        <rdfs:comment xml:lang="en">Sep 29, 2016: The current definition has been amended from the previous version: &quot;A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.&quot; to more accuratly reflect the necessary and sufficient condition on the class. (MB)</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
         <rdfs:label xml:lang="en">identifier</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An utterance is an information content entity that is a complete unit of speech in spoken language.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119>Wikipedia: http://en.wikipedia.org/wiki/Utterance</obo:IAO_0000119>
-        <dc:creator>Mathias Brochhausen</dc:creator>
-        <rdfs:label xml:lang="en">utterance</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020010">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A dubbing process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">identifier creating process</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">naming</obo:IAO_0000118>
-        <dc:creator>Mathias Brochhausen</dc:creator>
-        <rdfs:label xml:lang="en">dubbing process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020015">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0020000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-        <obo:IAO_0000115 xml:lang="en">A personal name is a proper name identifying an individual person.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Personal_name</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Personal names &quot;today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names.&quot; (http://en.wikipedia.org/wiki/Personal_name)</rdfs:comment>
-        <rdfs:comment xml:lang="en">Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)</rdfs:comment>
-        <rdfs:label xml:lang="en">personal name</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A given name, in Western contexts often referred to as a first name, is a personal name that specifies and differentiates between members of a group of individuals, especially in a family, all of whose members usually share the same family name (surname). A given name is purposefully given, usually by a child&apos;s parents at or near birth, in contrast to an inherited one such as a family name</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Given_name</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">given name</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A family name (in Western contexts often referred to as a surname or last name) is typically a part of a person&apos;s name which has been passed, according to law or custom, from one or both parents to their children.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Family_name</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">family name</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of other information content entities that has been created to identify or annotate core ideas of a specified domain, and where the intention of its creators is that the aggregated entities have a one-to-one correspondence with entities in reality outside the aggregate.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">code map</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">code system</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">codeset</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">coding system</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">controlled vocabulary</obo:IAO_0000118>
-        <dc:contributor>Clint Dowland</dc:contributor>
-        <dc:contributor>Matt Diller</dc:contributor>
-        <dc:contributor>Sarah Bost</dc:contributor>
-        <dc:contributor>William R. Hogan</dc:contributor>
-        <rdfs:comment xml:lang="en">Does not imply absence vs. presence of any taxonomy.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Does not imply that aggregated entities denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Each aggregated entity is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.
-
-When there is no such string, it is almost always because the entities take the form of human language words. For example, a “sex” or “gender” code set could contain “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).</rdfs:comment>
-        <rdfs:comment xml:lang="en">For National Drug Codes (NDCs) and similar code sets, there doesn’t even have to be a single, fully-concretized copy somewhere (for example, for NDCs there is no centralized database or repository where they all live as one instance of concretization of code set). The code set can be “distributively” concretized. This seems like an unusual exception, but it also likely applies to Universal Product Codes (UPCs) and their follow on Global Trade Item Numbers (GTINs).</rdfs:comment>
-        <rdfs:comment xml:lang="en">For each given domain, there can potentially exist multiple code sets. The multiplicity of code sets is partially due to the different specific purposes of those code sets.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Many code sets are created for a specific purpose in addition to merely identifying or annotating core ideas of a specified domain.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The information content entities do not denote each other.</rdfs:comment>
-        <rdfs:label xml:lang="en">code set</rdfs:label>
     </owl:Class>
     
 
@@ -7388,18 +7242,6 @@ No imports</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">human being</obo:IAO_0000118>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ncbitaxon.owl</obo:IAO_0000412>
-        <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -7432,28 +7274,6 @@ No imports</obo:IAO_0000115>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a planned process that carries out a study design</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">study design execution</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">13-02-2009:
-OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
-This issue is outside the scope of OBI.</obo:IAO_0000116>
-        <obo:IAO_0000117 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 
@@ -7574,19 +7394,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A unit which is a standard measure of the dimension in which events occur in sequence.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">time unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_/IAO_0020001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_/IAO_0020001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000112 xml:lang="en">alphabetic letters, Chinese characters, numerical digits, punctuation marks, and the individual symbols of any of the world&apos;s writing systems</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A grapheme is an information content entity that is a fundamental unit in a written language.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Grapheme</obo:IAO_0000119>
-        <dc:creator>Mathias Brochhausen</dc:creator>
-        <rdfs:label xml:lang="en">grapheme</rdfs:label>
     </owl:Class>
     
 
@@ -7900,5 +7707,5 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
