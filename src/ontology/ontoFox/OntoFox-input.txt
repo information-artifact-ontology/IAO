@@ -11,7 +11,6 @@ http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
 http://purl.obolibrary.org/obo/OBI_0500000 #study design
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
-http://purl.obolibrary.org/obo/OBI_0100026 #organism
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OBI_0000011 #planned process
@@ -24,8 +23,6 @@ http://purl.obolibrary.org/obo/OBI_0500000 #study design
 subClassOf http://purl.obolibrary.org/obo/IAO_0000104
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
 subClassOf http://purl.obolibrary.org/obo/OBI_0000011 #planned process
-http://purl.obolibrary.org/obo/OBI_0100026 #organism
-subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -100,14 +97,14 @@ http://purl.obolibrary.org/obo/IAO_0000115
 
 [Source ontology] 
 #comment here
-NCBITaxon
+PNO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo sapiens
+http://purl.obolibrary.org/obo/IAO_0020000 #identifier
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo sapiens
-subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #organism
+http://purl.obolibrary.org/obo/IAO_0020000 #identifier
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
 
 [Source term retrieval setting]
 includeAllIntermediates
