@@ -95,28 +95,6 @@ http://purl.obolibrary.org/obo/IAO_0000115
 
 ###################################################
 
-[Source ontology] 
-#comment here
-PNO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/IAO_0020000 #identifier
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/IAO_0020000 #identifier
-subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-copyTo http://purl.obolibrary.org/obo/IAO_0000111
-http://purl.obolibrary.org/obo/IAO_0000115
-
-    
-###################################################
-
 [Source ontology]
 #comment here
 UO
