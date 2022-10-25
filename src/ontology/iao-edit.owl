@@ -4005,7 +4005,7 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
         <oboInOwl:hasExactSynonym>ORCID ID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ORCID id</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>ORCID identifier</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Open Researcher and Contributor ID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Open Researcher and Contributor Identifier</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>iD</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">ORCID identifier</rdfs:label>
