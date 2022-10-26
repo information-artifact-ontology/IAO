@@ -3998,31 +3998,18 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000708">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115>A &apos;centrally registered identifier&apos; that is issued by ORCID (https://orcid.org/) and used to persistantly identify oneself as a human researcher or contributor.</obo:IAO_0000115>
-        <obo:IAO_0000116>&quot;You can connect your iD with your professional information — affiliations, grants, publications, peer review, and more. You can use your iD to share your information with other systems, ensuring you get recognition for all your contributions, saving you time and hassle, and reducing the risk of errors.&quot;</obo:IAO_0000116>
+        <obo:IAO_0000115>A centrally registered identifier that is issued by ORCID (https://orcid.org/) and used to persistantly identify oneself as a human researcher or contributor.</obo:IAO_0000115>
+        <obo:IAO_0000116>&quot;You can connect your iD with your professional information — affiliations, grants, publications, peer review, and more. You can use your iD to share your information with other systems, ensuring you get recognition for all your contributions, saving you time and hassle, and reducing the risk of errors.&quot; [https://orcid.org/]</obo:IAO_0000116>
         <obo:IAO_0000116>This class was originally defined in Apollo_SV (http://purl.obolibrary.org/obo/APOLLO_SV_00000496) but due to it being more in scope of IAO, it was decided to add it to IAO and deprecate its Apollo_SV equivalent. (2022-10-25)</obo:IAO_0000116>
+        <obo:IAO_0000117>http://orcid.org/0000-0002-1595-3213</obo:IAO_0000117>
+        <obo:IAO_0000118>ORCID ID</obo:IAO_0000118>
+        <obo:IAO_0000118>ORCiD</obo:IAO_0000118>
+        <obo:IAO_0000118>Open Researcher and Contributor ID</obo:IAO_0000118>
+        <obo:IAO_0000118>Open Researcher and Contributor Identifier</obo:IAO_0000118>
+        <obo:IAO_0000119>https://orcid.org/</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/IAO/issues/259</obo:IAO_0000233>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-1595-3213"/>
-        <oboInOwl:hasExactSynonym>ORCID ID</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>ORCID id</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Open Researcher and Contributor ID</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Open Researcher and Contributor Identifier</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>iD</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">ORCID identifier</rdfs:label>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000708"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A &apos;centrally registered identifier&apos; that is issued by ORCID (https://orcid.org/) and used to persistantly identify oneself as a human researcher or contributor.</owl:annotatedTarget>
-        <obo:IAO_0000119>https://orcid.org/</obo:IAO_0000119>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/IAO_0000708"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000116"/>
-        <owl:annotatedTarget>&quot;You can connect your iD with your professional information — affiliations, grants, publications, peer review, and more. You can use your iD to share your information with other systems, ensuring you get recognition for all your contributions, saving you time and hassle, and reducing the risk of errors.&quot;</owl:annotatedTarget>
-        <dc:source>https://orcid.org/</dc:source>
-    </owl:Axiom>
-
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0020000 -->
