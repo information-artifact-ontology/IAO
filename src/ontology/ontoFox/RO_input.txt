@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl
+http://purl.obolibrary.org/obo/iao/dev/import_RO.owl
 
 [Source ontology]
 #List of ontologies, such as: OBI, PATO, PNO, UO, GAZ, UO

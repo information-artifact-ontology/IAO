@@ -1,0 +1,27 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/iao/dev/import_UO.owl
+
+###################################################
+[Source ontology]
+UO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UO_0000001 #length unit
+http://purl.obolibrary.org/obo/UO_0000002 #mass unit
+http://purl.obolibrary.org/obo/UO_0000003 #time unit
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UO_0000001 #length unit
+subClassOf http://purl.obolibrary.org/obo/IAO_0000003
+http://purl.obolibrary.org/obo/UO_0000002 #mass unit
+subClassOf http://purl.obolibrary.org/obo/IAO_0000003
+http://purl.obolibrary.org/obo/UO_0000003 #time unit
+subClassOf http://purl.obolibrary.org/obo/IAO_0000003
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115

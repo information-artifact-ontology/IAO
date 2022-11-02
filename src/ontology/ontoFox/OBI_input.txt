@@ -1,0 +1,58 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/iao/dev/import_OBI.owl
+
+# Retrive OBI classes
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+http://purl.obolibrary.org/obo/OBI_0000066 #investigation
+http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
+http://purl.obolibrary.org/obo/OBI_0500000 #study design
+http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015 #process
+http://purl.obolibrary.org/obo/OBI_0000066 #investigation
+subClassOf http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
+subClassOf http://purl.obolibrary.org/obo/OBI_0000011
+http://purl.obolibrary.org/obo/OBI_0500000 #study design
+subClassOf http://purl.obolibrary.org/obo/IAO_0000104
+http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
+subClassOf http://purl.obolibrary.org/obo/OBI_0000011 #planned process
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115
+
+
+###################################################
+# Retrive OBI classes objectProperties
+[Source ontology]
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0000293 #has_specified_input
+http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
+http://purl.obolibrary.org/obo/OBI_0000312 #is_specified_output_of
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000293 #has_specified_input
+subPropertyOf http://purl.obolibrary.org/obo/RO_0000057 #has participant
+http://purl.obolibrary.org/obo/OBI_0000299 #has_specified_output
+subPropertyOf http://purl.obolibrary.org/obo/RO_0000057 #has participant
+http://purl.obolibrary.org/obo/OBI_0000312 #is_specified_output_of
+subPropertyOf http://purl.obolibrary.org/obo/RO_0000056 #participates in
+
+[Source term retrieval setting]
+
+
+[Source annotation URIs]
+includeAllAxioms
