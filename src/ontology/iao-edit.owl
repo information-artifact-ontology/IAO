@@ -4046,9 +4046,9 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
 
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_/IAO_0020001 -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0020001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_/IAO_0020001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000112 xml:lang="en">alphabetic letters, Chinese characters, numerical digits, punctuation marks, and the individual symbols of any of the world&apos;s writing systems</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is a fundamental unit in a written language.</obo:IAO_0000115>
