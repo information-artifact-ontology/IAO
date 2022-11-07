@@ -71,6 +71,27 @@ clean: | release
 # 	cd src/ontology/ontofox && \
 # 	curl -s -F file=@OntoFox-input.txt http://ontofox.hegroup.org/service.php > ../import-OBO.owl
 
+### Imports
+#
+# Use Ontofox to import various modules.
+build/import_%.owl: src/ontology/ontoFox/%_input.txt | build/robot.jar build
+	curl -s -F file=@$< -o $@ https://ontofox.hegroup.org/service.php
+
+# Use ROBOT to remove external java axioms
+src/ontology/imports/import_%.owl: build/import_%.owl
+	$(ROBOT) remove --input build/import_$*.owl \
+	--base-iri 'http://purl.obolibrary.org/obo/$*_' \
+	--axioms external \
+	--preserve-structure false \
+	--trim false \
+	--output $@ 
+
+IMPORT_FILES := $(wildcard src/ontology/imports/import_*.owl)
+
+.PHONY: imports
+imports: $(IMPORT_FILES)
+
+
 # merge components to generate iao-merged
 build/iao-merged.owl: $(SRC)/iao-edit.owl | build/robot.jar build
 	@echo "Merging $< to $@" && \

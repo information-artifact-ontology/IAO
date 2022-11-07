@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="externalByHand.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="obsolete.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-edit.owl" uri="iao-edit.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/iao/dev/import-OBO.owl" uri="import-OBO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="imports/externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/import_OBI.owl" uri="imports/import_OBI.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/import_PATO.owl" uri="imports/import_PATO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/import_RO.owl" uri="imports/import_RO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/import_UO.owl" uri="imports/import_UO.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/obsolete.owl" uri="obsolete.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/iao-edit.owl" uri="iao-edit.owl"/>
+    <uri name="https://purl.obolibrary.org/obo/IAO/IAO_newTerms.owl" uri="template/IAO_newTerms.owl"/>
+    <uri name="https://purl.obolibrary.org/obo/IAO/IAO_synonyms.owl" uri="template/IAO_synonyms.owl"/>
 </catalog>
