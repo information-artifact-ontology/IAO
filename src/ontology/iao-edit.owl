@@ -1338,6 +1338,7 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">OBI_0000187</obo:IAO_0000119>
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/172"/>
     </owl:Class>
     
 
