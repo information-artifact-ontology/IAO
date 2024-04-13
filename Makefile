@@ -118,6 +118,28 @@ iao.owl: build/iao-merged.owl
 	--annotation owl:versionInfo "$(TODAY)" \
 	--output $@
 
+### Test
+#
+# Run tests
+
+# Run a reasoner to find inconsistencies
+.PHONY: reason
+	@echo "Running tests"
+	@echo "Run reasoning"
+reason: build/iao-merged.owl | build/robot.jar
+	$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed none
+
+# Run robot report
+build/robot-report.tsv: build/iao-merged.owl
+	@echo "Generate robot report"
+	$(ROBOT) report \
+	--input $< \
+	--fail-on none \
+	--output $@
+
+.PHONY: test
+test: reason build/robot-report.tsv
+
 release: build/iao-merged.owl iao.owl 
 	@echo "A new release is made"
 
