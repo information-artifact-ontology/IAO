@@ -124,10 +124,10 @@ iao.owl: build/iao-merged.owl
 
 # Run a reasoner to find inconsistencies
 .PHONY: reason
+reason: build/iao-merged.owl | build/robot.jar
 	@echo "Running tests"
 	@echo "Run reasoning"
-reason: build/iao-merged.owl | build/robot.jar
-	$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed none
+	$(ROBOT) reason --input $< --reasoner hermit --equivalent-classes-allowed none
 
 # Run robot report
 build/robot-report.tsv: build/iao-merged.owl
