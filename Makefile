@@ -131,10 +131,12 @@ reason: build/iao-merged.owl | build/robot.jar
 
 # Run robot report
 build/robot-report.tsv: build/iao-merged.owl
-	@echo "Generate robot report"
-	$(ROBOT) report \
+	@echo "Generate robot report ignoring term IAO_0000118 alternative label"
+	$(ROBOT) remove \
 	--input $< \
-	--fail-on none \
+	--term IAO:0000118 \
+	report \
+	--fail-on error \
 	--output $@
 
 .PHONY: test
