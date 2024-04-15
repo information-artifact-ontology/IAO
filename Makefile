@@ -118,6 +118,30 @@ iao.owl: build/iao-merged.owl
 	--annotation owl:versionInfo "$(TODAY)" \
 	--output $@
 
+### Test
+#
+# Run tests
+
+# Run a reasoner to find inconsistencies
+.PHONY: reason
+reason: build/iao-merged.owl | build/robot.jar
+	@echo "Running tests"
+	@echo "Run reasoning"
+	$(ROBOT) reason --input $< --reasoner hermit --equivalent-classes-allowed none
+
+# Run robot report
+build/robot-report.tsv: build/iao-merged.owl
+	@echo "Generate robot report ignoring term IAO_0000118 alternative label"
+	$(ROBOT) remove \
+	--input $< \
+	--term IAO:0000118 \
+	report \
+	--fail-on error \
+	--output $@
+
+.PHONY: test
+test: reason build/robot-report.tsv
+
 release: build/iao-merged.owl iao.owl 
 	@echo "A new release is made"
 
