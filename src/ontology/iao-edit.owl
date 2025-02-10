@@ -26,7 +26,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/import_UO.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
-        <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage>
+        <protege:defaultLanguage>en</protege:defaultLanguage>
         <dc:contributor xml:lang="en">Adam Goldstein</dc:contributor>
         <dc:contributor xml:lang="en">Alan Ruttenberg</dc:contributor>
         <dc:contributor xml:lang="en">Albert Goldfain</dc:contributor>
@@ -67,8 +67,8 @@
         <dc:title>Information Artifact Ontology (IAO)</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <rdfs:comment xml:lang="en">An information artifact is, loosely, a dependent continuant or its bearer that is created as the result of one or more intentional processes. Examples: uniprot, the english language, the contents of this document or a printout of it, the temperature measurements from a weather balloon. For more information, see the project home page at https://github.com/information-artifact-ontology/IAO</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
+        <rdfs:comment>IDs allocated to related efforts: PNO: IAO_0020000-IAO_0020999, D_ACTS: IAO_0021000-IAO_0021999</rdfs:comment>
+        <rdfs:comment>IDs allocated to subdomains of IAO. pno.owl: IAO_0020000-IAO_0020999, d-acts.owl: IAO_0021000-IAO_0021999</rdfs:comment>
         <rdfs:seeAlso rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
     </owl:Ontology>
     
@@ -167,11 +167,17 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000604">
         <obo:IAO_0000111 xml:lang="en">retired from use as of</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">relates a class of CRID to the date after which further instances should not be made, according to the central authority</obo:IAO_0000115>
+        <obo:IAO_0000115>relates a class of CRID to the date after which further instances should not be made, according to the central authority</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">In OWL 2 add AnnotationPropertyRange xsd:dateTimeStamp</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">retired from use as of</rdfs:label>
+        <rdfs:label>retired from use as of</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
     
 
 
@@ -465,6 +471,51 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
         <obo:IAO_0000115 xml:lang="en">relates a time stamped measurement datum to the measurement datum that was measured</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has measurement datum</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000585 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000585">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000586"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:IAO_0000112 xml:lang="en">&apos;Jane doe&apos; &apos;has characteristic&apos; &apos;genotypic sex&apos; and that &apos;has measure&apos; &apos;female genotypic sex&apos;.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">&apos;age measurement datum&apos; &apos;is measure of&apos; some &apos;age&apos;.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">&apos;old&apos; &apos;is measure of&apos; some &apos;age&apos;.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Is a relation between a data item (d) or characteristic (c) and a characteristic (ca) in which (d) or (c) is taken to be a measure of (ca).</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-10T03:13:24Z</terms:date>
+        <rdfs:comment xml:lang="en">A data item (d) may be a measure containing a quantity from a single or multidimensional scale having ordinal or interval and/or continuous or discrete values, and possibly a unit. A characteristic (ca) may be an element of the characteristic class (c).  Because &apos;is measure of&apos; can have an instance of a characteristic in its domain, this relation is broader than an &apos;is about&apos; relation.</rdfs:comment>
+        <rdfs:label xml:lang="en">is measure of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000586 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000586">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <obo:IAO_0000112 xml:lang="en">Is inverse relationship of &apos;is measure of&apos;</obo:IAO_0000112>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8844-9165"/>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-10T03:16:03Z</terms:date>
+        <rdfs:label xml:lang="en">has measure</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3879,11 +3930,11 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000111 xml:lang="en">descriptive data section</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A document part that lists and defines data variables, describes data characteristics (e.g. missing data information) and any assumptions and simplifications made.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <obo:IAO_0000234>ONE ontology</obo:IAO_0000234>
         <rdfs:label xml:lang="en">descriptive data section</rdfs:label>
     </owl:Class>
     
@@ -3896,13 +3947,13 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000111 xml:lang="en">additional results section</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A results section that reports analyses other than main results of the study (e.g. subgroups analyses, adjusted analyses, sensitivity analyses, etc.)</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/consort/</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/strobe/</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/consort/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/strobe/</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <obo:IAO_0000234>ONE ontology</obo:IAO_0000234>
         <rdfs:label xml:lang="en">additional results section</rdfs:label>
     </owl:Class>
     
@@ -3915,13 +3966,13 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000111 xml:lang="en">research participants section</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A document part that describes human subject(s) that participated in a study (e.g. inclusion &amp; exclusion criteria, recruitment methods, reasons for non-participation, grouping and randomisation, methods of follow-up, etc.).</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/consort/</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/strobe-nut/</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/consort/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/prisma/</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/strobe-nut/</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <obo:IAO_0000234>ONE ontology</obo:IAO_0000234>
         <rdfs:label xml:lang="en">research participants section</rdfs:label>
     </owl:Class>
     
@@ -3934,11 +3985,11 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000111 xml:lang="en">measurement methods section</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A methods section that describes details of data assessment methods (data measurement).</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.equator-network.org/reporting-guidelines/strobe/</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.equator-network.org/reporting-guidelines/strobe/</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <obo:IAO_0000234>ONE ontology</obo:IAO_0000234>
         <rdfs:label xml:lang="en">measurement methods section</rdfs:label>
     </owl:Class>
     
@@ -3951,11 +4002,11 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000111 xml:lang="en">research settings section</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A document part that describes the physical/social/cultural conditions around a research trial.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.ncbi.nlm.nih.gov/books/NBK262175/</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK262175/</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <obo:IAO_0000234>ONE ontology</obo:IAO_0000234>
         <rdfs:label xml:lang="en">research settings section</rdfs:label>
     </owl:Class>
     
@@ -3968,11 +4019,11 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000111 xml:lang="en">study bias section</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">A study limitations section that describes systematic error introduced into sampling or testing by selecting or encouraging one outcome or answer over others.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Chen Yang</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI: 10.1097/PRS.0b013e3181de24bc</obo:IAO_0000119>
+        <obo:IAO_0000117>PERSON: Chen Yang</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>DOI: 10.1097/PRS.0b013e3181de24bc</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/235"/>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ONE ontology</obo:IAO_0000234>
+        <obo:IAO_0000234>ONE ontology</obo:IAO_0000234>
         <rdfs:label xml:lang="en">study bias section</rdfs:label>
     </owl:Class>
     
@@ -3985,12 +4036,12 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000111 xml:lang="en">graphical abstract</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115 xml:lang="en">An abstract that is pictorial summary of the main findings described in the document.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Tim Beck</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>PERSON: Tim Beck</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">visual abstract</obo:IAO_0000118>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.elsevier.com/authors/journal-authors/graphical-abstract</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.elsevier.com/authors/journal-authors/graphical-abstract</obo:IAO_0000119>
         <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/234"/>
-        <obo:IAO_0000234 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical literature NLP project</obo:IAO_0000234>
+        <obo:IAO_0000234>Biomedical literature NLP project</obo:IAO_0000234>
         <rdfs:label xml:lang="en">graphical abstract</rdfs:label>
     </owl:Class>
 
@@ -4179,5 +4230,5 @@ When there is no such string, it is almost always because the entities take the 
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
