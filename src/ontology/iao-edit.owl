@@ -1017,6 +1017,7 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data item</obo:IAO_0000118>
         <rdfs:label xml:lang="en">data entity</rdfs:label>
     </owl:Class>
     
