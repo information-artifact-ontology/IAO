@@ -33,6 +33,7 @@
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Bjoern Peters</dc:contributor>
         <dc:contributor xml:lang="en">Carlo Torniai</dc:contributor>
+        <dc:contributor xml:lang="en">Charles Tapley Hoyt</dc:contributor>
         <dc:contributor xml:lang="en">Chris Mungall</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Christian A. Boelling</dc:contributor>
@@ -3868,6 +3869,19 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <rdfs:isDefinedBy rdf:resource="https://github.com/information-artifact-ontology/IAO"/>
         <rdfs:label xml:lang="en">database extract, transform, and load process</rdfs:label>
         <foaf:page rdf:resource="https://en.wikipedia.org/wiki/Extract,_transform,_load"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000651 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000651">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000314"/>
+        <obo:IAO_0000115 xml:lang="en">the section of the document where the title appears</obo:IAO_0000115>
+        <obo:IAO_0000116>This term should not be confused with dc:title - this term represents the component of the document where the title appears, and not the value of the title itself.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Charles Tapley Hoyt</obo:IAO_0000117>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/information-artifact-ontology/IAO/issues/286</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">title section</rdfs:label>
     </owl:Class>
     
 
