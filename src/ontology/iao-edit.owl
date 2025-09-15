@@ -163,6 +163,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000562 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000562">
+        <obo:IAO_0000115 xml:lang="en">Relates an ontology to a predicates that is used to construct its hierarchy. Typically, this is rdfs:subClassOf, but in ontologies that are partonomies, this might also include BFO:0000050 (part of). Display tools like OLS can use predicates annotated with this property for rendering the ontology class hierarchy. There can be more than one hierarchical property. In the absence of any, it should be assumed that it is rdfs:subClassOf</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/information-artifact-ontology/IAO/issues/292</obo:IAO_0000233>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-4423-4370"/>
+        <rdfs:label xml:lang="en">has ontology hierarchical property</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000604 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000604">
