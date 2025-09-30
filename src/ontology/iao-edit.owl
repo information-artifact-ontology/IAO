@@ -230,6 +230,7 @@
         <obo:IAO_0000115 xml:lang="en">A relationship between a quality and a portion of reality such that the quality refers to or is cognitively directed towards the portion of reality.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">person: William Hogan</obo:IAO_0000117>
         <obo:IAO_0000119>https://ceur-ws.org/Vol-1515/regular10.pdf</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/information-artifact-ontology/IAO/issues/285"/>
         <rdfs:comment xml:lang="en">In the definition source, the relation is called &apos;is_about&apos;. To avoid confusion with the existing &quot;is about&quot; relation in IAO, we called it &apos;is directed towards&apos; per Alan Ruttenberg&apos;s suggestion.</rdfs:comment>
         <rdfs:label xml:lang="en">is directed towards</rdfs:label>
     </owl:ObjectProperty>
