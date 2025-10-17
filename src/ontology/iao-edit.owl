@@ -1013,10 +1013,10 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">data entity</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be one or more truthful statement(s) about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
@@ -1032,7 +1032,8 @@ JAR: A data item is an approximately justified approximately true approximate be
         <obo:IAO_0000117 xml:lang="en">PERSON: Chris Stoeckert</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON: Jonathan Rees</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">data item</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">data item</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">data entity</rdfs:label>
     </owl:Class>
     
 
@@ -1361,8 +1362,8 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000111 xml:lang="en">data set</obo:IAO_0000111>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0001000"/>
+        <obo:IAO_0000111 xml:lang="en">homogenous data collection</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.</obo:IAO_0000115>
@@ -1370,9 +1371,9 @@ XML document; The instructions in a XSD file&quot;</obo:IAO_0000116>
         <obo:IAO_0000116>2014-05-05: Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Allyson Lister</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">person:Chris Stoeckert</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBI_0000042</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">data set</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">data set</rdfs:label>
+        <rdfs:label xml:lang="en">homogenous data collection</rdfs:label>
     </owl:Class>
     
 
@@ -2795,6 +2796,119 @@ points together with a line.</obo:IAO_0000115>
     </owl:Class>
     
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>Articles in Pubmed are reviewed by curators who add MESH terms to the Pubmed records in order to categorize them better and improve the ability to search for them. </obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process in which a CRID registry associates an information content entity with a CRID symbol</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000118>associating information with a CRID in the CRID registry</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">associating information with a centrally registered identifier in its registry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000028"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A symbol that is part of a CRID and that is sufficient to look up a record from the CRID&apos;s registry.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000118>CRID symbol</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">centrally registered identifier symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000578">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112 xml:lang="en">The sentence &quot;The article has Pubmed ID 12345.&quot; contains a CRID that has two parts: one part is the CRID symbol, which is &apos;12345&apos;; the other part denotes the CRID registry, which is Pubmed.</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have &apos;records&apos;).</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000118>CRID</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">centrally registered identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0020020"/>
+        <obo:IAO_0000112 xml:lang="en">PubMed is a CRID registry. It has a code set of PubMed identifiers associated with journal articles. </obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000115 xml:lang="en">A code set of CRID records, each consisting of a CRID symbol and additional information which was recorded in the code set through an assigning a centrally registered identifier process.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Justin Whorton</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bill Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000118>CRID registry</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</obo:IAO_0000119>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/information-artifact-ontology/IAO/issues/237</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">centrally registered identifier registry</rdfs:label>
+    </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000580 -->
 
@@ -4027,6 +4141,21 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <obo:IAO_0000119>https://orcid.org/</obo:IAO_0000119>
         <obo:IAO_0000233>https://github.com/information-artifact-ontology/IAO/issues/259</obo:IAO_0000233>
         <rdfs:label xml:lang="en">ORCID identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0001000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0001000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000111 xml:lang="en">data collection</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A data entity that consists of multiple data entities.</obo:IAO_0000115>
+        <obo:IAO_0000117>Sebastian Duesing</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">data set</obo:IAO_0000118>
+        <obo:IAO_0000233>https://github.com/information-artifact-ontology/IAO/issues/283</obo:IAO_0000233>
+        <obo:IAO_0000233>https://github.com/obi-ontology/obi/issues/1877</obo:IAO_0000233>
+        <rdfs:label xml:lang="en">data collection</rdfs:label>
     </owl:Class>
     
 
