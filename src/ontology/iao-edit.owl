@@ -312,7 +312,6 @@ there is some c that is a concretization of g
 every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:label xml:lang="en">denotes</rdfs:label>
     </owl:ObjectProperty>
     
