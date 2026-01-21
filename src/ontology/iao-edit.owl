@@ -1436,6 +1436,56 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115>An information content entity that contains multiple structured collections of data items.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-13T20:58:58Z</terms:created>
+        <rdfs:label xml:lang="en">data collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000106"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A set of records in which each record contains a patient&apos;s demographic information.</obo:IAO_0000112>
+        <obo:IAO_0000115>A data collection that consists of multiple records or tables which contain records. Although a dataset may contain single record or table, a dataset does not have to be organized as rows and columns and is often saved as a single file.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-13T20:59:50Z</terms:created>
+        <rdfs:label xml:lang="en">dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000106"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000126"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>A set of fields that contain information about a patient, such as the patient&apos;s first name, last name, and birthdate.</obo:IAO_0000112>
+        <obo:IAO_0000115>A data collection that consists of one or more data fields and structures the data fields as a logical unit.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-13T21:00:21Z</terms:created>
+        <rdfs:label xml:lang="en">data record</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000109">
@@ -1449,6 +1499,37 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000119 xml:lang="en">OBI_0000305</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">group:OBI</obo:IAO_0000119>
         <rdfs:label xml:lang="en">measurement datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000106"/>
+        <obo:IAO_0000115>A data collection in which the data items are organized into rows and columns.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-13T21:01:35Z</terms:created>
+        <rdfs:label xml:lang="en">data table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000112>The birthdate field in a record containing patient information.</obo:IAO_0000112>
+        <obo:IAO_0000115>A data item that is part of a record and serves as a single unit of information within the record.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="http://orcid.org/0000-0001-9625-1899"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-13T21:02:54Z</terms:created>
+        <rdfs:label xml:lang="en">data field</rdfs:label>
     </owl:Class>
     
 
