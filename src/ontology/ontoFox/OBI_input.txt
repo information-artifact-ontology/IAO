@@ -6,15 +6,12 @@ http://purl.obolibrary.org/obo/iao/dev/import_OBI.owl
 OBI
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/COB_0000035 #completely executed planned process
 http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
 http://purl.obolibrary.org/obo/OBI_0500000 #study design
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/COB_0000035 #completely executed planned process
-subClassOf http://purl.obolibrary.org/obo/BFO_0000015 #process
 http://purl.obolibrary.org/obo/OBI_0000066 #investigation
 subClassOf http://purl.obolibrary.org/obo/COB_0000035 #completely executed planned process
 http://purl.obolibrary.org/obo/OBI_0000471 #study design execution
