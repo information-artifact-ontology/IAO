@@ -52,7 +52,7 @@ build:
 # download the most recent build of ROBOT
 build/robot.jar: | build
 	@echo "Getting ROBOT" && \
-	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.6.0/robot.jar
+	curl -L -o $@ https://github.com/ontodev/robot/releases/download/v1.9.10/robot.jar
 
 
 clean: | release
